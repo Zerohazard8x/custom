@@ -1,0 +1,367 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "newStyleAsUsercss": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false,
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "u",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "sublime",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popupWidth": 246,
+      "updateInterval": 24
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://codeberg.org/reizumi/MessengerDark/raw/branch/master/messenger-dark.user.css",
+    "url": "https://codeberg.org/reizumi/MessengerDark",
+    "installDate": 1681206152665,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Messenger Dark\n@description    A dark theme for Facebook Messenger.\n@author         reizumi\n@namespace      codeberg.org/reizumi/MessengerDark\n@homepageURL    https://codeberg.org/reizumi/MessengerDark\n@updateURL      https://codeberg.org/reizumi/MessengerDark/raw/branch/master/messenger-dark.user.css\n@supportURL     https://codeberg.org/reizumi/MessengerDark/issues\n@preprocessor   stylus\n@version        1.3.1\n@license        CC-BY-SA-4.0\n\n@var select     theme           \"Preset color theme\" {\n    \"System default\"    : \"system\",\n    \"Dark*\"             : \"dark\",\n    \"Darker\"            : \"darker\",\n    \"Gruvbox\"           : \"gruvbox\",\n    \"Nord\"              : \"nord\",\n    \"Discord\"           : \"discord\",\n    \"Mastodon\"          : \"mastodon\",\n    \"Moonlight\"         : \"moonlight\",\n    \"Proton\"            : \"proton\",\n    \"Breeze\"            : \"breeze\",\n    \"Adwaita\"           : \"adwaita\",\n    \"Fuchsia\"           : \"fuchsia-dark\",\n    \"Custom\"            : \"custom\",\n}\n@var text       fontName        \"Custom font\"                   default\n@var checkbox   colorScrollbars \"Theme scrollbars\"              1\n@var checkbox   colorConvos     \"Theme conversation colors\"     0\n@var checkbox   colorSelect     \"Theme text selection\"          0\n@var color      bg-mt           \"Message search match color\"    #f7b928\n@var color      bg-ac           \"Selected chat color\"           rgba(255, 255, 255, .06)\n@var color      bg-1            \"Custom background 1\"           #222\n@var color      bg-2            \"Custom background 2\"           #2b2b2b\n@var color      bg-3            \"Custom background 3\"           #333\n@var color      fg-1            \"Custom foreground 1\"           #fff\n@var color      fg-2            \"Custom foreground 2\"           #aaa\n@var color      ic-1            \"Custom icon color\"             #aaa\n@var color      ac-1            \"Custom accent color\"           #09f\n@var color      bg-bb           \"Custom sender bubble color\"    #07b\n@var text       ic-2            \"Custom icon filter\"            invert(79%) sepia(2%) saturate(19%) hue-rotate(325deg) brightness(89%) contrast(81%)\n@var text       ac-2            \"Custom accent filter\"          invert(50%) sepia(94%) saturate(3979%) hue-rotate(183deg) brightness(104%) contrast(103%)\n@var checkbox   darkButtonText  \"Custom: Dark button text\"      0\n==/UserStyle== */\n\n//  Some icons require CSS filters due to them using images instead of vectors. (eg. three-dot menu, arrows, and payment icons)\n//  To make or generate your own CSS filter, you can use any tool that converts color values to CSS filter.\n//  Convert ic-1 (icon) and ac-1 (accent color) color values for consistency, or do whatever you want.\n\n@-moz-document domain(\"messenger.com\") {\n    // Preset color themes\n    if theme == dark || theme == system {\n        bg-1 = #222;\n        bg-2 = #2b2b2b;\n        bg-3 = #333;\n        fg-1 = #fff;\n        fg-2 = #aaa;\n        ic-1 = #aaa;\n        ac-1 = #09f;\n        bg-bb = #07b;\n        ic-2 = invert(79%) sepia(2%) saturate(19%) hue-rotate(325deg) brightness(89%) contrast(81%);\n        ac-2 = invert(50%) sepia(94%) saturate(3979%) hue-rotate(183deg) brightness(104%) contrast(103%);\n    } else if theme == darker {\n        bg-1 = #111;\n        bg-2 = #1b1b1b;\n        bg-3 = #222;\n        fg-1 = #eee;\n        fg-2 = #999;\n        ic-1 = #999;\n        ac-1 = #06c;\n        bg-bb = #048;\n        ic-2 = invert(72%) sepia(0%) saturate(6%) hue-rotate(251deg) brightness(86%) contrast(82%);\n        ac-2 = invert(24%) sepia(95%) saturate(1745%) hue-rotate(195deg) brightness(96%) contrast(104%);\n    } else if theme == gruvbox {\n        bg-1 = #282828;\n        bg-2 = #3c3836;\n        bg-3 = #32302f;\n        fg-1 = #ebdbb2;\n        fg-2 = #a89984;\n        ic-1 = #a89984;\n        ac-1 = #83a598;\n        bg-bb = #076678;\n        ic-2 = invert(67%) sepia(5%) saturate(1223%) hue-rotate(356deg) brightness(91%) contrast(91%);\n        ac-2 = invert(77%) sepia(3%) saturate(1992%) hue-rotate(105deg) brightness(82%) contrast(87%);\n    } else if theme == nord {\n        bg-1 = #2e3440;\n        bg-2 = #364054;\n        bg-3 = #424c60;\n        fg-1 = #eceff4;\n        fg-2 = #d8dee9;\n        ic-1 = #d8dee9;\n        ac-1 = #7ea1cc;\n        bg-bb = #587ba6;\n        ic-2 = invert(95%) sepia(6%) saturate(837%) hue-rotate(185deg) brightness(95%) contrast(91%);\n        ac-2 = invert(66%) sepia(24%) saturate(566%) hue-rotate(173deg) brightness(91%) contrast(87%);\n    } else if theme == discord {\n        bg-1 = #36393f;\n        bg-2 = #3d414a;\n        bg-3 = #4d515a;\n        fg-1 = #fff;\n        fg-2 = #99aab5;\n        ic-1 = #99aab5;\n        ac-1 = #7289da;\n        bg-bb = #5c73c5;\n        ic-2 = invert(74%) sepia(8%) saturate(537%) hue-rotate(160deg) brightness(90%) contrast(84%);\n        ac-2 = invert(58%) sepia(26%) saturate(1117%) hue-rotate(192deg) brightness(90%) contrast(89%);\n    } else if theme == mastodon {\n        bg-1 = #191b22;\n        bg-2 = #272b36;\n        bg-3 = #313543;\n        fg-1 = #fff;\n        fg-2 = #9baec8;\n        ic-1 = #9baec8;\n        ac-1 = #8c8dff;\n        bg-bb = #4d4dee;\n        ic-2 = invert(73%) sepia(5%) saturate(1409%) hue-rotate(176deg) brightness(96%) contrast(83%);\n        ac-2 = invert(51%) sepia(27%) saturate(1019%) hue-rotate(201deg) brightness(108%) contrast(106%);\n    } else if theme == moonlight {\n        bg-1 = #223;\n        bg-2 = #2b2b3c;\n        bg-3 = #334;\n        fg-1 = #fff;\n        fg-2 = #aab;\n        ic-1 = #aab;\n        ac-1 = #99e;\n        bg-bb = #66b;\n        ic-2 = invert(77%) sepia(18%) saturate(187%) hue-rotate(201deg) brightness(88%) contrast(86%);\n        ac-2 = invert(62%) sepia(28%) saturate(665%) hue-rotate(202deg) brightness(97%) contrast(93%);\n    } else if theme == proton {\n        bg-1 = #1c1b22;\n        bg-2 = #23222b;\n        bg-3 = #2b2a33;\n        fg-1 = #fff;\n        fg-2 = #aaa;\n        ic-1 = #fbfbfe;\n        ac-1 = #0df;\n        bg-bb = #126171;\n        ic-2 = invert(97%) sepia(8%) saturate(1873%) hue-rotate(183deg) brightness(107%) contrast(99%);\n        ac-2 = invert(65%) sepia(32%) saturate(2926%) hue-rotate(145deg) brightness(104%) contrast(105%);\n    } else if theme == breeze {\n        bg-1 = #232629;\n        bg-2 = #292d32;\n        bg-3 = #31363b;\n        fg-1 = #fff;\n        fg-2 = #aaa;\n        ic-1 = #aaa;\n        ac-1 = #3daee9;\n        bg-bb = #224e65;\n        ic-2 = invert(79%) sepia(2%) saturate(19%) hue-rotate(325deg) brightness(89%) contrast(81%);\n        ac-2 = invert(63%) sepia(20%) saturate(1601%) hue-rotate(164deg) brightness(95%) contrast(93%);\n    } else if theme == adwaita {\n        bg-1 = #242424;\n        bg-2 = #2b2b2b;\n        bg-3 = #353535;\n        fg-1 = #f5f5f5;\n        fg-2 = #aaa;\n        ic-1 = #eeeeec;\n        ac-1 = #78aeed;\n        bg-bb = #1b70c9;\n        ic-2 = invert(97%) sepia(8%) saturate(607%) hue-rotate(352deg) brightness(115%) contrast(87%);\n        ac-2 = invert(63%) sepia(19%) saturate(1049%) hue-rotate(174deg) brightness(103%) contrast(86%);\n    } else if theme == fuchsia-dark {\n        bg-1 = #342434;\n        bg-2 = #3b2b3b;\n        bg-3 = #463546;\n        fg-1 = #fdf;\n        fg-2 = #a8a;\n        ic-1 = #cbc;\n        ac-1 = #c74375;\n        bg-bb = #7b4b7b;\n        ic-2 = invert(98%) sepia(86%) saturate(359%) hue-rotate(262deg) brightness(81%) contrast(96%);\n        ac-2 = invert(45%) sepia(24%) saturate(7496%) hue-rotate(312deg) brightness(83%) contrast(85%);\n    }\n    // Dark button text and icons\n    if theme == custom && darkButtonText {\n        ic-bn = invert(0%);\n        fg-bn = bg-1;\n    }\n    else {\n        ic-bn = invert(100%);\n        fg-bn = fg-1;\n\n        if light(ac-1) && theme != custom {\n            ic-bn = invert(0%);\n            fg-bn = bg-1;\n        }\n    }\n    // Default: Custom scrollbars\n    if colorScrollbars {\n        // Firefox\n        html,\n        div {\n            scrollbar-width: thin;\n        }\n        // Chromium-based browsers\n        ::-webkit-scrollbar {\n            background-color: #fff;\n            width: 14px;\n\n            &-thumb {\n                background-color: rgba(#808080, .25);\n                background-clip: padding-box;\n                border: 3px solid transparent;\n                border-radius: 999px;\n            }\n        }\n    }\n    /* Function: Dark mode */\n    dark_mode() {\n        // Root variables\n        :root,\n        .__fb-light-mode,\n        .__fb-dark-mode {\n            --messenger-card-background: bg-1 !important;\n            --surface-background: bg-1 !important;\n            --card-background: bg-1 !important;\n            --card-background-flat: bg-3 !important;\n            --popover-background: bg-1 !important;\n            --messenger-reply-background: bg-2 !important;\n            --secondary-button-background: bg-3 !important;\n            --secondary-button-background-floating: bg-2 !important;\n            --disabled-button-background: bg-2 !important;\n            --wash: bg-3 !important;\n            --web-wash: bg-1 !important;\n            --comment-footer-background: bg-2 !important;\n            --background-deemphasized: bg-2 !important;\n\n            --primary-button-background: ac-1 !important;\n            --primary-deemphasized-button-text: ac-1 !important;\n            --accent: ac-1 !important;\n            --blue-link: ac-1 !important;\n            --base-blue: ac-1 !important;\n            --base-lemon: bg-mt !important;\n            --switch-active: ac-1 !important;\n\n            --primary-text: fg-1 !important;\n            --secondary-text: fg-2 !important;\n            --placeholder-text: fg-2 !important;\n            --disabled-text: fg-2 !important;\n            --disabled-button-text: fg-2 !important;\n            --primary-button-text: fg-bn !important;\n            --secondary-button-text: fg-1 !important;\n            --primary-text-on-media: fg-1 !important;\n\n            --hosted-view-selected-state: bg-ac !important;\n            --primary-deemphasized-button-background: rgba(ac-1, .08) !important;\n            --primary-deemphasized-button-pressed-overlay: rgba(fg-1, .04) !important;\n            --comment-background: rgba(fg-2, .1) !important;\n            --hover-overlay: rgba(fg-1, .05) !important;\n            --press-overlay: rgba(fg-1, .05) !important;\n            --overlay-alpha-80: rgba(bg-1, .80) !important;\n            --media-inner-border: rgba(fg-1, .1) !important;\n            --shadow-inset: rgba(bg-3, 0.5) !important;\n            --progress-ring-neutral-foreground: rgba(fg-1, .4) !important;\n            --scroll-thumb: rgba(fg-1, .25) !important;\n            --divider: rgba(fg-1, .1) !important;\n            --always-black: bg-1 !important;\n            --always-white: fg-1 !important;\n\n            --primary-icon: ic-1 !important;\n            --secondary-icon: ic-1 !important;\n            --placeholder-icon: ic-1 !important;\n            --disabled-icon: ic-1 !important;\n            --filter-primary-icon: ic-2 !important;\n            --filter-secondary-icon: ic-2 !important;\n            --filter-disabled-icon: ic-2 !important;\n            --filter-placeholder-icon: ic-2 !important;\n            --filter-accent: ac-2 !important;\n\n            --fds-gray-00: lighten(bg-1, 0%) !important;\n            --fds-gray-05: lighten(bg-1, 5%) !important;\n            --fds-gray-10: lighten(bg-1, 10%) !important;\n            --fds-gray-20: lighten(bg-1, 20%) !important;\n            --fds-gray-25: lighten(bg-1, 25%) !important;\n            --fds-gray-30: lighten(bg-1, 30%) !important;\n            --fds-gray-45: lighten(bg-1, 45%) !important;\n            --fds-gray-70: lighten(bg-1, 70%) !important;\n            --fds-gray-80: lighten(bg-1, 80%) !important;\n            --fds-gray-90: lighten(bg-1, 90%) !important;\n            --fds-gray-100: lighten(bg-1, 100%) !important;\n\n            // Color scheme support\n            @supports (color-scheme: dark) {\n                color-scheme: dark;\n            }\n        }\n        // Dark: Custom scrollbars\n        if colorScrollbars {\n            // Firefox\n            html,\n            div {\n                scrollbar-color: rgba(fg-1, .25) bg-1;\n            }\n            // Chromium-based browsers\n            ::-webkit-scrollbar {\n                background-color: bg-1;\n\n                &:hover {\n                    background-color: bg-2;\n                }\n                &-thumb {\n                    background-color: rgba(fg-1, .25);\n                }\n            }\n        }\n        // Theme Messenger colors\n        if colorConvos {\n            // Chat bubbles\n            .x1tlxs6b.x1g8br2z.x14ctfv.x6ikm8r.x10wlt62.x1mzt3pk.x1y1aw1k.xn6708d.xwib8y2.x1ye3gou.x1n2onr6.x13faqbe.x1vjfegm.x5pf9jr.xo71vjh.x9f619.x16it46q.xh8yej3:not([style*=\"var(--\"]),\n            .x1tlxs6b.x14ctfv.x6ikm8r.x10wlt62.x1mzt3pk.x1y1aw1k.xn6708d.xwib8y2.x1ye3gou.x1n2onr6.x13faqbe.x1vjfegm.x1yr5g0i.x5pf9jr.xo71vjh.x9f619.x16it46q.xh8yej3:not([style*=\"var(--\"]),\n            .x1tlxs6b.x1g8br2z.x1gn5b1j.x230xth.x14ctfv.x1okitfd.x6ikm8r.x10wlt62.x1mzt3pk.x1y1aw1k.xn6708d.xwib8y2.x1ye3gou.x1n2onr6.x13faqbe.x1vjfegm:not([style*=\"var(--\"]),\n            .x1tlxs6b.x1gn5b1j.x230xth.x14ctfv.x1okitfd.x6ikm8r.x10wlt62.x1mzt3pk.x1y1aw1k.xn6708d.xwib8y2.x1ye3gou.x1n2onr6.x13faqbe.x1vjfegm.x1yr5g0i:not([style*=\"var(--\"]),\n            .x1tlxs6b.x230xth.x14ctfv.x1okitfd.x6ikm8r.x10wlt62.x1mzt3pk.x1y1aw1k.xn6708d.xwib8y2.x1ye3gou.x1n2onr6.x13faqbe.x1vjfegm.x1yr5g0i.xrt01vj:not([style*=\"var(--\"]),\n            .x1tlxs6b.x1g8br2z.x230xth.x14ctfv.x1okitfd.x6ikm8r.x10wlt62.x1mzt3pk.x1y1aw1k.xn6708d.xwib8y2.x1ye3gou.x1n2onr6.x13faqbe.x1vjfegm.xrt01vj:not([style*=\"var(--\"]),\n            .x6s0dn4.x78zum5.x1iyjqo2.x1qughib.x6ikm8r.x10wlt62.x1n2onr6:not([style*=\"var(--\"]) {\n                background-color: bg-bb !important;\n            }\n            // Icon colors\n            svg[fill]:not([fill=\"var(--card-background)\"]),\n            path[fill],\n            rect[fill]:not(.qbubdy2e svg rect):not([fill=\"none\"]):not(.x1pwv2dq.xvlca1e.xbh8q5q) {\n                fill: ac-1 !important;\n            }\n            // Menu options\n            .x1dmfqyo g {\n                stroke: ac-1 !important;\n            }\n            // Page options\n            .x1pju0fl[role=\"button\"] {\n                background-color: ac-1 !important;\n\n                svg path {\n                    fill: fg-bn !important;\n                }\n            }\n            // Audio message timestamp\n            .x6s0dn4.x14hiurz.xfj52jq.xykzs3s.x17xv1ja.x1mvicbb.x1mqxbix.x78zum5.x1nxh6w3.x1s688f.xi0exxh.xl56j7k.x1w0mnb.x1mnrxsn.x1n2onr6.x87ps6o.x1r9kitl:not([style*=\"var(--\"]) {\n                color: bg-bb !important;\n            }\n            // Chat bubble text color\n            .x1yc453h.x126k92a.x6prxxf.x1fc57z9.x14ctfv {\n                color: fg-1 !important;\n            }\n        } else {\n            .x1yc453h.x126k92a.x6prxxf.x1fc57z9.x14ctfv {\n                color: #fff !important;\n            }\n        }\n        // Theme text selection\n        if colorSelect {\n            ::selection {\n                background-color: rgba(ac-1, .4);\n            }\n        }\n        // Icon colors\n        svg[fill=\"currentColor\"]:not(.x1fey0fg),\n        path[fill*=\"var(--\"],\n        path[fill=\"black\"] {\n            fill: ic-1 !important;\n        }\n        .xtvsq51 .xaj1gnb {\n            filter: ic-bn;\n        }\n        // Close search button\n        .x14hiurz.__fb-light-mode.x1r1pt67 {\n            background-color: bg-2 !important;\n        }\n        // Video progress and volume bars\n        .x1evw4sf {\n            background-color: ac-1;\n        }\n        // Hidden images\n        .x11dxs5c {\n            background-color: bg-2;\n        }\n        // File attachments\n        .x1ybostu {\n            background-color: bg-2;\n        }\n        // Message buttons\n        .x1qhmfi1 {\n            background-color: rgba(fg-1, .1);\n        }\n        // Focus rings\n        .x90kdol {\n            --always-white: bg-1;\n        }\n        .xqnlwer {\n            --placeholder-text: lighten(bg-3, 15%);\n        }\n        // Document preview\n        .x1yi8jrw {\n            background-color: bg-1;\n\n            .x1lliihq.x1k90msu.x2h7rmj.x1qfuztq.x14ctfv {\n                fill: fg-bn !important;\n            }\n        }\n        // Loading spinner\n        path[style=\"stroke: rgb(24\\, 119\\, 242);\"] {\n            stroke: ac-1 !important;\n            fill: none !important;\n        }\n        rect[style=\"stroke: rgb(204\\, 208\\, 213);\"] {\n            stroke: bg-2 !important;\n        }\n        // Conversation loading bar\n        .x1xzmf5g {\n            background-color: bg-2;\n        }\n        .x4o00kh {\n            background-color: ac-1;\n        }\n    }\n    // Custom interface font\n    if fontName != default {\n        body {\n            font-family: fontName, system-ui, sans-serif !important;\n        }\n    }\n    // Apply dark mode based on system preference\n    if theme == system {\n        @media (prefers-color-scheme: dark) {\n            dark_mode();\n        }\n    }\n    else {\n        dark_mode();\n    }\n}\n",
+    "usercssData": {
+      "name": "Messenger Dark",
+      "description": "A dark theme for Facebook Messenger.",
+      "author": "reizumi",
+      "namespace": "codeberg.org/reizumi/MessengerDark",
+      "homepageURL": "https://codeberg.org/reizumi/MessengerDark",
+      "updateURL": "https://codeberg.org/reizumi/MessengerDark/raw/branch/master/messenger-dark.user.css",
+      "supportURL": "https://codeberg.org/reizumi/MessengerDark/issues",
+      "preprocessor": "stylus",
+      "version": "1.3.1",
+      "license": "CC-BY-SA-4.0",
+      "vars": {
+        "theme": {
+          "type": "select",
+          "label": "Preset color theme",
+          "name": "theme",
+          "value": null,
+          "default": "Dark",
+          "options": [
+            {
+              "name": "System default",
+              "label": "System default",
+              "value": "system"
+            },
+            {
+              "name": "Dark",
+              "label": "Dark",
+              "value": "dark"
+            },
+            {
+              "name": "Darker",
+              "label": "Darker",
+              "value": "darker"
+            },
+            {
+              "name": "Gruvbox",
+              "label": "Gruvbox",
+              "value": "gruvbox"
+            },
+            {
+              "name": "Nord",
+              "label": "Nord",
+              "value": "nord"
+            },
+            {
+              "name": "Discord",
+              "label": "Discord",
+              "value": "discord"
+            },
+            {
+              "name": "Mastodon",
+              "label": "Mastodon",
+              "value": "mastodon"
+            },
+            {
+              "name": "Moonlight",
+              "label": "Moonlight",
+              "value": "moonlight"
+            },
+            {
+              "name": "Proton",
+              "label": "Proton",
+              "value": "proton"
+            },
+            {
+              "name": "Breeze",
+              "label": "Breeze",
+              "value": "breeze"
+            },
+            {
+              "name": "Adwaita",
+              "label": "Adwaita",
+              "value": "adwaita"
+            },
+            {
+              "name": "Fuchsia",
+              "label": "Fuchsia",
+              "value": "fuchsia-dark"
+            },
+            {
+              "name": "Custom",
+              "label": "Custom",
+              "value": "custom"
+            }
+          ]
+        },
+        "fontName": {
+          "type": "text",
+          "label": "Custom font",
+          "name": "fontName",
+          "value": null,
+          "default": "default",
+          "options": null
+        },
+        "colorScrollbars": {
+          "type": "checkbox",
+          "label": "Theme scrollbars",
+          "name": "colorScrollbars",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "colorConvos": {
+          "type": "checkbox",
+          "label": "Theme conversation colors",
+          "name": "colorConvos",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "colorSelect": {
+          "type": "checkbox",
+          "label": "Theme text selection",
+          "name": "colorSelect",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "bg-mt": {
+          "type": "color",
+          "label": "Message search match color",
+          "name": "bg-mt",
+          "value": null,
+          "default": "#f7b928",
+          "options": null
+        },
+        "bg-ac": {
+          "type": "color",
+          "label": "Selected chat color",
+          "name": "bg-ac",
+          "value": null,
+          "default": "rgba(255, 255, 255, 0.06)",
+          "options": null
+        },
+        "bg-1": {
+          "type": "color",
+          "label": "Custom background 1",
+          "name": "bg-1",
+          "value": null,
+          "default": "#222",
+          "options": null
+        },
+        "bg-2": {
+          "type": "color",
+          "label": "Custom background 2",
+          "name": "bg-2",
+          "value": null,
+          "default": "#2b2b2b",
+          "options": null
+        },
+        "bg-3": {
+          "type": "color",
+          "label": "Custom background 3",
+          "name": "bg-3",
+          "value": null,
+          "default": "#333",
+          "options": null
+        },
+        "fg-1": {
+          "type": "color",
+          "label": "Custom foreground 1",
+          "name": "fg-1",
+          "value": null,
+          "default": "#fff",
+          "options": null
+        },
+        "fg-2": {
+          "type": "color",
+          "label": "Custom foreground 2",
+          "name": "fg-2",
+          "value": null,
+          "default": "#aaa",
+          "options": null
+        },
+        "ic-1": {
+          "type": "color",
+          "label": "Custom icon color",
+          "name": "ic-1",
+          "value": null,
+          "default": "#aaa",
+          "options": null
+        },
+        "ac-1": {
+          "type": "color",
+          "label": "Custom accent color",
+          "name": "ac-1",
+          "value": null,
+          "default": "#09f",
+          "options": null
+        },
+        "bg-bb": {
+          "type": "color",
+          "label": "Custom sender bubble color",
+          "name": "bg-bb",
+          "value": null,
+          "default": "#07b",
+          "options": null
+        },
+        "ic-2": {
+          "type": "text",
+          "label": "Custom icon filter",
+          "name": "ic-2",
+          "value": null,
+          "default": "invert(79%) sepia(2%) saturate(19%) hue-rotate(325deg) brightness(89%) contrast(81%)",
+          "options": null
+        },
+        "ac-2": {
+          "type": "text",
+          "label": "Custom accent filter",
+          "name": "ac-2",
+          "value": null,
+          "default": "invert(50%) sepia(94%) saturate(3979%) hue-rotate(183deg) brightness(104%) contrast(103%)",
+          "options": null
+        },
+        "darkButtonText": {
+          "type": "checkbox",
+          "label": "Custom: Dark button text",
+          "name": "darkButtonText",
+          "value": null,
+          "default": "0",
+          "options": null
+        }
+      }
+    },
+    "author": "reizumi",
+    "description": "A dark theme for Facebook Messenger.",
+    "name": "Messenger Dark",
+    "originalDigest": "0098edb5e0e22dd7c12d6c5b0b0314ebb3349d98",
+    "_id": "7f919858-4276-4676-9998-e11ad1f096e1",
+    "_rev": 1682840599154,
+    "id": 2
+  },
+  {
+    "enabled": true,
+    "installDate": 1682840471234,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           MacType grayscale rendering fix\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    https://github.com/snowie2000/mactype/issues/873\n@author         github snowie2000\n==/UserStyle== */\n\n\nhtml {\n    filter: opacity(100%) !important;\n}",
+    "usercssData": {
+      "name": "MacType grayscale rendering fix",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "https://github.com/snowie2000/mactype/issues/873",
+      "author": "github snowie2000"
+    },
+    "author": "github snowie2000",
+    "description": "https://github.com/snowie2000/mactype/issues/873",
+    "name": "MacType grayscale rendering fix",
+    "updateDate": 1682840570440,
+    "_id": "406703fe-44e8-4737-93e5-4e27da0a5049",
+    "_rev": 1682840599278,
+    "id": 3,
+    "customName": "MacType grayscale rendering fix"
+  }
+]
