@@ -1,6 +1,7 @@
 // ==UserScript==
-// @name            SomeName
+// @name            Privacy
 // @description     Prevents websites from taking information about activities
+// @author          Zerohazard8x + GPT
 // @match           *://*/*
 // @run-at          document-end
 // @grant           none
@@ -11,7 +12,7 @@
 // @exclude         *lazada.com.ph*
 // @exclude         *alicdn.com*
 // @exclude         *live.com*
-// @exclude         *pcpartpicker.com*
+// @exclude         *tweetdeck.twitter.com*
 // ==/UserScript==
 
 const preventEvent = function (event) {
