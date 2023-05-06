@@ -1,12 +1,9 @@
 {
-  "timeStamp": 1682855965956,
-  "version": "1.49.0",
+  "timeStamp": 1683397055660,
+  "version": "1.49.2",
   "userSettings": {
     "cloudStorageEnabled": true,
-    "externalLists": "https://raw.githubusercontent.com/Zerohazard8x/scripts/main/ublock.txt",
-    "importedLists": [
-      "https://raw.githubusercontent.com/Zerohazard8x/scripts/main/ublock.txt"
-    ],
+    "importedLists": [],
     "popupPanelSections": 31,
     "webrtcIPAddressHidden": true
   },
@@ -29,16 +26,13 @@
   ],
   "hiddenSettings": {},
   "whitelist": [
+    "/^((?!bing\\.com|dubz\\.co|reddit\\.com|tweetdeck\\.twitter\\.com).)*$/",
     "about-scheme",
-    "bing.com",
     "chrome-extension-scheme",
     "chrome-scheme",
-    "dubz.co",
     "edge-scheme",
     "moz-extension-scheme",
     "opera-scheme",
-    "reddit.com",
-    "tweetdeck.twitter.com",
     "vivaldi-scheme",
     "wyciwyg-scheme"
   ],
