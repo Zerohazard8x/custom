@@ -1,27 +1,24 @@
 {
-  "timeStamp": 1683397055660,
+  "timeStamp": 1683547340257,
   "version": "1.49.2",
   "userSettings": {
-    "cloudStorageEnabled": true,
     "importedLists": [],
-    "popupPanelSections": 31,
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
     "user-filters",
+    "assets.json",
+    "public_suffix_list.dat",
+    "ublock-badlists",
     "ublock-filters",
     "ublock-badware",
     "ublock-privacy",
-    "ublock-quick-fixes",
     "ublock-abuse",
     "ublock-unbreak",
+    "ublock-quick-fixes",
     "easylist",
-    "adguard-spyware-url",
-    "block-lan",
     "easyprivacy",
     "urlhaus-1",
-    "adguard-annoyance",
-    "ublock-annoyances",
     "plowe-0"
   ],
   "hiddenSettings": {},
