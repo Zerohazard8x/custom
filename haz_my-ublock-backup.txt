@@ -1,9 +1,9 @@
 {
-  "timeStamp": 1683547340257,
+  "timeStamp": 1683715462170,
   "version": "1.49.2",
   "userSettings": {
-    "importedLists": [],
-    "webrtcIPAddressHidden": true
+    "cloudStorageEnabled": true,
+    "importedLists": []
   },
   "selectedFilterLists": [
     "user-filters",
@@ -31,6 +31,7 @@
     "moz-extension-scheme",
     "opera-scheme",
     "vivaldi-scheme",
+    "www.google.com",
     "wyciwyg-scheme"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
