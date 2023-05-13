@@ -464,5 +464,34 @@
     "_rev": 1683977498425,
     "installationUrl": "https://userstyles.world/style/5889",
     "id": 6
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://cdn.jsdelivr.net/gh/33kk/uso-archive@flomaster/data/usercss/182320.user.css",
+    "url": "https://uso.kkx.one/style/182320",
+    "installDate": 1683992539673,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           TweetDeck Ultra Dark\n@namespace      USO Archive\n@author         IgChi\n@description    `⚠ Enable Dark Theme in tweetdeck Settings______________________________________THANK YOU FOR YOUR DONATION 🙏`\n@version        20220520.20.4\n@license        CC-BY-4.0\n@preprocessor   uso\n==/UserStyle== */\n@-moz-document domain(\"tweetdeck.twitter.com\") {\ndiv::-webkit-scrollbar {\n  width: 5px !important;\n}\ndiv::-webkit-scrollbar-track {\n  background: #0d0d0d !important;\n  border: 0 !important;\n}\ndiv::-webkit-scrollbar-thumb,\nhtml.dark .bg-color-twitter-white,\nhtml.dark .compose-text-container {\n  background: #222 !important;\n  border-radius: 0 !important;\n}\ndiv::-webkit-scrollbar-thumb:hover {\n  background: #444 !important;\n}\nhtml.dark,\nhtml.dark .compose-text {\n  color: #b9b9b9;\n}\n.spinner-centered,\nhtml.dark .spinner-large {\n  filter: grayscale(1) brightness(.084);\n}\nhtml.dark .sprite,\nhtml.dark .tweetdeck-logo {\n  filter: grayscale(1) brightness(.2);\n}\nhtml.dark .spinner-small {\n  filter: grayscale(1) brightness(.64);\n}\nbody,\nhtml.dark .app-columns-container,\nhtml.dark .app-content,\nhtml.dark .app-header,\nhtml.dark .app-navigator,\nhtml.dark .app-title,\nhtml.dark .column-nav-item,\nhtml.dark .scroll-conversation,\nhtml.dark body {\n  background: #0d0d0d;\n}\nhtml.dark .column-panel,\nhtml.dark .detail-view-inline,\nhtml.dark .inline-reply {\n  background: #151515;\n}\nhtml.dark .column-header,\nhtml.dark .column-header-temp,\nhtml.dark .detail-view-inline-text {\n  background: #222;\n  border-bottom: 1px solid #111;\n}\nhtml.dark .thread {\n  background-color: #222;\n}\nhtml.dark .stream-item {\n  background: #151515;\n  border-bottom: 2px solid #0d0d0d;\n}\nhtml.dark .overlay,\nhtml.dark .ovl {\n  background: #0009;\n}\nhtml.dark .br--14,\nhtml.dark .media-size-medium,\nhtml.dark .media-size-small,\nhtml.dark .quoted-tweet .media-size-medium,\nhtml.dark .quoted-tweet .media-size-small,\nhtml.dark .tweet-detail-media .media-item,\nhtml.dark .tweet-detail-media .media-preview {\n  border-radius: 2px;\n}\nhtml.dark .is-wide-columns .column {\n  width: 371px;\n  margin-right: 5px;\n}\nhtml.dark .app-nav-link,\nhtml.dark .app-navigator a,\nhtml.dark .column-header-link,\nhtml.dark .column-nav-link {\n  color: gray;\n}\nhtml.dark .app-search-fake,\nhtml.dark .is-condensed .tweet-button {\n  color: gray;\n  background: #0d0d0d;\n  border: 0;\n}\nhtml.dark .video-overlay {\n  color: #0d0d0d;\n}\nhtml.dark .icon-twitter-blue-color {\n  color: #89b7ff52;\n}\nhtml.dark .column-header,\nhtml.dark .column-header-temp,\nhtml.dark .column-header-title {\n  height: 30px;\n  line-height: 30px;\n}\nhtml.dark .sprite-drag-vertical {\n  height: 10px;\n}\nhtml.dark .column-title {\n  font-size: 12px;\n}\nhtml.dark .column-title .attribution {\n  padding: 0 0 0 8px;\n  font-size: 16px;\n}\nhtml.dark .column-title-back .Icon,\nhtml.dark .column-title-back .icon {\n  top: 15px;\n}\nhtml.dark .tweet-detail-actions,\nhtml.dark .tweet-stats {\n  border-top: 1px solid #0d0d0d;\n}\nhtml.dark .med-embeditem {\n  position: relative;\n  top: 0;\n  bottom: unset;\n  min-height: calc(100vh - 150px);\n  filter: grayscale(1) brightness(.8);\n}\nhtml.dark .is-loaded {\n  filter: none;\n}\nhtml.dark .med-embeditem .l-table {\n  min-height: calc(100vh - 150px);\n}\nhtml.dark .med-tweet {\n  position: relative;\n  left: 50%;\n  width: calc(100% - 105px);\n  max-width: 700px;\n  margin-top: 24px;\n  background: #0000008a;\n  border-radius: 2px;\n  transform: translateX(-50%);\n}\nhtml.dark .mdl.s-full {\n  top: 8px;\n  width: max-content;\n  max-width: 90%;\n  height: max-content;\n  min-height: calc(100vh - 20px);\n  margin-bottom: 8px;\n  padding: 0 5px;\n}\nhtml.dark .med-tray {\n  padding-right: 30px;\n  padding-left: 30px;\n}\nhtml.dark .mdl-media-next,\nhtml.dark .mdl-media-prev {\n  top: 8px;\n  width: 30px;\n  height: calc(100% - 30px);\n  background: 0 0;\n}\nhtml.dark .mdl {\n  box-shadow: 0 0 5px #0d0d0d;\n}\nhtml.dark .media-img {\n  max-width: 100% !important;\n  max-height: calc(100vh - 60px) !important;\n}\nhtml.dark .icon-close {\n  margin-top: -7px;\n  margin-right: -6px;\n}\nhtml.dark .med-fullpanel {\n  background: 0 0;\n  border: 1px solid #0d0d0d;\n  border-radius: 2px;\n  box-shadow: 0 0 30px #000;\n  backdrop-filter: blur(6px);\n}\nhtml.dark .med-flaglink,\nhtml.dark .med-origlink {\n  margin: 0 48px;\n}\nhtml.dark .is-wide-columns .app-columns {\n  padding-left: 0;\n}\nhtml.dark .app-header.is-condensed .app-header-inner,\nhtml.dark .is-condensed .app-header {\n  width: 40px;\n  min-width: 40px;\n  padding: 0;\n}\nhtml.dark .padding-h--16,\nhtml.dark .padding-hxl {\n  padding-left: 5px !important;\n}\nhtml.dark .app-nav-tab {\n  margin-left: -5px;\n}\nhtml.dark .margin-l--8,\nhtml.dark .margin-lm {\n  margin-left: -2px !important;\n}\nhtml.dark .with-nav-border-t:before {\n  top: -10px;\n  left: 2px;\n  border-top: 1px solid #4d4d4d;\n}\nhtml.dark .drawer {\n  display: none;\n}\nhtml.dark .is-condensed .app-content {\n  left: 40px;\n}\nhtml.dark .med-fullpanel iframe {\n  width: calc(1.7778 * (100vh - 140px));\n  max-width: unset;\n  height: calc(100vh - 140px);\n  max-height: unset;\n}\nhtml.dark .avatar.size36 {\n  width: 30px;\n  height: 30px;\n}\nhtml.dark .nav-user-info {\n  left: 3px;\n}\n#open-modal video {\n  width: unset;\n  height: unset;\n}\n}",
+    "usercssData": {
+      "name": "TweetDeck Ultra Dark",
+      "namespace": "USO Archive",
+      "author": "IgChi",
+      "description": "⚠ Enable Dark Theme in tweetdeck Settings______________________________________THANK YOU FOR YOUR DONATION 🙏",
+      "version": "20220520.20.4",
+      "license": "CC-BY-4.0",
+      "preprocessor": "uso"
+    },
+    "author": "IgChi",
+    "description": "⚠ Enable Dark Theme in tweetdeck Settings______________________________________THANK YOU FOR YOUR DONATION 🙏",
+    "name": "TweetDeck Ultra Dark",
+    "originalDigest": "b08b0f851ba2b9e30c3e3409607b4ee1a5a39651",
+    "_id": "a2b48f92-78f9-432b-b192-4fe90db8938b",
+    "_rev": 1683992539674,
+    "installationUrl": "https://uso.kkx.one/style/182320",
+    "id": 9
   }
 ]
