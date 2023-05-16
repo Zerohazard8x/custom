@@ -11,7 +11,6 @@
       "newStyleAsUsercss": true,
       "styleViaXhr": false,
       "patchCsp": false,
-      "urlInstaller": true,
       "config.autosave": true,
       "schemeSwitcher.enabled": "system",
       "schemeSwitcher.nightStart": "18:00",
@@ -50,16 +49,16 @@
       "editor.keyMap": "sublime",
       "editor.theme": "default",
       "editor.beautify": {
-        "end_with_newline": false,
-        "indent_conditional": true,
-        "indent_mozdoc": true,
-        "newline_after_open_brace": true,
-        "newline_before_close_brace": true,
+        "selector_separator_newline": true,
         "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
         "newline_between_properties": true,
+        "newline_before_close_brace": true,
         "newline_between_rules": false,
         "preserve_newlines": true,
-        "selector_separator_newline": true
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -118,7 +117,7 @@
     "name": "MacType grayscale rendering fix + other fixes",
     "updateDate": 1683989462373,
     "_id": "27153fc8-a795-4972-b5db-0c46f5d0c79d",
-    "_rev": 1683992186137,
+    "_rev": 1683989462373,
     "id": 3,
     "exclusions": [
       "https://www.bing.com/*"
@@ -147,7 +146,7 @@
     "name": "3/28/2023, 8:38:51 PM",
     "originalDigest": "5a5ee8edb711e56ef93b25ba5cb43f61d7cf8e71",
     "_id": "95c63af1-3a16-40fc-8854-2d526a2c4f60",
-    "_rev": 1683992186138,
+    "_rev": 1683812606648,
     "installationUrl": "https://userstyles.world/style/9100",
     "id": 5
   },
@@ -219,7 +218,7 @@
     "name": "Clean Bing homepage",
     "originalDigest": "bdf60c02a094ec2e14dfc991e0df26a2610ee46c",
     "_id": "36d4f41f-95b0-4e9b-85b9-b4e31df79321",
-    "_rev": 1683992186139,
+    "_rev": 1683977498425,
     "installationUrl": "https://userstyles.world/style/5889",
     "id": 6
   },
@@ -246,7 +245,7 @@
     "name": "Fluent Bing",
     "originalDigest": "3e47a2ccd9eec17c5578272f0e1c9b052f9f3a3c",
     "_id": "22e2fcc7-2af1-4a3e-85f2-af738b7d5c11",
-    "_rev": 1684160052843,
+    "_rev": 1684153877571,
     "installationUrl": "https://userstyles.world/style/9831",
     "id": 10
   },
@@ -490,7 +489,35 @@
     "name": "Messenger Dark",
     "originalDigest": "0098edb5e0e22dd7c12d6c5b0b0314ebb3349d98",
     "_id": "eba488f0-ec7a-420b-bf75-77d594d773b1",
-    "_rev": 1684163193863,
-    "id": 11
+    "_rev": 1684163270682,
+    "id": 11,
+    "etag": "W/\"b3e8b9306e15809244687d241604b8b28b83a9cc\""
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://userstyles.world/api/style/9837.user.css",
+    "url": "https://userstyles.world/style/9837",
+    "installDate": 1684203534937,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           New Bing background\n@namespace      bing.com\n@version        1.0.0\n@description    Chat BG for Bing\n@author         DKoala1087\n==/UserStyle== */\n\n@-moz-document domain(\"bing.com\") {\nbody {\n    background:radial-gradient(61.04% 89.69% at 100% 100%, rgba(200, 250, 255, 0.08) 0%, rgba(28, 210, 229, 0.08) 40.63%, rgba(28, 210, 229, 0) 100%), radial-gradient(43.78% 64.34% at 60.31% 100%, rgba(23, 74, 228, 0.08) 0%, rgba(23, 74, 228, 0) 100%), linear-gradient(180deg, rgba(23, 74, 228, 0) 29.44%, rgba(23, 74, 228, 0.06) 100%), linear-gradient(90deg, #F3F3F7 0%, #EBF0F9 100%)\n}\n#b_header {\n    padding: 18px 0 0 0;\n    background: #ffffff00;\n}\n#b_results>li {\n    background-color: #fff0;\n}\n#b_wpt_insights {\n    box-shadow: 0 0 0 1px rgba(0,0,0,.05),0 2px 3px 0 rgba(0,0,0,.1);\n    border-radius: 6px;\n    margin: 0 -20px 20px;\n    padding-top: 20px;\n    background: rgba(255, 255, 255, 0.7);\n}\n.l_ecrd_ftr {\n    display: flex;\n    padding: 16px 20px;\n    position: relative;\n    background: rgba(255, 255, 255, 0.7) !important;\n    border-bottom-left-radius: 6px;\n    border-bottom-right-radius: 6px;\n}\n.l_ecrd_a1 {\n    padding: 16px 20px;\n    background: rgba(255, 255, 255, 0.7) !important;\n}\n.lite-entcard-blk > div:not(.l_ecrd_bkg_img) {\n    position: relative;\n    background: rgba(255, 255, 255, 0.7) !important;\n}\n.lite-entcard-main {\n    border: 1px solid rgba(0, 0, 0, 0.0578) !important;\n    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04) !important;\n}\n.lite-entcard-exp {\n    background-color: #fff0;\n    clear: both;\n    overflow: hidden;\n    padding: 10px 10px 0 10px;\n    position: relative;\n}\n#b_content .ans_nws .na_cnt .na_ccw.tc {\n    position: relative;\n    box-sizing: content-box;\n    display: block;\n    height: 80px;\n    padding: 16px;\n    margin: 8px 0;\n    color: #444;\n    border-radius: 7px !important;\n    background: rgba(255, 255, 255, 0.7) !important;\n    box-shadow: 0 0 0 1px rgba(0,0,0,.05);\n}\n.lite-entcard-exp {\n    background-color: #fff0 !important;\n    clear: both;\n    overflow: hidden;\n    padding: 10px 10px 0 10px;\n    position: relative;\n}\n.nws_itm {\n    position: relative;\n    overflow: hidden;\n    box-shadow: 0 0 0 1px rgba(0,0,0,.05);\n    background-color: rgba(255, 255, 255, 0.7) !important;\n    margin-bottom: 12px;\n    border-radius: 7px !important;\n}\n#tob_rail_container {\n    position: relative;\n    margin-left: -20px;\n    margin-right: -20px;\n    padding: 16px 0;\n    box-sizing: border-box;\n    box-shadow: 0 0 0 1px rgba(0,0,0,.05);\n    border-radius: 7px;\n    background: rgba(255, 255, 255, 0.7);\n}\n.b-conclfb-wrapper {\n    display: none;\n    flex-direction: column;\n    align-items: flex-start;\n    padding: 12px;\n    background-color: rgba(255, 255, 255, 0.7);\n    border: 1px solid rgba(0, 0, 0, 0.0578);\n    box-sizing: border-box;\n    border-radius: 7px;\n    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);\n}\n.tl_cl {\n    position: relative;\n    box-shadow: 0 0 0 1px rgba(0,0,0,.05),0 2px 3px 0 rgba(0,0,0,.1);\n    border-radius: 6px;\n    background: rgba(255, 255, 255, 0.7);\n}\n.richrsrailtitle {\n    border-bottom: 1px solid rgba(0, 0, 0, 0.0803);\n    padding: 5px 19px;\n    margin: 0 -20px;\n}\n.richrsrailexpansion ul li, .richrsrailsugwrapper>div {\n    border-bottom: 1px solid rgba(0, 0, 0, 0.0803);\n}\n.richrswrapper {\n    box-shadow: 0 2px 3px rgba(0,0,0,.1),0 -1px 1px rgba(0,0,0,.1);\n    padding: 9px 19px 4px 19px;\n    margin: -10px -20px 24px -20px;\n    width: 100%;\n    border-radius: 7px;\n    border: 1px solid rgba(0, 0, 0, 0.0578);\n    background: rgba(255, 255, 255, 0.7);\n}\n#b_results #brsv3 .b_vList li a {\n    max-height: none;\n    min-height: 48px;\n    padding: 0 17px;\n    background: rgba(255, 255, 255, 0.7);\n    border-radius: 100px;\n    box-sizing: border-box;\n    display: flex;\n    align-items: center;\n}\n.df_alaskcarousel #relatedQnAListDisplay.openAnsWrapper .b_slidebar .slide, #df_listaa .df_topicqna.openAnsWrapper .b_slidebar .slide {\n    box-sizing: border-box;\n    width: 300px;\n    height: 248px;\n    margin-right: 8px;\n    display: inline-block;\n    background: rgba(255, 255, 255, 0.7);\n}\n.tl_cl .b_overlay .btn.next::before {\n    background: #ffffff00 !important;\n}\n.df_alaskcarousel.rqnaContainerwithfeedback .openans_gradient_div {\n    background: #ffffff00;\n}\n#b_pole .b_wpTabsWrapper {\n    background-color: #fff0 !important;\n    margin: 1px 0;\n    padding: 9px 0;\n}\n#b_content #b_pole .ent-dtab-content, #b_content #b_pole .ent-dtab-content > div:first-child {\n    background-color: #ffffff00 !important;\n}\n#b_pole .b_wpTabsWrapper:last-child {\n    padding-bottom: 9px;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.0803) !important;\n}\n#b_header {\n    border-bottom: 1px solid rgba(0, 0, 0, 0.0803);\n}\n.dg_b {\n    padding: 10px;\n    background-color: transparent;\n    margin-top: -8px;\n    display: inline-block;\n    width: calc(100% - 20px);\n}\n#rfPane {\n    background: transparent;\n    z-index: 3;\n    width: 100%;\n    left: 0;\n    min-width: 1177px;\n    padding-top: 5px;\n}\n.touchQuery .carousel .carousel-controls, .touchQuery .carousel .items, .touchQuery .carousel .item, .touchQuery .carousel .carousel-controls .nav_left, .touchQuery .carousel .carousel-controls .nav_right {\n    background: transparent;\n}\n.carousel, .carousel a {\n    color: #111;\n    background-color: transparent !important;\n}\n#b_context .b_ans, #b_context #wpc_ag {\n    background-color: transparent;\n}\n}",
+    "usercssData": {
+      "name": "New Bing background",
+      "namespace": "bing.com",
+      "version": "1.0.0",
+      "description": "Chat BG for Bing",
+      "author": "DKoala1087"
+    },
+    "author": "DKoala1087",
+    "description": "Chat BG for Bing",
+    "name": "New Bing background",
+    "originalDigest": "2c7839a4eb278c86249287aace048273d63a1488",
+    "_id": "542975a2-53ec-4430-9b38-d0bd894f9f07",
+    "_rev": 1684203534938,
+    "installationUrl": "https://userstyles.world/style/9837",
+    "id": 12
   }
 ]
