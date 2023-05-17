@@ -1,9 +1,11 @@
 {
-  "timeStamp": 1683715462170,
+  "timeStamp": 1684315270031,
   "version": "1.49.2",
   "userSettings": {
+    "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
-    "importedLists": []
+    "importedLists": [],
+    "popupPanelSections": 31
   },
   "selectedFilterLists": [
     "user-filters",
@@ -21,7 +23,9 @@
     "urlhaus-1",
     "plowe-0"
   ],
-  "hiddenSettings": {},
+  "hiddenSettings": {
+    "autoUpdatePeriod": 1
+  },
   "whitelist": [
     "/^((?!bing\\.com|dubz\\.co|reddit\\.com|tweetdeck\\.twitter\\.com).)*$/",
     "about-scheme",
