@@ -124,7 +124,7 @@
           "type": "select",
           "label": "Preset color theme",
           "name": "theme",
-          "value": null,
+          "value": "Gruvbox",
           "default": "Dark",
           "options": [
             {
@@ -337,7 +337,7 @@
     "name": "Messenger Dark",
     "originalDigest": "0098edb5e0e22dd7c12d6c5b0b0314ebb3349d98",
     "_id": "eba488f0-ec7a-420b-bf75-77d594d773b1",
-    "_rev": 1684306096331,
+    "_rev": 1684600010222,
     "id": 2,
     "etag": "W/\"b3e8b9306e15809244687d241604b8b28b83a9cc\""
   },
