@@ -349,7 +349,7 @@
         "code": ""
       }
     ],
-    "sourceCode": "/* ==UserStyle==\n@name           MacType grayscale rendering fix + other fixes\n@namespace      github.com/openstyles/stylus\n@version        1.0.2\n@description    https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484\n@author         github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + GPT\n==/UserStyle== */\n@-moz-document regexp(\".*\") {\n  body {\n    font-variant-east-asian: proportional-width !important;\n    font-feature-settings: \"palt\", \"hkna\" !important;\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\n    -ms-font-smoothing: antialiased !important; /* for IE */\n    text-rendering: optimizeLegibility !important;\n  }\n}\n\n/* Syntax: ((?!bing\\.com|dubz\\.co|reddit\\.com|tweetdeck\\.twitter\\.com).)* */\n@-moz-document regexp(\"((?!bing\\.com).)*\") {\n  html {\n    filter: opacity(100%) !important;\n  }\n}\n",
+    "sourceCode": "/* ==UserStyle==\n@name           MacType grayscale rendering fix + other fixes\n@namespace      github.com/openstyles/stylus\n@version        1.0.2\n@description    https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484\n@author         github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + GPT\n==/UserStyle== */\n\n/* Ligatures */\n/* body {\n  font-variant-ligatures: common-ligatures, contextual !important;\n}\n.example1 {\n  -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n  -moz-font-feature-settings: \"liga\", \"calt\" !important;\n  -o-font-feature-settings: \"liga\", \"calt\" !important;\n  font-feature-settings: \"liga\", \"calt\" !important;\n} */\n\n/* Readable numbers (slashed zero, numbers of equal height) */\n/* .example1 {\n  -webkit-font-feature-settings: \"lnum\", \"tnum\" !important;\n  -moz-font-feature-settings: \"lnum\", \"tnum\" !important;\n  -o-font-feature-settings: \"lnum\", \"tnum\" !important;\n  font-feature-settings: \"lnum\", \"tnum\" !important;\n}\n.example2 {\n  font-variant-numeric: lining-nums tabular-nums slashed-zero !important;\n} */\n\n@-moz-document regexp(\".*\") {\n  body {\n    font-variant-east-asian: proportional-width !important;\n    font-feature-settings: \"palt\", \"hkna\" !important;\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\n    -ms-font-smoothing: antialiased !important; /* for IE */\n    text-rendering: optimizeLegibility !important;\n  }\n}\n\n/* Syntax: ((?!bing\\.com|dubz\\.co|reddit\\.com|tweetdeck\\.twitter\\.com).)* */\n@-moz-document regexp(\"((?!bing\\.com).)*\") {\n  html {\n    filter: opacity(100%) !important;\n  }\n}\n",
     "usercssData": {
       "name": "MacType grayscale rendering fix + other fixes",
       "namespace": "github.com/openstyles/stylus",
@@ -360,9 +360,9 @@
     "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + GPT",
     "description": "https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484",
     "name": "MacType grayscale rendering fix + other fixes",
-    "updateDate": 1684813154666,
+    "updateDate": 1684922575824,
     "_id": "27153fc8-a795-4972-b5db-0c46f5d0c79d",
-    "_rev": 1684813154666,
+    "_rev": 1684922575824,
     "id": 3,
     "exclusions": [
       "https://www.bing.com/*"
