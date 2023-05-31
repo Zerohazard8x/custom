@@ -542,7 +542,166 @@
     "name": "Fluent Bing - Edit by Zerohazard8x",
     "updateDate": 1684812903954,
     "_id": "2aa75c0c-6abd-40f1-91bf-52cbca0ea311",
-    "_rev": 1684812968163,
+    "_rev": 1685532681741,
     "id": 16
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://userstyles.world/api/style/4734.user.css",
+    "url": "https://userstyles.world/style/4734",
+    "installDate": 1685412101820,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         Reddit colored comments\n@namespace    userstyles.world/user/vednoc\n@description  Customizable colored comments for Reddit.\n@author       vednoc <vednoc@pm.me> (https://github.com/vednoc)\n@version      1.2.0\n@license      MIT\n@preprocessor stylus\n\n@var range    lineWidth 'Line width' [2, 1, 8, 1]\n@var checkbox lineStyle 'Line color style: full or partial' 0\n@var checkbox hideLines 'Hide previous lines' 0\n\n@var range    oldLineWidth 'Old design line width' [2, 1, 8, 1]\n@var checkbox oldLineStyle 'Old design line border style: solid or dotted' 0\n\n@var color color1  'Level  1 color' #f07178\n@var color color2  'Level  2 color' #f78c6c\n@var color color3  'Level  3 color' #ffcb6b\n@var color color4  'Level  4 color' #f3ff89\n@var color color5  'Level  5 color' #c3e88d\n@var color color6  'Level  6 color' #8de89e\n@var color color7  'Level  7 color' #89ddff\n@var color color8  'Level  8 color' #82aaff\n@var color color9  'Level  9 color' #c792ea\n@var color color10 'Level 10 color' #9a91ea\n==/UserStyle== */\n\n@-moz-document domain('reddit.com') {\n    t = transparent\n    i = !important\n\n    // Set line width.\n    if lineWidth != 2 {\n        .threadline {\n            border-right-width: s('%spx', lineWidth) i\n        }\n    }\n\n    // Set mode for line style.\n    $mode = ()\n    if lineStyle {\n        $mode = '> div >'\n    }\n\n    for $i in 1..10 {\n        div[id^='t'] > :first-child,\n        div[id^='moreComments'] > :first-child,\n        div[id^='continueThread'] > :first-child {\n            $nth = s('%s', $i)\n\n            // Set line colors.\n            > :nth-child({ $nth }) { $mode } .threadline {\n                border-right-color: color + $i i\n            }\n\n            // Set previous lines.\n            if hideLines {\n                > :nth-child({ $nth }) > .threadline {\n                    border-right-color: t i\n                }\n            }\n        }\n    }\n\n    // Old design.\n    .comment .child,\n    .comment .showreplies {\n        // Set line width.\n        if oldLineWidth != 1 {\n            border-left-width: s('%spx', oldLineWidth) i\n        }\n\n        // Set line style.\n        if oldLineStyle == 0 {\n            border-left-style: solid i\n        }\n    }\n\n    $str = '.sitetable > .comment > .child '\n    for $i in 1..10 {\n        { $str } {\n            border-left-color: color + $i i\n        }\n\n        $str += '> .sitetable > .comment > .child '\n    }\n}\n",
+    "usercssData": {
+      "name": "Reddit colored comments",
+      "namespace": "userstyles.world/user/vednoc",
+      "description": "Customizable colored comments for Reddit.",
+      "author": "vednoc <vednoc@pm.me> (https://github.com/vednoc)",
+      "version": "1.2.0",
+      "license": "MIT",
+      "preprocessor": "stylus",
+      "vars": {
+        "lineWidth": {
+          "type": "range",
+          "label": "Line width",
+          "name": "lineWidth",
+          "value": null,
+          "default": 2,
+          "options": null,
+          "min": 1,
+          "max": 8,
+          "step": 1,
+          "units": null
+        },
+        "lineStyle": {
+          "type": "checkbox",
+          "label": "Line color style: full or partial",
+          "name": "lineStyle",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "hideLines": {
+          "type": "checkbox",
+          "label": "Hide previous lines",
+          "name": "hideLines",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "oldLineWidth": {
+          "type": "range",
+          "label": "Old design line width",
+          "name": "oldLineWidth",
+          "value": null,
+          "default": 2,
+          "options": null,
+          "min": 1,
+          "max": 8,
+          "step": 1,
+          "units": null
+        },
+        "oldLineStyle": {
+          "type": "checkbox",
+          "label": "Old design line border style: solid or dotted",
+          "name": "oldLineStyle",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "color1": {
+          "type": "color",
+          "label": "Level  1 color",
+          "name": "color1",
+          "value": null,
+          "default": "#f07178",
+          "options": null
+        },
+        "color2": {
+          "type": "color",
+          "label": "Level  2 color",
+          "name": "color2",
+          "value": null,
+          "default": "#f78c6c",
+          "options": null
+        },
+        "color3": {
+          "type": "color",
+          "label": "Level  3 color",
+          "name": "color3",
+          "value": null,
+          "default": "#ffcb6b",
+          "options": null
+        },
+        "color4": {
+          "type": "color",
+          "label": "Level  4 color",
+          "name": "color4",
+          "value": null,
+          "default": "#f3ff89",
+          "options": null
+        },
+        "color5": {
+          "type": "color",
+          "label": "Level  5 color",
+          "name": "color5",
+          "value": null,
+          "default": "#c3e88d",
+          "options": null
+        },
+        "color6": {
+          "type": "color",
+          "label": "Level  6 color",
+          "name": "color6",
+          "value": null,
+          "default": "#8de89e",
+          "options": null
+        },
+        "color7": {
+          "type": "color",
+          "label": "Level  7 color",
+          "name": "color7",
+          "value": null,
+          "default": "#89ddff",
+          "options": null
+        },
+        "color8": {
+          "type": "color",
+          "label": "Level  8 color",
+          "name": "color8",
+          "value": null,
+          "default": "#82aaff",
+          "options": null
+        },
+        "color9": {
+          "type": "color",
+          "label": "Level  9 color",
+          "name": "color9",
+          "value": null,
+          "default": "#c792ea",
+          "options": null
+        },
+        "color10": {
+          "type": "color",
+          "label": "Level 10 color",
+          "name": "color10",
+          "value": null,
+          "default": "#9a91ea",
+          "options": null
+        }
+      }
+    },
+    "author": "vednoc <vednoc@pm.me> (https://github.com/vednoc)",
+    "description": "Customizable colored comments for Reddit.",
+    "name": "Reddit colored comments",
+    "originalDigest": "0f7858b2374593c6a27421d6015c3c192222aa04",
+    "_id": "6f43f9dd-f3f1-42fe-90e8-0d6c62ab9f67",
+    "_rev": 1685412101821,
+    "installationUrl": "https://userstyles.world/style/4734",
+    "id": 17
   }
 ]
