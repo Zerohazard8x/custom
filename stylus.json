@@ -540,9 +540,9 @@
     "author": "DKoala1087 - Edited by Zerohazard8x",
     "description": "Fluent skin for Bing",
     "name": "Fluent Bing - Edit by Zerohazard8x",
-    "updateDate": 1684812903954,
+    "updateDate": 1685719736996,
     "_id": "2aa75c0c-6abd-40f1-91bf-52cbca0ea311",
-    "_rev": 1685532681741,
+    "_rev": 1685719736996,
     "id": 16
   },
   {
@@ -703,5 +703,56 @@
     "_rev": 1685412101821,
     "installationUrl": "https://userstyles.world/style/4734",
     "id": 17
+  },
+  {
+    "enabled": false,
+    "installDate": 1685719681363,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Fix Bing Chat Japanese font by Kenji Iguchi - Edit by Zerohazard8x\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Fix the Japanese font of New Bing Chat\n@author         Kenji Iguchi - Edited by Zerohazard8x\n==/UserStyle== */\n\n@-moz-document domain(\"bing.com\") {\n    :root *{\n        --cib-font-text: font-family: 'Segoe UI Variable Text', -apple-system, Roboto, SegoeUI, \"Segoe UI\", \"Helvetica Neue\", Helvetica, \"Meiryo UI\", Meiryo, Arial Unicode MS, sans-serif !important;\n    }  \n}",
+    "usercssData": {
+      "name": "Fix Bing Chat Japanese font by Kenji Iguchi - Edit by Zerohazard8x",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "Fix the Japanese font of New Bing Chat",
+      "author": "Kenji Iguchi - Edited by Zerohazard8x"
+    },
+    "author": "Kenji Iguchi - Edited by Zerohazard8x",
+    "description": "Fix the Japanese font of New Bing Chat",
+    "name": "Fix Bing Chat Japanese font by Kenji Iguchi - Edit by Zerohazard8x",
+    "updateDate": 1685719717884,
+    "_id": "57e93beb-5766-458f-853e-c3a5c97e286f",
+    "_rev": 1685719717884,
+    "id": 20
+  },
+  {
+    "enabled": false,
+    "updateUrl": "https://userstyles.world/api/style/8585.user.css",
+    "url": "https://userstyles.world/style/8585",
+    "installDate": 1685719703039,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Fix Bing Chat Japanese font\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Fix the Japanese font of New Bing Chat\n@author         Kenji Iguchi\n==/UserStyle== */\n\n@-moz-document domain(\"bing.com\") {\n    :root *{\n        --cib-font-text: font-family: -apple-system, Roboto, SegoeUI, \"Segoe UI\", \"Helvetica Neue\", Helvetica, \"Meiryo UI\", Meiryo, Arial Unicode MS, sans-serif !important;\n    }   \n}\n",
+    "usercssData": {
+      "name": "Fix Bing Chat Japanese font",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "Fix the Japanese font of New Bing Chat",
+      "author": "Kenji Iguchi"
+    },
+    "author": "Kenji Iguchi",
+    "description": "Fix the Japanese font of New Bing Chat",
+    "name": "Fix Bing Chat Japanese font",
+    "originalDigest": "641e7a094e4b25b5f5163d2c08d7a9cf6836f831",
+    "_id": "afa48df3-2c3e-4f12-b39f-c1fd8e4daa68",
+    "_rev": 1685719726760,
+    "installationUrl": "https://userstyles.world/style/8585",
+    "id": 21
   }
 ]
