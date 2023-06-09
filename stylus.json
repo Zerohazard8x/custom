@@ -77,7 +77,7 @@
       "editor.colorpicker": true,
       "editor.colorpicker.hexUppercase": false,
       "editor.colorpicker.hotkey": "",
-      "editor.colorpicker.color": "",
+      "editor.colorpicker.color": "#FC0",
       "editor.colorpicker.maxHeight": 300,
       "hotkey._execute_browser_action": "",
       "hotkey.openManage": "",
@@ -349,20 +349,20 @@
         "code": ""
       }
     ],
-    "sourceCode": "/* ==UserStyle==\n@name           MacType grayscale rendering fix + other fixes\n@namespace      github.com/openstyles/stylus\n@version        1.0.2\n@description    https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484\n@author         github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + GPT\n==/UserStyle== */\n\n/* Ligatures */\n/* body {\n  font-variant-ligatures: common-ligatures, contextual !important;\n}\n.example1 {\n  -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n  -moz-font-feature-settings: \"liga\", \"calt\" !important;\n  -o-font-feature-settings: \"liga\", \"calt\" !important;\n  font-feature-settings: \"liga\", \"calt\" !important;\n} */\n\n/* Readable characters (slashed zero, numbers of equal height, serif I) */\n/* .example1 {\n  -webkit-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  -moz-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  -o-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n}\n.example2 {\n  font-variant-numeric: lining-nums tabular-nums slashed-zero !important;\n} */\n\n@-moz-document regexp(\".*\") {\n  body {\n    font-variant-east-asian: proportional-width !important;\n    font-feature-settings: \"palt\", \"hkna\" !important;\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\n    -ms-font-smoothing: antialiased !important; /* for IE */\n    text-rendering: optimizeLegibility !important;\n  }\n}\n\n/* Syntax: ((?!bing\\.com|dubz\\.co|reddit\\.com|tweetdeck\\.twitter\\.com).)* */\n@-moz-document regexp(\"((?!bing\\.com).)*\") {\n  html {\n    filter: opacity(100%) !important;\n  }\n}\n",
+    "sourceCode": "/* ==UserStyle==\n@name           MacType grayscale rendering fix + other fixes\n@namespace      github.com/openstyles/stylus\n@version        1.0.2\n@description    https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484\n@author         github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM\n==/UserStyle== */\n\n/* Ligatures */\n/* body {\n  font-variant-ligatures: common-ligatures, contextual !important;\n}\n.example1 {\n  -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n  -moz-font-feature-settings: \"liga\", \"calt\" !important;\n  -o-font-feature-settings: \"liga\", \"calt\" !important;\n  font-feature-settings: \"liga\", \"calt\" !important;\n} */\n\n/* Readable characters (slashed zero, numbers of equal height, serif I) */\n/* .example1 {\n  -webkit-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  -moz-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  -o-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n}\n.example2 {\n  font-variant-numeric: lining-nums tabular-nums slashed-zero !important;\n} */\n\n@-moz-document regexp(\".*\") {\n  body, .ytp-caption-segment {\n    font-variant-east-asian: proportional-width !important;\n    font-feature-settings: \"palt\", \"hkna\" !important;\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\n    -ms-font-smoothing: antialiased !important; /* for IE */\n    text-rendering: optimizeLegibility !important;\n  }\n}\n\n/* Syntax: ((?!bing\\.com|dubz\\.co|reddit\\.com|tweetdeck\\.twitter\\.com).)* */\n@-moz-document regexp(\"((?!bing\\.com).)*\") {\n  html, .ytp-caption-segment {\n    filter: opacity(100%) !important;\n  }\n}\n",
     "usercssData": {
       "name": "MacType grayscale rendering fix + other fixes",
       "namespace": "github.com/openstyles/stylus",
       "version": "1.0.2",
       "description": "https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484",
-      "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + GPT"
+      "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM"
     },
-    "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + GPT",
+    "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM",
     "description": "https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484",
     "name": "MacType grayscale rendering fix + other fixes",
-    "updateDate": 1685538010703,
+    "updateDate": 1686322068466,
     "_id": "27153fc8-a795-4972-b5db-0c46f5d0c79d",
-    "_rev": 1685538010703,
+    "_rev": 1686322068467,
     "id": 3,
     "exclusions": [
       "https://www.bing.com/*"
@@ -705,7 +705,7 @@
     "id": 17
   },
   {
-    "enabled": false,
+    "enabled": true,
     "installDate": 1685719681363,
     "sections": [
       {
@@ -725,7 +725,7 @@
     "name": "Fix Bing Chat Japanese font by Kenji Iguchi - Edit by Zerohazard8x",
     "updateDate": 1685719717884,
     "_id": "57e93beb-5766-458f-853e-c3a5c97e286f",
-    "_rev": 1685719717884,
+    "_rev": 1685790587879,
     "id": 20
   },
   {
@@ -754,5 +754,30 @@
     "_rev": 1685719726760,
     "installationUrl": "https://userstyles.world/style/8585",
     "id": 21
+  },
+  {
+    "enabled": true,
+    "installDate": 1686320987799,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           youtube.com - 6/9/2023, 10:29:38 PM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A userstyle to change the font of YouTube captions\n@author         Zerohazard8x + LLM\n==/UserStyle== */\n\n@-moz-document domain(\"youtube.com\") {\n    /* youtube */\n    /* Class ytp-caption-segment  */\n    .ytp-caption-segment {\n        font-family: \"IBM Plex Sans\", \"YouTube Noto\", Roboto, \"Arial Unicode Ms\", Arial, Helvetica, Verdana, \"PT Sans Caption\", sans-serif !important;\n        font-weight: bold !important;\n        background: transparent !important;\n        color: rgb(255, 255, 0) !important;\n\t    fill: rgb(255, 255, 0) !important;\n        text-shadow: black 0px 0px 10px !important;\n    }  \n}",
+    "usercssData": {
+      "name": "youtube.com - 6/9/2023, 10:29:38 PM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A userstyle to change the font of YouTube captions",
+      "author": "Zerohazard8x + LLM"
+    },
+    "author": "Zerohazard8x + LLM",
+    "description": "A userstyle to change the font of YouTube captions",
+    "name": "youtube.com - 6/9/2023, 10:29:38 PM",
+    "updateDate": 1686322343475,
+    "_id": "f9ca7e61-60d9-4a26-aed2-bd53665a82a3",
+    "_rev": 1686322343475,
+    "id": 22,
+    "customName": "subtitles"
   }
 ]
