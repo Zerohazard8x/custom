@@ -50,16 +50,16 @@
       "editor.keyMap": "sublime",
       "editor.theme": "default",
       "editor.beautify": {
-        "end_with_newline": false,
-        "indent_conditional": true,
-        "indent_mozdoc": true,
-        "newline_after_open_brace": true,
-        "newline_before_close_brace": true,
+        "selector_separator_newline": true,
         "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
         "newline_between_properties": true,
+        "newline_before_close_brace": true,
         "newline_between_rules": false,
         "preserve_newlines": true,
-        "selector_separator_newline": true
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -337,7 +337,7 @@
     "name": "Messenger Dark",
     "originalDigest": "0098edb5e0e22dd7c12d6c5b0b0314ebb3349d98",
     "_id": "eba488f0-ec7a-420b-bf75-77d594d773b1",
-    "_rev": 1686663201127,
+    "_rev": 1686671913634,
     "id": 2,
     "etag": "W/\"b3e8b9306e15809244687d241604b8b28b83a9cc\""
   },
@@ -362,7 +362,7 @@
     "name": "MacType grayscale rendering fix + other fixes",
     "updateDate": 1686457445777,
     "_id": "27153fc8-a795-4972-b5db-0c46f5d0c79d",
-    "_rev": 1686663201375,
+    "_rev": 1686671914269,
     "id": 3,
     "exclusions": [
       "https://www.bing.com/*"
@@ -391,7 +391,7 @@
     "name": "3/28/2023, 8:38:51 PM",
     "originalDigest": "5a5ee8edb711e56ef93b25ba5cb43f61d7cf8e71",
     "_id": "95c63af1-3a16-40fc-8854-2d526a2c4f60",
-    "_rev": 1686663201376,
+    "_rev": 1686671914275,
     "installationUrl": "https://userstyles.world/style/9100",
     "id": 5
   },
@@ -463,7 +463,7 @@
     "name": "Clean Bing homepage",
     "originalDigest": "bdf60c02a094ec2e14dfc991e0df26a2610ee46c",
     "_id": "36d4f41f-95b0-4e9b-85b9-b4e31df79321",
-    "_rev": 1686663201377,
+    "_rev": 1686671914281,
     "installationUrl": "https://userstyles.world/style/5889",
     "id": 6
   },
@@ -490,7 +490,7 @@
     "name": "New Bing background",
     "originalDigest": "a1d2a03213f6c5225c0e8fce7848496633915090",
     "_id": "542975a2-53ec-4430-9b38-d0bd894f9f07",
-    "_rev": 1686663201418,
+    "_rev": 1686671914407,
     "installationUrl": "https://userstyles.world/style/9837",
     "id": 12,
     "updateDate": 1686408781435
@@ -650,7 +650,7 @@
     "name": "Reddit colored comments",
     "originalDigest": "0f7858b2374593c6a27421d6015c3c192222aa04",
     "_id": "6f43f9dd-f3f1-42fe-90e8-0d6c62ab9f67",
-    "_rev": 1686663201418,
+    "_rev": 1686671914412,
     "installationUrl": "https://userstyles.world/style/4734",
     "id": 17
   },
@@ -662,7 +662,7 @@
         "code": ""
       }
     ],
-    "sourceCode": "/* ==UserStyle==\n@name           font changes\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"youtube.com\") {\n    /* youtube subtitles */\n    /* Class ytp-caption-segment  */\n    .ytp-caption-segment {\n        font-family: \"IBM Plex Sans\", \"YouTube Noto\", Roboto, \"Arial Unicode Ms\",\n        Arial, Helvetica, Verdana, \"PT Sans Caption\", sans-serif !important;\n        font-weight: bold !important;\n        background: transparent !important;\n        color: rgb(255, 255, 0) !important;\n        fill: rgb(255, 255, 0) !important;\n        text-shadow: black 0px 0px 10px !important;\n    }\n}\n\n@-moz-document domain(\"messenger.com\") {\n    /* messenger */\n    .x9f619 {\n        font-family: \"IBM Plex Sans\", Segoe UI, Segoe UI Historic, Helvetica, Arial,\n        sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"facebook.com\") {\n    /* facebook */\n    .x9f619 {\n        font-family: \"IBM Plex Sans\", Segoe UI, Segoe UI Historic, Helvetica, Arial,\n        sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"bing.com\") {\n    /* Bing */\n    .b_scopebar > ul li {\n        /* Undo small caps */\n        text-transform: none !important;\n        font-size: 14px !important;\n    }\n\n    .b_searchboxForm {\n        border-radius: 8px !important; /* Box searchbar corners */\n        font-family: \"Roboto\", Arial, sans-serif !important;\n    }\n\n    .scopes {\n        font-family: \"Roboto\", \"Segoe UI\", Segoe, Tahoma, Arial, Verdana, sans-serif !important;\n    }\n\n    .cdxAcrylic,\n    #sb_form,\n    .b_vPanel,\n    .notHP,\n    .no-margins {\n        font-family: \"Roboto\", \"Segoe UI\", \"Roboto\", Arial, Helvetica, sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"github.com\") {\n  /* Github */\n    .page-responsive,\n    .Box-sc-g0xbh4-0,\n    .container-lg {\n        font-family: \"IBM Plex Sans JP\", \"IBM Plex Sans Thai\", \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n        \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\",\n        \"Segoe UI Emoji\" !important;\n    }\n\n    .file-info,\n    .sha-block,\n    .sha,\n    .diffstat,\n    .text-mono,\n    .blob-code-inner,\n    .blob-num,\n    .react-blob-print-hide,\n    #commit-summary-input, \n    .branch-name,\n    pre {\n        font-family: \"Hack\", \"Bitstream Vera Sans Mono\", \"BitstromVera\",\n        \"DejaVu Sans Mono\", \"Source Code Pro\", \"Cascadia Code\", \"Cascadia Mono\",\n        \"CaskaydiaCove\", \"Fira Code\", \"Fira Mono\", Menlo, Consolas, monospace !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n\n        /* -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n        -moz-font-feature-settings: \"liga\", \"calt\" !important;\n        -o-font-feature-settings: \"liga\", \"calt\" !important; */\n    }\n    \n    .file-info,\n    .sha-block,\n    .sha,\n    .diffstat,\n    .blob-code-inner,\n    .blob-num,\n    .react-blob-print-hide,\n    pre {\n        font-size: 16px;\n    }\n}\n",
+    "sourceCode": "/* ==UserStyle==\n@name           font changes\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"youtube.com\") {\n    /* youtube subtitles */\n    /* Class ytp-caption-segment  */\n    .ytp-caption-segment {\n        font-family: \"IBM Plex Sans\", \"YouTube Noto\", Roboto, \"Arial Unicode Ms\",\n        Arial, Helvetica, Verdana, \"PT Sans Caption\", sans-serif !important;\n        font-weight: bold !important;\n        background: transparent !important;\n        color: rgb(255, 255, 0) !important;\n        fill: rgb(255, 255, 0) !important;\n        text-shadow: black 0px 0px 10px !important;\n    }\n}\n\n@-moz-document domain(\"messenger.com\") {\n    /* messenger */\n    .x9f619 {\n        font-family: \"IBM Plex Sans\", Segoe UI, Segoe UI Historic, Helvetica, Arial,\n        sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"facebook.com\") {\n    /* facebook */\n    .x9f619 {\n        font-family: \"IBM Plex Sans\", Segoe UI, Segoe UI Historic, Helvetica, Arial,\n        sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"bing.com\") {\n    /* Bing */\n    .b_scopebar > ul li {\n        /* Undo small caps */\n        text-transform: none !important;\n        font-size: 14px !important;\n    }\n\n    .b_searchboxForm {\n        border-radius: 8px !important; /* Box searchbar corners */\n        font-family: \"Roboto\", \"Segoe UI\", Arial, sans-serif !important;\n    }\n    \n    .mmvdp_meta_top, .text, .b_scopebar, .suggestion-title, #vvlb, .mc_vtvc_meta_row, .b_smText, #b_header, .tit, #b_content{\n        font-family: \"Roboto\", \"segoe ui\", arial, helvetica, sans-serif !important;\n    }\n    \n    .mc_vtvc_title, .title, .metadataRow {\n        font-family: \"Roboto\", \"segoe ui\", helvetica, sans-serif !important;\n    }\n    \n    .scopes {\n        font-family: \"Roboto\", \"Segoe UI\", Segoe, Tahoma, Arial, Verdana, sans-serif !important;\n    }\n\n    .cdxAcrylic,\n    #sb_form,\n    .b_vPanel,\n    .notHP,\n    .no-margins {\n        font-family: \"Roboto\", \"Segoe UI\", \"Roboto\", Arial, Helvetica, sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"github.com\") {\n  /* Github */\n    .page-responsive,\n    .Box-sc-g0xbh4-0,\n    .container-lg {\n        font-family: \"IBM Plex Sans JP\", \"IBM Plex Sans Thai\", \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n        \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\",\n        \"Segoe UI Emoji\" !important;\n    }\n\n    .file-info,\n    .sha-block,\n    .sha,\n    .diffstat,\n    .text-mono,\n    .blob-code-inner,\n    .blob-num,\n    .react-blob-print-hide,\n    #commit-summary-input, \n    .branch-name,\n    pre {\n        font-family: \"Hack\", \"Bitstream Vera Sans Mono\", \"BitstromVera\",\n        \"DejaVu Sans Mono\", \"Source Code Pro\", \"Cascadia Code\", \"Cascadia Mono\",\n        \"CaskaydiaCove\", \"Fira Code\", \"Fira Mono\", Menlo, Consolas, monospace !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n\n        /* -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n        -moz-font-feature-settings: \"liga\", \"calt\" !important;\n        -o-font-feature-settings: \"liga\", \"calt\" !important; */\n    }\n    \n    .file-info,\n    .sha-block,\n    .sha,\n    .diffstat,\n    .blob-code-inner,\n    .blob-num,\n    .react-blob-print-hide,\n    pre {\n        font-size: 16px;\n    }\n}\n",
     "usercssData": {
       "name": "font changes",
       "namespace": "github.com/openstyles/stylus",
@@ -673,14 +673,14 @@
     "author": "Me",
     "description": "A new userstyle",
     "name": "font changes",
-    "updateDate": 1686670250007,
+    "updateDate": 1686673491885,
     "_id": "fe9e2a9d-ee6a-4c5d-919f-eeae30b19394",
-    "_rev": 1686670250007,
+    "_rev": 1686673491885,
     "id": 23,
     "customName": "personal style"
   },
   {
-    "enabled": true,
+    "enabled": false,
     "installDate": 1686462819676,
     "sections": [
       {
@@ -700,7 +700,7 @@
     "name": "personal tweetdeck",
     "updateDate": 1686670221655,
     "_id": "db24cc12-d943-45a6-aa11-ea188a05710f",
-    "_rev": 1686670221655,
+    "_rev": 1686671921274,
     "id": 24
   },
   {
@@ -726,7 +726,7 @@
     "name": "Fix Bing Chat Japanese font",
     "originalDigest": "641e7a094e4b25b5f5163d2c08d7a9cf6836f831",
     "_id": "8e17f7f7-97ea-4e11-a09d-4bf9d8f625bd",
-    "_rev": 1686663201436,
+    "_rev": 1686671914514,
     "installationUrl": "https://userstyles.world/style/8585",
     "id": 26
   }
