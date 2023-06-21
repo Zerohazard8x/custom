@@ -29,7 +29,7 @@
       "manage.onlyEnabled.invert": false,
       "manage.onlyLocal.invert": false,
       "manage.onlyUsercss.invert": false,
-      "manage.actions.expanded": true,
+      "manage.actions.expanded": false,
       "manage.backup.expanded": true,
       "manage.filters.expanded": true,
       "manage.minColumnWidth": 750,
@@ -50,16 +50,16 @@
       "editor.keyMap": "sublime",
       "editor.theme": "default",
       "editor.beautify": {
-        "end_with_newline": false,
-        "indent_conditional": true,
-        "indent_mozdoc": true,
-        "newline_after_open_brace": true,
-        "newline_before_close_brace": true,
+        "selector_separator_newline": true,
         "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
         "newline_between_properties": true,
+        "newline_before_close_brace": true,
         "newline_between_rules": false,
         "preserve_newlines": true,
-        "selector_separator_newline": true
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -337,36 +337,9 @@
     "name": "Messenger Dark",
     "originalDigest": "0098edb5e0e22dd7c12d6c5b0b0314ebb3349d98",
     "_id": "eba488f0-ec7a-420b-bf75-77d594d773b1",
-    "_rev": 1686663201127,
+    "_rev": 1684600010222,
     "id": 2,
     "etag": "W/\"b3e8b9306e15809244687d241604b8b28b83a9cc\""
-  },
-  {
-    "enabled": true,
-    "installDate": 1682863550552,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "/* ==UserStyle==\n@name           MacType grayscale rendering fix + other fixes\n@namespace      github.com/openstyles/stylus\n@version        1.0.2\n@description    https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484\n@author         github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM\n==/UserStyle== */\n\n/* Ligatures */\n/* body {\n  font-variant-ligatures: common-ligatures, contextual !important;\n}\n.example1 {\n  -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n  -moz-font-feature-settings: \"liga\", \"calt\" !important;\n  -o-font-feature-settings: \"liga\", \"calt\" !important;\n  font-feature-settings: \"liga\", \"calt\" !important;\n} */\n\n/* Readable characters (slashed zero, numbers of equal height, serif I) */\n/* .example1 {\n  -webkit-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  -moz-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  -o-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n  font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n}\n.example2 {\n  font-variant-numeric: lining-nums tabular-nums slashed-zero !important;\n} */\n\n@-moz-document regexp(\".*\") {\n  html,\n  body,\n  :root {\n    font-variant-east-asian: proportional-width !important;\n    font-feature-settings: \"palt\", \"hkna\" !important;\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\n    -ms-font-smoothing: antialiased !important; /* for IE */\n    text-rendering: optimizeLegibility !important;\n  }\n}\n\n@-moz-document regexp(\"((?!bing\\.com).)*\") {\n  /* MacType fix */\n  /* Syntax: ((?!bing\\.com|dubz\\.co|reddit\\.com|tweetdeck\\.twitter\\.com).)* */\n  html {\n    filter: opacity(100%) !important;\n  }\n}\n",
-    "usercssData": {
-      "name": "MacType grayscale rendering fix + other fixes",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "1.0.2",
-      "description": "https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484",
-      "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM"
-    },
-    "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM",
-    "description": "https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484",
-    "name": "MacType grayscale rendering fix + other fixes",
-    "updateDate": 1686736104104,
-    "_id": "27153fc8-a795-4972-b5db-0c46f5d0c79d",
-    "_rev": 1687105513682,
-    "id": 3,
-    "exclusions": [
-      "https://www.bing.com/*"
-    ]
   },
   {
     "enabled": true,
@@ -391,7 +364,7 @@
     "name": "3/28/2023, 8:38:51 PM",
     "originalDigest": "5a5ee8edb711e56ef93b25ba5cb43f61d7cf8e71",
     "_id": "95c63af1-3a16-40fc-8854-2d526a2c4f60",
-    "_rev": 1686663201376,
+    "_rev": 1684506376516,
     "installationUrl": "https://userstyles.world/style/9100",
     "id": 5
   },
@@ -463,7 +436,7 @@
     "name": "Clean Bing homepage",
     "originalDigest": "bdf60c02a094ec2e14dfc991e0df26a2610ee46c",
     "_id": "36d4f41f-95b0-4e9b-85b9-b4e31df79321",
-    "_rev": 1686663201377,
+    "_rev": 1686634736908,
     "installationUrl": "https://userstyles.world/style/5889",
     "id": 6
   },
@@ -490,7 +463,7 @@
     "name": "New Bing background",
     "originalDigest": "a1d2a03213f6c5225c0e8fce7848496633915090",
     "_id": "542975a2-53ec-4430-9b38-d0bd894f9f07",
-    "_rev": 1686663201418,
+    "_rev": 1686631254169,
     "installationUrl": "https://userstyles.world/style/9837",
     "id": 12,
     "updateDate": 1686408781435
@@ -650,62 +623,9 @@
     "name": "Reddit colored comments",
     "originalDigest": "0f7858b2374593c6a27421d6015c3c192222aa04",
     "_id": "6f43f9dd-f3f1-42fe-90e8-0d6c62ab9f67",
-    "_rev": 1686663201418,
+    "_rev": 1685412101821,
     "installationUrl": "https://userstyles.world/style/4734",
     "id": 17
-  },
-  {
-    "enabled": true,
-    "installDate": 1686461174292,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "/* ==UserStyle==\n@name           font changes\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n:root {\n    /* Define variables */\n    --plex-base: \"IBM Plex Sans JP\", \"IBM Plex Sans Thai\", \"IBM Plex Sans\";\n    --monospace: \"Hack\", \"Bitstream Vera Sans Mono\", \"BitstromVera\",\n        \"DejaVu Sans Mono\", \"Cascadia Code\", \"Cascadia Mono\", \"CaskaydiaCove\",\n        \"Source Code Pro\", \"Segoe UI Mono\", \"Fira Code\", \"Fira Mono\", Menlo;\n}\n\n@-moz-document domain(\"youtube.com\") {\n    /* youtube - Goal: subtitles */\n    /* Class ytp-caption-segment  */\n    .ytp-caption-segment {\n        font-family: var(--plex-base), \"YouTube Noto\", Roboto,\n            \"Arial Unicode Ms\", Arial, Helvetica, Verdana, \"PT Sans Caption\",\n            sans-serif !important;\n        font-weight: bold !important;\n\n        /* smoothing */\n        -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\n        -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\n        -ms-font-smoothing: antialiased !important; /* for IE */\n        text-rendering: optimizeLegibility !important;\n    }\n}\n\n@-moz-document domain(\"facebook.com\"), domain(\"messenger.com\") {\n    /* facebook, messenger - goal: change all fonts */\n    .system-fonts--body {\n        font-family: var(--plex-base), Segoe UI, Segoe UI Historic, Helvetica,\n            Arial, sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"bing.com\") {\n    /* Bing - Goal: Make sure website uses one single font + \"fluent\" changes */\n    /* Var initializations */\n    :root {\n        --font-text: \"Roboto\", \"Segoe UI Variable Text\", \"Segoe UI\", SegoeUI,\n            Segoe, Arial, sans-serif;\n        --font-display: \"Roboto\", \"Segoe UI Variable Display\", \"Segoe UI\",\n            SegoeUI, Segoe, Arial, sans-serif;\n        --font-small: \"Roboto\", \"Segoe UI Variable Small\", \"Segoe UI\", SegoeUI,\n            Segoe, Arial, sans-serif;\n        --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png);\n    }\n\n    /* Japanese font fix by Kenji Iguchi */\n    :root * {\n        /* Redefine variable cib-font-text */\n        --cib-font-text: font-family: -apple-system, Roboto, \"Segoe UI Variable Text\", SegoeUI, \"Segoe UI\", \"Helvetica Neue\", Helvetica, \"Meiryo UI\", Meiryo, Arial Unicode MS, sans-serif !important;\n    }\n\n    /* Navigation bar */\n    /* All ul and li under a .b_scopebar element */\n    .b_scopebar > ul li {\n        /* Undo small caps */\n        text-transform: none !important;\n        font-size: 14px !important;\n    }\n\n    .b_scopebar ul {\n        height: 45px !important;\n    }\n\n    .b_scopebar li,\n    .b_scopebar #b-scopeListItem-menu {\n        line-height: 40px !important;\n    }\n\n    /* Navigation bar \"pill\" */\n    .b_scopebar li::after {\n        margin-top: -1px !important;\n    }\n\n    /* Change logo (at least on results pages) */\n    .b_logo {\n        height: 50px !important;\n        margin-top: 0px !important;\n        width: 150px !important;\n        filter: opacity(100%) !important;\n    }\n\n    .b_logo::after {\n        content: var(--logo-url) !important;\n        transform-origin: 47px 8px !important;\n        transform: scale(0.1) !important;\n        filter: opacity(100%) !important;\n    }\n\n    .icon::after {\n        content: none !important;\n        filter: opacity(100%) !important;\n    }\n\n    /* Fonts */\n    .b_searchboxForm {\n        border-radius: 8px !important; /* Box searchbar corners */\n        font-family: var(--font-text) !important;\n    }\n\n    #b_content,\n    #b_header,\n    #sb_form,\n    #vvlb,\n    .b_scopebar,\n    .b_smText,\n    .cdxAcrylic,\n    .img_info,\n    .infpd,\n    .mc_vtvc_meta_row,\n    .mc_vtvc_title,\n    .metadataRow,\n    .mmvdp_meta_top,\n    .notHP,\n    .scopes,\n    .suggestion-title,\n    .text,\n    .tit,\n    .title,\n    .no-margins,\n    .b_title > h2 {\n        font-family: var(--font-text) !important;\n    }\n\n    #sw_as {\n        font-family: Roboto, \"Segoe UI Variable Text\", \"Segoe UI\", SegoeUI,\n            Segoe !important;\n        filter: opacity(100%) !important;\n    }\n\n    /* Variable Display */\n    .l_ecrd_txt_heros,\n    .l_ecrd_txt_hlt,\n    .container-title {\n        font-family: var(--font-display) !important;\n        filter: opacity(100%) !important;\n    }\n\n    /* Variable Small */\n    .b_vPanel,\n    .l_ecrd_ftr_txt,\n    .b_footnote,\n    .rd_gtrtb_nav_item,\n    .caption-2-strong,\n    .recommendationsTableTitle > h2 {\n        font-family: var(--font-small) !important;\n        filter: opacity(100%) !important;\n    }\n\n    .sa_rm {\n        font-family: Roboto, \"Segoe UI Variable Small\", \"Segoe UI\", SegoeUI,\n            Segoe, \"Arial\", \"Helvetica\", \"sans-serif\" !important;\n        filter: opacity(100%) !important;\n    }\n}\n@-moz-document domain(\"github.com\") {\n    /* Github - Goal: Change all fonts, change font and formatting of code blocks */\n    .page-responsive,\n    .Box-sc-g0xbh4-0,\n    .container-lg {\n        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,\n            \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif,\n            \"Apple Color Emoji\", \"Segoe UI Emoji\" !important;\n    }\n\n    #commit-summary-input,\n    .blob-code-inner,\n    .blob-num,\n    .branch-name,\n    .diffstat,\n    .file-info,\n    .react-blob-print-hide,\n    .sha,\n    .sha-block,\n    .text-mono,\n    .input-monospace,\n    .markdown-body pre,\n    .markdown-body code {\n        font-family: var(--monospace), \"JetBrains Mono\", \"JetBrains Mono NL\",\n            \"Input Mono\", Consolas, monospace !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n\n        /* -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n        -moz-font-feature-settings: \"liga\", \"calt\" !important;\n        -o-font-feature-settings: \"liga\", \"calt\" !important; */\n    }\n\n    .file-info,\n    .sha-block,\n    .sha,\n    .diffstat,\n    .blob-code-inner,\n    .blob-num,\n    .react-blob-print-hide,\n    .markdown-body pre,\n    .markdown-body code {\n        font-size: 16px !important;\n    }\n}\n\n@-moz-document domain(\"discord.com\") {\n    /* Discord - Goal: Change font and formatting of code blocks*/\n    .hljs,\n    .codeLine-2C-9aH {\n        font-family: \"JetBrains Mono\", \"JetBrains Mono NL\", \"Input Mono\",\n            var(--monospace), Consolas, \"Andale Mono WT\", \"Andale Mono\",\n            \"Lucida Console\", \"Lucida Sans Typewriter\", \"Liberation Mono\",\n            \"Nimbus Mono L\", Monaco, \"Courier New\", Courier, monospace !important;\n        font-size: 16px !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n    }\n}\n\n@-moz-document domain(\"google.com\") {\n    /* Google - Goal: Reduce usage of Arial font */\n    .L3eUgb,\n    .MBeuO,\n    .NUnG9d,\n    .ZkkK1e,\n    .e9EfHf,\n    .g,\n    .tNxQIb,\n    .tsp-fm,\n    .tsp-fr,\n    .wbJOMb,\n    .gb_Kd {\n        font-family: Roboto, arial, sans-serif !important;\n    }\n\n    .T8VaVe {\n        font-family: Roboto, roboto-regular, arial, sans-serif !important;\n    }\n\n    .H1HQf {\n        font-family: Roboto, arial, sans-serif-medium, sans-serif !important;\n    }\n\n    /* Force Google Sans (if available) */\n    input {\n        font-family: \"Google Sans\", Roboto, arial !important;\n    }\n\n    #result-stats,\n    .O3S9Rb,\n    .aTI8gc,\n    .aTI8gc,\n    .fKmH1e,\n    .nfSF8e,\n    .tsp-ht,\n    input[type=\"submit\"],\n    .gLFyf {\n        font-family: \"Google Sans\", Roboto, arial, sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"nitter.net\"), domain(\"nitter.riverside.rocks\"), domain(\"nitter.tiekoetter.com\"), domain(\"twt.funami.tech\") {\n    /* Nitter - goal: change all fonts */\n    .fullname-and-username,\n    .tweet-content,\n    .tweet-published,\n    .tweet-date,\n    .tweet-stat,\n    .site-name,\n    .timeline-none,\n    .error-panel,\n    .card-title,\n    .replying-to,\n    form,\n    select,\n    input,\n    button {\n        font-family: var(--plex-base), sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"inv.riverside.rocks\"), domain(\"invidious.tiekoetter.com\"), domain(\"yt.funami.tech\"), domain(\"yewtu.be\") {\n    /* Invidious - goal: change all fonts */\n    #searchbox,\n    .feed-menu,\n    .h-box,\n    .pure-menu-heading,\n    .pure-u-14-24,\n    .pure-u-20-24,\n    .pure-u-23-24,\n    .pure-u-10-24 {\n        font-family: var(--plex-base), sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"wikipedia.org\") {\n    /* Wikipedia - Goal: Replace Arial font */\n    #searchform,\n    .vector-body,\n    .vector-menu,\n    .vector-menu-content-list,\n    .vector-pinnable-header-toggle-button,\n    .vector-toc,\n    cite,\n    .mwe-popups-container {\n        font-family: var(--plex-base), sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"deepl.com\") {\n    /* DeepL - Goal: Replace Segoe font */\n    body *:not(.fa) {\n        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,\n            \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"cagematch.net\") {\n    /* Cagematch - Goal: Reduce usage of Arial font */\n    .TemplateBody,\n    .HeaderMenu,\n    .RatingsBoxAdjustedRating,\n    input {\n        font-family: var(--plex-base), Arial, \"Segoe UI\", Frutiger,\n            \"Frutiger Linotype\", \"Dejavu Sans\", \"Helvetica Neue\", sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"reddit.com\") {\n    /* Reddit - Goal: Code blocks */\n    ._34q3PgLsx9zIU5BiSOjFoM {\n        font-family: var(--monospace), \"JetBrains Mono\", \"JetBrains Mono NL\",\n            \"Input Mono\", Noto Mono, Monaco, Consolas, monospace !important;\n        font-size: 16px !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n    }\n}\n\n@-moz-document domain(\"stackoverflow.com\") {\n    /* StackOverflow - Goal: All fonts */\n    code {\n        font-family: var(--monospace), \"JetBrains Mono\", \"JetBrains Mono NL\",\n            \"Input Mono\", ui-monospace, \"Cascadia Mono\", \"Segoe UI Mono\",\n            \"Liberation Mono\", Menlo, Monaco, Consolas, monospace !important;\n        font-size: 16px !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n    }\n\n    .unified-theme,\n    .question-hyperlink,\n    .s-prose {\n        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,\n            \"Segoe UI Adjusted\", \"Segoe UI\", \"Liberation Sans\", sans-serif !important;\n    }\n}\n",
-    "usercssData": {
-      "name": "font changes",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "1.0.0",
-      "description": "A new userstyle",
-      "author": "Me"
-    },
-    "author": "Me",
-    "description": "A new userstyle",
-    "name": "font changes",
-    "updateDate": 1687327529557,
-    "_id": "fe9e2a9d-ee6a-4c5d-919f-eeae30b19394",
-    "_rev": 1687327529557,
-    "id": 23,
-    "customName": "personal style",
-    "exclusions": [
-      "https://calendar.google.com/*",
-      "https://mail.google.com/mail/u/0/"
-    ]
-  },
-  {
-    "enabled": true,
-    "installDate": 1686462819676,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "/* ==UserStyle==\n@name           personal tweetdeck\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    font changes\n@author         Zerohazard8x\n==/UserStyle== */\n\n@-moz-document domain(\"tweetdeck.twitter.com\") {\n    .app-content, .js-dropdown-content, .js-modal-panel, .js-submittable-input, .label, .action-text {\n        font-family: \"TwitterChirp\", \"IBM Plex Sans JP\", \"IBM Plex Sans Thai\",\n        \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n        Ubuntu, \"Helvetica Neue\", sans-serif, \"Apple Color Emoji\",\n        \"Segoe UI Emoji\", \"Segoe UI Symbol\", Arial, \"ヒラギノ角ゴ Pro W3\",\n        \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, \"ＭＳ Ｐゴシック\",\n        \"MS PGothic\" !important;\n    }\n}",
-    "usercssData": {
-      "name": "personal tweetdeck",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "1.0.0",
-      "description": "font changes",
-      "author": "Zerohazard8x"
-    },
-    "author": "Zerohazard8x",
-    "description": "font changes",
-    "name": "personal tweetdeck",
-    "updateDate": 1687330036570,
-    "_id": "db24cc12-d943-45a6-aa11-ea188a05710f",
-    "_rev": 1687330036570,
-    "id": 24
   },
   {
     "enabled": false,
@@ -730,7 +650,7 @@
     "name": "Fix Bing Chat Japanese font",
     "originalDigest": "641e7a094e4b25b5f5163d2c08d7a9cf6836f831",
     "_id": "8e17f7f7-97ea-4e11-a09d-4bf9d8f625bd",
-    "_rev": 1687179740464,
+    "_rev": 1687105563324,
     "installationUrl": "https://userstyles.world/style/8585",
     "id": 26
   },
@@ -757,9 +677,95 @@
     "name": "Fluent Bing",
     "originalDigest": "9bbb5c0a65cba0299fa2d9c6f3c07f7b1efc9286",
     "_id": "b47fdc70-ca59-4695-a734-2fdd168d68de",
-    "_rev": 1687105513685,
+    "_rev": 1687071950901,
     "installationUrl": "https://userstyles.world/style/9831",
     "id": 30,
     "updateDate": 1687071950901
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl",
+    "url": "https://github.com/Zerohazard8x/custom",
+    "installDate": 1687330872416,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           changes\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    My personal userstyle\n@author         Zerohazard8x + LLM\n@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl\n@homepageURL    https://github.com/Zerohazard8x/custom\n==/UserStyle== */\n\n:root {\n    /* Define variables */\n    --plex-base: \"IBM Plex Sans JP\", \"IBM Plex Sans Thai\", \"IBM Plex Sans\";\n    --monospace: \"Hack\", \"Bitstream Vera Sans Mono\", \"BitstromVera\",\n        \"DejaVu Sans Mono\", \"Cascadia Code\", \"Cascadia Mono\", \"CaskaydiaCove\",\n        \"Source Code Pro\", \"Segoe UI Mono\", \"Fira Code\", \"Fira Mono\", Menlo;\n}\n\n@-moz-document domain(\"youtube.com\") {\n    /* youtube - Goal: subtitles */\n    /* Class ytp-caption-segment  */\n    .ytp-caption-segment {\n        font-family: var(--plex-base), \"YouTube Noto\", Roboto,\n            \"Arial Unicode Ms\", Arial, Helvetica, Verdana, \"PT Sans Caption\",\n            sans-serif !important;\n        font-weight: bold !important;\n\n        /* smoothing */\n        -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\n        -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\n        -ms-font-smoothing: antialiased !important; /* for IE */\n        text-rendering: optimizeLegibility !important;\n    }\n}\n\n@-moz-document domain(\"facebook.com\"), domain(\"messenger.com\") {\n    /* facebook, messenger - goal: change all fonts */\n    .system-fonts--body {\n        font-family: var(--plex-base), Segoe UI, Segoe UI Historic, Helvetica,\n            Arial, sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"bing.com\") {\n    /* Bing - Goal: Make sure website uses one single font + \"fluent\" changes */\n    /* Var initializations */\n    :root {\n        --font-text: \"Roboto\", \"Segoe UI Variable Text\", \"Segoe UI\", SegoeUI,\n            Segoe, Arial, sans-serif;\n        --font-display: \"Roboto\", \"Segoe UI Variable Display\", \"Segoe UI\",\n            SegoeUI, Segoe, Arial, sans-serif;\n        --font-small: \"Roboto\", \"Segoe UI Variable Small\", \"Segoe UI\", SegoeUI,\n            Segoe, Arial, sans-serif;\n        --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png);\n    }\n\n    /* Japanese font fix by Kenji Iguchi */\n    :root * {\n        /* Redefine variable cib-font-text */\n        --cib-font-text: font-family: -apple-system, Roboto, \"Segoe UI Variable Text\", SegoeUI, \"Segoe UI\", \"Helvetica Neue\", Helvetica, \"Meiryo UI\", Meiryo, Arial Unicode MS, sans-serif !important;\n    }\n\n    /* Navigation bar */\n    /* All ul and li under a .b_scopebar element */\n    .b_scopebar > ul li {\n        /* Undo small caps */\n        text-transform: none !important;\n        font-size: 14px !important;\n    }\n\n    .b_scopebar ul {\n        height: 45px !important;\n    }\n\n    .b_scopebar li,\n    .b_scopebar #b-scopeListItem-menu {\n        line-height: 40px !important;\n    }\n\n    /* Navigation bar \"pill\" */\n    .b_scopebar li::after {\n        margin-top: -1px !important;\n    }\n\n    /* Change logo (at least on results pages) */\n    .b_logo {\n        height: 50px !important;\n        margin-top: 0px !important;\n        width: 150px !important;\n        filter: opacity(100%) !important;\n    }\n\n    .b_logo::after {\n        content: var(--logo-url) !important;\n        transform-origin: 47px 8px !important;\n        transform: scale(0.1) !important;\n        filter: opacity(100%) !important;\n    }\n\n    .icon::after {\n        content: none !important;\n        filter: opacity(100%) !important;\n    }\n\n    /* Fonts */\n    .b_searchboxForm {\n        border-radius: 8px !important; /* Box searchbar corners */\n        font-family: var(--font-text) !important;\n    }\n\n    #b_content,\n    #b_header,\n    #sb_form,\n    #vvlb,\n    .b_scopebar,\n    .b_smText,\n    .cdxAcrylic,\n    .img_info,\n    .infpd,\n    .mc_vtvc_meta_row,\n    .mc_vtvc_title,\n    .metadataRow,\n    .mmvdp_meta_top,\n    .notHP,\n    .scopes,\n    .suggestion-title,\n    .text,\n    .tit,\n    .title,\n    .no-margins,\n    .b_title > h2 {\n        font-family: var(--font-text) !important;\n    }\n\n    #sw_as {\n        font-family: Roboto, \"Segoe UI Variable Text\", \"Segoe UI\", SegoeUI,\n            Segoe !important;\n        filter: opacity(100%) !important;\n    }\n\n    /* Variable Display */\n    .l_ecrd_txt_heros,\n    .l_ecrd_txt_hlt,\n    .container-title {\n        font-family: var(--font-display) !important;\n        filter: opacity(100%) !important;\n    }\n\n    /* Variable Small */\n    .b_vPanel,\n    .l_ecrd_ftr_txt,\n    .b_footnote,\n    .rd_gtrtb_nav_item,\n    .caption-2-strong,\n    .recommendationsTableTitle > h2 {\n        font-family: var(--font-small) !important;\n        filter: opacity(100%) !important;\n    }\n\n    .sa_rm {\n        font-family: Roboto, \"Segoe UI Variable Small\", \"Segoe UI\", SegoeUI,\n            Segoe, \"Arial\", \"Helvetica\", \"sans-serif\" !important;\n        filter: opacity(100%) !important;\n    }\n}\n@-moz-document domain(\"github.com\") {\n    /* Github - Goal: Change all fonts, change font and formatting of code blocks */\n    .page-responsive,\n    .container-lg {\n        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,\n            \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif,\n            \"Apple Color Emoji\", \"Segoe UI Emoji\" !important;\n    }\n\n    #commit-summary-input,\n    .blob-code-inner,\n    .blob-num,\n    .branch-name,\n    .diffstat,\n    .file-info,\n    .sha,\n    .sha-block,\n    .text-mono,\n    .input-monospace,\n    .markdown-body pre,\n    .markdown-body code {\n        font-family: var(--monospace), \"JetBrains Mono\", \"JetBrains Mono NL\",\n            \"Input Mono\", Consolas, monospace !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n\n        /* -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n        -moz-font-feature-settings: \"liga\", \"calt\" !important;\n        -o-font-feature-settings: \"liga\", \"calt\" !important; */\n    }\n\n    .file-info,\n    .sha-block,\n    .sha,\n    .diffstat,\n    .blob-code-inner,\n    .blob-num,\n    .markdown-body pre,\n    .markdown-body code {\n        font-size: 16px !important;\n    }\n}\n\n@-moz-document domain(\"discord.com\") {\n    /* Discord - Goal: Change font and formatting of code blocks*/\n    .hljs,\n    .codeLine-2C-9aH {\n        font-family: \"JetBrains Mono\", \"JetBrains Mono NL\", \"Input Mono\",\n            var(--monospace), Consolas, \"Andale Mono WT\", \"Andale Mono\",\n            \"Lucida Console\", \"Lucida Sans Typewriter\", \"Liberation Mono\",\n            \"Nimbus Mono L\", Monaco, \"Courier New\", Courier, monospace !important;\n        font-size: 16px !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n    }\n}\n\n@-moz-document domain(\"google.com\") {\n    /* Google - Goal: Reduce usage of Arial font */\n    .L3eUgb,\n    .MBeuO,\n    .NUnG9d,\n    .ZkkK1e,\n    .e9EfHf,\n    .g,\n    .tNxQIb,\n    .tsp-fm,\n    .tsp-fr,\n    .wbJOMb,\n    .gb_Kd {\n        font-family: Roboto, arial, sans-serif !important;\n    }\n\n    .T8VaVe {\n        font-family: Roboto, roboto-regular, arial, sans-serif !important;\n    }\n\n    .H1HQf {\n        font-family: Roboto, arial, sans-serif-medium, sans-serif !important;\n    }\n\n    /* Force Google Sans (if available) */\n    input {\n        font-family: \"Google Sans\", Roboto, arial !important;\n    }\n\n    #result-stats,\n    .O3S9Rb,\n    .aTI8gc,\n    .aTI8gc,\n    .fKmH1e,\n    .nfSF8e,\n    .tsp-ht,\n    input[type=\"submit\"],\n    .gLFyf {\n        font-family: \"Google Sans\", Roboto, arial, sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"nitter.net\"), domain(\"nitter.riverside.rocks\"), domain(\"nitter.tiekoetter.com\"), domain(\"twt.funami.tech\") {\n    /* Nitter - goal: change all fonts */\n    .fullname-and-username,\n    .tweet-content,\n    .tweet-published,\n    .tweet-date,\n    .tweet-stat,\n    .site-name,\n    .timeline-none,\n    .error-panel,\n    .card-title,\n    .replying-to,\n    form,\n    select,\n    input,\n    button {\n        font-family: var(--plex-base), sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"inv.riverside.rocks\"), domain(\"invidious.tiekoetter.com\"), domain(\"yt.funami.tech\"), domain(\"yewtu.be\") {\n    /* Invidious - goal: change all fonts */\n    #searchbox,\n    .feed-menu,\n    .h-box,\n    .pure-menu-heading,\n    .pure-u-14-24,\n    .pure-u-20-24,\n    .pure-u-23-24,\n    .pure-u-10-24 {\n        font-family: var(--plex-base), sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"wikipedia.org\") {\n    /* Wikipedia - Goal: Replace Arial font */\n    #searchform,\n    .vector-body,\n    .vector-menu,\n    .vector-menu-content-list,\n    .vector-pinnable-header-toggle-button,\n    .vector-toc,\n    cite,\n    .mwe-popups-container {\n        font-family: var(--plex-base), sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"deepl.com\") {\n    /* DeepL - Goal: Replace Segoe font */\n    body *:not(.fa) {\n        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,\n            \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"cagematch.net\") {\n    /* Cagematch - Goal: Reduce usage of Arial font */\n    .TemplateBody,\n    .HeaderMenu,\n    .RatingsBoxAdjustedRating,\n    input {\n        font-family: var(--plex-base), Arial, \"Segoe UI\", Frutiger,\n            \"Frutiger Linotype\", \"Dejavu Sans\", \"Helvetica Neue\", sans-serif !important;\n    }\n}\n\n@-moz-document domain(\"reddit.com\") {\n    /* Reddit - Goal: Code blocks */\n    ._34q3PgLsx9zIU5BiSOjFoM {\n        font-family: var(--monospace), \"JetBrains Mono\", \"JetBrains Mono NL\",\n            \"Input Mono\", Noto Mono, Monaco, Consolas, monospace !important;\n        font-size: 16px !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n    }\n}\n\n@-moz-document domain(\"stackoverflow.com\") {\n    /* StackOverflow - Goal: All fonts */\n    code {\n        font-family: var(--monospace), \"JetBrains Mono\", \"JetBrains Mono NL\",\n            \"Input Mono\", ui-monospace, \"Cascadia Mono\", \"Segoe UI Mono\",\n            \"Liberation Mono\", Menlo, Monaco, Consolas, monospace !important;\n        font-size: 16px !important;\n\n        /* Ligatures */\n        font-variant-ligatures: common-ligatures, contextual !important;\n        font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\n    }\n\n    .unified-theme,\n    .question-hyperlink,\n    .s-prose {\n        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,\n            \"Segoe UI Adjusted\", \"Segoe UI\", \"Liberation Sans\", sans-serif !important;\n    }\n}\n",
+    "usercssData": {
+      "name": "changes",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "My personal userstyle",
+      "author": "Zerohazard8x + LLM",
+      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl",
+      "homepageURL": "https://github.com/Zerohazard8x/custom"
+    },
+    "author": "Zerohazard8x + LLM",
+    "description": "My personal userstyle",
+    "name": "changes",
+    "originalDigest": "44a74cfafd08638ca96ec0f379172ccf90dec53f",
+    "_id": "64628107-5e10-476a-9ac9-eb1ad6cd3b94",
+    "_rev": 1687331259346,
+    "id": 37,
+    "updateDate": 1687331259346
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/mactype.user.styl",
+    "url": "https://github.com/Zerohazard8x/custom",
+    "installDate": 1687331178676,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           MacType grayscale rendering fix + other fixes\n@namespace      github.com/openstyles/stylus\n@version        1.0.2\n@description    https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484\n@author         github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM\n@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/mactype.user.styl\n@homepageURL    https://github.com/Zerohazard8x/custom\n==/UserStyle== */\n\n/* Ligatures */\n/* body {\n    font-variant-ligatures: common-ligatures, contextual !important;\n}\n.example1 {\n    -webkit-font-feature-settings: \"liga\", \"calt\" !important;\n    -moz-font-feature-settings: \"liga\", \"calt\" !important;\n    -o-font-feature-settings: \"liga\", \"calt\" !important;\n    font-feature-settings: \"liga\", \"calt\" !important;\n} */\n\n\n/* Readable characters (slashed zero, numbers of equal height, serif I) */\n/* .example1 {\n    -webkit-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n    -moz-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n    -o-font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n    font-feature-settings: \"lnum\" 1, \"tnum\" 1, \"ss01\" 1, \"ss06\" 1 !important;\n}\n.example2 {\n    font-variant-numeric: lining-nums tabular-nums slashed-zero !important;\n} */\n\n@-moz-document regexp(\".*\") {\n    html,\n    body,\n    :root {\n        font-variant-east-asian: proportional-width !important;\n        font-feature-settings: \"palt\", \"hkna\" !important;\n        -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\n        -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\n        -ms-font-smoothing: antialiased !important; /* for IE */\n        text-rendering: optimizeLegibility !important;\n    }\n}\n\n@-moz-document regexp(\"((?!bing\\.com).)*\") {\n    /* MacType fix */\n    /* Syntax: ((?!bing\\.com|dubz\\.co|reddit\\.com|tweetdeck\\.twitter\\.com).)* */\n    html {\n        filter: opacity(100%) !important;\n    }\n}\n",
+    "usercssData": {
+      "name": "MacType grayscale rendering fix + other fixes",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.2",
+      "description": "https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484",
+      "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM",
+      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/mactype.user.styl",
+      "homepageURL": "https://github.com/Zerohazard8x/custom"
+    },
+    "author": "github \"snowie2000\" + userstyles.world \"Meiryo Destroyer\" + zerohazard8x + LLM",
+    "description": "https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484",
+    "name": "MacType grayscale rendering fix + other fixes",
+    "originalDigest": "2fc5cb34c167e399be4745cb35d6071d38b5bac8",
+    "_id": "0c6ff9c4-ba31-4ab8-8c7c-6fa8f606f680",
+    "_rev": 1687331265963,
+    "id": 38,
+    "updateDate": 1687331265963
+  },
+  {
+    "enabled": false,
+    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-tweetdeck.user.styl",
+    "url": "https://github.com/Zerohazard8x/custom",
+    "installDate": 1687331278860,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           tweetdeck\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    font changes\n@author         Zerohazard8x\n@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-tweetdeck.user.styl\n@homepageURL    https://github.com/Zerohazard8x/custom\n==/UserStyle== */\n\n@-moz-document domain(\"tweetdeck.twitter.com\") {\n    .app-content, .js-dropdown-content, .js-modal-panel, .js-submittable-input, .label, .action-text {\n        font-family: \"TwitterChirp\", \"IBM Plex Sans JP\", \"IBM Plex Sans Thai\",\n        \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n        Ubuntu, \"Helvetica Neue\", sans-serif, \"Apple Color Emoji\",\n        \"Segoe UI Emoji\", \"Segoe UI Symbol\", Arial, \"ヒラギノ角ゴ Pro W3\",\n        \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, \"ＭＳ Ｐゴシック\",\n        \"MS PGothic\" !important;\n    }\n}",
+    "usercssData": {
+      "name": "tweetdeck",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "font changes",
+      "author": "Zerohazard8x",
+      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-tweetdeck.user.styl",
+      "homepageURL": "https://github.com/Zerohazard8x/custom"
+    },
+    "author": "Zerohazard8x",
+    "description": "font changes",
+    "name": "tweetdeck",
+    "originalDigest": "642a587215a3d02a3add6e1b5a0fd55271828af3",
+    "_id": "4773117b-85f8-4ed4-bbd2-955cdf48c990",
+    "_rev": 1687331280917,
+    "id": 39
   }
 ]
