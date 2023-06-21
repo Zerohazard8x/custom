@@ -1,0 +1,52 @@
+/* ==UserStyle==
+@name           MacType grayscale rendering fix + other fixes
+@namespace      github.com/openstyles/stylus
+@version        1.0.2
+@description    https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484
+@author         github "snowie2000" + userstyles.world "Meiryo Destroyer" + zerohazard8x + LLM
+@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/mactype.user.styl
+==/UserStyle== */
+
+/* Ligatures */
+/* body {
+    font-variant-ligatures: common-ligatures, contextual !important;
+}
+.example1 {
+    -webkit-font-feature-settings: "liga", "calt" !important;
+    -moz-font-feature-settings: "liga", "calt" !important;
+    -o-font-feature-settings: "liga", "calt" !important;
+    font-feature-settings: "liga", "calt" !important;
+} */
+
+
+/* Readable characters (slashed zero, numbers of equal height, serif I) */
+/* .example1 {
+    -webkit-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1 !important;
+    -moz-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1 !important;
+    -o-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1 !important;
+    font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1 !important;
+}
+.example2 {
+    font-variant-numeric: lining-nums tabular-nums slashed-zero !important;
+} */
+
+@-moz-document regexp(".*") {
+    html,
+    body,
+    :root {
+        font-variant-east-asian: proportional-width !important;
+        font-feature-settings: "palt", "hkna" !important;
+        -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */
+        -moz-osx-font-smoothing: grayscale !important; /* for Firefox */
+        -ms-font-smoothing: antialiased !important; /* for IE */
+        text-rendering: optimizeLegibility !important;
+    }
+}
+
+@-moz-document regexp("((?!bing\.com).)*") {
+    /* MacType fix */
+    /* Syntax: ((?!bing\.com|dubz\.co|reddit\.com|tweetdeck\.twitter\.com).)* */
+    html {
+        filter: opacity(100%) !important;
+    }
+}
