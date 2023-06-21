@@ -1,0 +1,369 @@
+/* ==UserStyle==
+@name           changes
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    My personal userstyle
+@author         Zerohazard8x + LLM
+==/UserStyle== */
+
+:root {
+    /* Define variables */
+    --plex-base: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans";
+    --monospace: "Hack", "Bitstream Vera Sans Mono", "BitstromVera",
+        "DejaVu Sans Mono", "Cascadia Code", "Cascadia Mono", "CaskaydiaCove",
+        "Source Code Pro", "Segoe UI Mono", "Fira Code", "Fira Mono", Menlo;
+}
+
+@-moz-document domain("youtube.com") {
+    /* youtube - Goal: subtitles */
+    /* Class ytp-caption-segment  */
+    .ytp-caption-segment {
+        font-family: var(--plex-base), "YouTube Noto", Roboto,
+            "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption",
+            sans-serif !important;
+        font-weight: bold !important;
+
+        /* smoothing */
+        -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */
+        -moz-osx-font-smoothing: grayscale !important; /* for Firefox */
+        -ms-font-smoothing: antialiased !important; /* for IE */
+        text-rendering: optimizeLegibility !important;
+    }
+}
+
+@-moz-document domain("facebook.com"), domain("messenger.com") {
+    /* facebook, messenger - goal: change all fonts */
+    .system-fonts--body {
+        font-family: var(--plex-base), Segoe UI, Segoe UI Historic, Helvetica,
+            Arial, sans-serif !important;
+    }
+}
+
+@-moz-document domain("bing.com") {
+    /* Bing - Goal: Make sure website uses one single font + "fluent" changes */
+    /* Var initializations */
+    :root {
+        --font-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
+            Segoe, Arial, sans-serif;
+        --font-display: "Roboto", "Segoe UI Variable Display", "Segoe UI",
+            SegoeUI, Segoe, Arial, sans-serif;
+        --font-small: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
+            Segoe, Arial, sans-serif;
+        --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png);
+    }
+
+    /* Japanese font fix by Kenji Iguchi */
+    :root * {
+        /* Redefine variable cib-font-text */
+        --cib-font-text: font-family: -apple-system, Roboto, "Segoe UI Variable Text", SegoeUI, "Segoe UI", "Helvetica Neue", Helvetica, "Meiryo UI", Meiryo, Arial Unicode MS, sans-serif !important;
+    }
+
+    /* Navigation bar */
+    /* All ul and li under a .b_scopebar element */
+    .b_scopebar > ul li {
+        /* Undo small caps */
+        text-transform: none !important;
+        font-size: 14px !important;
+    }
+
+    .b_scopebar ul {
+        height: 45px !important;
+    }
+
+    .b_scopebar li,
+    .b_scopebar #b-scopeListItem-menu {
+        line-height: 40px !important;
+    }
+
+    /* Navigation bar "pill" */
+    .b_scopebar li::after {
+        margin-top: -1px !important;
+    }
+
+    /* Change logo (at least on results pages) */
+    .b_logo {
+        height: 50px !important;
+        margin-top: 0px !important;
+        width: 150px !important;
+        filter: opacity(100%) !important;
+    }
+
+    .b_logo::after {
+        content: var(--logo-url) !important;
+        transform-origin: 47px 8px !important;
+        transform: scale(0.1) !important;
+        filter: opacity(100%) !important;
+    }
+
+    .icon::after {
+        content: none !important;
+        filter: opacity(100%) !important;
+    }
+
+    /* Fonts */
+    .b_searchboxForm {
+        border-radius: 8px !important; /* Box searchbar corners */
+        font-family: var(--font-text) !important;
+    }
+
+    #b_content,
+    #b_header,
+    #sb_form,
+    #vvlb,
+    .b_scopebar,
+    .b_smText,
+    .cdxAcrylic,
+    .img_info,
+    .infpd,
+    .mc_vtvc_meta_row,
+    .mc_vtvc_title,
+    .metadataRow,
+    .mmvdp_meta_top,
+    .notHP,
+    .scopes,
+    .suggestion-title,
+    .text,
+    .tit,
+    .title,
+    .no-margins,
+    .b_title > h2 {
+        font-family: var(--font-text) !important;
+    }
+
+    #sw_as {
+        font-family: Roboto, "Segoe UI Variable Text", "Segoe UI", SegoeUI,
+            Segoe !important;
+        filter: opacity(100%) !important;
+    }
+
+    /* Variable Display */
+    .l_ecrd_txt_heros,
+    .l_ecrd_txt_hlt,
+    .container-title {
+        font-family: var(--font-display) !important;
+        filter: opacity(100%) !important;
+    }
+
+    /* Variable Small */
+    .b_vPanel,
+    .l_ecrd_ftr_txt,
+    .b_footnote,
+    .rd_gtrtb_nav_item,
+    .caption-2-strong,
+    .recommendationsTableTitle > h2 {
+        font-family: var(--font-small) !important;
+        filter: opacity(100%) !important;
+    }
+
+    .sa_rm {
+        font-family: Roboto, "Segoe UI Variable Small", "Segoe UI", SegoeUI,
+            Segoe, "Arial", "Helvetica", "sans-serif" !important;
+        filter: opacity(100%) !important;
+    }
+}
+@-moz-document domain("github.com") {
+    /* Github - Goal: Change all fonts, change font and formatting of code blocks */
+    .page-responsive,
+    .Box-sc-g0xbh4-0,
+    .container-lg {
+        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,
+            "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji" !important;
+    }
+
+    #commit-summary-input,
+    .blob-code-inner,
+    .blob-num,
+    .branch-name,
+    .diffstat,
+    .file-info,
+    .react-blob-print-hide,
+    .sha,
+    .sha-block,
+    .text-mono,
+    .input-monospace,
+    .markdown-body pre,
+    .markdown-body code {
+        font-family: var(--monospace), "JetBrains Mono", "JetBrains Mono NL",
+            "Input Mono", Consolas, monospace !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+
+        /* -webkit-font-feature-settings: "liga", "calt" !important;
+        -moz-font-feature-settings: "liga", "calt" !important;
+        -o-font-feature-settings: "liga", "calt" !important; */
+    }
+
+    .file-info,
+    .sha-block,
+    .sha,
+    .diffstat,
+    .blob-code-inner,
+    .blob-num,
+    .react-blob-print-hide,
+    .markdown-body pre,
+    .markdown-body code {
+        font-size: 16px !important;
+    }
+}
+
+@-moz-document domain("discord.com") {
+    /* Discord - Goal: Change font and formatting of code blocks*/
+    .hljs,
+    .codeLine-2C-9aH {
+        font-family: "JetBrains Mono", "JetBrains Mono NL", "Input Mono",
+            var(--monospace), Consolas, "Andale Mono WT", "Andale Mono",
+            "Lucida Console", "Lucida Sans Typewriter", "Liberation Mono",
+            "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("google.com") {
+    /* Google - Goal: Reduce usage of Arial font */
+    .L3eUgb,
+    .MBeuO,
+    .NUnG9d,
+    .ZkkK1e,
+    .e9EfHf,
+    .g,
+    .tNxQIb,
+    .tsp-fm,
+    .tsp-fr,
+    .wbJOMb,
+    .gb_Kd {
+        font-family: Roboto, arial, sans-serif !important;
+    }
+
+    .T8VaVe {
+        font-family: Roboto, roboto-regular, arial, sans-serif !important;
+    }
+
+    .H1HQf {
+        font-family: Roboto, arial, sans-serif-medium, sans-serif !important;
+    }
+
+    /* Force Google Sans (if available) */
+    input {
+        font-family: "Google Sans", Roboto, arial !important;
+    }
+
+    #result-stats,
+    .O3S9Rb,
+    .aTI8gc,
+    .aTI8gc,
+    .fKmH1e,
+    .nfSF8e,
+    .tsp-ht,
+    input[type="submit"],
+    .gLFyf {
+        font-family: "Google Sans", Roboto, arial, sans-serif !important;
+    }
+}
+
+@-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech") {
+    /* Nitter - goal: change all fonts */
+    .fullname-and-username,
+    .tweet-content,
+    .tweet-published,
+    .tweet-date,
+    .tweet-stat,
+    .site-name,
+    .timeline-none,
+    .error-panel,
+    .card-title,
+    .replying-to,
+    form,
+    select,
+    input,
+    button {
+        font-family: var(--plex-base), sans-serif !important;
+    }
+}
+
+@-moz-document domain("inv.riverside.rocks"), domain("invidious.tiekoetter.com"), domain("yt.funami.tech"), domain("yewtu.be") {
+    /* Invidious - goal: change all fonts */
+    #searchbox,
+    .feed-menu,
+    .h-box,
+    .pure-menu-heading,
+    .pure-u-14-24,
+    .pure-u-20-24,
+    .pure-u-23-24,
+    .pure-u-10-24 {
+        font-family: var(--plex-base), sans-serif !important;
+    }
+}
+
+@-moz-document domain("wikipedia.org") {
+    /* Wikipedia - Goal: Replace Arial font */
+    #searchform,
+    .vector-body,
+    .vector-menu,
+    .vector-menu-content-list,
+    .vector-pinnable-header-toggle-button,
+    .vector-toc,
+    cite,
+    .mwe-popups-container {
+        font-family: var(--plex-base), sans-serif !important;
+    }
+}
+
+@-moz-document domain("deepl.com") {
+    /* DeepL - Goal: Replace Segoe font */
+    body *:not(.fa) {
+        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    }
+}
+
+@-moz-document domain("cagematch.net") {
+    /* Cagematch - Goal: Reduce usage of Arial font */
+    .TemplateBody,
+    .HeaderMenu,
+    .RatingsBoxAdjustedRating,
+    input {
+        font-family: var(--plex-base), Arial, "Segoe UI", Frutiger,
+            "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
+    }
+}
+
+@-moz-document domain("reddit.com") {
+    /* Reddit - Goal: Code blocks */
+    ._34q3PgLsx9zIU5BiSOjFoM {
+        font-family: var(--monospace), "JetBrains Mono", "JetBrains Mono NL",
+            "Input Mono", Noto Mono, Monaco, Consolas, monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("stackoverflow.com") {
+    /* StackOverflow - Goal: All fonts */
+    code {
+        font-family: var(--monospace), "JetBrains Mono", "JetBrains Mono NL",
+            "Input Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono",
+            "Liberation Mono", Menlo, Monaco, Consolas, monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+
+    .unified-theme,
+    .question-hyperlink,
+    .s-prose {
+        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,
+            "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
+    }
+}
