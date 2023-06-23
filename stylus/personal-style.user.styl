@@ -11,9 +11,8 @@
 :root {
     /* Define variables */
     --plex-base: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans";
-    --monospace: "Hack", "Bitstream Vera Sans Mono", "BitstromVera",
-        "DejaVu Sans Mono", "Cascadia Code", "Cascadia Mono", "CaskaydiaCove",
-        "Source Code Pro", "Segoe UI Mono", "Fira Code", "Fira Mono", Menlo;
+    --monospace: "Hack", "Bitstream Vera Sans Mono", "BitstromVera", "DejaVu Sans Mono", "Cascadia Code", "Cascadia Mono", "CaskaydiaCove", "Source Code Pro", "Segoe UI Mono", "Fira Code", "Fira Mono", Menlo, 'DroidSansM', 'SF Mono', 'SFMono-Regular';
+    --block-mono: 'JetBrains Mono', 'JetBrains Mono NL', 'Input Mono', 'IBM Plex Mono', 'BlexMono', 'Roboto Mono', 'Iosevka Expanded', 'Input Sans', 'Iosevka';
 }
 
 @-moz-document domain("youtube.com") {
@@ -197,8 +196,7 @@
     .markdown-body pre,
     kbd, 
     .markdown-body code {
-        font-family: var(--monospace), "JetBrains Mono", "JetBrains Mono NL",
-            "Input Mono", Consolas, monospace !important;
+        font-family: var(--monospace), --var(--block-mono), Consolas, monospace !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
@@ -350,8 +348,7 @@
 @-moz-document domain("reddit.com") {
     /* Reddit - Goal: Code blocks */
     ._34q3PgLsx9zIU5BiSOjFoM {
-        font-family: var(--monospace), "JetBrains Mono", "JetBrains Mono NL",
-            "Input Mono", Noto Mono, Monaco, Consolas, monospace !important;
+        font-family: var(--monospace), --var(block-mono), Noto Mono, Monaco, Consolas, monospace !important;
         font-size: 16px !important;
 
         /* Ligatures */
@@ -363,8 +360,7 @@
 @-moz-document domain("stackoverflow.com") {
     /* StackOverflow - Goal: All fonts */
     code {
-        font-family: var(--monospace), "JetBrains Mono", "JetBrains Mono NL",
-            "Input Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono",
+        font-family: var(--monospace), --var(block-mono), ui-monospace, "Cascadia Mono", "Segoe UI Mono",
             "Liberation Mono", Menlo, Monaco, Consolas, monospace !important;
         font-size: 16px !important;
 
