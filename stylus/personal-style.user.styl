@@ -375,8 +375,23 @@
 
     .unified-theme,
     .question-hyperlink,
+    .comment-copy,
     .s-prose {
         font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,
             "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
+    }
+}
+
+@-moz-document domain("poe.com") {
+    /* Poe - Goal: Reduce usage of system font */
+    .PageWithSidebarLayout_centeredPage__D42BU, .ReactModal__Content {
+        font-family: var(--plex-base), apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif !important;
+    }
+}
+
+@-moz-document domain("quora.com") {
+    /* Quora - Goal: Reduce usage of system font */
+    .q-box {
+        font-family: var(--plex-base), -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
     }
 }
