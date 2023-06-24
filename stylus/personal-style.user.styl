@@ -46,8 +46,8 @@
     :root {
         --font-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
             Segoe, Arial, sans-serif;
-        --font-display: "Roboto", "Segoe UI Variable Display", "Segoe UI",
-            SegoeUI, Segoe, Arial, sans-serif;
+        --font-display: "Segoe UI Variable Display", "Segoe UI",
+            SegoeUI, Segoe, "Roboto", Helvetica, Arial, sans-serif;
         --font-small: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
             Segoe, Arial, sans-serif;
         --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png);
@@ -59,6 +59,11 @@
         --cib-font-text: font-family: -apple-system, Roboto, "Segoe UI Variable Text", SegoeUI, "Segoe UI", "Helvetica Neue", Helvetica, "Meiryo UI", Meiryo, Arial Unicode MS, sans-serif !important;
     }
 
+    /* Search box */
+    .b_searchboxForm {
+        border-radius: 12px !important; /* Box searchbar corners */
+    }
+    
     /* Navigation bar */
     /* All ul and li under a .b_scopebar element */
     .b_scopebar > ul li {
@@ -100,12 +105,8 @@
         content: none !important;
         filter: opacity(100%) !important;
     }
-
+    
     /* Fonts */
-    .b_searchboxForm {
-        border-radius: 8px !important; /* Box searchbar corners */
-        font-family: var(--font-text) !important;
-    }
 
     #b_content,
     #b_header,
@@ -127,8 +128,8 @@
     .suggestion-title,
     .text,
     .tit,
-    .title,
-    .b_title > h2 {
+    .l_ecrd_txt_hlt,
+    .title {
         font-family: var(--font-text) !important;
     }
 
@@ -137,10 +138,14 @@
             Segoe !important;
         filter: opacity(100%) !important;
     }
+    
+    .wpvn_ala_wtt, .b_title > h2, .b_primtxt, .b_searchboxForm {
+        font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe, "Roboto", Helvetica, sans-serif !important;
+        filter: opacity(100%) !important;
+    }
 
     /* Variable Display */
     .l_ecrd_txt_heros,
-    .l_ecrd_txt_hlt,
     .container-title {
         font-family: var(--font-display) !important;
         filter: opacity(100%) !important;
@@ -238,7 +243,6 @@
 @-moz-document domain("google.com") {
     /* Google - Goal: Reduce usage of Arial font */
     .L3eUgb,
-    .MBeuO,
     .NUnG9d,
     .ZkkK1e,
     .e9EfHf,
@@ -247,6 +251,13 @@
     .tsp-fm,
     .tsp-fr,
     .wbJOMb,
+    .ZwRhJd,
+    .LGwnxb,
+    .hgKElc,
+    .CSkcDe,
+    .YrbPuc,
+    .eniVJf,
+    .wfg6Pb,
     .gb_Kd {
         font-family: Roboto, arial, sans-serif !important;
     }
@@ -255,7 +266,7 @@
         font-family: Roboto, roboto-regular, arial, sans-serif !important;
     }
 
-    .H1HQf {
+    .H1HQf, .SW5pqf {
         font-family: Roboto, arial, sans-serif-medium, sans-serif !important;
     }
 
@@ -271,6 +282,11 @@
     .fKmH1e,
     .nfSF8e,
     .tsp-ht,
+    .MBeuO,
+    .wHYlTd,
+    .q8U8x,
+    .QXROIe,
+    .IFnjPb,
     input[type="submit"],
     .gLFyf {
         font-family: "Google Sans", Roboto, arial, sans-serif !important;
