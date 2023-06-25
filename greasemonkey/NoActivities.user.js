@@ -5,6 +5,8 @@
 // @include         *instructure.com*
 // @run-at          document-end
 // @grant           none
+// @supportURL      https://github.com/Zerohazard8x/custom
+// @homepageURL     https://github.com/Zerohazard8x/custom
 // ==/UserScript==
 
 const preventEvent = function (event) {
