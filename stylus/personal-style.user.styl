@@ -85,7 +85,13 @@
     .b_scopebar li::after {
         margin-top: -1px !important;
     }
-
+    
+    /* Navigation bar submenu */
+    .b_scopebar_item > a {
+        text-transform: none !important;
+        font-size: 13px !important;
+    }
+    
     /* Change logo (at least on results pages) */
     .b_logo {
         height: 50px !important;
@@ -107,8 +113,6 @@
     }
     
     /* Fonts */
-
-    #b_content,
     #b_header,
     #sa_ul, 
     #sb_form,
@@ -129,6 +133,7 @@
     .text,
     .tit,
     .l_ecrd_txt_hlt,
+    .qna_tg .rwrl,
     .title {
         font-family: var(--font-text) !important;
     }
@@ -139,18 +144,25 @@
         filter: opacity(100%) !important;
     }
     
-    .wpvn_ala_wtt, .b_title > h2, .b_primtxt, .b_searchboxForm {
+    /* Variable Text */
+    .wpvn_ala_wtt, .b_title > h2, .b_primtxt, .b_searchboxForm, .b_algo > h2, .rwrl, .sto_attrlitc, .sto_attr_table, .richrsrailtitle {
         font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe, "Roboto", Helvetica, sans-serif !important;
-        filter: opacity(100%) !important;
     }
-
+    
     /* Variable Display */
     .l_ecrd_txt_heros,
+    .l_ecrd_txt_heroxxs,
+    .sto_title,
     .container-title {
         font-family: var(--font-display) !important;
         filter: opacity(100%) !important;
     }
 
+    .scs_cpr > h2 {
+        font-family: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe, "Roboto", Helvetica, sans-serif !important;
+        filter: opacity(100%) !important;
+    }
+    
     /* Variable Small */
     #actionbar,
     #imagemeta,
@@ -165,6 +177,8 @@
     .l_ecrd_ftr_txt,
     .rd_gtrtb_nav_item,
     .rstc,
+    .sto_attr_header,
+    .fdbtext,
     .recommendationsTableTitle > h2 {
         font-family: var(--font-small) !important;
         filter: opacity(100%) !important;
@@ -227,7 +241,9 @@
 @-moz-document domain("discord.com") {
     /* Discord - Goal: Change font and formatting of code blocks*/
     .hljs,
-    .codeLine-2C-9aH {
+    .codeLine-2C-9aH,
+    .inlineCode-ERyvy_,
+    .inline {
         font-family: var(--block-mono), var(--monospace), Consolas, 
             "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", 
             "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", 
@@ -242,6 +258,7 @@
 
 @-moz-document domain("google.com") {
     /* Google - Goal: Reduce usage of Arial font */
+    a.K1yPdf,
     .L3eUgb,
     .NUnG9d,
     .ZkkK1e,
@@ -287,6 +304,7 @@
     .q8U8x,
     .QXROIe,
     .IFnjPb,
+    .GLcBOb,
     input[type="submit"],
     .gLFyf {
         font-family: "Google Sans", Roboto, arial, sans-serif !important;
@@ -306,6 +324,7 @@
     .card-title,
     .replying-to,
     .poll, 
+    .username,
     form,
     select,
     input,
@@ -364,7 +383,7 @@
 @-moz-document domain("reddit.com") {
     /* Reddit - Goal: Code blocks */
     ._34q3PgLsx9zIU5BiSOjFoM {
-        font-family: var(--monospace), --var(block-mono), Noto Mono, Monaco, Consolas, monospace !important;
+        font-family: var(--monospace), var(--block-mono), Noto Mono, Monaco, Consolas, monospace !important;
         font-size: 16px !important;
 
         /* Ligatures */
@@ -376,7 +395,7 @@
 @-moz-document domain("stackoverflow.com") {
     /* StackOverflow - Goal: All fonts */
     code {
-        font-family: var(--monospace), --var(block-mono), ui-monospace, "Cascadia Mono", "Segoe UI Mono",
+        font-family: var(--monospace), var(--block-mono), ui-monospace, "Cascadia Mono", "Segoe UI Mono",
             "Liberation Mono", Menlo, Monaco, Consolas, monospace !important;
         font-size: 16px !important;
 
@@ -405,5 +424,29 @@
     /* Quora - Goal: Reduce usage of system font */
     .q-box {
         font-family: var(--plex-base), -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+    }
+}
+
+@-moz-document domain("chat.openai.com") {
+    /* ChatGPT - Goal: Code blocks */
+    code {
+        font-family: var(--monospace), var(--block-mono), Söhne Mono, Monaco, Andale Mono, Ubuntu Mono, monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("w3schools.com") {
+    /* W3Schools - Goal: Code blocks */
+    .w3-white > code, .w3-codespan {
+        font-family: var(--monospace), var(--block-mono), Consolas, "Source Code Pro", Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 }
