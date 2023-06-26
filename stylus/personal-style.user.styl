@@ -51,7 +51,7 @@
     /* Var initializations */
     :root {
         --font-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
-            Segoe, Arial, sans-serif;
+            Segoe;
         --font-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
             "Roboto", Helvetica, Arial, sans-serif;
         --font-small: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
@@ -117,21 +117,21 @@
 
     /* Fonts */
     #sa_ul,
-    #vvlb,
-    .notHP,
-    .scopes,
-    .suggestion-title,
-    .text,
     .tit,
     .l_ecrd_txt_hlt,
     .qna_tg .rwrl,
+    .b_caption,
+    .b_scopebar,
+    .b_dataList > li a,
+    .img_info,
+    #b_tween,
+    #id_h,
     .title {
-        font-family: var(--font-text) !important;
+        font-family: var(--font-text), Arial, Helvetica, sans-serif !important;
     }
 
     #sw_as {
-        font-family: Roboto, "Segoe UI Variable Text", "Segoe UI", SegoeUI,
-            Segoe !important;
+        font-family: var(--font-text) !important;
         filter: opacity(100%) !important;
     }
 
