@@ -53,9 +53,9 @@
         --font-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
             Segoe;
         --font-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Helvetica, Arial, sans-serif;
+            "Roboto";
         --font-small: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
-            Segoe, Arial, sans-serif;
+            Segoe;
         /* --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png); */
     }
 
@@ -141,6 +141,27 @@
         filter: opacity(100%) !important;
     }
 
+    /* Variable Small */
+    #imagemeta,
+    .b_vPanel,
+    .l_ecrd_ftr_txt,
+    .rd_gtrtb_nav_item,
+    .rstc,
+    .sto_attr_header,
+    .fdbtext,
+    .b_fbText,
+    .b_seeMoreCont,
+    .b_algospacing,
+    .recommendationsTableTitle > h2 {
+        font-family: var(--font-small), Arial, sans-serif !important;
+        filter: opacity(100%) !important;
+    }
+
+    .sa_rm {
+        font-family: var(--font-small), "Arial", "Helvetica", "sans-serif" !important;
+        filter: opacity(100%) !important;
+    }
+    
     /* Variable Text */
     .wpvn_ala_wtt,
     .b_title > h2,
@@ -154,12 +175,13 @@
     .nws_sh > h2,
     .ent-dtab-nam-ov-dtp,
     .b_topTitle,
+    .b_vList,
     #detailMeta,
     #rd_gtrtb_ttl {
         font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
             "Roboto", Helvetica, sans-serif !important;
     }
-
+    
     /* Variable Display */
     .l_ecrd_txt_heros,
     .l_ecrd_txt_heroxxs,
@@ -167,34 +189,12 @@
     .l_ecrd_txt_herol,
     .sto_title,
     .container-title {
-        font-family: var(--font-display) !important;
+        font-family: var(--font-display), Helvetica, Arial, sans-serif !important;
         filter: opacity(100%) !important;
     }
 
     .scs_cpr > h2 {
-        font-family: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Helvetica, sans-serif !important;
-        filter: opacity(100%) !important;
-    }
-
-    /* Variable Small */
-    #imagemeta,
-    .b_vPanel,
-    .l_ecrd_ftr_txt,
-    .rd_gtrtb_nav_item,
-    .rstc,
-    .sto_attr_header,
-    .fdbtext,
-    .b_fbText,
-    .b_seeMoreCont,
-    .recommendationsTableTitle > h2 {
-        font-family: var(--font-small) !important;
-        filter: opacity(100%) !important;
-    }
-
-    .sa_rm {
-        font-family: Roboto, "Segoe UI Variable Small", "Segoe UI", SegoeUI,
-            Segoe, "Arial", "Helvetica", "sans-serif" !important;
+        font-family: var(--font-display), Helvetica, sans-serif !important;
         filter: opacity(100%) !important;
     }
 }
