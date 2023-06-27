@@ -206,6 +206,9 @@
     .page-responsive,
     .Box-sc-g0xbh4-0,
     .Dialog__Footer-sc-uaxjsn-6,
+    .markdown-body > p,
+    .markdown-body > h3,
+    details,
     .container-lg {
         font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,
             "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
@@ -456,6 +459,18 @@
         font-family: var(--monospace), var(--block-mono), Consolas,
             "Source Code Pro", Menlo, Monaco, "Andale Mono", "Ubuntu Mono",
             monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("learn.microsoft.com") {
+    /* MS Learn - Goal: Code blocks */
+    pre > code, p > code, li > code {
+        font-family: var(--monospace), var(--block-mono), SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace !important;
         font-size: 16px !important;
 
         /* Ligatures */
