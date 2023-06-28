@@ -44,8 +44,8 @@
     :root {
         --font-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
             Segoe;
-        --header-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
-            "Roboto";
+        --header-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI,
+            Segoe, "Roboto";
         --footer-small: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
             Segoe;
         /* --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png); */
@@ -92,20 +92,20 @@
 
     /* Change logo (at least on results pages) */
     /* .b_logo {
-        height: 50px !important;
-        margin-top: 0px !important;
-        width: 150px !important;
-    }
-
-    .b_logo::after {
-        content: var(--logo-url) !important;
-        transform-origin: 47px 8px !important;
-        transform: scale(0.1) !important;
-    }
-
-    .icon::after {
-        content: none !important;
-    } */
+         height: 50px !important;
+         margin-top: 0px !important;
+         width: 150px !important;
+     }
+ 
+     .b_logo::after {
+         content: var(--logo-url) !important;
+         transform-origin: 47px 8px !important;
+         transform: scale(0.1) !important;
+     }
+ 
+     .icon::after {
+         content: none !important;
+     } */
 
     /* Fonts */
     #sa_ul,
@@ -152,11 +152,6 @@
         filter: opacity(100%) !important;
     }
 
-    .sa_rm {
-        font-family: var(--footer-small), "Arial", "Helvetica", "sans-serif" !important;
-        filter: opacity(100%) !important;
-    }
-    
     /* Variable Text */
     .wpvn_ala_wtt,
     .b_title > h2,
@@ -175,27 +170,21 @@
     .b_entityTitle,
     #detailMeta,
     .qna_algoLink_title,
-    .exp-rs > h2,
-    #rd_gtrtb_ttl {
+    .exp-rs > h2 {
         font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
             "Roboto", Helvetica, sans-serif !important;
     }
-    
+
     /* Variable Display */
     .l_ecrd_txt_heros,
     .l_ecrd_txt_heroxxs,
     .l_ecrd_thumbheader_ttl,
     .l_ecrd_txt_herol,
     .sto_title,
-    .l_ecrd_txt_herom,
-    .b_focusTextLarge,
-    .container-title {
+    l_ecrd_txt_herom,
+    b_focusTextLarge,
+    container-title {
         font-family: var(--header-display), Helvetica, Arial, sans-serif !important;
-        filter: opacity(100%) !important;
-    }
-
-    .scs_cpr > h2 {
-        font-family: var(--header-display), Helvetica, sans-serif !important;
         filter: opacity(100%) !important;
     }
 }
