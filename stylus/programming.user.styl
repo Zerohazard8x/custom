@@ -73,7 +73,7 @@
 }
 
 @-moz-document domain("discord.com") {
-    /* Discord - Goal: Change font and formatting of code blocks*/
+    /* Discord - Goal: Change font and formatting of code blocks */
     .hljs,
     .codeLine-2C-9aH,
     .inlineCode-ERyvy_,
@@ -90,7 +90,7 @@
     }
 }
 @-moz-document domain("wikipedia.org") {
-    /* Wikipedia - Goal: Replace Arial font */
+    /* Wikipedia - Goal: Replace Arial font, Codeblocks */
     #searchform,
     .vector-body,
     .vector-menu,
@@ -100,6 +100,16 @@
     cite,
     .mwe-popups-container {
         font-family: var(--plex-base), sans-serif !important;
+    }
+
+    p > code,
+    li > code {
+        font-family: var(--monospace), var(--block-mono), monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 }
 
@@ -183,6 +193,20 @@
     li > code {
         font-family: var(--monospace), var(--block-mono), SFMono-Regular,
             Consolas, Liberation Mono, Menlo, Courier, monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("wikiwand.com") {
+    /* Wikiwand - Goal: Code blocks */
+    p > code,
+    li > code {
+        font-family: var(--monospace), var(--block-mono), Noto Sans Mono, Menlo,
+            Consolas, Courier New, Courier, monospace !important;
         font-size: 16px !important;
 
         /* Ligatures */
