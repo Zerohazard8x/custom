@@ -11,11 +11,11 @@
 :root {
     /* Define variables */
     --plex-base: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans";
-    --monospace: "Fira Code", "Fira Mono", "Noto Mono", "DroidSansM", "Hack",
-        "Bitstream Vera Sans Mono", "BitstromVera", "DejaVu Sans Mono",
-        "Segoe UI Mono", "SF Mono", "SFMono-Regular", Menlo, Monaco, "Consolas",
-        "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
-        "Source Code Pro";
+    --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
+        "DroidSansM", "Hack", "Bitstream Vera Sans Mono", "BitstromVera",
+        "DejaVu Sans Mono", "Segoe UI Mono", "SF Mono", "SFMono-Regular", Menlo,
+        Monaco, "Consolas", "Andale Mono", "Lucida Console",
+        "Lucida Sans Typewriter", "Source Code Pro";
     --block-mono: "JetBrains Mono", "JetBrains Mono NL", "Input Mono",
         "IBM Plex Mono", "BlexMono", "Roboto Mono", "Iosevka Expanded",
         "Iosevka", "Input Sans", "Liberation Mono";
@@ -103,7 +103,8 @@
     }
 
     p > code,
-    li > code {
+    li > code,
+    pre > span {
         font-family: var(--monospace), var(--block-mono), monospace !important;
         font-size: 16px !important;
 
@@ -204,7 +205,8 @@
 @-moz-document domain("wikiwand.com") {
     /* Wikiwand - Goal: Code blocks */
     p > code,
-    li > code {
+    li > code,
+    pre > span {
         font-family: var(--monospace), var(--block-mono), Noto Sans Mono, Menlo,
             Consolas, Courier New, Courier, monospace !important;
         font-size: 16px !important;
