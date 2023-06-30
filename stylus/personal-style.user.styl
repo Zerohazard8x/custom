@@ -274,6 +274,20 @@
     }
 }
 
+@-moz-document domain("wikipedia.org") {
+    /* Wikipedia - Goal: Replace Arial font */
+    #searchform,
+    .vector-body,
+    .vector-menu,
+    .vector-menu-content-list,
+    .vector-pinnable-header-toggle-button,
+    .vector-toc,
+    cite,
+    .mwe-popups-container {
+        font-family: var(--plex-base), sans-serif !important;
+    }
+}
+
 @-moz-document domain("deepl.com") {
     /* DeepL - Goal: Replace Segoe font */
     body *:not(.fa) {
