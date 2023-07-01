@@ -1,0 +1,7 @@
+[uBlock Origin]
+! Title: Misc. decluttering
+! Description: Miscellaneous decluttering
+! Homepage: https://github.com/zerohazard8x/custom/ublock
+! Expires: 1 day
+
+gg.bet###betting__container > div.__app-RootResponse-container.ignore-mq.superExtraSmall.rootResponse__container___2aflL > div.ScrollToTop__container___37xDi > div.__app-page-wrapper.app__page-wrapper___9hhzc > div.betslipSidebarWrapper__container___2EPNx:last-child > div.fixedOverlay__container___2IWCf > div.footer__container___2tyK9 > div.sidebarToggler__container___2z38k > div.sidebarToggler__btn___2wIhe
