@@ -1,26 +1,27 @@
 {
-  "timeStamp": 1687691820344,
+  "timeStamp": 1688194664731,
   "version": "1.50.0",
   "userSettings": {
     "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
-    "importedLists": [],
+    "externalLists": "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt",
+    "importedLists": [
+      "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt"
+    ],
     "popupPanelSections": 31
   },
   "selectedFilterLists": [
     "user-filters",
-    "assets.json",
-    "public_suffix_list.dat",
-    "ublock-badlists",
     "ublock-filters",
     "ublock-badware",
     "ublock-privacy",
-    "ublock-unbreak",
     "ublock-quick-fixes",
+    "ublock-unbreak",
     "easylist",
     "easyprivacy",
     "urlhaus-1",
-    "plowe-0"
+    "plowe-0",
+    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt"
   ],
   "hiddenSettings": {
     "autoUpdatePeriod": 1
