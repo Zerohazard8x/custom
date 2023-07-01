@@ -127,7 +127,7 @@
         filter: opacity(100%) !important;
     }
 
-    /* Variable Small */
+    /* Variable Small Fallback */
     #imagemeta,
     .b_vPanel,
     .l_ecrd_ftr_txt,
@@ -140,6 +140,12 @@
     .b_algospacing,
     .recommendationsTableTitle > h2 {
         font-family: var(--footer-small), Arial, sans-serif !important;
+        filter: opacity(100%) !important;
+    }
+    
+    /* Variable Small */
+    .mc_vtvc_meta_row_channel {
+        font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe, "Roboto", Helvetica, sans-serif;
         filter: opacity(100%) !important;
     }
 
