@@ -2,13 +2,23 @@
 @name           tweetdeck
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    font changes
+@description    changes
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-tweetdeck.user.styl
-@homepageURL    https://github.com/Zerohazard8x/custom/stylus
+@homepageURL    https://github.com/Zerohazard8x/custom
 ==/UserStyle== */
 
 @-moz-document domain("tweetdeck.twitter.com") {
+    .js-column.column {
+        /* Change column width */
+        width: 380px !important;
+    }
+    
+    html.dark .is-wide-columns .media-size-medium, .media-image, .media-grid-container {
+        /* Make images taller */
+        height: 360px !important;
+    }
+    
     .is-wide-columns,
     .js-dropdown-content,
     .js-modal-panel,
