@@ -1,18 +1,12 @@
 [
     {
         "headers": [
-            { "enabled": true, "name": "Referer", "sendEmptyHeader": true },
+            { "enabled": true, "name": "Referer", "sendEmptyHeader": false },
+            { "enabled": true, "name": "X-Forwarded-For", "value": "1.1.1.2" },
             {
                 "enabled": true,
                 "name": "Forwarded",
                 "value": "for=1.1.1.2;proto=https"
-            },
-            { "enabled": true, "name": "X-Forwarded-For", "value": "1.1.1.2" },
-            {
-                "enabled": true,
-                "name": "user-agent",
-                "sendEmptyHeader": true,
-                "value": ""
             }
         ],
         "title": "security and/or privacy"
