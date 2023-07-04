@@ -214,3 +214,23 @@
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 }
+
+@-moz-document domain("developer.mozilla.org") {
+    /* Mozilla Dev - Goal: Code blocks */
+    pre > code,
+    p > code,
+    strong > code,
+    a > code {
+        font-family: var(--monospace), var(--block-mono), monospace !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+
+    pre > code,
+    p > code,
+    strong > code {
+        font-size: 16px !important;
+    }
+}
