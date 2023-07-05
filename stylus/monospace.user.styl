@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name           programming
+@name           monospace
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
-@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/programming.user.styl
+@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom
 ==/UserStyle== */
 
@@ -27,6 +27,7 @@
     .Box-sc-g0xbh4-0,
     .Dialog__Footer-sc-uaxjsn-6,
     .my-3,
+    .d-block,
     details,
     blockquote,
     .container-lg {
@@ -233,5 +234,16 @@
     strong > code,
     .section-content > pre {
         font-size: 16px !important;
+    }
+}
+
+@-moz-document domain("symbolab.com") {
+    /* Symbolab - Goal: LaTeX input interface */
+    .latex-command-input {
+        font-family: var(--monospace), var(--block-mono), "Courier New", monospace !important;
+        
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 }
