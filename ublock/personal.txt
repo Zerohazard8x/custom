@@ -17851,7 +17851,6 @@
 ||mktw.net$script,object,ping,stylesheet,other
 ||ml314.com$script,object,ping,stylesheet,other
 ||mms0.baidu.com$script,object,ping,stylesheet,other
-||moatads.com$script,object,ping,stylesheet,other
 ||mod.io$script,object,ping,stylesheet,other
 ||mookie1.com$script,object,ping,stylesheet,other
 ||mradx.net$script,object,ping,stylesheet,other
