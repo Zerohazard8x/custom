@@ -1,11 +1,11 @@
 [uBlock Origin]
 ! Title: Clean popout chat
 ! Description: Cleans popout chat
-! Homepage: https://github.com/zerohazard8x/custom/ublock
+! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
 ! Expires: 1 day
 
-twitch.tv/popout###root > div.Layout-sc-1xcs6mc-0.jJdwiU > div.Layout-sc-1xcs6mc-0.htmBdw:first-child > div.Layout-sc-1xcs6mc-0.hbPBYc > div.Layout-sc-1xcs6mc-0.kpWRFF.stream-chat > section.InjectLayout-sc-1i43xsx-0.bekZto.chat-room:last-child > div.Layout-sc-1xcs6mc-0.jmUA-dj.chat-room__content > div.Layout-sc-1xcs6mc-0:first-child > div.Layout-sc-1xcs6mc-0.jaGgya > div.Layout-sc-1xcs6mc-0.jaGgya > div.Layout-sc-1xcs6mc-0.gVEmBy > div.Layout-sc-1xcs6mc-0.hZLfAO > div.Layout-sc-1xcs6mc-0.gHqJZO > div.Layout-sc-1xcs6mc-0.gCePyT
-twitch.tv/popout###root > div.Layout-sc-1xcs6mc-0.jJdwiU > div.Layout-sc-1xcs6mc-0.htmBdw:first-child > div.Layout-sc-1xcs6mc-0.hbPBYc > div.Layout-sc-1xcs6mc-0.kpWRFF.stream-chat > section.InjectLayout-sc-1i43xsx-0.bekZto.chat-room:last-child > div.Layout-sc-1xcs6mc-0.jmUA-dj.chat-room__content > div.Layout-sc-1xcs6mc-0.bGyiZe.chat-input:nth-child(6) > div:last-child
-twitch.tv/popout###root > div.Layout-sc-1xcs6mc-0.jJdwiU > div.Layout-sc-1xcs6mc-0.htmBdw:first-child > div.Layout-sc-1xcs6mc-0.hbPBYc > div.Layout-sc-1xcs6mc-0.kpWRFF.stream-chat > div.Layout-sc-1xcs6mc-0.jBYVfx.stream-chat-header:first-child
+twitch.tv###root > div.Layout-sc-1xcs6mc-0.jJdwiU > div.Layout-sc-1xcs6mc-0.htmBdw:first-child > div.Layout-sc-1xcs6mc-0.hbPBYc > div.Layout-sc-1xcs6mc-0.kpWRFF.stream-chat > section.InjectLayout-sc-1i43xsx-0.bekZto.chat-room:last-child > div.Layout-sc-1xcs6mc-0.jmUA-dj.chat-room__content > div.Layout-sc-1xcs6mc-0:first-child > div.Layout-sc-1xcs6mc-0.jaGgya > div.Layout-sc-1xcs6mc-0.jaGgya > div.Layout-sc-1xcs6mc-0.gVEmBy > div.Layout-sc-1xcs6mc-0.hZLfAO > div.Layout-sc-1xcs6mc-0.gHqJZO > div.Layout-sc-1xcs6mc-0.gCePyT
+twitch.tv###root > div.Layout-sc-1xcs6mc-0.jJdwiU > div.Layout-sc-1xcs6mc-0.htmBdw:first-child > div.Layout-sc-1xcs6mc-0.hbPBYc > div.Layout-sc-1xcs6mc-0.kpWRFF.stream-chat > section.InjectLayout-sc-1i43xsx-0.bekZto.chat-room:last-child > div.Layout-sc-1xcs6mc-0.jmUA-dj.chat-room__content > div.Layout-sc-1xcs6mc-0.bGyiZe.chat-input:nth-child(6) > div:last-child
+twitch.tv###root > div.Layout-sc-1xcs6mc-0.jJdwiU > div.Layout-sc-1xcs6mc-0.htmBdw:first-child > div.Layout-sc-1xcs6mc-0.hbPBYc > div.Layout-sc-1xcs6mc-0.kpWRFF.stream-chat > div.Layout-sc-1xcs6mc-0.jBYVfx.stream-chat-header:first-child
 youtube.com###chat-messages > yt-live-chat-header-renderer.style-scope.yt-live-chat-renderer:first-child
 youtube.com###live-chat-message-input
