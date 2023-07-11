@@ -10,7 +10,9 @@
 
 :root {
     /* Define variables */
-    --font: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans", "SF Pro", "SF Pro Text", "Inter", "Roboto";
+    --font: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
+        -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter",
+        "Roboto";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
         "DroidSansM", "Hack", "Bitstream Vera Sans Mono", "BitstromVera",
         "DejaVu Sans Mono", "Segoe UI Mono", "SF Mono", "SFMono-Regular", Menlo,
@@ -31,9 +33,9 @@
     details,
     blockquote,
     .container-lg {
-        font-family: var(--font), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
-            "Apple Color Emoji", "Segoe UI Emoji" !important;
+        font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji" !important;
     }
 
     #commit-summary-input,
@@ -152,9 +154,9 @@
     /* Poe - Goal: Reduce usage of system font */
     .PageWithSidebarLayout_centeredPage__D42BU,
     .ReactModal__Content {
-        font-family: var(--font), apple-system, system-ui,
-            BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-            Helvetica Neue, sans-serif !important;
+        font-family: var(--font), apple-system, system-ui, BlinkMacSystemFont,
+            Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue,
+            sans-serif !important;
     }
 }
 
@@ -241,8 +243,29 @@
 @-moz-document domain("symbolab.com") {
     /* Symbolab - Goal: LaTeX input interface */
     .latex-command-input {
-        font-family: var(--monospace), var(--block-mono), "Courier New", monospace !important;
-        
+        font-family: var(--monospace), var(--block-mono), "Courier New",
+            monospace !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("tcrf.net") {
+    /* TCRF - Goal: Reduce usage of Arial font, code blocks */
+    .mediawiki {
+        font-family: var(--font), sans-serif !important;
+    }
+
+    #searchInput {
+        font-family: var(--font), "MS Shell Dlg 2" !important;
+    }
+
+    tt,
+    .mw-parser-output > pre {
+        font-family: var(--monospace), var(--block-mono), monospace, monospace !important;
+
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;

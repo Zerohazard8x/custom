@@ -10,16 +10,17 @@
 
 :root {
     /* Define variables */
-    --font: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans", "SF Pro", "SF Pro Text", "Inter", "Roboto";
+    --font: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
+        -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter",
+        "Roboto";
 }
 
 @-moz-document domain("youtube.com") {
     /* youtube - Goal: subtitles */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: var(--font), "YouTube Noto", Roboto,
-            "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption",
-            sans-serif !important;
+        font-family: var(--font), "YouTube Noto", Roboto, "Arial Unicode Ms",
+            Arial, Helvetica, Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
         text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px !important; /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 3 times */
     }
@@ -32,8 +33,8 @@
 @-moz-document domain("facebook.com"), domain("messenger.com") {
     /* facebook, messenger - goal: change all fonts */
     .x9f619 {
-        font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica,
-            Arial, sans-serif !important;
+        font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica, Arial,
+            sans-serif !important;
     }
 }
 
@@ -147,6 +148,7 @@
     .b_fbText,
     .b_seeMoreCont,
     .b_algospacing,
+    .tdw_button,
     .recommendationsTableTitle > h2 {
         font-family: var(--footer-small), Arial, sans-serif !important;
         filter: opacity(100%) !important;
@@ -177,6 +179,7 @@
     #detailMeta,
     .qna_algoLink_title,
     .dest_name,
+    .deeplink_title > a,
     .b_rc_gb_widget_title {
         font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
             "Roboto", Helvetica, sans-serif !important;
@@ -293,8 +296,8 @@
 @-moz-document domain("deepl.com") {
     /* DeepL - Goal: Replace Segoe font */
     body *:not(.fa) {
-        font-family: var(--font), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+        font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif !important;
     }
 }
 
@@ -313,17 +316,17 @@
     /* Poe - Goal: Reduce usage of system font */
     .PageWithSidebarLayout_centeredPage__D42BU,
     .ReactModal__Content {
-        font-family: var(--font), apple-system, system-ui,
-            BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-            Helvetica Neue, sans-serif !important;
+        font-family: var(--font), apple-system, system-ui, BlinkMacSystemFont,
+            Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue,
+            sans-serif !important;
     }
 }
 
 @-moz-document domain("quora.com") {
     /* Quora - Goal: Reduce usage of system font */
     .q-box {
-        font-family: var(--font), -apple-system, system-ui,
-            BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-            Cantarell, "Helvetica Neue", sans-serif !important;
+        font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+            sans-serif !important;
     }
 }
