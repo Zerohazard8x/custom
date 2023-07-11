@@ -10,14 +10,14 @@
 
 :root {
     /* Define variables */
-    --plex-base: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans";
+    --font: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans", "SF Pro", "SF Pro Text", "Inter", "Roboto";
 }
 
 @-moz-document domain("youtube.com") {
     /* youtube - Goal: subtitles */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: var(--plex-base), "YouTube Noto", Roboto,
+        font-family: var(--font), "YouTube Noto", Roboto,
             "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption",
             sans-serif !important;
         color: #fff000 !important;
@@ -32,7 +32,7 @@
 @-moz-document domain("facebook.com"), domain("messenger.com") {
     /* facebook, messenger - goal: change all fonts */
     .x9f619 {
-        font-family: var(--plex-base), Segoe UI, Segoe UI Historic, Helvetica,
+        font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica,
             Arial, sans-serif !important;
     }
 }
@@ -272,7 +272,7 @@
     button,
     select,
     input {
-        font-family: var(--plex-base), sans-serif !important;
+        font-family: var(--font), sans-serif !important;
     }
 }
 
@@ -286,14 +286,14 @@
     .pure-u-20-24,
     .pure-u-23-24,
     .pure-u-10-24 {
-        font-family: var(--plex-base), sans-serif !important;
+        font-family: var(--font), sans-serif !important;
     }
 }
 
 @-moz-document domain("deepl.com") {
     /* DeepL - Goal: Replace Segoe font */
     body *:not(.fa) {
-        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,
+        font-family: var(--font), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
     }
 }
@@ -304,7 +304,7 @@
     .HeaderMenu,
     .RatingsBoxAdjustedRating,
     input {
-        font-family: var(--plex-base), Arial, "Segoe UI", Frutiger,
+        font-family: var(--font), Arial, "Segoe UI", Frutiger,
             "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
     }
 }
@@ -313,7 +313,7 @@
     /* Poe - Goal: Reduce usage of system font */
     .PageWithSidebarLayout_centeredPage__D42BU,
     .ReactModal__Content {
-        font-family: var(--plex-base), apple-system, system-ui,
+        font-family: var(--font), apple-system, system-ui,
             BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
             Helvetica Neue, sans-serif !important;
     }
@@ -322,7 +322,7 @@
 @-moz-document domain("quora.com") {
     /* Quora - Goal: Reduce usage of system font */
     .q-box {
-        font-family: var(--plex-base), -apple-system, system-ui,
+        font-family: var(--font), -apple-system, system-ui,
             BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
             Cantarell, "Helvetica Neue", sans-serif !important;
     }

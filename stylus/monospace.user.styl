@@ -10,7 +10,7 @@
 
 :root {
     /* Define variables */
-    --plex-base: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans";
+    --font: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans", "SF Pro", "SF Pro Text", "Inter", "Roboto";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
         "DroidSansM", "Hack", "Bitstream Vera Sans Mono", "BitstromVera",
         "DejaVu Sans Mono", "Segoe UI Mono", "SF Mono", "SFMono-Regular", Menlo,
@@ -31,7 +31,7 @@
     details,
     blockquote,
     .container-lg {
-        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,
+        font-family: var(--font), -apple-system, BlinkMacSystemFont,
             "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
             "Apple Color Emoji", "Segoe UI Emoji" !important;
     }
@@ -98,7 +98,7 @@
     .vector-toc,
     cite,
     .mwe-popups-container {
-        font-family: var(--plex-base), sans-serif !important;
+        font-family: var(--font), sans-serif !important;
     }
 
     p > code,
@@ -143,7 +143,7 @@
     .question-hyperlink,
     .comment-copy,
     .s-prose {
-        font-family: var(--plex-base), -apple-system, BlinkMacSystemFont,
+        font-family: var(--font), -apple-system, BlinkMacSystemFont,
             "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
     }
 }
@@ -152,7 +152,7 @@
     /* Poe - Goal: Reduce usage of system font */
     .PageWithSidebarLayout_centeredPage__D42BU,
     .ReactModal__Content {
-        font-family: var(--plex-base), apple-system, system-ui,
+        font-family: var(--font), apple-system, system-ui,
             BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
             Helvetica Neue, sans-serif !important;
     }
