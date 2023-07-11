@@ -93,6 +93,11 @@
 @-moz-document domain("wikipedia.org") {
     /* Wikipedia - Goal: Replace Arial font, Codeblocks */
     #searchform,
+    #p-lang-btn-label,
+    #vector-page-tools-dropdown-label,
+    .grid,
+    .noime,
+    .invite,
     .vector-body,
     .vector-menu,
     .vector-menu-content-list,
@@ -220,10 +225,7 @@
 
 @-moz-document domain("developer.mozilla.org") {
     /* Mozilla Dev - Goal: Code blocks */
-    pre > code,
-    p > code,
-    strong > code,
-    a > code,
+    code,
     .section-content > pre {
         font-family: var(--monospace), var(--block-mono), monospace !important;
 
