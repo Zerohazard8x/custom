@@ -31,10 +31,42 @@
 }
 
 @-moz-document domain("facebook.com"), domain("messenger.com") {
-    /* facebook, messenger - goal: change all fonts */
+    /* facebook, messenger - goal: reduce use of system font, grayscale */
     .x9f619 {
         font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica, Arial,
             sans-serif !important;
+    }
+
+    ._1gaz {
+        font-family: var(--font), SFProText-Medium, Helvetica, Arial, sans-serif !important;
+    }
+
+    ._8e63 {
+        font-family: var(--font), SFProDisplay-Regular, Helvetica, Arial,
+            sans-serif !important;
+    }
+
+    ._8e4l,
+    ._4bl9,
+    ._45ks,
+    ._58mk,
+    #globalContainer {
+        font-family: var(--font), SFProText-Regular, Helvetica, Arial,
+            sans-serif !important;
+    }
+
+    ._8esh {
+        font-family: var(--font), SFProText-Semibold, Helvetica, Arial,
+            sans-serif !important;
+    }
+
+    div._li,
+    #mount_0_0_ff,
+    #mount_0_0_ui,
+    div.AdBox.Ad.advert.post-ads,
+    div.download_link_sponsored,
+    div.ob-hover {
+        filter: grayscale(80%);
     }
 }
 
@@ -109,25 +141,25 @@
      } */
 
     /* Fonts */
-    .b_respl,
     #b_footerItems a,
     #b_footerItems span,
-    .items,
-    .idp-refresh-page-main-line,
-    .lite-entcard-main,
-    .lite-entcard-exp,
-    .mc_vtvc_meta,
-    .mc_bc_rc,
-    .metaItem,
-    .img_info,
-    .vd-duration,
-    .cbtn,
-    .tit,
-    .img_badges > span a,
-    .rsa,
     #fltIdtCon,
-    #vvlb,
     #id_h,
+    #vvlb,
+    .b_respl,
+    .cbtn,
+    .idp-refresh-page-main-line,
+    .img_badges > span a,
+    .img_info,
+    .items,
+    .lite-entcard-exp,
+    .lite-entcard-main,
+    .mc_bc_rc,
+    .mc_vtvc_meta,
+    .metaItem,
+    .rsa,
+    .tit,
+    .vd-duration,
     .title {
         font-family: var(--font-text), Arial, Helvetica, sans-serif !important;
     }
@@ -139,15 +171,16 @@
 
     /* Variable Small Fallback */
     #imagemeta,
+    .b_algospacing,
+    .b_bfbLcgAnchorText,
+    .b_fbText,
+    .b_seeMoreCont,
     .b_vPanel,
+    .fdbtext,
     .l_ecrd_ftr_txt,
     .rd_gtrtb_nav_item,
     .rstc,
     .sto_attr_header,
-    .fdbtext,
-    .b_fbText,
-    .b_seeMoreCont,
-    .b_algospacing,
     .tdw_button,
     .recommendationsTableTitle > h2 {
         font-family: var(--footer-small), Arial, sans-serif !important;
@@ -155,9 +188,9 @@
     }
 
     /* Variable Small */
-    .mc_vtvc_title > strong,
-    .mc_vtvc_meta_row_channel,
     .dg_b .infnmpt .infpd a,
+    .mc_vtvc_meta_row_channel,
+    .mc_vtvc_title > strong,
     .b_title {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
             "Roboto", Helvetica, sans-serif;
@@ -166,38 +199,60 @@
 
     /* Variable Text */
     h2,
-    .wpvn_ala_wtt,
+    #detailMeta,
+    .b_entityTitle,
     .b_primtxt,
     .b_searchboxForm,
-    .rwrl,
-    .sto_attrlitc,
-    .sto_attr_table,
-    .ent-dtab-nam-ov-dtp,
     .b_topTitle,
     .b_vList,
-    .b_entityTitle,
-    #detailMeta,
-    .qna_algoLink_title,
-    .dest_name,
     .deeplink_title > a,
+    .dest_name,
+    .ent-dtab-nam-ov-dtp,
+    .qna_algoLink_title,
+    .rwrl,
+    .sto_attr_table,
+    .sto_attrlitc,
+    .wpvn_ala_wtt,
     .b_rc_gb_widget_title {
         font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
             "Roboto", Helvetica, sans-serif !important;
     }
 
     /* Variable Display */
-    h2 > span,
-    span > a,
-    .b_mgridTitle,
-    .b_focusTextMedium,
-    .sto_title,
-    .thdrail_card_title > div,
     .b_focusTextLarge,
+    .b_focusTextMedium,
+    .b_mgridTitle,
     .irp-video-slogan,
     .scs_metactn > div h2,
+    .sto_title,
+    .thdrail_card_title > div,
+    div > p span,
+    h2 > span,
     container-title {
         font-family: var(--header-display), Helvetica, Arial, sans-serif !important;
         filter: opacity(100%) !important;
+    }
+
+    /* grayscale */
+    #aRmsDefer,
+    #ajaxStyles,
+    #b_TriviaOverlay,
+    #b_content,
+    #b_header,
+    #b_sydConvCont,
+    #b_sydHeadBg,
+    #bfb-prefetch,
+    #pagetual-preload,
+    #qs_searchBoxOuter,
+    #sbicom_loader,
+    a.entityPreview.b_hidden,
+    div.sb_hbop,
+    div.scs_cp.b_hide,
+    footer.b_footer,
+    form.sbi_form_ph,
+    span.b_hide,
+    iframe.insightsOverlay {
+        filter: grayscale(80%);
     }
 }
 

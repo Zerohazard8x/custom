@@ -24,12 +24,13 @@
 }
 
 @-moz-document domain("github.com") {
-    /* Github - Goal: Change all fonts, change font and formatting of code blocks */
+    /* Github - Goal: Change all fonts, change font and formatting of code blocks, grayscale */
     .page-responsive,
     .Box-sc-g0xbh4-0,
     .Dialog__Footer-sc-uaxjsn-6,
     .my-3,
     .d-block,
+    section,
     details,
     blockquote,
     .container-lg {
@@ -52,7 +53,6 @@
     .markdown-body pre,
     kbd,
     code,
-    a > code,
     .commit-desc > pre {
         font-family: var(--monospace), var(--block-mono), Consolas, monospace !important;
 
@@ -70,6 +70,11 @@
     .markdown-body pre,
     .markdown-body code {
         font-size: 16px !important;
+    }
+
+    div.logged-in.env-production.page-responsive.full-width,
+    div.sr-only {
+        filter: grayscale(80%);
     }
 }
 
@@ -162,10 +167,20 @@
             Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue,
             sans-serif !important;
     }
+
+    code > span {
+        font-family: var(--monospace), var(--block-mono), Consolas, monaco,
+            monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
 }
 
 @-moz-document domain("chat.openai.com") {
-    /* ChatGPT - Goal: Code blocks */
+    /* ChatGPT - Goal: Code blocks, grayscale */
     code {
         font-family: var(--monospace), var(--block-mono), Söhne Mono, Monaco,
             Andale Mono, Ubuntu Mono, monospace !important;
@@ -174,6 +189,10 @@
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+
+    #__next {
+        filter: grayscale(80%);
     }
 }
 
@@ -266,6 +285,20 @@
     tt,
     .mw-parser-output > pre {
         font-family: var(--monospace), var(--block-mono), monospace, monospace !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("bard.google.com") {
+    /* Google bard - Goal: code blocks */
+    .code-container,
+    .markdown > p code {
+        font-family: "Google Sans Mono", var(--monospace), var(--block-mono),
+            monospace !important;
+        font-size: 16px !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
