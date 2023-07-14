@@ -70,199 +70,8 @@
     }
 }
 
-@-moz-document domain("bing.com") {
-    /* Bing - Goal: Make sure website uses one single font + "fluent" changes */
-    /* Var initializations */
-    :root {
-        --font-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
-            Segoe;
-        --header-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI,
-            Segoe, "Roboto";
-        --footer-small: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
-            Segoe;
-        /* --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png); */
-    }
-
-    /* Japanese font fix by Kenji Iguchi */
-    /* :root * { */
-    /* Redefine variable cib-font-text */
-    /* --cib-font-text: font-family: -apple-system, Roboto, "Segoe UI Variable Text", SegoeUI, "Segoe UI", "Helvetica Neue", Helvetica, "Meiryo UI", Meiryo, Arial Unicode MS, sans-serif !important; */
-    /* } */
-
-    /* Search box */
-    .b_searchboxForm {
-        border-radius: 12px !important; /* Box searchbar corners */
-    }
-
-    /* Navigation bar */
-    /* All ul and li under a .b_scopebar element */
-    .b_scopebar > ul li {
-        /* Undo small caps */
-        text-transform: none !important;
-        font-size: 14px !important;
-        font-family: var(--font-text), Arial, Helvetica, sans-serif !important;
-    }
-
-    .b_scopebar ul {
-        height: 45px !important;
-    }
-
-    .b_scopebar li,
-    .b_scopebar #b-scopeListItem-menu {
-        line-height: 40px !important;
-    }
-
-    /* Navigation bar "pill" */
-    .b_scopebar li::after {
-        margin-top: -1px !important;
-    }
-
-    /* Navigation bar submenu */
-    .b_scopebar_item > a {
-        text-transform: none !important;
-        font-size: 13px !important;
-    }
-
-    /* Change logo (at least on results pages) */
-    /* .b_logo {
-         height: 50px !important;
-         margin-top: 0px !important;
-         width: 150px !important;
-     }
- 
-     .b_logo::after {
-         content: var(--logo-url) !important;
-         transform-origin: 47px 8px !important;
-         transform: scale(0.1) !important;
-     }
- 
-     .icon::after {
-         content: none !important;
-     } */
-
-    /* grayscale */
-/*     #aRmsDefer,
-    #ajaxStyles,
-    #b_TriviaOverlay,
-    #b_content,
-    #b_header,
-    #b_sydConvCont,
-    #b_sydHeadBg,
-    #bfb-prefetch,
-    #pagetual-preload,
-    #qs_searchBoxOuter,
-    #sbicom_loader,
-    a.entityPreview.b_hidden,
-    div.sb_hbop,
-    div.scs_cp.b_hide,
-    footer.b_footer,
-    form.sbi_form_ph,
-    span.b_hide,
-    iframe.insightsOverlay {
-        filter: grayscale(80%);
-    } */
-    
-     /* fix nondisappearing scrollbar (grayscale) */
-/*     #miniheader {
-        display: none !important;
-    } */
-    
-    /* Fonts */
-    #b_footerItems a,
-    #b_footerItems span,
-    #fltIdtCon,
-    #id_h,
-    #vvlb,
-    .b_respl,
-    .cbtn,
-    .idp-refresh-page-main-line,
-    .img_badges > span a,
-    .img_info,
-    .items,
-    .lite-entcard-exp,
-    .lite-entcard-main,
-    .mc_bc_rc,
-    .mc_vtvc_meta,
-    .metaItem,
-    .rsa,
-    .tit,
-    .vd-duration,
-    .title {
-        font-family: var(--font-text), Arial, Helvetica, sans-serif !important;
-    }
-
-    #sw_as {
-        font-family: var(--font-text) !important;
-        filter: opacity(100%) !important;
-    }
-
-    /* Variable Small Fallback */
-    #imagemeta,
-    .b_algospacing,
-    .b_bfbLcgAnchorText,
-    .b_fbText,
-    .b_seeMoreCont,
-    .b_vPanel,
-    .fdbtext,
-    .l_ecrd_ftr_txt,
-    .rd_gtrtb_nav_item,
-    .rstc,
-    .sto_attr_header,
-    .tdw_button,
-    .recommendationsTableTitle > h2 {
-        font-family: var(--footer-small), Arial, sans-serif !important;
-        filter: opacity(100%) !important;
-    }
-
-    /* Variable Small */
-    .dg_b .infnmpt .infpd a,
-    .mc_vtvc_meta_row_channel,
-    .mc_vtvc_title > strong,
-    .b_title {
-        font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Helvetica, sans-serif;
-        filter: opacity(100%) !important;
-    }
-
-    /* Variable Text */
-    h2,
-    #detailMeta,
-    .b_entityTitle,
-    .b_primtxt,
-    .b_searchboxForm,
-    .b_topTitle,
-    .b_vList,
-    .deeplink_title > a,
-    .dest_name,
-    .ent-dtab-nam-ov-dtp,
-    .qna_algoLink_title,
-    .rwrl,
-    .sto_attr_table,
-    .sto_attrlitc,
-    .wpvn_ala_wtt,
-    .b_rc_gb_widget_title {
-        font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Helvetica, sans-serif !important;
-    }
-
-    /* Variable Display */
-    .b_focusTextLarge,
-    .b_focusTextMedium,
-    .b_mgridTitle,
-    .irp-video-slogan,
-    .scs_metactn > div h2,
-    .sto_title,
-    .thdrail_card_title > div,
-    div > p span,
-    h2 > span,
-    container-title {
-        font-family: var(--header-display), Helvetica, Arial, sans-serif !important;
-        filter: opacity(100%) !important;
-    }
-}
-
 @-moz-document domain("google.com") {
-    /* Google - Goal: Reduce usage of Arial font */
+    /* Google - Goal: Reduce usage of Arial font, grayscale */
     a.K1yPdf,
     .L3eUgb,
     .NUnG9d,
@@ -325,6 +134,26 @@
     .gLFyf {
         font-family: "Google Sans", Roboto, arial, sans-serif !important;
     }
+    
+    #_2mOxZN2bHsP8hwP9q7jwBQ_1,
+    h1.Uo8X3b.OhScic.zsYMMe,
+    div.wYq63b,
+    div.CvDJxb,
+    div.DH7hPe,
+    #gac_scont,
+    span.kpshf.line.gsr.bilit.big.mdm,
+    div.main,
+    #_2mOxZN2bHsP8hwP9q7jwBQ_55,
+    #Rvx4kc,
+    div.fp-nh,
+    #lfootercc,
+    div.gb_jd,
+    div.gb_n,
+    #snbc,
+    #hfcr,
+    #pagetual-preload {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech") {
@@ -372,21 +201,23 @@
     }
 }
 
-@-moz-document domain("poe.com") {
-    /* Poe - Goal: Reduce usage of system font */
-    .PageWithSidebarLayout_centeredPage__D42BU,
-    .ReactModal__Content {
-        font-family: var(--font), apple-system, system-ui, BlinkMacSystemFont,
-            Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue,
-            sans-serif !important;
-    }
-}
-
 @-moz-document domain("quora.com") {
     /* Quora - Goal: Reduce usage of system font */
     .q-box {
         font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
             "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
             sans-serif !important;
+    }
+}
+
+@-moz-document domain("steampowered.com") {
+    /* Steam - goal: reduce usage of Arial font, grayscale */
+    .rightcol, div > a, .store_nav, #queueActionsCtn, #game_area_metascore > div, .block_header > div, #reviews_filter_language, .flyout, #review_context, .game_area_sys_req strong, .game_page_autocollapse_readmore, #footer_text {
+        font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
+    }
+    
+    /* grayscale */
+    div.responsive_page_frame.with_header, div.miniprofile_hover, div.FullModalOverlay {
+      filter: grayscale(80%);
     }
 }
