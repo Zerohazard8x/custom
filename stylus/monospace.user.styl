@@ -421,6 +421,7 @@
     #fltIdtCon,
     #id_h,
     #vvlb,
+    .vrhcpt,
     .metaItem,
     .b_respl,
     .cbtn,
@@ -466,18 +467,20 @@
     /* Variable Small */
     .dg_b .infnmpt .infpd a,
     .mc_vtvc_meta_row_channel,
-    .mc_vtvc_title > strong,
+    .mc_vtvc_title,
     .rd_gtrtb_nav_item,
     .b_title {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Helvetica, sans-serif;
+            "Roboto", Arial, Helvetica, sans-serif;
         filter: opacity(100%) !important;
     }
 
     /* Variable Text */
     h2,
     h4,
+    span > h3,
     #detailMeta,
+    .vrhtt,
     .metaItem > a,
     .ms-search-tenantLogo-text,
     .b_entityTitle,
@@ -495,7 +498,7 @@
     .wpvn_ala_wtt,
     .b_rc_gb_widget_title {
         font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Helvetica, sans-serif !important;
+            "Roboto", Arial, Helvetica, sans-serif !important;
     }
 
     /* Variable Display */
@@ -518,7 +521,9 @@
         font-family: var(--monospace), var(--block-mono), Consolas, Courier,
             monospace !important;
         font-size: 16px !important;
-        filter: opacity(100%) !important; /* mactype /*
+        filter: opacity(
+            100%
+        ) !important; /* mactype /*
         
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
