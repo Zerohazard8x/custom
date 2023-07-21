@@ -19,3 +19,5 @@ reddit.com###AppRouter-main-content > div > div.qYj03fU5CXf5t2Fc5iSvg.ListingLay
 reddit.com###t3_152zq36 > div._1poyrkZ7g36PawDueRza-J._11R7M_VOgKO1RJyRSRErT3._1Qs6zz6oqdrQbR7yE_ntfY:last-child > div.STit0dLageRsa2yR4te_b:nth-child(4) > div.m3aNC6yp8RrNM_-a0rrfa > div._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14:last-child > div._2yB7G9L-6O_6Lp6D0n7EAl > div._2f5uYHvlfzs2DngQsiCdvB:last-child
 
 bing.com###mfa_srch
+bing.com###b_op_flyout
+bing.com###b_op_anch
