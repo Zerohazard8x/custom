@@ -30,8 +30,8 @@
     }
 }
 
-@-moz-document domain("facebook.com"), domain("messenger.com") {
-    /* facebook, messenger - goal: reduce use of system font, grayscale */
+@-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
+    /* facebook, messenger, instagram - goal: reduce use of system font, grayscale */
     .x9f619 {
         font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica, Arial,
             sans-serif !important;
@@ -46,10 +46,10 @@
             sans-serif !important;
     }
 
-    ._8e4l,
-    ._4bl9,
     ._45ks,
+    ._4bl9,
     ._58mk,
+    ._8e4l,
     #globalContainer {
         font-family: var(--font), SFProText-Regular, Helvetica, Arial,
             sans-serif !important;
@@ -60,12 +60,22 @@
             sans-serif !important;
     }
 
-    div._li,
+    ._aacl,
+    .x1i0vuye,
+    ._acan {
+        font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    #mount_0_0_CV,
+    #mount_0_0_KX,
     #mount_0_0_ff,
     #mount_0_0_ui,
-    #mount_0_0_CV,
+    #splash-screen,
     div.AdBox.Ad.advert.post-ads,
+    div._li,
     div.download_link_sponsored,
+    div.fb_reset,
     div.ob-hover {
         filter: grayscale(80%);
     }
