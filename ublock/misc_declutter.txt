@@ -4,7 +4,28 @@
 ! Homepage: https://github.com/zerohazard8x/custom/ublock
 ! Expires: 1 day
 
+bing.com###b-scopeListItem-bingatwork
+bing.com###b_op_anch
+bing.com###b_op_flyout
+bing.com###bingatwork
+bing.com###footer
+bing.com###id_rfob
+bing.com###id_rh
+bing.com###mfa_srch
+bing.com###vs_cont > div.mc_caro:first-child
+bing.com###vs_cont > div.mc_caro:first-child > div.musCard.focusin:last-child
+bing.com###vs_cont > div.vs:nth-child(2)
+bing.com###vs_cont > div.vs:nth-child(2) > section.msbModule.moduleCont:first-child
+bing.com###vs_cont > div.vs:nth-child(2) > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
+
+dlsu.instructure.com###eesy-tab-inner
+dlsu.instructure.com###eesy-tab-inner > div.eesy-tab2-btn-content
+||chat-sin.instructure.com/mini$domain=dlsu.instructure.com
+
 gg.bet###betting__container > div.__app-RootResponse-container.ignore-mq.superExtraSmall.rootResponse__container___2aflL > div.ScrollToTop__container___37xDi > div.__app-page-wrapper.app__page-wrapper___9hhzc > div.betslipSidebarWrapper__container___2EPNx:last-child > div.fixedOverlay__container___2IWCf > div.footer__container___2tyK9 > div.sidebarToggler__container___2z38k > div.sidebarToggler__btn___2wIhe
+
+reddit.com###AppRouter-main-content > div > div.qYj03fU5CXf5t2Fc5iSvg.ListingLayout-outerContainer > div._3ozFtOe6WpJEMUtxDOIvtU:last-child > div._31N0dvxfpsO6Ur5AKx4O5d:last-child > div._3Kd8DQpBIbsr5E1JcrMFTY._1tvThPWQpORoc2taKebHxs:last-child > div._1FUNcfOeszr8eruqLxCMcR._10wb7d3rGvj56Gcs4IQWL5 > div._1oRQu-aolgpPPJDblUGTw5:last-child > div._3Tc8YYRhVDX9vlR0XePZfH._365FiUZ11efXHV7l7fNp6K:last-child > button._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8
+reddit.com###t3_152zq36 > div._1poyrkZ7g36PawDueRza-J._11R7M_VOgKO1RJyRSRErT3._1Qs6zz6oqdrQbR7yE_ntfY:last-child > div.STit0dLageRsa2yR4te_b:nth-child(4) > div.m3aNC6yp8RrNM_-a0rrfa > div._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14:last-child > div._2yB7G9L-6O_6Lp6D0n7EAl > div._2f5uYHvlfzs2DngQsiCdvB:last-child
 
 twitter.com###layers > div.css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj > div.css-1dbjc4n.r-12vffkv:first-child > div.css-1dbjc4n.r-12vffkv > div.css-1dbjc4n.r-173mn98.r-kemksi.r-c67a83.r-1qk6wnv.r-qo02w8.r-12e0a8i.r-hvns9x.r-1jte41z > div.css-1dbjc4n.r-h3s6tt.r-5wli1b
 twitter.com###layers > div.css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj > div.css-1dbjc4n.r-12vffkv:first-child > div.css-1dbjc4n.r-12vffkv > div.css-1dbjc4n.r-173mn98.r-kemksi.r-c67a83.r-1qk6wnv.r-qo02w8.r-12e0a8i.r-hvns9x.r-1jte41z > div.css-1dbjc4n.r-h3s6tt.r-5wli1b > div.css-1dbjc4n.r-gtdqiz.r-ipm5af.r-136ojw6 > div.css-1dbjc4n.r-1xc7w19.r-c67a83.r-1qk6wnv.r-1loqt21.r-cgjvx2 > div.css-1dbjc4n.r-h3s6tt.r-136ojw6
@@ -14,10 +35,13 @@ twitter.com###layers > div.css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-
 twitter.com###layers > div.css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj > div.css-1dbjc4n.r-12vffkv:first-child > div.css-1dbjc4n.r-12vffkv > div.css-1dbjc4n.r-173mn98.r-kemksi.r-c67a83.r-1qk6wnv.r-qo02w8.r-1mf7evn.r-hvns9x.r-1jte41z > div.css-1dbjc4n.r-1h3ijdo.r-5wli1b > div.css-1dbjc4n.r-gtdqiz.r-ipm5af.r-136ojw6 > div.css-1dbjc4n.r-1xc7w19.r-c67a83.r-1qk6wnv.r-1loqt21.r-cgjvx2 > div.css-1dbjc4n.r-1h3ijdo.r-136ojw6
 twitter.com###layers > div.css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj > div.css-1dbjc4n.r-12vffkv:first-child > div.css-1dbjc4n.r-12vffkv > div.css-1dbjc4n.r-173mn98.r-kemksi.r-c67a83.r-1qk6wnv.r-qo02w8.r-1mf7evn.r-hvns9x.r-1jte41z > div.css-1dbjc4n.r-1h3ijdo.r-5wli1b > div.css-1dbjc4n.r-gtdqiz.r-ipm5af.r-136ojw6 > div.css-1dbjc4n.r-1xc7w19.r-c67a83.r-1qk6wnv.r-1loqt21.r-cgjvx2 > div.css-1dbjc4n.r-1h3ijdo.r-136ojw6 > div.css-1dbjc4n > div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-1h3ijdo
 twitter.com###layers > div.css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj > div.css-1dbjc4n.r-12vffkv:first-child > div.css-1dbjc4n.r-12vffkv > div.css-1dbjc4n.r-173mn98.r-kemksi.r-c67a83.r-1qk6wnv.r-qo02w8.r-1mf7evn.r-hvns9x.r-1jte41z > div.css-1dbjc4n.r-1h3ijdo.r-5wli1b > div.css-1dbjc4n.r-gtdqiz.r-ipm5af.r-136ojw6 > div.css-1dbjc4n.r-1xc7w19.r-c67a83.r-1qk6wnv.r-1loqt21.r-cgjvx2 > div.css-1dbjc4n.r-1h3ijdo.r-136ojw6 > div.css-1dbjc4n > div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-1h3ijdo > div.css-1dbjc4n.r-1awozwy.r-18u37iz.r-1h3ijdo.r-1777fci.r-1jgb5lz.r-sb58tz.r-ymttw5.r-13qz1uu
+twitter.com###react-root > div.css-1dbjc4n.r-13awgt0.r-12vffkv > div.css-1dbjc4n.r-13awgt0.r-12vffkv > div.css-1dbjc4n.r-18u37iz.r-13qz1uu.r-417010:last-child > main.css-1dbjc4n.r-1habvwh.r-16y2uox.r-1wbh5a2:last-child > div.css-1dbjc4n.r-150rngu.r-16y2uox.r-1wbh5a2.r-rthrr5 > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div.css-1dbjc4n.r-1oszu61.r-1niwhzg.r-18u37iz.r-16y2uox.r-1wtj0ep.r-2llsf.r-13qz1uu > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1udh08x.r-1hycxz:last-child > div.css-1dbjc4n.r-1pi2tsx > div.css-1dbjc4n.r-1xcajam.r-ipm5af.r-1hycxz:last-child > div.css-1dbjc4n.r-1adg3ll > div.css-1dbjc4n > div.css-1dbjc4n.r-vacyoi.r-ttdzmv > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(3) > aside.css-1dbjc4n.r-1habvwh.r-eqz5dr.r-uaa2di.r-ymttw5.r-1f1sjgu
+twitter.com###react-root > div.css-1dbjc4n.r-13awgt0.r-12vffkv > div.css-1dbjc4n.r-13awgt0.r-12vffkv > div.css-1dbjc4n.r-18u37iz.r-13qz1uu.r-417010:last-child > main.css-1dbjc4n.r-1habvwh.r-16y2uox.r-1wbh5a2:last-child > div.css-1dbjc4n.r-150rngu.r-16y2uox.r-1wbh5a2.r-rthrr5 > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div.css-1dbjc4n.r-1oszu61.r-1niwhzg.r-18u37iz.r-16y2uox.r-1wtj0ep.r-2llsf.r-13qz1uu > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1udh08x.r-1hycxz:last-child > div.css-1dbjc4n.r-1pi2tsx > div.css-1dbjc4n.r-gtdqiz.r-1hycxz:last-child > div.css-1dbjc4n.r-1adg3ll > div.css-1dbjc4n > div.css-1dbjc4n.r-vacyoi.r-ttdzmv > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(5) > div.css-1dbjc4n.r-1bro5k0
+twitter.com###react-root > div.css-1dbjc4n.r-13awgt0.r-12vffkv > div.css-1dbjc4n.r-13awgt0.r-12vffkv > div.css-1dbjc4n.r-18u37iz.r-13qz1uu.r-417010:last-child > main.css-1dbjc4n.r-1habvwh.r-16y2uox.r-1wbh5a2:last-child > div.css-1dbjc4n.r-150rngu.r-16y2uox.r-1wbh5a2.r-rthrr5 > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div.css-1dbjc4n.r-1oszu61.r-1niwhzg.r-18u37iz.r-16y2uox.r-1wtj0ep.r-2llsf.r-13qz1uu > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1udh08x.r-1hycxz:last-child > div.css-1dbjc4n.r-1pi2tsx > div.css-1dbjc4n.r-gtdqiz.r-1hycxz:last-child > div.css-1dbjc4n.r-1adg3ll > div.css-1dbjc4n > div.css-1dbjc4n.r-vacyoi.r-ttdzmv > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(5) > div.css-1dbjc4n.r-1bro5k0 > aside.css-1dbjc4n
 
-reddit.com###AppRouter-main-content > div > div.qYj03fU5CXf5t2Fc5iSvg.ListingLayout-outerContainer > div._3ozFtOe6WpJEMUtxDOIvtU:last-child > div._31N0dvxfpsO6Ur5AKx4O5d:last-child > div._3Kd8DQpBIbsr5E1JcrMFTY._1tvThPWQpORoc2taKebHxs:last-child > div._1FUNcfOeszr8eruqLxCMcR._10wb7d3rGvj56Gcs4IQWL5 > div._1oRQu-aolgpPPJDblUGTw5:last-child > div._3Tc8YYRhVDX9vlR0XePZfH._365FiUZ11efXHV7l7fNp6K:last-child > button._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8
-reddit.com###t3_152zq36 > div._1poyrkZ7g36PawDueRza-J._11R7M_VOgKO1RJyRSRErT3._1Qs6zz6oqdrQbR7yE_ntfY:last-child > div.STit0dLageRsa2yR4te_b:nth-child(4) > div.m3aNC6yp8RrNM_-a0rrfa > div._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14:last-child > div._2yB7G9L-6O_6Lp6D0n7EAl > div._2f5uYHvlfzs2DngQsiCdvB:last-child
-
-bing.com###mfa_srch
-bing.com###b_op_flyout
-bing.com###b_op_anch
+vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-1:first-child > div:nth-child(2) > div.js-home-stickied
+vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-2:nth-child(2) > div.jd8ag:nth-child(4)
+vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-2:nth-child(2) > div.wf-label.mod-sidebar:nth-child(2)
+vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > div.d8fyh:nth-child(3)
+vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > div.wf-label.mod-sidebar:first-child
+vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-4:last-child > div.js-home-streams.home-stream-module:last-child
