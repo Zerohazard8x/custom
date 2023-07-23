@@ -337,7 +337,7 @@
     "name": "Messenger Dark",
     "originalDigest": "0098edb5e0e22dd7c12d6c5b0b0314ebb3349d98",
     "_id": "eba488f0-ec7a-420b-bf75-77d594d773b1",
-    "_rev": 1690034929112,
+    "_rev": 1690037369611,
     "id": 2,
     "etag": "W/\"b3e8b9306e15809244687d241604b8b28b83a9cc\"",
     "updateDate": 1690034928096
@@ -365,83 +365,10 @@
     "name": "3/28/2023, 8:38:51 PM",
     "originalDigest": "5a5ee8edb711e56ef93b25ba5cb43f61d7cf8e71",
     "_id": "95c63af1-3a16-40fc-8854-2d526a2c4f60",
-    "_rev": 1690034929090,
+    "_rev": 1690037369687,
     "installationUrl": "https://userstyles.world/style/9100",
     "id": 5,
     "updateDate": 1690034926734
-  },
-  {
-    "enabled": true,
-    "updateUrl": "https://userstyles.world/api/style/5889.user.css",
-    "url": "https://gitlab.com/-/snippets/2379810",
-    "installDate": 1683977498424,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "/* ==UserStyle==\n@name         Clean Bing homepage\n@namespace    qlcvea.com\n@version      1.1.0\n@description  Cleans up the Bing homepage by hiding everything except for the background and search bar (can optionally also keep Bing logo and wallpaper-related UI elements and show hidden elements when hovering over them)\n@author       Marco Benzoni <hello@qlcvea.com> (http://qlcvea.com)\n@license      CC-BY-SA-4.0\n@homepageURL  https://gitlab.com/-/snippets/2379810\n@preprocessor less\n\n@var checkbox showLogo             \"Always show Bing logo\"                            1\n@var checkbox showHeaderOnHover    \"Show header when hovering over it\"                1\n@var checkbox showBottomRowOnHover \"Show footer and news when hovering at the bottom\" 0\n@var checkbox showWallpaperUI      \"Always show wallpaper UI\"                         0\n@var checkbox smallerSearchBox     \"Smaller search box\"                               0\n==/UserStyle== */\n\n@-moz-document regexp(\"^https:\\\\/\\\\/www\\\\.bing\\\\.com\\\\/?((\\\\?|#).*)?$\") { /* Matches Bing homepage only (https://www.bing.com/) while allowing query parameters and hash values */\n  .shaders {\n    /* Hide shadows on the top and bottom of the page */\n    display: none;\n  }\n  \n  .sbox .sb_form.c_show_form when (@smallerSearchBox = 1) {\n    grid-template-areas: 'sbox text mic cam foot foot foot foot';\n    grid-template-rows: 52px;\n    min-height: unset;\n  }\n  \n  /* Hides character counter */\n  .sbox .sb_form .sb_footer when (@smallerSearchBox = 1) {\n    display: none;\n  }\n  \n  /* Adds a margin to the bottom of the search box to keep the last row from being cropped when expanding to multiple lines */\n  .sbox .sb_form.c_show_form .sb_form_c when (@smallerSearchBox = 1) {\n    margin-bottom: 16px;\n  }\n  \n  \n  /*\n  If there is a way to write the following blocks with variables (something like being able to swap in .header or .header:not(:hover) based on the value of @showHeaderOnHover) please let me know, I couldn't figure it out\n  */\n  \n  \n  .header:not(:hover) when (@showHeaderOnHover = 1) {\n    /* Hide header components when header is not hovered when @showHeaderOnHover is 1 */\n    .scope_cont, #idCont\n    {\n      display: none;\n    }\n  }\n  \n  .header when (@showHeaderOnHover = 0) {\n    /* Always hide header components when @showHeaderOnHover is 0 */\n    .scope_cont, #idCont\n    {\n      display: none;\n    }\n  }\n  \n  \n  /* Hide logo if @showLogo is 0 */\n  \n  .header when (@showHeaderOnHover = 0) {\n    .logo_cont when (@showLogo = 0) {\n      display: none;\n    }\n  }\n  \n  .header:not(:hover) when (@showHeaderOnHover = 1) {\n    .logo_cont when (@showLogo = 0) {\n      display: none;\n    }\n  }\n  \n  \n  .bottom_row .scroll_cont .vs_cont:not(:hover) when (@showBottomRowOnHover = 1) {\n    /* Hide bottom row components when bottom row is not hovered when @showBottomRowOnHover is 1 */\n    .footer, .vs {\n      display: none;\n    }\n  }\n  \n  .bottom_row .scroll_cont .vs_cont when (@showBottomRowOnHover = 0) {\n    /* Always hide bottom row components when @showBottomRowOnHover is 0 */\n    .footer, .vs {\n      display: none;\n    }\n  }\n  \n  \n  /* Hide wallpaper UI when @showWallpaperUI is 0 */\n  \n  .bottom_row .scroll_cont .vs_cont:not(:hover) when (@showBottomRowOnHover = 1) {\n    .mc_caro when (@showWallpaperUI = 0) {\n      display: none;\n    }\n  }\n  \n  .bottom_row .scroll_cont .vs_cont when (@showBottomRowOnHover = 0) {\n    .mc_caro when (@showWallpaperUI = 0) {\n      display: none;\n    }\n  }\n  \n  \n  /* Workaround: force wallpaper UI to stick to the bottom of the page (also prevents a tiny overflow when wallpaper UI is visible) */\n  \n  .bottom_row .scroll_cont when (@showBottomRowOnHover = 0) {\n    position: absolute !important;\n    bottom: 0 !important;\n    top: unset !important; /* Unset variables from source CSS on bing homepage */\n  }\n  \n  .bottom_row .scroll_cont:not(:hover) when (@showBottomRowOnHover = 1) {\n    position: absolute !important;\n    bottom: 0 !important;\n    top: unset !important; /* Unset variables from source CSS on bing homepage */\n  }\n  \n  \n  /* Workaround: force a minimum height on the bottom bar to ensure that it can be hovered when @showBottomRowOnHover is 1 */\n  \n  .vs_cont when (@showBottomRowOnHover = 1) and (@showWallpaperUI = 0) {\n    min-height: 2.9rem;\n  }\n}",
-    "usercssData": {
-      "name": "Clean Bing homepage",
-      "namespace": "qlcvea.com",
-      "version": "1.1.0",
-      "description": "Cleans up the Bing homepage by hiding everything except for the background and search bar (can optionally also keep Bing logo and wallpaper-related UI elements and show hidden elements when hovering over them)",
-      "author": "Marco Benzoni <hello@qlcvea.com> (http://qlcvea.com)",
-      "license": "CC-BY-SA-4.0",
-      "homepageURL": "https://gitlab.com/-/snippets/2379810",
-      "preprocessor": "less",
-      "vars": {
-        "showLogo": {
-          "type": "checkbox",
-          "label": "Always show Bing logo",
-          "name": "showLogo",
-          "value": null,
-          "default": "1",
-          "options": null
-        },
-        "showHeaderOnHover": {
-          "type": "checkbox",
-          "label": "Show header when hovering over it",
-          "name": "showHeaderOnHover",
-          "value": null,
-          "default": "1",
-          "options": null
-        },
-        "showBottomRowOnHover": {
-          "type": "checkbox",
-          "label": "Show footer and news when hovering at the bottom",
-          "name": "showBottomRowOnHover",
-          "value": null,
-          "default": "0",
-          "options": null
-        },
-        "showWallpaperUI": {
-          "type": "checkbox",
-          "label": "Always show wallpaper UI",
-          "name": "showWallpaperUI",
-          "value": null,
-          "default": "0",
-          "options": null
-        },
-        "smallerSearchBox": {
-          "type": "checkbox",
-          "label": "Smaller search box",
-          "name": "smallerSearchBox",
-          "value": null,
-          "default": "0",
-          "options": null
-        }
-      }
-    },
-    "author": "Marco Benzoni <hello@qlcvea.com> (http://qlcvea.com)",
-    "description": "Cleans up the Bing homepage by hiding everything except for the background and search bar (can optionally also keep Bing logo and wallpaper-related UI elements and show hidden elements when hovering over them)",
-    "name": "Clean Bing homepage",
-    "originalDigest": "bdf60c02a094ec2e14dfc991e0df26a2610ee46c",
-    "_id": "36d4f41f-95b0-4e9b-85b9-b4e31df79321",
-    "_rev": 1690034929094,
-    "installationUrl": "https://userstyles.world/style/5889",
-    "id": 6,
-    "updateDate": 1690034926790
   },
   {
     "enabled": true,
@@ -598,7 +525,7 @@
     "name": "Reddit colored comments",
     "originalDigest": "0f7858b2374593c6a27421d6015c3c192222aa04",
     "_id": "6f43f9dd-f3f1-42fe-90e8-0d6c62ab9f67",
-    "_rev": 1690034929118,
+    "_rev": 1690037369706,
     "installationUrl": "https://userstyles.world/style/4734",
     "id": 17,
     "updateDate": 1690034926866
@@ -626,7 +553,7 @@
     "name": "Fix Bing Chat Japanese font",
     "originalDigest": "641e7a094e4b25b5f5163d2c08d7a9cf6836f831",
     "_id": "8e17f7f7-97ea-4e11-a09d-4bf9d8f625bd",
-    "_rev": 1690034929090,
+    "_rev": 1690037369715,
     "installationUrl": "https://userstyles.world/style/8585",
     "id": 26,
     "updateDate": 1690034927186
@@ -656,7 +583,7 @@
     "name": "changes",
     "originalDigest": "030ee655550420dc40e395221c73286c52dabd99",
     "_id": "64628107-5e10-476a-9ac9-eb1ad6cd3b94",
-    "_rev": 1690034929090,
+    "_rev": 1690037369715,
     "id": 37,
     "updateDate": 1690034927455,
     "etag": "W/\"4d68075792f47639e859cabb419aa6166c16bc7da98b09642316980d30faed2d\""
@@ -686,7 +613,7 @@
     "name": "MacType grayscale rendering fix + other fixes",
     "originalDigest": "9fefb113972f64ba7e3c640afae9806985b8ecd6",
     "_id": "0c6ff9c4-ba31-4ab8-8c7c-6fa8f606f680",
-    "_rev": 1689160949357,
+    "_rev": 1690037369718,
     "id": 38,
     "updateDate": 1688277484358,
     "etag": "W/\"e8fbb4845b0457425429e73a4831d2f0543411a45bf114da86594470bb3d772d\""
@@ -716,7 +643,7 @@
     "name": "monospace",
     "originalDigest": "34963fc9fab54642f5caa5f7e3c4c5b099a44af3",
     "_id": "e5ceb2e9-e15b-4291-91a2-76ec87704f6f",
-    "_rev": 1690034947115,
+    "_rev": 1690037369718,
     "id": 49,
     "etag": "W/\"565a95576943d8681f1a3df6012b846e7d9b45e11a91424ffa29a05f881ffade\"",
     "updateDate": 1690034927415,

@@ -2,13 +2,22 @@
     {
         "headers": [
             { "enabled": true, "name": "Referer", "sendEmptyHeader": false },
-            { "enabled": true, "name": "X-Forwarded-For", "value": "1.1.1.2" },
             {
                 "enabled": true,
                 "name": "Forwarded",
                 "value": "for=1.1.1.2;proto=https"
-            }
+            },
+            { "enabled": true, "name": "X-Forwarded-For", "value": "1.1.1.2" }
         ],
-        "title": "security and/or privacy"
+        "title": "security and/or privacy",
+        "version": 2,
+        "shortTitle": "1",
+        "excludeUrlFilters": [
+            { "enabled": true, "urlRegex": ".*lazada.com.ph.*" },
+            { "enabled": true, "urlRegex": ".*pcpartpicker.com.*" },
+            { "enabled": true, "urlRegex": ".*bing.com.*" },
+            { "enabled": true, "urlRegex": ".*getpocket.com.*" },
+            { "enabled": true, "urlRegex": ".*vk.com.*" }
+        ]
     }
 ]
