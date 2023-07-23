@@ -45,3 +45,14 @@ vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-2:nth-child(2) >
 vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > div.d8fyh:nth-child(3)
 vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > div.wf-label.mod-sidebar:first-child
 vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-4:last-child > div.js-home-streams.home-stream-module:last-child
+
+symbolab.com###Examples_section
+symbolab.com###bar-Example
+symbolab.com###center-section > div.nl-content:last-child > section.sidebar-content1.center-section-narrow.print-hide:last-child
+symbolab.com###go-to-store > img
+symbolab.com###nl-subNav
+symbolab.com###save-as-bookmark > svg:first-child > use
+symbolab.com###save-as-bookmark-notebook
+symbolab.com###save-as-bookmark-signin
+symbolab.com###send-us-feedback
+symbolab.com##div.nl-page:nth-child(19) > div.nl-pageContent:nth-child(2) > div.nl-leftNav.print-hide:first-child > div.leftMenu.leftMenu-narrow
