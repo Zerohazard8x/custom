@@ -109,6 +109,12 @@ store.steampowered.com###Reviews_summary > div > div.rightcol.recent_reviews:nth
 store.steampowered.com###achievement_block
 store.steampowered.com###global_header > div.content > div.supernav_container:nth-child(2) > a.menuitem:nth-child(5)
 store.steampowered.com###noteworthy_tab
+store.steampowered.com###responsive_page_template_content > div.home_page_col_wrapper:nth-child(2) > div.home_page_body_ctn:last-child > div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
+store.steampowered.com###responsive_page_template_content > div.home_page_col_wrapper:nth-child(2) > div.home_page_body_ctn:last-child > div.home_ctn:nth-child(11)
+store.steampowered.com###responsive_page_template_content > div.home_page_col_wrapper:nth-child(2) > div.home_page_body_ctn:last-child > div.home_ctn:nth-child(5)
+store.steampowered.com###responsive_page_template_content > div.home_page_col_wrapper:nth-child(2) > div.home_page_content.home_gutter_outside:first-child > div.home_page_gutter > div.home_page_gutter_block:first-child > a.top_promo.ds_no_flags.app_impression_tracked:first-child
+store.steampowered.com###responsive_page_template_content > div.home_page_col_wrapper:nth-child(2) > div.home_page_content.home_gutter_outside:first-child > div.home_page_gutter > div.home_page_gutter_block:first-child > div.gutter_header.pad:nth-child(6)
+store.steampowered.com###responsive_page_template_content > div.home_page_col_wrapper:nth-child(2) > div.home_page_content.home_gutter_outside:first-child > div.home_page_gutter > div.home_page_gutter_block:first-child > div.gutter_items:last-child
 store.steampowered.com###store_nav_area > div.store_nav_bg:nth-child(2) > div.store_nav > a.tab:nth-child(9)
 store.steampowered.com###tabletGrid > div.page_content_ctn:first-child > div.block.game_media_and_summary_ctn:nth-child(5) > div.queue_overflow_ctn:nth-child(3)
 store.steampowered.com###tabletGrid > div.page_content_ctn:first-child > div.page_content:nth-child(6) > div.leftcol.game_description_column:nth-child(2) > div.block:nth-child(12)
