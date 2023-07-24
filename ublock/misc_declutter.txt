@@ -18,8 +18,16 @@ bing.com###vs_cont > div.vs:nth-child(2)
 bing.com###vs_cont > div.vs:nth-child(2) > section.msbModule.moduleCont:first-child
 bing.com###vs_cont > div.vs:nth-child(2) > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 
+dlsu.instructure.com###bettercanvas-announcement-list > p.bettercanvas-none-due
+dlsu.instructure.com###bettercanvas-todo-list > p.bettercanvas-none-due
+dlsu.instructure.com###context_external_tool_13589_menu_item > a.ic-app-header__menu-list-link
+dlsu.instructure.com###context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
 dlsu.instructure.com###eesy-tab-inner
 dlsu.instructure.com###eesy-tab-inner > div.eesy-tab2-btn-content
+dlsu.instructure.com###global_nav_libraries_link
+dlsu.instructure.com###global_nav_student_services_link
+dlsu.instructure.com###right-side > div.bettercanvas-todosidebar > h2.todo-list-header:first-child
+dlsu.instructure.com###right-side > div.bettercanvas-todosidebar > h2.todo-list-header:nth-child(4)
 ||chat-sin.instructure.com/mini$domain=dlsu.instructure.com
 
 gg.bet###betting__container > div.__app-RootResponse-container.ignore-mq.superExtraSmall.rootResponse__container___2aflL > div.ScrollToTop__container___37xDi > div.__app-page-wrapper.app__page-wrapper___9hhzc > div.betslipSidebarWrapper__container___2EPNx:last-child > div.fixedOverlay__container___2IWCf > div.footer__container___2tyK9 > div.sidebarToggler__container___2z38k > div.sidebarToggler__btn___2wIhe
