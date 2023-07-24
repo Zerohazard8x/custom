@@ -5,8 +5,11 @@
 ! Expires: 1 day
 
 bing.com###b-scopeListItem-bingatwork
+bing.com###b_alsotry
+bing.com###b_context > li.b_ans:nth-child(2)
 bing.com###b_op_anch
 bing.com###b_op_flyout
+bing.com###b_results > li.b_bfb_lcg:nth-child(7)
 bing.com###bingatwork
 bing.com###footer
 bing.com###id_rfob
@@ -101,3 +104,12 @@ reddit.com###AppRouter-main-content > div > div.qYj03fU5CXf5t2Fc5iSvg.ListingLay
 reddit.com###SHORTCUT_FOCUSABLE_DIV > div:nth-child(2) > header._1tvdSTbdxaK-BnUbzUIqIY._2GyPfdsi-MbQFyHRECo9GO.flex-grow-0.flex-shrink-0.top-0.left-0.right-0.fixed.z-\[80\]:first-child > div._2vkeRJojnV7cb9pMlPHy7d.a35Fm2MurU14xdNybLiZp > div._2u8LqkbMtzd0lpblMFbJq5:last-child > div.x0hiXHicn7r3BG9m1FJH4._23q1waDr4n_2fR5A7zcZzb._2t7TYn6HwRZQwKXG47kpQR:first-child > div._1vXXD2qKLnHetdKvisFzBD > a._3dZnYgFFpifT-M_Vs2FAq6:first-child
 reddit.com###change-username-tooltip-id > span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com###t3_157r9ui > div._1poyrkZ7g36PawDueRza-J._11R7M_VOgKO1RJyRSRErT3._1Qs6zz6oqdrQbR7yE_ntfY:last-child > div.STit0dLageRsa2yR4te_b:nth-child(4) > div.m3aNC6yp8RrNM_-a0rrfa > div._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14:last-child > div._2yB7G9L-6O_6Lp6D0n7EAl > div._2f5uYHvlfzs2DngQsiCdvB:last-child
+
+store.steampowered.com###Reviews_summary > div > div.rightcol.recent_reviews:nth-child(2)
+store.steampowered.com###achievement_block
+store.steampowered.com###global_header > div.content > div.supernav_container:nth-child(2) > a.menuitem:nth-child(5)
+store.steampowered.com###noteworthy_tab
+store.steampowered.com###store_nav_area > div.store_nav_bg:nth-child(2) > div.store_nav > a.tab:nth-child(9)
+store.steampowered.com###tabletGrid > div.page_content_ctn:first-child > div.block.game_media_and_summary_ctn:nth-child(5) > div.queue_overflow_ctn:nth-child(3)
+store.steampowered.com###tabletGrid > div.page_content_ctn:first-child > div.page_content:nth-child(6) > div.leftcol.game_description_column:nth-child(2) > div.block:nth-child(12)
+store.steampowered.com###tabletGrid > div.page_content_ctn:first-child > div.page_content:nth-child(6) > div.leftcol.game_description_column:nth-child(2) > div.game_page_autocollapse_ctn:nth-child(10) > div.game_page_autocollapse:first-child
