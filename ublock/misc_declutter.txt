@@ -125,3 +125,7 @@ twitch.tv###root > div.Layout-sc-1xcs6mc-0.hRpbps > div.Layout-sc-1xcs6mc-0.kBpr
 twitch.tv###root > div.Layout-sc-1xcs6mc-0.hRpbps > div.Layout-sc-1xcs6mc-0.kBprba:nth-child(2) > nav.InjectLayout-sc-1i43xsx-0.ghHeNF.top-nav:first-child > div.Layout-sc-1xcs6mc-0.JwLSY.top-nav__menu > div.Layout-sc-1xcs6mc-0.gdKXDc:last-child > div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
 twitch.tv###side-nav > div.Layout-sc-1xcs6mc-0 > div.Layout-sc-1xcs6mc-0.fGCgaq:first-child > div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:last-child
 twitch.tv###side-nav > div.Layout-sc-1xcs6mc-0 > div.Layout-sc-1xcs6mc-0.fGCgaq:first-child > div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
+
+youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
+youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
+youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
