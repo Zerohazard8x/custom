@@ -87,3 +87,9 @@ stackoverflow.com###sidebar > div.s-sidebarwidget.mb16.module:nth-child(5)
 stackoverflow.com###sidebar > div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
 stackoverflow.com##header.s-topbar.ps-fixed.t0.l0.js-top-bar:nth-child(3) > div.s-topbar--container > ol.s-navigation:nth-child(4)
 stackoverflow.com##header.s-topbar.ps-fixed.t0.l0.js-top-bar:nth-child(3) > div.s-topbar--container > ol.s-navigation:nth-child(4) > li.md\:d-none:last-child
+
+getpocket.com###__next > div.css-5305ft:nth-child(2) > div.css-1ia2h6h > div.css-1wv8z7y > main.main:nth-child(2) > header.css-dqqtzm:first-child > div.create-list:nth-child(2) > div.onboarding-badge:first-child
+getpocket.com###__next > div.css-5305ft:nth-child(2) > div.css-1ia2h6h > div.css-1wv8z7y > div.css-16i4jmb.side-nav:first-child > nav:first-child > a.css-18qpw11:first-child
+getpocket.com###__next > div.css-5305ft:nth-child(2) > div.css-1ia2h6h > div.css-1wv8z7y > div.css-16i4jmb.side-nav:first-child > nav:first-child > a.css-18qpw11:nth-child(3)
+getpocket.com###__next > div.css-5305ft:nth-child(2) > div.css-1ia2h6h > div.css-1wv8z7y > div.css-16i4jmb.side-nav:first-child > nav:first-child > a.css-18qpw11:nth-child(4)
+getpocket.com###__next > header.css-sol7ik.logged-in:first-child > div.css-1ia2h6h.global-nav-container > nav.css-wl0ld0 > div.css-trep42:nth-child(2) > ul.css-1bjgl5h.links
