@@ -32,9 +32,7 @@
 } */
 
 @-moz-document regexp(".*") {
-    html,
-    body,
-    :root {
+    *:not(pre, pre *, code, .far, .fa, .glyphicon, [class*="vjs-"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*="mu-"], .glyphicon, .icon) {
         font-variant-east-asian: proportional-width !important;
         font-feature-settings: "palt", "hkna" !important;
         -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */
@@ -47,7 +45,7 @@
 @-moz-document regexp("((?!bing\.com).)*") {
     /* MacType fix */
     /* Syntax: ((?!bing\.com|dubz\.co|reddit\.com|tweetdeck\.twitter\.com).)* */
-    html {
+    *:not(pre, pre *, code, .far, .fa, .glyphicon, [class*="vjs-"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*="mu-"], .glyphicon, .icon) {
         filter: opacity(100%) !important;
     }
 }

@@ -325,9 +325,9 @@
     :root {
         --font-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
             Segoe;
-        --header-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI,
+        --font-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI,
             Segoe, "Roboto";
-        --footer-small: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
+        --font-small-fallback: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
             Segoe;
         /* --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png); */
     }
@@ -448,6 +448,7 @@
 
     /* Variable Small Fallback */
     #imagemeta,
+    .sb_f_count,
     .b_algospacing,
     .b_bfbLcgAnchorText,
     .b_fbText,
@@ -461,10 +462,21 @@
     .ms-Button-label,
     .ms-search-text-h2,
     .recommendationsTableTitle > h2 {
-        font-family: var(--footer-small), Arial, sans-serif !important;
+        font-family: var(--font-small-fallback), Arial, sans-serif !important;
         filter: opacity(100%) !important;
     }
 
+    .asSectionHeading,
+    .sa_tm_subText {
+        font-family: var(--font-small-fallback), Arial, Helvetica, sans-serif !important;
+        filter: opacity(100%) !important;
+    }
+    
+    .scopes {
+        font-family: var(--font-small-fallback), Tahoma, Arial, Verdana, sans-serif !important;
+        filter: opacity(100%) !important;
+    }
+    
     /* Variable Small */
     .dg_b .infnmpt .infpd a,
     .mc_vtvc_meta_row_channel,
@@ -516,7 +528,7 @@
     div > p span,
     h2 > span,
     container-title {
-        font-family: var(--header-display), Helvetica, Arial, sans-serif !important;
+        font-family: var(--font-display), Helvetica, Arial, sans-serif !important;
         filter: opacity(100%) !important;
     }
 
