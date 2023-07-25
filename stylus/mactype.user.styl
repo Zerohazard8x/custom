@@ -42,9 +42,9 @@
     }
 }
 
-@-moz-document regexp("((?!bing\.com).)*") {
+@-moz-document regexp("((?!bing\.com|reddit\.com).)*") {
     /* MacType fix */
-    /* Syntax: ((?!bing\.com|dubz\.co|reddit\.com|tweetdeck\.twitter\.com).)* */
+    /* Syntax: "((?!bing\.com|dubz\.co|reddit\.com|tweetdeck\.twitter\.com).)*" */
     *:not(pre, pre *, code, .far, .fa, .glyphicon, [class*="vjs-"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*="mu-"], .glyphicon, .icon) {
         filter: opacity(100%) !important;
     }
