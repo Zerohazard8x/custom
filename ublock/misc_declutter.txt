@@ -15,6 +15,7 @@ bing.com###footer
 bing.com###id_rfob
 bing.com###id_rh
 bing.com###mfa_srch
+bing.com###sb_form > a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.mc_caro:first-child > div.musCard.focusin:last-child
 bing.com###vs_cont > div.vs:nth-child(2)
@@ -34,6 +35,7 @@ dlsu.instructure.com###right-side > div.bettercanvas-todosidebar > h2.todo-list-
 ||chat-sin.instructure.com/mini$domain=dlsu.instructure.com
 
 gg.bet###betting__container > div.__app-RootResponse-container.ignore-mq.superExtraSmall.rootResponse__container___2aflL > div.ScrollToTop__container___37xDi > div.__app-page-wrapper.app__page-wrapper___9hhzc > div.betslipSidebarWrapper__container___2EPNx:last-child > div.fixedOverlay__container___2IWCf > div.footer__container___2tyK9 > div.sidebarToggler__container___2z38k > div.sidebarToggler__btn___2wIhe
+gg.bet##div:nth-child(6) > div.btn-chat.btn-chat--fixed.btn-chat--left
 
 reddit.com###AppRouter-main-content > div > div.qYj03fU5CXf5t2Fc5iSvg.ListingLayout-outerContainer > div._3ozFtOe6WpJEMUtxDOIvtU:last-child > div._31N0dvxfpsO6Ur5AKx4O5d:last-child > div._3Kd8DQpBIbsr5E1JcrMFTY._1tvThPWQpORoc2taKebHxs:last-child > div._1FUNcfOeszr8eruqLxCMcR._10wb7d3rGvj56Gcs4IQWL5 > div._1oRQu-aolgpPPJDblUGTw5:last-child > div._3Tc8YYRhVDX9vlR0XePZfH._365FiUZ11efXHV7l7fNp6K:last-child > button._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8
 reddit.com###t3_152zq36 > div._1poyrkZ7g36PawDueRza-J._11R7M_VOgKO1RJyRSRErT3._1Qs6zz6oqdrQbR7yE_ntfY:last-child > div.STit0dLageRsa2yR4te_b:nth-child(4) > div.m3aNC6yp8RrNM_-a0rrfa > div._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14:last-child > div._2yB7G9L-6O_6Lp6D0n7EAl > div._2f5uYHvlfzs2DngQsiCdvB:last-child
