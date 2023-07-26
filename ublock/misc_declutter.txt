@@ -22,8 +22,8 @@ bing.com###vs_cont > div.vs:nth-child(2)
 bing.com###vs_cont > div.vs:nth-child(2) > section.msbModule.moduleCont:first-child
 bing.com###vs_cont > div.vs:nth-child(2) > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 
-dlsu.instructure.com###bettercanvas-announcement-list > p.bettercanvas-none-due
-dlsu.instructure.com###bettercanvas-todo-list > p.bettercanvas-none-due
+dlsu.instructure.com###bettercanvas-announcement-list
+dlsu.instructure.com###bettercanvas-todo-list
 dlsu.instructure.com###context_external_tool_13589_menu_item > a.ic-app-header__menu-list-link
 dlsu.instructure.com###context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
 dlsu.instructure.com###eesy-tab-inner
@@ -148,3 +148,15 @@ thespike.gg###__next > div.layout_container__8mgcn:nth-child(6) > main:nth-child
 thespike.gg###__next > div.layout_container__8mgcn:nth-child(6) > main:nth-child(4) > div.home_rightColumn__E0e1N:last-child > div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
 
 chat.openai.com###__next > div.overflow-hidden.w-full.h-full.relative.flex.z-0:nth-child(2) > div.relative.flex.h-full.max-w-full.flex-1.overflow-hidden:last-child > div.flex.h-full.max-w-full.flex-1.flex-col > main.relative.h-full.w-full.transition-width.flex.flex-col.overflow-auto.items-stretch.flex-1 > div.flex-1.overflow-hidden:first-child > div.react-scroll-to-bottom--css-mrsvb-79elbk.h-full.dark\:bg-gray-800 > div.react-scroll-to-bottom--css-mrsvb-1n7m0yu > div.flex.flex-col.text-sm.dark\:bg-gray-800.h-full > div.text-gray-800.w-full.mx-auto.md\:max-w-2xl.lg\:max-w-3xl.md\:flex.md\:flex-col.px-6.dark\:text-gray-100:last-child > div.md\:flex.items-start.text-center.gap-3\.5:last-child
+
+espn.*###global-nav > ul.espn-en > li.pillar.logo.fantasy:nth-child(3)
+espn.*###global-nav > ul.espn-en > li.pillar.logo.fantasy:nth-child(9)
+espn.*###global-nav > ul.espn-en > li.pillar.more-espn:nth-child(2)
+espn.*###global-nav > ul.espn-en > li.pillar.more-espn:nth-child(8)
+espn.*###global-nav > ul.espnph-en > li.pillar.logo.fantasy:nth-child(9)
+espn.*###global-nav > ul.espnph-en > li.pillar.more-espn:nth-child(8)
+espn.*###main-container > div.main-content.layout-dbc.one-feed:last-child > section.col-one:first-child > article.sub-module.quicklinks:first-child
+espn.*###main-container > div.main-content.layout-dbc.one-feed:last-child > section.col-one:first-child > article.sub-module.quicklinks:last-child
+espn.*###main-container > div.main-content.layout-dbc.one-feed:last-child > section.col-one:first-child > article.sub-module.quicklinks:nth-child(2)
+espn.*###main-container > div.main-content.layout-dbc.one-feed:last-child > section.col-one:first-child > article.sub-module.quicklinks:nth-child(5)
+espn.*###main-container > div.main-content.layout-dbc.one-feed:last-child > section.col-one:first-child > article.sub-module.quicklinks:nth-child(6)
