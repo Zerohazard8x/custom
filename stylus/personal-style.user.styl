@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           changes
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.0
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
+@homepageURL    https://github.com/Zerohazard8x/custom
 ==/UserStyle== */
 
 :root {
@@ -180,7 +180,7 @@
 }
 
 @-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech") {
-    /* Nitter - goal: change all fonts */
+    /* Nitter - goal: change all fonts, grayscale */
     .container,
     .tweet-content,
     .site-name,
@@ -188,6 +188,11 @@
     select,
     input {
         font-family: var(--font), sans-serif !important;
+    }
+    
+    /* grayscale */
+    div.container {
+        filter: grayscale(80%);
     }
 }
 
