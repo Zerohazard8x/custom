@@ -143,9 +143,6 @@ chat.openai.com###__next > div > div > div > main > div > div > div > div > div 
 espn.*###fitt-analytics > div > header > div > nav > ul > li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
 espn.*###fitt-analytics > div.bp-mobileMDPlus.bp-mobileLGPlus.bp-tabletPlus.bp-desktopPlus.bp-desktopLGPlus.bp-desktopXLGPlus.no-touch > header.db.Site__Header__Wrapper.sticky.top-0:nth-child(3) > div.Site__Header.db.left-0.top-0.sticky.w-100.bg-clr-gray-02.Site__Header--espn:first-child > nav.Nav__Primary.center.flex.justify-between.items-center > ul.Nav__Primary__Menu.flex.Nav__Primary__Menu--right.flex-none:nth-child(3) > li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
 espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(3)
-espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(9)
-espn.*###global-nav > ul > li.pillar.more-espn:nth-child(2)
-espn.*###global-nav > ul > li.pillar.more-espn:nth-child(8)
 espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(3)
 espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(9)
 espn.*###global-nav > ul > li.pillar.more-espn:nth-child(2)
@@ -155,3 +152,4 @@ espn.*###main-container > div > section > article.sub-module.quicklinks:last-chi
 espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(2)
 espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(5)
 espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(6)
+espn.*###news-feed
