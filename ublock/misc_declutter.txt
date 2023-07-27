@@ -12,6 +12,7 @@ bing.com###b_op_flyout
 bing.com###b_results > li.b_bfb_lcg:nth-child(7)
 bing.com###bingatwork
 bing.com###footer
+bing.com###iasabtlnk
 bing.com###id_rfob
 bing.com###id_rh
 bing.com###mfa_srch
@@ -81,9 +82,14 @@ vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-4:last-child > d
 
 symbolab.com###Examples_section
 symbolab.com###bar-Example
+symbolab.com###brand-homepage > table.homepage-center:nth-child(2)
 symbolab.com###center-section > div > section.sidebar-content1.center-section-narrow.print-hide:last-child
 symbolab.com###go-to-store > img
+symbolab.com###homepage-explore
+symbolab.com###homepage-headline
+symbolab.com###homepage-second-block
 symbolab.com###nl-subNav
+symbolab.com###right-section
 symbolab.com###save-as-bookmark-notebook
 symbolab.com###save-as-bookmark-signin
 symbolab.com###send-us-feedback
