@@ -22,20 +22,20 @@ bing.com###vs_cont > div > section.msbModule.moduleCont:first-child > div.msbLog
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
 
-*.instructure.com###bettercanvas-announcement-list
-*.instructure.com###bettercanvas-todo-list
-*.instructure.com###context_external_tool_13589_menu_item
-*.instructure.com###context_external_tool_13589_menu_item > a.ic-app-header__menu-list-link
-*.instructure.com###context_external_tool_242_menu_item
-*.instructure.com###context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
-*.instructure.com###eesy-tab-inner
-*.instructure.com###eesy-tab-inner > div.eesy-tab2-btn-content
-*.instructure.com###global_nav_libraries_link
-*.instructure.com###global_nav_libraries_menu
-*.instructure.com###global_nav_student_services_link
-*.instructure.com###global_nav_student_services_menu
-*.instructure.com###right-side > div > h2.todo-list-header:first-child
-*.instructure.com###right-side > div > h2.todo-list-header:nth-child(4)
+dlsu.instructure.com###bettercanvas-announcement-list
+dlsu.instructure.com###bettercanvas-todo-list
+dlsu.instructure.com###context_external_tool_13589_menu_item
+dlsu.instructure.com###context_external_tool_13589_menu_item > a.ic-app-header__menu-list-link
+dlsu.instructure.com###context_external_tool_242_menu_item
+dlsu.instructure.com###context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
+dlsu.instructure.com###eesy-tab-inner
+dlsu.instructure.com###eesy-tab-inner > div.eesy-tab2-btn-content
+dlsu.instructure.com###global_nav_libraries_link
+dlsu.instructure.com###global_nav_libraries_menu
+dlsu.instructure.com###global_nav_student_services_link
+dlsu.instructure.com###global_nav_student_services_menu
+dlsu.instructure.com###right-side > div > h2.todo-list-header:first-child
+dlsu.instructure.com###right-side > div > h2.todo-list-header:nth-child(4)
 ||chat-sin.instructure.com/mini$domain=dlsu.instructure.com
 
 gg.bet###betting__container > div > div > div > div > div > div > div > div.sidebarToggler__btn___2wIhe
