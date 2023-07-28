@@ -107,6 +107,16 @@ stackoverflow.com###sidebar > div.s-sidebarwidget.s-sidebarwidget__yellow.s-anch
 stackoverflow.com##header > div > ol > li.md\:d-none:last-child
 stackoverflow.com##header > div > ol.s-navigation:nth-child(4)
 
+superuser.com###feed-link
+superuser.com###hot-network-questions
+superuser.com###left-sidebar > div > nav > ol > li > ol > li.ml8.mt16:nth-child(6)
+superuser.com###left-sidebar > div > nav > ol > li > ol > li.ps-relative:last-child
+superuser.com###left-sidebar > div > nav > ol > li.js-freemium-cta.ps-relative:nth-child(3)
+superuser.com###sidebar > div.s-sidebarwidget.mb16.module:nth-child(5)
+superuser.com###sidebar > div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
+superuser.com##header > div > ol > li.md\:d-none:last-child
+superuser.com##header > div > ol.s-navigation:nth-child(4)
+
 getpocket.com###__next > div > div > div > div > nav > a.css-18qpw11:first-child
 getpocket.com###__next > div > div > div > div > nav > a.css-18qpw11:nth-child(3)
 getpocket.com###__next > div > div > div > div > nav > a.css-18qpw11:nth-child(4)
