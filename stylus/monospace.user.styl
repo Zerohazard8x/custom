@@ -139,7 +139,7 @@
     }
 }
 
-@-moz-document domain("stackoverflow.com") {
+@-moz-document domain("stackoverflow.com"), domain("superuser.com") {
     /* StackOverflow - Goal: All fonts */
     code {
         font-family: var(--monospace), var(--block-mono), ui-monospace,
@@ -151,7 +151,8 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
-
+    
+    .fw-bold,
     .unified-theme,
     .question-hyperlink,
     .comment-copy,
