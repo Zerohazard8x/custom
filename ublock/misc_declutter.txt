@@ -9,6 +9,7 @@ bing.com###b_alsotry
 bing.com###b_context > li.b_ans:nth-child(2)
 bing.com###b_op_anch
 bing.com###b_op_flyout
+bing.com###b_results > li.b_bfb_lcg:nth-child(6)
 bing.com###b_results > li.b_bfb_lcg:nth-child(7)
 bing.com###b_results > li.b_bfb_mainline.b_ans:first-child
 bing.com###bingatwork
