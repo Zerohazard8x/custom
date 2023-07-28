@@ -17918,7 +17918,6 @@
 ||sail-horizon.com$script,object,ping,stylesheet,other
 ||sail-personalize.com$script,object,ping,stylesheet,other
 ||sapphiretech.com.cn$script,object,ping,stylesheet,other
-||scdn.co$script,object,ping,stylesheet,other
 ||scene7.com$script,object,ping,stylesheet,other
 ||sciencedirectassets.com$script,object,ping,stylesheet,other
 ||scorecardresearch.com$script,object,ping,stylesheet,other
