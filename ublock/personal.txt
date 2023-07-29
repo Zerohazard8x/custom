@@ -17743,7 +17743,6 @@
 ||driftt.com$script,object,ping,stylesheet,other
 ||dscb.akamaiedge.net$script,object,ping,stylesheet,other
 ||dscd.akamai.net$script,object,ping,stylesheet,other
-||dscg1.akamai.net$script,object,ping,stylesheet,other
 ||dscg2.akamai.net$script,object,ping,stylesheet,other
 ||dscw27.akamai.net$script,object,ping,stylesheet,other
 ||dyncdn2.com$script,object,ping,stylesheet,other
