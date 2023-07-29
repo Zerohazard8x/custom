@@ -12,7 +12,7 @@
         "transparent": false,
         "winCtrlQ": false,
         "macosTranslucency": false,
-        "disableMinSize": false,
+        "disableMinSize": true,
         "winNativeTitleBar": false,
         "plugins": {
             "BadgeAPI": {
@@ -128,7 +128,8 @@
                 "enableStickerBypass": true,
                 "enableStreamQualityBypass": true,
                 "transformStickers": true,
-                "transformEmojis": true
+                "transformEmojis": true,
+                "transformCompoundSentence": false
             },
             "FakeProfileThemes": {
                 "enabled": false
@@ -267,7 +268,10 @@
                 "messages": true
             },
             "PronounDB": {
-                "enabled": true
+                "enabled": true,
+                "showInMessages": true,
+                "showSelf": true,
+                "pronounSource": 0
             },
             "QuickMention": {
                 "enabled": false
@@ -388,7 +392,13 @@
                 "enabled": false
             },
             "VcNarrator": {
-                "enabled": true
+                "enabled": true,
+                "joinMessage": "{{USER}} joined",
+                "sayOwnName": false,
+                "latinOnly": false,
+                "voice": "Microsoft David - English (United States)",
+                "volume": 1,
+                "rate": 1
             },
             "VencordToolbox": {
                 "enabled": false
@@ -414,6 +424,15 @@
             },
             "Wikisearch": {
                 "enabled": false
+            },
+            "NoRPC": {
+                "enabled": false
+            },
+            "NoSystemBadge": {
+                "enabled": false
+            },
+            "VolumeBooster": {
+                "enabled": true
             }
         },
         "notifications": {
@@ -426,7 +445,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1690557709003
+            "settingsSyncVersion": 1690638166969
         }
     },
     "quickCss": ""
