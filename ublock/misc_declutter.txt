@@ -132,6 +132,8 @@ twitch.tv###root > div > div > div > main > div > div > div > div > div > div.La
 twitch.tv###root > div > div > nav > div > div > div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
 twitch.tv###side-nav > div > div > div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:last-child
 twitch.tv###side-nav > div > div > div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
+twitch.tv##.front-page-carousel.iqIerE.Layout-sc-1xcs6mc-0
+twitch.tv##.prime-offers.bZVrjx.Layout-sc-1xcs6mc-0
 
 youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
 youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
