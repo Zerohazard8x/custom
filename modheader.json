@@ -17,7 +17,8 @@
             { "enabled": true, "urlRegex": ".*pcpartpicker.com.*" },
             { "enabled": true, "urlRegex": ".*bing.com.*" },
             { "enabled": true, "urlRegex": ".*getpocket.com.*" },
-            { "enabled": true, "urlRegex": ".*vk.com.*" }
+            { "enabled": true, "urlRegex": ".*vk.com.*" },
+            { "enabled": true, "urlRegex": ".*archive.org.*" }
         ]
     }
 ]
