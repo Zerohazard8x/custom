@@ -24,6 +24,7 @@ bing.com###vs_cont > div > section.msbModule.moduleCont:first-child
 bing.com###vs_cont > div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
+bing.com##.rh_reedm.toolTip.id_button
 
 dlsu.instructure.com###bettercanvas-announcement-list
 dlsu.instructure.com###bettercanvas-todo-list
@@ -74,6 +75,7 @@ twitter.com###react-root > div > div > div > main > div > div > div > div > div 
 twitter.com###react-root > div > div > div > main > div > div > div > div > div > div > div > div > div > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(3)
 twitter.com###react-root > div > div > div > main > div > div > div > div > div > div > div > div > div > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(4)
 twitter.com###react-root > div > div > div > main > div > div > div > div > div > div > div > div > div > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(5)
+twitter.com##.r-1jte41z.r-hvns9x.r-12e0a8i.r-qo02w8.r-1qk6wnv.r-c67a83.r-kemksi.r-173mn98.css-1dbjc4n
 
 vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-1:first-child > div:nth-child(2) > div.js-home-stickied:first-child
 vlr.gg###wrapper > div.col-container:nth-child(3) > div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > div.d8fyh:nth-child(3)
