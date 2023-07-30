@@ -379,7 +379,7 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
-
+    
     a.mw-wiki-logo,
     div.mw-panel,
     div.noprint,
@@ -645,7 +645,7 @@
 }
 
 @-moz-document domain("geeksforgeeks.org") {
-    /* GeeksForGeeks - Goal: Code blocks */
+    /* GeeksForGeeks - Goal: Code blocks, grayscale */
     div .text > pre,
     .container > div code,
     .outputDiv > pre {
@@ -655,5 +655,18 @@
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+    
+    div.header-main__wrapper,
+    div.header-main__slider,
+    button.btn.btn-success,
+    div.wrapper,
+    div.modal.fade,
+    div.backdrop,
+    footer.gfg-footer,
+    div.cookie-consent.hide-consent,
+    div.lightbox-target,
+    #GFG_AD_Desktop_Stickyunit_1x1 {
+      filter: grayscale(80%);
     }
 }
