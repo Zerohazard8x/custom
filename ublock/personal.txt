@@ -17693,7 +17693,6 @@
 ||clean.gg$script,object,ping,stylesheet,other
 ||cleverpush.com$script,object,ping,stylesheet,other
 ||cloudcdn.monster$script,object,ping,stylesheet,other
-||cloudflare.net$script,object,ping,stylesheet,other
 ||cloudflareinsights.com$script,object,ping,stylesheet,other
 ||cohesionapps.com$script,object,ping,stylesheet,other
 ||community-cdn-digitalocean-com.global.ssl.fastly.net$script,object,ping,stylesheet,other

@@ -189,7 +189,7 @@
     input {
         font-family: var(--font), sans-serif !important;
     }
-    
+
     /* grayscale */
     div.container {
         filter: grayscale(80%);
@@ -197,7 +197,7 @@
 }
 
 @-moz-document domain("inv.riverside.rocks"), domain("invidious.tiekoetter.com"), domain("yt.funami.tech"), domain("yewtu.be") {
-    /* Invidious - goal: change all fonts */
+    /* Invidious - goal: change all fonts, grayscale */
     #searchbox,
     .feed-menu,
     .h-box,
@@ -208,18 +208,36 @@
     .pure-u-10-24 {
         font-family: var(--font), sans-serif !important;
     }
+
+    div.pure-g,
+    #dark_mode_pref {
+        filter: grayscale(83%);
+    }
 }
 
 @-moz-document domain("deepl.com") {
-    /* DeepL - Goal: Replace Segoe font */
+    /* DeepL - Goal: Replace Segoe font, grayscale */
     body *:not(.fa) {
         font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, Helvetica, Arial, sans-serif !important;
     }
+
+    #dl_mobile_iOS_app_banner,
+    header.dl_header.dl_header--sticky,
+    div.dl_translator_page_container,
+    #modalPortal,
+    #blockModalPortal,
+    div.dl_footerV2_container,
+    #dl_cookieBanner,
+    #deepl-ui-tooltip-portal,
+    #summarize-modal-container,
+    div.sr-only {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("cagematch.net") {
-    /* Cagematch - Goal: Reduce usage of Arial font */
+    /* Cagematch - Goal: Reduce usage of Arial font, grayscale */
     .TemplateBody,
     .HeaderMenu,
     .RatingsBoxAdjustedRating,
@@ -227,14 +245,27 @@
         font-family: var(--font), Arial, "Segoe UI", Frutiger,
             "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
     }
+
+    div.LayoutUserAccount.LayoutWidth,
+    div.LayoutHeader,
+    div.LayoutWidth {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("quora.com") {
-    /* Quora - Goal: Reduce usage of system font */
+    /* Quora - Goal: Reduce usage of system font, grayscale */
     .q-box {
         font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
             "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
             sans-serif !important;
+    }
+
+    #credential_picker_container,
+    #onetap_google_intermediate_iframe,
+    #root,
+    #staticError {
+        filter: grayscale(82%);
     }
 }
 
