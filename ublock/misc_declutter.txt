@@ -170,3 +170,5 @@ espn.*###main-container > div > section > article.sub-module.quicklinks:last-chi
 espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(2)
 espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(5)
 espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(6)
+
+w3schools.com##.m12.l2.w3-col
