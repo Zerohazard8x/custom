@@ -24,6 +24,8 @@ bing.com###vs_cont > div > section.msbModule.moduleCont:first-child
 bing.com###vs_cont > div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
+bing.com##.b_bfb_lcg
+bing.com##.fabcolapse
 bing.com##.rh_reedm.toolTip.id_button
 
 dlsu.instructure.com###bettercanvas-announcement-list
