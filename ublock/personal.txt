@@ -17640,7 +17640,6 @@
 ||adspsp.com$script,object,ping,stylesheet,other
 ||adsrvr.org$script,object,ping,stylesheet,other
 ||akamai.com$script,object,ping,stylesheet,other
-||akamai.net$script,object,ping,stylesheet,other
 ||alibaba.com$script,object,ping,stylesheet,other
 ||aliyuncs.com$script,object,ping,stylesheet,other
 ||altis.cloud$script,object,ping,stylesheet,other
