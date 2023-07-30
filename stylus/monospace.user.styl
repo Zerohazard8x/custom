@@ -97,7 +97,7 @@
     }
 }
 @-moz-document domain("wikipedia.org") {
-    /* Wikipedia - Goal: Replace Arial font, Codeblocks */
+    /* Wikipedia - Goal: Replace Arial font, Codeblocks, grayscale */
     #searchform,
     #p-lang-btn-label,
     #vector-page-tools-dropdown-label,
@@ -124,6 +124,15 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
+
+    a.mw-jump-link,
+    div.vector-header-container,
+    div.mw-page-container,
+    div.vector-settings,
+    #p-namespaces,
+    a.oo-ui-element-hidden {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("reddit.com") {
@@ -140,7 +149,7 @@
 }
 
 @-moz-document domain("stackoverflow.com"), domain("superuser.com") {
-    /* StackOverflow - Goal: All fonts */
+    /* StackOverflow - Goal: All fonts, grayscale */
     code {
         font-family: var(--monospace), var(--block-mono), ui-monospace,
             "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco,
@@ -151,7 +160,7 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
-    
+
     .fw-bold,
     .unified-theme,
     .question-hyperlink,
@@ -159,6 +168,43 @@
     .s-prose {
         font-family: var(--font), -apple-system, BlinkMacSystemFont,
             "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
+    }
+
+    /* Monospace - Simplifying breaks for some reason */
+    #notify-container {
+        filter: grayscale(80%);
+    }
+
+    #custom-header {
+        filter: grayscale(80%);
+    }
+
+    header.s-topbar.ps-fixed.t0.l0.js-top-bar {
+        filter: grayscale(80%);
+    }
+
+    div.container {
+        filter: grayscale(80%);
+    }
+
+    footer.site-footer.js-footer {
+        filter: grayscale(80%);
+    }
+
+    div.ff-sans.ps-fixed.z-nav-fixed.ws4.sm:w-auto.p32.sm:p16.bg-black-750.fc-white.bar-lg.b16.l16.r16.js-consent-banner {
+        filter: grayscale(80%);
+    }
+
+    div.d-none {
+        filter: grayscale(80%);
+    }
+
+    #onetrust-banner-sdk {
+        filter: grayscale(80%);
+    }
+
+    div.d-none.js-consent-banner-version {
+        filter: grayscale(80%);
     }
 }
 
@@ -200,7 +246,7 @@
 }
 
 @-moz-document domain("w3schools.com") {
-    /* W3Schools - Goal: Code blocks */
+    /* W3Schools - Goal: Code blocks, grayscale */
     .w3-white > code,
     .w3-codespan {
         font-family: var(--monospace), var(--block-mono), Consolas,
@@ -212,10 +258,21 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
+
+    div.w3-bar.notranslate.w3-white,
+    div.w3-hide-large,
+    nav.w3-hide-small.navex,
+    div.topnav.notranslate,
+    div.w3-sidebar.w3-collapse,
+    div.w3-main.w3-light-grey,
+    a.ga-bottom,
+    #pagetual-preload {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("learn.microsoft.com") {
-    /* MS Learn - Goal: Code blocks */
+    /* MS Learn - Goal: Code blocks, grayscale */
     pre > code,
     p > code,
     li > code {
@@ -227,10 +284,17 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
+
+    div.header-holder.has-default-focus,
+    div.mainContainer.uhf-container.uhf-container.is-full.has-default-focus,
+    section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm.margin-top-none,
+    div.action-panel.has-default-focus {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("wikiwand.com") {
-    /* Wikiwand - Goal: Code blocks */
+    /* Wikiwand - Goal: Code blocks, grayscale */
     p > code,
     li > code,
     pre > span {
@@ -242,10 +306,14 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
+
+    #__next {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("developer.mozilla.org") {
-    /* Mozilla Dev - Goal: Code blocks */
+    /* Mozilla Dev - Goal: Code blocks, grayscale */
     code,
     .section-content > pre {
         font-family: var(--monospace), var(--block-mono), monospace !important;
@@ -261,10 +329,15 @@
     .section-content > pre {
         font-size: 16px !important;
     }
+
+    #root,
+    #a11y-status-message {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("symbolab.com") {
-    /* Symbolab - Goal: LaTeX input interface */
+    /* Symbolab - Goal: LaTeX input interface, grayscale */
     .latex-command-input {
         font-family: var(--monospace), var(--block-mono), "Courier New",
             monospace !important;
@@ -273,10 +346,23 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
+
+    div.nl-hidden.page,
+    div.nl-cookiepolicy,
+    div.print-hide,
+    section.nl-center,
+    #force-svg,
+    div.nl-footer.print-hide.no-select,
+    #loading-spinner,
+    #dateTimePicker,
+    #hiddenData,
+    #credential_picker_container {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("tcrf.net") {
-    /* TCRF - Goal: Reduce usage of Arial font, code blocks */
+    /* TCRF - Goal: Reduce usage of Arial font, code blocks, grayscale */
     .mediawiki {
         font-family: var(--font), sans-serif !important;
     }
@@ -292,6 +378,15 @@
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+
+    a.mw-wiki-logo,
+    div.mw-panel,
+    div.noprint,
+    div.mw-body,
+    #footer,
+    div.suggestions {
+        filter: grayscale(80%);
     }
 }
 
@@ -327,10 +422,10 @@
     :root {
         --font-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
             Segoe;
-        --font-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI,
-            Segoe, "Roboto";
-        --font-small-fallback: "Roboto", "Segoe UI Variable Small", "Segoe UI", SegoeUI,
-            Segoe;
+        --font-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
+            "Roboto";
+        --font-small-fallback: "Roboto", "Segoe UI Variable Small", "Segoe UI",
+            SegoeUI, Segoe;
         /* --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png); */
     }
 
@@ -473,12 +568,13 @@
         font-family: var(--font-small-fallback), Arial, Helvetica, sans-serif !important;
         filter: opacity(100%) !important;
     }
-    
+
     .scopes {
-        font-family: var(--font-small-fallback), Tahoma, Arial, Verdana, sans-serif !important;
+        font-family: var(--font-small-fallback), Tahoma, Arial, Verdana,
+            sans-serif !important;
         filter: opacity(100%) !important;
     }
-    
+
     /* Variable Small */
     .dg_b .infnmpt .infpd a,
     .mc_vtvc_meta_row_channel,
