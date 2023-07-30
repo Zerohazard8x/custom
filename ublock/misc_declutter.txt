@@ -45,6 +45,9 @@ dlsu.instructure.com###right-side > div > h2.todo-list-header:nth-child(4)
 ||chat-sin.instructure.com/mini$domain=dlsu.instructure.com
 
 gg.bet###betting__container > div > div > div > div > div > div > div > div.sidebarToggler__btn___2wIhe
+gg.bet##.Tabs__is-active___2Vi_F.Tabs__tab___3KK7U.__app-Tabs-is-active.__app-Tabs-tab
+gg.bet##.Tabs__tabs___KOXfP.__app-Tabs-tabs
+gg.bet##.sidebar__content___2JoUk.__app-Sidebar-content
 gg.bet##div:nth-child(6) > div.btn-chat.btn-chat--fixed.btn-chat--left
 
 reddit.com###AppRouter-main-content > div > div > div > div > div > div > div > div > button._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8
