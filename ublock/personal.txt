@@ -5597,7 +5597,6 @@
 ||ds.webprojectslab.com$all
 ||dsandmaroons.com$all
 ||dsbtpy.viata.nl$all
-||dsca.akamaiedge.net$all
 ||dscf.akamaiedge.net$all
 ||dsfhudbsyicvns.xyz$all
 ||dsghhbqey6ytg.cloudfront.net$all
@@ -17622,6 +17621,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||dsca.akamaiedge.net$script,object,ping,stylesheet,other
 ||wcpstatic.microsoft.com$script,object,ping,stylesheet,other
 ||123movies.cards$script,object,ping,stylesheet,other
 ||33across.com$script,object,ping,stylesheet,other
