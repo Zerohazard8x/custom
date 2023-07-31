@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -10,7 +10,7 @@
 
 :root {
     /* Define variables */
-    --font: "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
+    --font: "DIN Next", "Bahnschrift", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
         -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter",
         "Roboto";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
@@ -578,13 +578,14 @@
     /* Variable Small */
     .dg_b .infnmpt .infpd a,
     .mc_vtvc_meta_row_channel,
+    .title,
     .mc_vtvc_title,
     .mc_vtvc_title > span,
     .mc_vtvc_title > strong,
     .rd_gtrtb_nav_item,
     .b_title {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Arial, Helvetica, sans-serif;
+            "Roboto", Arial, Helvetica, sans-serif !important;
         filter: opacity(100%) !important;
     }
 
