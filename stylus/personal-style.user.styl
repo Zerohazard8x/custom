@@ -10,11 +10,14 @@
 
 :root {
     /* Define variables */
-    --font: "DIN Next", "DIN", "Bahnschrift", "Road UA", "alte din 1451 mittelschrift", "Dinish Expanded", "Dinish", "Altinn-DIN", "D-DIN", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter", "Roboto";
+    --font: "DIN Next", "DIN", "Bahnschrift", "Road UA",
+        "alte din 1451 mittelschrift", "Dinish Expanded", "Dinish", "Altinn-DIN",
+        "D-DIN", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
+        -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter",
+        "Roboto";
 }
 
 @-moz-document domain("youtube.com") {
-
     /* youtube - Goal: subtitles */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
@@ -33,7 +36,6 @@
 @-moz-document domain("facebook.com"),
 domain("messenger.com"),
 domain("instagram.com") {
-
     /* facebook, messenger, instagram - goal: reduce use of system font, grayscale */
     .x9f619 {
         font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica, Arial,
@@ -85,7 +87,6 @@ domain("instagram.com") {
 }
 
 @-moz-document domain("google.com") {
-
     /* Google - Goal: Reduce usage of Arial font, grayscale */
     :root {
         /* Define variables */
@@ -127,8 +128,7 @@ domain("instagram.com") {
 
     .H1HQf,
     .SW5pqf {
-        font-family: var(--roboto), arial, sans-serif-medium,
-            sans-serif !important;
+        font-family: var(--roboto), arial, sans-serif-medium, sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
@@ -200,7 +200,6 @@ domain("instagram.com") {
 domain("nitter.riverside.rocks"),
 domain("nitter.tiekoetter.com"),
 domain("twt.funami.tech") {
-
     /* Nitter - goal: change all fonts, grayscale */
     .container,
     .tweet-content,
@@ -221,7 +220,6 @@ domain("twt.funami.tech") {
 domain("invidious.tiekoetter.com"),
 domain("yt.funami.tech"),
 domain("yewtu.be") {
-
     /* Invidious - goal: change all fonts, grayscale */
     #searchbox,
     .feed-menu,
@@ -241,7 +239,6 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("deepl.com") {
-
     /* DeepL - Goal: Replace Segoe font, grayscale */
     body *:not(.fa) {
         font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -263,7 +260,6 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("cagematch.net") {
-
     /* Cagematch - Goal: Reduce usage of Arial font, grayscale */
     .TemplateBody,
     .HeaderMenu,
@@ -281,7 +277,6 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("quora.com") {
-
     /* Quora - Goal: Reduce usage of system font, grayscale */
     .q-box {
         font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
@@ -298,13 +293,12 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("steampowered.com") {
-
     /* Steam - goal: reduce usage of Arial font, grayscale */
-    #game_area_metascore>div,
+    #game_area_metascore > div,
     #queueActionsCtn,
     #review_context,
     #reviews_filter_language,
-    .block_header>div,
+    .block_header > div,
     .flyout,
     .game_area_sys_req strong,
     .game_page_autocollapse_readmore,
@@ -312,7 +306,7 @@ domain("yewtu.be") {
     .store_nav,
     .store_horizontal_minislider,
     .tab_review_summary,
-    div>a,
+    div > a,
     #footer_text {
         font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
     }

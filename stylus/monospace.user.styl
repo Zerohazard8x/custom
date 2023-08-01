@@ -10,7 +10,11 @@
 
 :root {
     /* Define variables */
-    --font: "DIN Next", "DIN", "Bahnschrift", "Road UA", "alte din 1451 mittelschrift", "Dinish Expanded", "Dinish", "Altinn-DIN", "D-DIN", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter", "Roboto";
+    --font: "DIN Next", "DIN", "Bahnschrift", "Road UA",
+        "alte din 1451 mittelschrift", "Dinish Expanded", "Dinish", "Altinn-DIN",
+        "D-DIN", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
+        -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter",
+        "Roboto";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
         "DroidSansM", "Hack", "Bitstream Vera Sans Mono", "BitstromVera",
         "DejaVu Sans Mono", "Segoe UI Mono", "SF Mono", "SFMono-Regular", Menlo,
@@ -22,7 +26,6 @@
 }
 
 @-moz-document domain("github.com") {
-
     /* Github - Goal: Change all fonts, change font and formatting of code blocks, grayscale */
     .page-responsive,
     .PageHeader-title,
@@ -53,7 +56,7 @@
     .markdown-body pre,
     kbd,
     code,
-    .commit-desc>pre {
+    .commit-desc > pre {
         font-family: var(--monospace), var(--block-mono), Consolas, monospace !important;
 
         /* Ligatures */
@@ -80,7 +83,6 @@
 }
 
 @-moz-document domain("discord.com") {
-
     /* Discord - Goal: Change font and formatting of code blocks */
     .hljs,
     .codeLine-2C-9aH,
@@ -98,7 +100,6 @@
 }
 
 @-moz-document domain("wikipedia.org") {
-
     /* Wikipedia - Goal: Replace Arial font, Codeblocks, grayscale */
     #searchform,
     #p-lang-btn-label,
@@ -116,9 +117,9 @@
         font-family: var(--font), sans-serif !important;
     }
 
-    p>code,
-    li>code,
-    pre>span {
+    p > code,
+    li > code,
+    pre > span {
         font-family: var(--monospace), var(--block-mono), monospace !important;
         font-size: 16px !important;
 
@@ -138,7 +139,6 @@
 }
 
 @-moz-document domain("reddit.com") {
-
     /* Reddit - Goal: Code blocks */
     ._34q3PgLsx9zIU5BiSOjFoM {
         font-family: var(--monospace), var(--block-mono), Noto Mono, Monaco,
@@ -153,7 +153,6 @@
 
 @-moz-document domain("stackoverflow.com"),
 domain("superuser.com") {
-
     /* StackOverflow - Goal: All fonts, grayscale */
     code {
         font-family: var(--monospace), var(--block-mono), ui-monospace,
@@ -214,7 +213,6 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("poe.com") {
-
     /* Poe - Goal: Reduce usage of system font */
     .PageWithSidebarLayout_centeredPage__D42BU,
     .ReactModal__Content {
@@ -223,7 +221,7 @@ domain("superuser.com") {
             sans-serif !important;
     }
 
-    code>span {
+    code > span {
         font-family: var(--monospace), var(--block-mono), Consolas, monaco,
             monospace !important;
         font-size: 16px !important;
@@ -235,7 +233,6 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("chat.openai.com") {
-
     /* ChatGPT - Goal: Code blocks, grayscale */
     code {
         font-family: var(--monospace), var(--block-mono), Söhne Mono, Monaco,
@@ -253,9 +250,8 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("w3schools.com") {
-
     /* W3Schools - Goal: Code blocks, grayscale */
-    .w3-white>code,
+    .w3-white > code,
     .w3-codespan {
         font-family: var(--monospace), var(--block-mono), Consolas,
             "Source Code Pro", Menlo, Monaco, "Andale Mono", "Ubuntu Mono",
@@ -280,11 +276,10 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("learn.microsoft.com") {
-
     /* MS Learn - Goal: Code blocks, grayscale */
-    pre>code,
-    p>code,
-    li>code {
+    pre > code,
+    p > code,
+    li > code {
         font-family: var(--monospace), var(--block-mono), SFMono-Regular,
             Consolas, Liberation Mono, Menlo, Courier, monospace !important;
         font-size: 16px !important;
@@ -303,11 +298,10 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("wikiwand.com") {
-
     /* Wikiwand - Goal: Code blocks, grayscale */
-    p>code,
-    li>code,
-    pre>span {
+    p > code,
+    li > code,
+    pre > span {
         font-family: var(--monospace), var(--block-mono), Noto Sans Mono, Menlo,
             Consolas, Courier New, Courier, monospace !important;
         font-size: 16px !important;
@@ -323,10 +317,9 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("developer.mozilla.org") {
-
     /* Mozilla Dev - Goal: Code blocks, grayscale */
     code,
-    .section-content>pre {
+    .section-content > pre {
         font-family: var(--monospace), var(--block-mono), monospace !important;
 
         /* Ligatures */
@@ -334,10 +327,10 @@ domain("superuser.com") {
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
-    pre>code,
-    p>code,
-    strong>code,
-    .section-content>pre {
+    pre > code,
+    p > code,
+    strong > code,
+    .section-content > pre {
         font-size: 16px !important;
     }
 
@@ -348,7 +341,6 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("symbolab.com") {
-
     /* Symbolab - Goal: LaTeX input interface, grayscale */
     .latex-command-input {
         font-family: var(--monospace), var(--block-mono), "Courier New",
@@ -374,7 +366,6 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("tcrf.net") {
-
     /* TCRF - Goal: Reduce usage of Arial font, code blocks, grayscale */
     .mediawiki {
         font-family: var(--font), sans-serif !important;
@@ -385,7 +376,7 @@ domain("superuser.com") {
     }
 
     tt,
-    .mw-parser-output>pre {
+    .mw-parser-output > pre {
         font-family: var(--monospace), var(--block-mono), monospace, monospace !important;
 
         /* Ligatures */
@@ -404,10 +395,9 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("bard.google.com") {
-
     /* Google bard - Goal: code blocks, grayscale */
     .code-container,
-    .markdown>p code {
+    .markdown > p code {
         font-family: "Google Sans Mono", var(--monospace), var(--block-mono),
             monospace !important;
         font-size: 16px !important;
@@ -431,7 +421,6 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("bing.com") {
-
     /* Bing - Goal: Make sure website uses one single font + "fluent" changes + code blocks + grayscale */
     /* Var initializations */
     :root {
@@ -458,7 +447,7 @@ domain("superuser.com") {
 
     /* Navigation bar */
     /* All ul and li under a .b_scopebar element */
-    .b_scopebar>ul li {
+    .b_scopebar > ul li {
         /* Undo small caps */
         text-transform: none !important;
         font-size: 14px !important;
@@ -480,7 +469,7 @@ domain("superuser.com") {
     }
 
     /* Navigation bar submenu */
-    .b_scopebar_item>a {
+    .b_scopebar_item > a {
         text-transform: none !important;
         font-size: 13px !important;
     }
@@ -540,7 +529,7 @@ domain("superuser.com") {
     .b_respl,
     .cbtn,
     .idp-refresh-page-main-line,
-    .img_badges>span a,
+    .img_badges > span a,
     .img_info,
     .items,
     .lite-entcard-exp,
@@ -574,7 +563,7 @@ domain("superuser.com") {
     .tdw_button,
     .ms-Button-label,
     .ms-search-text-h2,
-    .recommendationsTableTitle>h2 {
+    .recommendationsTableTitle > h2 {
         font-family: var(--font-small-fallback), Arial, sans-serif !important;
         filter: opacity(100%) !important;
     }
@@ -596,8 +585,8 @@ domain("superuser.com") {
     .mc_vtvc_meta_row_channel,
     .title,
     .mc_vtvc_title,
-    .mc_vtvc_title>span,
-    .mc_vtvc_title>strong,
+    .mc_vtvc_title > span,
+    .mc_vtvc_title > strong,
     .rd_gtrtb_nav_item,
     .b_title {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
@@ -608,17 +597,17 @@ domain("superuser.com") {
     /* Variable Text */
     h2,
     h4,
-    span>h3,
+    span > h3,
     #detailMeta,
     .vrhtt,
-    .metaItem>a,
+    .metaItem > a,
     .ms-search-tenantLogo-text,
     .b_entityTitle,
     .b_primtxt,
     .b_searchboxForm,
     .b_topTitle,
     .b_vList,
-    .deeplink_title>a,
+    .deeplink_title > a,
     .dest_name,
     .ent-dtab-nam-ov-dtp,
     .qna_algoLink_title,
@@ -636,12 +625,12 @@ domain("superuser.com") {
     .b_focusTextMedium,
     .b_mgridTitle,
     .irp-video-slogan,
-    .scs_metactn>div h2,
+    .scs_metactn > div h2,
     .sto_title,
-    .thdrail_card_title>div,
+    .thdrail_card_title > div,
     #rd_gtrtb_ttl,
-    div>p span,
-    h2>span,
+    div > p span,
+    h2 > span,
     container-title {
         font-family: var(--font-display), Helvetica, Arial, sans-serif !important;
         filter: opacity(100%) !important;
@@ -661,11 +650,10 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("geeksforgeeks.org") {
-
     /* GeeksForGeeks - Goal: Code blocks, grayscale */
-    div .text>pre,
-    .container>div code,
-    .outputDiv>pre {
+    div .text > pre,
+    .container > div code,
+    .outputDiv > pre {
         font-family: var(--monospace), var(--block-mono), Consolas, monospace !important;
         font-size: 16px !important;
 
