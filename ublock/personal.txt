@@ -5229,7 +5229,6 @@
 ||devtest.cocoon.today$all
 ||dewcommode.space$all
 ||dewlessjacobin.com$all
-||dexeqbeb7giwr.cloudfront.net$all
 ||dfearinglestpeople.com$all
 ||dffpxg.targus.com$all
 ||dfhajyevxmposa.xyz$all
@@ -17621,6 +17620,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||dexeqbeb7giwr.cloudfront.net$script,object,ping,stylesheet,other
 ||dsca.akamaiedge.net$script,object,ping,stylesheet,other
 ||wcpstatic.microsoft.com$script,object,ping,stylesheet,other
 ||123movies.cards$script,object,ping,stylesheet,other
@@ -17659,7 +17659,6 @@
 ||aswpsdkus.com$script,object,ping,stylesheet,other
 ||audio-public.canva.com$script,object,ping,stylesheet,other
 ||avatars.githubusercontent.com$script,object,ping,stylesheet,other
-||b-cdn.net$script,object,ping,stylesheet,other
 ||b2589717.smushcdn.com$script,object,ping,stylesheet,other
 ||bbs.oppo.com$script,object,ping,stylesheet,other
 ||beemray.com$script,object,ping,stylesheet,other
@@ -17831,7 +17830,6 @@
 ||live-patreon-marketing.pantheonsite.io$script,object,ping,stylesheet,other
 ||live-video.net$script,object,ping,stylesheet,other
 ||lkqd.net$script,object,ping,stylesheet,other
-||llnwi.net$script,object,ping,stylesheet,other
 ||lytics.io$script,object,ping,stylesheet,other
 ||makeuseofimages.com$script,object,ping,stylesheet,other
 ||mapbox.com$script,object,ping,stylesheet,other
