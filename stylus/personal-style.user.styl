@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           changes
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.4
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -10,19 +10,21 @@
 
 :root {
     /* Define variables */
-    --font: "DIN Next", "Bahnschrift", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
+    --font: "DIN Next", "DIN", "Bahnschrift", "Road UA", "alte din 1451 mittelschrift", "Dinish Expanded", "Dinish", "Altinn-DIN", "D-DIN", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
         -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter",
         "Roboto";
 }
 
 @-moz-document domain("youtube.com") {
+
     /* youtube - Goal: subtitles */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: var(--font), "YouTube Noto", Roboto, "Arial Unicode Ms",
             Arial, Helvetica, Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
-        text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px !important; /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 3 times */
+        text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px !important;
+        /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 3 times */
     }
 
     .captions-text {
@@ -30,7 +32,10 @@
     }
 }
 
-@-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
+@-moz-document domain("facebook.com"),
+domain("messenger.com"),
+domain("instagram.com") {
+
     /* facebook, messenger, instagram - goal: reduce use of system font, grayscale */
     .x9f619 {
         font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica, Arial,
@@ -82,12 +87,18 @@
 }
 
 @-moz-document domain("google.com") {
+
     /* Google - Goal: Reduce usage of Arial font, grayscale */
+    :root {
+        /* Define variables */
+        --roboto: Roboto, "Roboto Draft", RobotoDraft, Roboto-Regular;
+    }
+
     a.K1yPdf,
     .L3eUgb,
     .NUnG9d,
     .ZkkK1e,
-    .e9EfHf,
+    .FMKtTb,
     .g,
     .tNxQIb,
     .tsp-fm,
@@ -106,23 +117,25 @@
     .eUOBKb,
     .PlQycd,
     .cS4Vcb-pGL6qe-k1Ncfe,
+    .gb_Md,
+    .card-section,
     .gb_Kd {
-        font-family: Roboto, Roboto-Regular, arial, sans-serif !important;
+        font-family: var(--roboto), arial, sans-serif !important;
     }
 
     .T8VaVe {
-        font-family: Roboto, Roboto-Regular, arial, sans-serif !important;
+        font-family: var(--roboto), arial, sans-serif !important;
     }
 
     .H1HQf,
     .SW5pqf {
-        font-family: Roboto, Roboto-Regular, arial, sans-serif-medium,
+        font-family: var(--roboto), arial, sans-serif-medium,
             sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
     input {
-        font-family: "Google Sans", Roboto, Roboto-Regular, arial !important;
+        font-family: "Google Sans", var(--roboto), arial !important;
     }
 
     #result-stats,
@@ -145,11 +158,11 @@
     h1.mGOaCb,
     input[type="submit"],
     .gLFyf {
-        font-family: "Google Sans", Roboto, Roboto-Regular, arial, sans-serif !important;
+        font-family: "Google Sans", var(--roboto), arial, sans-serif !important;
     }
 
     .wx62f {
-        font-family: Roboto, Roboto-Regular, Helvetica Neue, Arial, sans-serif !important;
+        font-family: var(--roboto), Helvetica Neue, Arial, sans-serif !important;
     }
 
     #Rvx4kc,
@@ -174,12 +187,22 @@
     div.wYq63b,
     h1.Uo8X3b.OhScic.zsYMMe,
     span.kpshf.line.gsr.bilit.big.mdm,
+    div.L3eUgb,
+    div.Fgvgjc,
+    textarea.csi,
+    div.gb_od,
+    div.gb_q,
+    #hfcr,
     #pagetual-preload {
         filter: grayscale(80%);
     }
 }
 
-@-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech") {
+@-moz-document domain("nitter.net"),
+domain("nitter.riverside.rocks"),
+domain("nitter.tiekoetter.com"),
+domain("twt.funami.tech") {
+
     /* Nitter - goal: change all fonts, grayscale */
     .container,
     .tweet-content,
@@ -189,14 +212,18 @@
     input {
         font-family: var(--font), sans-serif !important;
     }
-    
+
     /* grayscale */
     div.container {
         filter: grayscale(80%);
     }
 }
 
-@-moz-document domain("inv.riverside.rocks"), domain("invidious.tiekoetter.com"), domain("yt.funami.tech"), domain("yewtu.be") {
+@-moz-document domain("inv.riverside.rocks"),
+domain("invidious.tiekoetter.com"),
+domain("yt.funami.tech"),
+domain("yewtu.be") {
+
     /* Invidious - goal: change all fonts, grayscale */
     #searchbox,
     .feed-menu,
@@ -208,19 +235,21 @@
     .pure-u-10-24 {
         font-family: var(--font), sans-serif !important;
     }
-    
-    div.pure-g, #dark_mode_pref {
-      filter: grayscale(83%);
+
+    div.pure-g,
+    #dark_mode_pref {
+        filter: grayscale(80%);
     }
 }
 
 @-moz-document domain("deepl.com") {
+
     /* DeepL - Goal: Replace Segoe font, grayscale */
     body *:not(.fa) {
         font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, Helvetica, Arial, sans-serif !important;
     }
-    
+
     #dl_mobile_iOS_app_banner,
     header.dl_header.dl_header--sticky,
     div.dl_translator_page_container,
@@ -231,11 +260,12 @@
     #deepl-ui-tooltip-portal,
     #summarize-modal-container,
     div.sr-only {
-      filter: grayscale(80%);
+        filter: grayscale(80%);
     }
 }
 
 @-moz-document domain("cagematch.net") {
+
     /* Cagematch - Goal: Reduce usage of Arial font, grayscale */
     .TemplateBody,
     .HeaderMenu,
@@ -244,32 +274,39 @@
         font-family: var(--font), Arial, "Segoe UI", Frutiger,
             "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
     }
-    
-    div.LayoutUserAccount.LayoutWidth, div.LayoutHeader, div.LayoutWidth {
-      filter: grayscale(80%);
+
+    div.LayoutUserAccount.LayoutWidth,
+    div.LayoutHeader,
+    div.LayoutWidth {
+        filter: grayscale(80%);
     }
 }
 
 @-moz-document domain("quora.com") {
+
     /* Quora - Goal: Reduce usage of system font, grayscale */
     .q-box {
         font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
             "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
             sans-serif !important;
     }
-    
-    #credential_picker_container, #onetap_google_intermediate_iframe, #root, #staticError {
-      filter: grayscale(82%);
+
+    #credential_picker_container,
+    #onetap_google_intermediate_iframe,
+    #root,
+    #staticError {
+        filter: grayscale(82%);
     }
 }
 
 @-moz-document domain("steampowered.com") {
+
     /* Steam - goal: reduce usage of Arial font, grayscale */
-    #game_area_metascore > div,
+    #game_area_metascore>div,
     #queueActionsCtn,
     #review_context,
     #reviews_filter_language,
-    .block_header > div,
+    .block_header>div,
     .flyout,
     .game_area_sys_req strong,
     .game_page_autocollapse_readmore,
@@ -277,7 +314,7 @@
     .store_nav,
     .store_horizontal_minislider,
     .tab_review_summary,
-    div > a,
+    div>a,
     #footer_text {
         font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
     }
