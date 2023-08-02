@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           changes
 @namespace      github.com/openstyles/stylus
-@version        1.0.4
+@version        1.0.5
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -10,19 +10,20 @@
 
 :root {
     /* Define variables */
-    --font: "DIN Next", "DIN", "Bahnschrift", "Road UA",
-        "alte din 1451 mittelschrift", "Dinish Expanded", "Dinish", "Altinn-DIN",
-        "D-DIN", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "SF Pro",
-        "SF Pro Text", "Inter", "Roboto", "IBM Plex Sans JP",
-        "IBM Plex Sans Thai", "Noto Sans JP";
+    --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+        "Roboto", "Inter", "IBM Plex Sans", "DIN Next", "DIN", "Bahnschrift",
+        "alte din 1451 mittelschrift", "Road UA", "Dinish Expanded", "Dinish",
+        "Altinn-DIN", "D-DIN", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+        "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
 }
 
 @-moz-document domain("youtube.com") {
     /* youtube - Goal: subtitles */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: var(--font), "YouTube Noto", Roboto, "Arial Unicode Ms",
-            Arial, Helvetica, Verdana, "PT Sans Caption", sans-serif !important;
+        font-family: var(--font-personal), "YouTube Noto", Roboto,
+            "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption",
+            sans-serif !important;
         color: #fff000 !important;
         text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px !important;
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 3 times */
@@ -36,17 +37,18 @@
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     /* facebook, messenger, instagram - goal: reduce use of system font, grayscale */
     .x9f619 {
-        font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica, Arial,
-            sans-serif !important;
+        font-family: var(--font-personal), Segoe UI, Segoe UI Historic,
+            Helvetica, Arial, sans-serif !important;
     }
 
     ._1gaz {
-        font-family: var(--font), SFProText-Medium, Helvetica, Arial, sans-serif !important;
+        font-family: var(--font-personal), SFProText-Medium, Helvetica, Arial,
+            sans-serif !important;
     }
 
     ._8e63 {
-        font-family: var(--font), SFProDisplay-Regular, Helvetica, Arial,
-            sans-serif !important;
+        font-family: var(--font-personal), SFProDisplay-Regular, Helvetica,
+            Arial, sans-serif !important;
     }
 
     ._45ks,
@@ -54,20 +56,20 @@
     ._58mk,
     ._8e4l,
     #globalContainer {
-        font-family: var(--font), SFProText-Regular, Helvetica, Arial,
+        font-family: var(--font-personal), SFProText-Regular, Helvetica, Arial,
             sans-serif !important;
     }
 
     ._8esh {
-        font-family: var(--font), SFProText-Semibold, Helvetica, Arial,
+        font-family: var(--font-personal), SFProText-Semibold, Helvetica, Arial,
             sans-serif !important;
     }
 
     ._aacl,
     .x1i0vuye,
     ._acan {
-        font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, Helvetica, Arial, sans-serif;
+        font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     #mount_0_0_CV,
@@ -205,7 +207,7 @@ domain("twt.funami.tech") {
     button,
     select,
     input {
-        font-family: var(--font), sans-serif !important;
+        font-family: var(--font-personal), sans-serif !important;
     }
 
     /* grayscale */
@@ -227,7 +229,7 @@ domain("yewtu.be") {
     .pure-u-20-24,
     .pure-u-23-24,
     .pure-u-10-24 {
-        font-family: var(--font), sans-serif !important;
+        font-family: var(--font-personal), sans-serif !important;
     }
 
     div.pure-g,
@@ -239,8 +241,8 @@ domain("yewtu.be") {
 @-moz-document domain("deepl.com") {
     /* DeepL - Goal: Replace Segoe font, grayscale */
     body *:not(.fa) {
-        font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, Helvetica, Arial, sans-serif !important;
+        font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     #dl_mobile_iOS_app_banner,
@@ -263,7 +265,7 @@ domain("yewtu.be") {
     .HeaderMenu,
     .RatingsBoxAdjustedRating,
     input {
-        font-family: var(--font), Arial, "Segoe UI", Frutiger,
+        font-family: var(--font-personal), Arial, "Segoe UI", Frutiger,
             "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
     }
 
@@ -277,9 +279,9 @@ domain("yewtu.be") {
 @-moz-document domain("quora.com") {
     /* Quora - Goal: Reduce usage of system font, grayscale */
     .q-box {
-        font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
-            sans-serif !important;
+        font-family: var(--font-personal), -apple-system, system-ui,
+            BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+            Cantarell, "Helvetica Neue", sans-serif !important;
     }
 
     #credential_picker_container,
@@ -342,7 +344,7 @@ domain("yewtu.be") {
     .is-focused,
     .controls > label,
     .r-1qd0xha {
-        font-family: "TwitterChirp", var(--font), -apple-system,
+        font-family: "TwitterChirp", var(--font-personal), -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue",
             sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
             Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
@@ -351,8 +353,8 @@ domain("yewtu.be") {
 
     .label,
     .js-action-button {
-        font-family: "TwitterChirp", var(--font), Helvetica Neue, Helvetica,
-            Arial, sans-serif !important;
+        font-family: "TwitterChirp", var(--font-personal), Helvetica Neue,
+            Helvetica, Arial, sans-serif !important;
     }
 
     #btdRoot,
