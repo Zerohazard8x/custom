@@ -11,19 +11,19 @@
 :root {
     /* Define variables */
     --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-        "Roboto", "Inter", "IBM Plex Sans", "DIN Next", "DIN", "Bahnschrift",
-        "alte din 1451 mittelschrift", "Road UA", "Dinish Expanded", "Dinish",
-        "Altinn-DIN", "D-DIN", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-        "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
+        "Roboto", "Inter", "IBM Plex Sans", "Noto Sans JP", "Noto Sans TC",
+        "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
 }
 
 @-moz-document domain("youtube.com") {
     /* youtube - Goal: subtitles */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: var(--font-personal), "YouTube Noto", Roboto,
-            "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption",
-            sans-serif !important;
+        font-family: "DIN Next", "DIN", "Bahnschrift",
+            "alte din 1451 mittelschrift", "Road UA", "Dinish Expanded",
+            "Dinish", "Altinn-DIN", "D-DIN", var(--font-personal),
+            "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
+            Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
         text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px !important;
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 3 times */
