@@ -12,9 +12,9 @@
     /* Define variables */
     --font: "DIN Next", "DIN", "Bahnschrift", "Road UA",
         "alte din 1451 mittelschrift", "Dinish Expanded", "Dinish", "Altinn-DIN",
-        "D-DIN", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
-        -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter",
-        "Roboto";
+        "D-DIN", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "SF Pro",
+        "SF Pro Text", "Inter", "Roboto", "IBM Plex Sans JP",
+        "IBM Plex Sans Thai", "Noto Sans JP";
 }
 
 @-moz-document domain("youtube.com") {
@@ -33,9 +33,7 @@
     }
 }
 
-@-moz-document domain("facebook.com"),
-domain("messenger.com"),
-domain("instagram.com") {
+@-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     /* facebook, messenger, instagram - goal: reduce use of system font, grayscale */
     .x9f619 {
         font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica, Arial,
@@ -315,6 +313,56 @@ domain("yewtu.be") {
     div.miniprofile_hover,
     div.responsive_page_frame.with_header,
     div.FullModalOverlay {
+        filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("tweetdeck.twitter.com") {
+    /* Tweetdeck/XPro - Goal: Change column width and fonts [Old], grayscale [All] */
+    .js-column.column {
+        /* Change column width */
+        width: 370px !important;
+    }
+
+    html.dark .is-wide-columns .media-size-medium,
+    .media-image,
+    .media-grid-container {
+        /* Make images taller */
+        height: 360px !important;
+    }
+
+    .is-wide-columns,
+    .js-dropdown-content,
+    .js-modal-panel,
+    .js-submittable-input,
+    .action-text,
+    .s-fluid-height,
+    .prf,
+    .js-popover-content,
+    .is-focused,
+    .controls > label,
+    .r-1qd0xha {
+        font-family: "TwitterChirp", var(--font), -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue",
+            sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+            Meiryo, "ＭＳ Ｐゴシック", "MS PGothic" !important;
+    }
+
+    .label,
+    .js-action-button {
+        font-family: "TwitterChirp", var(--font), Helvetica Neue, Helvetica,
+            Arial, sans-serif !important;
+    }
+
+    #btdRoot,
+    #update-sound,
+    div.application.js-app.is-condensed,
+    div.context-menu,
+    div.is-hidden.js-message-banner.message-banner,
+    div.js-app-loading.login-container,
+    div.js-modals-container,
+    #react-root {
         filter: grayscale(80%);
     }
 }

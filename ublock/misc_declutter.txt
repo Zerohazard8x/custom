@@ -181,3 +181,8 @@ w3schools.com##.m12.l2.w3-col
 
 inquirer.net###bc-share
 inquirer.net###article_social_trending > .sib-form
+
+nbcnews.com##.share-has-dropdown.h-h.share-list
+nbcnews.com##.HFSBumped.grid-col-push-half-xl.grid-col-3_5-xl.grid-col-4_5-l.layout-grid-item.article-body__right-rail
+nbcnews.com##.article-social-share-top
+nbcnews.com##.styles_alignMobileBottom__bhgkQ.styles_alignDesktopBottom__4cHaO.styles_stuck__Yq04P.styles_adNotPlaying__Q51_C.isStuck.styles_videoPlayer__bL8AJ.videoPlayer
