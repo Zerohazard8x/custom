@@ -197,3 +197,8 @@ soranews24.com###widget_yearlyranking
 soranews24.com###widget_monthlyranking
 soranews24.com##.post-footer
 soranews24.com##.share-btns
+
+philstarlife.com##.column-share.is-narrow.column
+philstarlife.com###v-comments-29093
+philstarlife.com##.vuukle-powerbar-29093
+philstarlife.com###privacy-policy-container
