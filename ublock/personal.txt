@@ -6964,7 +6964,6 @@
 ||gdpr.laxd.com$all
 ||gecpbt.com$all
 ||geetaury.net$all
-||geetest.com$all
 ||geijnyklkdy.xyz$all
 ||geiouifksh.xyz$all
 ||gejeegho.net$all
@@ -17620,6 +17619,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||geetest.com$script,object,ping,stylesheet,other
 ||dexeqbeb7giwr.cloudfront.net$script,object,ping,stylesheet,other
 ||dsca.akamaiedge.net$script,object,ping,stylesheet,other
 ||wcpstatic.microsoft.com$script,object,ping,stylesheet,other
