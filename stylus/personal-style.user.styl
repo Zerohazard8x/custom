@@ -11,8 +11,9 @@
 :root {
     /* Define variables */
     --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-        "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP", "Noto Sans TC",
-        "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
+        "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
+        "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
+        "IBM Plex Sans KR";
 }
 
 @-moz-document domain("youtube.com") {
@@ -320,7 +321,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("tweetdeck.twitter.com") {
-    /* Tweetdeck/XPro - Goal: Change column width and fonts [Old], grayscale [All] */
+    /* Tweetdeck/XPro - Goal: Change column width, fonts, AMOLED dark [Old], grayscale [All] */
     .js-column.column {
         /* Change column width */
         width: 370px !important;
@@ -333,16 +334,18 @@ domain("yewtu.be") {
         height: 360px !important;
     }
 
+    .action-text,
+    .is-focused,
     .is-wide-columns,
     .js-dropdown-content,
+    .js-filter-input,
+    .js-filter-types,
     .js-modal-panel,
-    .js-submittable-input,
-    .action-text,
-    .s-fluid-height,
-    .prf,
     .js-popover-content,
-    .is-focused,
-    .controls > label,
+    .js-submittable-input,
+    .prf,
+    .s-fluid-height,
+    label,
     .r-1qd0xha {
         font-family: "TwitterChirp", var(--font-personal), -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue",
@@ -351,10 +354,31 @@ domain("yewtu.be") {
             Meiryo, "ＭＳ Ｐゴシック", "MS PGothic" !important;
     }
 
+    .btn,
     .label,
+    .btn-on-dark,
     .js-action-button {
         font-family: "TwitterChirp", var(--font-personal), Helvetica Neue,
             Helvetica, Arial, sans-serif !important;
+    }
+
+    html.dark .app-columns-container,
+    html.dark .app-header,
+    html.dark .app-navigator,
+    html.dark .app-title,
+    html.dark .border-divider,
+    html.dark .column-header,
+    html.dark .column-nav-item,
+    html.dark .column-options .button-tray,
+    html.dark .column-panel,
+    html.dark .column-title-edit-box,
+    html.dark .dropdown-menu,
+    html.dark .stream-item,
+    html.dark .with-column-divider-bottom,
+    html.dark .mdl {
+        background-color: black !important;
+        border-bottom-color: black !important;
+        border-color: black !important;
     }
 
     #btdRoot,
@@ -366,5 +390,21 @@ domain("yewtu.be") {
     div.js-modals-container,
     #react-root {
         filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
+    /* SoraNews24 - Goal: Grayscale, font (eventually) */
+    #container,
+    #div-gpt-ad-oop,
+    #fb-root,
+    #rufous-sandbox,
+    #likes-master,
+    #likes-other-gravatars {
+        filter: grayscale(80%);
+    }
+
+    body {
+        background: rgb(100, 59, 54) !important;
     }
 }

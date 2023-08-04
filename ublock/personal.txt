@@ -17746,7 +17746,6 @@
 ||dzfq4ouujrxm8.cloudfront.net$script,object,ping,stylesheet,other
 ||ebayimg.com$script,object,ping,stylesheet,other
 ||edge-chat.messenger.com$script,object,ping,stylesheet,other
-||edgecastcdn.net$script,object,ping,stylesheet,other
 ||edgedatg.com$script,object,ping,stylesheet,other
 ||elb.amazonaws.com$script,object,ping,stylesheet,other
 ||elektroda.pl$script,object,ping,stylesheet,other
