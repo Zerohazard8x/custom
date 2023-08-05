@@ -10,9 +10,10 @@
 
 :root {
     /* Define variables */
-    --font-monostyle:  -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-        "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP", "Noto Sans TC",
-        "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
+    --font-monostyle: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+        "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
+        "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
+        "IBM Plex Sans KR";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
         "DroidSansM", "Hack", "Bitstream Vera Sans Mono", "BitstromVera",
         "DejaVu Sans Mono", "Segoe UI Mono", "SF Mono", "SFMono-Regular", Menlo,
@@ -350,16 +351,21 @@ domain("superuser.com") {
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
-    div.nl-hidden.page,
-    div.nl-cookiepolicy,
-    div.print-hide,
-    section.nl-center,
-    #force-svg,
-    div.nl-footer.print-hide.no-select,
-    #loading-spinner,
-    #dateTimePicker,
     #hiddenData,
-    #credential_picker_container {
+    #dateTimePicker,
+    #loading-spinner,
+    div.nl-footer.print-hide.no-select,
+    div.nl-hidden.nl-generatePdf,
+    div.nl-page,
+    div.nl-generatePdf.nl-hidden,
+    div.hide-important,
+    #symbolabLogoPrint1,
+    #no-render-svg,
+    #fb-root,
+    #symbolabLogoPrint,
+    div.print-hide,
+    div.nl-cookiepolicy,
+    div.nl-hidden.page {
         filter: grayscale(80%);
     }
 }
@@ -423,12 +429,12 @@ domain("superuser.com") {
     /* Bing - Goal: Make sure website uses one single font + "fluent" changes + code blocks + grayscale */
     /* Var initializations */
     :root {
-        --font-monostyle-text: "Roboto", "Segoe UI Variable Text", "Segoe UI",
+        --segoe-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
+            Segoe;
+        --segoe-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
+            "Roboto";
+        --segoe-small-fallback: "Roboto", "Segoe UI Variable Small", "Segoe UI",
             SegoeUI, Segoe;
-        --font-monostyle-display: "Segoe UI Variable Display", "Segoe UI",
-            SegoeUI, Segoe, "Roboto";
-        --font-monostyle-small-fallback: "Roboto", "Segoe UI Variable Small",
-            "Segoe UI", SegoeUI, Segoe;
         /* --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png); */
     }
 
@@ -450,7 +456,7 @@ domain("superuser.com") {
         /* Undo small caps */
         text-transform: none !important;
         font-size: 14px !important;
-        font-family: var(--font-monostyle-text), Arial, Helvetica, sans-serif !important;
+        font-family: var(--segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
     .b_scopebar ul {
@@ -490,36 +496,18 @@ domain("superuser.com") {
          content: none !important;
      } */
 
-    /* grayscale */
-    /*     #aRmsDefer,
-    #ajaxStyles,
-    #b_TriviaOverlay,
-    #b_content,
-    #b_header,
-    #b_sydConvCont,
-    #b_sydHeadBg,
-    #bfb-prefetch,
-    #pagetual-preload,
-    #qs_searchBoxOuter,
-    #sbicom_loader,
-    a.entityPreview.b_hidden,
-    div.sb_hbop,
-    div.scs_cp.b_hide,
-    footer.b_footer,
-    form.sbi_form_ph,
-    span.b_hide,
-    iframe.insightsOverlay {
+    img,
+    svg,
+    input,
+    .hp_body,
+    .v-live-t-txt,
+    .b_app_common_btn {
         filter: grayscale(80%);
-    } */
-
-    /* fix nondisappearing scrollbar (grayscale) */
-    /*     #miniheader {
-        display: none !important;
-    } */
+    }
 
     /* Fonts */
-    #b_footerItems a,
-    #b_footerItems span,
+    a,
+    span,
     #fltIdtCon,
     #id_h,
     #vvlb,
@@ -528,7 +516,6 @@ domain("superuser.com") {
     .b_respl,
     .cbtn,
     .idp-refresh-page-main-line,
-    .img_badges > span a,
     .img_info,
     .items,
     .lite-entcard-exp,
@@ -539,12 +526,19 @@ domain("superuser.com") {
     .tit,
     .vd-duration,
     .title {
-        font-family: var(--font-monostyle-text), Arial, Helvetica, sans-serif !important;
+        font-family: var(--segoe-text), Arial, Helvetica, sans-serif !important;
+        filter: grayscale(80%);
     }
 
     #sw_as {
-        font-family: var(--font-monostyle-text) !important;
+        font-family: var(--segoe-text) !important;
         filter: opacity(100%) !important;
+        filter: grayscale(80%);
+    }
+
+    /* grayscale fix */
+    .b_respl {
+        filter: none;
     }
 
     /* Variable Small Fallback */
@@ -563,21 +557,47 @@ domain("superuser.com") {
     .ms-Button-label,
     .ms-search-text-h2,
     .recommendationsTableTitle > h2 {
-        font-family: var(--font-monostyle-small-fallback), Arial, sans-serif !important;
+        font-family: var(--segoe-small-fallback), Arial, sans-serif !important;
         filter: opacity(100%) !important;
+        filter: grayscale(80%);
     }
 
     .asSectionHeading,
     .sa_tm_subText {
-        font-family: var(--font-monostyle-small-fallback), Arial, Helvetica,
-            sans-serif !important;
-        filter: opacity(100%) !important;
+        font-family: var(--segoe-small-fallback), Arial, Helvetica, sans-serif !important;
+        filter: grayscale(80%);
     }
 
     .scopes {
-        font-family: var(--font-monostyle-small-fallback), Tahoma, Arial,
-            Verdana, sans-serif !important;
-        filter: opacity(100%) !important;
+        font-family: var(--segoe-small-fallback), Tahoma, Arial, Verdana,
+            sans-serif !important;
+        filter: grayscale(80%);
+    }
+
+    /* Variable Text */
+    a,
+    h2,
+    h4,
+    span > h3,
+    #detailMeta,
+    .vrhtt,
+    .ms-search-tenantLogo-text,
+    .b_entityTitle,
+    .b_primtxt,
+    .b_searchboxForm,
+    .b_topTitle,
+    .b_vList,
+    .dest_name,
+    .ent-dtab-nam-ov-dtp,
+    .qna_algoLink_title,
+    .rwrl,
+    .sto_attr_table,
+    .sto_attrlitc,
+    .wpvn_ala_wtt,
+    .b_rc_gb_widget_title {
+        font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
+            "Roboto", Arial, Helvetica, sans-serif !important;
+        filter: grayscale(80%);
     }
 
     /* Variable Small */
@@ -592,32 +612,7 @@ domain("superuser.com") {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
             "Roboto", Arial, Helvetica, sans-serif !important;
         filter: opacity(100%) !important;
-    }
-
-    /* Variable Text */
-    h2,
-    h4,
-    span > h3,
-    #detailMeta,
-    .vrhtt,
-    .metaItem > a,
-    .ms-search-tenantLogo-text,
-    .b_entityTitle,
-    .b_primtxt,
-    .b_searchboxForm,
-    .b_topTitle,
-    .b_vList,
-    .deeplink_title > a,
-    .dest_name,
-    .ent-dtab-nam-ov-dtp,
-    .qna_algoLink_title,
-    .rwrl,
-    .sto_attr_table,
-    .sto_attrlitc,
-    .wpvn_ala_wtt,
-    .b_rc_gb_widget_title {
-        font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Arial, Helvetica, sans-serif !important;
+        filter: grayscale(80%);
     }
 
     /* Variable Display */
@@ -627,13 +622,13 @@ domain("superuser.com") {
     .irp-video-slogan,
     .scs_metactn > div h2,
     .sto_title,
-    .thdrail_card_title > div,
     #rd_gtrtb_ttl,
     div > p span,
     h2 > span,
     container-title {
-        font-family: var(--font-monostyle-display), Helvetica, Arial, sans-serif !important;
+        font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
         filter: opacity(100%) !important;
+        filter: grayscale(80%);
     }
 
     .rd_cCodeBg {
@@ -646,6 +641,7 @@ domain("superuser.com") {
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
+        filter: grayscale(80%);
     }
 }
 
