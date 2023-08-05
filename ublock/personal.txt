@@ -5596,7 +5596,6 @@
 ||ds.webprojectslab.com$all
 ||dsandmaroons.com$all
 ||dsbtpy.viata.nl$all
-||dscf.akamaiedge.net$all
 ||dsfhudbsyicvns.xyz$all
 ||dsghhbqey6ytg.cloudfront.net$all
 ||dsgroupmedia.com$all
@@ -17619,6 +17618,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||dscf.akamaiedge.net$script,object,ping,stylesheet,other
 ||geetest.com$script,object,ping,stylesheet,other
 ||dexeqbeb7giwr.cloudfront.net$script,object,ping,stylesheet,other
 ||dsca.akamaiedge.net$script,object,ping,stylesheet,other

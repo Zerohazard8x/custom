@@ -149,6 +149,15 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
+
+    /* UI changes */
+    .h-jI8r2f9ozTNqu_2TBeY {
+        text-align: center !important;
+    }
+    
+    ._3jiriKeNer8y0-1r6oWIFM {
+        width: 140px !important;
+    }
 }
 
 @-moz-document domain("stackoverflow.com"),
@@ -499,6 +508,9 @@ domain("superuser.com") {
     img,
     svg,
     input,
+    button,
+    .container,
+    .item,
     .hp_body,
     .v-live-t-txt,
     .b_app_common_btn {
@@ -507,7 +519,6 @@ domain("superuser.com") {
 
     /* Fonts */
     a,
-    span,
     #fltIdtCon,
     #id_h,
     #vvlb,
@@ -517,6 +528,10 @@ domain("superuser.com") {
     .cbtn {
         font-family: var(--segoe-text), Arial, Helvetica, sans-serif !important;
         filter: grayscale(80%);
+    }
+
+    span {
+        font-family: var(--segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
     #sw_as {
@@ -658,5 +673,37 @@ domain("superuser.com") {
     div.lightbox-target,
     #GFG_AD_Desktop_Stickyunit_1x1 {
         filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("xda-developers.com") {
+    /* XDADevelopers - Goal: Code blocks, grayscale */
+    #_qc_cookie_access,
+    div.u-bottomFixer.js-bottomFixTarget,
+    div.uix_pageWrapper--fixed,
+    #jumpToTop {
+        filter: grayscale(80%);
+    }
+
+    .p-body,
+    .p-nav-inner,
+    .p-title-value,
+    .bbWrapper,
+    .button-text,
+    .p-sectionLinks-list,
+    .input {
+        font-family: var(--font-monostyle), -apple-system, BlinkMacSystemFont,
+            segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji,
+            segoe ui emoji, segoe ui symbol !important;
+    }
+
+    .bbCodeCode {
+        font-family: var(--monospace), var(--block-mono), Monaco, Menlo,
+            Consolas, roboto mono, andale mono, ubuntu mono, monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 }

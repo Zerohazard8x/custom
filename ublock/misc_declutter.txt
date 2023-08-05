@@ -4,6 +4,7 @@
 ! Homepage: https://github.com/zerohazard8x/custom/ublock
 ! Expires: 1 day
 
+bing.com###asmsbribbon_li
 bing.com###b-scopeListItem-bingatwork
 bing.com###b_alsotry
 bing.com###b_context > li.b_ans:nth-child(2)
