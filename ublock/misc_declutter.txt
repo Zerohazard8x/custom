@@ -55,10 +55,16 @@ reddit.com###change-username-tooltip-id > span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze
 reddit.com###div > div > button._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8
 reddit.com###div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
 reddit.com###div > div > div._2vEf-C2keJaBMY9qk_BxVn:first-child
+reddit.com##.TmgZY6tDcdErbE5d7E0HJ
+reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
+reddit.com##._2t7TYn6HwRZQwKXG47kpQR._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
+reddit.com##.icon-add.icon._3uVYL9qgX3QSEa_F4F-DPv
+reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
 reddit.com##div > div > a._3dZnYgFFpifT-M_Vs2FAq6:first-child
 reddit.com##div > div > div._2f5uYHvlfzs2DngQsiCdvB:last-child
 reddit.com##div > div > div._2jJNpBqXMbbyOiGCElTYxZ:first-child
 reddit.com##div > div > div._2vEf-C2keJaBMY9qk_BxVn:nth-child(2)
+reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 
 twitter.com##.gryphon-beta-btn-container.js-gryphon-beta-btn
 twitter.com##.r-1jte41z.r-hvns9x.r-12e0a8i.r-qo02w8.r-1qk6wnv.r-c67a83.r-kemksi.r-173mn98.css-1dbjc4n
