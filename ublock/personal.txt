@@ -17738,7 +17738,6 @@
 ||dr282zn36sxxg.cloudfront.net$script,object,ping,stylesheet,other
 ||drift.com$script,object,ping,stylesheet,other
 ||driftt.com$script,object,ping,stylesheet,other
-||dscb.akamaiedge.net$script,object,ping,stylesheet,other
 ||dscd.akamai.net$script,object,ping,stylesheet,other
 ||dscg2.akamai.net$script,object,ping,stylesheet,other
 ||dscw27.akamai.net$script,object,ping,stylesheet,other
