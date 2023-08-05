@@ -1,7 +1,7 @@
 [
     {
         "headers": [
-            { "enabled": true, "name": "Referer", "sendEmptyHeader": false },
+            { "enabled": false, "name": "Referer", "sendEmptyHeader": false },
             {
                 "enabled": true,
                 "name": "Forwarded",
@@ -13,12 +13,13 @@
         "version": 2,
         "shortTitle": "1",
         "excludeUrlFilters": [
-            { "enabled": true, "urlRegex": ".*lazada.com.ph.*" },
-            { "enabled": true, "urlRegex": ".*pcpartpicker.com.*" },
-            { "enabled": true, "urlRegex": ".*bing.com.*" },
-            { "enabled": true, "urlRegex": ".*getpocket.com.*" },
-            { "enabled": true, "urlRegex": ".*vk.com.*" },
-            { "enabled": true, "urlRegex": ".*archive.org.*" }
+            { "enabled": false, "urlRegex": ".*lazada.*" },
+            { "enabled": false, "urlRegex": ".*pcpartpicker.com.*" },
+            { "enabled": false, "urlRegex": ".*bing.com.*" },
+            { "enabled": false, "urlRegex": ".*getpocket.com.*" },
+            { "enabled": false, "urlRegex": ".*vk.com.*" },
+            { "enabled": false, "urlRegex": ".*archive.org.*" },
+            { "enabled": false, "urlRegex": ".*zoom.com.*" }
         ]
     }
 ]
