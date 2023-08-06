@@ -66,9 +66,14 @@ reddit.com##div > div > div._2jJNpBqXMbbyOiGCElTYxZ:first-child
 reddit.com##div > div > div._2vEf-C2keJaBMY9qk_BxVn:nth-child(2)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 
+twitter.com##.css-1dbjc4n > .r-1f1sjgu.r-ymttw5.r-1ny4l3l.r-1wtj0ep.css-1dbjc4n
 twitter.com##.gryphon-beta-btn-container.js-gryphon-beta-btn
 twitter.com##.r-1jte41z.r-hvns9x.r-12e0a8i.r-qo02w8.r-1qk6wnv.r-c67a83.r-kemksi.r-173mn98.css-1dbjc4n
+twitter.com##.r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
 twitter.com##.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n
+twitter.com##.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n
+twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(5)
+twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
 twitter.com##div > div > div > aside.r-uaa2di.r-ymttw5.r-1f1sjgu
 twitter.com##div > div > div > div.css-1dbjc4n.r-1bro5k0
 twitter.com##div > div > div > div.css-1dbjc4n.r-1bro5k0 > aside.css-1dbjc4n
@@ -87,6 +92,10 @@ twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt2
 twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(5)
 twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(6)
 twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(7)
+twitter.com##div.r-1h3ijdo.css-1dbjc4n:nth-of-type(2)
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(3)
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(5)
+twitter.com##div:nth-of-type(15)
 
 vlr.gg##div.col.mod-1:first-child > div:nth-child(2) > div.js-home-stickied:first-child
 vlr.gg##div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > div.d8fyh:nth-child(3)
