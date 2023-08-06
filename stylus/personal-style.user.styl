@@ -1,30 +1,28 @@
 /* ==UserStyle==
 @name           changes
 @namespace      github.com/openstyles/stylus
-@version        1.0.6
+@version        1.0.0
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
+@homepageURL    https://github.com/Zerohazard8x/custom
 ==/UserStyle== */
 
 :root {
     /* Define variables */
-    --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-        "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
-        "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
-        "IBM Plex Sans KR";
+    --font: "DIN Next", "DIN", "Bahnschrift", "Road UA",
+        "alte din 1451 mittelschrift", "Dinish Expanded", "Dinish", "Altinn-DIN",
+        "D-DIN", "IBM Plex Sans JP", "IBM Plex Sans Thai", "IBM Plex Sans",
+        -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter",
+        "Roboto";
 }
 
 @-moz-document domain("youtube.com") {
     /* youtube - Goal: subtitles */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: "DIN Next", "DIN", "Bahnschrift",
-            "alte din 1451 mittelschrift", "Road UA", "Dinish Expanded",
-            "Dinish", "Altinn-DIN", "D-DIN", var(--font-personal),
-            "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
-            Verdana, "PT Sans Caption", sans-serif !important;
+        font-family: var(--font), "YouTube Noto", Roboto, "Arial Unicode Ms",
+            Arial, Helvetica, Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
         text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px !important;
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 3 times */
@@ -35,21 +33,22 @@
     }
 }
 
-@-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
+@-moz-document domain("facebook.com"),
+domain("messenger.com"),
+domain("instagram.com") {
     /* facebook, messenger, instagram - goal: reduce use of system font, grayscale */
     .x9f619 {
-        font-family: var(--font-personal), Segoe UI, Segoe UI Historic,
-            Helvetica, Arial, sans-serif !important;
-    }
-
-    ._1gaz {
-        font-family: var(--font-personal), SFProText-Medium, Helvetica, Arial,
+        font-family: var(--font), Segoe UI, Segoe UI Historic, Helvetica, Arial,
             sans-serif !important;
     }
 
+    ._1gaz {
+        font-family: var(--font), SFProText-Medium, Helvetica, Arial, sans-serif !important;
+    }
+
     ._8e63 {
-        font-family: var(--font-personal), SFProDisplay-Regular, Helvetica,
-            Arial, sans-serif !important;
+        font-family: var(--font), SFProDisplay-Regular, Helvetica, Arial,
+            sans-serif !important;
     }
 
     ._45ks,
@@ -57,20 +56,20 @@
     ._58mk,
     ._8e4l,
     #globalContainer {
-        font-family: var(--font-personal), SFProText-Regular, Helvetica, Arial,
+        font-family: var(--font), SFProText-Regular, Helvetica, Arial,
             sans-serif !important;
     }
 
     ._8esh {
-        font-family: var(--font-personal), SFProText-Semibold, Helvetica, Arial,
+        font-family: var(--font), SFProText-Semibold, Helvetica, Arial,
             sans-serif !important;
     }
 
     ._aacl,
     .x1i0vuye,
     ._acan {
-        font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif;
     }
 
     #mount_0_0_CV,
@@ -169,35 +168,37 @@
     #_2mOxZN2bHsP8hwP9q7jwBQ_55,
     #gac_scont,
     #hfcr,
-    #hfcr,
     #lb,
     #lfootercc,
+    #pagetual-preload,
     #snbc,
+    c-wiz.zQTmif.SSPGKf.O5K2Vd,
     div.CvDJxb,
     div.DH7hPe,
+    div.Fgvgjc,
+    div.L3eUgb,
     div.MVPoib,
     div.T1diZc.KWE8qe,
+    div.UkZxse,
     div.fp-nh,
+    div.gb_Fe,
+    div.gb_He,
+    div.gb_Ie,
+    div.gb_Uc,
     div.gb_jd,
     div.gb_kd,
     div.gb_n,
-    div.gb_n,
+    div.gb_od,
+    div.gb_q,
+    div.jAwdKb.seKsf,
     div.main,
+    div.pGxpHc,
+    div.uRjBf,
     div.wYq63b,
     h1.Uo8X3b.OhScic.zsYMMe,
     span.kpshf.line.gsr.bilit.big.mdm,
-    div.L3eUgb,
-    div.Fgvgjc,
     textarea.csi,
-    div.gb_od,
-    div.gb_q,
-    #hfcr,
-    #ZCHFDb,
-    #roster-for-Google-Help,
-    c-wiz.SSPGKf.Czez9d,
-    #kO001e,
-    div.VUoKZ,
-    #pagetual-preload {
+    div.VUoKZ {
         filter: grayscale(80%);
     }
 }
@@ -213,7 +214,7 @@ domain("twt.funami.tech") {
     button,
     select,
     input {
-        font-family: var(--font-personal), sans-serif !important;
+        font-family: var(--font), sans-serif !important;
     }
 
     /* grayscale */
@@ -235,7 +236,7 @@ domain("yewtu.be") {
     .pure-u-20-24,
     .pure-u-23-24,
     .pure-u-10-24 {
-        font-family: var(--font-personal), sans-serif !important;
+        font-family: var(--font), sans-serif !important;
     }
 
     div.pure-g,
@@ -247,8 +248,8 @@ domain("yewtu.be") {
 @-moz-document domain("deepl.com") {
     /* DeepL - Goal: Replace Segoe font, grayscale */
     body *:not(.fa) {
-        font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+        font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     #dl_mobile_iOS_app_banner,
@@ -271,7 +272,7 @@ domain("yewtu.be") {
     .HeaderMenu,
     .RatingsBoxAdjustedRating,
     input {
-        font-family: var(--font-personal), Arial, "Segoe UI", Frutiger,
+        font-family: var(--font), Arial, "Segoe UI", Frutiger,
             "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
     }
 
@@ -285,9 +286,9 @@ domain("yewtu.be") {
 @-moz-document domain("quora.com") {
     /* Quora - Goal: Reduce usage of system font, grayscale */
     .q-box {
-        font-family: var(--font-personal), -apple-system, system-ui,
-            BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-            Cantarell, "Helvetica Neue", sans-serif !important;
+        font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+            sans-serif !important;
     }
 
     #credential_picker_container,
@@ -322,100 +323,5 @@ domain("yewtu.be") {
     div.responsive_page_frame.with_header,
     div.FullModalOverlay {
         filter: grayscale(80%);
-    }
-}
-
-@-moz-document domain("tweetdeck.twitter.com") {
-    /* Tweetdeck/XPro - Goal: Change column width, fonts, AMOLED dark [Old], grayscale [All] */
-    .js-column.column {
-        /* Change column width */
-        width: 370px !important;
-    }
-
-    html.dark .is-wide-columns .media-size-medium,
-    .media-image,
-    .media-grid-container {
-        /* Make images taller */
-        height: 360px !important;
-    }
-
-    .is-wide-columns,
-    .js-dropdown-content,
-    .js-modal-panel,
-    .js-submittable-input,
-    .action-text,
-    .s-fluid-height,
-    .prf,
-    .js-popover-content,
-    .is-focused,
-    label,
-    .js-filter-types,
-    .js-filter-input,
-    .r-1qd0xha {
-        font-family: "TwitterChirp", var(--font-personal), -apple-system,
-            BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue",
-            sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-            Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
-            Meiryo, "ＭＳ Ｐゴシック", "MS PGothic" !important;
-    }
-
-    .btn,
-    .label,
-    .btn-on-dark,
-    .js-action-button {
-        font-family: "TwitterChirp", var(--font-personal), Helvetica Neue,
-            Helvetica, Arial, sans-serif !important;
-    }
-
-    html.dark .app-columns-container,
-    html.dark .stream-item,
-    html.dark .column-panel,
-    html.dark .column-title-edit-box,
-    html.dark .column-header,
-    html.dark .app-header,
-    html.dark .column-nav-item,
-    html.dark .app-navigator,
-    html.dark .app-title,
-    html.dark .border-divider,
-    html.dark .with-column-divider-bottom,
-    html.dark .column-options .button-tray,
-    html.dark .dropdown-menu,
-    html.dark .popover,
-    html.dark input,
-    html.dark .detail-view-inline,
-    html.dark .detail-view-inline-text,
-    html.dark .facet-type.is-active,
-    html.dark .column,
-    html.dark .mdl {
-        background-color: black !important;
-        border-bottom-color: black !important;
-        border-color: black !important;
-    }
-
-    #btdRoot,
-    #update-sound,
-    div.application.js-app.is-condensed,
-    div.context-menu,
-    div.is-hidden.js-message-banner.message-banner,
-    div.js-app-loading.login-container,
-    div.js-modals-container,
-    #react-root {
-        filter: grayscale(80%);
-    }
-}
-
-@-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
-    /* SoraNews24 - Goal: Grayscale, font (eventually) */
-    #container,
-    #div-gpt-ad-oop,
-    #fb-root,
-    #rufous-sandbox,
-    #likes-master,
-    #likes-other-gravatars {
-        filter: grayscale(80%);
-    }
-
-    body {
-        background: rgb(100, 59, 54) !important;
     }
 }
