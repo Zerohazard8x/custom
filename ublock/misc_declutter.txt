@@ -68,6 +68,7 @@ reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 
 twitter.com##.gryphon-beta-btn-container.js-gryphon-beta-btn
 twitter.com##.r-1jte41z.r-hvns9x.r-12e0a8i.r-qo02w8.r-1qk6wnv.r-c67a83.r-kemksi.r-173mn98.css-1dbjc4n
+twitter.com##.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n
 twitter.com##div > div > div > aside.r-uaa2di.r-ymttw5.r-1f1sjgu
 twitter.com##div > div > div > div.css-1dbjc4n.r-1bro5k0
 twitter.com##div > div > div > div.css-1dbjc4n.r-1bro5k0 > aside.css-1dbjc4n
