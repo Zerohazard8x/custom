@@ -1,7 +1,7 @@
 {
     "settings": {
         "notifyAboutUpdates": true,
-        "autoUpdate": false,
+        "autoUpdate": true,
         "autoUpdateNotification": true,
         "useQuickCss": true,
         "themeLinks": [
@@ -28,7 +28,7 @@
                 "enabled": true
             },
             "MessageAccessoriesAPI": {
-                "enabled": false
+                "enabled": true
             },
             "MessageDecorationsAPI": {
                 "enabled": true
@@ -62,7 +62,7 @@
                 "enabled": false
             },
             "AnonymiseFileNames": {
-                "enabled": false
+                "enabled": true
             },
             "WebRichPresence (arRPC)": {
                 "enabled": false
@@ -105,13 +105,13 @@
                 "enabled": false
             },
             "CrashHandler": {
-                "enabled": true
+                "enabled": false
             },
             "CustomRPC": {
                 "enabled": false
             },
             "DisableDMCallIdle": {
-                "enabled": false
+                "enabled": true
             },
             "EmoteCloner": {
                 "enabled": false
@@ -135,7 +135,7 @@
                 "enabled": false
             },
             "FavoriteEmojiFirst": {
-                "enabled": false
+                "enabled": true
             },
             "FavoriteGifSearch": {
                 "enabled": true
@@ -144,7 +144,7 @@
                 "enabled": false
             },
             "ForceOwnerCrown": {
-                "enabled": false
+                "enabled": true
             },
             "FriendInvites": {
                 "enabled": false
@@ -159,7 +159,7 @@
                 "enabled": false
             },
             "iLoveSpam": {
-                "enabled": false
+                "enabled": true
             },
             "IgnoreActivities": {
                 "enabled": false
@@ -180,13 +180,13 @@
                 "enabled": false
             },
             "MemberCount": {
-                "enabled": false
+                "enabled": true
             },
             "MessageClickActions": {
                 "enabled": false
             },
             "MessageLinkEmbeds": {
-                "enabled": false
+                "enabled": true
             },
             "MessageLogger": {
                 "enabled": false
@@ -201,7 +201,39 @@
                 "enabled": false
             },
             "MoreUserTags": {
-                "enabled": false
+                "enabled": false,
+                "tagSettings": {
+                    "WEBHOOK": {
+                        "text": "Webhook",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "OWNER": {
+                        "text": "Owner",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "ADMINISTRATOR": {
+                        "text": "Admin",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "MODERATOR_STAFF": {
+                        "text": "Staff",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "MODERATOR": {
+                        "text": "Mod",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "VOICE_MODERATOR": {
+                        "text": "VC Mod",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    }
+                }
             },
             "Moyai": {
                 "enabled": false
@@ -210,7 +242,7 @@
                 "enabled": false
             },
             "MutualGroupDMs": {
-                "enabled": false
+                "enabled": true
             },
             "NoBlockedMessages": {
                 "enabled": false
@@ -234,7 +266,7 @@
                 "enabled": false
             },
             "NoUnblockToJump": {
-                "enabled": false
+                "enabled": true
             },
             "NSFWGateBypass": {
                 "enabled": false
@@ -255,7 +287,7 @@
                 "enabled": false
             },
             "PinDMs": {
-                "enabled": false
+                "enabled": true
             },
             "PlainFolderIcon": {
                 "enabled": false
@@ -445,8 +477,9 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1690638166969
-        }
+            "settingsSyncVersion": 1691416075896
+        },
+        "enabledThemes": []
     },
-    "quickCss": ""
+    "quickCss": "html,\r\nbody,\r\n:root {\r\n    filter: opacity(100%) !important;\r\n}\r\n\r\n*:not(pre, pre *, code, .far, .fa, .glyphicon, [class*=\"vjs-\"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*=\"mu-\"], .glyphicon, .icon) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n}"
 }
