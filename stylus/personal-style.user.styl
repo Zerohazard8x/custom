@@ -415,7 +415,11 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
-    /* SoraNews24 - Goal: Grayscale, font (eventually) */
+    /* SoraNews24 - Goal: Grayscale, font */
+    #container, #searchsubmit {
+        font-family: var(--font-personal), arial, helvetica, clean, sans-serif !important;
+    }
+    
     #container,
     #div-gpt-ad-oop,
     #fb-root,
