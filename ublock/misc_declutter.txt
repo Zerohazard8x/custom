@@ -20,6 +20,7 @@ bing.com###id_rfob
 bing.com###id_rh
 bing.com###mfa_srch
 bing.com###sb_form > a.b_phead_chat_link.b_LinksColorMD:last-child
+bing.com###sydneyLetsChatWidgetContainer
 bing.com###vs_cont > div > div.musCard.focusin:last-child
 bing.com###vs_cont > div > section.msbModule.moduleCont:first-child
 bing.com###vs_cont > div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
@@ -27,7 +28,6 @@ bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
 bing.com##.b_bfb_lcg
 bing.com##.fabcolapse
-bing.com##.rh_reedm.toolTip.id_button
 
 dlsu.instructure.com###bettercanvas-announcement-list
 dlsu.instructure.com###bettercanvas-todo-list
@@ -55,15 +55,21 @@ reddit.com###change-username-tooltip-id > span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze
 reddit.com###div > div > button._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8
 reddit.com###div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
 reddit.com###div > div > div._2vEf-C2keJaBMY9qk_BxVn:first-child
+reddit.com###popular-posts
 reddit.com##.TmgZY6tDcdErbE5d7E0HJ
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
 reddit.com##._2t7TYn6HwRZQwKXG47kpQR._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
 reddit.com##.icon-add.icon._3uVYL9qgX3QSEa_F4F-DPv
 reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
+reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm
+reddit.com##.masthead
+reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:h-\[calc\(100vh-var\(--shreddit-header-height\)-1px\)\].xs\:top-\[56px\].xs\:sticky.xs\:w-full.styled-scrollbars.xl\:col-span-4.l\:col-span-4.m\:col-span-3.s\:col-span-4.xs\:col-span-4.s\:block.hidden.right-sidebar > .mt-md
 reddit.com##div > div > a._3dZnYgFFpifT-M_Vs2FAq6:first-child
 reddit.com##div > div > div._2f5uYHvlfzs2DngQsiCdvB:last-child
 reddit.com##div > div > div._2jJNpBqXMbbyOiGCElTYxZ:first-child
 reddit.com##div > div > div._2vEf-C2keJaBMY9qk_BxVn:nth-child(2)
+reddit.com##div.text-14.text-neutral-content-weak
+reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 
 twitter.com##.css-1dbjc4n > .r-1f1sjgu.r-ymttw5.r-1ny4l3l.r-1wtj0ep.css-1dbjc4n
