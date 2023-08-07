@@ -221,3 +221,10 @@ soranews24.com##.share-btns
 
 philstarlife.com##.column-share.is-narrow.column
 philstarlife.com###privacy-policy-container
+
+thesun.co.uk###sidebar > .widget-sticky
+thesun.co.uk##.article__footer
+thesun.co.uk##.css-160u438.rail-component.rail--classic
+thesun.co.uk##.lazyloaded.sim-module-wrapper
+thesun.co.uk##div.widget-height:nth-of-type(1)
+thesun.co.uk##div.widget-height:nth-of-type(3)
