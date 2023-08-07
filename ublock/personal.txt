@@ -17742,7 +17742,6 @@
 ||dscg2.akamai.net$script,object,ping,stylesheet,other
 ||dscw27.akamai.net$script,object,ping,stylesheet,other
 ||dyncdn2.com$script,object,ping,stylesheet,other
-||dzfq4ouujrxm8.cloudfront.net$script,object,ping,stylesheet,other
 ||ebayimg.com$script,object,ping,stylesheet,other
 ||edge-chat.messenger.com$script,object,ping,stylesheet,other
 ||edgedatg.com$script,object,ping,stylesheet,other
@@ -17868,7 +17867,6 @@
 ||openx.net$script,object,ping,stylesheet,other
 ||optimizely.com$script,object,ping,stylesheet,other
 ||osano.com$script,object,ping,stylesheet,other
-||osff.map.fastly.net$script,object,ping,stylesheet,other
 ||outbrain.com$script,object,ping,stylesheet,other
 ||outbrainimg.com$script,object,ping,stylesheet,other
 ||owcdn.net$script,object,ping,stylesheet,other
