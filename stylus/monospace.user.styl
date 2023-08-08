@@ -392,7 +392,7 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("bard.google.com") {
-    /* Google bard - Goal: code blocks, grayscale */
+    /* Google bard - Goal: code blocks */
     .code-container,
     .markdown > p code {
         font-family: "Google Sans Mono", var(--monospace), var(--block-mono),
@@ -402,18 +402,6 @@ domain("superuser.com") {
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
-    }
-
-    header.gb_Pa.gb_gb.gb_Td.gb_rd.gb_md.gb_0c.gb_i,
-    div.gb_td,
-    div.cdk-live-announcer-element.cdk-visually-hidden,
-    div.gb_Pc,
-    div.gb_jd,
-    div.gb_n,
-    div.cdk-describedby-message-container.cdk-visually-hidden,
-    #hfcr,
-    div.cdk-overlay-container {
-        filter: grayscale(80%);
     }
 }
 
