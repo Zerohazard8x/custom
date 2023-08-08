@@ -140,7 +140,7 @@ stackoverflow.com,superuser.com##div > ol.s-navigation:nth-child(4)
 getpocket.com##div > nav > a.css-18qpw11:first-child
 getpocket.com##div > nav > a.css-18qpw11:nth-child(3)
 getpocket.com##div > nav > a.css-18qpw11:nth-child(4)
-getpocket.com##main > header > div > div.onboarding-badge:first-child
+getpocket.com##header > div > div.onboarding-badge:first-child
 getpocket.com##nav > div > ul.css-1bjgl5h.links
 
 store.steampowered.com###Reviews_summary > div > div.rightcol.recent_reviews:nth-child(2)
@@ -187,18 +187,18 @@ thespike.gg##main > div > div.prediction-stats_column___KCpl.prediction-stats_pr
 
 chat.openai.com##main > div > div > div > div > div > div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
-espn.*###fitt-analytics > div > header > div > nav > ul > li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
 espn.*###fitt-analytics > div.bp-mobileMDPlus.bp-mobileLGPlus.bp-tabletPlus.bp-desktopPlus.bp-desktopLGPlus.bp-desktopXLGPlus.no-touch > header.db.Site__Header__Wrapper.sticky.top-0:nth-child(3) > div.Site__Header.db.left-0.top-0.sticky.w-100.bg-clr-gray-02.Site__Header--espn:first-child > nav.Nav__Primary.center.flex.justify-between.items-center > ul.Nav__Primary__Menu.flex.Nav__Primary__Menu--right.flex-none:nth-child(3) > li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
 espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(3)
 espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(3)
 espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(9)
 espn.*###global-nav > ul > li.pillar.more-espn:nth-child(2)
 espn.*###global-nav > ul > li.pillar.more-espn:nth-child(8)
-espn.*###main-container > div > section > article.sub-module.quicklinks:first-child
-espn.*###main-container > div > section > article.sub-module.quicklinks:last-child
-espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(2)
-espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(5)
-espn.*###main-container > div > section > article.sub-module.quicklinks:nth-child(6)
+espn.*##div > section > article.sub-module.quicklinks:first-child
+espn.*##div > section > article.sub-module.quicklinks:last-child
+espn.*##div > section > article.sub-module.quicklinks:nth-child(2)
+espn.*##div > section > article.sub-module.quicklinks:nth-child(5)
+espn.*##div > section > article.sub-module.quicklinks:nth-child(6)
+espn.*##nav > ul > li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
 
 w3schools.com##.m12.l2.w3-col
 
