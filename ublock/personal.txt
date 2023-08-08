@@ -3072,7 +3072,6 @@
 ||azera-s014.com$all
 ||azkcqs.com$all
 ||azmrimo.com$all
-||azure.com$all
 ||azuresjukes.com$all
 ||azurewebsites.net$all
 ||azveac.pearl.ch$all
@@ -17618,6 +17617,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||azure.com$script,object,ping,stylesheet,other
 ||dscf.akamaiedge.net$script,object,ping,stylesheet,other
 ||geetest.com$script,object,ping,stylesheet,other
 ||dexeqbeb7giwr.cloudfront.net$script,object,ping,stylesheet,other
@@ -17934,7 +17934,6 @@
 ||superprof.com$script,object,ping,stylesheet,other
 ||swiftserve.com$script,object,ping,stylesheet,other
 ||sydney.bing.com$script,object,ping,stylesheet,other
-||t-msedge.net$script,object,ping,stylesheet,other
 ||taboola.com$script,object,ping,stylesheet,other
 ||tadst.com$script,object,ping,stylesheet,other
 ||targetimg1.com$script,object,ping,stylesheet,other
