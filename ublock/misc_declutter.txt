@@ -23,11 +23,11 @@ bing.com###sb_form > a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com###sydneyLetsChatWidgetContainer
 bing.com###vs_cont > div > div.musCard.focusin:last-child
 bing.com###vs_cont > div > section.msbModule.moduleCont:first-child
-bing.com###vs_cont > div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
 bing.com##.b_bfb_lcg
 bing.com##.fabcolapse
+bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 
 dlsu.instructure.com###bettercanvas-announcement-list
 dlsu.instructure.com###bettercanvas-todo-list
