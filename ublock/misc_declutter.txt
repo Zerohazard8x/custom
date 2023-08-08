@@ -19,10 +19,10 @@ bing.com###iasabtlnk
 bing.com###id_rfob
 bing.com###id_rh
 bing.com###mfa_srch
-bing.com###sb_form > a.b_phead_chat_link.b_LinksColorMD:last-child
+bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com###sydneyLetsChatWidgetContainer
-bing.com###vs_cont > div > div.musCard.focusin:last-child
-bing.com###vs_cont > div > section.msbModule.moduleCont:first-child
+bing.com##div.musCard.focusin:last-child
+bing.com##section.msbModule.moduleCont:first-child
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
 bing.com##.b_bfb_lcg
@@ -51,8 +51,6 @@ gg.bet##.Tabs__tabs___KOXfP.__app-Tabs-tabs
 gg.bet##.sidebar__content___2JoUk.__app-Sidebar-content
 gg.bet##div:nth-child(6) > div.btn-chat.btn-chat--fixed.btn-chat--left
 
-reddit.com###change-username-tooltip-id > span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
-reddit.com###div > div > button._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8
 reddit.com###div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
 reddit.com###div > div > div._2vEf-C2keJaBMY9qk_BxVn:first-child
 reddit.com###popular-posts
@@ -64,41 +62,42 @@ reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
 reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm
 reddit.com##.masthead
 reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:h-\[calc\(100vh-var\(--shreddit-header-height\)-1px\)\].xs\:top-\[56px\].xs\:sticky.xs\:w-full.styled-scrollbars.xl\:col-span-4.l\:col-span-4.m\:col-span-3.s\:col-span-4.xs\:col-span-4.s\:block.hidden.right-sidebar > .mt-md
+reddit.com##button._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8
 reddit.com##div > div > a._3dZnYgFFpifT-M_Vs2FAq6:first-child
 reddit.com##div > div > div._2f5uYHvlfzs2DngQsiCdvB:last-child
 reddit.com##div > div > div._2jJNpBqXMbbyOiGCElTYxZ:first-child
 reddit.com##div > div > div._2vEf-C2keJaBMY9qk_BxVn:nth-child(2)
 reddit.com##div.text-14.text-neutral-content-weak
 reddit.com##reddit-recent-pages
+reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 
-twitter.com##.css-1dbjc4n > .r-1f1sjgu.r-ymttw5.r-1ny4l3l.r-1wtj0ep.css-1dbjc4n
 twitter.com##.gryphon-beta-btn-container.js-gryphon-beta-btn
+twitter.com##.r-1f1sjgu.r-ymttw5.r-1ny4l3l.r-1wtj0ep.css-1dbjc4n
 twitter.com##.r-1jte41z.r-hvns9x.r-12e0a8i.r-qo02w8.r-1qk6wnv.r-c67a83.r-kemksi.r-173mn98.css-1dbjc4n
-twitter.com##.r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
+twitter.com##.r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
 twitter.com##.r-e7q0ms.r-1p6iasa.css-1dbjc4n
 twitter.com##.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n
-twitter.com##.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n
+twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(5)
+twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(7)
+twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(5)
+twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(6)
+twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(7)
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(5)
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
+twitter.com##aside.r-uaa2di.r-ymttw5.r-1f1sjgu
 twitter.com##div > div > aside.css-1dbjc4n
-twitter.com##div > div > aside.r-uaa2di.r-ymttw5.r-1f1sjgu
-twitter.com##div > div > div.css-1dbjc4n.r-1awozwy.r-18u37iz.r-h3s6tt.r-1777fci.r-1jgb5lz.r-sb58tz.r-779j7e.r-13qz1uu
-twitter.com##div > div > div.css-1dbjc4n.r-1bro5k0
-twitter.com##div > div > div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-1h3ijdo
-twitter.com##div > div > div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-h3s6tt
-twitter.com##div > div > div.css-1dbjc4n.r-1h3ijdo.r-5wli1b
-twitter.com##div > div > div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
-twitter.com##div > div > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(3)
-twitter.com##div > div > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(4)
-twitter.com##div > div > div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(5)
-twitter.com##div > div > div.css-1dbjc4n.r-h3s6tt.r-136ojw6
-twitter.com##div > div > div.css-1dbjc4n.r-h3s6tt.r-5wli1b
-twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(5)
-twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(7)
-twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(5)
-twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(6)
-twitter.com##div > nav > a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(7)
+twitter.com##div.css-1dbjc4n.r-1awozwy.r-18u37iz.r-h3s6tt.r-1777fci.r-1jgb5lz.r-sb58tz.r-779j7e.r-13qz1uu
+twitter.com##div.css-1dbjc4n.r-1bro5k0
+twitter.com##div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-1h3ijdo
+twitter.com##div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-h3s6tt
+twitter.com##div.css-1dbjc4n.r-1h3ijdo.r-5wli1b
+twitter.com##div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
+twitter.com##div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(3)
+twitter.com##div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(4)
+twitter.com##div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(5)
+twitter.com##div.css-1dbjc4n.r-h3s6tt.r-136ojw6
+twitter.com##div.css-1dbjc4n.r-h3s6tt.r-5wli1b
 twitter.com##div.r-1h3ijdo.css-1dbjc4n:nth-of-type(2)
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(3)
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(5)
@@ -109,13 +108,12 @@ vlr.gg##div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > 
 vlr.gg##div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > div.wf-label.mod-sidebar:first-child
 vlr.gg##div.col.mod-4:last-child > div.js-home-events:nth-child(2) > div.wf-module.wf-card.mod-sidebar:last-child
 vlr.gg##div.col.mod-4:last-child > div.js-home-events:nth-child(2) > h1.wf-label.mod-sidebar:nth-child(5)
-vlr.gg##div.col.mod-4:last-child > div.js-home-streams.home-stream-module:last-child
+vlr.gg##div.js-home-streams.home-stream-module:last-child
 vlr.gg##h1.mod-sidebar.wf-label:nth-of-type(2)
 
 symbolab.com###Examples_section
 symbolab.com###bar-Example
 symbolab.com###brand-homepage > table.homepage-center:nth-child(2)
-symbolab.com###center-section > div > section.sidebar-content1.center-section-narrow.print-hide:last-child
 symbolab.com###go-to-store > img
 symbolab.com###homepage-explore
 symbolab.com###homepage-headline
@@ -125,80 +123,81 @@ symbolab.com###right-section
 symbolab.com###save-as-bookmark-notebook
 symbolab.com###save-as-bookmark-signin
 symbolab.com###send-us-feedback
-symbolab.com##div > div > div.leftMenu.leftMenu-narrow
+symbolab.com##div.leftMenu.leftMenu-narrow
+symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-child
 
 stackoverflow.com,superuser.com###feed-link
 stackoverflow.com,superuser.com###hot-network-questions
-stackoverflow.com,superuser.com##li > ol > li.ml8.mt16:nth-child(6)
-stackoverflow.com,superuser.com##li > ol > li.ps-relative:last-child
-stackoverflow.com,superuser.com##nav > ol > li.js-freemium-cta.ps-relative:nth-child(3)
-stackoverflow.com,superuser.com###sidebar > div.s-sidebarwidget.mb16.module:nth-child(5)
-stackoverflow.com,superuser.com###sidebar > div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
-stackoverflow.com,superuser.com##div > ol > li.md\:d-none:last-child
 stackoverflow.com,superuser.com##div > ol.s-navigation:nth-child(4)
+stackoverflow.com,superuser.com##div.s-sidebarwidget.mb16.module:nth-child(5)
+stackoverflow.com,superuser.com##div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
+stackoverflow.com,superuser.com##li > ol > li.ps-relative:last-child
+stackoverflow.com,superuser.com##li.js-freemium-cta.ps-relative:nth-child(3)
+stackoverflow.com,superuser.com##li.md\:d-none:last-child
+stackoverflow.com,superuser.com##li.ml8.mt16:nth-child(6)
 
+getpocket.com##div > div.onboarding-badge:first-child
 getpocket.com##div > nav > a.css-18qpw11:first-child
 getpocket.com##div > nav > a.css-18qpw11:nth-child(3)
 getpocket.com##div > nav > a.css-18qpw11:nth-child(4)
-getpocket.com##header > div > div.onboarding-badge:first-child
-getpocket.com##nav > div > ul.css-1bjgl5h.links
+getpocket.com##ul.css-1bjgl5h.links
 
-store.steampowered.com###Reviews_summary > div > div.rightcol.recent_reviews:nth-child(2)
-store.steampowered.com###achievement_block
-store.steampowered.com###noteworthy_tab
-store.steampowered.com##div > div > a.menuitem:nth-child(5)
-store.steampowered.com##div > div > a.tab:nth-child(9)
-store.steampowered.com##div > div > div.block:nth-child(12)
-store.steampowered.com##div > div > div.game_page_autocollapse:first-child
-store.steampowered.com##div > div.queue_overflow_ctn:nth-child(3)
-store.steampowered.com##div > div_block > a.top_promo.ds_no_flags.app_impression_tracked:first-child
-store.steampowered.com##div > div_block > div.gutter_header.pad:nth-child(6)
-store.steampowered.com##div > div_block > div.gutter_items:last-child
-store.steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
-store.steampowered.com##div.home_ctn:nth-child(11)
-store.steampowered.com##div.home_ctn:nth-child(5)
+steampowered.com###achievement_block
+steampowered.com###noteworthy_tab
+steampowered.com##a.top_promo.ds_no_flags.app_impression_tracked:first-child
+steampowered.com##div > div > a.menuitem:nth-child(5)
+steampowered.com##div > div > a.tab:nth-child(9)
+steampowered.com##div > div > div.block:nth-child(12)
+steampowered.com##div > div > div.game_page_autocollapse:first-child
+steampowered.com##div > div.queue_overflow_ctn:nth-child(3)
+steampowered.com##div > div_block > div.gutter_items:last-child
+steampowered.com##div.gutter_header.pad:nth-child(6)
+steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
+steampowered.com##div.home_ctn:nth-child(11)
+steampowered.com##div.home_ctn:nth-child(5)
+steampowered.com##div.rightcol.recent_reviews:nth-child(2)
 
 twitch.tv###twilight-sticky-footer-root
 twitch.tv##.front-page-carousel.iqIerE.Layout-sc-1xcs6mc-0
 twitch.tv##.prime-offers.bZVrjx.Layout-sc-1xcs6mc-0
-twitch.tv##div > div > div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:last-child
-twitch.tv##div > div > div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
-twitch.tv##div > div > div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
-twitch.tv##div > div > div.Layout-sc-1xcs6mc-0.iqIerE.front-page-carousel:first-child
+twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:last-child
+twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
+twitch.tv##div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
+twitch.tv##div.Layout-sc-1xcs6mc-0.iqIerE.front-page-carousel:first-child
 
-youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
-youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
-youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
+youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
+youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
+youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
 youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
 
-messenger.com##div > div > a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(10)
-messenger.com##div > div > a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(7)
-messenger.com##div > div > a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(8)
-messenger.com##div > div > a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(9)
-messenger.com##div > div > a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:first-child
-messenger.com##div > div > div.x78zum5.x1r8uery.xs83m0k.xeuugli.x1qughib.x6s0dn4.xozqiw3.x1q0g3np.xb756pt.x1c4vz4f.xt55aet.xexx8yu.xc73u3c.x18d9i69.x5ib6vp.x1lku1pv.x12nzpgo:last-child
 messenger.com##.x12nzpgo.x1lku1pv.x5ib6vp.x18d9i69.xc73u3c.xexx8yu.xt55aet.x1c4vz4f.xb756pt.x1q0g3np.xozqiw3.x6s0dn4.x1qughib.xeuugli.xs83m0k.x1r8uery.x78zum5.x1ja2u2z.x1n2onr6.x9f619
+messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:first-child
+messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(10)
+messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(7)
+messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(8)
+messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(9)
+messenger.com##div.x78zum5.x1r8uery.xs83m0k.xeuugli.x1qughib.x6s0dn4.xozqiw3.x1q0g3np.xb756pt.x1c4vz4f.xt55aet.xexx8yu.xc73u3c.x18d9i69.x5ib6vp.x1lku1pv.x12nzpgo:last-child
 
-thespike.gg###__next > div > div > ul > li:last-child
-thespike.gg###__next > div > div > ul > li:nth-child(5)
-thespike.gg###__next > div > div > ul > li:nth-child(6)
-thespike.gg##main > div > div.featured-event_column__sm8P6:first-child
-thespike.gg##main > div > div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
+thespike.gg##div > div > ul > li:last-child
+thespike.gg##div > div > ul > li:nth-child(5)
+thespike.gg##div > div > ul > li:nth-child(6)
+thespike.gg##div.featured-event_column__sm8P6:first-child
+thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
 
 chat.openai.com##main > div > div > div > div > div > div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
-espn.*###fitt-analytics > div.bp-mobileMDPlus.bp-mobileLGPlus.bp-tabletPlus.bp-desktopPlus.bp-desktopLGPlus.bp-desktopXLGPlus.no-touch > header.db.Site__Header__Wrapper.sticky.top-0:nth-child(3) > div.Site__Header.db.left-0.top-0.sticky.w-100.bg-clr-gray-02.Site__Header--espn:first-child > nav.Nav__Primary.center.flex.justify-between.items-center > ul.Nav__Primary__Menu.flex.Nav__Primary__Menu--right.flex-none:nth-child(3) > li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
-espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(3)
-espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(3)
-espn.*###global-nav > ul > li.pillar.logo.fantasy:nth-child(9)
-espn.*###global-nav > ul > li.pillar.more-espn:nth-child(2)
-espn.*###global-nav > ul > li.pillar.more-espn:nth-child(8)
-espn.*##div > section > article.sub-module.quicklinks:first-child
-espn.*##div > section > article.sub-module.quicklinks:last-child
-espn.*##div > section > article.sub-module.quicklinks:nth-child(2)
-espn.*##div > section > article.sub-module.quicklinks:nth-child(5)
-espn.*##div > section > article.sub-module.quicklinks:nth-child(6)
-espn.*##nav > ul > li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
+espn.*##article.sub-module.quicklinks:first-child
+espn.*##article.sub-module.quicklinks:last-child
+espn.*##article.sub-module.quicklinks:nth-child(2)
+espn.*##article.sub-module.quicklinks:nth-child(5)
+espn.*##article.sub-module.quicklinks:nth-child(6)
+espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
+espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
+espn.*##li.pillar.logo.fantasy:nth-child(3)
+espn.*##li.pillar.logo.fantasy:nth-child(3)
+espn.*##li.pillar.logo.fantasy:nth-child(9)
+espn.*##li.pillar.more-espn:nth-child(2)
+espn.*##li.pillar.more-espn:nth-child(8)
 
 w3schools.com##.m12.l2.w3-col
 
@@ -239,3 +238,13 @@ thesun.co.uk##div.widget-height:nth-of-type(3)
 fandom.com##.rail-recentImages-module
 fandom.com##.rail-module.railModule
 fandom.com##.global-navigation
+
+theguardian.com##.dcr-173mewl
+theguardian.com##div.dcr-1xdhyk6:nth-of-type(2)
+theguardian.com##div.dcr-1xdhyk6:nth-of-type(3)
+theguardian.com##main > .dcr-1u8qly9
+
+dexerto.com##.aspect-16\/9.lg\:mb-8.w-full.my-4
+dexerto.com##.flex.my-8.lg\:col-span-7.col-span-full.dark\:bg-neutral-black.md\:gap-x-5.md\:justify-between.md\:items-center.md\:flex-row.md\:py-5.bg-neutral-grey-4.px-5.py-\[14\.5px\].w-full.flex-col
+dexerto.com##.py-5.px-5.border-vertical-primary.border-l-8.dark\:bg-neutral-grey-90.bg-neutral-grey-4.justify-start.flex-col.flex
+dexerto.com##div.mx-auto.max-w-7xl.w-full.grid-cols-12.md\:gap-x-6.gap-x-4.grid:nth-of-type(2)
