@@ -29,21 +29,21 @@ bing.com##.b_bfb_lcg
 bing.com##.fabcolapse
 bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 
-dlsu.instructure.com###bettercanvas-announcement-list
-dlsu.instructure.com###bettercanvas-todo-list
-dlsu.instructure.com###context_external_tool_13589_menu_item
-dlsu.instructure.com###context_external_tool_13589_menu_item > a.ic-app-header__menu-list-link
-dlsu.instructure.com###context_external_tool_242_menu_item
-dlsu.instructure.com###context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
-dlsu.instructure.com###eesy-tab-inner
-dlsu.instructure.com###eesy-tab-inner > div.eesy-tab2-btn-content
-dlsu.instructure.com###global_nav_libraries_link
-dlsu.instructure.com###global_nav_libraries_menu
-dlsu.instructure.com###global_nav_student_services_link
-dlsu.instructure.com###global_nav_student_services_menu
-dlsu.instructure.com###right-side > div > h2.todo-list-header:first-child
-dlsu.instructure.com###right-side > div > h2.todo-list-header:nth-child(4)
-||chat-sin.instructure.com/mini$domain=dlsu.instructure.com
+instructure.com###bettercanvas-announcement-list
+instructure.com###bettercanvas-todo-list
+instructure.com###context_external_tool_13589_menu_item
+instructure.com###context_external_tool_13589_menu_item > a.ic-app-header__menu-list-link
+instructure.com###context_external_tool_242_menu_item
+instructure.com###context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
+instructure.com###eesy-tab-inner
+instructure.com###eesy-tab-inner > div.eesy-tab2-btn-content
+instructure.com###global_nav_libraries_link
+instructure.com###global_nav_libraries_menu
+instructure.com###global_nav_student_services_link
+instructure.com###global_nav_student_services_menu
+instructure.com###right-side > div > h2.todo-list-header:first-child
+instructure.com###right-side > div > h2.todo-list-header:nth-child(4)
+||chat-sin.instructure.com/mini$domain=instructure.com
 
 gg.bet##div > div > div.sidebarToggler__btn___2wIhe
 gg.bet##.Tabs__is-active___2Vi_F.Tabs__tab___3KK7U.__app-Tabs-is-active.__app-Tabs-tab
@@ -235,3 +235,7 @@ thesun.co.uk##.lazyloaded.sim-module-wrapper
 thesun.co.uk##.social--article.social
 thesun.co.uk##div.widget-height:nth-of-type(1)
 thesun.co.uk##div.widget-height:nth-of-type(3)
+
+fandom.com##.rail-recentImages-module
+fandom.com##.rail-module.railModule
+fandom.com##.global-navigation
