@@ -133,11 +133,11 @@
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
-    
+
     .h-jI8r2f9ozTNqu_2TBeY {
         width: 165% !important;
     }
-    
+
     ._3jiriKeNer8y0-1r6oWIFM {
         width: 65px !important;
     }
@@ -409,8 +409,8 @@ domain("superuser.com") {
     /* Bing - Goal: Make sure website uses one single font + "fluent" changes + code blocks + grayscale */
     /* Var initializations */
     :root {
-        --segoe-text: "Roboto", "Segoe UI Variable Text", "Segoe UI", SegoeUI,
-            Segoe;
+        --segoe-text-fallback: "Roboto", "Segoe UI Variable Text", "Segoe UI",
+            SegoeUI, Segoe;
         --segoe-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
             "Roboto";
         --segoe-small-fallback: "Roboto", "Segoe UI Variable Small", "Segoe UI",
@@ -436,7 +436,7 @@ domain("superuser.com") {
         /* Undo small caps */
         text-transform: none !important;
         font-size: 14px !important;
-        font-family: var(--segoe-text), Arial, Helvetica, sans-serif !important;
+        font-family: var(--segoe-text-fallback), Arial, Helvetica, sans-serif !important;
     }
 
     .b_scopebar ul {
@@ -484,6 +484,7 @@ domain("superuser.com") {
     .item,
     .hp_body,
     .v-live-t-txt,
+    .l_ecrd_rrct-items,
     .b_app_common_btn {
         filter: grayscale(80%);
     }
@@ -497,16 +498,25 @@ domain("superuser.com") {
     .metaItem,
     .b_respl,
     .cbtn {
-        font-family: var(--segoe-text), Arial, Helvetica, sans-serif !important;
+        font-family: var(--segoe-text-fallback), Arial, Helvetica, sans-serif !important;
+    }
+
+    a,
+    #fltIdtCon,
+    #vvlb,
+    .vrhcpt,
+    .metaItem,
+    .b_respl,
+    .cbtn {
         filter: grayscale(80%);
     }
 
     span {
-        font-family: var(--segoe-text), Arial, Helvetica, sans-serif !important;
+        font-family: var(--segoe-text-fallback), Arial, Helvetica, sans-serif !important;
     }
 
     #sw_as {
-        font-family: var(--segoe-text) !important;
+        font-family: var(--segoe-text-fallback) !important;
         filter: opacity(100%) !important;
         filter: grayscale(80%);
     }
@@ -555,6 +565,7 @@ domain("superuser.com") {
     h4,
     span > h3,
     #detailMeta,
+    .hb_title_col,
     .vrhtt,
     .ms-search-tenantLogo-text,
     .b_entityTitle,
