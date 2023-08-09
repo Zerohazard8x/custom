@@ -17924,7 +17924,6 @@
 ||speedcurve.com$script,object,ping,stylesheet,other
 ||springernature.com$script,object,ping,stylesheet,other
 ||squarespace-cdn.com$script,object,ping,stylesheet,other
-||stackpathcdn.com$script,object,ping,stylesheet,other
 ||stands4.com$script,object,ping,stylesheet,other
 ||static.cambridge.org$script,object,ping,stylesheet,other
 ||static.wikia.nocookie.net$script,object,ping,stylesheet,other
