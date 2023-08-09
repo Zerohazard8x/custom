@@ -184,7 +184,7 @@ thespike.gg##div > div > ul > li:nth-child(6)
 thespike.gg##div.featured-event_column__sm8P6:first-child
 thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
 
-chat.openai.com##main > div > div > div > div > div > div.md\:flex.items-start.text-center.gap-3\.5:last-child
+chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
 espn.*##article.sub-module.quicklinks:first-child
 espn.*##article.sub-module.quicklinks:last-child
