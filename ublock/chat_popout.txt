@@ -4,8 +4,8 @@
 ! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
 ! Expires: 1 day
 
-twitch.tv##div > div > div.Layout-sc-1xcs6mc-0.gCePyT
-twitch.tv##div > div.Layout-sc-1xcs6mc-0.bGyiZe.chat-input:nth-child(6) > div:last-child
-twitch.tv##div > div > div.Layout-sc-1xcs6mc-0.jBYVfx.stream-chat-header:first-child
-youtube.com###chat-messages > yt-live-chat-header-renderer.style-scope.yt-live-chat-renderer:first-child
+twitch.tv##div.Layout-sc-1xcs6mc-0.bGyiZe.chat-input:nth-child(6) > div:last-child
+twitch.tv##div.Layout-sc-1xcs6mc-0.gCePyT
+twitch.tv##div.Layout-sc-1xcs6mc-0.jBYVfx.stream-chat-header:first-child
 youtube.com###live-chat-message-input
+youtube.com##yt-live-chat-header-renderer.style-scope.yt-live-chat-renderer:first-child
