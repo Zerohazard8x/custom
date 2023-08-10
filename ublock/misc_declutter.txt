@@ -165,6 +165,7 @@ twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
 twitch.tv##div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
 twitch.tv##div.Layout-sc-1xcs6mc-0.iqIerE.front-page-carousel:first-child
 
+youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
@@ -200,8 +201,14 @@ espn.*##li.pillar.more-espn:nth-child(8)
 
 w3schools.com##.m12.l2.w3-col
 
-inquirer.net###bc-share
+inquirer.net###article_content > div > .sib-form
+inquirer.net###article_content > p
 inquirer.net###article_social_trending > .sib-form
+inquirer.net###bc-share
+inquirer.net###ch-follow-us
+inquirer.net###vuukle-comments
+inquirer.net##a[href^="https://ruby.inquirer.net/redirect/redirect.php"]:nth-of-type(1)
+inquirer.net##section#inq_section:nth-of-type(2)
 
 nbcnews.com##.share-has-dropdown.h-h.share-list
 nbcnews.com##.HFSBumped.grid-col-push-half-xl.grid-col-3_5-xl.grid-col-4_5-l.layout-grid-item.article-body__right-rail
