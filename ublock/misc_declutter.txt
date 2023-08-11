@@ -1,7 +1,7 @@
 [uBlock Origin]
-! Title: Misc. decluttering
-! Description: Miscellaneous decluttering
-! Homepage: https://github.com/zerohazard8x/custom/ublock
+! Title: Zerohazard's decluttering
+! Description: decluttering
+! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
 ! Expires: 1 day
 
 bing.com###asmsbribbon_li
