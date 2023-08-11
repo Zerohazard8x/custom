@@ -54,7 +54,7 @@ gg.bet##div:nth-child(6) > div.btn-chat.btn-chat--fixed.btn-chat--left
 reddit.com###div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
 reddit.com###div > div > div._2vEf-C2keJaBMY9qk_BxVn:first-child
 reddit.com###popular-posts
-reddit.com##.TmgZY6tDcdErbE5d7E0HJ
+reddit.com##._1GieMuLljOrqnVpRAwz7VP
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
 reddit.com##._2t7TYn6HwRZQwKXG47kpQR._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
 reddit.com##.icon-add.icon._3uVYL9qgX3QSEa_F4F-DPv
