@@ -165,7 +165,6 @@ twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
 twitch.tv##div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
 twitch.tv##div.Layout-sc-1xcs6mc-0.iqIerE.front-page-carousel:first-child
 
-youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
