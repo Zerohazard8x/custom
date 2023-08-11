@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           changes
 @namespace      github.com/openstyles/stylus
-@version        1.0.7
+@version        1.0.6
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -23,7 +23,6 @@
         font-family: "DIN Next", "DIN", "Bahnschrift",
             "alte din 1451 mittelschrift", "Road UA", "Dinish Expanded",
             "Dinish", "Altinn-DIN", "D-DIN", var(--font-personal),
-            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
             Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
@@ -76,15 +75,15 @@
 
     #mount_0_0_CV,
     #mount_0_0_KX,
-    #mount_0_0_R5,
     #mount_0_0_ff,
     #mount_0_0_ui,
     #splash-screen,
     div.AdBox.Ad.advert.post-ads,
-    div.AdBox.Ad.advert.post-ads,
     div._li,
     div.download_link_sponsored,
     div.fb_reset,
+    #mount_0_0_R5,
+    div.AdBox.Ad.advert.post-ads,
     div.widgetSponsors,
     iframe.MAWOembedIframe,
     div.ob-hover {
@@ -455,5 +454,19 @@ domain("yewtu.be") {
 
     body {
         background: rgb(100, 59, 54) !important;
+    }
+}
+
+@-moz-document domain("amazon.com"), domain("amazon.co.jp") {
+    /* Amazon - Goal: Grayscale, font */
+    #a-page,
+    .a-container {
+        font-family: "Amazon Ember", Arial, "Hiragino Kaku Gothic ProN",
+            "Hiragino Sans", Meiryo, sans-serif !important;
+    }
+
+    #a-page,
+    #a-popover-root {
+        filter: grayscale(80%);
     }
 }

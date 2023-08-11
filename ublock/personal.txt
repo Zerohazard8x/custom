@@ -17644,7 +17644,6 @@
 ||aliyuncs.com$script,object,ping,stylesheet,other
 ||altis.cloud$script,object,ping,stylesheet,other
 ||amazon-adsystem.com$script,object,ping,stylesheet,other
-||amazon.map.fastly.net$script,object,ping,stylesheet,other
 ||andbeyond.media$script,object,ping,stylesheet,other
 ||anilist.co$script,object,ping,stylesheet,other
 ||aniview.com$script,object,ping,stylesheet,other
