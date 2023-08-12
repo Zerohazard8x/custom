@@ -226,7 +226,6 @@ soranews24.com##.ad728x90.ad
 soranews24.com##.custom-html-widget.textwidget > p
 soranews24.com##.entry-content > p > .more-link
 soranews24.com##.jetpack-likes-widget-loaded.jetpack-likes-widget-wrapper.sd-like.sd-block.sharedaddy
-soranews24.com##.post-footer
 soranews24.com##.share-btns
 
 philstarlife.com##.column-share.is-narrow.column
