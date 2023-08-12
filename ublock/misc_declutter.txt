@@ -254,3 +254,6 @@ dexerto.com##.aspect-16\/9.lg\:mb-8.w-full.my-4
 dexerto.com##.flex.my-8.lg\:col-span-7.col-span-full.dark\:bg-neutral-black.md\:gap-x-5.md\:justify-between.md\:items-center.md\:flex-row.md\:py-5.bg-neutral-grey-4.px-5.py-\[14\.5px\].w-full.flex-col
 dexerto.com##.py-5.px-5.border-vertical-primary.border-l-8.dark\:bg-neutral-grey-90.bg-neutral-grey-4.justify-start.flex-col.flex
 dexerto.com##div.mx-auto.max-w-7xl.w-full.grid-cols-12.md\:gap-x-6.gap-x-4.grid:nth-of-type(2)
+
+google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
+google.com##.gb_Xc

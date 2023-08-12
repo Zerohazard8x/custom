@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1691767583046,
+  "timeStamp": 1691853449468,
   "version": "1.51.0",
   "userSettings": {
     "cloudStorageEnabled": true,
@@ -42,5 +42,5 @@
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false",
-  "userFilters": "! https://www.reddit.com/r/uBlockOrigin/comments/13mlfqq/youtube_filter_hide_1080p_premium_in_the_video/\nyoutube.com##:xpath(//div[contains(@class, \"ytp-menuitem\") and contains(.//span, \"1080p Premium\")])\n"
+  "userFilters": ""
 }
