@@ -10,7 +10,7 @@
 
 :root {
     /* Define variables */
-    --font-monostyle: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+    --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
         "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
         "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
         "IBM Plex Sans KR";
@@ -37,7 +37,7 @@
     details,
     blockquote,
     .container-lg {
-        font-family: var(--font-monostyle), -apple-system, BlinkMacSystemFont,
+        font-family: var(--not-monospace), -apple-system, BlinkMacSystemFont,
             "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
             "Apple Color Emoji", "Segoe UI Emoji" !important;
     }
@@ -53,10 +53,9 @@
     .text-mono,
     .input-monospace,
     .BranchName-sc-sg8jsy-0,
-    .markdown-body pre,
+    pre,
     kbd,
-    code,
-    .commit-desc > pre {
+    code {
         font-family: var(--monospace), var(--block-mono), Consolas, monospace !important;
 
         /* Ligatures */
@@ -70,7 +69,7 @@
 
     .blob-code-inner,
     .blob-num,
-    .markdown-body pre,
+    pre,
     .markdown-body code {
         font-size: 16px !important;
     }
@@ -97,7 +96,7 @@
     .vector-toc,
     cite,
     .mwe-popups-container {
-        font-family: var(--font-monostyle), sans-serif !important;
+        font-family: var(--not-monospace), sans-serif !important;
     }
 
     p > code,
@@ -167,7 +166,7 @@ domain("superuser.com") {
     .question-hyperlink,
     .comment-copy,
     .s-prose {
-        font-family: var(--font-monostyle), -apple-system, BlinkMacSystemFont,
+        font-family: var(--not-monospace), -apple-system, BlinkMacSystemFont,
             "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
     }
 
@@ -213,7 +212,7 @@ domain("superuser.com") {
     /* Poe - Goal: Reduce usage of system font */
     .PageWithSidebarLayout_centeredPage__D42BU,
     .ReactModal__Content {
-        font-family: var(--font-monostyle), apple-system, system-ui,
+        font-family: var(--not-monospace), apple-system, system-ui,
             BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
             Helvetica Neue, sans-serif !important;
     }
@@ -370,11 +369,11 @@ domain("superuser.com") {
 @-moz-document domain("tcrf.net") {
     /* TCRF - Goal: Reduce usage of Arial font, code blocks, grayscale */
     .mediawiki {
-        font-family: var(--font-monostyle), sans-serif !important;
+        font-family: var(--not-monospace), sans-serif !important;
     }
 
     #searchInput {
-        font-family: var(--font-monostyle), "MS Shell Dlg 2" !important;
+        font-family: var(--not-monospace), "MS Shell Dlg 2" !important;
     }
 
     tt,
@@ -596,6 +595,7 @@ domain("superuser.com") {
     .dg_b .infnmpt .infpd a,
     .mc_vtvc_meta_row_channel,
     .title,
+    .tit,
     .mc_vtvc_title,
     .mc_vtvc_title > span,
     .mc_vtvc_title > strong,
@@ -623,7 +623,7 @@ domain("superuser.com") {
         filter: grayscale(80%);
     }
 
-    .rd_cCodeBg {
+    .rd_cCodeBg, .rd_code_blu, .rd_code_red  {
         font-family: var(--monospace), var(--block-mono), Consolas, Courier,
             monospace !important;
         font-size: 16px !important;
@@ -680,7 +680,7 @@ domain("superuser.com") {
     .button-text,
     .p-sectionLinks-list,
     .input {
-        font-family: var(--font-monostyle), -apple-system, BlinkMacSystemFont,
+        font-family: var(--not-monospace), -apple-system, BlinkMacSystemFont,
             segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji,
             segoe ui emoji, segoe ui symbol !important;
     }
