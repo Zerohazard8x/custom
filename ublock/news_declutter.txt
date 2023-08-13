@@ -1,0 +1,54 @@
+[uBlock Origin]
+! Title: Zerohazard's News Decluttering
+! Description: decluttering news websites
+! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
+! Expires: 1 day
+
+philstarlife.com##.column-share.is-narrow.column
+philstarlife.com###privacy-policy-container
+
+thesun.co.uk###sidebar > .widget-sticky
+thesun.co.uk##.article__footer
+thesun.co.uk##.css-160u438.rail-component.rail--classic
+thesun.co.uk##.lazyloaded.sim-module-wrapper
+thesun.co.uk##.social--article.social
+thesun.co.uk##div.widget-height:nth-of-type(1)
+thesun.co.uk##div.widget-height:nth-of-type(3)
+
+inquirer.net###article_content > div > .sib-form
+inquirer.net###article_content > p
+inquirer.net###article_social_trending > .sib-form
+inquirer.net###bc-share
+inquirer.net###ch-follow-us
+inquirer.net###vuukle-comments
+inquirer.net##a[href^="https://ruby.inquirer.net/redirect/redirect.php"]:nth-of-type(1)
+inquirer.net##section#inq_section:nth-of-type(2)
+
+nbcnews.com##.share-has-dropdown.h-h.share-list
+nbcnews.com##.HFSBumped.grid-col-push-half-xl.grid-col-3_5-xl.grid-col-4_5-l.layout-grid-item.article-body__right-rail
+nbcnews.com##.article-social-share-top
+nbcnews.com##.styles_alignMobileBottom__bhgkQ.styles_alignDesktopBottom__4cHaO.styles_stuck__Yq04P.styles_adNotPlaying__Q51_C.isStuck.styles_videoPlayer__bL8AJ.videoPlayer
+
+soranews24.com###custom_html-2 > .custom-html-widget.textwidget > div
+soranews24.com###responses
+soranews24.com###secondary-widgets
+soranews24.com###widget_monthlyranking
+soranews24.com###widget_rankings > ul
+soranews24.com###widget_weeklyranking
+soranews24.com###widget_yearlyranking
+soranews24.com##.ad336x280.ad
+soranews24.com##.ad728x90.ad
+soranews24.com##.custom-html-widget.textwidget > p
+soranews24.com##.entry-content > p > .more-link
+soranews24.com##.jetpack-likes-widget-loaded.jetpack-likes-widget-wrapper.sd-like.sd-block.sharedaddy
+soranews24.com##.share-btns
+
+theguardian.com##.dcr-173mewl
+theguardian.com##div.dcr-1xdhyk6:nth-of-type(2)
+theguardian.com##div.dcr-1xdhyk6:nth-of-type(3)
+theguardian.com##main > .dcr-1u8qly9
+
+dexerto.com##.aspect-16\/9.lg\:mb-8.w-full.my-4
+dexerto.com##.flex.my-8.lg\:col-span-7.col-span-full.dark\:bg-neutral-black.md\:gap-x-5.md\:justify-between.md\:items-center.md\:flex-row.md\:py-5.bg-neutral-grey-4.px-5.py-\[14\.5px\].w-full.flex-col
+dexerto.com##.py-5.px-5.border-vertical-primary.border-l-8.dark\:bg-neutral-grey-90.bg-neutral-grey-4.justify-start.flex-col.flex
+dexerto.com##div.mx-auto.max-w-7xl.w-full.grid-cols-12.md\:gap-x-6.gap-x-4.grid:nth-of-type(2)
