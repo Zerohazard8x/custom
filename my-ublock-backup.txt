@@ -1,12 +1,13 @@
 {
-  "timeStamp": 1691853449468,
+  "timeStamp": 1691906759706,
   "version": "1.51.0",
   "userSettings": {
     "cloudStorageEnabled": true,
-    "externalLists": "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/misc_declutter.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt",
+    "externalLists": "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/misc_declutter.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt",
     "importedLists": [
       "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt",
       "https://github.com/Zerohazard8x/custom/raw/main/ublock/misc_declutter.txt",
+      "https://github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt",
       "https://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt"
     ]
   },
@@ -26,7 +27,8 @@
     "ublock-annoyances",
     "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt",
     "https://github.com/Zerohazard8x/custom/raw/main/ublock/misc_declutter.txt",
-    "https://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt"
+    "https://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt",
+    "https://github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
