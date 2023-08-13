@@ -5,7 +5,7 @@
         "autoUpdateNotification": true,
         "useQuickCss": true,
         "themeLinks": [
-            "https://github.com/refact0r/midnight-discord/raw/master/midnight.theme.css"
+            "https://raw.githubusercontent.com/refact0r/midnight-discord/master/midnight.theme.css"
         ],
         "enableReactDevtools": false,
         "frameless": false,
@@ -281,7 +281,9 @@
                 "enabled": false
             },
             "PermissionsViewer": {
-                "enabled": true
+                "enabled": true,
+                "permissionsSortOrder": 0,
+                "defaultPermissionsDropdownState": false
             },
             "petpet": {
                 "enabled": false
@@ -303,7 +305,8 @@
                 "enabled": true,
                 "showInMessages": true,
                 "showSelf": true,
-                "pronounSource": 0
+                "pronounSource": 0,
+                "showInProfile": true
             },
             "QuickMention": {
                 "enabled": false
@@ -400,7 +403,9 @@
             },
             "TypingTweaks": {
                 "enabled": true,
-                "alternativeFormatting": true
+                "alternativeFormatting": true,
+                "showRoleColors": true,
+                "showAvatars": true
             },
             "Unindent": {
                 "enabled": false
@@ -430,7 +435,8 @@
                 "latinOnly": false,
                 "voice": "Microsoft David - English (United States)",
                 "volume": 1,
-                "rate": 1
+                "rate": 1,
+                "leaveMessage": "{{USER}} left"
             },
             "VencordToolbox": {
                 "enabled": false
@@ -464,7 +470,8 @@
                 "enabled": false
             },
             "VolumeBooster": {
-                "enabled": true
+                "enabled": true,
+                "multiplier": 2
             }
         },
         "notifications": {
@@ -477,9 +484,9 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1691416075896
+            "settingsSyncVersion": 1691943234453
         },
         "enabledThemes": []
     },
-    "quickCss": ":root {\r\n    /* Define variables */\r\n    --font-monostyle: -apple-system, BlinkMacSystemFont, \"SF Pro\", \"SF Pro Text\",\r\n        \"Inter\", \"Roboto\", \"IBM Plex Sans\", \"Noto Sans\", \"Noto Sans JP\",\r\n        \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\", \"IBM Plex Sans JP\",\r\n        \"IBM Plex Sans KR\";\r\n    --monospace: \"Fira Code\", \"Fira Mono\", \"Noto Mono\", \"Noto Sans Mono\",\r\n        \"DroidSansM\", \"Hack\", \"Bitstream Vera Sans Mono\", \"BitstromVera\",\r\n        \"DejaVu Sans Mono\", \"Segoe UI Mono\", \"SF Mono\", \"SFMono-Regular\", Menlo,\r\n        Monaco, \"Ubuntu Mono\", \"Consolas\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Source Code Pro\";\r\n    --block-mono: \"JetBrains Mono\", \"JetBrains Mono NL\", \"Input Mono\",\r\n        \"IBM Plex Mono\", \"BlexMono\", \"Roboto Mono\", \"Iosevka Expanded\",\r\n        \"Iosevka\", \"Input Sans\", \"Liberation Mono\";\r\n}\r\n\r\nhtml,\r\nbody,\r\n:root {\r\n    filter: opacity(100%) !important;\r\n}\r\n\r\n*:not(pre, pre *, code, .far, .fa, .glyphicon, [class*=\"vjs-\"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*=\"mu-\"], .glyphicon, .icon) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n}\r\n\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--block-mono), var(--monospace), Consolas,\r\n        \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco,\r\n        \"Courier New\", Courier, monospace !important;\r\n\r\n    /* Ligatures */\r\n    font-variant-ligatures: common-ligatures, contextual !important;\r\n    font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\r\n}"
+    "quickCss": ":root {\r\n    /* Define variables */\r\n    --not-monospace: -apple-system, BlinkMacSystemFont, \"SF Pro\", \"SF Pro Text\",\r\n        \"Inter\", \"Roboto\", \"IBM Plex Sans\", \"Noto Sans\", \"Noto Sans JP\",\r\n        \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\", \"IBM Plex Sans JP\",\r\n        \"IBM Plex Sans KR\";\r\n    --monospace: \"Fira Code\", \"Fira Mono\", \"Noto Mono\", \"Noto Sans Mono\",\r\n        \"DroidSansM\", \"Hack\", \"Bitstream Vera Sans Mono\", \"BitstromVera\",\r\n        \"DejaVu Sans Mono\", \"Segoe UI Mono\", \"SF Mono\", \"SFMono-Regular\", Menlo,\r\n        Monaco, \"Ubuntu Mono\", \"Consolas\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Source Code Pro\";\r\n    --block-mono: \"JetBrains Mono\", \"JetBrains Mono NL\", \"Input Mono\",\r\n        \"IBM Plex Mono\", \"BlexMono\", \"Roboto Mono\", \"Iosevka Expanded\",\r\n        \"Iosevka\", \"Input Sans\", \"Liberation Mono\";\r\n}\r\n\r\nhtml,\r\nbody,\r\n:root {\r\n    filter: opacity(100%);\r\n}\r\n\r\n*:not(pre, pre *, code, .far, .fa, .glyphicon, [class*=\"vjs-\"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*=\"mu-\"], .glyphicon, .icon) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n}\r\n\r\n.card-3ie2dy > div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2,\r\nh3,\r\nspan,\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", \"Noto Sans\", \"Noto Sans JP\",\r\n    \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\", \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\r\n}\r\n\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--block-mono), var(--monospace), Consolas,\r\n        \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco,\r\n        \"Courier New\", Courier, monospace !important;\r\n\r\n    /* Ligatures */\r\n    font-variant-ligatures: common-ligatures, contextual !important;\r\n    font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\r\n}"
 }
