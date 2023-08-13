@@ -141,9 +141,9 @@
     ._3jiriKeNer8y0-1r6oWIFM {
         width: 1px !important;
     }
-    
+
     ._3jiriKeNer8y0-1r6oWIFM {
-      min-width: 40px !important;
+        min-width: 40px !important;
     }
 }
 
@@ -623,7 +623,9 @@ domain("superuser.com") {
         filter: grayscale(80%);
     }
 
-    .rd_cCodeBg, .rd_code_blu, .rd_code_red  {
+    .rd_cCodeBg,
+    .rd_code_blu,
+    .rd_code_red {
         font-family: var(--monospace), var(--block-mono), Consolas, Courier,
             monospace !important;
         font-size: 16px !important;
@@ -689,6 +691,43 @@ domain("superuser.com") {
         font-family: var(--monospace), var(--block-mono), Monaco, Menlo,
             Consolas, roboto mono, andale mono, ubuntu mono, monospace !important;
         font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("discord.com") {
+    /* Discord - Goal: Change font and formatting of code blocks, add fallbacks */
+    .card-3ie2dy > div div,
+    .constrainedRow-3y91Xf,
+    .container-1eFtFS,
+    .defaultColor-1EVLSt,
+    .headerText-10ez_d,
+    .message-wB3GWa,
+    .standardSidebarView-E9Pc3j,
+    .text-sm-normal-AEQz4v,
+    .text-xs-normal-3O7EaX,
+    button,
+    h2,
+    h3,
+    input,
+    span,
+    .text-md-semibold-2VMhBr {
+        font-family: "gg sans", "Noto Sans", "Noto Sans JP",
+        "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    }
+
+    .hljs,
+    .codeLine-2C-9aH,
+    .inlineCode-ERyvy_,
+    table,
+    .inline {
+        font-family: var(--block-mono), var(--monospace), Consolas,
+            "Andale Mono WT", "Andale Mono", "Lucida Console",
+            "Lucida Sans Typewriter", "Liberation Mono", "Nimbus Mono L", Monaco,
+            "Courier New", Courier, monospace !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
