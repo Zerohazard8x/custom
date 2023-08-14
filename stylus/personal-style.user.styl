@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal
 @namespace      github.com/openstyles/stylus
-@version        1.0.7
+@version        1.0.8
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -21,7 +21,7 @@
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: "DIN Next", "DIN", "Bahnschrift",
-            "alte din 1451 mittelschrift", "Road UA", "Dinish Expanded",
+            "alte din 1451 mittelschrift", "Keiner", "Road UA", "Dinish Expanded",
             "Dinish", "Altinn-DIN", "D-DIN", var(--font-personal),
             "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
             Verdana, "PT Sans Caption", sans-serif !important;
@@ -98,6 +98,12 @@
         --roboto: Roboto, "Roboto Draft", RobotoDraft, Roboto-Regular;
     }
 
+    #result-stats,
+    .iAIpCb,
+    #rhs,
+    .wHYlTd,
+    .f3LoEf,
+    .IVvPP .WY0eLb .XaIwc,
     .C0mf1d,
     .CSkcDe,
     .FzCfme,
@@ -107,6 +113,7 @@
     .LGwnxb,
     .NUnG9d,
     .PlQycd,
+    .MBeuO,
     .YrbPuc,
     .ZkkK1e,
     .ZwRhJd,
@@ -125,7 +132,7 @@
     .wbJOMb,
     .wfg6Pb,
     a.K1yPdf,
-    g-popup,
+    g-menu-item,
     .gb_Kd {
         font-family: var(--roboto), arial, sans-serif !important;
     }
@@ -144,15 +151,14 @@
         font-family: "Google Sans", var(--roboto), arial !important;
     }
 
-    #result-stats,
+    g-popup,
     .O3S9Rb,
     .aTI8gc,
+    .HnYYW,
     .aTI8gc,
     .fKmH1e,
     .nfSF8e,
     .tsp-ht,
-    .MBeuO,
-    .wHYlTd,
     .q8U8x,
     .QXROIe,
     .IFnjPb,
@@ -200,7 +206,7 @@
     div.T1diZc.KWE8qe,
     div.UkZxse,
     div.VUoKZ,
-    div.VfPpkd-suEOdc.EY8ABd,
+    div.VfPpkd-suEOdc.EY8ABd, 
     div.ZACE2c.vMI2nb.dif24c.vhoiae.KkxPLb,
     div.a-b.a-b-ja-el-db.dif24c.bvmRsc.a-b-Oe-n.a-b-L.a-b-uoC0bf.vhoiae.KkxPLb,
     div.a-ie-Vq-bb-ta,
@@ -493,27 +499,19 @@ domain("yewtu.be") {
 @-moz-document domain("emojipedia.org") {
     /* Emojipedia - Goal: Grayscale, font */
     :root {
-        --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88",
-            "__Plus_Jakarta_Sans_Fallback_c26b88";
+        --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88","__Plus_Jakarta_Sans_Fallback_c26b88";
     }
-
+    
     body,
     .flex {
-        font-family: var(--font-plus-jakarta), var(--font-personal),
-            ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-            segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
-            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
+        font-family: var(--font-plus-jakarta), var(--font-personal), ui-sans-serif, system-ui,
+            -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue,
+            Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji,
+            segoe ui symbol, noto color emoji !important;
     }
-
+    
     /* Grayscale */
-    #__next,
-    div.container,
-    div.page-header-part.page-header-part--ad,
-    div.sponsor,
-    div.topMainAd,
-    footer.page-footer.v2,
-    header.page-header,
-    #react-root {
-        filter: grayscale(80%);
+    #__next, div.container, footer.page-footer.v2, div.sponsor, header.page-header, div.page-header-part.page-header-part--ad, div.topMainAd, #react-root {
+      filter: grayscale(80%);
     }
 }

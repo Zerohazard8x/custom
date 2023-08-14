@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.0.6
+@version        1.0.7
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -411,7 +411,6 @@ domain("superuser.com") {
 
 @-moz-document domain("bing.com") {
     /* Bing - Goal: Make sure website uses one single font + "fluent" changes + code blocks + grayscale */
-    /* Var initializations */
     :root {
         --segoe-text-fallback: "Roboto", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe;
@@ -419,25 +418,15 @@ domain("superuser.com") {
             "Roboto";
         --segoe-small-fallback: "Roboto", "Segoe UI Variable Small", "Segoe UI",
             SegoeUI, Segoe;
-        /* --logo-url: url(https://r.bing.com/rp/QO12R6eZz9WMzJPOio-qN8bXJZ4.png); */
     }
-
-    /* Japanese font fix by Kenji Iguchi */
-    /* :root * { */
-    /* Redefine variable cib-font-text */
-    /* --cib-font-text: font-family: -apple-system, Roboto, "Segoe UI Variable Text", SegoeUI, "Segoe UI", "Helvetica Neue", Helvetica, "Meiryo UI", Meiryo, Arial Unicode MS, sans-serif !important; */
-    /* } */
 
     /* Search box */
     .b_searchboxForm {
         border-radius: 12px !important;
-        /* Box searchbar corners */
     }
 
     /* Navigation bar */
-    /* All ul and li under a .b_scopebar element */
     .b_scopebar > ul li {
-        /* Undo small caps */
         text-transform: none !important;
         font-size: 14px !important;
         font-family: var(--segoe-text-fallback), Arial, Helvetica, sans-serif !important;
@@ -452,85 +441,99 @@ domain("superuser.com") {
         line-height: 40px !important;
     }
 
-    /* Navigation bar "pill" */
     .b_scopebar li::after {
         margin-top: -1px !important;
     }
 
-    /* Navigation bar submenu */
     .b_scopebar_item > a {
         text-transform: none !important;
         font-size: 13px !important;
     }
 
-    /* Change logo (at least on results pages) */
-    /* .b_logo {
-         height: 50px !important;
-         margin-top: 0px !important;
-         width: 150px !important;
-     }
- 
-     .b_logo::after {
-         content: var(--logo-url) !important;
-         transform-origin: 47px 8px !important;
-         transform: scale(0.1) !important;
-     }
- 
-     .icon::after {
-         content: none !important;
-     } */
-
-    img,
-    svg,
-    input,
-    button,
-    .container,
-    .item,
-    .hp_body,
-    .v-live-t-txt,
-    .l_ecrd_rrct-items,
-    .b_app_common_btn {
-        filter: grayscale(80%);
-    }
-
-    /* Fonts */
-    a,
+    /* Grayscale filter */
     #fltIdtCon,
     #id_h,
+    #imagemeta,
+    #rd_gtrtb_ttl,
     #vvlb,
-    .vrhcpt,
-    .metaItem,
+    .algoSlug_icon,
+    .asSectionHeading,
+    .b_algo > h2 > a,
+    .b_algospacing,
+    .b_app_common_btn,
+    .b_bfbLcgAnchorText,
+    .b_entityTitle,
+    .b_fbText,
+    .b_focusTextLarge,
+    .b_focusTextMedium,
+    .b_mgridTitle,
+    .b_primtxt,
+    .b_rc_gb_widget_title,
     .b_respl,
-    .cbtn {
-        font-family: var(--segoe-text-fallback), Arial, Helvetica, sans-serif !important;
-    }
-
-    a,
-    #fltIdtCon,
-    #vvlb,
-    .vrhcpt,
+    .b_seeMoreCont,
+    .b_title,
+    .b_topTitle,
+    .b_vList,
+    .b_vPanel,
+    .cbtn,
+    .container,
+    .dest_name,
+    .dg_b .infnmpt .infpd a,
+    .ent-dtab-nam-ov-dtp,
+    .fdbtext,
+    .hb_title_col,
+    .hp_body,
+    .irp-video-slogan,
+    .item,
+    .l_ecrd_ftr_txt,
+    .l_ecrd_rrct-items,
+    .mc_vtvc_meta_row_channel,
+    .mc_vtvc_title > span,
+    .mc_vtvc_title > strong,
+    .mc_vtvc_title,
     .metaItem,
-    .b_respl,
-    .cbtn {
-        filter: grayscale(80%);
-    }
-
-    span {
-        font-family: var(--segoe-text-fallback), Arial, Helvetica, sans-serif !important;
-    }
-
+    .ms-Button-label,
+    .ms-search-tenantLogo-text,
+    .ms-search-text-h2,
+    .qna_algoLink_title,
+    .rd_cCodeBg,
+    .rd_code_blu,
+    .rd_code_red,
+    .rd_gtrtb_nav_item,
+    .recommendationsTableTitle > h2,
+    .rstc,
+    .rwrl,
+    .sa_tm_subText,
+    .sb_f_count,
+    .scopes,
+    .scs_metactn > div h2,
+    .sto_attr_header,
+    .sto_attr_table,
+    .sto_attrlitc,
+    .sto_title,
+    .tdw_button,
+    .tit,
+    .title,
+    .tptxt,
+    .v-live-t-txt,
+    .vrhcpt,
+    .vrhtt,
+    .wpvn_ala_wtt,
+    button,
+    container-title,
+    div > div > div > a,
+    div > p span,
+    h2 > span,
+    h2,
+    img,
+    input,
+    span,
+    svg,
     #sw_as {
-        font-family: var(--segoe-text-fallback) !important;
-        filter: opacity(100%);
         filter: grayscale(80%);
     }
 
-    /* grayscale fix */
-    .b_respl {
-        filter: none;
-    }
-
-    /* Variable Small Fallback */
+    /* Font styles */
     #imagemeta,
     .sb_f_count,
     .b_algospacing,
@@ -547,25 +550,18 @@ domain("superuser.com") {
     .ms-search-text-h2,
     .recommendationsTableTitle > h2 {
         font-family: var(--segoe-small-fallback), Arial, sans-serif !important;
-        filter: opacity(100%);
-        filter: grayscale(80%);
     }
 
     .asSectionHeading,
     .sa_tm_subText {
         font-family: var(--segoe-small-fallback), Arial, Helvetica, sans-serif !important;
-        filter: grayscale(80%);
     }
 
     .scopes {
         font-family: var(--segoe-small-fallback), Tahoma, Arial, Verdana,
             sans-serif !important;
-        filter: grayscale(80%);
     }
 
-    /* Variable Text */
-    a,
-    h2,
     h4,
     span > h3,
     #id_n,
@@ -587,27 +583,18 @@ domain("superuser.com") {
     .wpvn_ala_wtt,
     .b_rc_gb_widget_title {
         font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Arial, Helvetica, sans-serif !important;
-        filter: grayscale(80%);
+            Roboto, Arial, sans-serif !important;
     }
 
-    /* Variable Small */
     .dg_b .infnmpt .infpd a,
-    .mc_vtvc_meta_row_channel,
-    .title,
-    .tit,
-    .mc_vtvc_title,
-    .mc_vtvc_title > span,
-    .mc_vtvc_title > strong,
     .rd_gtrtb_nav_item,
     .b_title {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
-            "Roboto", Arial, Helvetica, sans-serif !important;
+            Roboto, Arial, sans-serif !important;
         filter: opacity(100%);
-        filter: grayscale(80%);
     }
 
-    /* Variable Display */
+    a,
     .b_focusTextLarge,
     .b_focusTextMedium,
     .b_mgridTitle,
@@ -615,12 +602,10 @@ domain("superuser.com") {
     .scs_metactn > div h2,
     .sto_title,
     #rd_gtrtb_ttl,
-    div > p span,
     h2 > span,
     container-title {
         font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
         filter: opacity(100%);
-        filter: grayscale(80%);
     }
 
     .rd_cCodeBg,
@@ -629,13 +614,8 @@ domain("superuser.com") {
         font-family: var(--monospace), var(--block-mono), Consolas, Courier,
             monospace !important;
         font-size: 16px !important;
-        filter: opacity(100%);
-        /* mactype /*
-        
-        /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
-        filter: grayscale(80%);
     }
 }
 
@@ -774,17 +754,17 @@ domain("superuser.com") {
     }
 
     /* monospace */
+    #container,
+    div.header-unit-wrapper,
+    div.x_brb6.c,
+    #footer,
+    #sub_network_footer_wrapper,
+    div.hide,
+    #split-test,
     #cboxOverlay,
     #colorbox,
-    #container,
-    #footer,
-    #split-test,
-    #sub_network_footer_wrapper,
-    div.header-unit-wrapper,
-    div.hide,
-    div.ui-helper-hidden-accessible,
-    div.x_brb6.c,
     ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front,
+    div.ui-helper-hidden-accessible,
     #pagetual-preload {
         filter: grayscale(80%);
     }
