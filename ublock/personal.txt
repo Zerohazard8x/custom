@@ -8781,7 +8781,6 @@
 ||js.j8jp.com$all
 ||js.manga1000.top$all
 ||jsbetzh.com$all
-||jsdelivr.map.fastly.net$all
 ||jsnzoe301m.com$all
 ||jssufsqeisye.com$all
 ||jtxrou.saucony.com$all
@@ -9102,7 +9101,6 @@
 ||laudulut.com$all
 ||laugoust.com$all
 ||launch.aella.app$all
-||launchdarkly.com$all
 ||laundrydesert.com$all
 ||lavatorybrandnew.com$all
 ||lave6loki.com$all
@@ -17617,6 +17615,8 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||jsdelivr.map.fastly.net$script,object,ping,stylesheet,other
+||launchdarkly.com$script,object,ping,stylesheet,other
 ||azure.com$script,object,ping,stylesheet,other
 ||dscf.akamaiedge.net$script,object,ping,stylesheet,other
 ||geetest.com$script,object,ping,stylesheet,other
