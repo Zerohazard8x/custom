@@ -122,8 +122,6 @@
     .tNxQIb,
     .tsp-fm,
     .tsp-fr,
-    .v3jTId,
-    .wDVoZ,
     .wbJOMb,
     .wfg6Pb,
     a.K1yPdf,
@@ -202,7 +200,7 @@
     div.T1diZc.KWE8qe,
     div.UkZxse,
     div.VUoKZ,
-    div.VfPpkd-suEOdc.EY8ABd, 
+    div.VfPpkd-suEOdc.EY8ABd,
     div.ZACE2c.vMI2nb.dif24c.vhoiae.KkxPLb,
     div.a-b.a-b-ja-el-db.dif24c.bvmRsc.a-b-Oe-n.a-b-L.a-b-uoC0bf.vhoiae.KkxPLb,
     div.a-ie-Vq-bb-ta,
@@ -488,6 +486,34 @@ domain("yewtu.be") {
 
     #a-page,
     #a-popover-root {
+        filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("emojipedia.org") {
+    /* Emojipedia - Goal: Grayscale, font */
+    :root {
+        --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88",
+            "__Plus_Jakarta_Sans_Fallback_c26b88";
+    }
+
+    body,
+    .flex {
+        font-family: var(--font-plus-jakarta), var(--font-personal),
+            ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+            segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
+    }
+
+    /* Grayscale */
+    #__next,
+    div.container,
+    div.page-header-part.page-header-part--ad,
+    div.sponsor,
+    div.topMainAd,
+    footer.page-footer.v2,
+    header.page-header,
+    #react-root {
         filter: grayscale(80%);
     }
 }

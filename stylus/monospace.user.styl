@@ -247,7 +247,7 @@ domain("superuser.com") {
 
 @-moz-document domain("w3schools.com") {
     /* W3Schools - Goal: Code blocks, grayscale */
-    .w3-white > code,
+    .w3-code,
     .w3-codespan {
         font-family: var(--monospace), var(--block-mono), Consolas,
             "Source Code Pro", Menlo, Monaco, "Andale Mono", "Ubuntu Mono",
@@ -715,8 +715,9 @@ domain("superuser.com") {
     input,
     .message-wB3GWa,
     .text-md-semibold-2VMhBr {
-        font-family: "gg sans", "Noto Sans", "Noto Sans JP",
-        "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: "gg sans", "Noto Sans", "Noto Sans JP", "Noto Sans TC",
+            "Noto Sans SC", "Noto Sans KR", "Helvetica Neue", Helvetica, Arial,
+            sans-serif !important;
     }
 
     .hljs,
@@ -732,5 +733,59 @@ domain("superuser.com") {
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+}
+
+@-moz-document domain("knowyourmeme.com") {
+    /* KnowYourMeme - Goal: Grayscale, font */
+    #content,
+    #maru,
+    #mast_links,
+    #omgkym,
+    #photo,
+    #search_box,
+    #section_header,
+    .home,
+    .sidebar_box > h2,
+    .sidebar_box,
+    .tc,
+    .welcome,
+    a,
+    aside > div > h3,
+    aside,
+    em,
+    h1,
+    h5,
+    h6,
+    li,
+    p > strong,
+    p,
+    div > h4 {
+        font-family: var(--font-personal), Helvetica, Arial, Verdana, sans-serif !important;
+    }
+
+    textarea {
+        font-family: var(--block-mono), var(--monospace), "monaco",
+            "lucida console", "lucida sans typewriter", "consolas", "monospace" !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+
+    /* monospace */
+    #cboxOverlay,
+    #colorbox,
+    #container,
+    #footer,
+    #split-test,
+    #sub_network_footer_wrapper,
+    div.header-unit-wrapper,
+    div.hide,
+    div.ui-helper-hidden-accessible,
+    div.x_brb6.c,
+    ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front,
+    #pagetual-preload {
+        filter: grayscale(80%);
     }
 }
