@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.0.6
+@version        1.0.7
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -412,12 +412,12 @@ domain("superuser.com") {
 @-moz-document domain("bing.com") {
     /* Bing - Goal: Make sure website uses one single font + "fluent" changes + code blocks + grayscale */
     :root {
-        --segoe-text-fallback: "Roboto", "Segoe UI Variable Text", "Segoe UI",
+        --roboto-then-segoe-text: "Roboto", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe;
         --segoe-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
             "Roboto";
-        --segoe-small-fallback: "Roboto", "Segoe UI Variable Small", "Segoe UI",
-            SegoeUI, Segoe;
+        --roboto-then-segoe-small: "Roboto", "Segoe UI Variable Small",
+            "Segoe UI", SegoeUI, Segoe;
     }
 
     /* Search box */
@@ -429,7 +429,7 @@ domain("superuser.com") {
     .b_scopebar > ul li {
         text-transform: none !important;
         font-size: 14px !important;
-        font-family: var(--segoe-text-fallback), Arial, Helvetica, sans-serif !important;
+        font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
     .b_scopebar ul {
@@ -527,13 +527,13 @@ domain("superuser.com") {
     #vvlb,
     .vrhcpt,
     .metaItem,
-    .b_respl,
     .cbtn,
     #sw_as {
         filter: grayscale(80%);
     }
 
     /* Font styles */
+    .MicrosoftMap .taskBar > ul li.inputbox input,
     h4,
     span > h3,
     #id_n,
@@ -558,7 +558,6 @@ domain("superuser.com") {
             Roboto, Arial, sans-serif !important;
     }
 
-    .dg_b .infnmpt .infpd a,
     .rd_gtrtb_nav_item,
     .b_title {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
@@ -566,7 +565,12 @@ domain("superuser.com") {
         filter: opacity(100%);
     }
 
-    a,
+    .bm_phase2
+        .overlay-taskpane.b_wftp
+        .b_subModule
+        .b_wfInfoCard
+        .annotate
+        .nameContainer,
     .b_focusTextLarge,
     .b_focusTextMedium,
     .b_mgridTitle,
@@ -580,6 +584,9 @@ domain("superuser.com") {
         filter: opacity(100%);
     }
 
+    a,
+    .b_widgetContainer,
+    .b_wiki_w_item,
     h2,
     .mc_vtvc_meta_row_channel,
     .title,
@@ -600,9 +607,11 @@ domain("superuser.com") {
     .metaItem,
     .b_respl,
     .cbtn {
-        font-family: var(--segoe-text-fallback), Arial, Helvetica, sans-serif !important;
+        font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
-    
+
+    .dirWp,
+    .dg_b .infnmpt .infpd a,
     #imagemeta,
     .sb_f_count,
     .b_algospacing,
@@ -618,19 +627,20 @@ domain("superuser.com") {
     .ms-Button-label,
     .ms-search-text-h2,
     .recommendationsTableTitle > h2 {
-        font-family: var(--segoe-small-fallback), Arial, sans-serif !important;
+        font-family: var(--roboto-then-segoe-small), Arial, sans-serif !important;
     }
 
     .asSectionHeading,
     .sa_tm_subText {
-        font-family: var(--segoe-small-fallback), Arial, Helvetica, sans-serif !important;
+        font-family: var(--roboto-then-segoe-small), Arial, Helvetica,
+            sans-serif !important;
     }
 
     .scopes {
-        font-family: var(--segoe-small-fallback), Tahoma, Arial, Verdana,
+        font-family: var(--roboto-then-segoe-small), Tahoma, Arial, Verdana,
             sans-serif !important;
     }
-    
+
     .rd_cCodeBg,
     .rd_code_blu,
     .rd_code_red {
@@ -741,28 +751,28 @@ domain("superuser.com") {
 
 @-moz-document domain("knowyourmeme.com") {
     /* KnowYourMeme - Goal: Grayscale, font */
-    .home,
     #content,
     #maru,
-    #section_header,
-    .tc,
-    h1,
-    p > strong,
-    em,
-    aside,
-    aside > div > h3,
-    #omgkym,
-    h5,
     #mast_links,
-    .welcome,
-    #search_box,
+    #omgkym,
     #photo,
-    li,
-    h6,
-    a,
-    p,
-    .sidebar_box,
+    #search_box,
+    #section_header,
+    .home,
     .sidebar_box > h2,
+    .sidebar_box,
+    .tc,
+    .welcome,
+    a,
+    aside > div > h3,
+    aside,
+    em,
+    h1,
+    h5,
+    h6,
+    li,
+    p > strong,
+    p,
     div > h4 {
         font-family: var(--font-personal), Helvetica, Arial, Verdana, sans-serif !important;
     }
