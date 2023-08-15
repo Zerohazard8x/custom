@@ -21,6 +21,7 @@ inquirer.net###article_social_trending > .sib-form
 inquirer.net###bc-share
 inquirer.net###ch-follow-us
 inquirer.net###vuukle-comments
+inquirer.net##.showcookmsg.qni-cookmsg
 inquirer.net##a[href^="https://ruby.inquirer.net/redirect/redirect.php"]:nth-of-type(1)
 inquirer.net##section#inq_section:nth-of-type(2)
 
