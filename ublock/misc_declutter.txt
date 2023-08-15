@@ -19,15 +19,16 @@ bing.com###iasabtlnk
 bing.com###id_rfob
 bing.com###id_rh
 bing.com###mfa_srch
-bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com###sydneyLetsChatWidgetContainer
-bing.com##div.musCard.focusin:last-child
-bing.com##section.msbModule.moduleCont:first-child
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
 bing.com##.b_bfb_lcg
 bing.com##.fabcolapse
+bing.com##.rh_scale.rh_reedm.toolTip.id_button
+bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
+bing.com##div.musCard.focusin:last-child
+bing.com##section.msbModule.moduleCont:first-child
 
 instructure.com###bettercanvas-announcement-list
 instructure.com###bettercanvas-todo-list
@@ -161,12 +162,17 @@ steampowered.com##div.home_ctn:nth-child(5)
 steampowered.com##div.rightcol.recent_reviews:nth-child(2)
 
 twitch.tv###twilight-sticky-footer-root
+twitch.tv##.bTKXKk.ibtYyW.ScCoreButtonSecondary-sc-ocjdkq-2.ScCoreButton-sc-ocjdkq-0 > .irroFV.ScCoreButtonLabel-sc-s7h2b7-0 > .phMMp.Layout-sc-1xcs6mc-0
 twitch.tv##.front-page-carousel.iqIerE.Layout-sc-1xcs6mc-0
 twitch.tv##.prime-offers.bZVrjx.Layout-sc-1xcs6mc-0
+twitch.tv##.top-nav__prime.hjmDKV.Layout-sc-1xcs6mc-0
 twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:last-child
 twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
 twitch.tv##div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
 twitch.tv##div.Layout-sc-1xcs6mc-0.iqIerE.front-page-carousel:first-child
+twitch.tv##div.hjmDKV.Layout-sc-1xcs6mc-0:nth-of-type(4)
+twitch.tv##div.hjmDKV.Layout-sc-1xcs6mc-0:nth-of-type(5)
+twitch.tv##div.side-nav-section.bSoSIm.Layout-sc-1xcs6mc-0:nth-of-type(3)
 
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
