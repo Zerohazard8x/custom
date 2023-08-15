@@ -820,7 +820,6 @@
 ||p7s1.io$all
 ||paiza.cloud$all
 ||pass8heal.com$all
-||passport.twitch.tv$all
 ||patriothomestore.com$all
 ||payments-amazon.com$all
 ||pdmntn.com/popups$all
@@ -1094,6 +1093,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||passport.twitch.tv$script,object,ping,stylesheet,other
 ||jsdelivr.map.fastly.net$script,object,ping,stylesheet,other
 ||launchdarkly.com$script,object,ping,stylesheet,other
 ||azure.com$script,object,ping,stylesheet,other
