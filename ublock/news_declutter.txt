@@ -61,3 +61,11 @@ gmanetwork.com##.story_main > .ad
 gmanetwork.com##.text-center.leaderboard.padded.row
 
 news.abs-cbn.com###sticker
+
+www.howtogeek.com##.affiliate-sponsored
+www.howtogeek.com##.article-footer-newsletter
+www.howtogeek.com##.article-table-contents
+www.howtogeek.com##.article.infinite-scroll.w-article > .article-footer > .bottom.sharing
+www.howtogeek.com##.nav-elements
+www.howtogeek.com##.subnav-navigation.wrapper
+www.howtogeek.com##.w-display-card-info

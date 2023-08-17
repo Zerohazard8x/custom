@@ -245,7 +245,6 @@
     div.tEhMVd,
     div.uRjBf,
     div.wYq63b,
-    div.yDmH0d,
     div.ynRLnc,
     h1.Uo8X3b.OhScic.zsYMMe,
     header.gb_Ha.gb_8a.gb_Ld.gb_jd.gb_ed.gb_Rc.gb_k,
@@ -257,10 +256,7 @@
     }
 }
 
-@-moz-document domain("nitter.net"),
-domain("nitter.riverside.rocks"),
-domain("nitter.tiekoetter.com"),
-domain("twt.funami.tech") {
+@-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net") {
     /* Nitter - goal: change all fonts, grayscale */
     .container,
     .tweet-content,
@@ -269,6 +265,7 @@ domain("twt.funami.tech") {
     select,
     input {
         font-family: var(--font-personal), sans-serif !important;
+        filter: grayscale(80%);
     }
 
     /* grayscale */
@@ -518,5 +515,12 @@ domain("yewtu.be") {
     /* Grayscale */
     #__next, div.container, footer.page-footer.v2, div.sponsor, header.page-header, div.page-header-part.page-header-part--ad, div.topMainAd, #react-root {
       filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("twitch.tv") {
+    /* Twitch - Goal: UI tweaks */
+    .bTKXKk {
+        background-color: none !important;
     }
 }
