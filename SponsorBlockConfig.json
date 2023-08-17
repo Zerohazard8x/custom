@@ -10,10 +10,9 @@
         { "name": "outro", "option": 2 },
         { "name": "intro", "option": 2 },
         { "name": "music_offtopic", "option": 2 },
-        { "name": "preview", "option": 2 },
+        { "name": "preview", "option": 1 },
         { "name": "filler", "option": 0 }
     ],
-    "darkMode": true,
     "permissions": {
         "sponsor": true,
         "selfpromo": true,
