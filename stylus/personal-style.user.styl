@@ -524,3 +524,29 @@ domain("yewtu.be") {
         background-color: none !important;
     }
 }
+
+@-moz-document domain("flightaware.com") {
+    /* FlightAware - Goal: Fonts, grayscale */
+    input, #s2id_autogen1, #s2id_autogen2, .localePicker {
+        font-family: "FontAwesome", Roboto, "MS Shell Dlg 2" !important;
+    }
+    
+    #home-main-messaging > h1, .messaging-title > h2 {
+        font-family: Lato, "Roboto", Arial, Helvetica, sans-serif !important;
+    }
+    
+    #blockerDisclaimerContainer,
+    #cookieDisclaimerContainer,
+    #iecountdown,
+    #mainBody,
+    div.ac_results.fauxListWrapper,
+    div.autocomplete-suggestions,
+    div.select2-drop-mask,
+    div.select2-drop.select2-drop-multi.select2-display-none.omnisearch_dropdown.select2-drop-active,
+    div.select2-sizer,
+    nav.navBarMobile,
+    span.select2-hidden-accessible,
+    div.ReactModalPortal {
+      filter: grayscale(80%);
+    }
+}
