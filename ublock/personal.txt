@@ -464,7 +464,6 @@
 ||files-cdn.jpopsingles.eu$all
 ||finger-info.net$all
 ||fire-push.net$all
-||firebaseio.com$all
 ||fistcartyped.casa$all
 ||fjairwihsdp.xyz$all
 ||fjkidfae.xyz$all
@@ -1091,6 +1090,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||firebaseio.com$script,object,ping,stylesheet,other
 ||imgur.map.fastly.net$script,object,ping,stylesheet,other
 ||sina.com.cn$script,object,ping,stylesheet,other
 ||passport.twitch.tv$script,object,ping,stylesheet,other
