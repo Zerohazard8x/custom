@@ -601,7 +601,6 @@
 ||ikodeautomation.com/utre/qaamsuqtinuus$all
 ||images-amazon.com$all
 ||images.net.zooplus.com$all
-||imgur.map.fastly.net$all
 ||immobilier-marseille.net.zooplus.it$all
 ||indonesias.me:9998/64.exe$all
 ||indonesias.me:9998/c64.exe$all
@@ -1092,6 +1091,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||imgur.map.fastly.net$script,object,ping,stylesheet,other
 ||sina.com.cn$script,object,ping,stylesheet,other
 ||passport.twitch.tv$script,object,ping,stylesheet,other
 ||jsdelivr.map.fastly.net$script,object,ping,stylesheet,other
