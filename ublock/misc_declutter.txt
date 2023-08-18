@@ -84,9 +84,7 @@ twitter.com##.r-ttdzmv.r-16y2uox.r-1iusvr4.css-1dbjc4n
 twitter.com##.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n
 twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(5)
 twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(7)
-twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(5)
-twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(6)
-twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu:nth-child(7)
+twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(5)
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
 twitter.com##aside.r-uaa2di.r-ymttw5.r-1f1sjgu
@@ -97,9 +95,7 @@ twitter.com##div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-1h3ijdo
 twitter.com##div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-h3s6tt
 twitter.com##div.css-1dbjc4n.r-1h3ijdo.r-5wli1b
 twitter.com##div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
-twitter.com##div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(3)
-twitter.com##div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(4)
-twitter.com##div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x:nth-child(5)
+twitter.com##div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-136ojw6
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-5wli1b
 twitter.com##div.r-1h3ijdo.css-1dbjc4n:nth-of-type(2)
@@ -140,9 +136,7 @@ stackoverflow.com,superuser.com##li.md\:d-none:last-child
 stackoverflow.com,superuser.com##li.ml8.mt16:nth-child(6)
 
 getpocket.com##div > div.onboarding-badge:first-child
-getpocket.com##div > nav > a.css-18qpw11:first-child
-getpocket.com##div > nav > a.css-18qpw11:nth-child(3)
-getpocket.com##div > nav > a.css-18qpw11:nth-child(4)
+getpocket.com##div > nav > a.css-18qpw11
 getpocket.com##ul.css-1bjgl5h.links
 
 steampowered.com###achievement_block
@@ -178,16 +172,10 @@ youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
 
 messenger.com##.x12nzpgo.x1lku1pv.x5ib6vp.x18d9i69.xc73u3c.xexx8yu.xt55aet.x1c4vz4f.xb756pt.x1q0g3np.xozqiw3.x6s0dn4.x1qughib.xeuugli.xs83m0k.x1r8uery.x78zum5.x1ja2u2z.x1n2onr6.x9f619
-messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:first-child
-messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(10)
-messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(7)
-messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(8)
-messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2:nth-child(9)
+messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2
 messenger.com##div.x78zum5.x1r8uery.xs83m0k.xeuugli.x1qughib.x6s0dn4.xozqiw3.x1q0g3np.xb756pt.x1c4vz4f.xt55aet.xexx8yu.xc73u3c.x18d9i69.x5ib6vp.x1lku1pv.x12nzpgo:last-child
 
-thespike.gg##div > div > ul > li:last-child
-thespike.gg##div > div > ul > li:nth-child(5)
-thespike.gg##div > div > ul > li:nth-child(6)
+thespike.gg##div > div > ul > li
 thespike.gg##div.featured-event_column__sm8P6:first-child
 thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
 
@@ -196,6 +184,8 @@ chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
 espn.*##.col-one > article.quicklinks.sub-module > .quicklinks__container
 espn.*##.editorial.sub-module
+espn.*##.league-mgr.fantasySignup-basketball.fantasySignupV2.sub-module
+espn.*##.league-mgr.fantasySignup-football.fantasySignupV2.sub-module
 espn.*##article.sub-module.quicklinks
 espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
 espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
@@ -203,6 +193,7 @@ espn.*##li.pillar.logo.fantasy:nth-child(3)
 espn.*##li.pillar.logo.fantasy:nth-child(9)
 espn.*##li.pillar.more-espn:nth-child(2)
 espn.*##li.pillar.more-espn:nth-child(8)
+espn.*##ul.flex-none.Nav__Primary__Menu--right.flex.Nav__Primary__Menu:nth-of-type(2) > li.Nav__AccessibleMenuItem_Wrapper.n7.relative.items-center.flex.Nav__Primary__Menu__Item:nth-of-type(4)
 
 w3schools.com##.m12.l2.w3-col
 
