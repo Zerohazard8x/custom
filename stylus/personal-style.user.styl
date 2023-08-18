@@ -21,10 +21,10 @@
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: "DIN Next", "DIN", "Bahnschrift",
-            "alte din 1451 mittelschrift", "Keiner", "Road UA", "Dinish Expanded",
-            "Dinish", "Altinn-DIN", "D-DIN", var(--font-personal),
-            "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
-            Verdana, "PT Sans Caption", sans-serif !important;
+            "alte din 1451 mittelschrift", "Keiner", "Road UA",
+            "Dinish Expanded", "Dinish", "Altinn-DIN", "D-DIN",
+            var(--font-personal), "YouTube Noto", Roboto, "Arial Unicode Ms",
+            Arial, Helvetica, Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
         text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px !important;
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 3 times */
@@ -145,9 +145,10 @@
     .SW5pqf {
         font-family: var(--roboto), arial, sans-serif-medium, sans-serif !important;
     }
-    
+
     .CvgYje {
-        font-family: var(--roboto),Google Sans,Roboto,HelveticaNeue,Arial,sans-serif !important;
+        font-family: var(--roboto), Google Sans, Roboto, HelveticaNeue, Arial,
+            sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
@@ -211,7 +212,7 @@
     div.T1diZc.KWE8qe,
     div.UkZxse,
     div.VUoKZ,
-    div.VfPpkd-suEOdc.EY8ABd, 
+    div.VfPpkd-suEOdc.EY8ABd,
     div.ZACE2c.vMI2nb.dif24c.vhoiae.KkxPLb,
     div.a-b.a-b-ja-el-db.dif24c.bvmRsc.a-b-Oe-n.a-b-L.a-b-uoC0bf.vhoiae.KkxPLb,
     div.a-ie-Vq-bb-ta,
@@ -501,20 +502,28 @@ domain("yewtu.be") {
 @-moz-document domain("emojipedia.org") {
     /* Emojipedia - Goal: Grayscale, font */
     :root {
-        --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88","__Plus_Jakarta_Sans_Fallback_c26b88";
+        --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88",
+            "__Plus_Jakarta_Sans_Fallback_c26b88";
     }
-    
+
     body,
     .flex {
-        font-family: var(--font-plus-jakarta), var(--font-personal), ui-sans-serif, system-ui,
-            -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue,
-            Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji,
-            segoe ui symbol, noto color emoji !important;
+        font-family: var(--font-plus-jakarta), var(--font-personal),
+            ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+            segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
     }
-    
+
     /* Grayscale */
-    #__next, div.container, footer.page-footer.v2, div.sponsor, header.page-header, div.page-header-part.page-header-part--ad, div.topMainAd, #react-root {
-      filter: grayscale(80%);
+    #__next,
+    div.container,
+    footer.page-footer.v2,
+    div.sponsor,
+    header.page-header,
+    div.page-header-part.page-header-part--ad,
+    div.topMainAd,
+    #react-root {
+        filter: grayscale(80%);
     }
 }
 
@@ -527,26 +536,68 @@ domain("yewtu.be") {
 
 @-moz-document domain("flightaware.com") {
     /* FlightAware - Goal: Fonts, grayscale */
-    input, #s2id_autogen1, #s2id_autogen2, .localePicker {
+    input,
+    #s2id_autogen1,
+    #s2id_autogen2,
+    .localePicker {
         font-family: "FontAwesome", Roboto, "MS Shell Dlg 2" !important;
     }
-    
-    #home-main-messaging > h1, .messaging-title > h2 {
+
+    #home-main-messaging > h1,
+    .messaging-title > h2 {
         font-family: Lato, "Roboto", Arial, Helvetica, sans-serif !important;
     }
-    
-    #blockerDisclaimerContainer,
-    #cookieDisclaimerContainer,
-    #iecountdown,
+
+    nav.navBarMobile,
     #mainBody,
-    div.ac_results.fauxListWrapper,
+    span.select2-hidden-accessible,
     div.autocomplete-suggestions,
+    #iecountdown,
+    #cookieDisclaimerContainer,
+    #blockerDisclaimerContainer,
+    div.ac_results.fauxListWrapper,
+    div.select2-sizer,
     div.select2-drop-mask,
     div.select2-drop.select2-drop-multi.select2-display-none.omnisearch_dropdown.select2-drop-active,
-    div.select2-sizer,
-    nav.navBarMobile,
-    span.select2-hidden-accessible,
     div.ReactModalPortal {
-      filter: grayscale(80%);
+        filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk") {
+    /* ESPN - Goal: Font changes, grayscale */
+    .HeaderEvent__Headline,
+    .ScoreCell__Score,
+    .StatBlock,
+    .cscore_overview,
+    .fw-bold,
+    .label,
+    .league-nav-desktop > button,
+    .league-nav-desktop,
+    .pb2,
+    .pillar,
+    h2,
+    nav,
+    .cscore_name {
+        font-family: BentonSans, -apple-system, BlinkMacSystemFont, Roboto,
+            Arial, Helvetica Neue, Helvetica, sans-serif !important;
+    }
+
+    select {
+        font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial,
+            Helvetica Neue, Helvetica, sans-serif !important;
+    }
+
+    /* Grayscale */
+    #cboxOverlay,
+    #colorbox,
+    #fb-root,
+    #global-viewport,
+    #oneid-secure-responder,
+    #oneid-wrapper,
+    div.ad-slot.ad-slot-exclusions,
+    div.ad-slot.ad-slot-overlay,
+    div.shim {
+        filter: grayscale(80%);
     }
 }
