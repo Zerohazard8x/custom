@@ -924,7 +924,6 @@
 ||shopifycdn.com$all
 ||signaler-pa.clients6.google.com$all
 ||signaler-pa.youtube.com$all
-||sina.com.cn$all
 ||singpromos.com$all
 ||sjwoe.com$all
 ||sky.com/sourcepoint$all
@@ -1093,6 +1092,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||sina.com.cn$script,object,ping,stylesheet,other
 ||passport.twitch.tv$script,object,ping,stylesheet,other
 ||jsdelivr.map.fastly.net$script,object,ping,stylesheet,other
 ||launchdarkly.com$script,object,ping,stylesheet,other
