@@ -26,6 +26,8 @@
 
 @-moz-document domain("github.com") {
     /* Github - Goal: Change all fonts, change font and formatting of code blocks, grayscale */
+    .Layout,
+    .markdown-body,
     .page-responsive,
     .PageHeader-title,
     .Box-sc-g0xbh4-0,
@@ -325,8 +327,7 @@ domain("superuser.com") {
 
     pre > code,
     p > code,
-    strong > code,
-    .section-content > pre {
+    strong > code {
         font-size: 16px !important;
     }
 
@@ -451,6 +452,10 @@ domain("superuser.com") {
     }
 
     /* Grayscale filter */
+    .b_logo,
+    li,
+    h3,
+    canvas,
     img,
     svg,
     input,
@@ -542,7 +547,6 @@ domain("superuser.com") {
     .b_primtxt,
     .b_searchboxForm,
     .b_topTitle,
-    .b_vList,
     .dest_name,
     .ent-dtab-nam-ov-dtp,
     .qna_algoLink_title,
@@ -555,13 +559,14 @@ domain("superuser.com") {
             Roboto, Arial, sans-serif !important;
     }
 
-    .rd_gtrtb_nav_item,
-    .b_title {
+    .rd_gtrtb_nav_item {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
             Roboto, Arial, sans-serif !important;
         filter: opacity(100%);
     }
 
+    div > div > div > h2,
+    p > span > a,
     .bm_phase2
         .overlay-taskpane.b_wftp
         .b_subModule
@@ -581,13 +586,12 @@ domain("superuser.com") {
         filter: opacity(100%);
     }
 
+    .b_vList,
     a,
     .b_widgetContainer,
     .b_wiki_w_item,
     h2,
     .mc_vtvc_meta_row_channel,
-    .title,
-    .tit,
     .mc_vtvc_title,
     .mc_vtvc_title > span,
     .mc_vtvc_title > strong,
@@ -607,6 +611,9 @@ domain("superuser.com") {
         font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
+    .title,
+    .tit,
+    .b_title,
     .dirWp,
     .dg_b .infnmpt .infpd a,
     #imagemeta,
