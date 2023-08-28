@@ -601,3 +601,33 @@ domain("yewtu.be") {
         filter: grayscale(80%);
     }
 }
+
+@-moz-document domain("metacritic.com") {
+    /* Metacritic - Goal: Fonts, grayscale */
+    html,
+    body,
+    #site_layout,
+    .site_gutters,
+    #container,
+    .col_layout,
+    #content_section,
+    .hpbanner_wrapper,
+    #hpbanner,
+    #primary_nav {
+        font-family: "proxima_nova", "HelveticaNeue-Light",
+            "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,
+            sans-serif !important;
+    }
+
+    .metascore_w {
+        font-family: "proxima_nova", "HelveticaNeue-Light",
+            "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica,
+            sans-serif !important;
+    }
+
+    #site_layout,
+    #onetrust-consent-sdk,
+    #rufous-sandbox {
+        filter: grayscale(80%);
+    }
+}
