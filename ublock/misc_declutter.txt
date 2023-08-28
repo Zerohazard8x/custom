@@ -199,3 +199,5 @@ fandom.com##.rail-recentImages-module
 
 google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
 google.com##.gb_Xc
+
+github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
