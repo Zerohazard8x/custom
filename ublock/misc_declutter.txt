@@ -95,7 +95,6 @@ twitter.com##div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-136ojw6
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-5wli1b
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(5)
-twitter.com##div:nth-of-type(9) > .r-1ny4l3l.r-1adg3ll.css-1dbjc4n
 
 vlr.gg##div.col.mod-1:first-child > div:nth-child(2) > div.js-home-stickied:first-child
 vlr.gg##div.col.mod-3:nth-child(3) > div.js-home-matches-completed:last-child > div.d8fyh:nth-child(3)
