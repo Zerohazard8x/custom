@@ -488,12 +488,23 @@ domain("yewtu.be") {
 @-moz-document domain("amazon.com"), domain("amazon.co.jp") {
     /* Amazon - Goal: Grayscale, font */
     #a-page,
+    #e > input,
     .a-container {
         font-family: "Amazon Ember", Arial, "Hiragino Kaku Gothic ProN",
             "Hiragino Sans", Meiryo, sans-serif !important;
     }
-
+    
+    .bucket h2 {
+        font-family: "Amazon Ember", verdana, arial, helvetica, sans-serif !important;
+    }
+    
+    tbody > tr > td, span > span > a {
+        font-family: "Amazon Ember", Arial !important;
+    }
+    
     #a-page,
+    #b,
+    #h,
     #a-popover-root {
         filter: grayscale(80%);
     }

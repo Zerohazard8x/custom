@@ -567,11 +567,11 @@ domain("superuser.com") {
     div > div > div > h2,
     p > span > a,
     .bm_phase2
-        .overlay-taskpane.b_wftp
-        .b_subModule
-        .b_wfInfoCard
-        .annotate
-        .nameContainer,
+    .overlay-taskpane.b_wftp
+    .b_subModule
+    .b_wfInfoCard
+    .annotate
+    .nameContainer,
     .b_focusTextLarge,
     .b_focusTextMedium,
     .b_mgridTitle,
@@ -752,12 +752,8 @@ domain("superuser.com") {
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
-
-    .username-h_Y3Us,
-    .username-3_PJ5r,
-    .membersGroup-2eiWxl,
-    .username-vAneIW,
-    .roles-3vQPxb {
+    
+    .username-h_Y3Us, .username-3_PJ5r, .membersGroup-2eiWxl, .username-vAneIW, .roles-3vQPxb {
         filter: grayscale(80%);
     }
 }
@@ -776,11 +772,13 @@ domain("superuser.com") {
     .sidebar_box,
     .tc,
     .welcome,
+    .bodycopy,
     a,
     aside > div > h3,
     aside,
     em,
     h1,
+    h2,
     h5,
     h6,
     li,
@@ -789,7 +787,8 @@ domain("superuser.com") {
     div > h4 {
         font-family: var(--font-personal), Helvetica, Arial, Verdana, sans-serif !important;
     }
-
+    
+    /* monospace */
     textarea {
         font-family: var(--block-mono), var(--monospace), "monaco",
             "lucida console", "lucida sans typewriter", "consolas", "monospace" !important;
@@ -799,7 +798,7 @@ domain("superuser.com") {
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
-    /* monospace */
+    /* grayscale */
     #cboxOverlay,
     #colorbox,
     #container,
