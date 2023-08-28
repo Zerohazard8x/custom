@@ -87,18 +87,14 @@ twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(5)
 twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
 twitter.com##aside.r-uaa2di.r-ymttw5.r-1f1sjgu
-twitter.com##div > div > aside.css-1dbjc4n
 twitter.com##div.css-1dbjc4n.r-1awozwy.r-18u37iz.r-h3s6tt.r-1777fci.r-1jgb5lz.r-sb58tz.r-779j7e.r-13qz1uu
-twitter.com##div.css-1dbjc4n.r-1bro5k0
 twitter.com##div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-1h3ijdo
 twitter.com##div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-h3s6tt
 twitter.com##div.css-1dbjc4n.r-1h3ijdo.r-5wli1b
 twitter.com##div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
-twitter.com##div.css-1dbjc4n.r-g2wdr4.r-14wv3jr.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-136ojw6
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-5wli1b
-twitter.com##div.r-1h3ijdo.css-1dbjc4n:nth-of-type(2)
-twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(5)
 twitter.com##div:nth-of-type(9) > .r-1ny4l3l.r-1adg3ll.css-1dbjc4n
 
 vlr.gg##div.col.mod-1:first-child > div:nth-child(2) > div.js-home-stickied:first-child
