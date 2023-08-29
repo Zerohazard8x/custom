@@ -50,8 +50,10 @@ theguardian.com##div.dcr-1xdhyk6:nth-of-type(3)
 theguardian.com##main > .dcr-1u8qly9
 
 dexerto.com##.aspect-16\/9.lg\:mb-8.w-full.my-4
+dexerto.com##.duration-0.min-h-\[56px\].p-2.bg-neutral-grey.md\:aspect-\[192\/35\].aspect-\[390\/219\].lg\:min-h-\[256px\].z-0.sticky.left-0.top-0.justify-center.items-center.flex.w-full
 dexerto.com##.flex.my-8.lg\:col-span-7.col-span-full.dark\:bg-neutral-black.md\:gap-x-5.md\:justify-between.md\:items-center.md\:flex-row.md\:py-5.bg-neutral-grey-4.px-5.py-\[14\.5px\].w-full.flex-col
 dexerto.com##.py-5.px-5.border-vertical-primary.border-l-8.dark\:bg-neutral-grey-90.bg-neutral-grey-4.justify-start.flex-col.flex
+dexerto.com##div.lg\:px-0.md\:p-6.p-4.max-w-7xl.mx-auto.w-full.grid-cols-12.md\:gap-x-6.gap-x-4.grid:nth-of-type(1) > .lg\:flex.h-full.items-center.col-start-9.col-span-4.flex-col.hidden
 dexerto.com##div.mx-auto.max-w-7xl.w-full.grid-cols-12.md\:gap-x-6.gap-x-4.grid:nth-of-type(2)
 
 gmanetwork.com###mrect_related_content_holder
@@ -62,10 +64,13 @@ gmanetwork.com##.text-center.leaderboard.padded.row
 
 news.abs-cbn.com###sticker
 
-www.howtogeek.com##.affiliate-sponsored
-www.howtogeek.com##.article-footer-newsletter
-www.howtogeek.com##.article-table-contents
-www.howtogeek.com##.article.infinite-scroll.w-article > .article-footer > .bottom.sharing
-www.howtogeek.com##.nav-elements
-www.howtogeek.com##.subnav-navigation.wrapper
-www.howtogeek.com##.w-display-card-info
+howtogeek.com##.affiliate-sponsored
+howtogeek.com##.article-footer-newsletter
+howtogeek.com##.article-table-contents
+howtogeek.com##.article.infinite-scroll.w-article > .article-footer > .bottom.sharing
+howtogeek.com##.nav-elements
+howtogeek.com##.subnav-navigation.wrapper
+howtogeek.com##.w-display-card-info
+
+esports.gg##.order-3.\32 xl\:min-w-\[300px\].md\:w-\[300px\].\32 xl\:block.hidden.w-full
+esports.gg##.playwire-ad-unit_firstChildOnly__zh5eU.xl\:min-w-\[970px\].mx-auto.xl\:max-w-\[970px\].mb-3.xl\:h-\[250px\].h-\[100px\].justify-around.overflow-hidden.max-w-full.justify-center.flex.flex-shrink-0
