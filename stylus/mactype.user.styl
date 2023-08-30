@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           MacType grayscale rendering fix + other fixes
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @description    https://github.com/snowie2000/mactype/issues/873 + https://userstyles.world/style/7484
 @author         github "snowie2000" + zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/mactype.user.styl
@@ -40,7 +40,7 @@
     }
 }
 
-@-moz-document regexp("((?!bing\.com|reddit\.com|google\.com).)*") {
+@-moz-document regexp("((?!bing\.com|reddit\.com|google\.com|\.jpg|\.png|\.jpeg|\.webp).)*") {
     /* MacType fix */
     /* Syntax: "((?!bing\.com|dubz\.co|reddit\.com|tweetdeck\.twitter\.com).)*" */
     html,
