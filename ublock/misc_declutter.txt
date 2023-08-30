@@ -204,3 +204,13 @@ github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
 
 metacritic.com##.summary_trailer
 metacritic.com##.right > .supplements_module.module
+
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(10)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(4)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(5)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(8)
+facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(2)
+facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
+facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
+facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
+facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
