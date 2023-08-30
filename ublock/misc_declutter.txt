@@ -52,8 +52,6 @@ gg.bet##.Tabs__tabs___KOXfP.__app-Tabs-tabs
 gg.bet##.sidebar__content___2JoUk.__app-Sidebar-content
 gg.bet##div:nth-child(6) > div.btn-chat.btn-chat--fixed.btn-chat--left
 
-reddit.com###div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
-reddit.com###div > div > div._2vEf-C2keJaBMY9qk_BxVn:first-child
 reddit.com###popular-posts
 reddit.com##._1GieMuLljOrqnVpRAwz7VP
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
@@ -64,8 +62,10 @@ reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[lengt
 reddit.com##.masthead
 reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:h-\[calc\(100vh-var\(--shreddit-header-height\)-1px\)\].xs\:top-\[56px\].xs\:sticky.xs\:w-full.styled-scrollbars.xl\:col-span-4.l\:col-span-4.m\:col-span-3.s\:col-span-4.xs\:col-span-4.s\:block.hidden.right-sidebar > .mt-md
 reddit.com##div > div > a._3dZnYgFFpifT-M_Vs2FAq6:first-child
+reddit.com##div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
 reddit.com##div > div > div._2f5uYHvlfzs2DngQsiCdvB:last-child
 reddit.com##div > div > div._2jJNpBqXMbbyOiGCElTYxZ:first-child
+reddit.com##div > div > div._2vEf-C2keJaBMY9qk_BxVn:first-child
 reddit.com##div > div > div._2vEf-C2keJaBMY9qk_BxVn:nth-child(2)
 reddit.com##div.text-14.text-neutral-content-weak
 reddit.com##reddit-recent-pages
