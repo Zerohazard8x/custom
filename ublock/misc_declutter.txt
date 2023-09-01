@@ -79,7 +79,6 @@ reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 
 twitter.com##.gryphon-beta-btn-container.js-gryphon-beta-btn
 twitter.com##.r-109y4c4.r-gu4em3.css-1dbjc4n
-twitter.com##.r-1f1sjgu.r-ymttw5.r-1ny4l3l.r-1wtj0ep.css-1dbjc4n
 twitter.com##.r-1jte41z.r-hvns9x.r-12e0a8i.r-qo02w8.r-1qk6wnv.r-c67a83.r-kemksi.r-173mn98.css-1dbjc4n
 twitter.com##.r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n > .r-kemksi.css-1dbjc4n
 twitter.com##.r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
