@@ -125,7 +125,19 @@
 }
 
 @-moz-document domain("reddit.com") {
-    /* Reddit - Goal: Code blocks, UI edits */
+    /* Reddit - Goal: Code blocks, fonts, UI edits */
+    .loggedin {
+        font-family: Noto Sans, verdana, arial, helvetica, sans-serif !important;
+    }
+    
+    #header, .head {
+        font-family: IBMPlexSans, Noto Sans, verdana, arial, helvetica, sans-serif !important;
+    }
+    
+    .title {
+        font-family: IBMPlexSans, arial, verdana, arial, helvetica, sans-serif !important;
+    }
+    
     ._34q3PgLsx9zIU5BiSOjFoM {
         font-family: var(--monospace), var(--block-mono), Noto Mono, Monaco,
             Consolas, monospace !important;
@@ -564,6 +576,7 @@ domain("superuser.com") {
         filter: opacity(100%);
     }
 
+    .ent-dtab-nam-ov-dtnp,
     div > div > div > h2,
     p > span > a,
     .bm_phase2
