@@ -99,7 +99,6 @@ twitter.com##div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-136ojw6
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-5wli1b
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(3)
-twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(4)
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(5)
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-1dbjc4n:nth-of-type(1)
 
