@@ -653,3 +653,20 @@ domain("yewtu.be") {
         filter: grayscale(80%);
     }
 }
+
+@-moz-document domain("msn.com") {
+    /* MSN - Goal: Fonts, grayscale */
+    .lightTheme,
+    .locationItem-DS-EntryPoint1-6,
+    .suggestion-DS-EntryPoint1-1,
+    .weatherButtonWrapper-DS-EntryPoint1-3,
+    .weatherFeedbackDialogButton-DS-EntryPoint1-3 {
+        font-family: Segoe UI, Segoe WP, Arial, sans-serif, "MS Shell Dlg 2" !important;
+    }
+
+    #ssr,
+    #root,
+    #recharts_measurement_span {
+        filter: grayscale(80%);
+    }
+}

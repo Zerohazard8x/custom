@@ -6,6 +6,7 @@
 
 bing.com###asmsbribbon_li
 bing.com###b-scopeListItem-bingatwork
+bing.com###b_algospacing
 bing.com###b_alsotry
 bing.com###b_context > li.b_ans:nth-child(2)
 bing.com###b_op_anch
@@ -18,12 +19,17 @@ bing.com###footer
 bing.com###iasabtlnk
 bing.com###id_rfob
 bing.com###id_rh
+bing.com###imgcrtr_key
+bing.com###imginspn_key
 bing.com###mfa_srch
 bing.com###sydneyLetsChatWidgetContainer
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
 bing.com##.b_bfb_lcg
+bing.com##.b_phead_chat_link
 bing.com##.fabcolapse
+bing.com##.new_see_more_container
+bing.com##.popup.b_bnp_bopc
 bing.com##.rh_scale.rh_reedm.toolTip.id_button
 bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
@@ -92,7 +98,10 @@ twitter.com##div.css-1dbjc4n.r-1h3ijdo.r-5wli1b
 twitter.com##div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-136ojw6
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-5wli1b
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(3)
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(4)
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(5)
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-1dbjc4n:nth-of-type(1)
 
 vlr.gg##.d8fyh
 vlr.gg##.jd8ag

@@ -73,4 +73,9 @@ howtogeek.com##.subnav-navigation.wrapper
 howtogeek.com##.w-display-card-info
 
 esports.gg##.order-3.\32 xl\:min-w-\[300px\].md\:w-\[300px\].\32 xl\:block.hidden.w-full
-esports.gg##.playwire-ad-unit_firstChildOnly__zh5eU.xl\:min-w-\[970px\].mx-auto.xl\:max-w-\[970px\].mb-3.xl\:h-\[250px\].h-\[100px\].justify-around.overflow-hidden.max-w-full.justify-center.flex.flex-shrink-0
+esports.gg##.playwire-ad-unit_firstChildOnly__zh5eU.xl\:min-w-\[970px\].mx-auto.xl\:max-w-
+
+msn.com##.mobileAppAndPersonaWrapper-DS-EntryPoint1-1
+msn.com##.triggerButton-DS-EntryPoint1-1
+msn.com##.user-pref-container > ms-rewards:nth-child(2)
+msn.com##.user-pref-container > notification-bell:nth-child(3)
