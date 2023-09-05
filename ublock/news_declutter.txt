@@ -84,3 +84,9 @@ androidauthority.com##.--___Rb
 androidauthority.com##.--___jk.--___kc.--___d
 androidauthority.com##div.--___Dh:nth-of-type(1)
 androidauthority.com##div.--___Dh:nth-of-type(16)
+
+www.reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
+
+jalopnik.com,gizmodo.com,kotaku.com##.bvbYAx.sc-irbn1o-0
+jalopnik.com,gizmodo.com,kotaku.com##.cXrHWD.sc-irbn1o-4
+jalopnik.com,gizmodo.com,kotaku.com##.show.js_header-newsletter.dkTrvD.iUotQO.sc-irbn1o-2.sc-xpaln1-0
