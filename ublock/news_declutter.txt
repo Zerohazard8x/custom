@@ -79,3 +79,8 @@ msn.com##.mobileAppAndPersonaWrapper-DS-EntryPoint1-1
 msn.com##.triggerButton-DS-EntryPoint1-1
 msn.com##.user-pref-container > ms-rewards:nth-child(2)
 msn.com##.user-pref-container > notification-bell:nth-child(3)
+
+androidauthority.com##.--___Rb
+androidauthority.com##.--___jk.--___kc.--___d
+androidauthority.com##div.--___Dh:nth-of-type(1)
+androidauthority.com##div.--___Dh:nth-of-type(16)

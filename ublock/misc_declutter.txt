@@ -222,3 +222,9 @@ facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3
 facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
 facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
 facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
+
+sofascore.com##.bgUNaL.sc-fqkvVR
+sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
+sofascore.com##.eUkCqv.sc-fqkvVR
+sofascore.com##.kcHixx.sc-fqkvVR
+sofascore.com##[href="/en-us/betting-tips-today"]
