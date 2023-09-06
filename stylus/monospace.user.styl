@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.0.9
+@version        1.1.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -386,16 +386,24 @@ domain("superuser.com") {
     }
 }
 
-@-moz-document domain("tcrf.net") {
-    /* TCRF - Goal: Reduce usage of Arial font, code blocks, grayscale */
-    .mediawiki {
+@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org") {
+    /* MediaWiki - Goal: Reduce usage of Arial font, code blocks, grayscale */
+    .mediawiki, #sidebar, h3 {
         font-family: var(--not-monospace), sans-serif !important;
     }
 
-    #searchInput {
+    input {
         font-family: var(--not-monospace), "MS Shell Dlg 2" !important;
     }
 
+    .pBody {
+        font-family: var(--not-monospace), verdana, sans-serif !important;
+    }
+    
+    #personal > h2 {
+        font-family: var(--not-monospace), "Helvetica Neue", "Nimbus Sans", "Helvetica", "Arial", sans-serif !important;
+    }
+    
     tt,
     .mw-parser-output > pre {
         font-family: var(--monospace), var(--block-mono), monospace, monospace !important;
@@ -405,6 +413,8 @@ domain("superuser.com") {
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
+    #mw-wrapper,
+    #globalWrapper,
     a.mw-wiki-logo,
     div.mw-panel,
     div.noprint,
