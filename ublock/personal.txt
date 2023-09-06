@@ -1446,7 +1446,6 @@
 ||windows.net$script,object,ping,stylesheet,other
 ||wix.com$script,object,ping,stylesheet,other
 ||wunderkind.co$script,object,ping,stylesheet,other
-||yimg.jp$script,object,ping,stylesheet,other
 ||yotpo.com$script,object,ping,stylesheet,other
 ||yottaa.net$script,object,ping,stylesheet,other
 ||ytimg.com$script,object,ping,stylesheet,other
