@@ -30,19 +30,19 @@ nbcnews.com##.HFSBumped.grid-col-push-half-xl.grid-col-3_5-xl.grid-col-4_5-l.lay
 nbcnews.com##.article-social-share-top
 nbcnews.com##.styles_alignMobileBottom__bhgkQ.styles_alignDesktopBottom__4cHaO.styles_stuck__Yq04P.styles_adNotPlaying__Q51_C.isStuck.styles_videoPlayer__bL8AJ.videoPlayer
 
-soranews24.com###custom_html-2 > .custom-html-widget.textwidget > div
-soranews24.com###responses
-soranews24.com###secondary-widgets
-soranews24.com###widget_monthlyranking
-soranews24.com###widget_rankings > ul
-soranews24.com###widget_weeklyranking
-soranews24.com###widget_yearlyranking
-soranews24.com##.ad336x280.ad
-soranews24.com##.ad728x90.ad
-soranews24.com##.custom-html-widget.textwidget > p
-soranews24.com##.entry-content > p > .more-link
-soranews24.com##.jetpack-likes-widget-loaded.jetpack-likes-widget-wrapper.sd-like.sd-block.sharedaddy
-soranews24.com##.share-btns
+soranews24.com,rocketnews24.com###custom_html-2 > .custom-html-widget.textwidget > div
+soranews24.com,rocketnews24.com###responses
+soranews24.com,rocketnews24.com###secondary-widgets
+soranews24.com,rocketnews24.com###widget_monthlyranking
+soranews24.com,rocketnews24.com###widget_rankings > ul
+soranews24.com,rocketnews24.com###widget_weeklyranking
+soranews24.com,rocketnews24.com###widget_yearlyranking
+soranews24.com,rocketnews24.com##.ad336x280.ad
+soranews24.com,rocketnews24.com##.ad728x90.ad
+soranews24.com,rocketnews24.com##.custom-html-widget.textwidget > p
+soranews24.com,rocketnews24.com##.entry-content > p > .more-link
+soranews24.com,rocketnews24.com##.jetpack-likes-widget-loaded.jetpack-likes-widget-wrapper.sd-like.sd-block.sharedaddy
+soranews24.com,rocketnews24.com##.share-btns
 
 theguardian.com##.dcr-173mewl
 theguardian.com##div.dcr-1xdhyk6:nth-of-type(2)
