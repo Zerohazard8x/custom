@@ -92,3 +92,7 @@ jalopnik.com,gizmodo.com,kotaku.com##.show.js_header-newsletter.dkTrvD.iUotQO.sc
 reuters.com##.article-body__element__2p5pI.article-body__row__dFOPA
 reuters.com##.article-header__toolbar__3lT1M > .toolbar__container__3kIkw > div.toolbar-item__symbol-wrapper__1SlQe:nth-of-type(1)
 reuters.com##.site-header__my-view__1_pOE
+
+rappler.com##.post-single__end-article-moodmeter
+rappler.com##.post-single__moodmeter
+rappler.com##.recommended-articles.container

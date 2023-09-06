@@ -743,7 +743,6 @@
 ||minerva.ifixit.com$all
 ||miniorange.com$all
 ||mjroulette.xyz$all
-||mm-production.rappler.com$all
 ||mms1.baidu.com$all
 ||mms2.baidu.com$all
 ||mokahr.com$all
@@ -1090,6 +1089,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||mm-production.rappler.com$script,object,ping,stylesheet,other
 ||firebaseio.com$script,object,ping,stylesheet,other
 ||imgur.map.fastly.net$script,object,ping,stylesheet,other
 ||sina.com.cn$script,object,ping,stylesheet,other
