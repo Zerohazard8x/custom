@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.1.0
+@version        1.1.1
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -20,9 +20,10 @@
         "Consolas", "Intel One Mono", Menlo, Monaco, "Ubuntu Mono",
         "Source Code Pro", "Andale Mono", "Lucida Console",
         "Lucida Sans Typewriter";
-    --block-mono: "JetBrains Mono", "JetBrains Mono NL", "Input Mono",
-        "IBM Plex Mono", "BlexMono", "Roboto Mono", "Iosevka Expanded",
-        "Iosevka", "Input Sans", "Liberation Mono";
+    --block-mono: "IBM Plex Mono", "BlexMono", "Roboto Mono", "JetBrains Mono",
+        "JetBrains Mono NL", "Input Mono", "Iosevka Expanded", "Iosevka",
+        "Input Sans", "Liberation Mono";
+    --mono-combo: var(--block-mono), (--monospace);
 }
 
 @-moz-document domain("github.com") {
@@ -59,7 +60,7 @@
     pre,
     kbd,
     code {
-        font-family: var(--monospace), var(--block-mono), Consolas, monospace !important;
+        font-family: var(--mono-combo), Consolas, monospace !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
@@ -105,7 +106,7 @@
     p > code,
     li > code,
     pre > span {
-        font-family: var(--monospace), var(--block-mono), monospace !important;
+        font-family: var(--mono-combo), monospace !important;
         font-size: 16px !important;
 
         /* Ligatures */
@@ -145,7 +146,7 @@
     }
 
     ._34q3PgLsx9zIU5BiSOjFoM {
-        font-family: var(--monospace), var(--block-mono), Noto Mono, Monaco,
+        font-family: var(--mono-combo), Noto Mono, Monaco,
             Consolas, monospace !important;
         font-size: 16px !important;
 
@@ -172,7 +173,7 @@
 domain("superuser.com") {
     /* StackOverflow - Goal: All fonts, grayscale */
     code {
-        font-family: var(--monospace), var(--block-mono), ui-monospace,
+        font-family: var(--mono-combo), ui-monospace,
             "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco,
             Consolas, monospace !important;
         font-size: 16px !important;
@@ -230,7 +231,7 @@ domain("superuser.com") {
 }
 
 @-moz-document domain("poe.com") {
-    /* Poe - Goal: Reduce usage of system font */
+    /* Poe - Goal: Reduce usage of system font, grayscale */
     .PageWithSidebarLayout_centeredPage__D42BU,
     .ReactModal__Content {
         font-family: var(--not-monospace), apple-system, system-ui,
@@ -239,7 +240,7 @@ domain("superuser.com") {
     }
 
     code > span {
-        font-family: var(--monospace), var(--block-mono), Consolas, monaco,
+        font-family: var(--mono-combo), Consolas, monaco,
             monospace !important;
         font-size: 16px !important;
 
@@ -247,12 +248,16 @@ domain("superuser.com") {
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
+
+    #__next, div.ReactModalPortal {
+        filter: grayscale(80%);
+      }
 }
 
 @-moz-document domain("chat.openai.com") {
     /* ChatGPT - Goal: Code blocks, grayscale */
     code {
-        font-family: var(--monospace), var(--block-mono), Söhne Mono, Monaco,
+        font-family: var(--mono-combo), Söhne Mono, Monaco,
             Andale Mono, Ubuntu Mono, monospace !important;
         font-size: 16px !important;
 
@@ -270,7 +275,7 @@ domain("superuser.com") {
     /* W3Schools - Goal: Code blocks, grayscale */
     .w3-code,
     .w3-codespan {
-        font-family: var(--monospace), var(--block-mono), Consolas,
+        font-family: var(--mono-combo), Consolas,
             "Source Code Pro", Menlo, Monaco, "Andale Mono", "Ubuntu Mono",
             monospace !important;
         font-size: 16px !important;
@@ -297,7 +302,7 @@ domain("superuser.com") {
     pre > code,
     p > code,
     li > code {
-        font-family: var(--monospace), var(--block-mono), SFMono-Regular,
+        font-family: var(--mono-combo), SFMono-Regular,
             Consolas, Liberation Mono, Menlo, Courier, monospace !important;
         font-size: 16px !important;
 
@@ -319,7 +324,7 @@ domain("superuser.com") {
     p > code,
     li > code,
     pre > span {
-        font-family: var(--monospace), var(--block-mono), Noto Sans Mono, Menlo,
+        font-family: var(--mono-combo), Noto Sans Mono, Menlo,
             Consolas, Courier New, Courier, monospace !important;
         font-size: 16px !important;
 
@@ -337,7 +342,7 @@ domain("superuser.com") {
     /* Mozilla Dev - Goal: Code blocks, grayscale */
     code,
     .section-content > pre {
-        font-family: var(--monospace), var(--block-mono), monospace !important;
+        font-family: var(--mono-combo), monospace !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
@@ -359,7 +364,7 @@ domain("superuser.com") {
 @-moz-document domain("symbolab.com") {
     /* Symbolab - Goal: LaTeX input interface, grayscale */
     .latex-command-input {
-        font-family: var(--monospace), var(--block-mono), "Courier New",
+        font-family: var(--mono-combo), "Courier New",
             monospace !important;
 
         /* Ligatures */
@@ -409,7 +414,7 @@ domain("superuser.com") {
 
     tt,
     .mw-parser-output > pre {
-        font-family: var(--monospace), var(--block-mono), monospace, monospace !important;
+        font-family: var(--mono-combo), monospace, monospace !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
@@ -596,19 +601,15 @@ domain("superuser.com") {
         filter: opacity(100%);
     }
 
+    .df_hd > .b_traits,
     #rd_gtrtb_ttl,
-    .annotate
-    .b_focusTextLarge,
+    .annotate .b_focusTextLarge,
     .b_focusTextMedium,
     .b_mgridTitle,
-    .b_subModule
-    .b_wfInfoCard
-    .bm_phase2
-    .ent-dtab-nam-ov-dtnp,
+    .b_subModule .b_wfInfoCard .bm_phase2 .ent-dtab-nam-ov-dtnp,
     .irp-video-slogan,
     .nameContainer,
-    .overlay-taskpane.b_wftp
-    .scs_metactn > div h2,
+    .overlay-taskpane.b_wftp .scs_metactn > div h2,
     .sto_title > .sto_slidelr,
     .sto_title,
     div > div > div > h2,
@@ -680,10 +681,11 @@ domain("superuser.com") {
             sans-serif !important;
     }
 
+    .cCodeBg,
     .rd_cCodeBg,
     .rd_code_blu,
     .rd_code_red {
-        font-family: var(--monospace), var(--block-mono), Consolas, Courier,
+        font-family: var(--mono-combo), Consolas, Courier,
             monospace !important;
         font-size: 16px !important;
         font-variant-ligatures: common-ligatures, contextual !important;
@@ -696,7 +698,7 @@ domain("superuser.com") {
     div .text > pre,
     .container > div code,
     .outputDiv > pre {
-        font-family: var(--monospace), var(--block-mono), Consolas, monospace !important;
+        font-family: var(--mono-combo), Consolas, monospace !important;
         font-size: 16px !important;
 
         /* Ligatures */
@@ -740,7 +742,7 @@ domain("superuser.com") {
     }
 
     .bbCodeCode {
-        font-family: var(--monospace), var(--block-mono), Monaco, Menlo,
+        font-family: var(--mono-combo), Monaco, Menlo,
             Consolas, roboto mono, andale mono, ubuntu mono, monospace !important;
         font-size: 16px !important;
 
@@ -839,17 +841,17 @@ domain("superuser.com") {
     }
 
     /* grayscale */
-    .r-top-block,
-    img,
     #cboxOverlay,
     #container,
     #footer,
     #split-test,
     #sub_network_footer_wrapper,
+    .r-top-block,
     div.header-unit-wrapper,
     div.hide,
     div.ui-helper-hidden-accessible,
     div.x_brb6.c,
+    img,
     ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front,
     #pagetual-preload {
         filter: grayscale(80%);

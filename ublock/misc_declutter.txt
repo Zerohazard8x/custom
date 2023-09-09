@@ -14,6 +14,7 @@ bing.com###b_op_flyout
 bing.com###b_results > li.b_bfb_lcg:nth-child(6)
 bing.com###b_results > li.b_bfb_lcg:nth-child(7)
 bing.com###b_results > li.b_bfb_mainline.b_ans:first-child
+bing.com###b_syd_sm_input
 bing.com###bingatwork
 bing.com###footer
 bing.com###iasabtlnk
@@ -136,6 +137,7 @@ symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-chi
 
 stackoverflow.com,superuser.com###feed-link
 stackoverflow.com,superuser.com###hot-network-questions
+stackoverflow.com,superuser.com##.fc-light.mb4.mt16.ml8.tt-uppercase.fs-fine
 stackoverflow.com,superuser.com##div > ol.s-navigation:nth-child(4)
 stackoverflow.com,superuser.com##div.s-sidebarwidget.mb16.module:nth-child(5)
 stackoverflow.com,superuser.com##div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
@@ -239,3 +241,5 @@ sofascore.com##.kcHixx.sc-fqkvVR
 sofascore.com##[href="/en-us/betting-tips-today"]
 
 khanacademy.org###donate-banner
+
+poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
