@@ -139,7 +139,7 @@
     .title {
         font-family: IBMPlexSans, arial, verdana, arial, helvetica, sans-serif !important;
     }
-    
+
     ._3oHXlwUZwpR5SS-8P9tILX {
         font-family: IBMPlexSans, NotoSans, Arial, sans-serif !important;
     }
@@ -388,7 +388,9 @@ domain("superuser.com") {
 
 @-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org") {
     /* MediaWiki - Goal: Reduce usage of Arial font, code blocks, grayscale */
-    .mediawiki, #sidebar, h3 {
+    .mediawiki,
+    #sidebar,
+    h3 {
         font-family: var(--not-monospace), sans-serif !important;
     }
 
@@ -399,11 +401,12 @@ domain("superuser.com") {
     .pBody {
         font-family: var(--not-monospace), verdana, sans-serif !important;
     }
-    
+
     #personal > h2 {
-        font-family: var(--not-monospace), "Helvetica Neue", "Nimbus Sans", "Helvetica", "Arial", sans-serif !important;
+        font-family: var(--not-monospace), "Helvetica Neue", "Nimbus Sans",
+            "Helvetica", "Arial", sans-serif !important;
     }
-    
+
     tt,
     .mw-parser-output > pre {
         font-family: var(--monospace), var(--block-mono), monospace, monospace !important;
@@ -481,106 +484,107 @@ domain("superuser.com") {
     }
 
     /* Grayscale filter */
-    .b_logo,
-    li,
-    h3,
-    canvas,
-    img,
-    svg,
-    input,
-    button,
-    .container,
-    .item,
-    .hp_body,
-    .v-live-t-txt,
-    .l_ecrd_rrct-items,
-    .b_app_common_btn,
+    #fltIdtCon,
     #imagemeta,
-    .sb_f_count,
-    .b_algospacing,
-    .b_bfbLcgAnchorText,
-    .b_fbText,
-    .b_seeMoreCont,
-    .b_vPanel,
-    .fdbtext,
-    .l_ecrd_ftr_txt,
-    .rstc,
-    .sto_attr_header,
-    .tdw_button,
-    .ms-Button-label,
-    .ms-search-text-h2,
-    .recommendationsTableTitle > h2,
+    #rd_gtrtb_ttl,
+    #vvlb,
+    .algoSlug_icon,
     .asSectionHeading,
-    .sa_tm_subText,
-    .scopes,
-    .hb_title_col,
-    .vrhtt,
-    .ms-search-tenantLogo-text,
+    .b_algo > h2 > a,
+    .b_algospacing,
+    .b_app_common_btn,
+    .b_bfbLcgAnchorText,
     .b_entityTitle,
-    .b_primtxt,
-    .b_topTitle,
-    .b_vList,
-    .dest_name,
-    .ent-dtab-nam-ov-dtp,
-    .qna_algoLink_title,
-    .rwrl,
-    .sto_attr_table,
-    .sto_attrlitc,
-    .wpvn_ala_wtt,
-    .b_rc_gb_widget_title,
-    .dg_b .infnmpt .infpd a,
-    .rd_gtrtb_nav_item,
-    .b_title,
+    .b_fbText,
     .b_focusTextLarge,
     .b_focusTextMedium,
+    .b_logo,
     .b_mgridTitle,
+    .b_primtxt,
+    .b_rc_gb_widget_title,
+    .b_searchboxForm,
+    .b_seeMoreCont,
+    .b_title,
+    .b_topTitle,
+    .b_vList,
+    .b_vPanel,
+    .cbtn,
+    .container,
+    .dest_name,
+    .dg_b .infnmpt .infpd a,
+    .ent-dtab-nam-ov-dtp,
+    .fdbtext,
+    .hb_title_col,
+    .hp_body,
     .irp-video-slogan,
-    .scs_metactn > div h2,
-    .sto_title,
-    #rd_gtrtb_ttl,
-    h2 > span,
-    container-title,
+    .item,
+    .l_ecrd_ftr_txt,
+    .l_ecrd_rrct-items,
+    .mc_vtvc_meta_row_channel,
+    .mc_vtvc_title > span,
+    .mc_vtvc_title > strong,
+    .mc_vtvc_title,
+    .metaItem,
+    .ms-Button-label,
+    .ms-search-tenantLogo-text,
+    .ms-search-text-h2,
+    .qna_algoLink_title,
     .rd_cCodeBg,
     .rd_code_blu,
     .rd_code_red,
-    h2,
-    .mc_vtvc_meta_row_channel,
-    .title,
+    .rd_gtrtb_nav_item,
+    .recommendationsTableTitle > h2,
+    .rstc,
+    .rwrl,
+    .sa_tm_subText,
+    .sb_f_count,
+    .scopes,
+    .scs_metactn > div h2,
+    .sto_attr_header,
+    .sto_attr_table,
+    .sto_attrlitc,
+    .sto_title,
+    .tdw_button,
     .tit,
-    .mc_vtvc_title,
-    .mc_vtvc_title > span,
-    .mc_vtvc_title > strong,
-    .b_algo > h2 > a,
-    .algoSlug_icon,
+    .title,
     .tptxt,
-    div > p span,
-    #fltIdtCon,
-    #vvlb,
+    .v-live-t-txt,
     .vrhcpt,
-    .metaItem,
-    .cbtn,
+    .vrhtt,
+    .wpvn_ala_wtt,
+    button,
+    canvas,
+    container-title,
+    div > p span,
+    h2 > span,
+    h2,
+    h3,
+    img,
+    input,
+    li,
+    svg,
     #sw_as {
         filter: grayscale(80%);
     }
 
     /* Font styles */
-    .MicrosoftMap .taskBar > ul li.inputbox input,
-    h4,
-    span > h3,
-    #id_n,
     #detailMeta,
-    .hb_title_col,
-    .vrhtt,
-    .ms-search-tenantLogo-text,
+    #id_n,
+    .MicrosoftMap .taskBar > ul li.inputbox input,
     .b_entityTitle,
     .b_searchboxForm,
     .b_topTitle,
     .dest_name,
     .ent-dtab-nam-ov-dtp,
+    .hb_title_col,
+    .ms-search-tenantLogo-text,
     .qna_algoLink_title,
     .sto_attr_table,
     .sto_attrlitc,
+    .vrhtt,
     .wpvn_ala_wtt,
+    h4,
+    span > h3,
     .b_rc_gb_widget_title {
         font-family: "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
             Roboto, Arial, sans-serif !important;
@@ -592,23 +596,24 @@ domain("superuser.com") {
         filter: opacity(100%);
     }
 
-    .ent-dtab-nam-ov-dtnp,
-    div > div > div > h2,
-    p > span > a,
-    .bm_phase2
-        .overlay-taskpane.b_wftp
-        .b_subModule
-        .b_wfInfoCard
-        .annotate
-        .nameContainer,
+    #rd_gtrtb_ttl,
+    .annotate
     .b_focusTextLarge,
     .b_focusTextMedium,
     .b_mgridTitle,
+    .b_subModule
+    .b_wfInfoCard
+    .bm_phase2
+    .ent-dtab-nam-ov-dtnp,
     .irp-video-slogan,
+    .nameContainer,
+    .overlay-taskpane.b_wftp
     .scs_metactn > div h2,
+    .sto_title > .sto_slidelr,
     .sto_title,
-    #rd_gtrtb_ttl,
+    div > div > div > h2,
     h2 > span,
+    p > span > a,
     container-title {
         font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
         filter: opacity(100%);
@@ -782,6 +787,7 @@ domain("superuser.com") {
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
+    .roleMention-11Aaqi,
     .membersGroup-2eiWxl,
     .roles-3vQPxb,
     .username-3_PJ5r,

@@ -1176,7 +1176,6 @@
 ||convergeict.com$script,object,ping,stylesheet,other
 ||converseapps.net$script,object,ping,stylesheet,other
 ||conviva.com$script,object,ping,stylesheet,other
-||cookielaw.org$script,object,ping,stylesheet,other
 ||coral.coralproject.net$script,object,ping,stylesheet,other
 ||criteo.com$script,object,ping,stylesheet,other
 ||criteo.net$script,object,ping,stylesheet,other
@@ -1331,7 +1330,6 @@
 ||ndtvimg.com$script,object,ping,stylesheet,other
 ||netacuity.com$script,object,ping,stylesheet,other
 ||newrelic.com$script,object,ping,stylesheet,other
-||nflxext.com$script,object,ping,stylesheet,other
 ||nflxso.net$script,object,ping,stylesheet,other
 ||nintendo.eu$script,object,ping,stylesheet,other
 ||nitropay.com$script,object,ping,stylesheet,other
