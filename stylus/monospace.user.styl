@@ -388,7 +388,7 @@ domain("superuser.com") {
     }
 }
 
-@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org") {
+@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net") {
     /* MediaWiki - Goal: Reduce usage of Arial font, code blocks, grayscale */
     .mediawiki,
     #sidebar,
@@ -409,6 +409,7 @@ domain("superuser.com") {
             "Helvetica", "Arial", sans-serif !important;
     }
 
+    .mp-box > p > code,
     tt,
     .mw-parser-output > pre {
         font-family: var(--mono-combo), monospace, monospace !important;
@@ -418,6 +419,7 @@ domain("superuser.com") {
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
+    #mw-head,
     #mw-wrapper,
     #globalWrapper,
     a.mw-wiki-logo,
