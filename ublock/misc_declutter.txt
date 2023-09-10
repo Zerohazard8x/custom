@@ -8,7 +8,6 @@ bing.com###asmsbribbon_li
 bing.com###b-scopeListItem-bingatwork
 bing.com###b_algospacing
 bing.com###b_alsotry
-bing.com###b_context > li.b_ans:nth-child(2)
 bing.com###b_op_anch
 bing.com###b_op_flyout
 bing.com###b_results > li.b_bfb_lcg:nth-child(6)
@@ -214,8 +213,10 @@ fandom.com##.global-navigation
 fandom.com##.rail-module.railModule
 fandom.com##.rail-recentImages-module
 
+google.com##.RB2q5e.OSrXXb.oYWfcb.GTERze
 google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
 google.com##.gb_Xc
+google.com##.gb_kd.gb_9a.gb_vd > div:nth-of-type(1)
 
 github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
 github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
@@ -243,3 +244,5 @@ sofascore.com##[href="/en-us/betting-tips-today"]
 khanacademy.org###donate-banner
 
 poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
+
+discord.com##.art-3yfHpl
