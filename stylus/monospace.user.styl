@@ -601,25 +601,6 @@ domain("superuser.com") {
         filter: opacity(100%);
     }
 
-    .df_hd > .b_traits,
-    #rd_gtrtb_ttl,
-    .annotate .b_focusTextLarge,
-    .b_focusTextMedium,
-    .b_mgridTitle,
-    .b_subModule .b_wfInfoCard .bm_phase2 .ent-dtab-nam-ov-dtnp,
-    .irp-video-slogan,
-    .nameContainer,
-    .overlay-taskpane.b_wftp .scs_metactn > div h2,
-    .sto_title > .sto_slidelr,
-    .sto_title,
-    div > div > div > h2,
-    h2 > span,
-    p > span > a,
-    container-title {
-        font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
-        filter: opacity(100%);
-    }
-
     .rwrl,
     .b_primtxt,
     .b_vList,
@@ -647,6 +628,24 @@ domain("superuser.com") {
         font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
+        .df_hd > .b_traits,
+    #rd_gtrtb_ttl,
+    .annotate .b_focusTextLarge,
+    .b_focusTextMedium,
+    .b_mgridTitle,
+    .b_subModule .b_wfInfoCard .bm_phase2 .ent-dtab-nam-ov-dtnp,
+    .irp-video-slogan,
+    .nameContainer,
+    .sto_title > .sto_slidelr,
+    .sto_title,
+    h2,
+    h2 > span,
+    p > span > a,
+    container-title {
+        font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
+        filter: opacity(100%);
+    }
+    
     .title,
     .tit,
     .b_title,
@@ -855,5 +854,26 @@ domain("superuser.com") {
     ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front,
     #pagetual-preload {
         filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("codeberg.org") {
+    /* Codeberg - Goal: Fonts, grayscale */
+    .height, .ui, .file-view, h1, h2, h3, .grid, .gt-df {
+        font-family: var(--font-personal), -apple-system, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Twemoji Mozilla" !important;
+    }
+    
+    code {
+        font-family: var(--mono-combo), ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Twemoji Mozilla" !important;
+        
+        font-size: 16px !important;
+        
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+    
+    div.full.height, footer.page-footer {
+      filter: grayscale(80%);
     }
 }
