@@ -191,6 +191,7 @@ thespike.gg##div.featured-event_column__sm8P6:first-child
 thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
 
 chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
+chat.openai.com##.md\:flex-col.items-stretch.flex-1.h-full.flex.relative > div:nth-of-type(1)
 chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
 espn.*##.col-one > article.quicklinks.sub-module > .quicklinks__container
@@ -215,8 +216,8 @@ fandom.com##.rail-recentImages-module
 
 google.com##.RB2q5e.OSrXXb.oYWfcb.GTERze
 google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
+google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
 google.com##.gb_Xc
-google.com##.gb_kd.gb_9a.gb_vd > div:nth-of-type(1)
 
 github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
 github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
