@@ -40,18 +40,18 @@
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     /* facebook, messenger, instagram - goal: reduce use of system font, grayscale */
     .x9f619 {
-        font-family: Optimistic, "Optimistic Text", var(--font-personal), Segoe UI,
+        font-family: "Optimistic Text", var(--font-personal), Segoe UI,
             Segoe UI Historic, Helvetica, Arial, sans-serif !important;
     }
 
     ._1gaz {
-        font-family: Optimistic, "Optimistic Text", var(--font-personal), SFProText-Medium,
+        font-family: "Optimistic Text", var(--font-personal), SFProText-Medium,
             Helvetica, Arial, sans-serif !important;
     }
 
     ._8e63,
     ._8eso {
-        font-family: Optimistic, "Optimistic Text", var(--font-personal),
+        font-family: "Optimistic Text", var(--font-personal),
             SFProDisplay-Regular, Helvetica, Arial, sans-serif !important;
     }
 
@@ -60,24 +60,24 @@
     ._58mk,
     ._8e4l,
     #globalContainer {
-        font-family: Optimistic, "Optimistic Text", var(--font-personal), SFProText-Regular,
+        font-family: "Optimistic Text", var(--font-personal), SFProText-Regular,
             Helvetica, Arial, sans-serif !important;
     }
 
     ._8esh {
-        font-family: Optimistic, "Optimistic Text", var(--font-personal), SFProText-Semibold,
+        font-family: "Optimistic Text", var(--font-personal), SFProText-Semibold,
             Helvetica, Arial, sans-serif !important;
     }
 
     ._53jh {
-        font-family: Optimistic, "Optimistic Text", var(--font-personal), Helvetica, Arial,
+        font-family: "Optimistic Text", var(--font-personal), Helvetica, Arial,
             sans-serif !important;
     }
 
     ._aacl,
     .x1i0vuye,
     ._acan {
-        font-family: Optimistic, "Optimistic Text", var(--font-personal), -apple-system,
+        font-family: "Optimistic Text", var(--font-personal), -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
@@ -686,6 +686,26 @@ domain("yewtu.be") {
     #ssr,
     #root,
     #recharts_measurement_span {
+        filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("lazada.com.ph") {
+    /* Lazada - Goal: Grayscale */
+    #_umfp,
+    #content,
+    #footer-pc-config,
+    #header-pc-config,
+    #pdp-nav,
+    .desktop-footer,
+    .header-content,
+    .links-list,
+    .lzd-site-menu-nav-container,
+    .lzd-site-menu-root,
+    div.hp-mod-card.card-banner-slider.J_NavScroll,
+    div.hp-mod-card.card-platform-campaign-banner.J_CampaignBanner,
+    div.page,
+    #container {
         filter: grayscale(80%);
     }
 }
