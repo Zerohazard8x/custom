@@ -247,3 +247,16 @@ khanacademy.org###donate-banner
 poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
 
 discord.com##.art-3yfHpl
+
+lazada.*###module_guide_app
+lazada.*###topActionLiveUpBanner
+lazada.*###webim-container
+lazada.*##.J_Categories.card-categories.hp-mod-card
+lazada.*##.crazy-deal-details-process
+lazada.*##.flash-sale-banner.J_FSBgImg
+lazada.*##.footer-second
+lazada.*##.footer-third
+lazada.*##.hotBorder--3N6k
+lazada.*##.hp-pc-lift-nav.J_LiftNav
+lazada.*##.pdp-mod-product-price-topbanner
+lazada.*##.pdp-seller-info-pc

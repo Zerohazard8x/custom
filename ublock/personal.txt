@@ -1099,7 +1099,6 @@
 ||azure.com$script,object,ping,stylesheet,other
 ||dscf.akamaiedge.net$script,object,ping,stylesheet,other
 ||geetest.com$script,object,ping,stylesheet,other
-||dsca.akamaiedge.net$script,object,ping,stylesheet,other
 ||wcpstatic.microsoft.com$script,object,ping,stylesheet,other
 ||123movies.cards$script,object,ping,stylesheet,other
 ||33across.com$script,object,ping,stylesheet,other
