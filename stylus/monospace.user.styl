@@ -319,8 +319,7 @@ domain("superuser.com") {
 
 @-moz-document domain("wikiwand.com") {
     /* Wikiwand - Goal: Code blocks, grayscale */
-    p > code,
-    li > code,
+    code,
     pre > span {
         font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
             Courier New, Courier, monospace !important;
@@ -490,6 +489,12 @@ domain("superuser.com") {
     }
 
     /* Grayscale filter */
+	.scs_theme,
+	.b_imagePair,
+	#syd_qna_suggestion,
+	.rs_chatReD,
+	.b_algo,
+	.b_sideBleed,
     .mc_vtvc_meta_block,
     .b_scopebar,
     #fltIdtCon,
@@ -600,9 +605,8 @@ domain("superuser.com") {
     .rd_gtrtb_nav_item {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
             Roboto, Arial, sans-serif !important;
-        filter: opacity(100%);
     }
-
+	
     .rwrl,
     .b_primtxt,
     .b_vList,
@@ -630,6 +634,7 @@ domain("superuser.com") {
         font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
+	.l_ecrd_imcolheader_ttl,
     .rs_chatText,
     .df_hd > .b_traits,
     #rd_gtrtb_ttl,
@@ -646,9 +651,8 @@ domain("superuser.com") {
     p > span > a,
     container-title {
         font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
-        filter: opacity(100%);
     }
-
+	
     .title,
     .tit,
     .b_title,
