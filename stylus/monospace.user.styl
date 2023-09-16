@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.1.2
+@version        1.1.3
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -15,11 +15,11 @@
         "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
         "IBM Plex Sans KR";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
-        "DroidSansM", "Hack", "Bitstream Vera Sans Mono", "BitstromVera",
-        "DejaVu Sans Mono", "Segoe UI Mono", "SF Mono", "SFMono-Regular",
-        "Consolas", "Intel One Mono", Menlo, Monaco, "Ubuntu Mono",
-        "Source Code Pro", "Andale Mono", "Lucida Console",
-        "Lucida Sans Typewriter";
+        "DroidSansM", "SF Mono", "SFMono-Regular", "Consolas", "Hack",
+        "Bitstream Vera Sans Mono", "BitstromVera", "DejaVu Sans Mono",
+        "Cascadia Code", "CaskaydiaCove", "Cascadia Mono", "Segoe UI Mono",
+        "Intel One Mono", Menlo, Monaco, "Ubuntu Mono", "Source Code Pro",
+        "Andale Mono", "Lucida Console", "Lucida Sans Typewriter";
     --block-mono: "IBM Plex Mono", "BlexMono", "Roboto Mono", "JetBrains Mono",
         "JetBrains Mono NL", "Input Mono", "Iosevka Expanded", "Iosevka",
         "Input Sans", "Liberation Mono";
@@ -489,12 +489,13 @@ domain("superuser.com") {
     }
 
     /* Grayscale filter */
-	.scs_theme,
-	.b_imagePair,
-	#syd_qna_suggestion,
-	.rs_chatReD,
-	.b_algo,
-	.b_sideBleed,
+    .b_ans,
+    .scs_theme,
+    .b_imagePair,
+    #syd_qna_suggestion,
+    .rs_chatReD,
+    .b_algo,
+    .b_sideBleed,
     .mc_vtvc_meta_block,
     .b_scopebar,
     #fltIdtCon,
@@ -606,7 +607,7 @@ domain("superuser.com") {
         font-family: "Segoe UI Variable Small", "Segoe UI", SegoeUI, Segoe,
             Roboto, Arial, sans-serif !important;
     }
-	
+
     .rwrl,
     .b_primtxt,
     .b_vList,
@@ -634,7 +635,7 @@ domain("superuser.com") {
         font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
-	.l_ecrd_imcolheader_ttl,
+    .l_ecrd_imcolheader_ttl,
     .rs_chatText,
     .df_hd > .b_traits,
     #rd_gtrtb_ttl,
@@ -652,7 +653,7 @@ domain("superuser.com") {
     container-title {
         font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
     }
-	
+
     .title,
     .tit,
     .b_title,
