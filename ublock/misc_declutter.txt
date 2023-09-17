@@ -260,3 +260,15 @@ lazada.*##.hotBorder--3N6k
 lazada.*##.hp-pc-lift-nav.J_LiftNav
 lazada.*##.pdp-mod-product-price-topbanner
 lazada.*##.pdp-seller-info-pc
+
+monkeytype.com###bannerCenter
+
+onedrive.live.com###PROD_OneDrive-Web_SuiteNav_Unknown_HeaderDiamond_container
+onedrive.live.com##.od-PremiumUpsellBanner
+onedrive.live.com##.od-PremiumUpsellBanner-details
+onedrive.live.com##.od-QuotaBar-bottom
+onedrive.live.com##.root-193.leftNavNotificationsLink_13fd1f41.ms-Link
+onedrive.live.com##.root-199.leftNavNotificationsLink_13fd1f41.ms-Link
+
+office.com##.ms-fcl-nd.welcome__title--dark.welcome__title--visual.welcome__title--consumer-with-badge.welcome__title--consumer.ms-fontWeight-light
+office.com##ohp-learning-shelf-react.ng-star-inserted
