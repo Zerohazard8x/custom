@@ -820,7 +820,6 @@
 ||patriothomestore.com$all
 ||payments-amazon.com$all
 ||pdmntn.com/popups$all
-||people-pa.clients6.google.com$all
 ||peoplestack-pa.clients6.google.com$all
 ||peoplestackwebexperiments-pa.clients6.google.com$all
 ||pesquiseiofertas.com.br/uete/uexx$all
@@ -1089,6 +1088,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||people-pa.clients6.google.com$script,object,ping,stylesheet,other
 ||mm-production.rappler.com$script,object,ping,stylesheet,other
 ||firebaseio.com$script,object,ping,stylesheet,other
 ||imgur.map.fastly.net$script,object,ping,stylesheet,other
