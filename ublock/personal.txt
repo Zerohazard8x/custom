@@ -361,7 +361,6 @@
 ||drufhfueg.com$all
 ||dsfhudbsyicvns.xyz$all
 ||dsgroupmedia.com$all
-||dspg.akamaiedge.net$all
 ||dsxljqkcgrv.xyz$all
 ||dtfjemrr.com$all
 ||dtuijirutx.com$all
@@ -1088,6 +1087,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||dspg.akamaiedge.net$script,object,ping,stylesheet,other
 ||people-pa.clients6.google.com$script,object,ping,stylesheet,other
 ||mm-production.rappler.com$script,object,ping,stylesheet,other
 ||firebaseio.com$script,object,ping,stylesheet,other
