@@ -23,16 +23,20 @@ bing.com###imgcrtr_key
 bing.com###imginspn_key
 bing.com###mfa_srch
 bing.com###sydneyLetsChatWidgetContainer
+bing.com###textDeeplinksWidgetContainer
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
+bing.com###wiki_expand
 bing.com##.b_bfb_lcg
 bing.com##.b_phead_chat_link
+bing.com##.b_vPanel > div:nth-of-type(3)
 bing.com##.below_sbox
 bing.com##.fabcolapse
 bing.com##.langdisp.b_hide
 bing.com##.new_see_more_container
 bing.com##.popup.b_bnp_bopc
 bing.com##.rh_scale.rh_reedm.toolTip.id_button
+bing.com##.rs_chatReD
 bing.com##.sw_mktsw
 bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
@@ -82,7 +86,6 @@ reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 
-twitter.com##.gryphon-beta-btn-container.js-gryphon-beta-btn
 twitter.com##.r-109y4c4.r-gu4em3.css-1dbjc4n
 twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-1dbjc4n > .r-qvutc0.r-bcqeeo.r-135wba7.r-1vr29t4.r-adyw6z.r-37j5jr.r-1nao33i.css-901oao
 twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-1dbjc4n > .r-qvutc0.r-bcqeeo.r-rjixqe.r-b88u0q.r-a023e6.r-37j5jr.r-1nao33i.css-901oao
@@ -106,6 +109,7 @@ twitter.com##div.css-1dbjc4n.r-1h3ijdo.r-5wli1b
 twitter.com##div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-136ojw6
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-5wli1b
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(5)
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-1dbjc4n:nth-of-type(1)
 
 vlr.gg##.d8fyh
@@ -228,10 +232,13 @@ metacritic.com##.right > .supplements_module.module
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(10)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(4)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(5)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(6)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(8)
+facebook.com##.x1iyjqo2 > ul
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(2)
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
 facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
+facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(1)
 facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
 facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
 facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
@@ -272,3 +279,24 @@ onedrive.live.com##.root-199.leftNavNotificationsLink_13fd1f41.ms-Link
 
 office.com##.ms-fcl-nd.welcome__title--dark.welcome__title--visual.welcome__title--consumer-with-badge.welcome__title--consumer.ms-fontWeight-light
 office.com##ohp-learning-shelf-react.ng-star-inserted
+
+to-do.live.com##.obf-Visible.obf-Toast
+
+myanimelist.net##.ga-impression.bottom-bar
+myanimelist.net##.ga-impression.top_signup
+myanimelist.net##.js-scrollfix-bottom-rel.rightside > table > tbody > tr:nth-of-type(2)
+myanimelist.net##.pb24 > .border_top
+myanimelist.net##article.left.widget-container:nth-of-type(1)
+myanimelist.net##article.left.widget-container:nth-of-type(3)
+myanimelist.net##article.left.widget-container:nth-of-type(4)
+myanimelist.net##article.left.widget-container:nth-of-type(6)
+myanimelist.net##article.left.widget-container:nth-of-type(8)
+myanimelist.net##td > .anime-slide-block
+myanimelist.net##tr:nth-of-type(1) > td > .border_top
+myanimelist.net##tr:nth-of-type(1) > td > div:nth-of-type(4)
+
+bard.google.com##.location-buttons-dot
+bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
+bard.google.com##.location-footer-atl-text
+bard.google.com##.pagination-wrapper
+bard.google.com##chat-app > .ng-star-inserted
