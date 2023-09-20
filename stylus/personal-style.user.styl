@@ -27,9 +27,11 @@
             "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
             Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
-        text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
+		background: none !important;
+        
+		/* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
+		text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
             #000000 0 0 5px !important;
-        /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
     }
 
     .captions-text {
@@ -106,7 +108,7 @@
         --roboto: Roboto, "Roboto Draft", RobotoDraft, Roboto-Regular;
     }
 
-    .s75CSd,
+	.s75CSd,
     .b0KoTc,
     .gb_Bd,
     #result-stats,
@@ -196,6 +198,7 @@
         font-family: var(--roboto), Helvetica Neue, Arial, sans-serif !important;
     }
 
+	div.VUoKZ, div.pGxpHc, c-wiz.zQTmif.SSPGKf.qiI0tc, div.gb_Kc, div.gb_ed, div.gb_q, #hfcr,
     #Rvx4kc,
     #_2mOxZN2bHsP8hwP9q7jwBQ_1,
     #_2mOxZN2bHsP8hwP9q7jwBQ_55,
@@ -216,7 +219,8 @@
     #pagetual-preload,
     #snbc,
     #xUserInfo,
-    c-wiz,
+    c-wiz.zQTmif.SSPGKf.O5K2Vd,
+    c-wiz.zQTmif.SSPGKf.nELLM,
     div.CvDJxb,
     div.DH7hPe,
     div.Fgvgjc,
@@ -278,6 +282,7 @@
     header.gb_Ha.gb_8a.gb_Ld.gb_jd.gb_ed.gb_Rc.gb_k,
     iframe.lb-k-Qc,
     span.a-b-ra-no,
+    span.a-b-ra-no,
     span.kpshf.line.gsr.bilit.big.mdm,
     textarea.csi,
     #roster-for-Google-Help {
@@ -303,7 +308,10 @@
     }
 }
 
-@-moz-document domain("inv.riverside.rocks"), domain("invidious.tiekoetter.com"), domain("yt.funami.tech"), domain("yewtu.be") {
+@-moz-document domain("inv.riverside.rocks"),
+domain("invidious.tiekoetter.com"),
+domain("yt.funami.tech"),
+domain("yewtu.be") {
     /* Invidious - goal: change all fonts, grayscale */
     #searchbox,
     .feed-menu,
@@ -688,7 +696,7 @@
 
 @-moz-document domain("lazada.com.ph") {
     /* Lazada - Goal: Grayscale */
-    .desktop-footer,
+	.desktop-footer,
     #_umfp,
     #content,
     #footer-pc-config,
