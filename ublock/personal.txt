@@ -514,7 +514,6 @@
 ||gateway.messenger.com$all
 ||gbl007.com$all
 ||geo.cnbc.com$all
-||geogebra.org$all
 ||getcookiestxt.com$all
 ||getsquirrel.co$all
 ||getter-privcontrolapplication-idsdataing.net.zooplus.de$all
@@ -1087,6 +1086,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||geogebra.org$script,object,ping,stylesheet,other
 ||dspg.akamaiedge.net$script,object,ping,stylesheet,other
 ||people-pa.clients6.google.com$script,object,ping,stylesheet,other
 ||mm-production.rappler.com$script,object,ping,stylesheet,other
