@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           personal
 @namespace      github.com/openstyles/stylus
-@version        1.1.7
+@version        1.1.8
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@import url('https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR');
+@import url("https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR");
 
 :root {
     /* Define variables */
@@ -19,7 +19,7 @@
 }
 
 @-moz-document domain("youtube.com") {
-    /* youtube - Goal: subtitles */
+    /* youtube - subtitles */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: "DIN Next", "DIN", "Bahnschrift",
@@ -29,10 +29,10 @@
             "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
             Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
-		background: none !important;
-        
-		/* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
-		text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
+        background: none !important;
+
+        /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
+        text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
             #000000 0 0 5px !important;
     }
 
@@ -42,7 +42,7 @@
 }
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
-    /* facebook, messenger, instagram - goal: reduce use of system font, grayscale */
+    /* facebook, messenger, instagram - reduce use of system font, grayscale */
     .x9f619 {
         font-family: "Optimistic Text", var(--font-personal), Segoe UI,
             Segoe UI Historic, Helvetica, Arial, sans-serif !important;
@@ -104,13 +104,13 @@
 }
 
 @-moz-document domain("google.com") {
-    /* Google - Goal: Reduce usage of Arial font, grayscale */
+    /* Google - Reduce usage of Arial font, grayscale */
     :root {
         /* Define variables */
         --roboto: Roboto, "Roboto Draft", RobotoDraft, Roboto-Regular;
     }
 
-	.s75CSd,
+    .s75CSd,
     .b0KoTc,
     .gb_Bd,
     #result-stats,
@@ -200,7 +200,13 @@
         font-family: var(--roboto), Helvetica Neue, Arial, sans-serif !important;
     }
 
-	div.VUoKZ, div.pGxpHc, c-wiz.zQTmif.SSPGKf.qiI0tc, div.gb_Kc, div.gb_ed, div.gb_q, #hfcr,
+    div.VUoKZ,
+    div.pGxpHc,
+    c-wiz.zQTmif.SSPGKf.qiI0tc,
+    div.gb_Kc,
+    div.gb_ed,
+    div.gb_q,
+    #hfcr,
     #Rvx4kc,
     #_2mOxZN2bHsP8hwP9q7jwBQ_1,
     #_2mOxZN2bHsP8hwP9q7jwBQ_55,
@@ -293,7 +299,7 @@
 }
 
 @-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net") {
-    /* Nitter - goal: change all fonts, grayscale */
+    /* Nitter - change all fonts, grayscale */
     .container,
     .tweet-content,
     .site-name,
@@ -314,7 +320,7 @@
 domain("invidious.tiekoetter.com"),
 domain("yt.funami.tech"),
 domain("yewtu.be") {
-    /* Invidious - goal: change all fonts, grayscale */
+    /* Invidious - change all fonts, grayscale */
     #searchbox,
     .feed-menu,
     .h-box,
@@ -333,7 +339,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("deepl.com") {
-    /* DeepL - Goal: Replace Segoe font, grayscale */
+    /* DeepL - Replace Segoe font, grayscale */
     body *:not(.fa) {
         font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
@@ -354,7 +360,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("cagematch.net") {
-    /* Cagematch - Goal: Reduce usage of Arial font, grayscale */
+    /* Cagematch - Reduce usage of Arial font, grayscale */
     .TemplateBody,
     .HeaderMenu,
     .RatingsBoxAdjustedRating,
@@ -371,7 +377,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("quora.com") {
-    /* Quora - Goal: Reduce usage of system font, grayscale */
+    /* Quora - Reduce usage of system font, grayscale */
     .q-box {
         font-family: var(--font-personal), -apple-system, system-ui,
             BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -387,7 +393,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("steampowered.com") {
-    /* Steam - goal: reduce usage of Arial font, grayscale */
+    /* Steam - reduce usage of Arial font, grayscale */
     #game_area_metascore > div,
     #queueActionsCtn,
     #review_context,
@@ -414,7 +420,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("tweetdeck.twitter.com") {
-    /* Tweetdeck/XPro - Goal: Change column width, fonts, AMOLED dark [Old], grayscale [All] */
+    /* Tweetdeck/XPro - Change column width, fonts, AMOLED dark [Old], grayscale [All] */
     .js-column.column {
         /* Change column width */
         width: 370px !important;
@@ -500,7 +506,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
-    /* SoraNews24 - Goal: Grayscale, font */
+    /* SoraNews24 - Grayscale, font */
     #container,
     #searchsubmit {
         font-family: var(--font-personal), arial, helvetica, clean, sans-serif !important;
@@ -521,7 +527,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("amazon.com"), domain("amazon.co.jp") {
-    /* Amazon - Goal: Grayscale, font */
+    /* Amazon - Grayscale, font */
     #a-page,
     #e > input,
     .a-container {
@@ -547,7 +553,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("emojipedia.org") {
-    /* Emojipedia - Goal: Grayscale, font */
+    /* Emojipedia - Grayscale, font */
     :root {
         --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88",
             "__Plus_Jakarta_Sans_Fallback_c26b88";
@@ -575,14 +581,14 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("twitch.tv") {
-    /* Twitch - Goal: UI tweaks */
+    /* Twitch - UI tweaks */
     .bTKXKk {
         background-color: none !important;
     }
 }
 
 @-moz-document domain("flightaware.com") {
-    /* FlightAware - Goal: Fonts, grayscale */
+    /* FlightAware - Fonts, grayscale */
     input,
     #s2id_autogen1,
     #s2id_autogen2,
@@ -612,7 +618,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk") {
-    /* ESPN - Goal: Font changes, grayscale */
+    /* ESPN - Font changes, grayscale */
     .HeaderEvent__Headline,
     .ScoreCell__Score,
     .StatBlock,
@@ -650,7 +656,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("metacritic.com") {
-    /* Metacritic - Goal: Fonts, grayscale */
+    /* Metacritic - Fonts, grayscale */
     #container,
     #content_section,
     #hpbanner,
@@ -680,7 +686,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("msn.com") {
-    /* MSN - Goal: Fonts, grayscale */
+    /* MSN - Fonts, grayscale */
     .lightTheme,
     .locationItem-DS-EntryPoint1-6,
     .suggestion-DS-EntryPoint1-1,
@@ -697,8 +703,8 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("lazada.com.ph") {
-    /* Lazada - Goal: Grayscale */
-	.desktop-footer,
+    /* Lazada - Grayscale */
+    .desktop-footer,
     #_umfp,
     #content,
     #footer-pc-config,
@@ -712,6 +718,30 @@ domain("yewtu.be") {
     div.hp-mod-card.card-platform-campaign-banner.J_CampaignBanner,
     div.page,
     #container {
+        filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("yahoo.com") {
+    /* Yahoo - Fonts, grayscale */
+    #doc {
+        font-family: YahooSans VF, Roboto, helvetica neue, helvetica, arial,
+            sans-serif;
+    }
+
+    #HPSPON-ad,
+    #Header,
+    #Masterwrap,
+    #advertisement-thamba,
+    #pagetual-preload,
+    #sa-feedback-panel,
+    div.darla,
+    div.sa-aria-live-region,
+    div.uh3-p,
+    div.uh3-p.uh3lite,
+    div.wafer-lightbox-overlay,
+    div.wafer-template,
+    div._yb_1ayze._yb_2ahyx {
         filter: grayscale(80%);
     }
 }
