@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.2.4
+@version        1.2.5
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@import url('https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono');
 
 :root {
     /* Define variables */
@@ -250,6 +250,7 @@
 @-moz-document domain("w3schools.com") {
     /* W3Schools - Code blocks, grayscale */
     .w3-code,
+	.language-java,
     .w3-codespan {
         font-family: var(--mono-combo), Consolas, "Source Code Pro", Menlo,
             Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
@@ -414,7 +415,7 @@
     /* Google bard - code blocks */
     .code-container,
     .markdown > p code {
-        font-family: "Google Sans Mono", var(--monospace), var(--block-mono),
+        font-family: "Google Sans Mono", var(--mono-combo),
             monospace !important;
         font-size: 16px !important;
 
@@ -447,25 +448,13 @@
         font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
-    .b_scopebar ul {
-        height: 45px !important;
-    }
-
-    .b_scopebar li,
-    .b_scopebar #b-scopeListItem-menu {
-        line-height: 40px !important;
-    }
-
-    .b_scopebar li::after {
-        margin-top: -1px !important;
-    }
-
     .b_scopebar_item > a {
         text-transform: none !important;
         font-size: 13px !important;
     }
 
     /* Grayscale filter */
+	.ptitle,
 	.ent-dtab-btn,
     .b_ans,
     .scs_theme,
@@ -673,6 +662,7 @@
 	}
 
     .cCodeBg,
+	.rd_code_grn,
     .rd_cCodeBg,
     .rd_code_blu,
     .rd_code_red {
