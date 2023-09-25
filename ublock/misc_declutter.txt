@@ -25,6 +25,7 @@ bing.com###imginspn_key
 bing.com###mfa_srch
 bing.com###sydneyLetsChatWidgetContainer
 bing.com###textDeeplinksWidgetContainer
+bing.com###tob_rail_container
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
 bing.com###wiki_expand
