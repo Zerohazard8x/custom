@@ -60,6 +60,7 @@ instructure.com###global_nav_student_services_link
 instructure.com###global_nav_student_services_menu
 instructure.com###right-side > div > h2.todo-list-header:first-child
 instructure.com###right-side > div > h2.todo-list-header:nth-child(4)
+instructure.com##.eesy_canvas.eesy_container_v4.eesy_container
 ||chat-sin.instructure.com/mini$domain=instructure.com
 
 gg.bet##div > div > div.sidebarToggler__btn___2wIhe
@@ -259,6 +260,7 @@ poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Butt
 poe.com##.SidebarFooter_footer__i_kOn > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
 
 discord.com##.art-3yfHpl
+discord.com##.badgeContainer-3TDXH5
 
 lazada.*###module_guide_app
 lazada.*###topActionLiveUpBanner
@@ -305,3 +307,23 @@ bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
 bard.google.com##.location-footer-atl-text
 bard.google.com##.pagination-wrapper
 bard.google.com##chat-app > .ng-star-inserted
+
+search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
+search.yahoo.com##.searchRightTopAds.reg
+
+duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.legacy-homepage-variants_scrollCta__hNjqv
+duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.belowTheFold_featuredSectionHidden__E4pfe.legacy-homepage-variants_belowTheFold__b5i_x
+duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv.container_root__Lmrbx
+duckduckgo.com##.legacy-homepage_ctaSection__5siuM
+
+wikiwand.com##.footer_donation__Cje_Q
+
+you.com##.LQwHO.sc-196cc170-0
+you.com##.blpnYK.sc-bb226f16-0
+you.com##.cnaKES.sc-6c4b6bfa-0
+you.com##.eDRRLP.sc-f838178a-0
+you.com##.ffsAZk.sc-cc5a18b7-1
+you.com##.inBNP.sc-91f548bc-1
+you.com##.izqrBn.sc-d9f31138-0
+you.com##.kEfGjV.sc-38580842-9
+you.com##.ljWYYA.sc-18e0beb6-0
