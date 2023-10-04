@@ -1420,7 +1420,6 @@
 ||tm-awx.com$script,object,ping,stylesheet,other
 ||tnn.in$script,object,ping,stylesheet,other
 ||topics-cdn.nintendo.co.jp$script,object,ping,stylesheet,other
-||typekit.net$script,object,ping,stylesheet,other
 ||unpkg.com$script,object,ping,stylesheet,other
 ||upload-os-bbs.hoyolab.com$script,object,ping,stylesheet,other
 ||utdstc.com$script,object,ping,stylesheet,other
