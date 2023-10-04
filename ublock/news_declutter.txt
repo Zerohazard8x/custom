@@ -96,3 +96,6 @@ reuters.com##.site-header__my-view__1_pOE
 rappler.com##.post-single__end-article-moodmeter
 rappler.com##.post-single__moodmeter
 rappler.com##.recommended-articles.container
+
+news.abs-cbn.com##.clearfix.article-label
+news.abs-cbn.com##.op-interactive

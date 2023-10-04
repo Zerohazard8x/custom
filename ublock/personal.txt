@@ -1107,7 +1107,6 @@
 ||4dex.io$script,object,ping,stylesheet,other
 ||a-mo.net$script,object,ping,stylesheet,other
 ||aadg.akadns.net$script,object,ping,stylesheet,other
-||abs-cbnnews.com$script,object,ping,stylesheet,other
 ||adform.net$script,object,ping,stylesheet,other
 ||adlooxtracking.com$script,object,ping,stylesheet,other
 ||adnxs.com$script,object,ping,stylesheet,other
