@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.2.5
+@version        1.2.6
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@import url('https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono');
+@import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono");
 
 :root {
     /* Define variables */
@@ -250,7 +250,7 @@
 @-moz-document domain("w3schools.com") {
     /* W3Schools - Code blocks, grayscale */
     .w3-code,
-	.language-java,
+    .language-java,
     .w3-codespan {
         font-family: var(--mono-combo), Consolas, "Source Code Pro", Menlo,
             Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
@@ -297,8 +297,9 @@
 
 @-moz-document domain("wikiwand.com") {
     /* Wikiwand - Code blocks, grayscale */
+    .monospaced,
     code,
-    pre > span {
+    pre {
         font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
             Courier New, Courier, monospace !important;
         font-size: 16px !important;
@@ -391,7 +392,16 @@
     .mp-box > p > code,
     tt,
     .mw-parser-output > pre {
-        font-family: var(--mono-combo), monospace, monospace !important;
+        font-family: var(--mono-combo), monospace !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+
+    span > b {
+        font-family: var(--mono-combo), Consolas, DejaVu Sans Mono,
+            Droid Sans Mono, Lucida Console, Courier New, monospace !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
@@ -415,8 +425,7 @@
     /* Google bard - code blocks */
     .code-container,
     .markdown > p code {
-        font-family: "Google Sans Mono", var(--mono-combo),
-            monospace !important;
+        font-family: "Google Sans Mono", var(--mono-combo), monospace !important;
         font-size: 16px !important;
 
         /* Ligatures */
@@ -454,9 +463,8 @@
     }
 
     /* Grayscale filter */
-	.ptitle,
-	.ent-dtab-btn,
-    .b_ans,
+    .ptitle,
+    .ent-dtab-btn,
     .scs_theme,
     .b_imagePair,
     #syd_qna_suggestion,
@@ -549,7 +557,6 @@
 
     /* Font styles */
     #detailMeta,
-    #id_n,
     .MicrosoftMap .taskBar > ul li.inputbox input,
     .b_entityTitle,
     .b_searchboxForm,
@@ -575,7 +582,8 @@
             Roboto, Arial, sans-serif !important;
     }
 
-	.wr_rat,
+    #id_n,
+    .wr_rat,
     .rwrl,
     .b_primtxt,
     .b_vList,
@@ -603,8 +611,11 @@
         font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
-	#tob_rail_title,
-	.mmtitle > a,
+	.b_mgridTitleCont,
+	.b_mgridTitle > a,
+	.v-ans-title,
+    #tob_rail_title,
+    .mmtitle > a,
     .l_ecrd_imcolheader_ttl,
     .rs_chatText,
     .df_hd > .b_traits,
@@ -617,14 +628,37 @@
     .nameContainer,
     .sto_title > .sto_slidelr,
     .sto_title,
-    h2,
+    .lite-entcard-exp > h2,
+	.richrsrailtitle > h2,
     h2 > span,
     p > span > a,
     container-title {
         font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
     }
+	
+	.v-ans-title,
+	.b_mgridTitle > a,
+	#tob_rail_title,
+    .mmtitle > a,
+    .rs_chatText,
+    .df_hd > .b_traits,
+    #rd_gtrtb_ttl,
+    .annotate .b_focusTextLarge,
+    .b_focusTextMedium,
+    .b_mgridTitle,
+    .b_subModule .b_wfInfoCard .bm_phase2 .ent-dtab-nam-ov-dtnp,
+    .irp-video-slogan,
+    .nameContainer,
+    .sto_title > .sto_slidelr,
+    .sto_title,
+    .lite-entcard-exp > h2,
+	.richrsrailtitle > h2,
+    h2 > span,
+    container-title {
+		font-weight: 600 !important;
+    }
 
-	.ux_ecmp-sel,
+    .ux_ecmp-sel,
     .title,
     .tit,
     .b_title,
@@ -658,13 +692,13 @@
         font-family: var(--roboto-then-segoe-small), Tahoma, Arial, Verdana,
             sans-serif !important;
     }
-	
-	.b_smText {
-		font-family: var(--roboto-then-segoe-small), Helvetica, sans-serif !important;
-	}
+
+    .b_smText {
+        font-family: var(--roboto-then-segoe-small), Helvetica, sans-serif !important;
+    }
 
     .cCodeBg,
-	.rd_code_grn,
+    .rd_code_grn,
     .rd_cCodeBg,
     .rd_code_blu,
     .rd_code_red {
@@ -867,7 +901,6 @@
             Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace,
             "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
             "Twemoji Mozilla" !important;
-
         font-size: 16px !important;
 
         /* Ligatures */
@@ -887,6 +920,11 @@
     dd,
     code {
         font-family: var(--mono-combo), "DejaVu Sans Mono", monospace !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
     div.bottomNav,
@@ -896,6 +934,52 @@
     div.topNav,
     p.legalCopy,
     #footer-banner {
+        filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("yahoo.com") {
+    /* Yahoo - Fonts, grayscale */
+    #doc {
+        font-family: YahooSans VF, Roboto, helvetica neue, helvetica, arial,
+            sans-serif;
+    }
+
+    .code-snippet {
+        font-family: var(--mono-combo), "SourceCodePro" !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+
+    .snippet-row {
+        font-family: var(--mono-combo), CourierNewPSMT !important;
+        font-size: 16px !important;
+
+        /* Ligatures */
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+
+    #HPSPON-ad,
+    #Header,
+    #Masterwrap,
+    #advertisement-thamba,
+    #doc,
+    #pagetual-preload,
+    #sa-feedback-panel,
+    #yui3-css-stamp,
+    div.darla,
+    div.hide,
+    div.sa-aria-live-region,
+    div.uh3-p,
+    div.uh3-p.uh3lite,
+    div.wafer-lightbox-overlay,
+    div.wafer-template,
+    div.yui3-widget.yui3-safesearch.hide,
+    div._yb_1ayze._yb_2ahyx {
         filter: grayscale(80%);
     }
 }
