@@ -63,6 +63,8 @@ gmanetwork.com##.story_main > .ad
 gmanetwork.com##.text-center.leaderboard.padded.row
 
 news.abs-cbn.com###sticker
+news.abs-cbn.com##.clearfix.article-label
+news.abs-cbn.com##.op-interactive
 
 howtogeek.com##.affiliate-sponsored
 howtogeek.com##.article-footer-newsletter
@@ -97,5 +99,4 @@ rappler.com##.post-single__end-article-moodmeter
 rappler.com##.post-single__moodmeter
 rappler.com##.recommended-articles.container
 
-news.abs-cbn.com##.clearfix.article-label
-news.abs-cbn.com##.op-interactive
+usatoday.com##.gnt_m_fs.gnt_m
