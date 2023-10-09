@@ -100,3 +100,7 @@ rappler.com##.post-single__moodmeter
 rappler.com##.recommended-articles.container
 
 usatoday.com##.gnt_m_fs.gnt_m
+
+oneesports.gg###footer-mpli
+oneesports.gg##.reading-time.post-meta
+oneesports.gg##div.transition-none.col-lg-8:nth-of-type(1) > user-reactions

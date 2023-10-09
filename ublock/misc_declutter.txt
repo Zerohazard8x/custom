@@ -251,6 +251,7 @@ facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nt
 sofascore.com##.bgUNaL.sc-fqkvVR
 sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
 sofascore.com##.eUkCqv.sc-fqkvVR
+sofascore.com##.jMZkBK.sc-fqkvVR
 sofascore.com##.kcHixx.sc-fqkvVR
 sofascore.com##[href="/en-us/betting-tips-today"]
 
@@ -309,6 +310,7 @@ bard.google.com##.pagination-wrapper
 bard.google.com##chat-app > .ng-star-inserted
 
 search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
+search.yahoo.com##.searchRightBottom.reg
 search.yahoo.com##.searchRightTopAds.reg
 
 duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.legacy-homepage-variants_scrollCta__hNjqv
@@ -322,6 +324,7 @@ you.com##.LQwHO.sc-196cc170-0
 you.com##.blpnYK.sc-bb226f16-0
 you.com##.cnaKES.sc-6c4b6bfa-0
 you.com##.eDRRLP.sc-f838178a-0
+you.com##.fGblHt.sc-191b525d-9
 you.com##.ffsAZk.sc-cc5a18b7-1
 you.com##.inBNP.sc-91f548bc-1
 you.com##.izqrBn.sc-d9f31138-0
@@ -338,3 +341,6 @@ shopee.ph##._2ypCMv
 speedrun.com##div.lg\:block.hidden:nth-of-type(3)
 
 monkeytype.com###newVersionIndicator
+
+imgur.com##.Sticky.Top
+imgur.com##.Button.EmeraldButton
