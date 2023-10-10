@@ -35,6 +35,7 @@ bing.com##.below_sbox
 bing.com##.btwrap > .iasabt
 bing.com##.bw-unNot5.bw-unSerp.bw-unAcctRt
 bing.com##.fabcolapse
+bing.com##.hp_body > div:nth-of-type(1)
 bing.com##.langdisp.b_hide
 bing.com##.new_see_more_container
 bing.com##.popup.b_bnp_bopc
@@ -315,6 +316,7 @@ search.yahoo.com##.searchRightTopAds.reg
 duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.legacy-homepage-variants_scrollCta__hNjqv
 duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.belowTheFold_featuredSectionHidden__E4pfe.legacy-homepage-variants_belowTheFold__b5i_x
 duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv.container_root__Lmrbx
+duckduckgo.com##.footer
 duckduckgo.com##.legacy-homepage_ctaSection__5siuM
 
 wikiwand.com##.footer_donation__Cje_Q
@@ -330,8 +332,9 @@ you.com##.izqrBn.sc-d9f31138-0
 you.com##.kEfGjV.sc-38580842-9
 you.com##.ljWYYA.sc-18e0beb6-0
 
-forum.xda-developers.com.xdaforums.com##.js-notices.notices--block.notices
-forum.xda-developers.com.xdaforums.com##.js-bottomFixTarget.u-bottomFixer
+forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
+forum.xda-developers.com,xdaforums.com##.js-bottomFixTarget.u-bottomFixer
+forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-of-type(3)
 
 shopee.ph##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
 shopee.ph##.MPbswA

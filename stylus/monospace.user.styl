@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.2.5
+@version        1.2.6
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -48,6 +48,7 @@
             "Apple Color Emoji", "Segoe UI Emoji" !important;
     }
 
+	tt,
     #commit-summary-input,
     .blob-code-inner,
     .blob-num,
@@ -62,7 +63,7 @@
     pre,
     kbd,
     code {
-        font-family: var(--mono-combo), Consolas, monospace !important;
+        font-family: var(--mono-combo), ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
@@ -75,8 +76,7 @@
 
     .blob-code-inner,
     .blob-num,
-    pre,
-    .markdown-body code {
+    pre {
         font-size: 16px !important;
     }
 
@@ -729,7 +729,7 @@
     }
 }
 
-@-moz-document domain("xda-developers.com") {
+@-moz-document domain("forum.xda-developers.com"), domain("xdaforums.com") {
     /* XDADevelopers - Code blocks, grayscale */
     #_qc_cookie_access,
     #pagetual-preload,
@@ -742,6 +742,7 @@
         filter: grayscale(80%);
     }
 
+	#footer,
     .menu-content,
     .p-body,
     .p-nav-inner,
