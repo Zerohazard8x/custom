@@ -332,9 +332,11 @@ you.com##.izqrBn.sc-d9f31138-0
 you.com##.kEfGjV.sc-38580842-9
 you.com##.ljWYYA.sc-18e0beb6-0
 
-forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
 forum.xda-developers.com,xdaforums.com##.js-bottomFixTarget.u-bottomFixer
+forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
 forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-of-type(3)
+forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__text
+forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
 
 shopee.ph##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
 shopee.ph##.MPbswA
