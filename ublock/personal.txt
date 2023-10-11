@@ -1418,7 +1418,6 @@
 ||tm-awx.com$script,inline-script,object,ping,stylesheet,other
 ||tnn.in$script,inline-script,object,ping,stylesheet,other
 ||topics-cdn.nintendo.co.jp$script,inline-script,object,ping,stylesheet,other
-||unpkg.com$script,inline-script,object,ping,stylesheet,other
 ||upload-os-bbs.hoyolab.com$script,inline-script,object,ping,stylesheet,other
 ||utdstc.com$script,inline-script,object,ping,stylesheet,other
 ||vercel-dns.com$script,inline-script,object,ping,stylesheet,other

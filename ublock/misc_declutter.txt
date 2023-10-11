@@ -228,6 +228,7 @@ google.com##.RB2q5e.OSrXXb.oYWfcb.GTERze
 google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
 google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
 
+github.com##.d-lg-block.d-md-block.d-sm-none.d-none.position-absolute.Popover.js-notice
 github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
 github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
 
