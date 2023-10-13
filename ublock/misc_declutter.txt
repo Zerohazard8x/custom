@@ -70,6 +70,7 @@ gg.bet##.Tabs__tabs___KOXfP.__app-Tabs-tabs
 gg.bet##.sidebar__content___2JoUk.__app-Sidebar-content
 gg.bet##div:nth-child(6) > div.btn-chat.btn-chat--fixed.btn-chat--left
 
+reddit.com###credential_picker_container
 reddit.com###popular-posts
 reddit.com##._1GieMuLljOrqnVpRAwz7VP
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
@@ -174,19 +175,6 @@ steampowered.com##div.home_ctn:nth-child(11)
 steampowered.com##div.home_ctn:nth-child(5)
 steampowered.com##div.rightcol.recent_reviews:nth-child(2)
 
-twitch.tv###twilight-sticky-footer-root
-twitch.tv##.bTKXKk.ibtYyW.ScCoreButtonSecondary-sc-ocjdkq-2.ScCoreButton-sc-ocjdkq-0 > .irroFV.ScCoreButtonLabel-sc-s7h2b7-0 > .phMMp.Layout-sc-1xcs6mc-0
-twitch.tv##.front-page-carousel.iqIerE.Layout-sc-1xcs6mc-0
-twitch.tv##.prime-offers.bZVrjx.Layout-sc-1xcs6mc-0
-twitch.tv##.top-nav__prime.hjmDKV.Layout-sc-1xcs6mc-0
-twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:last-child
-twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
-twitch.tv##div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
-twitch.tv##div.Layout-sc-1xcs6mc-0.iqIerE.front-page-carousel:first-child
-twitch.tv##div.hjmDKV.Layout-sc-1xcs6mc-0:nth-of-type(4)
-twitch.tv##div.hjmDKV.Layout-sc-1xcs6mc-0:nth-of-type(5)
-twitch.tv##div.side-nav-section.bSoSIm.Layout-sc-1xcs6mc-0:nth-of-type(3)
-
 youtube.com###about-these-results
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
@@ -235,6 +223,7 @@ github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
 metacritic.com##.summary_trailer
 metacritic.com##.right > .supplements_module.module
 
+facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-type(3)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(10)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(4)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(5)
@@ -249,10 +238,14 @@ facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
 facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
 facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
 
+sofascore.com##.bEAMMG.sc-fqkvVR
 sofascore.com##.bgUNaL.sc-fqkvVR
 sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
 sofascore.com##.eUkCqv.sc-fqkvVR
+sofascore.com##.fSiJSi.sc-fqkvVR
+sofascore.com##.heJcSB.sc-fqkvVR
 sofascore.com##.jMZkBK.sc-fqkvVR
+sofascore.com##.kKRTNa.sc-fqkvVR
 sofascore.com##.kcHixx.sc-fqkvVR
 sofascore.com##[href="/en-us/betting-tips-today"]
 
@@ -310,7 +303,9 @@ bard.google.com##.location-footer-atl-text
 bard.google.com##.pagination-wrapper
 bard.google.com##chat-app > .ng-star-inserted
 
+search.yahoo.com###ft
 search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
+search.yahoo.com##.searchCenterTop.reg > .last
 search.yahoo.com##.searchRightBottom.reg
 search.yahoo.com##.searchRightTopAds.reg
 
@@ -349,3 +344,7 @@ monkeytype.com###newVersionIndicator
 
 imgur.com##.Sticky.Top
 imgur.com##.Button.EmeraldButton
+
+youtube.com##.ythd-israel-support
+
+discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
