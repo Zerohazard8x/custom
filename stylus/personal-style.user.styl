@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal
 @namespace      github.com/openstyles/stylus
-@version        1.1.9
+@version        1.2.0
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -44,24 +44,28 @@
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     /* facebook, messenger, instagram - reduce use of system font, grayscale */
+	:root {
+        --facebook: "Optimistic Text", "Optimistic Display", "Facebook Sans", "Optimistic Text Normal", "Optimistic Display Bold", "Facebook Sans Bold", FacebookSansApp-Bold;
+    }
+	
 	.x12qp5cl {
-		font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal), Placeholder Font, Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif !important
+		font-family: var(--facebook), var(--font-personal), Placeholder Font, Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif !important
 	}
 	
     .x9f619 {
-        font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal), Segoe UI,
+        font-family: var(--facebook), var(--font-personal), Segoe UI,
             Segoe UI Historic, Helvetica, Arial, sans-serif !important;
     }
 
     ._1gaz {
-        font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal), SFProText-Medium,
+        font-family: var(--facebook), var(--font-personal), SFProText-Medium,
             Helvetica, Arial, sans-serif !important;
     }
 
     ._8e63,
 	._9axz,
     ._8eso {
-        font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal),
+        font-family: var(--facebook), var(--font-personal),
             SFProDisplay-Regular, Helvetica, Arial, sans-serif !important;
     }
 
@@ -70,29 +74,26 @@
     ._58mk,
     ._8e4l,
     #globalContainer {
-        font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal), SFProText-Regular,
-            Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font-personal), SFProText-Regular, Helvetica, Arial, sans-serif !important;
     }
 
     ._8esh {
-        font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal), SFProText-Semibold,
-            Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font-personal), SFProText-Semibold, Helvetica, Arial, sans-serif !important;
     }
 
+	._4g34,
     ._53jh {
-        font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal), Helvetica, Arial,
-            sans-serif !important;
+        font-family: var(--facebook), var(--font-personal), Helvetica, Arial, sans-serif !important;
     }
 
     ._aacl,
     .x1i0vuye,
     ._acan {
-        font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal), -apple-system,
-            BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-family: var(--facebook), var(--font-personal), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
 	._7y88 {
-		font-family: "Optimistic Text", "Optimistic Display", "Optimistic Text Normal", "Optimistic Display Bold", var(--font-personal), Arial;
+		font-family: var(--facebook), var(--font-personal), Arial;
 	}
 	
     #mount_0_0_CV,
@@ -120,6 +121,8 @@
         --roboto: Roboto, "Roboto Draft", RobotoDraft, Roboto-Regular;
     }
 
+	#exps > button,
+	#lud-search,
     .s75CSd,
     .b0KoTc,
     .gb_Bd,
@@ -728,30 +731,6 @@ domain("yewtu.be") {
     div.hp-mod-card.card-platform-campaign-banner.J_CampaignBanner,
     div.page,
     #container {
-        filter: grayscale(80%);
-    }
-}
-
-@-moz-document domain("yahoo.com") {
-    /* Yahoo - Fonts, grayscale */
-    #doc {
-        font-family: YahooSans VF, Roboto, helvetica neue, helvetica, arial,
-            sans-serif;
-    }
-
-    #HPSPON-ad,
-    #Header,
-    #Masterwrap,
-    #advertisement-thamba,
-    #pagetual-preload,
-    #sa-feedback-panel,
-    div.darla,
-    div.sa-aria-live-region,
-    div.uh3-p,
-    div.uh3-p.uh3lite,
-    div.wafer-lightbox-overlay,
-    div.wafer-template,
-    div._yb_1ayze._yb_2ahyx {
         filter: grayscale(80%);
     }
 }
