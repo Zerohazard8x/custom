@@ -634,7 +634,6 @@
 ||jumtools.net$all
 ||juntadeconfrariesdese.live-website.com/wp-content/jh/$all
 ||justwatch.com$all
-||jwplayer-dualstack.map.fastly.net$all
 ||kabeleins.de$all
 ||kabi.tk$all
 ||kamilszczepanski.com$all
@@ -1083,6 +1082,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||jwplayer-dualstack.map.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||alikunlun.com$script,inline-script,object,ping,stylesheet,other
 ||cloudinary.com$script,inline-script,object,ping,stylesheet,other
 ||geogebra.org$script,inline-script,object,ping,stylesheet,other
