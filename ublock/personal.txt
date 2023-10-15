@@ -40,7 +40,6 @@
 ||alemelektronik.com/wp-admin/overview/lg7wxidrujea5vv/$all
 ||alemelektronik.com/wp-admin/overview/lg7wxidrujea5vv//$all
 ||alida.com$all
-||alikunlun.com$all
 ||amai.com$all
 ||amaicdn.com$all
 ||amazonaws.com/sp-sw-sdk-production$all
@@ -259,7 +258,6 @@
 ||cljckjjaltrl.xyz$all
 ||clkxgnekgqnss.com$all
 ||closeby.co$all
-||cloudinary.com$all
 ||clouvider.net$all
 ||clue6load.com$all
 ||clvofywesmi.com$all
@@ -1085,12 +1083,13 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||alikunlun.com$script,inline-script,object,ping,stylesheet,other
+||cloudinary.com$script,inline-script,object,ping,stylesheet,other
 ||geogebra.org$script,inline-script,object,ping,stylesheet,other
 ||dspg.akamaiedge.net$script,inline-script,object,ping,stylesheet,other
 ||people-pa.clients6.google.com$script,inline-script,object,ping,stylesheet,other
 ||mm-production.rappler.com$script,inline-script,object,ping,stylesheet,other
 ||firebaseio.com$script,inline-script,object,ping,stylesheet,other
-||sina.com.cn$script,inline-script,object,ping,stylesheet,other
 ||passport.twitch.tv$script,inline-script,object,ping,stylesheet,other
 ||jsdelivr.map.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||launchdarkly.com$script,inline-script,object,ping,stylesheet,other

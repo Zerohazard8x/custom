@@ -271,6 +271,7 @@ lazada.*##.pdp-mod-product-price-topbanner
 lazada.*##.pdp-seller-info-pc
 
 monkeytype.com###bannerCenter
+monkeytype.com###newVersionIndicator
 
 onedrive.live.com###PROD_OneDrive-Web_SuiteNav_Unknown_HeaderDiamond_container
 onedrive.live.com##.od-PremiumUpsellBanner
@@ -340,11 +341,12 @@ shopee.ph##._2ypCMv
 
 speedrun.com##div.lg\:block.hidden:nth-of-type(3)
 
-monkeytype.com###newVersionIndicator
-
 imgur.com##.Sticky.Top
 imgur.com##.Button.EmeraldButton
 
 youtube.com##.ythd-israel-support
 
 discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
+
+merriam-webster.com##.pe-0.position-relative.left-sidebar-col.col-2
+merriam-webster.com##.show-full-list.additional-content-area
