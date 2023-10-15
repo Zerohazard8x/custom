@@ -8,7 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|IBM+Plex+Mono");
+@import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono");
 
 :root {
     /* Define variables */
@@ -309,16 +309,21 @@
     pre {
         font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
             Courier New, Courier, monospace !important;
-        font-size: 16px !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
-
-    #__next {
-        filter: grayscale(80%);
+	
+	.monospaced,
+    pre {
+        font-size: 16px !important;
     }
+	
+	.gallery_wrapper__1a7bM,
+	article {
+		filter: grayscale(80%);
+	}
 }
 
 @-moz-document domain("developer.mozilla.org") {
