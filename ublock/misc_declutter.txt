@@ -8,6 +8,7 @@ bing.com###asmsbribbon_li
 bing.com###b-scopeListItem-bingatwork
 bing.com###b_algospacing
 bing.com###b_alsotry
+bing.com###b_metaChat
 bing.com###b_op_anch
 bing.com###b_op_flyout
 bing.com###b_results > li.b_bfb_lcg:nth-child(6)
