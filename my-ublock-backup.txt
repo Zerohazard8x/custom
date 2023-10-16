@@ -1,15 +1,17 @@
 {
-  "timeStamp": 1692098741933,
-  "version": "1.51.0",
+  "timeStamp": 1697433714788,
+  "version": "1.52.2",
   "userSettings": {
+    "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
-    "externalLists": "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/misc_declutter.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt",
+    "externalLists": "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt\nhttps://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt",
     "importedLists": [
       "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt",
-      "https://github.com/Zerohazard8x/custom/raw/main/ublock/misc_declutter.txt",
       "https://github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt",
-      "https://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt"
-    ]
+      "https://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt",
+      "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt"
+    ],
+    "popupPanelSections": 31
   },
   "selectedFilterLists": [
     "user-filters",
@@ -32,25 +34,26 @@
     "adguard-cookies",
     "ublock-cookies-adguard",
     "ublock-annoyances",
-    "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt",
-    "https://github.com/Zerohazard8x/custom/raw/main/ublock/misc_declutter.txt",
+    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt",
     "https://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt",
-    "https://github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt"
+    "https://github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt",
+    "https://github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt"
   ],
-  "hiddenSettings": {},
+  "hiddenSettings": {
+    "autoUpdateDelayAfterLaunch": 1,
+    "autoUpdatePeriod": 1
+  },
   "whitelist": [
-    "about-scheme",
     "chrome-extension-scheme",
     "chrome-scheme",
     "edge-scheme",
     "moz-extension-scheme",
     "opera-scheme",
-    "uso.kkx.one",
     "vivaldi-scheme",
     "wyciwyg-scheme"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false",
-  "userFilters": "twitter.com##.r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n > .r-kemksi.css-1dbjc4n\ntwitter.com##.r-ttdzmv.r-16y2uox.r-1iusvr4.css-1dbjc4n\ntwitter.com##.r-109y4c4.r-gu4em3.css-1dbjc4n\n\n! 2023-08-15 https://entertainment.inquirer.net\nentertainment.inquirer.net##.showcookmsg.qni-cookmsg\n"
+  "userFilters": ""
 }
