@@ -26,6 +26,7 @@ twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
 ||static-cdn.jtvnw.net/badges/v1/5864739a-5e58-4623-9450-a2c0555ef90b/*$image
 ||static-cdn.jtvnw.net/badges/v1/aef2cd08-f29b-45a1-8c12-d44d7fd5e6f0/*$image
 ||static-cdn.jtvnw.net/badges/v1/bbbe0db0-a598-423e-86d0-f9fb98ca1933/*$image
+||static-cdn.jtvnw.net/badges/v1/bd444ec6-8f34-4bf9-91f4-af1e3428d80f/*$image
 ||static-cdn.jtvnw.net/badges/v1/e33d8b46-f63b-4e67-996d-4a7dcec0ad33/*$image
 
 youtube.com###live-chat-message-input
