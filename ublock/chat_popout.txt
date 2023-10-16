@@ -22,6 +22,7 @@ twitch.tv##div.hjmDKV.Layout-sc-1xcs6mc-0:nth-of-type(4)
 twitch.tv##div.hjmDKV.Layout-sc-1xcs6mc-0:nth-of-type(5)
 twitch.tv##div.side-nav-section.bSoSIm.Layout-sc-1xcs6mc-0:nth-of-type(3)
 twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
+||static-cdn.jtvnw.net/badges/v1/3158e758-3cb4-43c5-94b3-7639810451c5/*$image
 ||static-cdn.jtvnw.net/badges/v1/4b76d5f2-91cc-4400-adf2-908a1e6cfd1e/*$image
 ||static-cdn.jtvnw.net/badges/v1/5864739a-5e58-4623-9450-a2c0555ef90b/*$image
 ||static-cdn.jtvnw.net/badges/v1/aef2cd08-f29b-45a1-8c12-d44d7fd5e6f0/*$image
