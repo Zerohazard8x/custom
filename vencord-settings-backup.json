@@ -5,7 +5,7 @@
         "autoUpdateNotification": true,
         "useQuickCss": true,
         "themeLinks": [
-            "https://raw.githubusercontent.com/refact0r/midnight-discord/master/midnight.theme.css"
+            "https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css"
         ],
         "enableReactDevtools": false,
         "frameless": false,
@@ -472,6 +472,45 @@
             "VolumeBooster": {
                 "enabled": true,
                 "multiplier": 2
+            },
+            "CopyUserURLs": {
+                "enabled": false
+            },
+            "Dearrow": {
+                "enabled": false
+            },
+            "FixSpotifyEmbeds": {
+                "enabled": false
+            },
+            "NormalizeMessageLinks": {
+                "enabled": false
+            },
+            "PictureInPicture": {
+                "enabled": false
+            },
+            "PreviewMessage": {
+                "enabled": false
+            },
+            "SecretRingToneEnabler": {
+                "enabled": false
+            },
+            "ServerProfile": {
+                "enabled": false
+            },
+            "ShowTimeouts": {
+                "enabled": false
+            },
+            "ThemeAttributes": {
+                "enabled": false
+            },
+            "NoMosaic": {
+                "enabled": false
+            },
+            "OnePingPerDM": {
+                "enabled": false
+            },
+            "PermissionFreeWill": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -484,9 +523,9 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1691943234453
+            "settingsSyncVersion": 1697444947053
         },
         "enabledThemes": []
     },
-    "quickCss": ":root {\r\n    /* Define variables */\r\n    --not-monospace: -apple-system, BlinkMacSystemFont, \"SF Pro\", \"SF Pro Text\",\r\n        \"Inter\", \"Roboto\", \"IBM Plex Sans\", \"Noto Sans\", \"Noto Sans JP\",\r\n        \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\", \"IBM Plex Sans JP\",\r\n        \"IBM Plex Sans KR\";\r\n    --monospace: \"Fira Code\", \"Fira Mono\", \"Noto Mono\", \"Noto Sans Mono\",\r\n        \"DroidSansM\", \"Hack\", \"Bitstream Vera Sans Mono\", \"BitstromVera\",\r\n        \"DejaVu Sans Mono\", \"Segoe UI Mono\", \"SF Mono\", \"SFMono-Regular\", Menlo,\r\n        Monaco, \"Ubuntu Mono\", \"Consolas\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Source Code Pro\";\r\n    --block-mono: \"JetBrains Mono\", \"JetBrains Mono NL\", \"Input Mono\",\r\n        \"IBM Plex Mono\", \"BlexMono\", \"Roboto Mono\", \"Iosevka Expanded\",\r\n        \"Iosevka\", \"Input Sans\", \"Liberation Mono\";\r\n}\r\n\r\nhtml,\r\nbody,\r\n:root {\r\n    filter: opacity(100%);\r\n}\r\n\r\n*:not(pre, pre *, code, .far, .fa, .glyphicon, [class*=\"vjs-\"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*=\"mu-\"], .glyphicon, .icon) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n}\r\n\r\n.card-3ie2dy > div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2,\r\nh3,\r\nspan,\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", \"Noto Sans\", \"Noto Sans JP\",\r\n    \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\", \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\r\n}\r\n\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--block-mono), var(--monospace), Consolas,\r\n        \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco,\r\n        \"Courier New\", Courier, monospace !important;\r\n\r\n    /* Ligatures */\r\n    font-variant-ligatures: common-ligatures, contextual !important;\r\n    font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\r\n}"
+    "quickCss": "@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');\r\n\r\n:root {\r\n    /* Define variables */\r\n    --not-monospace: -apple-system, BlinkMacSystemFont, \"SF Pro\", \"SF Pro Text\",\r\n        \"Inter\", \"Roboto\", \"IBM Plex Sans\", \"Noto Sans\", \"Noto Sans JP\",\r\n        \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\", \"IBM Plex Sans JP\",\r\n        \"IBM Plex Sans KR\";\r\n    --monospace: \"Fira Code\", \"Fira Mono\", \"Noto Mono\", \"Noto Sans Mono\",\r\n        \"DroidSansM\", \"Hack\", \"Bitstream Vera Sans Mono\", \"BitstromVera\",\r\n        \"DejaVu Sans Mono\", \"Segoe UI Mono\", \"SF Mono\", \"SFMono-Regular\",\r\n        \"Consolas\", \"Intel One Mono\", Menlo, Monaco, \"Ubuntu Mono\",\r\n        \"Source Code Pro\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\";\r\n    --block-mono: \"IBM Plex Mono\", \"BlexMono\", \"Roboto Mono\", \"JetBrains Mono\",\r\n        \"JetBrains Mono NL\", \"Input Mono\", \"Iosevka Expanded\", \"Iosevka\",\r\n        \"Input Sans\", \"Liberation Mono\";\r\n    --mono-combo: var(--block-mono), var(--monospace);\r\n}\r\n\r\n*:not(pre, pre *, code, .far, .fa, .glyphicon, [class*=\"vjs-\"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*=\"mu-\"], .glyphicon, .icon) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n}\r\n\r\n.card-3ie2dy > div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2,\r\nh3,\r\nspan,\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", \"Noto Sans\", \"Noto Sans JP\", \"Noto Sans TC\",\r\n        \"Noto Sans SC\", \"Noto Sans KR\", \"Helvetica Neue\", Helvetica, Arial,\r\n        sans-serif !important;\r\n}\r\n\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--block-mono), var(--monospace), Consolas,\r\n        \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco,\r\n        \"Courier New\", Courier, monospace !important;\r\n\r\n    /* Ligatures */\r\n    font-variant-ligatures: common-ligatures, contextual !important;\r\n    font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\r\n}\r\n\r\n.roleMention-11Aaqi,\r\n.membersGroup-2eiWxl,\r\n.roles-3vQPxb,\r\n.username-3_PJ5r,\r\n.username-h_Y3Us,\r\n.username-vAneIW,\r\n.mention {\r\n    filter: grayscale(80%);\r\n}"
 }
