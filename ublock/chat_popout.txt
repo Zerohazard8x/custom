@@ -9,6 +9,7 @@ twitch.tv##.bTKXKk.ibtYyW.ScCoreButtonSecondary-sc-ocjdkq-2.ScCoreButton-sc-ocjd
 twitch.tv##.front-page-carousel.iqIerE.Layout-sc-1xcs6mc-0
 twitch.tv##.hbsjFp.Layout-sc-1xcs6mc-0 > .cEaLXq.Layout-sc-1xcs6mc-0
 twitch.tv##.prime-offers.bZVrjx.Layout-sc-1xcs6mc-0
+twitch.tv##.react-modal__content.ReactModal__Content--after-open.ReactModal__Content > div
 twitch.tv##.top-nav__prime.bFqPcI.Layout-sc-1xcs6mc-0
 twitch.tv##.vod-message__header.cRArZq.Layout-sc-1xcs6mc-0
 twitch.tv##div.Layout-sc-1xcs6mc-0.bGyiZe.chat-input:nth-child(6) > div:last-child
@@ -26,6 +27,7 @@ twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
 ||static-cdn.jtvnw.net/badges/v1/4b76d5f2-91cc-4400-adf2-908a1e6cfd1e/*$image
 ||static-cdn.jtvnw.net/badges/v1/5864739a-5e58-4623-9450-a2c0555ef90b/*$image
 ||static-cdn.jtvnw.net/badges/v1/aef2cd08-f29b-45a1-8c12-d44d7fd5e6f0/*$image
+||static-cdn.jtvnw.net/badges/v1/b817aba4-fad8-49e2-b88a-7cc744dfa6ec/*$image
 ||static-cdn.jtvnw.net/badges/v1/bbbe0db0-a598-423e-86d0-f9fb98ca1933/*$image
 ||static-cdn.jtvnw.net/badges/v1/bd444ec6-8f34-4bf9-91f4-af1e3428d80f/*$image
 ||static-cdn.jtvnw.net/badges/v1/e33d8b46-f63b-4e67-996d-4a7dcec0ad33/*$image

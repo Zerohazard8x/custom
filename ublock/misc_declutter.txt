@@ -161,20 +161,23 @@ getpocket.com##div > div.onboarding-badge:first-child
 getpocket.com##div > nav > a.css-18qpw11
 getpocket.com##ul.css-1bjgl5h.links
 
-steampowered.com###achievement_block
-steampowered.com###noteworthy_tab
-steampowered.com##a.top_promo.ds_no_flags.app_impression_tracked:first-child
-steampowered.com##div > div > a.menuitem:nth-child(5)
-steampowered.com##div > div > a.tab:nth-child(9)
-steampowered.com##div > div > div.block:nth-child(12)
-steampowered.com##div > div > div.game_page_autocollapse:first-child
-steampowered.com##div > div.queue_overflow_ctn:nth-child(3)
-steampowered.com##div > div_block > div.gutter_items:last-child
-steampowered.com##div.gutter_header.pad:nth-child(6)
-steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
-steampowered.com##div.home_ctn:nth-child(11)
-steampowered.com##div.home_ctn:nth-child(5)
-steampowered.com##div.rightcol.recent_reviews:nth-child(2)
+store.steampowered.com###achievement_block
+store.steampowered.com###noteworthy_tab
+store.steampowered.com##.content > h1
+store.steampowered.com##.glance_details
+store.steampowered.com##.responsive_apppage_reviewblock.block.steam_curators_block
+store.steampowered.com##a.top_promo.ds_no_flags.app_impression_tracked:first-child
+store.steampowered.com##div > div > a.menuitem:nth-child(5)
+store.steampowered.com##div > div > a.tab:nth-child(9)
+store.steampowered.com##div > div > div.block:nth-child(12)
+store.steampowered.com##div > div > div.game_page_autocollapse:first-child
+store.steampowered.com##div > div.queue_overflow_ctn:nth-child(3)
+store.steampowered.com##div > div_block > div.gutter_items:last-child
+store.steampowered.com##div.gutter_header.pad:nth-child(6)
+store.steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
+store.steampowered.com##div.home_ctn:nth-child(11)
+store.steampowered.com##div.home_ctn:nth-child(5)
+store.steampowered.com##div.rightcol.recent_reviews:nth-child(2)
 
 youtube.com###about-these-results
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
@@ -219,10 +222,8 @@ google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
 
 github.com##.d-lg-block.d-md-block.d-sm-none.d-none.position-absolute.Popover.js-notice
 github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
+github.com##.mx-auto.col-8 > .mb-2
 github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
-
-metacritic.com##.summary_trailer
-metacritic.com##.right > .supplements_module.module
 
 facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-type(3)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(10)
@@ -351,3 +352,7 @@ discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
 
 merriam-webster.com##.pe-0.position-relative.left-sidebar-col.col-2
 merriam-webster.com##.show-full-list.additional-content-area
+
+hltv.org##.newsgrouping-header
+hltv.org##.right2Col > aside:nth-of-type(2)
+hltv.org##aside:nth-of-type(4)
