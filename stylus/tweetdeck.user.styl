@@ -1,0 +1,92 @@
+/* ==UserStyle==
+@name           Tweetdeck/XPro
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Change column width, fonts, AMOLED dark [Old], grayscale [All]. Retired bc XPro is paid now
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("tweetdeck.twitter.com") {
+    .js-column.column {
+        /* Change column width */
+        width: 370px !important;
+    }
+
+    html.dark .is-wide-columns .media-size-medium,
+    .media-image,
+    .media-grid-container {
+        /* Make images taller */
+        height: 360px !important;
+    }
+
+    .is-wide-columns,
+    .js-dropdown-content,
+    .js-modal-panel,
+    .js-submittable-input,
+    .action-text,
+    .s-fluid-height,
+    .prf,
+    .js-popover-content,
+    .is-focused,
+    label,
+    .js-filter-types,
+    .js-filter-input,
+    .login-container,
+    .r-1qd0xha {
+        font-family: "TwitterChirp", var(--font-personal), -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue",
+            sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+            Meiryo, "ＭＳ Ｐゴシック", "MS PGothic" !important;
+    }
+
+    .btn,
+    .label,
+    .btn-on-dark,
+    .Button,
+    .js-action-button {
+        font-family: "TwitterChirp", var(--font-personal), Helvetica Neue,
+            Helvetica, Arial, sans-serif !important;
+    }
+
+    /* AMOLED dark */
+    html.dark .app-columns-container,
+    html.dark .stream-item,
+    html.dark .column-panel,
+    html.dark .column-title-edit-box,
+    html.dark .column-header,
+    html.dark .app-header,
+    html.dark .column-nav-item,
+    html.dark .app-navigator,
+    html.dark .app-title,
+    html.dark .border-divider,
+    html.dark .with-column-divider-bottom,
+    html.dark .column-options .button-tray,
+    html.dark .dropdown-menu,
+    html.dark .popover,
+    html.dark input,
+    html.dark .detail-view-inline,
+    html.dark .detail-view-inline-text,
+    html.dark .facet-type.is-active,
+    html.dark .column,
+    html.dark .mdl {
+        background-color: black !important;
+        border-bottom-color: black !important;
+        border-color: black !important;
+    }
+
+    /* Grayscale */
+    #btdRoot,
+    #update-sound,
+    div.application.js-app.is-condensed,
+    div.context-menu,
+    div.is-hidden.js-message-banner.message-banner,
+    div.js-app-loading.login-container,
+    div.js-modals-container,
+    div.js-app-loading.login-container,
+    div.is-hidden.application.js-app,
+    div.Layer.NotificationListLayer,
+    #react-root {
+        filter: grayscale(80%);
+    }
+}
