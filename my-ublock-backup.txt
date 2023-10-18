@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1697433714788,
+  "timeStamp": 1697627128492,
   "version": "1.52.2",
   "userSettings": {
     "advancedUserEnabled": true,
@@ -11,7 +11,7 @@
       "https://github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt",
       "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt"
     ],
-    "popupPanelSections": 31
+    "suspendUntilListsAreLoaded": false
   },
   "selectedFilterLists": [
     "user-filters",
@@ -49,6 +49,8 @@
     "edge-scheme",
     "moz-extension-scheme",
     "opera-scheme",
+    "tweetdeck.twitter.com",
+    "uso.kkx.one",
     "vivaldi-scheme",
     "wyciwyg-scheme"
   ],
