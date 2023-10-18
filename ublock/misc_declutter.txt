@@ -262,8 +262,14 @@ poe.com##.SidebarFooter_footer__i_kOn > a.Button_secondary__eZeoz.Button_buttonB
 discord.com##.art-3yfHpl
 discord.com##.badgeContainer-1OeZs3
 discord.com##.badgeContainer-3TDXH5
+discord.com##.buttonContainer-2z-326
 discord.com##.colorDefault-1e8tQv.notice-2HEN-u
+discord.com##.containerDefaultMargin-3T8Dq_.premiumFeatureBannerBackground-Epwl-X.container-5BK5-N
+discord.com##.customizationSectionBackground-1-leQn.background-yH6t2p.premiumBackground-34OIdE > .title-1HgbhV.eyebrow-2wJAoF.h5-2feg8J > .baseShapeRound-3epLEv.eyebrow-132Xza.base-3IDx3L.textBadge-1fdDPJ.newBadge-2Y53Os.premiumBadge-2VNQ3o
 discord.com##.editorAnimate-2BAiXS.editor-1m9XtV
+discord.com##.emptyHeader-2tT-AY.defaultColor-1GKx81.heading-md-semibold-2h_vsp.defaultColor-1EVLSt
+discord.com##.scrollerBase-1Pkza4.none-1rXy4P.scroller-3X7KbA > div.listItem-3SmSlK:nth-of-type(7)
+discord.com##.tryItOutSection-W9qeGH.featureBorder-2Jl8g4.premiumFeatureBorder-1i95si
 
 lazada.*###module_guide_app
 lazada.*###topActionLiveUpBanner
