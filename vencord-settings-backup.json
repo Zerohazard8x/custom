@@ -37,7 +37,7 @@
                 "enabled": true
             },
             "MessagePopoverAPI": {
-                "enabled": false
+                "enabled": true
             },
             "NoticesAPI": {
                 "enabled": true
@@ -59,7 +59,7 @@
                 "enabled": true
             },
             "AlwaysTrust": {
-                "enabled": false
+                "enabled": true
             },
             "AnonymiseFileNames": {
                 "enabled": true
@@ -93,7 +93,7 @@
                 "blurAmount": 10
             },
             "CallTimer": {
-                "enabled": false
+                "enabled": true
             },
             "ClearURLs": {
                 "enabled": false
@@ -105,7 +105,7 @@
                 "enabled": false
             },
             "CrashHandler": {
-                "enabled": false
+                "enabled": true
             },
             "CustomRPC": {
                 "enabled": false
@@ -114,10 +114,11 @@
                 "enabled": true
             },
             "EmoteCloner": {
-                "enabled": false
+                "enabled": true
             },
             "Experiments": {
-                "enabled": false
+                "enabled": true,
+                "enableIsStaff": false
             },
             "F8Break": {
                 "enabled": false
@@ -153,19 +154,27 @@
                 "enabled": true
             },
             "GifPaste": {
-                "enabled": false
+                "enabled": true
             },
             "HideAttachments": {
                 "enabled": false
             },
             "iLoveSpam": {
-                "enabled": true
+                "enabled": false
             },
             "IgnoreActivities": {
                 "enabled": false
             },
             "ImageZoom": {
-                "enabled": false
+                "enabled": true,
+                "saveZoomValues": true,
+                "preventCarouselFromClosingOnClick": true,
+                "invertScroll": true,
+                "nearestNeighbour": false,
+                "square": false,
+                "zoom": 15.448717948717949,
+                "size": 257.05128205128204,
+                "zoomSpeed": 0.5
             },
             "InvisibleChat": {
                 "enabled": false
@@ -269,7 +278,7 @@
                 "enabled": true
             },
             "NSFWGateBypass": {
-                "enabled": false
+                "enabled": true
             },
             "oneko": {
                 "enabled": false
@@ -324,10 +333,10 @@
                 "enabled": false
             },
             "RevealAllSpoilers": {
-                "enabled": false
+                "enabled": true
             },
             "ReverseImageSearch": {
-                "enabled": false
+                "enabled": true
             },
             "ReviewDB": {
                 "enabled": false
@@ -354,16 +363,19 @@
                 "theme": "https://raw.githubusercontent.com/shikijs/shiki/0b28ad8ccfbf2615f2d9d38ea8255416b8ac3043/packages/shiki/themes/dark-plus.json"
             },
             "ShowAllMessageButtons": {
-                "enabled": false
+                "enabled": true
             },
             "ShowConnections": {
-                "enabled": false
+                "enabled": true
             },
             "ShowHiddenChannels": {
                 "enabled": false
             },
             "ShowMeYourName": {
-                "enabled": false
+                "enabled": true,
+                "mode": "nick-user",
+                "displayNames": true,
+                "inReplies": true
             },
             "SilentMessageToggle": {
                 "enabled": false
@@ -378,13 +390,15 @@
                 "enabled": false
             },
             "SpotifyCrack": {
-                "enabled": false
+                "enabled": true,
+                "noSpotifyAutoPause": true,
+                "keepSpotifyActivityOnIdle": false
             },
             "SpotifyShareCommands": {
                 "enabled": false
             },
             "StartupTimings": {
-                "enabled": false
+                "enabled": true
             },
             "SupportHelper": {
                 "enabled": true
@@ -396,7 +410,8 @@
                 "enabled": false
             },
             "Translate": {
-                "enabled": false
+                "enabled": true,
+                "autoTranslate": false
             },
             "TypingIndicator": {
                 "enabled": false
@@ -417,7 +432,7 @@
                 "enabled": false
             },
             "UserVoiceShow": {
-                "enabled": false
+                "enabled": true
             },
             "USRBG": {
                 "enabled": false
@@ -426,7 +441,7 @@
                 "enabled": false
             },
             "VoiceChatDoubleClick": {
-                "enabled": false
+                "enabled": true
             },
             "VcNarrator": {
                 "enabled": true,
@@ -442,7 +457,9 @@
                 "enabled": false
             },
             "ViewIcons": {
-                "enabled": false
+                "enabled": true,
+                "format": "png",
+                "imgSize": "4096"
             },
             "ViewRaw": {
                 "enabled": false
@@ -483,13 +500,13 @@
                 "enabled": false
             },
             "NormalizeMessageLinks": {
-                "enabled": false
+                "enabled": true
             },
             "PictureInPicture": {
                 "enabled": false
             },
             "PreviewMessage": {
-                "enabled": false
+                "enabled": true
             },
             "SecretRingToneEnabler": {
                 "enabled": false
@@ -507,10 +524,13 @@
                 "enabled": false
             },
             "OnePingPerDM": {
-                "enabled": false
+                "enabled": true
             },
             "PermissionFreeWill": {
                 "enabled": false
+            },
+            "NoTypingAnimation": {
+                "enabled": true
             }
         },
         "notifications": {
@@ -523,7 +543,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1697444947053
+            "settingsSyncVersion": 1697714223570
         },
         "enabledThemes": []
     },
