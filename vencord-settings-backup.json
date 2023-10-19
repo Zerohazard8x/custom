@@ -531,6 +531,12 @@
             },
             "NoTypingAnimation": {
                 "enabled": true
+            },
+            "AI Noise Suppression": {
+                "enabled": false
+            },
+            "WebKeybinds": {
+                "enabled": true
             }
         },
         "notifications": {
@@ -543,7 +549,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1697714223570
+            "settingsSyncVersion": 1697715444552
         },
         "enabledThemes": []
     },
