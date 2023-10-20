@@ -637,3 +637,14 @@ domain("yewtu.be") {
 		filter: grayscale(80%);
 	}
 }
+
+@-moz-document domain("instructure.com") {
+	/* Canvas - Fix peeves with theme */
+	a {
+		text-decoration: none !important;
+	}
+	
+	.ic-DashboardCard__action-badge {
+		background: none !important;
+	}
+}
