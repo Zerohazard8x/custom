@@ -77,7 +77,10 @@ howtogeek.com##.w-display-card-info
 esports.gg##.order-3.\32 xl\:min-w-\[300px\].md\:w-\[300px\].\32 xl\:block.hidden.w-full
 esports.gg##.playwire-ad-unit_firstChildOnly__zh5eU.xl\:min-w-\[970px\].mx-auto.xl\:max-w-
 
+msn.com##.lightTheme.summaryView-DS-EntryPoint1-1
+msn.com##.mainContainer-DS-EntryPoint1-2.mainContainer-DS-EntryPoint1-1
 msn.com##.mobileAppAndPersonaWrapper-DS-EntryPoint1-1
+msn.com##.socialPostContainer-DS-EntryPoint1-1
 msn.com##.triggerButton-DS-EntryPoint1-1
 msn.com##.user-pref-container > ms-rewards:nth-child(2)
 msn.com##.user-pref-container > notification-bell:nth-child(3)

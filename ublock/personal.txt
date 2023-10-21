@@ -1091,7 +1091,6 @@
 ||mm-production.rappler.com$script,inline-script,object,ping,stylesheet,other
 ||firebaseio.com$script,inline-script,object,ping,stylesheet,other
 ||passport.twitch.tv$script,inline-script,object,ping,stylesheet,other
-||jsdelivr.map.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||launchdarkly.com$script,inline-script,object,ping,stylesheet,other
 ||azure.com$script,inline-script,object,ping,stylesheet,other
 ||dscf.akamaiedge.net$script,inline-script,object,ping,stylesheet,other
