@@ -274,6 +274,7 @@ discord.com##.tryItOutSection-W9qeGH.featureBorder-2Jl8g4.premiumFeatureBorder-1
 discord.com##.vc-error-card.vc-m-bottom-8 > .modeDefault-3Warim.formText-2UzJT0.default-h5DUM7.size14-k_3Hy4.colorStandard-1Xxp1s
 
 lazada.*###module_guide_app
+lazada.*###module_installment
 lazada.*###topActionLiveUpBanner
 lazada.*###webim-container
 lazada.*##.J_Categories.card-categories.hp-mod-card
@@ -319,6 +320,8 @@ bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
 bard.google.com##.location-footer-atl-text
 bard.google.com##.pagination-wrapper
 bard.google.com##chat-app > .ng-star-inserted
+bard.google.com##ogb-menu-controls > .ng-star-inserted
+bard.google.com##xap-count-badge
 
 search.yahoo.com###ft
 search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
@@ -337,6 +340,7 @@ wikiwand.com##.footer_donation__Cje_Q
 you.com##.LQwHO.sc-196cc170-0
 you.com##.blpnYK.sc-bb226f16-0
 you.com##.cnaKES.sc-6c4b6bfa-0
+you.com##.dWukXE.sc-d7e0e095-0
 you.com##.eDRRLP.sc-f838178a-0
 you.com##.fGblHt.sc-191b525d-9
 you.com##.ffsAZk.sc-cc5a18b7-1
@@ -351,9 +355,9 @@ forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-o
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__text
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
 
-shopee.ph##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
-shopee.ph##.MPbswA
-shopee.ph##._2ypCMv
+shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
+shopee.*##.MPbswA
+shopee.*##._2ypCMv
 
 speedrun.com##div.lg\:block.hidden:nth-of-type(3)
 
@@ -363,6 +367,7 @@ imgur.com##.Button.EmeraldButton
 youtube.com##.ythd-israel-support
 
 discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
+discord.com##.moreSubtitleMargin__91793.fullWidth__2b90a.subtitle_c3170a.text-lg-normal_d5fdbe
 
 merriam-webster.com##.pe-0.position-relative.left-sidebar-col.col-2
 merriam-webster.com##.show-full-list.additional-content-area
@@ -379,3 +384,5 @@ open.spotify.com##.oszTUDKpXrPHyeWPs276
 
 genius.com##.gTBWpu.SongComments__Footer-sc-131p4fy-11
 genius.com##.vrxkS.InnerSectionDivider-sc-1x4onqw-0
+
+web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
