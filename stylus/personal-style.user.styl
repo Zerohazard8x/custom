@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal
 @namespace      github.com/openstyles/stylus
-@version        1.2.1
+@version        1.2.2
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -25,33 +25,38 @@
         font-family: "DIN Next", "DIN", "Akkurat", "Bahnschrift",
             "alte din 1451 mittelschrift", "Keiner", "Road UA",
             "Dinish Expanded", "Dinish", "Altinn-DIN", "D-DIN",
-            "Source Sans Pro", "Noto Sans", "Noto Sans JP",
-            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Trebuchet MS", var(--font-personal),
+            "Source Sans Pro", "Noto Sans", "Noto Sans JP", "Noto Sans TC",
+            "Noto Sans SC", "Noto Sans KR", "Trebuchet MS", var(--font-personal),
             "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
             Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
-        background: none !important;
+        /* background: none !important; */
 
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
-        text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
-            #000000 0 0 5px !important;
+        /* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
+            #000000 0 0 5px !important; */
     }
 
-    .captions-text {
+    .caption-window {
+        padding: 4px !important;
         line-height: 280% !important;
+        border-radius: 5px !important;
     }
 }
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     /* facebook, messenger, instagram - reduce use of system font, grayscale */
-	:root {
-        --facebook: "Optimistic Text", "Optimistic Display", "Facebook Sans", "Optimistic Text Normal", "Optimistic Display Bold", "Facebook Sans Bold", FacebookSansApp-Bold;
+    :root {
+        --facebook: "Optimistic Text", "Optimistic Display", "Facebook Sans",
+            "Optimistic Text Normal", "Optimistic Display Bold",
+            "Facebook Sans Bold", FacebookSansApp-Bold;
     }
-	
-	.x12qp5cl {
-		font-family: var(--facebook), var(--font-personal), Placeholder Font, Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif !important
-	}
-	
+
+    .x12qp5cl {
+        font-family: var(--facebook), var(--font-personal), Placeholder Font,
+            Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif !important;
+    }
+
     .x9f619 {
         font-family: var(--facebook), var(--font-personal), Segoe UI,
             Segoe UI Historic, Helvetica, Arial, sans-serif !important;
@@ -63,10 +68,10 @@
     }
 
     ._8e63,
-	._9axz,
+    ._9axz,
     ._8eso {
-        font-family: var(--facebook), var(--font-personal),
-            SFProDisplay-Regular, Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font-personal), SFProDisplay-Regular,
+            Helvetica, Arial, sans-serif !important;
     }
 
     ._45ks,
@@ -74,28 +79,32 @@
     ._58mk,
     ._8e4l,
     #globalContainer {
-        font-family: var(--facebook), var(--font-personal), SFProText-Regular, Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font-personal), SFProText-Regular,
+            Helvetica, Arial, sans-serif !important;
     }
 
     ._8esh {
-        font-family: var(--facebook), var(--font-personal), SFProText-Semibold, Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font-personal), SFProText-Semibold,
+            Helvetica, Arial, sans-serif !important;
     }
 
-	._4g34,
+    ._4g34,
     ._53jh {
-        font-family: var(--facebook), var(--font-personal), Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font-personal), Helvetica, Arial,
+            sans-serif !important;
     }
 
     ._aacl,
     .x1i0vuye,
     ._acan {
-        font-family: var(--facebook), var(--font-personal), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-family: var(--facebook), var(--font-personal), -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
-	._7y88 {
-		font-family: var(--facebook), var(--font-personal), Arial;
-	}
-	
+    ._7y88 {
+        font-family: var(--facebook), var(--font-personal), Arial;
+    }
+
     #mount_0_0_CV,
     #mount_0_0_KX,
     #mount_0_0_ff,
@@ -121,8 +130,8 @@
         --roboto: Roboto, "Roboto Draft", RobotoDraft, Roboto-Regular;
     }
 
-	#exps > button,
-	#lud-search,
+    #exps > button,
+    #lud-search,
     .s75CSd,
     .b0KoTc,
     .gb_Bd,
@@ -601,9 +610,10 @@ domain("yewtu.be") {
         font-family: ProximaNova, sans-serif !important;
     }
 
-    #__nuxt, #onetrust-consent-sdk {
-	  filter: grayscale(80%);
-	}
+    #__nuxt,
+    #onetrust-consent-sdk {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("msn.com") {
@@ -624,41 +634,54 @@ domain("yewtu.be") {
 }
 
 @-moz-document regexp(".*twitch.tv\/popout.*") {
-	/* Twitch popout - Self-explanatory */
-	.chat-line__message {
-		font-size: 20px !important;
-	}
-	
-	section[data-test-selector="chat-room-component-layout"] .chat-scrollable-area__message-container, .whispers .thread-message__message, .video-chat__message {
-		line-height: 250% !important;
-	}
-	
-	section[data-test-selector="chat-room-component-layout"] .chat-scrollable-area__message-container, .whispers .thread-message__message, .video-chat__message, .chat-input, div.ReactModalPortal, #bttvSettingsPanel, div.bttv-rs-toast-provider, .simplebar-content {
-		filter: grayscale(80%);
-	}
+    /* Twitch popout - Self-explanatory */
+    .chat-line__message {
+        font-size: 20px !important;
+    }
+
+    section[data-test-selector="chat-room-component-layout"]
+        .chat-scrollable-area__message-container,
+    .whispers .thread-message__message,
+    .video-chat__message {
+        line-height: 250% !important;
+    }
+
+    section[data-test-selector="chat-room-component-layout"]
+        .chat-scrollable-area__message-container,
+    .whispers .thread-message__message,
+    .video-chat__message,
+    .chat-input,
+    div.ReactModalPortal,
+    #bttvSettingsPanel,
+    div.bttv-rs-toast-provider,
+    .simplebar-content {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("instructure.com") {
-	/* Canvas - Fix peeves with theme */
-	a {
-		text-decoration: none !important;
-	}
-	
-	.ic-DashboardCard__action-badge {
-		background: none !important;
-	}
-	
-	#canvasplus-convo-peeker,
-	#canvasplus-convo-peeker-back,
-	#flash_message_holder,
-	#nav-tray-portal,
-	#smartscroll-padding,
-	div.cpx-snackbar-container,
-	div.ic-app,
-	div.impact-sr-only,
-	div.notification-container,
-	div.screenreader-only,
-	div.eesy.eesy-tab2-container {
-	  filter: grayscale(80%);
-	}
+    /* Canvas - Fix peeves with theme */
+    a {
+        text-decoration: none !important;
+    }
+
+    .ic-DashboardCard__action-badge {
+        background: none !important;
+    }
+
+    #canvasplus-convo-peeker,
+    #canvasplus-convo-peeker-back,
+    #flash_message_holder,
+    #nav-tray-portal,
+    #smartscroll-padding,
+    div.canvasplus-search-ui-wrapper,
+    div.cpx-snackbar-container,
+    div.eesy.eesy-tab2-container div.ic-app,
+    div.eesy.eesy-tab2-container,
+    div.ic-app,
+    div.impact-sr-only,
+    div.notification-container,
+    div.screenreader-only {
+        filter: grayscale(80%);
+    }
 }

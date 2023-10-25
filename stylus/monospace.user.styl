@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.2.7
+@version        1.2.8
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono");
+@import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono|Libre+Baskerville");
 
 :root {
     /* Define variables */
@@ -16,6 +16,7 @@
         "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
         "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
         "IBM Plex Sans KR";
+	--serif: "Libre Baskerville", "EB Garamond";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
         "DroidSansM", "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font",
         "Consolas", "Hack", "Hack Nerd Font", "Bitstream Vera Sans Mono",
@@ -156,11 +157,14 @@
 
     ._34q3PgLsx9zIU5BiSOjFoM {
         font-family: var(--mono-combo), Noto Mono, Monaco, Consolas, monospace !important;
-        font-size: 16px !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+	
+	pre > ._34q3PgLsx9zIU5BiSOjFoM {
+        font-size: 16px !important;
     }
 
     /* UI */
@@ -303,7 +307,7 @@
 }
 
 @-moz-document domain("wikiwand.com") {
-    /* Wikiwand - Code blocks, grayscale */
+    /* Wikiwand - Code blocks, serif, grayscale */
     .monospaced,
     code,
     pre {
@@ -319,6 +323,10 @@
     pre {
         font-size: 16px !important;
     }
+	
+	.section-h, .item_item__Faryz {
+		font-family: var(--serif), Noto Serif, "Noto Serif", "Noto Serif-fallback-1", serif !important;
+	}
 	
 	.gallery_wrapper__1a7bM,
 	article {
@@ -466,6 +474,8 @@
     }
 
     /* Grayscale filter */
+	cib-serp,
+	.sb_count,
     .sbiopc,
     .ptitle,
     .ent-dtab-btn,
@@ -585,6 +595,7 @@
             Roboto, Arial, sans-serif !important;
     }
 
+	cib-serp,
     #id_n,
     .wr_rat,
     .rwrl,
