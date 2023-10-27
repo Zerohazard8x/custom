@@ -386,3 +386,12 @@ genius.com##.gTBWpu.SongComments__Footer-sc-131p4fy-11
 genius.com##.vrxkS.InnerSectionDivider-sc-1x4onqw-0
 
 web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
+
+mybib.com##.primary.animate.show.tooltip-lg
+mybib.com##.vue-portal-target
+
+apps.apple.com##.app-privacy.section--bordered.section.l-content-width > p
+apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
+apps.apple.com##div.app-privacy__modal-section > p
+apps.apple.com##div.app-privacy__modal-section:nth-of-type(1)
+apps.apple.com##div.app-privacy__modal-section:nth-of-type(2)
