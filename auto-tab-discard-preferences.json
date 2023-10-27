@@ -21,6 +21,7 @@
     "go-hidden": false,
     "idle": false,
     "idle-timeout": 300,
+    "last-update": 1693199215376,
     "link.context": true,
     "log": false,
     "max.single.discard": 50,
@@ -40,12 +41,33 @@
     "startup-release-pinned": true,
     "startup-unpinned": false,
     "tab.context": true,
+    "trash.keys": {
+      "https://mail.google.com/mail/u/0/#inbox": [
+        1698408273532,
+        86400
+      ],
+      "https://zenmarket.jp/profile/messages.aspx?utm_placement=main_cta": [
+        1698408273532,
+        86400
+      ],
+      "https://play.google.com/store/apps/details?id=com.bigwinepot.nwdn.international": [
+        1698408983719,
+        86400
+      ],
+      "https://search.yahoo.com/yhs/search?p=css+select+all+but+not&hsimp=yhs-102&hspart=mozilla&type=dss": [
+        1698408983719,
+        86400
+      ]
+    },
     "trash.period": 24,
     "trash.unloaded": false,
     "trash.whitelist-url": [],
     "whitelist": [
       "web.telegram.org",
-      "www.bing.com"
+      "bing.com",
+      "webwhiteboard.com",
+      "reddit.com",
+      "you.com"
     ],
     "whitelist-url": []
   },
