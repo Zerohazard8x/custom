@@ -149,6 +149,7 @@ symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-chi
 stackoverflow.com,superuser.com,stackexchange.com###feed-link
 stackoverflow.com,superuser.com,stackexchange.com###hot-network-questions
 stackoverflow.com,superuser.com,stackexchange.com##.fc-light.mb4.mt16.ml8.tt-uppercase.fs-fine
+stackoverflow.com,superuser.com,stackexchange.com##.pr8.mt8
 stackoverflow.com,superuser.com,stackexchange.com##div > ol.s-navigation:nth-child(4)
 stackoverflow.com,superuser.com,stackexchange.com##div.s-sidebarwidget.mb16.module:nth-child(5)
 stackoverflow.com,superuser.com,stackexchange.com##div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
@@ -156,6 +157,7 @@ stackoverflow.com,superuser.com,stackexchange.com##li > ol > li.ps-relative:last
 stackoverflow.com,superuser.com,stackexchange.com##li.js-freemium-cta.ps-relative:nth-child(3)
 stackoverflow.com,superuser.com,stackexchange.com##li.md\:d-none:last-child
 stackoverflow.com,superuser.com,stackexchange.com##li.ml8.mt16:nth-child(6)
+stackoverflow.com,superuser.com,stackexchange.com##li.ps-relative:nth-of-type(7)
 
 getpocket.com##div > div.onboarding-badge:first-child
 getpocket.com##div > nav > a.css-18qpw11
@@ -394,4 +396,7 @@ apps.apple.com##.app-privacy.section--bordered.section.l-content-width > p
 apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
 apps.apple.com##div.app-privacy__modal-section > p
 apps.apple.com##div.app-privacy__modal-section:nth-of-type(1)
-apps.apple.com##div.app-privacy__modal-section:nth-of-type(2)
+apps.apple.com##div.app-privacy__modal-section:nth-of-type(2)]
+
+play.google.com##.Ou5Yib
+play.google.com##.RGUlu
