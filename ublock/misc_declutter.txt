@@ -1,8 +1,23 @@
-[uBlock Origin]
-! Title: Zerohazard's decluttering
 ! Description: decluttering
-! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
 ! Expires: 1 day
+! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
+! Title: Zerohazard's decluttering
+[uBlock Origin]
+appleid.apple.com##.landing__blocks
+
+apps.apple.com##.app-privacy.section--bordered.section.l-content-width > p
+apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
+apps.apple.com##div.app-privacy__modal-section > p
+apps.apple.com##div.app-privacy__modal-section:nth-of-type(1)
+apps.apple.com##div.app-privacy__modal-section:nth-of-type(2)
+
+bard.google.com##.location-buttons-dot
+bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
+bard.google.com##.location-footer-atl-text
+bard.google.com##.pagination-wrapper
+bard.google.com##chat-app > .ng-star-inserted
+bard.google.com##ogb-menu-controls > .ng-star-inserted
+bard.google.com##xap-count-badge
 
 bing.com###asmsbribbon_li
 bing.com###b-scopeListItem-bingatwork
@@ -48,6 +63,103 @@ bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-chi
 bing.com##div.musCard.focusin:last-child
 bing.com##section.msbModule.moduleCont:first-child
 
+chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
+chat.openai.com##.md\:flex-col.items-stretch.flex-1.h-full.flex.relative > div:nth-of-type(1)
+chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
+
+discord.com##.art-3yfHpl
+discord.com##.badgeContainer-1OeZs3
+discord.com##.badgeContainer-3TDXH5
+discord.com##.buttonContainer-2z-326
+discord.com##.colorDefault-1e8tQv.notice-2HEN-u
+discord.com##.containerDefaultMargin-3T8Dq_.premiumFeatureBannerBackground-Epwl-X.container-5BK5-N
+discord.com##.customizationSectionBackground-1-leQn.background-yH6t2p.premiumBackground-34OIdE > .title-1HgbhV.eyebrow-2wJAoF.h5-2feg8J > .baseShapeRound-3epLEv.eyebrow-132Xza.base-3IDx3L.textBadge-1fdDPJ.newBadge-2Y53Os.premiumBadge-2VNQ3o
+discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
+discord.com##.editorAnimate-2BAiXS.editor-1m9XtV
+discord.com##.emptyHeader-2tT-AY.defaultColor-1GKx81.heading-md-semibold-2h_vsp.defaultColor-1EVLSt
+discord.com##.moreSubtitleMargin__91793.fullWidth__2b90a.subtitle_c3170a.text-lg-normal_d5fdbe
+discord.com##.scrollerBase-1Pkza4.none-1rXy4P.scroller-3X7KbA > div.listItem-3SmSlK:nth-of-type(7)
+discord.com##.tryItOutSection-W9qeGH.featureBorder-2Jl8g4.premiumFeatureBorder-1i95si
+discord.com##.vc-error-card.vc-m-bottom-8 > .modeDefault-3Warim.formText-2UzJT0.default-h5DUM7.size14-k_3Hy4.colorStandard-1Xxp1s
+
+drive.google.com##.g-Yd-Ya.g-Yd-Na.a-Ff-B.a-la-B.g-Yd
+
+duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.legacy-homepage-variants_scrollCta__hNjqv
+duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.belowTheFold_featuredSectionHidden__E4pfe.legacy-homepage-variants_belowTheFold__b5i_x
+duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv.container_root__Lmrbx
+duckduckgo.com##.footer
+duckduckgo.com##.legacy-homepage_ctaSection__5siuM
+
+espn.*##.col-one > article.quicklinks.sub-module > .quicklinks__container
+espn.*##.editorial.sub-module
+espn.*##.league-mgr.fantasySignup-basketball.fantasySignupV2.sub-module
+espn.*##.league-mgr.fantasySignup-football.fantasySignupV2.sub-module
+espn.*##article.sub-module.quicklinks
+espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
+espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
+espn.*##li.pillar.logo.fantasy:nth-child(3)
+espn.*##li.pillar.logo.fantasy:nth-child(9)
+espn.*##li.pillar.more-espn:nth-child(2)
+espn.*##li.pillar.more-espn:nth-child(8)
+espn.*##ul.flex-none.Nav__Primary__Menu--right.flex.Nav__Primary__Menu:nth-of-type(2) > li.Nav__AccessibleMenuItem_Wrapper.n7.relative.items-center.flex.Nav__Primary__Menu__Item:nth-of-type(4)
+
+facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-type(3)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(10)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(4)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(5)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(6)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(8)
+facebook.com##.x1iyjqo2 > ul
+facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(2)
+facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
+facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
+facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(1)
+facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
+facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
+facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
+
+fandom.com###WikiaRail
+fandom.com##.global-navigation
+fandom.com##.rail-module.railModule
+fandom.com##.rail-recentImages-module
+
+forum.xda-developers.com,xdaforums.com##.js-bottomFixTarget.u-bottomFixer
+forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
+forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-of-type(3)
+forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__text
+forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
+
+genius.com##.gTBWpu.SongComments__Footer-sc-131p4fy-11
+genius.com##.vrxkS.InnerSectionDivider-sc-1x4onqw-0
+
+getpocket.com##div > div.onboarding-badge:first-child
+getpocket.com##div > nav > a.css-18qpw11
+getpocket.com##ul.css-1bjgl5h.links
+
+github.com##.Box-footer > div.mb-3:nth-of-type(1) > .color-fg-muted.mt-2
+github.com##.border-bottom.mb-5.feed-right-sidebar > .js-notice
+github.com##.border-bottom.mb-5.feed-right-sidebar > div > .js-notice
+github.com##.d-lg-block.d-md-block.d-sm-none.d-none.position-absolute.Popover.js-notice
+github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
+github.com##.mx-auto.col-8 > .mb-2
+github.com##.rounded-2.p-3.color-border-muted.border.color-bg-default.dashboard-changelog.mb-3
+github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
+
+google.com###helpful
+google.com###personalized
+google.com###secure
+google.com##.RB2q5e.OSrXXb.oYWfcb.GTERze
+google.com##.gacct-section.gacct-hero-feature
+google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
+google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
+google.com##.h-u-mt-l.gacct-section.gacct-epilog
+
+hltv.org##.newsgrouping-header
+hltv.org##.right2Col > aside:nth-of-type(2)
+
+imgur.com##.Button.EmeraldButton
+imgur.com##.Sticky.Top
+
 instructure.com###bettercanvas-announcement-list
 instructure.com###bettercanvas-todo-list
 instructure.com###context_external_tool_13589_menu_item
@@ -65,11 +177,82 @@ instructure.com###right-side > div > h2.todo-list-header:nth-child(4)
 instructure.com##.eesy_canvas.eesy_container_v4.eesy_container
 ||chat-sin.instructure.com/mini$domain=instructure.com
 
-gg.bet##div > div > div.sidebarToggler__btn___2wIhe
-gg.bet##.Tabs__is-active___2Vi_F.Tabs__tab___3KK7U.__app-Tabs-is-active.__app-Tabs-tab
-gg.bet##.Tabs__tabs___KOXfP.__app-Tabs-tabs
-gg.bet##.sidebar__content___2JoUk.__app-Sidebar-content
-gg.bet##div:nth-child(6) > div.btn-chat.btn-chat--fixed.btn-chat--left
+khanacademy.org###donate-banner
+
+lazada.*###module_guide_app
+lazada.*###module_installment
+lazada.*###topActionLiveUpBanner
+lazada.*###webim-container
+lazada.*##.J_Categories.card-categories.hp-mod-card
+lazada.*##.crazy-deal-details-process
+lazada.*##.flash-sale-banner.J_FSBgImg
+lazada.*##.footer-second
+lazada.*##.footer-third
+lazada.*##.hotBorder--3N6k
+lazada.*##.hp-pc-lift-nav.J_LiftNav
+lazada.*##.pdp-mod-product-price-topbanner
+lazada.*##.pdp-seller-info-pc
+
+meet.google.com##.AkYcJb.dQO5xd
+meet.google.com##.k3Pzib.ws7pec
+
+merriam-webster.com##.pe-0.position-relative.left-sidebar-col.col-2
+merriam-webster.com##.show-full-list.additional-content-area
+
+messenger.com##.x12nzpgo.x1lku1pv.x5ib6vp.x18d9i69.xc73u3c.xexx8yu.xt55aet.x1c4vz4f.xb756pt.x1q0g3np.xozqiw3.x6s0dn4.x1qughib.xeuugli.xs83m0k.x1r8uery.x78zum5.x1ja2u2z.x1n2onr6.x9f619
+messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2
+messenger.com##div.x78zum5.x1r8uery.xs83m0k.xeuugli.x1qughib.x6s0dn4.xozqiw3.x1q0g3np.xb756pt.x1c4vz4f.xt55aet.xexx8yu.xc73u3c.x18d9i69.x5ib6vp.x1lku1pv.x12nzpgo:last-child
+
+monkeytype.com###bannerCenter
+monkeytype.com###newVersionIndicator
+
+myanimelist.net##.ga-impression.bottom-bar
+myanimelist.net##.ga-impression.top_signup
+myanimelist.net##.js-scrollfix-bottom-rel.rightside > table > tbody > tr:nth-of-type(2)
+myanimelist.net##.pb24 > .border_top
+myanimelist.net##article.left.widget-container:nth-of-type(1)
+myanimelist.net##article.left.widget-container:nth-of-type(3)
+myanimelist.net##article.left.widget-container:nth-of-type(4)
+myanimelist.net##article.left.widget-container:nth-of-type(6)
+myanimelist.net##article.left.widget-container:nth-of-type(8)
+myanimelist.net##td > .anime-slide-block
+myanimelist.net##tr:nth-of-type(1) > td > .border_top
+myanimelist.net##tr:nth-of-type(1) > td > div:nth-of-type(4)
+
+mybib.com##.primary.animate.show.tooltip-lg
+mybib.com##.vue-portal-target
+
+office.com##.ms-fcl-nd.welcome__title--dark.welcome__title--visual.welcome__title--consumer-with-badge.welcome__title--consumer.ms-fontWeight-light
+office.com##ohp-learning-shelf-react.ng-star-inserted
+
+onedrive.live.com###PROD_OneDrive-Web_SuiteNav_Unknown_HeaderDiamond_container
+onedrive.live.com##.od-PremiumUpsellBanner
+onedrive.live.com##.od-PremiumUpsellBanner-details
+onedrive.live.com##.od-QuotaBar-bottom
+onedrive.live.com##.root-193.leftNavNotificationsLink_13fd1f41.ms-Link
+onedrive.live.com##.root-199.leftNavNotificationsLink_13fd1f41.ms-Link
+
+open.spotify.com##.oszTUDKpXrPHyeWPs276
+
+parcelsapp.com###features
+parcelsapp.com###tisunov > .container > div.row:nth-of-type(1)
+parcelsapp.com##.content.carrier-info
+parcelsapp.com##.landing-section
+parcelsapp.com##.light-gray-bg.faq
+parcelsapp.com##.people-tracking
+parcelsapp.com##.shops
+parcelsapp.com##.text-center.content
+parcelsapp.com##body > div:nth-of-type(2)
+parcelsapp.com##section.faq:nth-of-type(4)
+parcelsapp.com##section.faq:nth-of-type(8)
+parcelsapp.com##section.light-gray-bg:nth-of-type(7)
+parcelsapp.com##section.light-gray-bg:nth-of-type(9)
+
+play.google.com##.Ou5Yib
+play.google.com##.RGUlu
+
+poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
+poe.com##.SidebarFooter_footer__i_kOn > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
 
 reddit.com###credential_picker_container
 reddit.com###popular-posts
@@ -94,6 +277,81 @@ reddit.com##div.text-14.text-neutral-content-weak
 reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
+
+search.yahoo.com###ft
+search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
+search.yahoo.com##.searchCenterTop.reg > .last
+search.yahoo.com##.searchRightBottom.reg
+search.yahoo.com##.searchRightTopAds.reg
+
+shopee.*##.MPbswA
+shopee.*##._2ypCMv
+shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
+
+sofascore.com##.bEAMMG.sc-fqkvVR
+sofascore.com##.bgUNaL.sc-fqkvVR
+sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
+sofascore.com##.eUkCqv.sc-fqkvVR
+sofascore.com##.fSiJSi.sc-fqkvVR
+sofascore.com##.heJcSB.sc-fqkvVR
+sofascore.com##.jMZkBK.sc-fqkvVR
+sofascore.com##.kKRTNa.sc-fqkvVR
+sofascore.com##.kcHixx.sc-fqkvVR
+sofascore.com##[href="/en-us/betting-tips-today"]
+
+speedrun.com##div.lg\:block.hidden:nth-of-type(3)
+
+stackoverflow.com,superuser.com,stackexchange.com###feed-link
+stackoverflow.com,superuser.com,stackexchange.com###hot-network-questions
+stackoverflow.com,superuser.com,stackexchange.com##.fc-light.mb4.mt16.ml8.tt-uppercase.fs-fine
+stackoverflow.com,superuser.com,stackexchange.com##.pr8.mt8
+stackoverflow.com,superuser.com,stackexchange.com##div > ol.s-navigation:nth-child(4)
+stackoverflow.com,superuser.com,stackexchange.com##div.s-sidebarwidget.mb16.module:nth-child(5)
+stackoverflow.com,superuser.com,stackexchange.com##div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
+stackoverflow.com,superuser.com,stackexchange.com##li > ol > li.ps-relative:last-child
+stackoverflow.com,superuser.com,stackexchange.com##li.js-freemium-cta.ps-relative:nth-child(3)
+stackoverflow.com,superuser.com,stackexchange.com##li.md\:d-none:last-child
+stackoverflow.com,superuser.com,stackexchange.com##li.ml8.mt16:nth-child(6)
+stackoverflow.com,superuser.com,stackexchange.com##li.ps-relative:nth-of-type(7)
+
+store.steampowered.com###achievement_block
+store.steampowered.com###noteworthy_tab
+store.steampowered.com##.content > h1
+store.steampowered.com##.glance_details
+store.steampowered.com##.responsive_apppage_reviewblock.block.steam_curators_block
+store.steampowered.com##a.top_promo.ds_no_flags.app_impression_tracked:first-child
+store.steampowered.com##div > div > a.menuitem:nth-child(5)
+store.steampowered.com##div > div > a.tab:nth-child(9)
+store.steampowered.com##div > div > div.block:nth-child(12)
+store.steampowered.com##div > div > div.game_page_autocollapse:first-child
+store.steampowered.com##div > div.queue_overflow_ctn:nth-child(3)
+store.steampowered.com##div > div_block > div.gutter_items:last-child
+store.steampowered.com##div.gutter_header.pad:nth-child(6)
+store.steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
+store.steampowered.com##div.home_ctn:nth-child(11)
+store.steampowered.com##div.home_ctn:nth-child(5)
+store.steampowered.com##div.rightcol.recent_reviews:nth-child(2)
+
+symbolab.com###Examples_section
+symbolab.com###bar-Example
+symbolab.com###brand-homepage > table.homepage-center:nth-child(2)
+symbolab.com###go-to-store > img
+symbolab.com###homepage-explore
+symbolab.com###homepage-headline
+symbolab.com###homepage-second-block
+symbolab.com###nl-subNav
+symbolab.com###right-section
+symbolab.com###save-as-bookmark-notebook
+symbolab.com###save-as-bookmark-signin
+symbolab.com###send-us-feedback
+symbolab.com##div.leftMenu.leftMenu-narrow
+symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-child
+
+thespike.gg##div > div > ul > li
+thespike.gg##div.featured-event_column__sm8P6:first-child
+thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
+
+to-do.live.com##.obf-Visible.obf-Toast
 
 twitter.com##.r-109y4c4.r-gu4em3.css-1dbjc4n
 twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-1dbjc4n > .r-qvutc0.r-bcqeeo.r-135wba7.r-1vr29t4.r-adyw6z.r-37j5jr.r-1nao33i.css-901oao
@@ -131,211 +389,9 @@ vlr.gg##div.js-home-streams.home-stream-module:last-child
 vlr.gg##div.mod-sidebar.wf-label
 vlr.gg##h1.mod-sidebar.wf-label:nth-of-type(2)
 
-symbolab.com###Examples_section
-symbolab.com###bar-Example
-symbolab.com###brand-homepage > table.homepage-center:nth-child(2)
-symbolab.com###go-to-store > img
-symbolab.com###homepage-explore
-symbolab.com###homepage-headline
-symbolab.com###homepage-second-block
-symbolab.com###nl-subNav
-symbolab.com###right-section
-symbolab.com###save-as-bookmark-notebook
-symbolab.com###save-as-bookmark-signin
-symbolab.com###send-us-feedback
-symbolab.com##div.leftMenu.leftMenu-narrow
-symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-child
-
-stackoverflow.com,superuser.com,stackexchange.com###feed-link
-stackoverflow.com,superuser.com,stackexchange.com###hot-network-questions
-stackoverflow.com,superuser.com,stackexchange.com##.fc-light.mb4.mt16.ml8.tt-uppercase.fs-fine
-stackoverflow.com,superuser.com,stackexchange.com##.pr8.mt8
-stackoverflow.com,superuser.com,stackexchange.com##div > ol.s-navigation:nth-child(4)
-stackoverflow.com,superuser.com,stackexchange.com##div.s-sidebarwidget.mb16.module:nth-child(5)
-stackoverflow.com,superuser.com,stackexchange.com##div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
-stackoverflow.com,superuser.com,stackexchange.com##li > ol > li.ps-relative:last-child
-stackoverflow.com,superuser.com,stackexchange.com##li.js-freemium-cta.ps-relative:nth-child(3)
-stackoverflow.com,superuser.com,stackexchange.com##li.md\:d-none:last-child
-stackoverflow.com,superuser.com,stackexchange.com##li.ml8.mt16:nth-child(6)
-stackoverflow.com,superuser.com,stackexchange.com##li.ps-relative:nth-of-type(7)
-
-getpocket.com##div > div.onboarding-badge:first-child
-getpocket.com##div > nav > a.css-18qpw11
-getpocket.com##ul.css-1bjgl5h.links
-
-store.steampowered.com###achievement_block
-store.steampowered.com###noteworthy_tab
-store.steampowered.com##.content > h1
-store.steampowered.com##.glance_details
-store.steampowered.com##.responsive_apppage_reviewblock.block.steam_curators_block
-store.steampowered.com##a.top_promo.ds_no_flags.app_impression_tracked:first-child
-store.steampowered.com##div > div > a.menuitem:nth-child(5)
-store.steampowered.com##div > div > a.tab:nth-child(9)
-store.steampowered.com##div > div > div.block:nth-child(12)
-store.steampowered.com##div > div > div.game_page_autocollapse:first-child
-store.steampowered.com##div > div.queue_overflow_ctn:nth-child(3)
-store.steampowered.com##div > div_block > div.gutter_items:last-child
-store.steampowered.com##div.gutter_header.pad:nth-child(6)
-store.steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
-store.steampowered.com##div.home_ctn:nth-child(11)
-store.steampowered.com##div.home_ctn:nth-child(5)
-store.steampowered.com##div.rightcol.recent_reviews:nth-child(2)
-
-youtube.com###about-these-results
-youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
-youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
-youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
-
-messenger.com##.x12nzpgo.x1lku1pv.x5ib6vp.x18d9i69.xc73u3c.xexx8yu.xt55aet.x1c4vz4f.xb756pt.x1q0g3np.xozqiw3.x6s0dn4.x1qughib.xeuugli.xs83m0k.x1r8uery.x78zum5.x1ja2u2z.x1n2onr6.x9f619
-messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2
-messenger.com##div.x78zum5.x1r8uery.xs83m0k.xeuugli.x1qughib.x6s0dn4.xozqiw3.x1q0g3np.xb756pt.x1c4vz4f.xt55aet.xexx8yu.xc73u3c.x18d9i69.x5ib6vp.x1lku1pv.x12nzpgo:last-child
-
-thespike.gg##div > div > ul > li
-thespike.gg##div.featured-event_column__sm8P6:first-child
-thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
-
-chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
-chat.openai.com##.md\:flex-col.items-stretch.flex-1.h-full.flex.relative > div:nth-of-type(1)
-chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
-
-espn.*##.col-one > article.quicklinks.sub-module > .quicklinks__container
-espn.*##.editorial.sub-module
-espn.*##.league-mgr.fantasySignup-basketball.fantasySignupV2.sub-module
-espn.*##.league-mgr.fantasySignup-football.fantasySignupV2.sub-module
-espn.*##article.sub-module.quicklinks
-espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
-espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
-espn.*##li.pillar.logo.fantasy:nth-child(3)
-espn.*##li.pillar.logo.fantasy:nth-child(9)
-espn.*##li.pillar.more-espn:nth-child(2)
-espn.*##li.pillar.more-espn:nth-child(8)
-espn.*##ul.flex-none.Nav__Primary__Menu--right.flex.Nav__Primary__Menu:nth-of-type(2) > li.Nav__AccessibleMenuItem_Wrapper.n7.relative.items-center.flex.Nav__Primary__Menu__Item:nth-of-type(4)
-
 w3schools.com##.m12.l2.w3-col
 
-fandom.com###WikiaRail
-fandom.com##.global-navigation
-fandom.com##.rail-module.railModule
-fandom.com##.rail-recentImages-module
-
-google.com##.RB2q5e.OSrXXb.oYWfcb.GTERze
-google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
-google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
-
-github.com##.Box-footer > div.mb-3:nth-of-type(1) > .color-fg-muted.mt-2
-github.com##.border-bottom.mb-5.feed-right-sidebar > .js-notice
-github.com##.border-bottom.mb-5.feed-right-sidebar > div > .js-notice
-github.com##.d-lg-block.d-md-block.d-sm-none.d-none.position-absolute.Popover.js-notice
-github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
-github.com##.mx-auto.col-8 > .mb-2
-github.com##.rounded-2.p-3.color-border-muted.border.color-bg-default.dashboard-changelog.mb-3
-github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
-
-facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-type(3)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(10)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(4)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(5)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(6)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(8)
-facebook.com##.x1iyjqo2 > ul
-facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(2)
-facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
-facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
-facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(1)
-facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
-facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
-facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
-
-sofascore.com##.bEAMMG.sc-fqkvVR
-sofascore.com##.bgUNaL.sc-fqkvVR
-sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
-sofascore.com##.eUkCqv.sc-fqkvVR
-sofascore.com##.fSiJSi.sc-fqkvVR
-sofascore.com##.heJcSB.sc-fqkvVR
-sofascore.com##.jMZkBK.sc-fqkvVR
-sofascore.com##.kKRTNa.sc-fqkvVR
-sofascore.com##.kcHixx.sc-fqkvVR
-sofascore.com##[href="/en-us/betting-tips-today"]
-
-khanacademy.org###donate-banner
-
-poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
-poe.com##.SidebarFooter_footer__i_kOn > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
-
-discord.com##.art-3yfHpl
-discord.com##.badgeContainer-1OeZs3
-discord.com##.badgeContainer-3TDXH5
-discord.com##.buttonContainer-2z-326
-discord.com##.colorDefault-1e8tQv.notice-2HEN-u
-discord.com##.containerDefaultMargin-3T8Dq_.premiumFeatureBannerBackground-Epwl-X.container-5BK5-N
-discord.com##.customizationSectionBackground-1-leQn.background-yH6t2p.premiumBackground-34OIdE > .title-1HgbhV.eyebrow-2wJAoF.h5-2feg8J > .baseShapeRound-3epLEv.eyebrow-132Xza.base-3IDx3L.textBadge-1fdDPJ.newBadge-2Y53Os.premiumBadge-2VNQ3o
-discord.com##.editorAnimate-2BAiXS.editor-1m9XtV
-discord.com##.emptyHeader-2tT-AY.defaultColor-1GKx81.heading-md-semibold-2h_vsp.defaultColor-1EVLSt
-discord.com##.scrollerBase-1Pkza4.none-1rXy4P.scroller-3X7KbA > div.listItem-3SmSlK:nth-of-type(7)
-discord.com##.tryItOutSection-W9qeGH.featureBorder-2Jl8g4.premiumFeatureBorder-1i95si
-discord.com##.vc-error-card.vc-m-bottom-8 > .modeDefault-3Warim.formText-2UzJT0.default-h5DUM7.size14-k_3Hy4.colorStandard-1Xxp1s
-
-lazada.*###module_guide_app
-lazada.*###module_installment
-lazada.*###topActionLiveUpBanner
-lazada.*###webim-container
-lazada.*##.J_Categories.card-categories.hp-mod-card
-lazada.*##.crazy-deal-details-process
-lazada.*##.flash-sale-banner.J_FSBgImg
-lazada.*##.footer-second
-lazada.*##.footer-third
-lazada.*##.hotBorder--3N6k
-lazada.*##.hp-pc-lift-nav.J_LiftNav
-lazada.*##.pdp-mod-product-price-topbanner
-lazada.*##.pdp-seller-info-pc
-
-monkeytype.com###bannerCenter
-monkeytype.com###newVersionIndicator
-
-onedrive.live.com###PROD_OneDrive-Web_SuiteNav_Unknown_HeaderDiamond_container
-onedrive.live.com##.od-PremiumUpsellBanner
-onedrive.live.com##.od-PremiumUpsellBanner-details
-onedrive.live.com##.od-QuotaBar-bottom
-onedrive.live.com##.root-193.leftNavNotificationsLink_13fd1f41.ms-Link
-onedrive.live.com##.root-199.leftNavNotificationsLink_13fd1f41.ms-Link
-
-office.com##.ms-fcl-nd.welcome__title--dark.welcome__title--visual.welcome__title--consumer-with-badge.welcome__title--consumer.ms-fontWeight-light
-office.com##ohp-learning-shelf-react.ng-star-inserted
-
-to-do.live.com##.obf-Visible.obf-Toast
-
-myanimelist.net##.ga-impression.bottom-bar
-myanimelist.net##.ga-impression.top_signup
-myanimelist.net##.js-scrollfix-bottom-rel.rightside > table > tbody > tr:nth-of-type(2)
-myanimelist.net##.pb24 > .border_top
-myanimelist.net##article.left.widget-container:nth-of-type(1)
-myanimelist.net##article.left.widget-container:nth-of-type(3)
-myanimelist.net##article.left.widget-container:nth-of-type(4)
-myanimelist.net##article.left.widget-container:nth-of-type(6)
-myanimelist.net##article.left.widget-container:nth-of-type(8)
-myanimelist.net##td > .anime-slide-block
-myanimelist.net##tr:nth-of-type(1) > td > .border_top
-myanimelist.net##tr:nth-of-type(1) > td > div:nth-of-type(4)
-
-bard.google.com##.location-buttons-dot
-bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
-bard.google.com##.location-footer-atl-text
-bard.google.com##.pagination-wrapper
-bard.google.com##chat-app > .ng-star-inserted
-bard.google.com##ogb-menu-controls > .ng-star-inserted
-bard.google.com##xap-count-badge
-
-search.yahoo.com###ft
-search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
-search.yahoo.com##.searchCenterTop.reg > .last
-search.yahoo.com##.searchRightBottom.reg
-search.yahoo.com##.searchRightTopAds.reg
-
-duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.legacy-homepage-variants_scrollCta__hNjqv
-duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.belowTheFold_featuredSectionHidden__E4pfe.legacy-homepage-variants_belowTheFold__b5i_x
-duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv.container_root__Lmrbx
-duckduckgo.com##.footer
-duckduckgo.com##.legacy-homepage_ctaSection__5siuM
+web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
 
 wikiwand.com##.footer_donation__Cje_Q
 
@@ -351,66 +407,8 @@ you.com##.izqrBn.sc-d9f31138-0
 you.com##.kEfGjV.sc-38580842-9
 you.com##.ljWYYA.sc-18e0beb6-0
 
-forum.xda-developers.com,xdaforums.com##.js-bottomFixTarget.u-bottomFixer
-forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
-forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-of-type(3)
-forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__text
-forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
-
-shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
-shopee.*##.MPbswA
-shopee.*##._2ypCMv
-
-speedrun.com##div.lg\:block.hidden:nth-of-type(3)
-
-imgur.com##.Sticky.Top
-imgur.com##.Button.EmeraldButton
-
+youtube.com###about-these-results
 youtube.com##.ythd-israel-support
-
-discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
-discord.com##.moreSubtitleMargin__91793.fullWidth__2b90a.subtitle_c3170a.text-lg-normal_d5fdbe
-
-merriam-webster.com##.pe-0.position-relative.left-sidebar-col.col-2
-merriam-webster.com##.show-full-list.additional-content-area
-
-hltv.org##.newsgrouping-header
-hltv.org##.right2Col > aside:nth-of-type(2)
-
-meet.google.com##.AkYcJb.dQO5xd
-meet.google.com##.k3Pzib.ws7pec
-
-drive.google.com##.g-Yd-Ya.g-Yd-Na.a-Ff-B.a-la-B.g-Yd
-
-open.spotify.com##.oszTUDKpXrPHyeWPs276
-
-genius.com##.gTBWpu.SongComments__Footer-sc-131p4fy-11
-genius.com##.vrxkS.InnerSectionDivider-sc-1x4onqw-0
-
-web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
-
-mybib.com##.primary.animate.show.tooltip-lg
-mybib.com##.vue-portal-target
-
-apps.apple.com##.app-privacy.section--bordered.section.l-content-width > p
-apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
-apps.apple.com##div.app-privacy__modal-section > p
-apps.apple.com##div.app-privacy__modal-section:nth-of-type(1)
-apps.apple.com##div.app-privacy__modal-section:nth-of-type(2)
-
-play.google.com##.Ou5Yib
-play.google.com##.RGUlu
-
-parcelsapp.com###features
-parcelsapp.com###tisunov > .container > div.row:nth-of-type(1)
-parcelsapp.com##.content.carrier-info
-parcelsapp.com##.landing-section
-parcelsapp.com##.light-gray-bg.faq
-parcelsapp.com##.people-tracking
-parcelsapp.com##.shops
-parcelsapp.com##.text-center.content
-parcelsapp.com##body > div:nth-of-type(2)
-parcelsapp.com##section.faq:nth-of-type(4)
-parcelsapp.com##section.faq:nth-of-type(8)
-parcelsapp.com##section.light-gray-bg:nth-of-type(7)
-parcelsapp.com##section.light-gray-bg:nth-of-type(9)
+youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
+youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
+youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
