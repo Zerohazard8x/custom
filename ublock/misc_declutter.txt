@@ -5,11 +5,14 @@
 [uBlock Origin]
 appleid.apple.com##.landing__blocks
 
+! -----
+! Represents the 1st and 7th elements
+apps.apple.com##div.app-privacy__modal-section:nth-child(n+1):nth-child(-n+2)
+
 apps.apple.com##.app-privacy.section--bordered.section.l-content-width > p
 apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
 apps.apple.com##div.app-privacy__modal-section > p
-apps.apple.com##div.app-privacy__modal-section:nth-of-type(1)
-apps.apple.com##div.app-privacy__modal-section:nth-of-type(2)
+! -----
 
 bard.google.com##.location-buttons-dot
 bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
@@ -19,6 +22,10 @@ bard.google.com##chat-app > .ng-star-inserted
 bard.google.com##ogb-menu-controls > .ng-star-inserted
 bard.google.com##xap-count-badge
 
+! -----
+! Represents the 6th and 7th elements
+bing.com###b_results > li.b_bfb_lcg:nth-child(n+6):nth-child(-n+7)
+
 bing.com###asmsbribbon_li
 bing.com###b-scopeListItem-bingatwork
 bing.com###b_algospacing
@@ -26,8 +33,6 @@ bing.com###b_alsotry
 bing.com###b_metaChat
 bing.com###b_op_anch
 bing.com###b_op_flyout
-bing.com###b_results > li.b_bfb_lcg:nth-child(6)
-bing.com###b_results > li.b_bfb_lcg:nth-child(7)
 bing.com###b_results > li.b_bfb_mainline.b_ans:first-child
 bing.com###b_syd_sm_input
 bing.com###bingatwork
@@ -62,6 +67,7 @@ bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 bing.com##div.musCard.focusin:last-child
 bing.com##section.msbModule.moduleCont:first-child
+! -----
 
 chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
 chat.openai.com##.md\:flex-col.items-stretch.flex-1.h-full.flex.relative > div:nth-of-type(1)
@@ -90,6 +96,13 @@ duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv
 duckduckgo.com##.footer
 duckduckgo.com##.legacy-homepage_ctaSection__5siuM
 
+! -----
+! Represents elements 3 and 9 (diff. of 6 -> -6n+9)
+espn.*##li.pillar.logo.fantasy:nth-child(n+3):nth-child(-6n+9)
+
+! Represents elements 2 and 8 (diff. of 6 -> -6n+8)
+espn.*##li.pillar.more-espn:nth-child(n+2):nth-child(-6n+8)
+
 espn.*##.col-one > article.quicklinks.sub-module > .quicklinks__container
 espn.*##.editorial.sub-module
 espn.*##.league-mgr.fantasySignup-basketball.fantasySignupV2.sub-module
@@ -97,26 +110,23 @@ espn.*##.league-mgr.fantasySignup-football.fantasySignupV2.sub-module
 espn.*##article.sub-module.quicklinks
 espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
 espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
-espn.*##li.pillar.logo.fantasy:nth-child(3)
-espn.*##li.pillar.logo.fantasy:nth-child(9)
-espn.*##li.pillar.more-espn:nth-child(2)
-espn.*##li.pillar.more-espn:nth-child(8)
 espn.*##ul.flex-none.Nav__Primary__Menu--right.flex.Nav__Primary__Menu:nth-of-type(2) > li.Nav__AccessibleMenuItem_Wrapper.n7.relative.items-center.flex.Nav__Primary__Menu__Item:nth-of-type(4)
 
+
+! Represents elements 8 and 10 (diff. of 2 -> -2n+10)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+8):nth-child(-2n+10)
+
 facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-type(3)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(10)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(4)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(5)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(6)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(8)
+facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+4):nth-child(-n+6)
 facebook.com##.x1iyjqo2 > ul
-facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(2)
+facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-child(n+2):nth-child(-n+3)
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
 facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
 facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(1)
 facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
 facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
 facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
+! -----
 
 fandom.com###WikiaRail
 fandom.com##.global-navigation
@@ -172,8 +182,7 @@ instructure.com###global_nav_libraries_link
 instructure.com###global_nav_libraries_menu
 instructure.com###global_nav_student_services_link
 instructure.com###global_nav_student_services_menu
-instructure.com###right-side > div > h2.todo-list-header:first-child
-instructure.com###right-side > div > h2.todo-list-header:nth-child(4)
+instructure.com###right-side > div > h2.todo-list-header:nth-child(n+1):nth-child(-3n+4)
 instructure.com##.eesy_canvas.eesy_container_v4.eesy_container
 ||chat-sin.instructure.com/mini$domain=instructure.com
 
@@ -214,10 +223,8 @@ myanimelist.net##.ga-impression.bottom-bar
 myanimelist.net##.ga-impression.top_signup
 myanimelist.net##.js-scrollfix-bottom-rel.rightside > table > tbody > tr:nth-of-type(2)
 myanimelist.net##.pb24 > .border_top
-myanimelist.net##article.left.widget-container:nth-of-type(1)
-myanimelist.net##article.left.widget-container:nth-of-type(3)
-myanimelist.net##article.left.widget-container:nth-of-type(4)
-myanimelist.net##article.left.widget-container:nth-of-type(6)
+myanimelist.net##article.left.widget-container:nth-child(n+1):nth-child(-5n+6)
+myanimelist.net##article.left.widget-container:nth-child(n+3):nth-child(-n+4)
 myanimelist.net##article.left.widget-container:nth-of-type(8)
 myanimelist.net##td > .anime-slide-block
 myanimelist.net##tr:nth-of-type(1) > td > .border_top
@@ -249,8 +256,7 @@ parcelsapp.com##.text-center.content
 parcelsapp.com##body > div:nth-of-type(2)
 parcelsapp.com##section.faq:nth-of-type(4)
 parcelsapp.com##section.faq:nth-of-type(8)
-parcelsapp.com##section.light-gray-bg:nth-of-type(7)
-parcelsapp.com##section.light-gray-bg:nth-of-type(9)
+parcelsapp.com##section.light-gray-bg:nth-child(n+7):nth-child(-2n+9)
 
 play.google.com##.Ou5Yib
 play.google.com##.RGUlu
@@ -332,8 +338,7 @@ store.steampowered.com##div > div.queue_overflow_ctn:nth-child(3)
 store.steampowered.com##div > div_block > div.gutter_items:last-child
 store.steampowered.com##div.gutter_header.pad:nth-child(6)
 store.steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
-store.steampowered.com##div.home_ctn:nth-child(11)
-store.steampowered.com##div.home_ctn:nth-child(5)
+store.steampowered.com##div.home_ctn:nth-child(n+5):nth-child(-6n+11)
 store.steampowered.com##div.rightcol.recent_reviews:nth-child(2)
 
 symbolab.com###Examples_section
@@ -366,11 +371,11 @@ twitter.com##.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemks
 twitter.com##.r-6416eg.r-o7ynqc.r-xyw6el.r-1ny4l3l.r-hv52eu.r-18u37iz.r-1loqt21.r-z2wwpe.r-g2wdr4.r-1awozwy.css-1dbjc4n.css-18t94o4.css-4rbku5
 twitter.com##.r-e7q0ms.r-1p6iasa.css-1dbjc4n
 twitter.com##.r-lrvibr.r-6416eg.r-o7ynqc.r-ymttw5.r-1ny4l3l.r-1qi8awa.r-2yi16.r-1loqt21.r-rs99b7.r-1phboty.r-sdzlij.r-42olwf.r-l5o3uw.css-1dbjc4n.css-18t94o4.css-4rbku5
-twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(5)
-twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(7)
+twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(n + 5):nth-child(-2n+7)
+twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-oyd9sg.r-13qz1uu:nth-child(n+5):nth-child(-2n+7)
 twitter.com##a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1habvwh.r-1loqt21.r-6koalj.r-eqz5dr.r-16y2uox.r-1ny4l3l.r-rjfia.r-13qz1uu
-twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(5)
-twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-of-type(7)
+twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-child(n + 5):nth-child(-2n+7)
+twitter.com##a.r-13qz1uu.r-oyd9sg.r-1ny4l3l.r-16y2uox.r-eqz5dr.r-6koalj.r-1loqt21.r-1habvwh.css-1dbjc4n.css-18t94o4.css-4rbku5:nth-child(n+5):nth-child(-2n+7)
 twitter.com##aside.r-uaa2di.r-ymttw5.r-1f1sjgu
 twitter.com##div.css-1dbjc4n.r-1awozwy.r-18u37iz.r-h3s6tt.r-1777fci.r-1jgb5lz.r-sb58tz.r-779j7e.r-13qz1uu
 twitter.com##div.css-1dbjc4n.r-1e5uvyk.r-5zmot.r-c67a83.r-1qk6wnv.r-1h3ijdo
@@ -379,8 +384,7 @@ twitter.com##div.css-1dbjc4n.r-1h3ijdo.r-5wli1b
 twitter.com##div.css-1dbjc4n.r-1r5su4o.r-e7q0ms:last-child
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-136ojw6
 twitter.com##div.css-1dbjc4n.r-h3s6tt.r-5wli1b
-twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(5)
-twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-1dbjc4n:nth-of-type(1)
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-child(n+1):nth-child(-4n+5)
 
 vlr.gg##.d8fyh
 vlr.gg##.jd8ag
@@ -414,5 +418,4 @@ you.com##.ljWYYA.sc-18e0beb6-0
 youtube.com###about-these-results
 youtube.com##.ythd-israel-support
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
-youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
-youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
+youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n+3):nth-child(-n+4)
