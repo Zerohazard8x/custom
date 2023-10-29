@@ -201,6 +201,7 @@ lazada.*##.hotBorder--3N6k
 lazada.*##.hp-pc-lift-nav.J_LiftNav
 lazada.*##.pdp-mod-product-price-topbanner
 lazada.*##.pdp-seller-info-pc
+||lzd-img-global.slatic.net/g/gcp/lazada/9dcfc6b9-6fe7-4845-a19f-32483484ce1b_ALL-121-52.png_2200x2200q80.png_.webp$image
 
 meet.google.com##.AkYcJb.dQO5xd
 meet.google.com##.k3Pzib.ws7pec
