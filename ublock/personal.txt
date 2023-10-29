@@ -146,7 +146,6 @@
 ||byjusweb.com$all
 ||bytedance.map.fastly.net$all
 ||bytedapm.com$all
-||byteoversea.com$all
 ||byteweb.com.br/ih/cflstaeii$all
 ||californiatimes.com$all
 ||cancunrent.com/en/ecsisiarsoeaflpir$all
@@ -1082,6 +1081,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||byteoversea.com$script,inline-script,object,ping,stylesheet,other
 ||jwplayer-dualstack.map.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||alikunlun.com$script,inline-script,object,ping,stylesheet,other
 ||cloudinary.com$script,inline-script,object,ping,stylesheet,other
