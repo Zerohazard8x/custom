@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal
 @namespace      github.com/openstyles/stylus
-@version        1.2.2
+@version        1.2.3
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -19,7 +19,7 @@
 }
 
 @-moz-document domain("youtube.com") {
-    /* youtube - subtitles */
+    /* youtube - subtitles, font changes */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: "DIN Next", "DIN", "Akkurat", "Bahnschrift",
@@ -42,6 +42,11 @@
         line-height: 180% !important;
         border-radius: 5px !important;
     }
+	
+	.dynamic-text-view-model-wiz, .ytd-channel-name:not(#text) {
+		font-family: "YouTube Sans", "Arial",sans-serif !important;
+		font-weight: 700 !important;
+	}
 }
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
