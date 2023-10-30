@@ -16,7 +16,7 @@
         "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
         "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
         "IBM Plex Sans KR";
-	--serif: "Libre Baskerville", "EB Garamond";
+	--serif: "Libre Baskerville", Georgia, "EB Garamond";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
         "DroidSansM", "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font",
         "Consolas", "Hack", "Hack Nerd Font", "Bitstream Vera Sans Mono",
@@ -37,6 +37,10 @@
 
 @-moz-document domain("github.com") {
     /* Github - Change all fonts, change font and formatting of code blocks, grayscale */
+	.d-flex,
+	.Link--primary,
+	.d-inline-block,
+	.p-responsive,
     .Layout,
     .markdown-body,
     .page-responsive,
@@ -187,13 +191,16 @@
         font-family: var(--mono-combo), ui-monospace, "Cascadia Mono",
             "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas,
             monospace !important;
-        font-size: 16px !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
+	.s-code-block > code {
+		font-size: 16px !important;
+	}
+	
 	.dno,
     .fw-bold,
     .unified-theme,
@@ -339,7 +346,7 @@
     /* Mozilla Dev - Code blocks, grayscale */
     code,
     .section-content > pre {
-        font-family: var(--mono-combo), monospace !important;
+        font-family: var(--mono-combo), Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace !important;
 
         /* Ligatures */
         font-variant-ligatures: common-ligatures, contextual !important;
@@ -389,7 +396,7 @@
     }
 }
 
-@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net") {
+@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com") {
     /* MediaWiki - Reduce usage of Arial font, code blocks, grayscale */
     .mediawiki,
     #sidebar,
@@ -410,6 +417,10 @@
             "Helvetica", "Arial", sans-serif !important;
     }
 
+	h1, .mw-headline {
+		font-family: var(--serif), "Linux Libertine", "Georgia", "Times", serif !important;
+	}
+	
     .mp-box > p > code,
     tt,
     .mw-parser-output > pre {
@@ -420,6 +431,7 @@
         font-feature-settings: "liga" 1, "calt" 1 !important;
     }
 
+	#mw-panel,
     #mw-head,
     #mw-wrapper,
     #globalWrapper,
