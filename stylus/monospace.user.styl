@@ -417,18 +417,26 @@
             "Helvetica", "Arial", sans-serif !important;
     }
 
-	h1, .mw-headline {
+	h1, h2 {
 		font-family: var(--serif), "Linux Libertine", "Georgia", "Times", serif !important;
 	}
 	
-    .mp-box > p > code,
+	span > b,
+	code,
+    tt,
+    .mw-parser-output > pre {
+        font-variant-ligatures: common-ligatures, contextual !important;
+        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+	
+    code,
     tt,
     .mw-parser-output > pre {
         font-family: var(--mono-combo), monospace !important;
-
-        /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+    }
+	
+	p > span > b {
+        font-family: var(--mono-combo), Consolas, DejaVu Sans Mono, Droid Sans Mono, Lucida Console, Courier New, monospace !important;
     }
 
 	#mw-panel,
