@@ -16,7 +16,7 @@
         "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
         "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
         "IBM Plex Sans KR";
-	--serif: "Libre Baskerville", Georgia, "EB Garamond";
+    --serif: "Libre Baskerville", Georgia, "EB Garamond";
     --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
         "DroidSansM", "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font",
         "Consolas", "Hack", "Hack Nerd Font", "Bitstream Vera Sans Mono",
@@ -33,14 +33,16 @@
         "Iosevka Expanded", "Iosevka", "Iosevka Nerd Font",
         "IosevkaTerm Nerd Font", "Input Sans", "Liberation Mono";
     --mono-combo: var(--block-mono), var(--monospace);
+    --ligatures: common-ligatures, contextual;
+    --features: "liga" 1, "calt" 1;
 }
 
 @-moz-document domain("github.com") {
     /* Github - Change all fonts, change font and formatting of code blocks, grayscale */
-	.d-flex,
-	.Link--primary,
-	.d-inline-block,
-	.p-responsive,
+    .d-flex,
+    .Link--primary,
+    .d-inline-block,
+    .p-responsive,
     .Layout,
     .markdown-body,
     .page-responsive,
@@ -78,8 +80,8 @@
             Menlo, Consolas, Liberation Mono, monospace !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
 
         /* -webkit-font-feature-settings: "liga", "calt" !important;
         -moz-font-feature-settings: "liga", "calt" !important;
@@ -124,8 +126,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     #p-namespaces,
@@ -163,11 +165,11 @@
         font-family: var(--mono-combo), Noto Mono, Monaco, Consolas, monospace !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
-	
-	pre > ._34q3PgLsx9zIU5BiSOjFoM {
+
+    pre > ._34q3PgLsx9zIU5BiSOjFoM {
         font-size: 16px !important;
     }
 
@@ -193,15 +195,15 @@
             monospace !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
-	.s-code-block > code {
-		font-size: 16px !important;
-	}
-	
-	.dno,
+    .s-code-block > code {
+        font-size: 16px !important;
+    }
+
+    .dno,
     .fw-bold,
     .unified-theme,
     .question-hyperlink,
@@ -239,8 +241,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     #__next,
@@ -257,8 +259,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     #__next {
@@ -276,8 +278,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     div.w3-bar.notranslate.w3-white,
@@ -302,8 +304,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     div.header-holder.has-default-focus,
@@ -323,34 +325,37 @@
             Courier New, Courier, monospace !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
-	
-	.monospaced,
+
+    .monospaced,
     pre {
         font-size: 16px !important;
     }
-	
-	.section-h, .item_item__Faryz {
-		font-family: var(--serif), Noto Serif, "Noto Serif", "Noto Serif-fallback-1", serif !important;
-	}
-	
-	.gallery_wrapper__1a7bM,
-	article {
-		filter: grayscale(80%);
-	}
+
+    .section-h,
+    .item_item__Faryz {
+        font-family: var(--serif), Noto Serif, "Noto Serif",
+            "Noto Serif-fallback-1", serif !important;
+    }
+
+    .gallery_wrapper__1a7bM,
+    article {
+        filter: grayscale(80%);
+    }
 }
 
 @-moz-document domain("developer.mozilla.org") {
     /* Mozilla Dev - Code blocks, grayscale */
     code,
     .section-content > pre {
-        font-family: var(--mono-combo), Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace !important;
+        font-family: var(--mono-combo), Menlo, Consolas, Monaco, Liberation Mono,
+            Lucida Console, monospace !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     pre > code,
@@ -371,8 +376,8 @@
         font-family: var(--mono-combo), "Courier New", monospace !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     #dateTimePicker,
@@ -417,31 +422,33 @@
             "Helvetica", "Arial", sans-serif !important;
     }
 
-	h1, h2 {
-		font-family: var(--serif), "Linux Libertine", "Georgia", "Times", serif !important;
-	}
-	
-	span > b,
-	code,
+    h1,
+    h2 {
+        font-family: var(--serif), "Linux Libertine", "Georgia", "Times", serif !important;
+    }
+
+    span > b,
+    code,
     tt,
     .mw-parser-output > pre {
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
-	
+
     code,
     tt,
     .mw-parser-output > pre {
         font-family: var(--mono-combo), monospace !important;
     }
-	
-	p > span > b {
-        font-family: var(--mono-combo), Consolas, DejaVu Sans Mono, Droid Sans Mono, Lucida Console, Courier New, monospace !important;
+
+    p > span > b {
+        font-family: var(--mono-combo), Consolas, DejaVu Sans Mono,
+            Droid Sans Mono, Lucida Console, Courier New, monospace !important;
     }
 
-	.mw-mmv-image,
-	.mw-mmv-post-image,
-	#mw-panel,
+    .mw-mmv-image,
+    .mw-mmv-post-image,
+    #mw-panel,
     #mw-head,
     #mw-wrapper,
     #globalWrapper,
@@ -463,8 +470,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 }
 
@@ -497,12 +504,12 @@
     }
 
     /* Grayscale filter */
-	.b_rc_gb_sub_cell,
-	.pagereco_CBTextCard,
-	.b_searchboxForm,
-	.pagereco_TCntr,
-	cib-serp,
-	.sb_count,
+    .b_rc_gb_sub_cell,
+    .pagereco_CBTextCard,
+    .b_searchboxForm,
+    .pagereco_TCntr,
+    cib-serp,
+    .sb_count,
     .sbiopc,
     .ptitle,
     .ent-dtab-btn,
@@ -620,7 +627,7 @@
             Roboto, Arial, sans-serif !important;
     }
 
-	cib-serp,
+    cib-serp,
     #id_n,
     .wr_rat,
     .rwrl,
@@ -648,10 +655,10 @@
     .cbtn {
         font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
-	
-	.scs_cpr > h2,
-	.b_rs > h2,
-	.b_rrsr > h2,
+
+    .scs_cpr > h2,
+    .b_rs > h2,
+    .b_rrsr > h2,
     .b_mgridTitleCont,
     .b_mgridTitle > a,
     .v-ans-title,
@@ -717,9 +724,9 @@
     }
 
     /* Font weights */
-	.scs_cpr > h2,
-	.b_rs > h2,
-	.b_rrsr > h2,
+    .scs_cpr > h2,
+    .b_rs > h2,
+    .b_rrsr > h2,
     .ent-dtab-nam-ov-dtp,
     .v-ans-title,
     .b_mgridTitle > a,
@@ -750,8 +757,8 @@
     .rd_code_red {
         font-family: var(--mono-combo), Consolas, Courier, monospace !important;
         font-size: 16px !important;
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 }
 
@@ -764,8 +771,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     div.header-main__wrapper,
@@ -818,8 +825,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 }
 
@@ -856,8 +863,8 @@
             "Courier New", Courier, monospace !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     .roleMention-11Aaqi,
@@ -907,8 +914,8 @@
             "lucida console", "lucida sans typewriter", "consolas", "monospace" !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     /* grayscale */
@@ -953,8 +960,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     div.full.height,
@@ -972,8 +979,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     div.bottomNav,
@@ -999,8 +1006,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     .snippet-row {
@@ -1008,8 +1015,8 @@
         font-size: 16px !important;
 
         /* Ligatures */
-        font-variant-ligatures: common-ligatures, contextual !important;
-        font-feature-settings: "liga" 1, "calt" 1 !important;
+        font-variant-ligatures: var(--ligatures) !important;
+        font-feature-settings: var(--features) !important;
     }
 
     #HPSPON-ad,
