@@ -39,6 +39,7 @@ bing.com###bingatwork
 bing.com###footer
 bing.com###google-s-ad
 bing.com###iasabtlnk
+bing.com###id_mobile
 bing.com###id_rfob
 bing.com###id_rh
 bing.com###imgcrtr_key
@@ -49,12 +50,15 @@ bing.com###textDeeplinksWidgetContainer
 bing.com###vs_cont > div.mc_caro:first-child
 bing.com###vs_cont > div.vs:nth-child(2)
 bing.com###wiki_expand
+bing.com##.active.id_button
 bing.com##.b_bfb_lcg
 bing.com##.b_phead_chat_link
+bing.com##.b_topborder.b_top.b_ans
 bing.com##.b_vPanel > div:nth-of-type(3)
 bing.com##.below_sbox
 bing.com##.btwrap > .iasabt
 bing.com##.bw-unNot5.bw-unSerp.bw-unAcctRt
+bing.com##.cdxConv
 bing.com##.fabcolapse
 bing.com##.hp_body > div:nth-of-type(1)
 bing.com##.langdisp.b_hide
@@ -63,6 +67,7 @@ bing.com##.popup.b_bnp_bopc
 bing.com##.rh_scale.rh_reedm.toolTip.id_button
 bing.com##.rs_chatReD
 bing.com##.sw_mktsw
+bing.com##.wpt_bc_container
 bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 bing.com##div.musCard.focusin:last-child
@@ -276,6 +281,7 @@ reddit.com##.flex-row.flex.dark\:bg-coolgray-850.bg-global-white.items-center.ju
 reddit.com##.icon-add.icon._3uVYL9qgX3QSEa_F4F-DPv
 reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
 reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm
+reddit.com##.listingsignupbar.infobar
 reddit.com##.masthead
 reddit.com##.theme-beta.z-\[4\].fixed.right-0.left-0.top-0.nd\:visible
 reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:h-\[calc\(100vh-var\(--shreddit-header-height\)-1px\)\].xs\:top-\[56px\].xs\:sticky.xs\:w-full.styled-scrollbars.xl\:col-span-4.l\:col-span-4.m\:col-span-3.s\:col-span-4.xs\:col-span-4.s\:block.hidden.right-sidebar > .mt-md
@@ -305,8 +311,11 @@ sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
 sofascore.com##.eUkCqv.sc-fqkvVR
 sofascore.com##.fSiJSi.sc-fqkvVR
 sofascore.com##.heJcSB.sc-fqkvVR
+sofascore.com##.ioCiyy.sc-fqkvVR
+sofascore.com##.iskzTm.sc-fqkvVR
 sofascore.com##.jMZkBK.sc-fqkvVR
 sofascore.com##.kKRTNa.sc-fqkvVR
+sofascore.com##.kMNHmZ.sc-fqkvVR
 sofascore.com##.kcHixx.sc-fqkvVR
 sofascore.com##[href="/en-us/betting-tips-today"]
 

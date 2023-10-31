@@ -833,7 +833,6 @@
 ||postimg.org$all
 ||powerpointpalooza.com$all
 ||priceactionguide.com/tnio/offerrogers$all
-||prismic.io$all
 ||privacy-mgmt.com/mms$all
 ||privacy-tools-for-you-453.com/downloads/lab.exe$all
 ||privacy-tools-for-you-453.com/downloads/toolspab3.exe$all
@@ -1081,6 +1080,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||prismic.io$script,inline-script,object,ping,stylesheet,other
 ||byteoversea.com$script,inline-script,object,ping,stylesheet,other
 ||jwplayer-dualstack.map.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||alikunlun.com$script,inline-script,object,ping,stylesheet,other
