@@ -1,6 +1,12 @@
 [
     {
+        "title": "TV UserAgent",
         "headers": [
+            {
+                "enabled": true,
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 7.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5216.6 Safari/537.36"
+            },
             {
                 "enabled": true,
                 "name": "Forwarded",
@@ -12,7 +18,7 @@
                 "value": "94.140.14.14"
             }
         ],
-        "title": "unblock",
+        "urlFilters": [{ "enabled": true, "urlRegex": ".*youtube.com\\/tv.*" }],
         "shortTitle": "1"
     }
 ]

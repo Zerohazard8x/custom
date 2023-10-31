@@ -1,1 +1,0 @@
-[{"title":"TV UserAgent","headers":[{"enabled":true,"name":"User-Agent","value":"Mozilla/5.0 (SMART-TV; LINUX; Tizen 7.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5216.6 Safari/537.36"}],"urlFilters":[{"enabled":true,"urlRegex":".*youtube.com\\/tv.*"}],"shortTitle":"1","version":2}]
