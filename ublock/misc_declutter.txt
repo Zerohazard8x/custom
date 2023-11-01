@@ -3,6 +3,10 @@
 ! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
 ! Title: Zerohazard's decluttering
 [uBlock Origin]
+
+adobe.com##.aem-GridColumn--offset--default--0.aem-GridColumn--offset--phone--0.aem-GridColumn--default--12.aem-GridColumn.aem-GridColumn--tablet--none.aem-GridColumn--phone--12.aem-GridColumn--default--none.aem-GridColumn--phone--hide.aem-GridColumn--offset--tablet--0.aem-GridColumn--tablet--12.flex
+adobe.com##.static.modalContainer
+
 appleid.apple.com##.landing__blocks
 
 ! -----
@@ -278,6 +282,7 @@ reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVT
 reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
 reddit.com##._2t7TYn6HwRZQwKXG47kpQR._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
 reddit.com##.flex-row.flex.dark\:bg-coolgray-850.bg-global-white.items-center.justify-between.w-full.fixed.bottom-0.px-md.m\:px-lg.pb-\[env\(safe-area-inset-bottom\)\].h-3xl.box-border.border-neutral-border-weak.border-solid.border-r-0.border-l-0.border-b-0.border-t-sm
+reddit.com##.help-hoverable.help.beta-hint
 reddit.com##.icon-add.icon._3uVYL9qgX3QSEa_F4F-DPv
 reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
 reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm

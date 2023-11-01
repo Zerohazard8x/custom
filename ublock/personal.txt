@@ -1122,7 +1122,6 @@
 ||apkdone.me$script,inline-script,object,ping,stylesheet,other
 ||app.rivalry.com$script,inline-script,object,ping,stylesheet,other
 ||aralego.net$script,inline-script,object,ping,stylesheet,other
-||arkoselabs.com$script,inline-script,object,ping,stylesheet,other
 ||assets.manutd.com$script,inline-script,object,ping,stylesheet,other
 ||assetsadobe2.com$script,inline-script,object,ping,stylesheet,other
 ||associates-amazon.com$script,inline-script,object,ping,stylesheet,other
