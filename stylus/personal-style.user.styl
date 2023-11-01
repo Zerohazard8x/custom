@@ -45,7 +45,7 @@
 
     .dynamic-text-view-model-wiz,
     #meta > ytd-channel-name > div > div > yt-formatted-string,
-	h2 > #title,
+    h2 > #title,
     h2 > yt-formatted-string {
         font-family: "YouTube Sans", "Arial", sans-serif !important;
     }
@@ -680,6 +680,13 @@ domain("yewtu.be") {
         background: none !important;
     }
 
+    .css-xvfq40-view--flex-flex,
+    .convo-peeker-convo,
+    .canvasplus-convo-peeker-convo-top,
+    .css-14jozxf-view--inlineBlock {
+        background: none !important;
+    }
+
     #calendar_color_style_overrides,
     #canvasplus-convo-peeker,
     #canvasplus-convo-peeker-back,
@@ -720,5 +727,14 @@ domain("yewtu.be") {
     header.headroom-element,
     div.full-screen {
         filter: grayscale(80%);
+    }
+}
+
+@-moz-document domain("unsplash.com") {
+    /* Unsplash - Fonts, grayscale */
+    .EtnYM {
+        font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
+            San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto,
+            Segoe UI, Arial, sans-serif !important;
     }
 }
