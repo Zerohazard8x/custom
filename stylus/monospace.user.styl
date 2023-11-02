@@ -8,9 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("baeldung.com"), domain("yahoo.com"), domain("docs.oracle.com"), domain("codeberg.org"), domain("knowyourmeme.com"), domain("discord.com"), domain("forum.xda-developers.com"), domain("xdaforums.com"), domain("geeksforgeeks.org"), domain("bing.com"), domain("bard.google.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("symbolab.com"), domain("developer.mozilla.org"), domain("wikiwand.com"), domain("learn.microsoft.com"), domain("w3schools.com"), domain("chat.openai.com"), domain("poe.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("reddit.com"), domain("wikipedia.org") {
-    @import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono|Libre+Baskerville");
-}
+@import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono|Libre+Baskerville");
 
 :root {
     /* Define variables */
@@ -117,47 +115,27 @@
 
 @-moz-document domain("reddit.com") {
     /* Reddit + UI edits */
-    .loggedin, .redesign-beta-optin {
+    .loggedin {
         font-family: Noto Sans, verdana, arial, helvetica, sans-serif !important;
     }
 
-	.flair {
-		font-family: Noto Sans, Roboto, Verdana, sans-serif !important;
-	}
-	
-	.side table tbody tr td {
-		font-family: Noto Sans, arial !important;
-	}
-	
     #header,
     .head {
         font-family: IBMPlexSans, Noto Sans, verdana, arial, helvetica,
             sans-serif !important;
     }
 
-	.linkinfo {
-		font-family: "IBM Plex Sans", IBMPlexSans, arial, helvetica, sans-serif !important;
-	}
-	
     .title {
-        font-family: "IBM Plex Sans", IBMPlexSans, arial, verdana, arial, helvetica, sans-serif !important;
+        font-family: IBMPlexSans, arial, verdana, arial, helvetica, sans-serif !important;
     }
 
-    ._3oHXlwUZwpR5SS-8P9tILX, .md > h3, .redditname, .md > h1 {
-        font-family: "IBM Plex Sans", IBMPlexSans, "Noto Sans", NotoSans, Arial, sans-serif !important;
+    ._3oHXlwUZwpR5SS-8P9tILX {
+        font-family: IBMPlexSans, NotoSans, Arial, sans-serif !important;
     }
-	
-	#search > input {
-		font-family: "IBM Plex Sans", IBMPlexSans, -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-	}
-	
+
     ._34q3PgLsx9zIU5BiSOjFoM {
         font-family: var(--mono-combo), Noto Mono, Monaco, Consolas, monospace !important;
     }
-	
-	#shortlink-text {
-		font-family: var(--mono-combo), monospace !important;
-	}
 
     pre > ._34q3PgLsx9zIU5BiSOjFoM {
         font-size: 16px !important;
@@ -523,7 +501,7 @@
     .sto_title,
     .lite-entcard-exp > h2,
     .richrsrailtitle > h2,
-    h2 > span:not(.l_ecrd_txt_heros),
+    h2 > span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol),
     container-title {
         font-weight: 600 !important;
     }
