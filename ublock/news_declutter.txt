@@ -109,3 +109,5 @@ oneesports.gg##.reading-time.post-meta
 oneesports.gg##div.transition-none.col-lg-8:nth-of-type(1) > user-reactions
 
 sportbible.com##.css-mg9b9w
+
+fortune.com##.related-video-container

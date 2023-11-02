@@ -532,7 +532,6 @@
 ||glomex.com$all
 ||gloss.workers.dev$all
 ||glue1lazy.com$all
-||go-vip.net$all
 ||go.xlirdr.com$all
 ||go0gl3.pages.dev$all
 ||gofud.store$all
@@ -1080,6 +1079,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||go-vip.net$script,inline-script,object,ping,stylesheet,other
 ||prismic.io$script,inline-script,object,ping,stylesheet,other
 ||byteoversea.com$script,inline-script,object,ping,stylesheet,other
 ||jwplayer-dualstack.map.fastly.net$script,inline-script,object,ping,stylesheet,other
