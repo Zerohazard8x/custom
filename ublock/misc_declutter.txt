@@ -78,6 +78,9 @@ bing.com##div.musCard.focusin:last-child
 bing.com##section.msbModule.moduleCont:first-child
 ! -----
 
+byjus.com###adtech-related-links-container
+byjus.com###adtech-top-banner-container
+
 chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
 chat.openai.com##.md\:flex-col.items-stretch.flex-1.h-full.flex.relative > div:nth-of-type(1)
 chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
@@ -273,6 +276,7 @@ play.google.com##.RGUlu
 
 poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
 poe.com##.SidebarFooter_footer__i_kOn > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
+poe.com##a.Button_secondary__IuV5T.Button_buttonBase__Bv9Vx
 
 reddit.com###credential_picker_container
 reddit.com###popular-posts
