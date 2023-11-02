@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal
 @namespace      github.com/openstyles/stylus
-@version        1.2.3
+@version        2.0.0
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -61,7 +61,7 @@
 }
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
-    /* facebook, messenger, instagram - reduce use of system font, grayscale */
+    /* facebook, messenger, instagram */
     :root {
         --facebook: "Optimistic Text", "Optimistic Display", "Facebook Sans",
             "Optimistic Text Normal", "Optimistic Display Bold",
@@ -120,27 +120,10 @@
     ._7y88 {
         font-family: var(--facebook), var(--font-personal), Arial;
     }
-
-    #mount_0_0_CV,
-    #mount_0_0_KX,
-    #mount_0_0_ff,
-    #mount_0_0_ui,
-    #splash-screen,
-    div.AdBox.Ad.advert.post-ads,
-    div._li,
-    div.download_link_sponsored,
-    div.fb_reset,
-    #mount_0_0_R5,
-    div.AdBox.Ad.advert.post-ads,
-    div.widgetSponsors,
-    iframe.MAWOembedIframe,
-    div.ob-hover {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("google.com") {
-    /* Google - Reduce usage of Arial font, grayscale */
+    /* Google */
     :root {
         /* Define variables */
         --roboto: Roboto, "Roboto Draft", RobotoDraft, Roboto-Regular;
@@ -237,107 +220,10 @@
     .wx62f {
         font-family: var(--roboto), Helvetica Neue, Arial, sans-serif !important;
     }
-
-    div.VUoKZ,
-    div.pGxpHc,
-    c-wiz.zQTmif.SSPGKf.qiI0tc,
-    div.gb_Kc,
-    div.gb_ed,
-    div.gb_q,
-    #hfcr,
-    #Rvx4kc,
-    #_2mOxZN2bHsP8hwP9q7jwBQ_1,
-    #_2mOxZN2bHsP8hwP9q7jwBQ_55,
-    #__HC_94253229,
-    #drive_hist_frame,
-    #drive_hist_state,
-    #drive_main_page,
-    #gac_scont,
-    #goog-lr-150,
-    #goog-lr-151,
-    #goog-lr-160,
-    #goog-lr-161,
-    #goog-lr-270,
-    #goog-lr-543,
-    #hfcr,
-    #lb,
-    #lfootercc,
-    #pagetual-preload,
-    #snbc,
-    #xUserInfo,
-    c-wiz.zQTmif.SSPGKf.O5K2Vd,
-    c-wiz.zQTmif.SSPGKf.nELLM,
-    div.CvDJxb,
-    div.DH7hPe,
-    div.Fgvgjc,
-    div.L3eUgb,
-    div.MVPoib,
-    div.MdVxQe,
-    div.T1diZc.KWE8qe,
-    div.UkZxse,
-    div.VUoKZ,
-    div.VfPpkd-suEOdc.EY8ABd,
-    div.ZACE2c.vMI2nb.dif24c.vhoiae.KkxPLb,
-    div.ZACE2c.vMI2nb.dif24c.vhoiae.KkxPLb.eO2Zfd,
-    div.a-Cd.Hb-ja-hc.a-Cd-Na,
-    div.a-b.a-b-ja-el-db.dif24c.bvmRsc.a-b-Oe-n.a-b-L.a-b-uoC0bf.vhoiae.KkxPLb,
-    div.a-ie-Vq-bb-ta,
-    div.a-pk,
-    div.bJZIjf,
-    div.cdk-describedby-message-container.cdk-visually-hidden,
-    div.cdk-live-announcer-element.cdk-visually-hidden,
-    div.cdk-overlay-container,
-    div.e0yuIb,
-    div.fp-nh,
-    div.g-Yd.a-la-B.a-Ff-B.g-Yd-Ya,
-    div.g-Yd.g-Yd-Ya.a-la-B.a-Ff-B,
-    div.gb_Fe,
-    div.gb_Hc,
-    div.gb_He,
-    div.gb_Ie,
-    div.gb_Kc,
-    div.gb_Uc,
-    div.gb_bd,
-    div.gb_ed,
-    div.gb_jd,
-    div.gb_kd,
-    div.gb_ld,
-    div.gb_n,
-    div.gb_od,
-    div.gb_q,
-    div.gb_se,
-    div.gb_te,
-    div.gb_ue,
-    div.gb_ve,
-    div.gb_we,
-    div.gb_xe,
-    div.h-w.h-w-Xi.a-w,
-    div.h-w.h-w-Xi.a-w.a-mb-w,
-    div.jAwdKb.seKsf,
-    div.lb-k-Qc,
-    div.lb-k.ea-Rc-k.Dn-Ti-ea-Rc-k.fc-a-ea-Rc-k.ea-Rc-pk,
-    div.lb-k.ea-Rc-wa-k,
-    div.main,
-    div.pGxpHc,
-    div.rUCtP,
-    div.tEhMVd,
-    div.uRjBf,
-    div.wYq63b,
-    div.ynRLnc,
-    h1.Uo8X3b.OhScic.zsYMMe,
-    header.gb_Ha.gb_8a.gb_Ld.gb_jd.gb_ed.gb_Rc.gb_k,
-    iframe.lb-k-Qc,
-    span.a-b-ra-no,
-    span.a-b-ra-no,
-    span.kpshf.line.gsr.bilit.big.mdm,
-    textarea.csi,
-    #roster-for-Google-Help {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net") {
-    /* Nitter - change all fonts, grayscale */
+    /* Nitter */
     .container,
     .tweet-content,
     .site-name,
@@ -345,20 +231,11 @@
     select,
     input {
         font-family: var(--font-personal), sans-serif !important;
-        filter: grayscale(80%);
-    }
-
-    /* grayscale */
-    div.container {
-        filter: grayscale(80%);
     }
 }
 
-@-moz-document domain("inv.riverside.rocks"),
-domain("invidious.tiekoetter.com"),
-domain("yt.funami.tech"),
-domain("yewtu.be") {
-    /* Invidious - change all fonts, grayscale */
+@-moz-document domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be") {
+    /* Invidious */
     #searchbox,
     .feed-menu,
     .h-box,
@@ -369,36 +246,18 @@ domain("yewtu.be") {
     .pure-u-10-24 {
         font-family: var(--font-personal), sans-serif !important;
     }
-
-    div.pure-g,
-    #dark_mode_pref {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("deepl.com") {
-    /* DeepL - Replace Segoe font, grayscale */
+    /* DeepL */
     body *:not(.fa) {
         font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
     }
-
-    #dl_mobile_iOS_app_banner,
-    header.dl_header.dl_header--sticky,
-    div.dl_translator_page_container,
-    #modalPortal,
-    #blockModalPortal,
-    div.dl_footerV2_container,
-    #dl_cookieBanner,
-    #deepl-ui-tooltip-portal,
-    #summarize-modal-container,
-    div.sr-only {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("cagematch.net") {
-    /* Cagematch - Reduce usage of Arial font, grayscale */
+    /* Cagematch */
     .TemplateBody,
     .HeaderMenu,
     .RatingsBoxAdjustedRating,
@@ -406,32 +265,19 @@ domain("yewtu.be") {
         font-family: var(--font-personal), Arial, "Segoe UI", Frutiger,
             "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
     }
-
-    div.LayoutUserAccount.LayoutWidth,
-    div.LayoutHeader,
-    div.LayoutWidth {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("quora.com") {
-    /* Quora - Reduce usage of system font, grayscale */
+    /* Quora */
     .q-box {
         font-family: var(--font-personal), -apple-system, system-ui,
             BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
             Cantarell, "Helvetica Neue", sans-serif !important;
     }
-
-    #credential_picker_container,
-    #onetap_google_intermediate_iframe,
-    #root,
-    #staticError {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("steampowered.com") {
-    /* Steam - reduce usage of Arial font, grayscale */
+    /* Steam */
     #game_area_metascore > div,
     #queueActionsCtn,
     #review_context,
@@ -448,38 +294,18 @@ domain("yewtu.be") {
     #footer_text {
         font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
     }
-
-    /* grayscale */
-    div.miniprofile_hover,
-    div.responsive_page_frame.with_header,
-    div.FullModalOverlay {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
-    /* SoraNews24 - Grayscale, font */
+    /* SoraNews24 */
     #container,
     #searchsubmit {
         font-family: var(--font-personal), arial, helvetica, clean, sans-serif !important;
     }
-
-    #container,
-    #div-gpt-ad-oop,
-    #fb-root,
-    #rufous-sandbox,
-    #likes-master,
-    #likes-other-gravatars {
-        filter: grayscale(80%);
-    }
-
-    body {
-        background: rgb(100, 59, 54) !important;
-    }
 }
 
 @-moz-document domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in") {
-    /* Amazon - Grayscale, font */
+    /* Amazon */
     #a-page,
     #e > input,
     .a-container {
@@ -495,17 +321,10 @@ domain("yewtu.be") {
     span > span > a {
         font-family: "Amazon Ember", Arial !important;
     }
-
-    #a-page,
-    #b,
-    #h,
-    #a-popover-root {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("emojipedia.org") {
-    /* Emojipedia - Grayscale, font */
+    /* Emojipedia */
     :root {
         --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88",
             "__Plus_Jakarta_Sans_Fallback_c26b88";
@@ -518,18 +337,6 @@ domain("yewtu.be") {
             segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
             apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
     }
-
-    /* Grayscale */
-    #__next,
-    div.container,
-    footer.page-footer.v2,
-    div.sponsor,
-    header.page-header,
-    div.page-header-part.page-header-part--ad,
-    div.topMainAd,
-    #react-root {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("twitch.tv") {
@@ -540,7 +347,7 @@ domain("yewtu.be") {
 }
 
 @-moz-document domain("flightaware.com") {
-    /* FlightAware - Fonts, grayscale */
+    /* FlightAware */
     input,
     #s2id_autogen1,
     #s2id_autogen2,
@@ -552,25 +359,10 @@ domain("yewtu.be") {
     .messaging-title > h2 {
         font-family: Lato, "Roboto", Arial, Helvetica, sans-serif !important;
     }
-
-    #blockerDisclaimerContainer,
-    #cookieDisclaimerContainer,
-    #iecountdown,
-    #mainBody,
-    div.ac_results.fauxListWrapper,
-    div.autocomplete-suggestions,
-    div.select2-drop-mask,
-    div.select2-drop.select2-drop-multi.select2-display-none.omnisearch_dropdown.select2-drop-active,
-    div.select2-sizer,
-    nav.navBarMobile,
-    span.select2-hidden-accessible,
-    div.ReactModalPortal {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk") {
-    /* ESPN - Font changes, grayscale */
+    /* ESPN */
     .HeaderEvent__Headline,
     .ScoreCell__Score,
     .StatBlock,
@@ -592,23 +384,10 @@ domain("yewtu.be") {
         font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial,
             Helvetica Neue, Helvetica, sans-serif !important;
     }
-
-    /* Grayscale */
-    #cboxOverlay,
-    #colorbox,
-    #fb-root,
-    #global-viewport,
-    #oneid-secure-responder,
-    #oneid-wrapper,
-    div.ad-slot.ad-slot-exclusions,
-    div.ad-slot.ad-slot-overlay,
-    div.shim {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("metacritic.com") {
-    /* Metacritic - Fonts, grayscale */
+    /* Metacritic */
     #container,
     #content_section,
     #hpbanner,
@@ -620,27 +399,16 @@ domain("yewtu.be") {
     #primary_nav {
         font-family: ProximaNova, sans-serif !important;
     }
-
-    #__nuxt,
-    #onetrust-consent-sdk {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("msn.com") {
-    /* MSN - Fonts, grayscale */
+    /* MSN */
     .lightTheme,
     .locationItem-DS-EntryPoint1-6,
     .suggestion-DS-EntryPoint1-1,
     .weatherButtonWrapper-DS-EntryPoint1-3,
     .weatherFeedbackDialogButton-DS-EntryPoint1-3 {
         font-family: Segoe UI, Segoe WP, Arial, sans-serif, "MS Shell Dlg 2" !important;
-    }
-
-    #ssr,
-    #root,
-    #recharts_measurement_span {
-        filter: grayscale(80%);
     }
 }
 
@@ -655,18 +423,6 @@ domain("yewtu.be") {
     .whispers .thread-message__message,
     .video-chat__message {
         line-height: 250% !important;
-    }
-
-    #bttvSettingsPanel,
-    .chat-input,
-    .chat-scrollable-area__message-container,
-    .video-chat__message,
-    .whispers .thread-message__message,
-    div.ReactModalPortal,
-    div.bttv-rs-toast-provider,
-    section[data-test-selector="chat-room-component-layout"]
-        .simplebar-content {
-        filter: grayscale(80%);
     }
 }
 
@@ -686,52 +442,17 @@ domain("yewtu.be") {
     .css-14jozxf-view--inlineBlock {
         background: none !important;
     }
-
-    #calendar_color_style_overrides,
-    #canvasplus-convo-peeker,
-    #canvasplus-convo-peeker-back,
-    #flash_message_holder,
-    #nav-tray-portal,
-    #smartscroll-padding,
-    div.canvasplus-search-ui-wrapper,
-    div.cpx-snackbar-container,
-    div.eesy.eesy-tab2-container,
-    div.ic-app,
-    div.impact-sr-only,
-    div.notification-container,
-    div.screenreader-only,
-    div.tinymce-a11y-checker-container,
-    div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all,
-    div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable,
-    div.event-details.carat-bottom {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("tvtropes.org") {
-    /* TV tropes - Fonts, grayscale */
+    /* TV tropes */
     .sugarWiki {
         font-family: var(--font-personal), sans-serif;
-    }
-
-    #fb-root,
-    #main-container,
-    #main-footer,
-    #modal-box,
-    #outer_sticky,
-    #tvtropes_oop_ad_slot,
-    .bw-filter,
-    .i.browser-firefox,
-    div.fad,
-    div.mobile-on,
-    header.headroom-element,
-    div.full-screen {
-        filter: grayscale(80%);
     }
 }
 
 @-moz-document domain("unsplash.com") {
-    /* Unsplash - Fonts, grayscale */
+    /* Unsplash */
     .EtnYM {
         font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
             San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto,

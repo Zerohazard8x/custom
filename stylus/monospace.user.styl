@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        1.3.0
+@version        2.0.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -85,16 +85,10 @@
     pre {
         font-size: 16px !important;
     }
-
-    div.logged-in.env-production.page-responsive.full-width,
-    div.logged-in.env-production.page-responsive,
-    div.sr-only {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("wikipedia.org") {
-    /* Wikipedia + Replace Arial font */
+    /* Wikipedia */
     #searchform,
     #p-lang-btn-label,
     #vector-page-tools-dropdown-label,
@@ -116,16 +110,6 @@
     pre > span {
         font-family: var(--mono-combo), monospace !important;
         font-size: 16px !important;
-    }
-
-    #p-namespaces,
-    a.mw-jump-link,
-    div.mw-page-container,
-    div.mwe-popups.mwe-popups-type-page,
-    div.vector-header-container,
-    div.vector-settings,
-    a.oo-ui-element-hidden {
-        filter: grayscale(80%);
     }
 }
 
@@ -192,19 +176,6 @@
         font-family: var(--not-monospace), -apple-system, BlinkMacSystemFont,
             "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
     }
-
-    /* Monospace */
-    #notify-container,
-    #custom-header,
-    header.s-topbar.ps-fixed.t0.l0.js-top-bar,
-    div.container,
-    footer.site-footer.js-footer,
-    div.d-none,
-    #onetrust-banner-sdk,
-    div.d-none.js-consent-banner-version,
-    header.site-header {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("poe.com") {
@@ -232,11 +203,6 @@
         font-family: var(--mono-combo), Consolas, monaco, monospace !important;
         font-size: 16px !important;
     }
-
-    #__next,
-    div.ReactModalPortal {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("chat.openai.com") {
@@ -245,10 +211,6 @@
         font-family: var(--mono-combo), Söhne Mono, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
         font-size: 16px !important;
-    }
-
-    #__next {
-        filter: grayscale(80%);
     }
 }
 
@@ -261,17 +223,6 @@
             Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
         font-size: 16px !important;
     }
-
-    div.w3-bar.notranslate.w3-white,
-    div.w3-hide-large,
-    nav.w3-hide-small.navex,
-    div.topnav.notranslate,
-    div.w3-sidebar.w3-collapse,
-    div.w3-main.w3-light-grey,
-    a.ga-bottom,
-    #pagetual-preload {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("learn.microsoft.com") {
@@ -282,13 +233,6 @@
         font-family: var(--mono-combo), SFMono-Regular, Consolas,
             Liberation Mono, Menlo, Courier, monospace !important;
         font-size: 16px !important;
-    }
-
-    div.header-holder.has-default-focus,
-    div.mainContainer.uhf-container.uhf-container.is-full.has-default-focus,
-    section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm.margin-top-none,
-    div.action-panel.has-default-focus {
-        filter: grayscale(80%);
     }
 }
 
@@ -311,11 +255,6 @@
         font-family: var(--serif), Noto Serif, "Noto Serif",
             "Noto Serif-fallback-1", serif !important;
     }
-
-    .gallery_wrapper__1a7bM,
-    article {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("developer.mozilla.org") {
@@ -331,37 +270,12 @@
     strong > code {
         font-size: 16px !important;
     }
-
-    #root,
-    #a11y-status-message {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("symbolab.com") {
     /* Symbolab + LaTeX input interface */
     .latex-command-input {
         font-family: var(--mono-combo), "Courier New", monospace !important;
-    }
-
-    #dateTimePicker,
-    #fb-root,
-    #force-svg,
-    #hiddenData,
-    #loading-spinner,
-    #no-render-svg,
-    #symbolabLogoPrint,
-    #symbolabLogoPrint1,
-    div.hide-important,
-    div.nl-cookiepolicy,
-    div.nl-footer.print-hide.no-select,
-    div.nl-generatePdf.nl-hidden,
-    div.nl-hidden.nl-generatePdf,
-    div.nl-page,
-    div.print-hide,
-    section.nl-center,
-    div.nl-hidden.page {
-        filter: grayscale(80%);
     }
 }
 
@@ -401,21 +315,6 @@
         font-family: var(--mono-combo), Consolas, DejaVu Sans Mono,
             Droid Sans Mono, Lucida Console, Courier New, monospace !important;
     }
-
-    .mw-mmv-image,
-    .mw-mmv-post-image,
-    #mw-panel,
-    #mw-head,
-    #mw-wrapper,
-    #globalWrapper,
-    a.mw-wiki-logo,
-    div.mw-panel,
-    div.noprint,
-    div.mw-body,
-    #footer,
-    div.suggestions {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("bard.google.com") {
@@ -428,7 +327,7 @@
 }
 
 @-moz-document domain("bing.com") {
-    /* Bing + "fluent" changes + grayscale */
+    /* Bing + "fluent" changes */
     :root {
         --roboto-then-segoe-text: "Roboto", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe;
@@ -453,106 +352,6 @@
     .b_scopebar_item > a {
         text-transform: none !important;
         font-size: 13px !important;
-    }
-
-    /* Grayscale filter */
-    .pagereco_CBCntr,
-    .b_moreLink,
-    .b_slidebar,
-    .b_rc_gb_sub_cell,
-    .pagereco_CBTextCard,
-    .b_searchboxForm,
-    .pagereco_TCntr,
-    cib-serp,
-    .sb_count,
-    .sbiopc,
-    .ptitle,
-    .ent-dtab-btn,
-    .scs_theme,
-    .b_imagePair,
-    #syd_qna_suggestion,
-    .rs_chatReD,
-    .b_sideBleed,
-    .mc_vtvc_meta_block,
-    .b_scopebar,
-    #fltIdtCon,
-    #imagemeta,
-    #rd_gtrtb_ttl,
-    #vvlb,
-    .algoSlug_icon,
-    .asSectionHeading,
-    .b_algo > h2 > a,
-    .b_algospacing,
-    .b_app_common_btn,
-    .b_bfbLcgAnchorText,
-    .b_entityTitle,
-    .b_fbText,
-    .b_focusTextLarge,
-    .b_focusTextMedium,
-    .b_logo,
-    .b_mgridTitle,
-    .b_primtxt,
-    .b_rc_gb_widget_title,
-    .b_seeMoreCont,
-    .b_topTitle,
-    .b_vList,
-    .b_vPanel,
-    .cbtn,
-    .container,
-    .dest_name,
-    .dg_b .infnmpt .infpd a,
-    .ent-dtab-nam-ov-dtp,
-    .fdbtext,
-    .hb_title_col,
-    .hp_body,
-    .irp-video-slogan,
-    .item,
-    .l_ecrd_ftr_txt,
-    .l_ecrd_rrct-items,
-    .mc_vtvc_meta_row_channel,
-    .mc_vtvc_title > span,
-    .mc_vtvc_title > strong,
-    .mc_vtvc_title,
-    .metaItem,
-    .ms-Button-label,
-    .ms-search-tenantLogo-text,
-    .ms-search-text-h2,
-    .qna_algoLink_title,
-    .rd_cCodeBg,
-    .rd_code_blu,
-    .rd_code_red,
-    .rd_gtrtb_nav_item,
-    .recommendationsTableTitle > h2,
-    .rstc,
-    .rwrl,
-    .sa_tm_subText,
-    .sb_f_count,
-    .scopes,
-    .scs_metactn > div h2,
-    .sto_attr_header,
-    .sto_attr_table,
-    .sto_attrlitc,
-    .sto_title,
-    .tdw_button,
-    .tit,
-    .title,
-    .tptxt,
-    .v-live-t-txt,
-    .vrhcpt,
-    .vrhtt,
-    .wpvn_ala_wtt,
-    button,
-    canvas,
-    container-title,
-    div > p span,
-    h2 > span,
-    h2,
-    h3,
-    img,
-    input,
-    svg,
-    #sw_as {
-        filter: grayscale(80%);
     }
 
     /* Font styles */
@@ -725,34 +524,10 @@
         font-family: var(--mono-combo), Consolas, monospace !important;
         font-size: 16px !important;
     }
-
-    div.header-main__wrapper,
-    div.header-main__slider,
-    button.btn.btn-success,
-    div.wrapper,
-    div.modal.fade,
-    div.backdrop,
-    footer.gfg-footer,
-    div.cookie-consent.hide-consent,
-    div.lightbox-target,
-    #GFG_AD_Desktop_Stickyunit_1x1 {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("forum.xda-developers.com"), domain("xdaforums.com") {
     /* XDADevelopers */
-    #_qc_cookie_access,
-    #pagetual-preload,
-    div.menu.menu--wide.menu--right.is-active.is-complete,
-    div.menuOutsideClicker,
-    div.u-bottomFixer.js-bottomFixTarget,
-    div.uix_pageWrapper--fixed,
-    span.globalAction,
-    #jumpToTop {
-        filter: grayscale(80%);
-    }
-
     .node-description,
     .uix_welcomeSection__title,
     #footer,
@@ -809,16 +584,6 @@
             "Lucida Sans Typewriter", "Liberation Mono", "Nimbus Mono L", Monaco,
             "Courier New", Courier, monospace !important;
     }
-
-    .roleMention-11Aaqi,
-    .membersGroup-2eiWxl,
-    .roles-3vQPxb,
-    .username-3_PJ5r,
-    .username-h_Y3Us,
-    .username-vAneIW,
-    .mention {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("knowyourmeme.com") {
@@ -856,23 +621,6 @@
         font-family: var(--block-mono), var(--monospace), "monaco",
             "lucida console", "lucida sans typewriter", "consolas", "monospace" !important;
     }
-
-    /* grayscale */
-    #cboxOverlay,
-    #container,
-    #footer,
-    #split-test,
-    #sub_network_footer_wrapper,
-    .r-top-block,
-    div.header-unit-wrapper,
-    div.hide,
-    div.ui-helper-hidden-accessible,
-    div.x_brb6.c,
-    img,
-    ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front,
-    #pagetual-preload {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("codeberg.org") {
@@ -898,11 +646,6 @@
             "Twemoji Mozilla" !important;
         font-size: 16px !important;
     }
-
-    div.full.height,
-    footer.page-footer {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("docs.oracle.com") {
@@ -912,16 +655,6 @@
     code {
         font-family: var(--mono-combo), "DejaVu Sans Mono", monospace !important;
         font-size: 16px !important;
-    }
-
-    div.bottomNav,
-    div.contentContainer,
-    div.header,
-    div.subNav,
-    div.topNav,
-    p.legalCopy,
-    #footer-banner {
-        filter: grayscale(80%);
     }
 }
 
@@ -941,26 +674,6 @@
         font-family: var(--mono-combo), CourierNewPSMT !important;
         font-size: 16px !important;
     }
-
-    #HPSPON-ad,
-    #Header,
-    #Masterwrap,
-    #advertisement-thamba,
-    #doc,
-    #pagetual-preload,
-    #sa-feedback-panel,
-    #yui3-css-stamp,
-    div.darla,
-    div.hide,
-    div.sa-aria-live-region,
-    div.uh3-p,
-    div.uh3-p.uh3lite,
-    div.wafer-lightbox-overlay,
-    div.wafer-template,
-    div.yui3-widget.yui3-safesearch.hide,
-    div._yb_1ayze._yb_2ahyx {
-        filter: grayscale(80%);
-    }
 }
 
 @-moz-document domain("baeldung.com") {
@@ -969,10 +682,5 @@
         font-family: var(--mono-combo), "Source Code Pro", "Consolas",
             "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
         font-size: 16px !important;
-    }
-
-    #fvp,
-    #wrap {
-        filter: grayscale(80%);
     }
 }

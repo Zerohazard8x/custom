@@ -1,0 +1,14 @@
+! Description: conversion of my Stylus style for text rendering
+! Expires: 1 day
+! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
+! Title: Zerohazard's text rendering tweaks
+[uBlock Origin]
+
+/.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(-webkit-font-smoothing: antialiased !important)
+/.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(-moz-osx-font-smoothing: grayscale !important)
+/.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(-ms-font-smoothing: antialiased !important)
+/.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(text-rendering: optimizeLegibility !important)
+
+/.*/##pre,code,b,tt:style(font-variant-ligatures: common-ligatures !important)
+/.*/##pre,code,b,tt:style(font-variant-ligatures: contextual !important)
+/.*/##pre,code,b,tt:style(font-feature-settings: "liga" 1, "calt" 1 !important)
