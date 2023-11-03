@@ -111,3 +111,10 @@ oneesports.gg##div.transition-none.col-lg-8:nth-of-type(1) > user-reactions
 sportbible.com##.css-mg9b9w
 
 fortune.com##.related-video-container
+
+dailymail.co.uk###mol-d1b20340-78a7-11ee-b370-15ff96628aa1
+dailymail.co.uk###most-watched-videos-lazy-container
+dailymail.co.uk##.beta > .iframe-creator
+dailymail.co.uk##.module.image_strapline_slant_wocc.item.sport
+dailymail.co.uk##.shareArticles
+dailymail.co.uk##div.module.html_snippet.item.home:nth-of-type(3)

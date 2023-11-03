@@ -473,7 +473,6 @@
 ||fnojdupjbufb.xyz$all
 ||fnptvpbwnoo.xyz$all
 ||fonts.net$all
-||force.com$all
 ||forgecdn.net$all
 ||form.run$all
 ||fotoobjetivo.com/wp-content/x1/$all
@@ -887,7 +886,6 @@
 ||sageuniversity.in/aui/edorpprhtnroeceiiersr$all
 ||said3page.com$all
 ||sakuriggd.online$all
-||salesforce.com$all
 ||salesforceliveagent.com$all
 ||sapphiretech.global$all
 ||sarang77skuy.com$all
@@ -1079,6 +1077,8 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||force.com$script,inline-script,object,ping,stylesheet,other
+||salesforce.com$script,inline-script,object,ping,stylesheet,other
 ||go-vip.net$script,inline-script,object,ping,stylesheet,other
 ||prismic.io$script,inline-script,object,ping,stylesheet,other
 ||byteoversea.com$script,inline-script,object,ping,stylesheet,other
@@ -1093,7 +1093,6 @@
 ||passport.twitch.tv$script,inline-script,object,ping,stylesheet,other
 ||launchdarkly.com$script,inline-script,object,ping,stylesheet,other
 ||azure.com$script,inline-script,object,ping,stylesheet,other
-||geetest.com$script,inline-script,object,ping,stylesheet,other
 ||wcpstatic.microsoft.com$script,inline-script,object,ping,stylesheet,other
 ||123movies.cards$script,inline-script,object,ping,stylesheet,other
 ||33across.com$script,inline-script,object,ping,stylesheet,other
@@ -1192,7 +1191,6 @@
 ||d3m5pmku5z3tzn.cloudfront.net$script,inline-script,object,ping,stylesheet,other
 ||d3t2hlxboiur0e.cloudfront.net$script,inline-script,object,ping,stylesheet,other
 ||d3tvd1u91rr79.cloudfront.net$script,inline-script,object,ping,stylesheet,other
-||d9k0w0y3delq8.cloudfront.net$script,inline-script,object,ping,stylesheet,other
 ||datatables.net$script,inline-script,object,ping,stylesheet,other
 ||defybrick.com$script,inline-script,object,ping,stylesheet,other
 ||deviantart.net$script,inline-script,object,ping,stylesheet,other
@@ -1288,7 +1286,6 @@
 ||klaviyo.com$script,inline-script,object,ping,stylesheet,other
 ||krxd.net$script,inline-script,object,ping,stylesheet,other
 ||kunlunar.com$script,inline-script,object,ping,stylesheet,other
-||kunlunno.com$script,inline-script,object,ping,stylesheet,other
 ||kunlunsl.com$script,inline-script,object,ping,stylesheet,other
 ||lahuashanbx.com$script,inline-script,object,ping,stylesheet,other
 ||lh3.google.com$script,inline-script,object,ping,stylesheet,other
