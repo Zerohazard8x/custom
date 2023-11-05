@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.0.0
+@version        2.0.1
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -126,11 +126,12 @@
     }
 
     .title {
-        font-family: IBMPlexSans, arial, verdana, arial, helvetica, sans-serif !important;
+        font-family: "IBM Plex Sans", IBMPlexSans, arial, verdana, arial,
+            helvetica, sans-serif !important;
     }
 
     ._3oHXlwUZwpR5SS-8P9tILX {
-        font-family: IBMPlexSans, NotoSans, Arial, sans-serif !important;
+        font-family: "IBM Plex Sans", IBMPlexSans, NotoSans, Arial, sans-serif !important;
     }
 
     ._34q3PgLsx9zIU5BiSOjFoM {
@@ -139,19 +140,6 @@
 
     pre > ._34q3PgLsx9zIU5BiSOjFoM {
         font-size: 16px !important;
-    }
-
-    /* UI */
-    .h-jI8r2f9ozTNqu_2TBeY {
-        width: 1px !important;
-    }
-
-    ._3jiriKeNer8y0-1r6oWIFM {
-        width: 1px !important;
-    }
-
-    ._3jiriKeNer8y0-1r6oWIFM {
-        min-width: 40px !important;
     }
 }
 
@@ -180,19 +168,23 @@
 
 @-moz-document domain("poe.com") {
     /* Poe */
-    .SidebarLayout_layoutWrapper__mPYi4,
+    .BotInfoCardHeader_followerCount__nrf6H,
+    .BotMetadataTag_BotMetadataTag__Jkq1r,
+    .Button_buttonBase__Bv9Vx,
+    .ChatHeader_subText__JcFh3,
     .ChatHistoryListItem_flexWithCenteredItems__Xmy6y,
     .ChatHistoryListItem_secondaryText__bBw_y,
     .ContinueLastChat_left___0Rco,
-    .ChatHeader_subText__JcFh3,
-    .BotInfoCardHeader_followerCount__nrf6H,
-    h2,
-    .SidebarCard_link__ot_pN,
-    .LinksSection_link__Z9CvZ,
-    p,
-    .FileInfo_title__sUM2l,
+    .ExploreBotListItem_botDescription__Ps9Jt,
+    .ExploreBotListItem_botName__W6Tyi,
     .FileInfo_metadata__Wu4uZ,
-    .Button_buttonBase__Bv9Vx,
+    .FileInfo_title__sUM2l,
+    .LinksSection_link__Z9CvZ,
+    .Markdown_markdownContainer__Tz3HQ,
+    .SidebarCard_link__ot_pN,
+    .SidebarLayout_layoutWrapper__mPYi4,
+    h2,
+    p,
     .ChatMessage_badge__ah1FU {
         font-family: var(--not-monospace), -apple-system, system-ui,
             BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
@@ -501,7 +493,10 @@
     .sto_title,
     .lite-entcard-exp > h2,
     .richrsrailtitle > h2,
-    h2 > span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol),
+    h2
+        > span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol):not(
+            .l_ecrd_txt_small
+        ),
     container-title {
         font-weight: 600 !important;
     }
