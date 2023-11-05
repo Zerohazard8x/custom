@@ -8,4 +8,4 @@
 
 - [Zerohazard's Filters](https://subscribe.adblockplus.org/?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt&title=Zerohazard's%20Filters)
 
-- [Zerohazard's Text Rendering Tweaks](https://subscribe.adblockplus.org/?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/text_rendering.txt&title=Zerohazard's%20text%20rendering%20tweaks)
+- [Zerohazard's Text Rendering Tweaks](https://subscribe.adblockplus.org/?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/text-rendering.txt&title=Zerohazard's%20text%20rendering%20tweaks)
