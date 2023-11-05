@@ -33,8 +33,6 @@
         "Iosevka Expanded", "Iosevka", "Iosevka Nerd Font",
         "IosevkaTerm Nerd Font", "Input Sans", "Liberation Mono";
     --mono-combo: var(--block-mono), var(--monospace);
-    --ligatures: common-ligatures, contextual;
-    --features: "liga" 1, "calt" 1;
 }
 
 @-moz-document domain("github.com") {
@@ -114,20 +112,33 @@
 }
 
 @-moz-document domain("reddit.com") {
-    /* Reddit + UI edits */
-    .loggedin {
+    /* Reddit */
+	.add {
+        font-family: Noto Sans, "Helvetica", "Arial", sans-serif !important;
+    }
+	
+    .loggedin, .score, .spacer, .login-form, .login-form > input, .flat-list, time, .author, .usertext-body, .numchildren {
         font-family: Noto Sans, verdana, arial, helvetica, sans-serif !important;
     }
 
+	#search > input {
+        font-family: "IBM Plex Sans", IBMPlexSans, verdana !important;
+    }
+	
+	.commentsignupbar__textarea-above,
     #header,
     .head {
-        font-family: IBMPlexSans, Noto Sans, verdana, arial, helvetica,
+        font-family: "IBM Plex Sans", IBMPlexSans, Noto Sans, verdana, arial, helvetica,
             sans-serif !important;
     }
 
-    .title {
+    .title, .title-button {
         font-family: "IBM Plex Sans", IBMPlexSans, arial, verdana, arial,
             helvetica, sans-serif !important;
+    }
+	
+	.md > h2, .md > h3, .md > h4 {
+        font-family: "IBM Plex Sans", IBMPlexSans, "Helvetica", "Arial", sans-serif !important;
     }
 
     ._3oHXlwUZwpR5SS-8P9tILX {
