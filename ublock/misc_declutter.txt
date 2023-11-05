@@ -9,14 +9,14 @@ adobe.com##.static.modalContainer
 
 appleid.apple.com##.landing__blocks
 
-! -----
+!!!!!!!!
 ! Represents the 1st and 7th elements
 apps.apple.com##div.app-privacy__modal-section:nth-child(n+1):nth-child(-n+2)
 
 apps.apple.com##.app-privacy.section--bordered.section.l-content-width > p
 apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
 apps.apple.com##div.app-privacy__modal-section > p
-! -----
+!!!!!!!!
 
 bard.google.com##.location-buttons-dot
 bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
@@ -26,7 +26,7 @@ bard.google.com##chat-app > .ng-star-inserted
 bard.google.com##ogb-menu-controls > .ng-star-inserted
 bard.google.com##xap-count-badge
 
-! -----
+!!!!!!!!
 ! Represents the 6th and 7th elements
 bing.com###b_results > li.b_bfb_lcg:nth-child(n+6):nth-child(-n+7)
 
@@ -76,7 +76,7 @@ bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 bing.com##div.musCard.focusin:last-child
 bing.com##section.msbModule.moduleCont:first-child
-! -----
+!!!!!!!!
 
 byjus.com###adtech-related-links-container
 byjus.com###adtech-top-banner-container
@@ -108,23 +108,7 @@ duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv
 duckduckgo.com##.footer
 duckduckgo.com##.legacy-homepage_ctaSection__5siuM
 
-! -----
-! Represents elements 3 and 9 (diff. of 6 -> -6n+9)
-espn.*##li.pillar.logo.fantasy:nth-child(n+3):nth-child(-6n+9)
-
-! Represents elements 2 and 8 (diff. of 6 -> -6n+8)
-espn.*##li.pillar.more-espn:nth-child(n+2):nth-child(-6n+8)
-
-espn.*##.col-one > article.quicklinks.sub-module > .quicklinks__container
-espn.*##.editorial.sub-module
-espn.*##.league-mgr.fantasySignup-basketball.fantasySignupV2.sub-module
-espn.*##.league-mgr.fantasySignup-football.fantasySignupV2.sub-module
-espn.*##article.sub-module.quicklinks
-espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
-espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
-espn.*##ul.flex-none.Nav__Primary__Menu--right.flex.Nav__Primary__Menu:nth-of-type(2) > li.Nav__AccessibleMenuItem_Wrapper.n7.relative.items-center.flex.Nav__Primary__Menu__Item:nth-of-type(4)
-
-
+!!!!!!!!
 ! Represents elements 8 and 10 (diff. of 2 -> -2n+10)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+8):nth-child(-2n+10)
 
@@ -138,7 +122,7 @@ facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1
 facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
 facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
 facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
-! -----
+!!!!!!!!
 
 fandom.com###WikiaRail
 fandom.com##.global-navigation
@@ -312,20 +296,6 @@ search.yahoo.com##.searchRightTopAds.reg
 shopee.*##.MPbswA
 shopee.*##._2ypCMv
 shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
-
-sofascore.com##.bEAMMG.sc-fqkvVR
-sofascore.com##.bgUNaL.sc-fqkvVR
-sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
-sofascore.com##.eUkCqv.sc-fqkvVR
-sofascore.com##.fSiJSi.sc-fqkvVR
-sofascore.com##.heJcSB.sc-fqkvVR
-sofascore.com##.ioCiyy.sc-fqkvVR
-sofascore.com##.iskzTm.sc-fqkvVR
-sofascore.com##.jMZkBK.sc-fqkvVR
-sofascore.com##.kKRTNa.sc-fqkvVR
-sofascore.com##.kMNHmZ.sc-fqkvVR
-sofascore.com##.kcHixx.sc-fqkvVR
-sofascore.com##[href="/en-us/betting-tips-today"]
 
 speedrun.com##div.lg\:block.hidden:nth-of-type(3)
 

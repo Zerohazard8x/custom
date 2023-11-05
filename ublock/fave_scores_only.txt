@@ -1,0 +1,43 @@
+[uBlock Origin]
+! Title: Zerohazard's Fave Scores Only
+! Description: Increases prominence of scores of your favorite sports team/s
+! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
+! Expires: 1 day
+
+!!!!!!!!
+! Represents elements 3 and 9 (diff. of 6 -> -6n+9)
+espn.*##li.pillar.logo.fantasy:nth-child(n+3):nth-child(-6n+9)
+
+! Represents elements 2 and 8 (diff. of 6 -> -6n+8)
+espn.*##li.pillar.more-espn:nth-child(n+2):nth-child(-6n+8)
+
+espn.*##.col-one > article.quicklinks.sub-module > .quicklinks__container
+espn.*##.editorial.sub-module
+espn.*##.league-mgr.fantasySignup-basketball.fantasySignupV2.sub-module
+espn.*##.league-mgr.fantasySignup-football.fantasySignupV2.sub-module
+espn.*##article.sub-module.quicklinks
+espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:last-child
+espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
+espn.*##ul.flex-none.Nav__Primary__Menu--right.flex.Nav__Primary__Menu:nth-of-type(2) > li.Nav__AccessibleMenuItem_Wrapper.n7.relative.items-center.flex.Nav__Primary__Menu__Item:nth-of-type(4)
+
+!!!!!!!!
+
+! Represents all elements after 1 (1+1=2)
+fotmob.com##div.e7pc1841.css-mq7mn-Group:nth-child(n+2)
+
+fotmob.com##.e1linw372.css-1q9econ-TrendingNewsTopHeadlinesCSS
+!!!!!!!!
+
+sofascore.com##.bEAMMG.sc-fqkvVR
+sofascore.com##.bgUNaL.sc-fqkvVR
+sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
+sofascore.com##.eUkCqv.sc-fqkvVR
+sofascore.com##.fSiJSi.sc-fqkvVR
+sofascore.com##.heJcSB.sc-fqkvVR
+sofascore.com##.ioCiyy.sc-fqkvVR
+sofascore.com##.iskzTm.sc-fqkvVR
+sofascore.com##.jMZkBK.sc-fqkvVR
+sofascore.com##.kKRTNa.sc-fqkvVR
+sofascore.com##.kMNHmZ.sc-fqkvVR
+sofascore.com##.kcHixx.sc-fqkvVR
+sofascore.com##[href="/en-us/betting-tips-today"]
