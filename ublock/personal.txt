@@ -1083,7 +1083,6 @@
 ||prismic.io$script,inline-script,object,ping,stylesheet,other
 ||byteoversea.com$script,inline-script,object,ping,stylesheet,other
 ||jwplayer-dualstack.map.fastly.net$script,inline-script,object,ping,stylesheet,other
-||alikunlun.com$script,inline-script,object,ping,stylesheet,other
 ||cloudinary.com$script,inline-script,object,ping,stylesheet,other
 ||geogebra.org$script,inline-script,object,ping,stylesheet,other
 ||dspg.akamaiedge.net$script,inline-script,object,ping,stylesheet,other

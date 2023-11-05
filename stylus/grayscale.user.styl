@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           grayscale
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.0
 @description    If it's filter: grayscale(), it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -129,7 +129,8 @@
 
 @-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net") {
     /* Nitter */
-    div.container, .container,
+    div.container,
+    .container,
     .tweet-content,
     .site-name,
     button,
@@ -308,6 +309,7 @@
     div.canvasplus-search-ui-wrapper,
     div.cpx-snackbar-container,
     div.eesy.eesy-tab2-container,
+    div.event-details,
     div.ic-app,
     div.impact-sr-only,
     div.notification-container,
@@ -473,14 +475,15 @@
 
 @-moz-document domain("bing.com") {
     /* Bing */
-	.b_vlist2col,
-	.b_algoRCAggreFC,
-	.b_divdef,
-	#mic_cont_icon,
-	#sb_search,
-	.mmsp,
-	#sp_requery,
-	#sp_recourse,
+    #tab_1,
+    .b_vlist2col,
+    .b_algoRCAggreFC,
+    .b_divdef,
+    #mic_cont_icon,
+    #sb_search,
+    .mmsp,
+    #sp_requery,
+    #sp_recourse,
     .pagereco_CBCntr,
     .b_moreLink,
     .b_slidebar,
