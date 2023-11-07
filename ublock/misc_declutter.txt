@@ -343,6 +343,7 @@ symbolab.com###right-section
 symbolab.com###save-as-bookmark-notebook
 symbolab.com###save-as-bookmark-signin
 symbolab.com###send-us-feedback
+symbolab.com##.hide-until-loaded.print-hide.center-section-narrow.sidebar-content1
 symbolab.com##div.leftMenu.leftMenu-narrow
 symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-child
 
@@ -390,6 +391,8 @@ vlr.gg##h1.mod-sidebar.wf-label:nth-of-type(2)
 w3schools.com##.m12.l2.w3-col
 
 web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
+
+weibo.com##.LoginCard_wrap_18dK4.Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
 
 wikiwand.com##.footer_donation__Cje_Q
 

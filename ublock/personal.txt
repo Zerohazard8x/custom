@@ -104,7 +104,6 @@
 ||bdstatic.com$all
 ||bestsportsite.autos$all
 ||bestsportsite.shop$all
-||betacdn.net$all
 ||betanews.com/wp-content/plugins/adtoniq$all
 ||betonclickone.com$all
 ||billtrack50.com$all
@@ -143,7 +142,6 @@
 ||bvvisctpywbqqo.xyz$all
 ||bwwrovgwdfe.xyz$all
 ||bxkhoyrl.xyz$all
-||byjusweb.com$all
 ||bytedance.map.fastly.net$all
 ||bytedapm.com$all
 ||byteweb.com.br/ih/cflstaeii$all
@@ -1077,6 +1075,8 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||betacdn.net$script,inline-script,object,ping,stylesheet,other
+||byjusweb.com$script,inline-script,object,ping,stylesheet,other
 ||force.com$script,inline-script,object,ping,stylesheet,other
 ||salesforce.com$script,inline-script,object,ping,stylesheet,other
 ||go-vip.net$script,inline-script,object,ping,stylesheet,other

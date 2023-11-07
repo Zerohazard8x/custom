@@ -8,16 +8,16 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("google.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), regexp(".*twitch.tv\/popout.*"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("cagematch.net"), domain("deepl.com"), domain("onefootball.com") {
+@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("google.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), regexp(".*twitch.tv\/popout.*"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("cagematch.net"), domain("deepl.com"), domain("aftership.com"), domain("17track.net"), domain("weibo.com") {
     @import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR");
-}
 
-:root {
-    /* Define variables */
-    --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-        "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
-        "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
-        "IBM Plex Sans KR";
+    :root {
+        /* Define variables */
+        --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro",
+            "SF Pro Text", "Inter", "Roboto", "IBM Plex Sans", "Noto Sans",
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "IBM Plex Sans JP", "IBM Plex Sans KR";
+    }
 }
 
 @-moz-document domain("youtube.com") {
@@ -45,7 +45,7 @@
         border-radius: 5px !important;
     }
 
-/*     .dynamic-text-view-model-wiz,
+    /*     .dynamic-text-view-model-wiz,
     #meta > ytd-channel-name > div > div > yt-formatted-string,
     h2 > #title,
     h2 > yt-formatted-string {
@@ -57,7 +57,7 @@
         font-weight: 700 !important;
     }
 
-/*     h2 > yt-formatted-string {
+    /*     h2 > yt-formatted-string {
         font-weight: 600 !important;
     } */
 }
@@ -430,9 +430,9 @@
 
 @-moz-document domain("instructure.com") {
     /* Canvas - Fix peeves with theme */
-    a {
+    /*     a {
         text-decoration: none !important;
-    }
+    } */
 
     .ic-DashboardCard__action-badge {
         background: none !important;
@@ -459,5 +459,33 @@
         font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
             San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto,
             Segoe UI, Arial, sans-serif !important;
+    }
+}
+
+@-moz-document domain("aftership.com") {
+    /* Aftership - Correct font inconsistency */
+    #shipment-detail-sheet {
+        font-family: var(--font-personal), -apply-system, system-ui, SFProText !important;
+    }
+}
+
+@-moz-document domain("17track.net") {
+    /* 17track */
+    .header-fixTop,
+    .modal-body,
+    .page-content,
+    .font-size-18,
+    .title {
+        font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
+            "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto, "PingFang SC",
+            miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif !important;
+    }
+}
+
+@-moz-document domain("weibo.com") {
+    /* Weibo */
+    .woo-box-flex {
+        font-family: var(--font-personal), system-ui, -apple-system, Segoe UI,
+            Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif !important;
     }
 }
