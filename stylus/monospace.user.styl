@@ -1,38 +1,40 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.0.2
+@version        2.0.3
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono|Libre+Baskerville");
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bard.google.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com") {
+    @import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono|Libre+Baskerville");
 
-:root {
-    /* Define variables */
-    --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-        "Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
-        "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
-        "IBM Plex Sans KR";
-    --serif: "Libre Baskerville", Georgia, "EB Garamond";
-    --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
-        "DroidSansM", "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font",
-        "Consolas", "Hack", "Hack Nerd Font", "Bitstream Vera Sans Mono",
-        "BitstromWera Nerd Font", "DejaVu Sans Mono", "Cascadia Code",
-        "CaskaydiaCove Nerd Font", "Cascadia Mono", "Segoe UI Mono",
-        "Intel One Mono", Menlo, "MesloLG Nerd Font", Monaco, "Ubuntu Mono",
-        "Ubuntu Mono Nerd Font", "Hasklig", "Hasklug Nerd Font",
-        "Source Code Pro", "Source Code Pro Nerd Font", "Andale Mono",
-        "Lucida Console", "Lucida Sans Typewriter";
-    --block-mono: "IBM Plex Mono", "BlexMono Nerd Font", "Roboto Mono",
-        "Fantasque Sans Mono", "FantasqueSansM Nerd Font", "Agave Nerd Font",
-        "JetBrains Mono", "JetBrains Mono NL", "JetBrainsMono Nerd Font",
-        ProFont, "Input Mono", "Envy Code R", "EnvyCodeR Nerd Font",
-        "Iosevka Expanded", "Iosevka", "Iosevka Nerd Font",
-        "IosevkaTerm Nerd Font", "Input Sans", "Liberation Mono";
-    --mono-combo: var(--block-mono), var(--monospace);
+    :root {
+        /* Define variables */
+        --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro",
+            "SF Pro Text", "Inter", "Roboto", "IBM Plex Sans", "Noto Sans",
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "IBM Plex Sans JP", "IBM Plex Sans KR";
+        --serif: "Libre Baskerville", Georgia, "EB Garamond";
+        --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
+            "DroidSansM", "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font",
+            "Consolas", "Hack", "Hack Nerd Font", "Bitstream Vera Sans Mono",
+            "BitstromWera Nerd Font", "DejaVu Sans Mono", "Cascadia Code",
+            "CaskaydiaCove Nerd Font", "Cascadia Mono", "Segoe UI Mono",
+            "Intel One Mono", Menlo, "MesloLG Nerd Font", Monaco, "Ubuntu Mono",
+            "Ubuntu Mono Nerd Font", "Hasklig", "Hasklug Nerd Font",
+            "Source Code Pro", "Source Code Pro Nerd Font", "Andale Mono",
+            "Lucida Console", "Lucida Sans Typewriter";
+        --block-mono: "IBM Plex Mono", "BlexMono Nerd Font", "Roboto Mono",
+            "Fantasque Sans Mono", "FantasqueSansM Nerd Font", "Agave Nerd Font",
+            "JetBrains Mono", "JetBrains Mono NL", "JetBrainsMono Nerd Font",
+            ProFont, "Input Mono", "Envy Code R", "EnvyCodeR Nerd Font",
+            "Iosevka Expanded", "Iosevka", "Iosevka Nerd Font",
+            "IosevkaTerm Nerd Font", "Input Sans", "Liberation Mono";
+        --mono-combo: var(--block-mono), var(--monospace);
+    }
 }
 
 @-moz-document domain("github.com") {
@@ -577,7 +579,7 @@
     }
 }
 
-@-moz-document domain("forum.xda-developers.com"), domain("xdaforums.com") {
+@-moz-document domain("xdaforums.com") {
     /* XDADevelopers */
     .tooltip-content,
     .node-description,
