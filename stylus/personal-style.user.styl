@@ -8,29 +8,29 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("google.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), regexp(".*twitch.tv\/popout.*"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("cagematch.net"), domain("deepl.com"), domain("aftership.com"), domain("17track.net"), domain("weibo.com") {
+@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("google.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), regexp(".*twitch.tv\/popout.*"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("cagematch.net"), domain("deepl.com"), domain("aftership.com"), domain("17track.net"), domain("weibo.com"), domain("wordcounter.net") {
     @import url("https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR");
-	
-	:root {
-		/* Define variables */
-		--font-personal: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-			"Inter", "Roboto", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
-			"Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
-			"IBM Plex Sans KR";
-	}
+
+    :root {
+        /* Define variables */
+        --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro",
+            "SF Pro Text", "Inter", "Roboto", "IBM Plex Sans", "Noto Sans",
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "IBM Plex Sans JP", "IBM Plex Sans KR";
+    }
 }
 
 @-moz-document domain("youtube.com") {
     /* youtube - subtitles, font changes */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: "DIN Next", "DIN", "Akkurat", "Bahnschrift",
-            "alte din 1451 mittelschrift", "Keiner", "Road UA",
-            "Dinish Expanded", "Dinish", "Altinn-DIN", "D-DIN",
-            "Source Sans Pro", "Noto Sans", "Noto Sans JP", "Noto Sans TC",
-            "Noto Sans SC", "Noto Sans KR", "Trebuchet MS", var(--font-personal),
-            "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
-            Verdana, "PT Sans Caption", sans-serif !important;
+        font-family: "Fira Sans", "Road UA", "Source Sans Pro", "DIN Next",
+            "Bahnschrift", "alte din 1451 mittelschrift", "Keiner", "Dinish",
+            "Dinish Expanded", "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN",
+            "Akkurat", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
+            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Trebuchet MS",
+            var(--font-personal), "YouTube Noto", Roboto, "Arial Unicode Ms",
+            Arial, Helvetica, Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
         /* background: none !important; */
 
@@ -40,11 +40,11 @@
     }
 
     .caption-window {
-        padding: 0.2% 0.2% 0.4% !important;
+        padding: 0.2% !important;
         border-radius: 5px !important;
     }
 
-/*     .dynamic-text-view-model-wiz,
+    /*     .dynamic-text-view-model-wiz,
     #meta > ytd-channel-name > div > div > yt-formatted-string,
     h2 > #title,
     h2 > yt-formatted-string {
@@ -56,7 +56,7 @@
         font-weight: 700 !important;
     }
 
-/*     h2 > yt-formatted-string {
+    /*     h2 > yt-formatted-string {
         font-weight: 600 !important;
     } */
 }
@@ -429,7 +429,7 @@
 
 @-moz-document domain("instructure.com") {
     /* Canvas - Fix peeves with theme */
-/*     a {
+    /*     a {
         text-decoration: none !important;
     } */
 
@@ -462,15 +462,30 @@
 }
 
 @-moz-document domain("17track.net") {
-	/* 17track */
-	.header-fixTop, .modal-body, .page-content, .font-size-18, .title {
-		font-family: var(--font-personal), -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Segoe UI,Arial,Roboto,"PingFang SC",miui,"Hiragino Sans GB","Microsoft Yahei",sans-serif !important;
-	}
+    /* 17track */
+    .header-fixTop,
+    .modal-body,
+    .page-content,
+    .font-size-18,
+    .title {
+        font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
+            "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto, "PingFang SC",
+            miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif !important;
+    }
 }
 
 @-moz-document domain("weibo.com") {
-	/* Weibo */
-	.woo-box-flex {
-		font-family: var(--font-personal), system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif !important;
-	}
+    /* Weibo */
+    .woo-box-flex {
+        font-family: var(--font-personal), system-ui, -apple-system, Segoe UI,
+            Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif !important;
+    }
+}
+
+@-moz-document domain("wordcounter.net") {
+    /* WordCounter */
+    .container,
+    #box {
+        font-family: var(--font-personal), Helvetica, Arial !important;
+    }
 }
