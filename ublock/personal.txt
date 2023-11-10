@@ -1091,7 +1091,6 @@
 ||firebaseio.com$script,inline-script,object,ping,stylesheet,other
 ||passport.twitch.tv$script,inline-script,object,ping,stylesheet,other
 ||launchdarkly.com$script,inline-script,object,ping,stylesheet,other
-||azure.com$script,inline-script,object,ping,stylesheet,other
 ||wcpstatic.microsoft.com$script,inline-script,object,ping,stylesheet,other
 ||123movies.cards$script,inline-script,object,ping,stylesheet,other
 ||33across.com$script,inline-script,object,ping,stylesheet,other
@@ -1141,7 +1140,6 @@
 ||brightspotcdn.com$script,inline-script,object,ping,stylesheet,other
 ||btloader.com$script,inline-script,object,ping,stylesheet,other
 ||bunnycdn.ru$script,inline-script,object,ping,stylesheet,other
-||cachefly.net$script,inline-script,object,ping,stylesheet,other
 ||casalemedia.com$script,inline-script,object,ping,stylesheet,other
 ||cbsimg.net$script,inline-script,object,ping,stylesheet,other
 ||cdn-japantimes.com$script,inline-script,object,ping,stylesheet,other
@@ -1324,7 +1322,6 @@
 ||northplan.org$script,inline-script,object,ping,stylesheet,other
 ||nperf.net$script,inline-script,object,ping,stylesheet,other
 ||ntv.io$script,inline-script,object,ping,stylesheet,other
-||nyt.com$script,inline-script,object,ping,stylesheet,other
 ||onetrust.com$script,inline-script,object,ping,stylesheet,other
 ||ontrack-media.net$script,inline-script,object,ping,stylesheet,other
 ||openx.net$script,inline-script,object,ping,stylesheet,other

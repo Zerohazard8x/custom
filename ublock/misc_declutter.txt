@@ -7,6 +7,8 @@
 adobe.com##.aem-GridColumn--offset--default--0.aem-GridColumn--offset--phone--0.aem-GridColumn--default--12.aem-GridColumn.aem-GridColumn--tablet--none.aem-GridColumn--phone--12.aem-GridColumn--default--none.aem-GridColumn--phone--hide.aem-GridColumn--offset--tablet--0.aem-GridColumn--tablet--12.flex
 adobe.com##.static.modalContainer
 
+amazon.com###nav-flyout-anchor
+
 appleid.apple.com##.landing__blocks
 
 !!!!!!!!
@@ -241,6 +243,7 @@ onedrive.live.com##.root-193.leftNavNotificationsLink_13fd1f41.ms-Link
 onedrive.live.com##.root-199.leftNavNotificationsLink_13fd1f41.ms-Link
 
 open.spotify.com##.oszTUDKpXrPHyeWPs276
+open.spotify.com##.kzxKsG.Button-sc-qlcn5g-0
 
 parcelsapp.com###features
 parcelsapp.com###tisunov > .container > div.row:nth-of-type(1)
@@ -252,7 +255,10 @@ parcelsapp.com##.shops
 parcelsapp.com##.text-center.content
 parcelsapp.com##body > div:nth-of-type(2)
 parcelsapp.com##section.faq:nth-child(n+4):nth-child(-4n+8)
-parcelsapp.com##section.light-gray-bg:nth-child(n+7):nth-child(-2n+9)
+parcelsapp.com##section.faq:nth-of-type(4)
+parcelsapp.com##section.faq:nth-of-type(8) > .container
+parcelsapp.com##section.light-gray-bg:nth-of-type(7)
+parcelsapp.com##section.light-gray-bg:nth-of-type(9)
 
 play.google.com##.Ou5Yib
 play.google.com##.RGUlu
@@ -395,6 +401,9 @@ web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
 weibo.com##.LoginCard_wrap_18dK4.Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
 
 wikiwand.com##.footer_donation__Cje_Q
+
+wordcounter.net###top_counter > .row
+wordcounter.net###editor_container > div > .row
 
 you.com##.LQwHO.sc-196cc170-0
 you.com##.blpnYK.sc-bb226f16-0

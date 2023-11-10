@@ -118,3 +118,7 @@ dailymail.co.uk##.beta > .iframe-creator
 dailymail.co.uk##.module.image_strapline_slant_wocc.item.sport
 dailymail.co.uk##.shareArticles
 dailymail.co.uk##div.module.html_snippet.item.home:nth-of-type(3)
+
+nytimes.com##.css-1vd4jj3
+nytimes.com##.css-5soref
+nytimes.com##div.StoryBodyCompanionColumn.css-s99gbd:nth-of-type(2)
