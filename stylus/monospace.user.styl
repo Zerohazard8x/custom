@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.0.5
+@version        2.0.6
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -156,7 +156,7 @@
         font-family: Noto Sans, arial, helvetica, sans-serif !important;
     }
 
-	a {
+	a:not(._3t5uN8xUmg0TOwRCOGQEcU) {
 		font-family: "IBM Plex Sans", IBMPlexSans, "Helvetica Neue", "Helvetica", "Arial",
             sans-serif !important;
 	}
@@ -391,11 +391,11 @@
 @-moz-document domain("bing.com") {
     /* Bing + "fluent" changes */
     :root {
-        --roboto-then-segoe-text: "Roboto", "Segoe UI Variable Text", "Segoe UI",
+        --roboto-then-segoe-text: Aptos, "Roboto Flex", "Roboto", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe;
         --segoe-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
-            "Roboto";
-        --roboto-then-segoe-small: "Roboto", "Segoe UI Variable Small",
+            "Roboto Flex", "Roboto";
+        --roboto-then-segoe-small: Aptos, "Roboto Flex", "Roboto", "Segoe UI Variable Small",
             "Segoe UI", SegoeUI, Segoe;
     }
 
@@ -469,7 +469,7 @@
     .metaItem,
     .b_respl,
     .cbtn {
-        font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
+        font-family: var(--roboto-then-segoe-text), -apple-system,Aptos,Roboto,SegoeUI,'Segoe UI','Helvetica Neue',Helvetica,'Microsoft YaHei','Meiryo UI',Meiryo,Arial Unicode MS,sans-serif !important;
     }
 
     .rrr_teTitle > h2,
