@@ -33,7 +33,7 @@
     "online": true,
     "page.context": false,
     "paused": true,
-    "period": 120,
+    "period": 180,
     "pinned": true,
     "prepends": "💤",
     "simultaneous-jobs": 10,
@@ -42,20 +42,8 @@
     "startup-unpinned": false,
     "tab.context": true,
     "trash.keys": {
-      "https://mail.google.com/mail/u/0/#inbox": [
-        1698408273532,
-        86400
-      ],
-      "https://zenmarket.jp/profile/messages.aspx?utm_placement=main_cta": [
-        1698408273532,
-        86400
-      ],
-      "https://play.google.com/store/apps/details?id=com.bigwinepot.nwdn.international": [
-        1698408983719,
-        86400
-      ],
-      "https://search.yahoo.com/yhs/search?p=css+select+all+but+not&hsimp=yhs-102&hspart=mozilla&type=dss": [
-        1698408983719,
+      "https://mail.google.com/mail/u/1/#label/08%2F29%2F2023-11%2F12%2F2023": [
+        1699795577836,
         86400
       ]
     },
@@ -64,10 +52,10 @@
     "trash.whitelist-url": [],
     "whitelist": [
       "web.telegram.org",
-      "bing.com",
       "webwhiteboard.com",
       "reddit.com",
-      "you.com"
+      "you.com",
+      "www.bing.com"
     ],
     "whitelist-url": []
   },
