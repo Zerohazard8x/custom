@@ -230,6 +230,7 @@ myanimelist.net##tr:nth-of-type(1) > td > .border_top
 myanimelist.net##tr:nth-of-type(1) > td > div:nth-of-type(4)
 
 mybib.com##.primary.animate.show.tooltip-lg
+mybib.com##.primary.show.tooltip-lg
 mybib.com##.vue-portal-target
 
 office.com##.ms-fcl-nd.welcome__title--dark.welcome__title--visual.welcome__title--consumer-with-badge.welcome__title--consumer.ms-fontWeight-light
@@ -352,6 +353,11 @@ symbolab.com###send-us-feedback
 symbolab.com##.hide-until-loaded.print-hide.center-section-narrow.sidebar-content1
 symbolab.com##div.leftMenu.leftMenu-narrow
 symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-child
+
+time.is###lC
+time.is###quote
+time.is###top_cities_tmp
+time.is##h3
 
 thespike.gg##div > div > ul > li
 thespike.gg##div.featured-event_column__sm8P6:first-child
