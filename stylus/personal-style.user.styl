@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal
 @namespace      github.com/openstyles/stylus
-@version        2.0.2
+@version        2.0.3
 @description    My personal userstyle
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
@@ -419,17 +419,17 @@
     }
 }
 
-@-moz-document regexp(".*twitch.tv\/popout.*") {
-    /* Twitch popout - Self-explanatory */
-    .chat-line__message {
+@-moz-document domain(twitch.tv) {
+    /* Twitch - UI tweaks */
+    .chat-line__message,
+    .bQEtql {
         font-size: 20px !important;
     }
 
-    section[data-test-selector="chat-room-component-layout"]
-        .chat-scrollable-area__message-container,
+    section[data-test-selector="chat-room-component-layout"].chat-scrollable-area__message-container,
     .whispers .thread-message__message,
     .video-chat__message {
-        line-height: 250% !important;
+        line-height: 150% !important;
     }
 }
 
