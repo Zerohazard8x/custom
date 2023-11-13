@@ -9,14 +9,14 @@
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("google.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), regexp(".*twitch.tv\/popout.*"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("cagematch.net"), domain("deepl.com"), domain("aftership.com"), domain("weibo.com"), domain("wordcounter.net") {
-    @import url("https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR");
+    @import url("https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Sans");
 
     :root {
         /* Define variables */
         --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro",
-            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "IBM Plex Sans", "Noto Sans",
-            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
-            "IBM Plex Sans JP", "IBM Plex Sans KR";
+            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "IBM Plex Sans",
+            "Noto Sans", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+            "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
     }
 }
 
@@ -25,14 +25,15 @@
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: "Fira Sans", "Road UA", "Source Sans Pro", "DIN Next",
-            "Bahnschrift", "alte din 1451 mittelschrift", "Keiner", "Dinish",
-            "Dinish Expanded", "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN",
-            "Akkurat", "IBM Plex Sans", "Noto Sans", "Noto Sans JP",
-            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Trebuchet MS",
-            var(--font-personal), "YouTube Noto", Roboto, "Arial Unicode Ms",
-            Arial, Helvetica, Verdana, "PT Sans Caption", sans-serif !important;
+            "Bahnschrift", "Nunito Sans", "Nunito",
+            "alte din 1451 mittelschrift", "Keiner", "Dinish", "Dinish Expanded",
+            "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN", "IBM Plex Sans",
+            "Noto Sans", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+            "Noto Sans KR", "Trebuchet MS", var(--font-personal), "YouTube Noto",
+            Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana,
+            "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
-		font-weight: 00 !important;
+        font-weight: 00 !important;
         /* background: none !important; */
 
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
@@ -128,11 +129,12 @@
     /* Google */
     :root {
         /* Define variables */
-        --roboto: "Roboto Flex", Roboto, "Roboto Draft", RobotoDraft, Roboto-Regular;
+        --roboto: "Roboto Flex", Roboto, "Roboto Draft", RobotoDraft,
+            Roboto-Regular;
     }
 
-	.gb_F,
-	.BmkBMc,
+    .gb_F,
+    .BmkBMc,
     #exps > button,
     #lud-search,
     .s75CSd,
@@ -192,7 +194,8 @@
     }
 
     /* Force Google Sans (if available) */
-    input, .Czd4wf {
+    input,
+    .Czd4wf {
         font-family: "Google Sans", var(--roboto), arial !important;
     }
 
