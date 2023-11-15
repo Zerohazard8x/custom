@@ -8,7 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bard.google.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bard.google.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org") {
     @import url("https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|IBM+Plex+Mono|Fraunces");
 
     :root {
@@ -791,6 +791,17 @@
 	
 	.prettyprint > code {
 		font-family: var(--mono-combo), Consolas, Menlo, Monaco, monospace !important;
+		font-size: 16px !important;
+	}
+}
+
+@-moz-document domain("chat.lmsys.org") {
+    /* lmsys chat */
+	.svelte-15hifvz > pre > code, .svelte-15hifvz > p > code {
+		font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace !important;
+	}
+	
+	.svelte-15hifvz > pre > code {
 		font-size: 16px !important;
 	}
 }
