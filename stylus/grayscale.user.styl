@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        2.0.0
+@version        2.0.1
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -481,6 +481,7 @@
 
 @-moz-document domain("bing.com") {
     /* Bing */
+	#tab_3,
     object,
     .b_clearfix,
     .HeroTab,
@@ -749,4 +750,11 @@
     #rufous-sandbox {
         filter: sepia(80%);
     }
+}
+
+@-moz-document domain("duckduckgo.com") {
+	/* DuckDuckGo */
+	.site-wrapper {
+		filter: sepia(80%); 
+	}
 }

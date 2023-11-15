@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.0.5
+@version        2.0.6
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bard.google.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bard.google.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com") {
     @import url("https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|IBM+Plex+Mono|Fraunces");
 
     :root {
@@ -123,6 +123,7 @@
 		font-family: "IBM Plex Sans", IBMPlexSans, -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif !important;
 	}
 	
+	.side .md p,
     .add,
     .buttons > button,
     .login-required,
@@ -156,7 +157,7 @@
         font-family: Noto Sans, arial, helvetica, sans-serif !important;
     }
 
-	a:not(._3t5uN8xUmg0TOwRCOGQEcU) {
+	a:not(._3t5uN8xUmg0TOwRCOGQEcU):not(blockquote > p > a) {
 		font-family: "IBM Plex Sans", IBMPlexSans, "Helvetica Neue", "Helvetica", "Arial",
             sans-serif !important;
 	}
@@ -205,6 +206,10 @@
             sans-serif !important;
     }
 
+	code {
+		font-family: var(--mono-combo), monospace !important;
+	}
+	
     ._34q3PgLsx9zIU5BiSOjFoM {
         font-family: var(--mono-combo), Noto Mono, Monaco, Consolas, monospace !important;
     }
@@ -239,6 +244,7 @@
 
 @-moz-document domain("poe.com") {
     /* Poe */
+	.BotInfoCardHeader_operatedBy__G5WAP,
     .BotInfoCardHeader_followerCount__nrf6H,
     .BotMetadataTag_BotMetadataTag__Jkq1r,
     .Button_buttonBase__Bv9Vx,
@@ -254,6 +260,7 @@
     .Markdown_markdownContainer__Tz3HQ,
     .SidebarCard_link__ot_pN,
     .SidebarLayout_layoutWrapper__mPYi4,
+	.DesktopAppAnnouncementBanner_ctaButton__3ppiO,
     h2,
     p,
     .ChatMessage_badge__ah1FU {
@@ -262,9 +269,12 @@
             Helvetica Neue, sans-serif !important;
     }
 
-    code > span {
+    code > span, code {
         font-family: var(--mono-combo), Consolas, monaco, monospace !important;
-        font-size: 16px !important;
+    }
+	
+	code > span, code:not(.Markdown_markdownContainer__Tz3HQ > p > code) {
+		font-size: 16px !important;
     }
 }
 
@@ -395,7 +405,7 @@
         --roboto-then-segoe-text: Aptos, "Roboto Flex", "Roboto", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe;
         --segoe-display: "Segoe UI Variable Display", "Segoe UI", SegoeUI, Segoe,
-            "Roboto Flex", "Roboto";
+            Aptos, "Roboto Flex", "Roboto";
         --roboto-then-segoe-small: Aptos, "Roboto Flex", "Roboto", "Segoe UI Variable Small",
             "Segoe UI", SegoeUI, Segoe;
     }
@@ -444,6 +454,7 @@
             Roboto, Arial, sans-serif !important;
     }
 
+	h2,
     cib-serp,
     #id_n,
     .wr_rat,
@@ -564,10 +575,7 @@
     .sto_title,
     .lite-entcard-exp > h2,
     .richrsrailtitle > h2,
-    h2
-        > span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol):not(
-            .l_ecrd_txt_small
-        ),
+    h2 > span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol):not(.l_ecrd_txt_small),
     container-title {
         font-weight: 600 !important;
     }
@@ -754,6 +762,7 @@
 
 @-moz-document domain("17track.net") {
     /* 17track */
+	.text-truncate,
 	h2,
 	h3,
 	.text-center,
@@ -771,5 +780,17 @@
 	
 	.CodeMirror-scroll {
 		font-family: var(--mono-combo), Courier New,Andale Mono,Monaco !important;
+	}
+}
+
+@-moz-document domain("duckduckgo.com") {
+	/* DuckDuckGo */
+	code {
+		font-family: var(--mono-combo), Consolas, Menlo, Monaco, monospace !important;
+	}
+	
+	.prettyprint > code {
+		font-family: var(--mono-combo), Consolas, Menlo, Monaco, monospace !important;
+		font-size: 16px !important;
 	}
 }
