@@ -6,12 +6,15 @@
 
 twitch.tv###twilight-sticky-footer-root
 twitch.tv##.bTKXKk.ibtYyW.ScCoreButtonSecondary-sc-ocjdkq-2.ScCoreButton-sc-ocjdkq-0 > .irroFV.ScCoreButtonLabel-sc-s7h2b7-0 > .phMMp.Layout-sc-1xcs6mc-0
+twitch.tv##.chat-line__timestamp
+twitch.tv##.chat-room__content.fhQiFC.Layout-sc-1xcs6mc-0 > div.Layout-sc-1xcs6mc-0:nth-of-type(1) > .DGdsv.Layout-sc-1xcs6mc-0
 twitch.tv##.dUREKt.InjectLayout-sc-1i43xsx-0
 twitch.tv##.front-page-carousel.iqIerE.Layout-sc-1xcs6mc-0
 twitch.tv##.hbsjFp.Layout-sc-1xcs6mc-0 > .cEaLXq.Layout-sc-1xcs6mc-0
 twitch.tv##.prime-offers.bZVrjx.Layout-sc-1xcs6mc-0
 twitch.tv##.top-nav__prime.bFqPcI.Layout-sc-1xcs6mc-0
 twitch.tv##.vod-message__header.cRArZq.Layout-sc-1xcs6mc-0
+twitch.tv##.vod-message__header.ejxjYm.Layout-sc-1xcs6mc-0
 twitch.tv##div.Layout-sc-1xcs6mc-0.bGyiZe.chat-input:nth-child(6) > div:last-child
 twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:last-child
 twitch.tv##div.Layout-sc-1xcs6mc-0.bSoSIm.side-nav-section:nth-child(3)
@@ -20,6 +23,7 @@ twitch.tv##div.Layout-sc-1xcs6mc-0.hjmDKV.top-nav__prime:nth-child(2)
 twitch.tv##div.Layout-sc-1xcs6mc-0.iqIerE.front-page-carousel:first-child
 twitch.tv##div.Layout-sc-1xcs6mc-0.jBYVfx.stream-chat-header:first-child
 twitch.tv##div.hjmDKV.Layout-sc-1xcs6mc-0:nth-child(n+4):nth-child(-n+5)
+twitch.tv##div.prime-offers__pill
 twitch.tv##div.side-nav-section.bSoSIm.Layout-sc-1xcs6mc-0:nth-of-type(3)
 twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
 ||static-cdn.jtvnw.net/badges/v1/3158e758-3cb4-43c5-94b3-7639810451c5/*$image

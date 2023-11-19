@@ -26,6 +26,7 @@ espn.*##ul.flex-none.Nav__Primary__Menu--right.flex.Nav__Primary__Menu:nth-of-ty
 fotmob.com##div.e7pc1841.css-mq7mn-Group:nth-child(n+2)
 
 fotmob.com##.e1linw372.css-1q9econ-TrendingNewsTopHeadlinesCSS
+fotmob.com##div.e1ju7a501.css-mq7mn-Group:nth-child(n+2)
 !!!!!!!!
 
 sofascore.com##.bEAMMG.sc-fqkvVR

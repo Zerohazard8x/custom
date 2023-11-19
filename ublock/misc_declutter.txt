@@ -264,6 +264,7 @@ parcelsapp.com##section.light-gray-bg:nth-of-type(9)
 play.google.com##.Ou5Yib
 play.google.com##.RGUlu
 
+poe.com##.Banner_info__OWUd0.Banner_root__p5sUz
 poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
 poe.com##.SidebarFooter_footer__i_kOn > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
 poe.com##a.Button_secondary__IuV5T.Button_buttonBase__Bv9Vx
@@ -310,13 +311,17 @@ speedrun.com##div.lg\:block.hidden:nth-of-type(3)
 
 stackoverflow.com,superuser.com,stackexchange.com###feed-link
 stackoverflow.com,superuser.com,stackexchange.com###hot-network-questions
+stackoverflow.com,superuser.com,stackexchange.com##.-link__with-icon.nav-links--link.js-gps-track.js-collectives-navcta-toggle.ai-center.pl8
 stackoverflow.com,superuser.com,stackexchange.com##.fc-light.mb4.mt16.ml8.tt-uppercase.fs-fine
 stackoverflow.com,superuser.com,stackexchange.com##.pr8.mt8
+stackoverflow.com,superuser.com,stackexchange.com##.ps-relative.js-freemium-cta
+stackoverflow.com,superuser.com,stackexchange.com##.px8.mt8
 stackoverflow.com,superuser.com,stackexchange.com##div > ol.s-navigation:nth-child(4)
 stackoverflow.com,superuser.com,stackexchange.com##div.s-sidebarwidget.mb16.module:nth-child(5)
 stackoverflow.com,superuser.com,stackexchange.com##div.s-sidebarwidget.s-sidebarwidget__yellow.s-anchors.s-anchors__grayscale.mb16:first-child
 stackoverflow.com,superuser.com,stackexchange.com##li > ol > li.ps-relative:last-child
 stackoverflow.com,superuser.com,stackexchange.com##li.js-freemium-cta.ps-relative:nth-child(3)
+stackoverflow.com,superuser.com,stackexchange.com##li.mb8.mt32.ml8:nth-of-type(8) > .ai-center.jc-space-between.d-flex
 stackoverflow.com,superuser.com,stackexchange.com##li.md\:d-none:last-child
 stackoverflow.com,superuser.com,stackexchange.com##li.ml8.mt16:nth-child(6)
 stackoverflow.com,superuser.com,stackexchange.com##li.ps-relative:nth-of-type(7)

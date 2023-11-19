@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        2.0.1
+@version        2.0.2
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -414,10 +414,15 @@
 
 @-moz-document domain("learn.microsoft.com") {
     /* MS Learn */
+    div.action-panel.has-default-focus,
     div.header-holder.has-default-focus,
+    div.mainContainer.background-color-body.has-default-focus,
+    div.mainContainer.uhf-container.has-default-focus,
     div.mainContainer.uhf-container.uhf-container.is-full.has-default-focus,
-    section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm.margin-top-none,
-    div.action-panel.has-default-focus {
+    div.position-fixed.bottom-0.right-0.has-z-index-one
+    footer.footer-layout.uhf-container.has-padding.has-default-focus,
+    section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm,
+    section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm.margin-top-none {
         filter: sepia(80%);
     }
 }
@@ -639,6 +644,7 @@
     .username-3_PJ5r,
     .username-h_Y3Us,
     .username-vAneIW,
+    .name__4c9aa,
     .mention {
         filter: sepia(80%);
     }
@@ -760,7 +766,7 @@
 }
 
 @-moz-document domain("gsmarena.com") {
-    /* DuckDuckGo */
+    /* GSMarena */
     div.image-gallery,
     div.l-container,
     header.row.open.slide.headroom--not-top.slide--reset,
