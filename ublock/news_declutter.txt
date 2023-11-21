@@ -33,7 +33,6 @@ nbcnews.com##.styles_alignMobileBottom__bhgkQ.styles_alignDesktopBottom__4cHaO.s
 soranews24.com,rocketnews24.com###custom_html-2 > .custom-html-widget.textwidget > div
 soranews24.com,rocketnews24.com###responses
 soranews24.com,rocketnews24.com###secondary-widgets
-soranews24.com,rocketnews24.com###widget_monthlyranking
 soranews24.com,rocketnews24.com###widget_rankings > ul
 soranews24.com,rocketnews24.com###widget_weeklyranking
 soranews24.com,rocketnews24.com###widget_yearlyranking
