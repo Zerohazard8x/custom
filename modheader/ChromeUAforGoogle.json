@@ -1,0 +1,29 @@
+[
+    {
+        "version": 2,
+        "title": "ChromeUAforGoogle",
+        "headers": [
+            {
+                "enabled": true,
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+            },
+            {
+                "enabled": true,
+                "name": "Forwarded",
+                "value": "for=94.140.14.14;proto=https"
+            },
+            {
+                "enabled": true,
+                "name": "X-Forwarded-For",
+                "value": "94.140.14.14"
+            }
+        ],
+        "urlFilters": [
+            { "enabled": true, "urlRegex": ".*youtube.com.*" },
+            { "enabled": true, "urlRegex": ".*google.com.*" }
+        ],
+        "shortTitle": "1",
+        "alwaysOn": true
+    }
+]
