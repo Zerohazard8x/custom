@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.0.9
+@version        2.0.10
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -137,14 +137,11 @@
     .author,
     .choice,
     .flat-list,
-    .loggedin,
     .login-form > input,
     .login-form,
     .numchildren,
-    .score,
     .spacer,
     .usertext-body,
-    time,
     .score > span {
         font-family: Noto Sans, verdana, arial, helvetica, sans-serif !important;
     }
@@ -164,6 +161,9 @@
         font-family: "IBM Plex Sans", IBMPlexSans, Noto Sans, Verdana !important;
     }
 
+	.score,
+	time,
+	.loggedin,
     .commentsignupbar__textarea-above,
     .commentsignupbar__title,
     .commentsignupbar__desc,
@@ -794,7 +794,7 @@
 
 @-moz-document domain("chat.lmsys.org") {
     /* lmsys chat */
-	.svelte-15hifvz > pre > code, .svelte-15hifvz > p > code {
+	code {
 		font-family: var(--mono-combo), Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace !important;
 	}
 	
