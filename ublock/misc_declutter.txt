@@ -378,7 +378,6 @@ thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStats
 
 to-do.live.com##.obf-Visible.obf-Toast
 
-twitter.com##.r-12vffkv.r-13awgt0.css-175oi2r > .r-ipm5af.r-1d2f490.r-u8s1d.r-zchlnj
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
 
 vlr.gg##.d8fyh
