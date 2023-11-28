@@ -62,9 +62,7 @@
                 "enabled": true
             },
             "AnonymiseFileNames": {
-                "enabled": true,
-                "method": 0,
-                "randomisedLength": 7
+                "enabled": true
             },
             "WebRichPresence (arRPC)": {
                 "enabled": false
@@ -117,10 +115,10 @@
                 "enabled": true
             },
             "EmoteCloner": {
-                "enabled": true
+                "enabled": false
             },
             "Experiments": {
-                "enabled": true,
+                "enabled": false,
                 "enableIsStaff": false
             },
             "F8Break": {
@@ -266,7 +264,10 @@
                 "enabled": false
             },
             "NoPendingCount": {
-                "enabled": false
+                "enabled": false,
+                "hideFriendRequestsCount": true,
+                "hideMessageRequestsCount": true,
+                "hidePremiumOffersCount": true
             },
             "NoProfileThemes": {
                 "enabled": false
@@ -336,7 +337,7 @@
                 "enabled": false
             },
             "RevealAllSpoilers": {
-                "enabled": true
+                "enabled": false
             },
             "ReverseImageSearch": {
                 "enabled": true
@@ -351,7 +352,7 @@
                 "voiceUsers": true
             },
             "SearchReply": {
-                "enabled": true
+                "enabled": false
             },
             "SendTimestamps": {
                 "enabled": false
@@ -381,7 +382,9 @@
                 "inReplies": true
             },
             "SilentMessageToggle": {
-                "enabled": false
+                "enabled": false,
+                "persistState": false,
+                "autoDisable": true
             },
             "SilentTyping": {
                 "enabled": false
@@ -413,7 +416,7 @@
                 "enabled": false
             },
             "Translate": {
-                "enabled": false,
+                "enabled": true,
                 "autoTranslate": false
             },
             "TypingIndicator": {
@@ -440,7 +443,8 @@
                 "showVoiceChannelSectionHeader": true
             },
             "USRBG": {
-                "enabled": true
+                "enabled": true,
+                "voiceBackground": true
             },
             "ValidUser": {
                 "enabled": true
@@ -458,11 +462,10 @@
                 "rate": 1,
                 "leaveMessage": "{{USER}} left",
                 "muteMessage": "{{USER}} Muted",
-                "unmuteMessage": "{{USER}} unmuted",
-                "moveMessage": "{{USER}} moved to {{CHANNEL}}"
+                "unmuteMessage": "{{USER}} unmuted"
             },
             "VencordToolbox": {
-                "enabled": false
+                "enabled": true
             },
             "ViewIcons": {
                 "enabled": true,
@@ -532,12 +535,13 @@
                 "enabled": false
             },
             "OnePingPerDM": {
-                "enabled": true
+                "enabled": true,
+                "channelToAffect": "both_dms",
+                "allowMentions": true,
+                "allowEveryone": true
             },
             "PermissionFreeWill": {
-                "enabled": false,
-                "lockout": true,
-                "onboarding": true
+                "enabled": false
             },
             "NoTypingAnimation": {
                 "enabled": true
@@ -545,8 +549,18 @@
             "WebKeybinds": {
                 "enabled": true
             },
-            "SuperReactionTweaks": {
+            "ClientTheme": {
+                "enabled": false,
+                "color": "313338"
+            },
+            "FixImagesQuality": {
                 "enabled": false
+            },
+            "SuperReactionTweaks": {
+                "enabled": true,
+                "superReactByDefault": true,
+                "unlimitedSuperReactionPlaying": false,
+                "superReactionPlayingLimit": 5
             }
         },
         "notifications": {
@@ -559,9 +573,9 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1700577911128
+            "settingsSyncVersion": 1701179304887
         },
         "enabledThemes": []
     },
-    "quickCss": "@import url(\"https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Shippori+Mincho|Noto+Serif+JP|Noto+Serif+TC|Noto+Serif+SC|Noto+Serif+KR|IBM+Plex+Mono|Fraunces\");\r\n\r\n:root {\r\n    /* Define variables */\r\n    --not-monospace: -apple-system, BlinkMacSystemFont, \"SF Pro\",\r\n        \"SF Pro Text\", \"Inter\", \"Roboto Flex\", \"Roboto\", \"IBM Plex Sans\", \"Noto Sans\",\r\n        \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\",\r\n        \"IBM Plex Sans JP\", \"IBM Plex Sans KR\";\r\n    --serif: Fraunces, Alegreya, \"Crimson Pro\", \"Crimson Text\", \"Libre Baskerville\", Georgia, \"EB Garamond\", \"Lora\", \"Shippori Mincho\", \"Noto Serif JP\", \"Noto Serif TC\", \"Noto Serif SC\", \"Noto Serif KR\", \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\";\r\n    --monospace: \"Fira Code\", \"Fira Mono\", \"Noto Mono\", \"Noto Sans Mono\",\r\n        \"DroidSansM\", \"SF Mono\", \"SFMono-Regular\", \"CodeNewRoman Nerd Font\",\r\n        \"Consolas\", \"Hack\", \"Hack Nerd Font\", \"Bitstream Vera Sans Mono\",\r\n        \"BitstromWera Nerd Font\", \"DejaVu Sans Mono\", \"Cascadia Code\",\r\n        \"CaskaydiaCove Nerd Font\", \"Cascadia Mono\", \"Segoe UI Mono\",\r\n        \"Intel One Mono\", Menlo, \"MesloLG Nerd Font\", Monaco, \"Ubuntu Mono\",\r\n        \"Ubuntu Mono Nerd Font\", \"Hasklig\", \"Hasklug Nerd Font\",\r\n        \"Source Code Pro\", \"Source Code Pro Nerd Font\", \"Andale Mono\",\r\n        \"Lucida Console\", \"Lucida Sans Typewriter\";\r\n    --block-mono: \"IBM Plex Mono\", \"BlexMono Nerd Font\", \"Roboto Mono\",\r\n        \"Fantasque Sans Mono\", \"FantasqueSansM Nerd Font\", \"Agave Nerd Font\",\r\n        \"JetBrains Mono\", \"JetBrains Mono NL\", \"JetBrainsMono Nerd Font\",\r\n        ProFont, \"Input Mono\", \"Envy Code R\", \"EnvyCodeR Nerd Font\",\r\n        \"Iosevka Expanded\", \"Iosevka\", \"Iosevka Nerd Font\",\r\n        \"IosevkaTerm Nerd Font\", \"Input Sans\", \"Liberation Mono\";\r\n    --mono-combo: var(--block-mono), var(--monospace);\r\n}\r\n\r\n*:not(\r\n        pre *,\r\n        .far,\r\n        .fa,\r\n        .glyphicon,\r\n        [class*=\"vjs-\"],\r\n        .fab,\r\n        .fa-github,\r\n        .fas,\r\n        .material-icons,\r\n        .icofont,\r\n        .typcn,\r\n        mu,\r\n        [class*=\"mu-\"],\r\n        .glyphicon,\r\n        .icon\r\n    ) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n}\r\n\r\npre,\r\ncode,\r\nb,\r\ntt {        \r\n    font-variant-ligatures: common-ligatures !important;\r\n    font-variant-ligatures: contextual !important;\r\n    font-feature-settings: \"liga\" 1, \"calt\" 1 !important;\r\n\r\n    /* -webkit-font-feature-settings: \"liga\", \"calt\" !important;\r\n    -moz-font-feature-settings: \"liga\", \"calt\" !important;\r\n    -o-font-feature-settings: \"liga\", \"calt\" !important; */\r\n}\r\n\r\n.card-3ie2dy > div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2,\r\nh3,\r\nspan,\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", \"Noto Sans\", \"Noto Sans JP\", \"Noto Sans TC\",\r\n        \"Noto Sans SC\", \"Noto Sans KR\", \"Helvetica Neue\", Helvetica, Arial,\r\n        sans-serif !important;\r\n}\r\n\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--block-mono), var(--monospace), Consolas,\r\n        \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco,\r\n        \"Courier New\", Courier, monospace !important;\r\n}\r\n\r\n.username_d30d99,\r\n.roleMention-11Aaqi,\r\n.membersGroup-2eiWxl,\r\n.roles-3vQPxb,\r\n.username-3_PJ5r,\r\n.username-h_Y3Us,\r\n.username-vAneIW,\r\n.name__4c9aa,\r\n.username__73ce9,\r\n.mention {\r\n    filter: sepia(80%);\r\n}"
+    "quickCss": "@import url(\"https://fonts.googleapis.com/css?family=Inter|Roboto|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Fira+Code|IBM+Plex+Mono|Libre+Baskerville\");\r\n\r\n:root {\r\n    /* Define variables */\r\n    --not-monospace: -apple-system, BlinkMacSystemFont, \"SF Pro\",\r\n        \"SF Pro Text\", \"Inter\", \"Roboto Flex\", \"Roboto\", \"IBM Plex Sans\",\r\n        \"Noto Sans\", \"SF Pro Display\", \"SF Compact\", \"SF Cash\", \"SF Hello\",\r\n        \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\",\r\n        \"IBM Plex Sans JP\", \"IBM Plex Sans KR\";\r\n    --serif: Fraunces, Alegreya, \"Crimson Pro\", \"Crimson Text\",\r\n        \"Libre Baskerville\", Georgia, \"EB Garamond\", \"Lora\",\r\n        \"Shippori Mincho\", \"Noto Serif JP\", \"Noto Serif TC\", \"Noto Serif SC\",\r\n        \"Noto Serif KR\", \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\",\r\n        \"Noto Sans KR\";\r\n    --monospace: \"Fira Code\", \"Fira Mono\", \"Noto Mono\", \"Noto Sans Mono\",\r\n        \"DroidSansM\", \"SF Mono\", \"SFMono-Regular\", \"CodeNewRoman Nerd Font\",\r\n        \"Consolas\", \"Hack\", \"Hack Nerd Font\", \"Bitstream Vera Sans Mono\",\r\n        \"BitstromWera Nerd Font\", \"DejaVu Sans Mono\", \"Cascadia Code\",\r\n        \"CaskaydiaCove Nerd Font\", \"Cascadia Mono\", \"Segoe UI Mono\",\r\n        \"Intel One Mono\", Menlo, \"MesloLG Nerd Font\", Monaco, \"Ubuntu Mono\",\r\n        \"Ubuntu Mono Nerd Font\", \"Hasklig\", \"Hasklug Nerd Font\",\r\n        \"Source Code Pro\", \"Source Code Pro Nerd Font\", \"Andale Mono\",\r\n        \"Lucida Console\", \"Lucida Sans Typewriter\";\r\n    --block-mono: \"IBM Plex Mono\", \"BlexMono Nerd Font\", \"Roboto Mono\",\r\n        \"Fantasque Sans Mono\", \"FantasqueSansM Nerd Font\", \"Agave Nerd Font\",\r\n        \"JetBrains Mono\", \"JetBrains Mono NL\", \"JetBrainsMono Nerd Font\",\r\n        ProFont, \"Input Mono\", \"Envy Code R\", \"EnvyCodeR Nerd Font\",\r\n        \"Iosevka Expanded\", \"Iosevka\", \"Iosevka Nerd Font\",\r\n        \"IosevkaTerm Nerd Font\", \"Input Sans\", \"Liberation Mono\";\r\n    --mono-combo: var(--block-mono), var(--monospace);\r\n}\r\n\r\n.card-3ie2dy > div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2,\r\nh3,\r\nspan,\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", \"Noto Sans\", \"Noto Sans JP\", \"Noto Sans TC\",\r\n        \"Noto Sans SC\", \"Noto Sans KR\", \"Helvetica Neue\", Helvetica, Arial,\r\n        sans-serif !important;\r\n}\r\n\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--block-mono), var(--monospace), Consolas,\r\n        \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\",\r\n        \"Lucida Sans Typewriter\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco,\r\n        \"Courier New\", Courier, monospace !important;\r\n}\r\n\r\n.username_d30d99,\r\n.roleMention-11Aaqi,\r\n.membersGroup-2eiWxl,\r\n.roles-3vQPxb,\r\n.username-3_PJ5r,\r\n.username-h_Y3Us,\r\n.username-vAneIW,\r\n.name__4c9aa,\r\n.username__73ce9,\r\n.mention {\r\n    filter: sepia(80%);\r\n}\r\n\r\n*:not(\r\n        pre *,\r\n        .far,\r\n        .fa,\r\n        .glyphicon,\r\n        [class*=\"vjs-\"],\r\n        .fab,\r\n        .fa-github,\r\n        .fas,\r\n        .material-icons,\r\n        .icofont,\r\n        .typcn,\r\n        mu,\r\n        [class*=\"mu-\"],\r\n        .glyphicon,\r\n        .icon\r\n    ) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n    \r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n}\r\n\r\npre,\r\ncode,\r\nb,\r\ntt {        \r\n    font-feature-settings: \"liga\" 1, \"clig\" 1, \"calt\" 1 !important;\r\n\r\n    -webkit-font-smoothing: antialiased !important;\r\n    -moz-osx-font-smoothing: grayscale !important;\r\n    -ms-font-smoothing: antialiased !important;\r\n    text-rendering: optimizeLegibility !important;\r\n    \r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n}"
 }
