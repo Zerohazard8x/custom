@@ -349,7 +349,7 @@
     }
 
     pre > code,
-    p > code,
+    p > code:not(dd > p > code):not(.section-content > p > code),
     strong > code {
         font-size: 16px !important;
     }
