@@ -9,6 +9,17 @@
 /.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(-ms-font-smoothing: antialiased !important)
 /.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(text-rendering: optimizeLegibility !important)
 
+/.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(font-optical-sizing: auto !important)
+/.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(font-synthesis: none !important)
+
 /.*/##pre,code,b,tt:style(font-variant-ligatures: common-ligatures !important)
 /.*/##pre,code,b,tt:style(font-variant-ligatures: contextual !important)
 /.*/##pre,code,b,tt:style(font-feature-settings: "liga" 1, "calt" 1 !important)
+
+/.*/##pre,code,b,tt:style(-webkit-font-smoothing: antialiased !important)
+/.*/##pre,code,b,tt:style(-moz-osx-font-smoothing: grayscale !important)
+/.*/##pre,code,b,tt:style(-ms-font-smoothing: antialiased !important)
+/.*/##pre,code,b,tt:style(text-rendering: optimizeLegibility !important)
+
+/.*/##pre,code,b,tt:style(font-optical-sizing: auto !important)
+/.*/##pre,code,b,tt:style(font-synthesis: none !important)
