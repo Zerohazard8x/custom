@@ -9,7 +9,15 @@ adobe.com##.static.modalContainer
 
 aftership.com##.css-1ovtwck
 
+amazon.com###apex_desktop
+amazon.com###corePriceDisplay_desktop_feature_div
+amazon.com###image-canvas-caption
 amazon.com###nav-flyout-anchor
+amazon.com##.a-declarative.prime-details
+amazon.com##.bbop-content > b:nth-of-type(1)
+amazon.com##.s-navigation-item.a-link-normal > .a-spacing-top-mini.a-spacing-none.a-section
+amazon.com##.widgetId\=search-results_4.template\=SEARCH_RESULTS.slot\=MAIN.celwidget.s-widget-container-height-small.s-spacing-small.s-widget-container > .a-declarative > .puis-card-border.s-latency-cf-section.puis-v2hrdt6w0jdtp122jn0441sgwu4.puis.puis-include-content-margin.aok-relative.s-overflow-hidden.s-card-container.puis-card-container > .a-section > .puisg-row > .puis-list-col-left.puisg-col-4-of-24.puisg-col-4-of-20.puisg-col-4-of-16.puisg-col-4-of-12.puisg-col > .puisg-col-inner > .s-list-status-badge-container.puis-status-badge-container.aok-relative.a-spacing-none.a-section
+amazon.com##.widgetId\=search-results_5.template\=SEARCH_RESULTS.slot\=MAIN.celwidget.s-widget-container-height-small.s-spacing-small.s-widget-container > .a-declarative > .puis-card-border.s-latency-cf-section.puis-v2hrdt6w0jdtp122jn0441sgwu4.puis.puis-include-content-margin.aok-relative.s-overflow-hidden.s-card-container.puis-card-container > .a-section > .puisg-row > .puis-list-col-left.puisg-col-4-of-24.puisg-col-4-of-20.puisg-col-4-of-16.puisg-col-4-of-12.puisg-col > .puisg-col-inner > .s-list-status-badge-container.puis-status-badge-container.aok-relative.a-spacing-none.a-section
 
 appleid.apple.com##.landing__blocks
 
@@ -94,6 +102,9 @@ chegg.com##.jVGOCz.styled__BannerAdPlaceholder-kj3hee-1
 chegg.com##.lhjuGU.styled__QnaAnswerExpertDisclaimer-sc-1n9zsh8-6
 chegg.com##div.gHnNJJ.styled__ComponentWrapper-sc-1v7qxzh-1:nth-of-type(2)
 
+convertio.co##.text-center.rating
+convertio.co##.js-softobar.softobar
+
 discord.com##.art-3yfHpl
 discord.com##.badgeContainer-1OeZs3
 discord.com##.badgeContainer-3TDXH5
@@ -109,6 +120,8 @@ discord.com##.moreSubtitleMargin__91793.fullWidth__2b90a.subtitle_c3170a.text-lg
 discord.com##.scrollerBase-1Pkza4.none-1rXy4P.scroller-3X7KbA > div.listItem-3SmSlK:nth-of-type(7)
 discord.com##.tryItOutSection-W9qeGH.featureBorder-2Jl8g4.premiumFeatureBorder-1i95si
 discord.com##.vc-error-card.vc-m-bottom-8 > .modeDefault-3Warim.formText-2UzJT0.default-h5DUM7.size14-k_3Hy4.colorStandard-1Xxp1s
+
+discussions.apple.com##.announcements
 
 drive.google.com##.g-Yd-Ya.g-Yd-Na.a-Ff-B.a-la-B.g-Yd
 
@@ -148,6 +161,7 @@ forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
 genius.com##.gTBWpu.SongComments__Footer-sc-131p4fy-11
 genius.com##.vrxkS.InnerSectionDivider-sc-1x4onqw-0
 
+getpocket.com##.css-1ww0nxx
 getpocket.com##div > div.onboarding-badge:first-child
 getpocket.com##div > nav > a.css-18qpw11
 getpocket.com##ul.css-1bjgl5h.links
@@ -369,7 +383,9 @@ symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-chi
 
 time.is###lC
 time.is###quote
+time.is###time_zone > h2
 time.is###top_cities_tmp
+time.is##div.onedate:nth-of-type(1)
 time.is##h3
 
 thespike.gg##div > div > ul > li
@@ -379,6 +395,7 @@ thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStats
 to-do.live.com##.obf-Visible.obf-Toast
 
 twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
+twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
 
 vlr.gg##.d8fyh

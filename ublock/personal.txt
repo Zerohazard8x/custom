@@ -623,7 +623,6 @@
 ||jotaja.com.br/runq/aiislednegepe$all
 ||journaldev.com$all
 ||jquery.app$all
-||js-cdn.music.apple.com$all
 ||js.j8jp.com$all
 ||judge.me$all
 ||jumtools.net$all
@@ -1075,6 +1074,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||js-cdn.music.apple.com$script,inline-script,object,ping,stylesheet,other
 ||betacdn.net$script,inline-script,object,ping,stylesheet,other
 ||byjusweb.com$script,inline-script,object,ping,stylesheet,other
 ||force.com$script,inline-script,object,ping,stylesheet,other
@@ -1220,7 +1220,6 @@
 ||fbsbx.com$script,inline-script,object,ping,stylesheet,other
 ||fdv2-t-msedge.net$script,inline-script,object,ping,stylesheet,other
 ||ffx.io$script,inline-script,object,ping,stylesheet,other
-||font-public.canva.com$script,inline-script,object,ping,stylesheet,other
 ||foxdcg.com$script,inline-script,object,ping,stylesheet,other
 ||freepikcompany.com$script,inline-script,object,ping,stylesheet,other
 ||fssta.com$script,inline-script,object,ping,stylesheet,other
