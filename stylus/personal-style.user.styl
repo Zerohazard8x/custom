@@ -1,15 +1,11 @@
 /* ==UserStyle==
-@name           personal
-@namespace      github.com/openstyles/stylus
-@version        2.0.5
-@description    My personal userstyle/* ==UserStyle==
-@name           personal
-@namespace      github.com/openstyles/stylus
-@version        2.0.5
-@description    My personal userstyle
 @author         Zerohazard8x + LLM
-@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
+@description    My personal userstyle
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
+@name           personal
+@namespace      github.com/openstyles/stylus
+@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
+@version        2.0.6
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("google.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), regexp(".*twitch.tv\/popout.*"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("cagematch.net"), domain("deepl.com"), domain("aftership.com"), domain("weibo.com"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com") {
@@ -17,7 +13,7 @@
         /* Define variables */
         --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro",
         "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "IBM Plex Sans",
-        "Noto Sans", "SF Pro Display", "SF Compact", "SF Hello",
+        "Noto Sans", ".SF UI Display", "SF Pro Display", "SF Compact", "SF Hello",
         "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
         "IBM Plex Sans JP", "IBM Plex Sans KR";
     }
@@ -27,7 +23,7 @@
     /* youtube - subtitles, font changes */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: "Fira Sans", "Road UA", "Source Sans Pro", "DIN Next",
+        font-family: "Fira Sans", "FF Meta", "Road UA", "Roadgeek 2014", "Roadgeek 2005", "Source Sans Pro", "DIN Next",
             "Bahnschrift", "Nunito Sans", "Nunito",
             "alte din 1451 mittelschrift", "Keiner", "Dinish", "Dinish Expanded",
             "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN", "IBM Plex Sans",
@@ -138,7 +134,7 @@
     /* Google */
     :root {
         /* Define variables */
-        --roboto: "Roboto Flex", Roboto, "Roboto Draft", RobotoDraft,
+        --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft", RobotoDraft,
             Roboto-Regular;
     }
 
@@ -222,27 +218,27 @@
     a.K1yPdf,
     g-menu-item,
     .gb_Kd {
-        font-family: var(--roboto), arial, sans-serif !important;
+        font-family: var(--google), arial, sans-serif !important;
     }
 
     .T8VaVe {
-        font-family: var(--roboto), arial, sans-serif !important;
+        font-family: var(--google), arial, sans-serif !important;
     }
 
     .H1HQf,
     .SW5pqf {
-        font-family: var(--roboto), arial, sans-serif-medium, sans-serif !important;
+        font-family: var(--google), arial, sans-serif-medium, sans-serif !important;
     }
 
     .CvgYje {
-        font-family: var(--roboto), Google Sans, Roboto, HelveticaNeue, Arial,
+        font-family: var(--google), Google Sans, Roboto, HelveticaNeue, Arial,
             sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
     input,
     .Czd4wf {
-        font-family: "Google Sans", var(--roboto), arial !important;
+        font-family: "Google Sans", var(--google), arial !important;
     }
 
     .JgzqYd,
@@ -274,11 +270,11 @@
     h1.mGOaCb,
     input[type="submit"],
     .gLFyf {
-        font-family: "Google Sans", var(--roboto), arial, sans-serif !important;
+        font-family: "Google Sans", var(--google), arial, sans-serif !important;
     }
 
     .wx62f {
-        font-family: var(--roboto), Helvetica Neue, Arial, sans-serif !important;
+        font-family: var(--google), Helvetica Neue, Arial, sans-serif !important;
     }
 }
 
