@@ -21,14 +21,14 @@ amazon.com##.widgetId\=search-results_5.template\=SEARCH_RESULTS.slot\=MAIN.celw
 
 appleid.apple.com##.landing__blocks
 
-!!!!!!!!
+!------!
 ! Represents the 1st and 7th elements
 apps.apple.com##div.app-privacy__modal-section:nth-child(n+1):nth-child(-n+2)
 
 apps.apple.com##.app-privacy.section--bordered.section.l-content-width > p
 apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
 apps.apple.com##div.app-privacy__modal-section > p
-!!!!!!!!
+!------!
 
 bard.google.com##.location-buttons-dot
 bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
@@ -38,7 +38,7 @@ bard.google.com##chat-app > .ng-star-inserted
 bard.google.com##ogb-menu-controls > .ng-star-inserted
 bard.google.com##xap-count-badge
 
-!!!!!!!!
+!------!
 ! Represents the 6th and 7th elements
 bing.com###b_results > li.b_bfb_lcg:nth-child(n+6):nth-child(-n+7)
 
@@ -81,6 +81,7 @@ bing.com##.langdisp.b_hide
 bing.com##.new_see_more_container
 bing.com##.popup.b_bnp_bopc
 bing.com##.rh_scale.rh_reedm.toolTip.id_button
+bing.com##.rs_chat
 bing.com##.rs_chatReD
 bing.com##.sw_mktsw
 bing.com##.wpt_bc_container
@@ -88,7 +89,9 @@ bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
 bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
 bing.com##div.musCard.focusin:last-child
 bing.com##section.msbModule.moduleCont:first-child
-!!!!!!!!
+!------!
+
+breezewiki.com,antifandom.com,bw.artemislena.eu##.bw-top-banner
 
 byjus.com###adtech-related-links-container
 byjus.com###adtech-top-banner-container
@@ -131,7 +134,7 @@ duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv
 duckduckgo.com##.footer
 duckduckgo.com##.legacy-homepage_ctaSection__5siuM
 
-!!!!!!!!
+!------!
 ! Represents elements 8 and 10 (diff. of 2 -> -2n+10)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+8):nth-child(-2n+10)
 
@@ -145,7 +148,7 @@ facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1
 facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
 facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
 facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2:nth-of-type(3)
-!!!!!!!!
+!------!
 
 fandom.com###WikiaRail
 fandom.com##.global-navigation
@@ -171,6 +174,7 @@ github.com##.border-bottom.mb-5.feed-right-sidebar > .js-notice
 github.com##.border-bottom.mb-5.feed-right-sidebar > div > .js-notice
 github.com##.d-lg-block.d-md-block.d-sm-none.d-none.position-absolute.Popover.js-notice
 github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
+github.com##.js-notice
 github.com##.mx-auto.col-8 > .mb-2
 github.com##.rounded-2.p-3.color-border-muted.border.color-bg-default.dashboard-changelog.mb-3
 github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
@@ -423,13 +427,17 @@ wordcounter.net###editor_container > div > .row
 you.com##.LQwHO.sc-196cc170-0
 you.com##.blpnYK.sc-bb226f16-0
 you.com##.cnaKES.sc-6c4b6bfa-0
+you.com##.dVxNFJ.sc-8c28d312-9
 you.com##.dWukXE.sc-d7e0e095-0
 you.com##.eDRRLP.sc-f838178a-0
 you.com##.fGblHt.sc-191b525d-9
 you.com##.ffsAZk.sc-cc5a18b7-1
+you.com##.hzrZBZ.sc-49290fb9-0
 you.com##.inBNP.sc-91f548bc-1
 you.com##.izqrBn.sc-d9f31138-0
+you.com##.jlPksG.sc-69c436d2-2 > .dbxkjo.sc-42f19d8d-0
 you.com##.kEfGjV.sc-38580842-9
+you.com##.kvVbDV.sc-3022399e-0
 you.com##.ljWYYA.sc-18e0beb6-0
 
 youtube.com###about-these-results
