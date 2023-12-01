@@ -5,17 +5,17 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.0.6
+@version        2.0.7
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("google.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), regexp(".*twitch.tv\/popout.*"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("cagematch.net"), domain("deepl.com"), domain("aftership.com"), domain("weibo.com"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com") {
+@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("google.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), regexp(".*twitch.tv\/popout.*"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("aftership.com"), domain("weibo.com"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com") {
     :root {
         /* Define variables */
         --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro",
-        "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "IBM Plex Sans",
-        "Noto Sans", ".SF UI Display", "SF Pro Display", "SF Compact", "SF Hello",
-        "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
-        "IBM Plex Sans JP", "IBM Plex Sans KR";
+            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "IBM Plex Sans",
+            "Noto Sans", ".SF UI Display", "SF Pro Display", "SF Compact",
+            "SF Hello", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+            "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
     }
 }
 
@@ -23,24 +23,24 @@
     /* youtube - subtitles, font changes */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: "Fira Sans", "FF Meta", "Road UA", "Roadgeek 2014", "Roadgeek 2005", "Source Sans Pro", "DIN Next",
-            "Bahnschrift", "Nunito Sans", "Nunito",
-            "alte din 1451 mittelschrift", "Keiner", "Dinish", "Dinish Expanded",
-            "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN", "IBM Plex Sans",
-            "Noto Sans", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Trebuchet MS", var(--font-personal), "YouTube Noto",
-            Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana,
-            "PT Sans Caption", sans-serif !important;
+        font-family: "Fira Sans", "FF Meta", "Road UA", "Roadgeek 2014",
+            "Roadgeek 2005", "Source Sans Pro", "DIN Next", "Bahnschrift",
+            "Nunito Sans", "Nunito", "alte din 1451 mittelschrift", "Keiner",
+            "Dinish", "Dinish Expanded", "Altinn-DIN", "D-DIN", "D-DIN Expanded",
+            "DIN", "IBM Plex Sans", "Noto Sans", "Noto Sans JP", "Noto Sans TC",
+            "Noto Sans SC", "Noto Sans KR", "Trebuchet MS", var(--font-personal),
+            "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
+            Verdana, "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
         /* background: none !important; */
 
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
         /* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
             #000000 0 0 5px !important; */
-        
+
         /* line-height: calc(2px + 2ex + 2px); */
         /* computed: 2px + (2 * 20px) + 2px = 44px */
-        
+
         /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
         /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
         /* https://madebymike.com.au/writing/fluid-type-calc-examples/ */
@@ -71,7 +71,7 @@
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     /* facebook, messenger, instagram */
     :root {
-        --facebook: "Optimistic", "Optimistic Text", "Optimistic Display", "Facebook Sans",
+        --facebook: "Optimistic Text", "Optimistic Display", "Facebook Sans",
             "Optimistic Text Normal", "Optimistic Display Bold",
             "Facebook Sans Bold", FacebookSansApp-Bold;
     }
@@ -134,15 +134,15 @@
     /* Google */
     :root {
         /* Define variables */
-        --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft", RobotoDraft,
-            Roboto-Regular;
+        --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft",
+            RobotoDraft, Roboto-Regular;
     }
 
-	.paD5uf,
-	.tVRLD,
-	.fYFvJb,
-	.ZU8Abc,
-	.GGYY2b,
+    .paD5uf,
+    .tVRLD,
+    .fYFvJb,
+    .ZU8Abc,
+    .GGYY2b,
     .c07z9,
     .gJBeNe,
     .cS4Vcb-pGL6qe-lfQAOe,
@@ -312,19 +312,6 @@
     }
 }
 
-@-moz-document domain("cagematch.net") {
-    /* Cagematch */
-	.FormSelect,
-	.FormInput,
-    .TemplateBody,
-    .HeaderMenu,
-    .RatingsBoxAdjustedRating,
-    input {
-        font-family: var(--font-personal), Arial, "Segoe UI", Frutiger,
-            "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
-    }
-}
-
 @-moz-document domain("quora.com") {
     /* Quora */
     .q-box {
@@ -360,10 +347,11 @@
     #searchsubmit {
         font-family: var(--font-personal), arial, helvetica, clean, sans-serif !important;
     }
-	
-	#main {
-		font-family: var(--font-personal), "Helvetica Neue",Helvetica,Arial,sans-serif !important;
-	}
+
+    #main {
+        font-family: var(--font-personal), "Helvetica Neue", Helvetica, Arial,
+            sans-serif !important;
+    }
 }
 
 @-moz-document domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in") {
@@ -383,14 +371,18 @@
     span > span > a {
         font-family: "Amazon Ember", Arial !important;
     }
-	
-	.a-color-link {
-		font-family: "Amazon Ember", AmazonEmber-Regular,helvetica_ne_lt_55_roman,HelveticaNeueLTStd-Roman,Helvetica,sans-serif !important;
-	}
-	
-	.a-popover-wrapper, .a-meter-animate {
-		font-family: "Amazon Ember", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
-	}
+
+    .a-color-link {
+        font-family: "Amazon Ember", AmazonEmber-Regular,
+            helvetica_ne_lt_55_roman, HelveticaNeueLTStd-Roman, Helvetica,
+            sans-serif !important;
+    }
+
+    .a-popover-wrapper,
+    .a-meter-animate {
+        font-family: "Amazon Ember", "Hiragino Kaku Gothic ProN",
+            "Hiragino Sans", Meiryo, sans-serif !important;
+    }
 }
 
 @-moz-document domain("emojipedia.org") {
@@ -603,8 +595,8 @@
 
 @-moz-document domain("hupu.com"), domain("sports.cctv.com") {
     /* Hupu + Iframe */
-	.index_simple-detail-content__3FPFA,
-	.hp-pc-rc-SuperMenu-sub-menu-container,
+    .index_simple-detail-content__3FPFA,
+    .hp-pc-rc-SuperMenu-sub-menu-container,
     .bbs-search-web,
     .bbs-search-web-content,
     .index_game-center-entrance-container-title__BNope,
@@ -627,7 +619,7 @@
             Helvetica, sans-serif !important;
     }
 
-	.post-wrapper_bbs-post-wrapper-title__TLQdd > p,
+    .post-wrapper_bbs-post-wrapper-title__TLQdd > p,
     .index_bbs-post-web-main-title-provider__uHAn9 > span,
     .index_bbs-post-web-main-title-provider__uHAn9,
     .main-c {
@@ -638,9 +630,9 @@
         font-family: var(--font-personal), PingFangSC-Semibold, PingFang SC !important;
     }
 
-	.post-user_user-base-info__AxpCI > a,
-	.post-wrapper_toggle-tool__MGO_Q > span,
-	.index_quote-operate__28QIi > span,
+    .post-user_user-base-info__AxpCI > a,
+    .post-wrapper_toggle-tool__MGO_Q > span,
+    .index_quote-operate__28QIi > span,
     .bbs-index-web,
     .bbs-index-web-body,
     .bbs-index-web-holder,
@@ -657,7 +649,7 @@
         font-family: var(--font-personal), PingFangSC-Regular !important;
     }
 
-	.notLogin > a > span,
+    .notLogin > a > span,
     .banneritem,
     .content-wrap,
     .hot-search,
@@ -669,7 +661,11 @@
         font-family: var(--font-personal), PingFangSC-Regular, PingFang SC !important;
     }
 
-    .index_right-post-title__zN9JN, font, .right-post-title, .post-title, .post-info > div {
+    .index_right-post-title__zN9JN,
+    font,
+    .right-post-title,
+    .post-title,
+    .post-info > div {
         font-family: var(--font-personal), PingFangSC !important;
     }
 
