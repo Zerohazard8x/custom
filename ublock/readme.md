@@ -1,4 +1,4 @@
-- [Zerohazard's Streaming Decluttering](abp:subscribe?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/chat_popout.txt&title=Zerohazard's%20Streaming%20Decluttering)
+- [Zerohazard's Streaming Decluttering](abp:subscribe?location=https%253A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Fchat%5Fpopout.txt)
 
 - [Zerohazard's Fave Scores Only](abp:subscribe?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/fave_scores_only.txt&title=Zerohazard's%20Fave%20Scores%20Only)
 
