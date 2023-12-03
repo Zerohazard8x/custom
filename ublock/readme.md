@@ -1,14 +1,14 @@
-- [Zerohazard's Streaming Decluttering](abp:subscribe?location=https%253A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Fchat%5Fpopout.txt)
+- [Zerohazard's Streaming Decluttering](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Fchat%5Fpopout.txt&title=Zerohazard's%20Streaming%20Decluttering)
 
-- [Zerohazard's Fave Scores Only](abp:subscribe?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/fave_scores_only.txt&title=Zerohazard's%20Fave%20Scores%20Only)
+- [Zerohazard's Fave Scores Only](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Ffave%5Fscores%5Fonly.txt&title=Zerohazard's%20Fave%20Scores%20Only)
 
-- [Zerohazard's Decluttering](abp:subscribe?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/misc_declutter.txt&title=Zerohazard's%20decluttering)
+- [Zerohazard's Decluttering](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Fmisc%5Fdeclutter.txt&title=Zerohazard's%20decluttering)
 
-- [Zerohazard's News Decluttering](abp:subscribe?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/news_declutter.txt&title=Zerohazard's%20News%20Decluttering)
+- [Zerohazard's News Decluttering](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Fnews%5Fdeclutter.txt&title=Zerohazard's%20News%20Decluttering)
 
-- [Zerohazard's Filters](abp:subscribe?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/personal.txt&title=Zerohazard's%20Filters)
+- [Zerohazard's Filters](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Fpersonal.txt&title=Zerohazard's%20Filters)
 
-- [Zerohazard's Text Rendering Tweaks](abp:subscribe?location=https%3A//github.com/Zerohazard8x/custom/raw/main/ublock/text-rendering.txt&title=Zerohazard's%20text%20rendering%20tweaks)
+- [Zerohazard's Text Rendering Tweaks](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Ftext%2Drendering.txt&title=Zerohazard's%20text%20rendering%20tweaks)
 
 ```
 
