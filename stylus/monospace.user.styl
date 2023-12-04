@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.0.11
+@version        2.0.12
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -91,7 +91,7 @@
 }
 
 @-moz-document domain("wikipedia.org") {
-    /* Wikipedia */
+    /* Wikipedia + serif */
     #searchform,
     #p-lang-btn-label,
     #vector-page-tools-dropdown-label,
@@ -106,6 +106,12 @@
     cite,
     .mwe-popups-container {
         font-family: var(--not-monospace), sans-serif !important;
+    }
+
+    .mw-page-title-main,
+    .mw-headline {
+        font-family: var(--serif), "Linux Libertine", "Georgia", "Times",
+            "Source Serif Pro", serif !important;
     }
 
     p > code,
