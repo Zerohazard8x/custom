@@ -302,7 +302,7 @@
                 "enabled": false
             },
             "PinDMs": {
-                "enabled": true
+                "enabled": false
             },
             "PlainFolderIcon": {
                 "enabled": false
@@ -315,7 +315,7 @@
                 "messages": true
             },
             "PronounDB": {
-                "enabled": true,
+                "enabled": false,
                 "showInMessages": true,
                 "showSelf": true,
                 "pronounSource": 0,
@@ -413,14 +413,16 @@
                 "enabled": false
             },
             "TimeBarAllActivities": {
-                "enabled": false
+                "enabled": true
             },
             "Translate": {
-                "enabled": true,
+                "enabled": false,
                 "autoTranslate": false
             },
             "TypingIndicator": {
-                "enabled": false
+                "enabled": true,
+                "includeMutedChannels": false,
+                "includeBlockedUsers": false
             },
             "TypingTweaks": {
                 "enabled": true,
@@ -438,7 +440,7 @@
                 "enabled": false
             },
             "UserVoiceShow": {
-                "enabled": true,
+                "enabled": false,
                 "showInUserProfileModal": true,
                 "showVoiceChannelSectionHeader": true
             },
@@ -517,7 +519,7 @@
                 "enabled": false
             },
             "PreviewMessage": {
-                "enabled": true
+                "enabled": false
             },
             "SecretRingToneEnabler": {
                 "enabled": false
@@ -526,7 +528,7 @@
                 "enabled": false
             },
             "ShowTimeouts": {
-                "enabled": false
+                "enabled": true
             },
             "ThemeAttributes": {
                 "enabled": false
@@ -535,7 +537,7 @@
                 "enabled": false
             },
             "OnePingPerDM": {
-                "enabled": true,
+                "enabled": false,
                 "channelToAffect": "both_dms",
                 "allowMentions": true,
                 "allowEveryone": true
@@ -573,7 +575,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1701179304887
+            "settingsSyncVersion": 1701694220684
         },
         "enabledThemes": []
     },
