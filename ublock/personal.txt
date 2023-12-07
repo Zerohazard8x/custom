@@ -25,7 +25,6 @@
 ||accessibilityserver.org$all
 ||addons-pa.clients6.google.com$all
 ||adimo.co$all
-||adtidy.org$all
 ||aegergrills.com$all
 ||agiledata7.com$all
 ||aguwehajqluorgv.com$all
@@ -1074,6 +1073,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||adtidy.org$script,inline-script,object,ping,stylesheet,other
 ||js-cdn.music.apple.com$script,inline-script,object,ping,stylesheet,other
 ||betacdn.net$script,inline-script,object,ping,stylesheet,other
 ||byjusweb.com$script,inline-script,object,ping,stylesheet,other

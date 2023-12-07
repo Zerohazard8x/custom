@@ -126,6 +126,18 @@ discord.com##.vc-error-card.vc-m-bottom-8 > .modeDefault-3Warim.formText-2UzJT0.
 
 discussions.apple.com##.announcements
 
+dochub.com##.page-section--benefits.page-section
+dochub.com##.page-section--c2a-get-form.page-section
+dochub.com##.page-section--c2a-install-add-on.page-section
+dochub.com##.page-section--customers-reviews.page-section
+dochub.com##.page-section--features.page-section
+dochub.com##.page-section--integrations.page-section
+dochub.com##.page-section--overview.page-section
+dochub.com##.page-section--partners.page-section
+dochub.com##.page-section--security.page-section
+dochub.com##.page-section--workflow.page-section
+
+drive.google.com##.eO2Zfd.KkxPLb.vhoiae.dif24c.vMI2nb.ZACE2c
 drive.google.com##.g-Yd-Ya.g-Yd-Na.a-Ff-B.a-la-B.g-Yd
 
 duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.legacy-homepage-variants_scrollCta__hNjqv
@@ -399,6 +411,7 @@ thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStats
 to-do.live.com##.obf-Visible.obf-Toast
 
 twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
+twitter.com##.r-15zivkp.r-b88u0q.r-rjixqe.r-a023e6.r-37j5jr.r-qvutc0.r-bcqeeo.css-1rynq56
 twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
 
@@ -420,6 +433,8 @@ web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
 weibo.com##.LoginCard_wrap_18dK4.Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
 
 wikiwand.com##.footer_donation__Cje_Q
+
+wolframalpha.com##.QRoJJ.sc-f3dfd2ae-0
 
 wordcounter.net###top_counter > .row
 wordcounter.net###editor_container > div > .row
