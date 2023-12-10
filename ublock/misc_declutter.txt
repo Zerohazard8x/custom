@@ -15,6 +15,7 @@ amazon.com###image-canvas-caption
 amazon.com###nav-flyout-anchor
 amazon.com##.a-declarative.prime-details
 amazon.com##.bbop-content > b:nth-of-type(1)
+amazon.com##.nav-flyout.nav-coreFlyout.glow-toaster-slot-default.glow-toaster-theme-default.glow-toaster.a-section
 amazon.com##.s-navigation-item.a-link-normal > .a-spacing-top-mini.a-spacing-none.a-section
 amazon.com##.widgetId\=search-results_4.template\=SEARCH_RESULTS.slot\=MAIN.celwidget.s-widget-container-height-small.s-spacing-small.s-widget-container > .a-declarative > .puis-card-border.s-latency-cf-section.puis-v2hrdt6w0jdtp122jn0441sgwu4.puis.puis-include-content-margin.aok-relative.s-overflow-hidden.s-card-container.puis-card-container > .a-section > .puisg-row > .puis-list-col-left.puisg-col-4-of-24.puisg-col-4-of-20.puisg-col-4-of-16.puisg-col-4-of-12.puisg-col > .puisg-col-inner > .s-list-status-badge-container.puis-status-badge-container.aok-relative.a-spacing-none.a-section
 amazon.com##.widgetId\=search-results_5.template\=SEARCH_RESULTS.slot\=MAIN.celwidget.s-widget-container-height-small.s-spacing-small.s-widget-container > .a-declarative > .puis-card-border.s-latency-cf-section.puis-v2hrdt6w0jdtp122jn0441sgwu4.puis.puis-include-content-margin.aok-relative.s-overflow-hidden.s-card-container.puis-card-container > .a-section > .puisg-row > .puis-list-col-left.puisg-col-4-of-24.puisg-col-4-of-20.puisg-col-4-of-16.puisg-col-4-of-12.puisg-col > .puisg-col-inner > .s-list-status-badge-container.puis-status-badge-container.aok-relative.a-spacing-none.a-section
@@ -52,6 +53,7 @@ bing.com###b_op_flyout
 bing.com###b_results > li.b_bfb_mainline.b_ans:first-child
 bing.com###b_syd_sm_input
 bing.com###bingatwork
+bing.com###bnp\.nid\.64024
 bing.com###footer
 bing.com###google-s-ad
 bing.com###iasabtlnk
@@ -83,6 +85,7 @@ bing.com##.popup.b_bnp_bopc
 bing.com##.rh_scale.rh_reedm.toolTip.id_button
 bing.com##.rs_chat
 bing.com##.rs_chatReD
+bing.com##.sa_hv.bordertop
 bing.com##.sw_mktsw
 bing.com##.wpt_bc_container
 bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
@@ -111,6 +114,7 @@ convertio.co##.js-softobar.softobar
 discord.com##.art-3yfHpl
 discord.com##.badgeContainer-1OeZs3
 discord.com##.badgeContainer-3TDXH5
+discord.com##.banner-3BK9qN
 discord.com##.buttonContainer-2z-326
 discord.com##.colorDefault-1e8tQv.notice-2HEN-u
 discord.com##.colorPremium__32b12.colorPremiumTier2_b5437b.notice__5fd4c
@@ -137,6 +141,7 @@ dochub.com##.page-section--partners.page-section
 dochub.com##.page-section--security.page-section
 dochub.com##.page-section--workflow.page-section
 
+drive.google.com##.d7xVPd > div > .rYfpJe
 drive.google.com##.eO2Zfd.KkxPLb.vhoiae.dif24c.vMI2nb.ZACE2c
 drive.google.com##.g-Yd-Ya.g-Yd-Na.a-Ff-B.a-la-B.g-Yd
 
@@ -195,6 +200,7 @@ google.com###helpful
 google.com###personalized
 google.com###secure
 google.com##.RB2q5e.OSrXXb.oYWfcb.GTERze
+google.com##.footer
 google.com##.gacct-section.gacct-hero-feature
 google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
 google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
@@ -334,6 +340,8 @@ reddit.com##div.text-14.text-neutral-content-weak
 reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
+reddit.com##._2jJNpBqXMbbyOiGCElTYxZ
+reddit.com##.xs\:mx-0.mb-\[16px\].p-\[12px\].bg-tone-5.max-w-full.rounded-\[4px\].cursor-pointer.items-center.justify-start.relative.flex
 
 search.yahoo.com###ft
 search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
@@ -404,6 +412,8 @@ time.is###top_cities_tmp
 time.is##div.onedate:nth-of-type(1)
 time.is##h3
 
+tumblr.com##.B15CE
+
 thespike.gg##div > div > ul > li
 thespike.gg##div.featured-event_column__sm8P6:first-child
 thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
@@ -457,6 +467,7 @@ you.com##.ljWYYA.sc-18e0beb6-0
 
 youtube.com###about-these-results
 youtube.com##.ythd-israel-support
+youtube.com##.ytp-suggested-action-badge-with-controls.ytp-suggested-action-badge-expanded.ytp-suggested-action-badge-content-forward.ytp-suggested-action-badge-with-offline-slate.ytp-suggested-action-badge.ytp-button
 youtube.com##plasmo-csui
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n+3):nth-child(-n+4)

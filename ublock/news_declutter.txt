@@ -121,3 +121,9 @@ dailymail.co.uk##div.module.html_snippet.item.home:nth-of-type(3)
 nytimes.com##.css-1vd4jj3
 nytimes.com##.css-5soref
 nytimes.com##div.StoryBodyCompanionColumn.css-s99gbd:nth-of-type(2)
+
+eurogamer.net##.jobs-widget
+eurogamer.net##.poll_wrapper
+eurogamer.net##.smart-slot
+
+destructoid.com##.top-sidebar-wrapper

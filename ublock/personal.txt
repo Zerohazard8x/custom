@@ -1148,7 +1148,6 @@
 ||cdn.jpopsingles.eu$script,inline-script,object,ping,stylesheet,other
 ||cdn.rivalry.com$script,inline-script,object,ping,stylesheet,other
 ||cdn.you.com$script,inline-script,object,ping,stylesheet,other
-||cdn77.org$script,inline-script,object,ping,stylesheet,other
 ||cdngslb.com$script,inline-script,object,ping,stylesheet,other
 ||cdnhwc2.com$script,inline-script,object,ping,stylesheet,other
 ||cdnja.co$script,inline-script,object,ping,stylesheet,other
