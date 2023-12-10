@@ -142,7 +142,6 @@ dochub.com##.page-section--security.page-section
 dochub.com##.page-section--workflow.page-section
 
 drive.google.com##.d7xVPd > div > .rYfpJe
-drive.google.com##.eO2Zfd.KkxPLb.vhoiae.dif24c.vMI2nb.ZACE2c
 drive.google.com##.g-Yd-Ya.g-Yd-Na.a-Ff-B.a-la-B.g-Yd
 
 duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.legacy-homepage-variants_scrollCta__hNjqv
