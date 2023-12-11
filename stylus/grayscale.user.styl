@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        2.1.4
+@version        2.1.5
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -490,8 +490,14 @@
 
 @-moz-document domain("bing.com") {
     /* Bing */
-	.rms_img,
-	.b_algo_group > div > h2 > a,
+	.b_tbButton,
+	.lite-entcard-blk,
+	.l_ecrd_ans_expand,
+	.b_searchboxSubmitWrapper,
+	.b_icon,
+	.b_algoheader,
+	.b_title > h2 > a:not(.b_algo_group > div > h2 > a),
+	.b_algo_group > div > h2 > a:not(.b_title > h2 > a),
 	cite,
 	.rrr_teSeeMore,
     .rrrter_teTitleCnt,
@@ -506,7 +512,6 @@
 	.fd-itm,
 	.imgContainer,
 	.lite-entcard-ans,
-	.mic_icon,
 	.mimg,
 	.sa_as,
 	.siteicon > .rms_img,
