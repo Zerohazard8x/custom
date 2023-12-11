@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.1.0
+@version        2.0.14
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -327,6 +327,7 @@
 
 @-moz-document domain("wikiwand.com") {
     /* Wikiwand + serif */
+
     .monospaced,
     code,
     pre {
@@ -340,7 +341,8 @@
     }
 
     .poem,
-    .item_item__Faryz {
+	.item_anchor__rLB49,
+    .section-h {
         font-family: var(--serif), Noto Serif, "Noto Serif",
             "Noto Serif-fallback-1", serif !important;
     }
@@ -511,11 +513,15 @@
         font-family: var(--google), arial, sans-serif-medium, sans-serif !important;
     }
 
-    .CvgYje {
+    .CvgYje, .LT6XE, .Fzsovc {
         font-family: var(--google), Google Sans, Roboto, HelveticaNeue, Arial,
             sans-serif !important;
     }
 
+	.sjVJQd {
+		font-family: var(--google), Google Sans,arial,sans-serif-medium,sans-serif !important;
+	}
+	
     /* Force Google Sans (if available) */
     input,
     .Czd4wf {
@@ -584,7 +590,7 @@
 
     /* Search box */
     .b_searchboxForm {
-        border-radius: 12px !important;
+        border-radius: 8px !important;
     }
 
     /* Navigation bar */
@@ -598,6 +604,10 @@
         text-transform: none !important;
         font-size: 13px !important;
     }
+	
+	#c0 {
+		border-radius: 8px !important;
+	}
 
     /* Font styles */
     #detailMeta,
