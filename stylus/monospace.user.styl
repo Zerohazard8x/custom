@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.0.16
+@version        2.1.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -637,14 +637,13 @@
     }
 
 	p.b_algoSlug,
-    h2,
     cib-serp,
     #id_n,
     .wr_rat,
     .rwrl,
     .b_primtxt,
     .b_vList,
-    a:not(.b_scopebar > ul > li > a),
+    a,
     .b_widgetContainer,
     .b_wiki_w_item,
     .mc_vtvc_meta_row_channel,
@@ -669,13 +668,7 @@
             "Meiryo UI", Meiryo, Arial Unicode MS, sans-serif !important;
     }
 
-	.rrrter_teTitle > h2,
-	.hasImg > h2,
-    .rs_chatText > h2,
-    .rrr_teTitle > h2,
-    .scs_cpr > h2,
-    .b_rs > h2,
-    .b_rrsr > h2,
+	h2:not(.lc_content > h2),
     .b_mgridTitleCont,
     .b_mgridTitle > a,
     .v-ans-title,
@@ -693,8 +686,6 @@
     .nameContainer,
     .sto_title > .sto_slidelr,
     .sto_title,
-    .lite-entcard-exp > h2,
-    .richrsrailtitle > h2,
     h2 > span,
     p > span > a,
     container-title {
@@ -745,6 +736,7 @@
     }
 
     /* Font weights */
+	.b_ilhTitle > h2,
 	.rrrter_teTitle > h2,
 	.hasImg > h2,
     .rs_chatText > h2,
