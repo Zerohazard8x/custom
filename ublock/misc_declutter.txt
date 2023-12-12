@@ -71,7 +71,6 @@ bing.com###wiki_expand
 bing.com##.active.id_button
 bing.com##.b_bfb_lcg
 bing.com##.b_phead_chat_link
-bing.com##.b_topborder.b_top.b_ans
 bing.com##.b_vPanel > div:nth-of-type(3)
 bing.com##.below_sbox
 bing.com##.btwrap > .iasabt
