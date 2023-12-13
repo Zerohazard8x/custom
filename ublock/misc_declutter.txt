@@ -327,7 +327,6 @@ reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
 reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm
 reddit.com##.listingsignupbar.infobar
 reddit.com##.masthead
-reddit.com##.theme-beta.z-\[4\].fixed.right-0.left-0.top-0.nd\:visible
 reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:h-\[calc\(100vh-var\(--shreddit-header-height\)-1px\)\].xs\:top-\[56px\].xs\:sticky.xs\:w-full.styled-scrollbars.xl\:col-span-4.l\:col-span-4.m\:col-span-3.s\:col-span-4.xs\:col-span-4.s\:block.hidden.right-sidebar > .mt-md
 reddit.com##div > div > a._3dZnYgFFpifT-M_Vs2FAq6:first-child
 reddit.com##div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
