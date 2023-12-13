@@ -1,6 +1,5 @@
 [
     {
-        "version": 2,
         "title": "ChromeUAforGoogle",
         "headers": [
             {
@@ -22,6 +21,10 @@
         "urlFilters": [
             { "enabled": true, "urlRegex": ".*youtube.com.*" },
             { "enabled": true, "urlRegex": ".*google.com.*" }
+        ],
+        "excludeUrlFilters": [
+            { "enabled": true, "urlRegex": ".*docs.google.com.*" },
+            { "enabled": true, "urlRegex": ".*accounts.google.com.*" }
         ],
         "shortTitle": "1",
         "alwaysOn": true
