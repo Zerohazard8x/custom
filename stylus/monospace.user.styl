@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.1.0
+@version        2.1.1
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -598,7 +598,6 @@
     .b_scopebar > ul li {
         text-transform: none !important;
         font-size: 14px !important;
-        font-family: var(--roboto-then-segoe-text), Arial, Helvetica, sans-serif !important;
     }
 
     .b_scopebar_item > a {
@@ -607,7 +606,7 @@
     }
 	
 	#c0 {
-		border-radius: 6  px !important;
+		border-radius: 6px !important;
 	}
 
     /* Font styles */
@@ -637,6 +636,7 @@
             Roboto, Arial, sans-serif !important;
     }
 
+	.b_scopebar > ul li,
 	h2,
 	p.b_algoSlug,
     cib-serp,
@@ -670,7 +670,7 @@
             "Meiryo UI", Meiryo, Arial Unicode MS, sans-serif !important;
     }
 
-	h2:not(.lc_content > h2):not(.recommendationsTableTitle > h2):not(h2.mmtitle),
+	h2:not(.lc_content > h2):not(.recommendationsTableTitle > h2):not(h2.mmtitle):not(.b_algoheader > * > h2),
     .b_mgridTitleCont,
     .b_mgridTitle > a,
     .v-ans-title,

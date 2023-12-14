@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        2.1.7
+@version        2.1.8
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -488,25 +488,35 @@
 
 @-moz-document domain("bing.com") {
     /* Bing */
+	.ua_e,
+	.mna_t,
+	.b_tbButton,
+	.sw_st,
+	.b_algoheader > a,
+	.sp-webicons32:not(.l_ecrd_imcolheader > * > * > * > .sp-webicons32),
+	.lite-entcard-main,
+	.b_searchboxSubmit,
+	.b_icon > svg,
+	.rd_single,
 	.mmtitle,
 	.coll_vc > h2,
 	.prmb_title,
 	.lisn_sm > a,
 	.cCodeBg,
 	#tab_6 > a,
-	.slide,
-	.rms_img:not(.slide > * > * > * > .rms_img),
+	.slide:not(.b_slidebar > .slide),
+	.rms_img:not(.slide > * > * > * > .rms_img):not(.rd_tb_cnt_mdata > * > .rms_img):not(.cico > * > .rms_img),
 	.b_algo_group > h2 > a,
 	.b_algo_group > div > h2 > a,
-	cite,
+	cite:not(.b_attribution > cite),
 	.rrr_teSeeMore,
     .rrrter_teTitleCnt,
 	#sb_go_par,
 	#sbi_b,
 	.b_logo,
-	.b_mopexpref,
+	.b_mopexpref:not(.b_bottomBleed > .b_mopexpref),
 	.b_traits,
-	.cico,
+	.cico:not(.slide > * > .cico):not(.l_ecrd_imcolheader_img > .cico),
 	.deeplink_title,
 	.exploreAns,
 	.fd-itm,
