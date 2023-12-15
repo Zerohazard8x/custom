@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.1.1
+@version        2.1.2
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -16,8 +16,9 @@
             "IBM Plex Sans", "Noto Sans", "SF Pro Display", "SF Compact",
             "SF Hello", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
             "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
-        --serif: Fraunces, "Source Serif 4", "Source Serif Pro", "Serif UI", "Serif UI Text", Alegreya, "Crimson Pro",
-            "Crimson Text", "Libre Baskerville", Georgia, "EB Garamond", "Lora",
+        --serif: Fraunces, "Source Serif 4", "Source Serif Pro", "Serif UI",
+            "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
+            "Libre Baskerville", Georgia, "EB Garamond", "Lora",
             "Shippori Mincho", "Serif UI Display", "Noto Serif JP",
             "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Sans JP",
             "Noto Sans TC", "Noto Sans SC", "Noto Sans KR";
@@ -137,7 +138,7 @@
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
-	.inline-block,
+    .inline-block,
     .side .md p,
     .add,
     .buttons > button,
@@ -221,7 +222,8 @@
             sans-serif !important;
     }
 
-    code, #shortlink-text {
+    code,
+    #shortlink-text {
         font-family: var(--mono-combo), monospace !important;
     }
 
@@ -342,7 +344,7 @@
     }
 
     .poem,
-	.item_anchor__rLB49,
+    .item_anchor__rLB49,
     .section-h {
         font-family: var(--serif), Noto Serif, "Noto Serif",
             "Noto Serif-fallback-1", serif !important;
@@ -411,17 +413,17 @@
 
 @-moz-document domain("google.com") {
     /* Google */
-	    :root {
+    :root {
         /* Define variables */
         --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft",
             RobotoDraft, Roboto-Regular;
     }
 
-	.no-user-select,
-	.wwUB2c,
-	.toI8Rb,
-	.guK3rf,
-	.JMWMJ,
+    .no-user-select,
+    .wwUB2c,
+    .toI8Rb,
+    .guK3rf,
+    .JMWMJ,
     .paD5uf,
     .tVRLD,
     .fYFvJb,
@@ -514,22 +516,25 @@
         font-family: var(--google), arial, sans-serif-medium, sans-serif !important;
     }
 
-    .CvgYje, .LT6XE, .Fzsovc {
+    .CvgYje,
+    .LT6XE,
+    .Fzsovc {
         font-family: var(--google), Google Sans, Roboto, HelveticaNeue, Arial,
             sans-serif !important;
     }
 
-	.sjVJQd {
-		font-family: var(--google), Google Sans,arial,sans-serif-medium,sans-serif !important;
-	}
-	
+    .sjVJQd {
+        font-family: var(--google), Google Sans, arial, sans-serif-medium,
+            sans-serif !important;
+    }
+
     /* Force Google Sans (if available) */
     input,
     .Czd4wf {
         font-family: "Google Sans", var(--google), arial !important;
     }
 
-	.a-no-hover-decoration,
+    .a-no-hover-decoration,
     .JgzqYd,
     .TUOsUe,
     .MVwBGc,
@@ -565,12 +570,14 @@
     .wx62f {
         font-family: var(--google), Helvetica Neue, Arial, sans-serif !important;
     }
-	
-	.googlegpt > pre, #googlegpt-chatbar, .code-container,
+
+    .googlegpt > pre,
+    #googlegpt-chatbar,
+    .code-container,
     .markdown > p code {
-		font-family: "Google Sans Mono", var(--mono-combo), monospace !important;
-	}
-	
+        font-family: "Google Sans Mono", var(--mono-combo), monospace !important;
+    }
+
     .code-container,
     .markdown > p code {
         font-size: 16px !important;
@@ -580,12 +587,11 @@
 @-moz-document domain("bing.com") {
     /* Bing + "fluent" changes */
     :root {
-		--segoe: "Segoe UI", SegoeUI, Segoe,
-            "WeblySleek UI";
-        --roboto-then-segoe-text: Aptos, "Roboto Flex", "Roboto",
-            "Segoe UI Variable Text", var(--segoe);
-        --segoe-display: "Segoe UI Variable Display", var(--segoe), Aptos, "Roboto Flex", "Roboto";
-        --roboto-then-segoe-small: Aptos, "Roboto Flex", "Roboto",
+        --segoe: "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
+            SegoeUI, Segoe, "Segoe UI Variable Display",
+            "Segoe UI Variable Small", "WeblySleek UI";
+        --not-segoe: "Roboto Flex", "Roboto", Aptos, "-apple-system";
+        --roboto-then-segoe-small: var(--not-segoe), "Segoe UI Variable Small",
             var(--segoe);
     }
 
@@ -604,12 +610,31 @@
         text-transform: none !important;
         font-size: 13px !important;
     }
-	
-	#c0 {
-		border-radius: 6px !important;
-	}
+
+    #c0 {
+        border-radius: 6px !important;
+    }
 
     /* Font styles */
+    .b_respl,
+    #bpage,
+    .ua_wpr,
+    h2 > a,
+    .l_ecrd_txt_gl > *,
+    .ux_ecmp > h3,
+    .hlig {
+        font-family: var(--not-segoe), "-apple-system", HelveticaNeue, Roboto,
+            Arial, sans-serif !important;
+    }
+
+    .hlig,
+    .b_download_text,
+    .b_scopebar > ul,
+    .hon,
+    #fltIdtCon {
+        font-family: var(--not-segoe), Arial, Helvetica, Sans-Serif !important;
+    }
+
     #detailMeta,
     .MicrosoftMap .taskBar > ul li.inputbox input,
     .b_entityTitle,
@@ -627,50 +652,17 @@
     h4:not(.wr_hli > h4),
     span > h3,
     .b_rc_gb_widget_title {
-        font-family: "Segoe UI Variable Text", var(--segoe),
-            Roboto, Arial, sans-serif !important;
+        font-family: var(--segoe), Roboto, Arial, sans-serif !important;
     }
 
     .rd_gtrtb_nav_item {
-        font-family: "Segoe UI Variable Small", var(--segoe),
-            Roboto, Arial, sans-serif !important;
+        font-family: "Segoe UI Variable Small", var(--segoe), Roboto, Arial,
+            sans-serif !important;
     }
 
-	.b_scopebar > ul li,
-	h2,
-	p.b_algoSlug,
-    cib-serp,
-    #id_n,
-    .wr_rat,
-    .rwrl,
-    .b_primtxt,
-    .b_vList,
-    a,
-    .b_widgetContainer,
-    .b_wiki_w_item,
-    .mc_vtvc_meta_row_channel,
-    .mc_vtvc_title,
-    .mc_vtvc_title > span,
-    .mc_vtvc_title > strong,
-    .b_algo > h2 > a,
-    .algoSlug_icon,
-    .tptxt,
-    div > div > div > a,
-    span,
-    div > p span,
-    #fltIdtCon,
-    #id_h,
-    #vvlb,
-    .vrhcpt,
-    .metaItem,
-    .b_respl,
-    .cbtn {
-        font-family: var(--roboto-then-segoe-text), -apple-system, Aptos, Roboto,
-            SegoeUI, "Segoe UI", "Helvetica Neue", Helvetica, "Microsoft YaHei",
-            "Meiryo UI", Meiryo, Arial Unicode MS, sans-serif !important;
-    }
-
-	h2:not(.lc_content > h2):not(.recommendationsTableTitle > h2):not(h2.mmtitle):not(.b_algoheader > * > h2),
+    h2:not(.lc_content > h2):not(.recommendationsTableTitle > h2):not(
+            h2.mmtitle
+        ):not(.b_algoheader > * > h2):not(h2.ua_e),
     .b_mgridTitleCont,
     .b_mgridTitle > a,
     .v-ans-title,
@@ -691,14 +683,16 @@
     h2 > span,
     p > span > a,
     container-title {
-        font-family: var(--segoe-display), Helvetica, Arial, sans-serif !important;
+        font-family: "Segoe UI Variable Display", var(--segoe), var(--not-segoe),
+            Helvetica, Arial, sans-serif !important;
     }
 
-	.b_vPanel,
-	cite {
-		font-family: var(--roboto-then-segoe-small), "-apple-system",HelveticaNeue,Roboto,Arial,sans-serif !important;
-	}
-	
+    .b_vPanel:not(#ua_gcn > .b_vPanel),
+    cite {
+        font-family: var(--roboto-then-segoe-small), "-apple-system",
+            HelveticaNeue, Roboto, Arial, sans-serif !important;
+    }
+
     .ux_ecmp-sel,
     .title,
     .tit,
@@ -738,10 +732,10 @@
     }
 
     /* Font weights */
-	.carousel-title > h2 > *,
-	.b_ilhTitle > h2,
-	.rrrter_teTitle > h2,
-	.hasImg > h2,
+    .carousel-title > h2 > *,
+    .b_ilhTitle > h2,
+    .rrrter_teTitle > h2,
+    .hasImg > h2,
     .rs_chatText > h2,
     .rrr_teTitle > h2,
     .scs_cpr > h2,
@@ -773,9 +767,9 @@
         font-weight: 600 !important;
     }
 
-	.code_blu,
-	.code_red,
-	.code_grn,
+    .code_blu,
+    .code_red,
+    .code_grn,
     .cCodeBg,
     .rd_code_grn,
     .rd_cCodeBg,
@@ -836,7 +830,9 @@
     button,
     h2:not(.title-HAL6j-):not(.heading-style-h2),
     h3,
-    span:not(.codeLine__3797b > span > span):not(.codeLine__3797b > span):not(.codeLine__3797b > span > span > span),
+    span:not(.codeLine__3797b > span > span):not(.codeLine__3797b > span):not(
+            .codeLine__3797b > span > span > span
+        ),
     input,
     .message-wB3GWa,
     .text-md-semibold-2VMhBr {
@@ -845,7 +841,7 @@
             sans-serif !important;
     }
 
-	.codeLine__3797b,
+    .codeLine__3797b,
     .hljs,
     .codeLine-2C-9aH,
     .inlineCode-ERyvy_,
@@ -960,10 +956,11 @@
 @-moz-document domain("duckduckgo.com") {
     /* DuckDuckGo */
     code,
-    .wZ4JdaHxSAhGy1HoNVja > span > span, .ddgpt > pre {
+    .wZ4JdaHxSAhGy1HoNVja > span > span,
+    .ddgpt > pre {
         font-family: var(--mono-combo), Consolas, Menlo, Monaco, monospace !important;
     }
-	
+
     .prettyprint > code {
         font-size: 16px !important;
     }
