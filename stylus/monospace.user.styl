@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.1.2
+@version        2.1.3
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -619,7 +619,6 @@
     .b_respl,
     #bpage,
     .ua_wpr,
-    h2 > a,
     .l_ecrd_txt_gl > *,
     .ux_ecmp > h3,
     .hlig {
@@ -627,6 +626,7 @@
             Arial, sans-serif !important;
     }
 
+    #detailMeta,
     .hlig,
     .b_download_text,
     .b_scopebar > ul,
@@ -635,7 +635,14 @@
         font-family: var(--not-segoe), Arial, Helvetica, Sans-Serif !important;
     }
 
-    #detailMeta,
+    li > h2 > a {
+        font-family: var(--not-segoe), "Segoe UI", Arial, Helvetica, Sans-Serif !important;
+    }
+
+    .paa_tx {
+        font-family: var(--not-segoe), "Roboto" !important;
+    }
+
     .MicrosoftMap .taskBar > ul li.inputbox input,
     .b_entityTitle,
     .b_searchboxForm,
