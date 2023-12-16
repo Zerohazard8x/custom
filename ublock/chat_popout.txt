@@ -12,6 +12,7 @@ twitch.tv##.dUREKt.InjectLayout-sc-1i43xsx-0
 twitch.tv##.front-page-carousel.iqIerE.Layout-sc-1xcs6mc-0
 twitch.tv##.hbsjFp.Layout-sc-1xcs6mc-0 > .cEaLXq.Layout-sc-1xcs6mc-0
 twitch.tv##.prime-offers.bZVrjx.Layout-sc-1xcs6mc-0
+twitch.tv##.smarter-sort-callout.eOZOED.Layout-sc-1xcs6mc-0
 twitch.tv##.top-nav__prime.bFqPcI.Layout-sc-1xcs6mc-0
 twitch.tv##.vod-message__header.cRArZq.Layout-sc-1xcs6mc-0
 twitch.tv##.vod-message__header.ejxjYm.Layout-sc-1xcs6mc-0

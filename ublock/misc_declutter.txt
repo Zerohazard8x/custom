@@ -156,6 +156,7 @@ facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+8):nth-child(
 facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-type(3)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+4):nth-child(-n+6)
 facebook.com##.x1iyjqo2 > ul
+facebook.com##.x1ja2u2z.x1n2onr6.x9f619 > div:nth-of-type(4) > div
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-child(n+2):nth-child(-n+3)
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
 facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
@@ -267,6 +268,7 @@ myanimelist.net##.pb24 > .border_top
 myanimelist.net##article.left.widget-container:nth-child(n+1):nth-child(-5n+6)
 myanimelist.net##article.left.widget-container:nth-child(n+3):nth-child(-n+4)
 myanimelist.net##article.left.widget-container:nth-of-type(8)
+myanimelist.net##mal-tooltip
 myanimelist.net##td > .anime-slide-block
 myanimelist.net##tr:nth-of-type(1) > td > .border_top
 myanimelist.net##tr:nth-of-type(1) > td > div:nth-of-type(4)
@@ -317,6 +319,7 @@ reddit.com##._1GieMuLljOrqnVpRAwz7VP
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
 reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
 reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
+reddit.com##._2jJNpBqXMbbyOiGCElTYxZ
 reddit.com##._2t7TYn6HwRZQwKXG47kpQR._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
 reddit.com##._3jiriKeNer8y0-1r6oWIFM:style(min-width: 40px !important)
 reddit.com##.flex-row.flex.dark\:bg-coolgray-850.bg-global-white.items-center.justify-between.w-full.fixed.bottom-0.px-md.m\:px-lg.pb-\[env\(safe-area-inset-bottom\)\].h-3xl.box-border.border-neutral-border-weak.border-solid.border-r-0.border-l-0.border-b-0.border-t-sm
@@ -327,6 +330,8 @@ reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
 reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm
 reddit.com##.listingsignupbar.infobar
 reddit.com##.masthead
+reddit.com##.u6HtAZu8_LKL721-EnKuR._2J_zB4R1FH2EjGMkQjedwc
+reddit.com##.xs\:mx-0.mb-\[16px\].p-\[12px\].bg-tone-5.max-w-full.rounded-\[4px\].cursor-pointer.items-center.justify-start.relative.flex
 reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:h-\[calc\(100vh-var\(--shreddit-header-height\)-1px\)\].xs\:top-\[56px\].xs\:sticky.xs\:w-full.styled-scrollbars.xl\:col-span-4.l\:col-span-4.m\:col-span-3.s\:col-span-4.xs\:col-span-4.s\:block.hidden.right-sidebar > .mt-md
 reddit.com##div > div > a._3dZnYgFFpifT-M_Vs2FAq6:first-child
 reddit.com##div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
@@ -337,8 +342,6 @@ reddit.com##div.text-14.text-neutral-content-weak
 reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
-reddit.com##._2jJNpBqXMbbyOiGCElTYxZ
-reddit.com##.xs\:mx-0.mb-\[16px\].p-\[12px\].bg-tone-5.max-w-full.rounded-\[4px\].cursor-pointer.items-center.justify-start.relative.flex
 
 search.yahoo.com###ft
 search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
