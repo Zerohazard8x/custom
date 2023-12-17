@@ -11,12 +11,11 @@
 @-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bard.google.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com") {
     :root {
         /* Define variables */
-        --not-monospace: apple-system, BlinkMacSystemFont, "SF Pro",
-            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Avenir Next",
-            "Avenir", "IBM Plex Sans", "IBM Plex Sans JP", "IBM Plex Sans KR",
-            "Helvetica Neue", "Helvetica", "Noto Sans", "Noto Sans JP",
-            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Droid Sans",
-            ".SF UI Display", "SF Pro Display", "SF Compact", "SF Hello";
+        --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro",
+            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Avenir Next", "Avenir", "IBM Plex Sans", "Helvetica Neue", "Helvetica",
+            "Noto Sans", "Droid Sans", ".SF UI Display", "SF Pro Display", "SF Compact",
+            "SF Hello", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+            "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
         --serif: Fraunces, "Source Serif 4", "Source Serif Pro", "Serif UI",
             "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
             "Libre Baskerville", Georgia, "EB Garamond", "Lora",
@@ -643,6 +642,10 @@
     .paa_tx {
         font-family: var(--not-segoe), "Roboto" !important;
     }
+	
+	h2, .mmtitle > a, .imgText, .b_topTitle > a {
+		font-family: var(--not-segoe), 'Segoe UI',Arial,Helvetica,Sans-Serif !important;
+	}
 
     .MicrosoftMap .taskBar > ul li.inputbox input,
     .b_entityTitle,
@@ -677,7 +680,6 @@
     .b_mgridTitle > a,
     .v-ans-title,
     #tob_rail_title,
-    .mmtitle > a,
     .l_ecrd_imcolheader_ttl,
     .rs_chatText,
     .df_hd > .b_traits,
@@ -726,6 +728,7 @@
         font-family: var(--roboto-then-segoe-small), Arial, sans-serif !important;
     }
 
+	.vsb_tr_t,
     .asSectionHeading,
     .sa_tm_subText {
         font-family: var(--roboto-then-segoe-small), Arial, Helvetica,
@@ -755,7 +758,6 @@
     .v-ans-title,
     .b_mgridTitle > a,
     #tob_rail_title,
-    .mmtitle > a,
     .rs_chatText,
     .df_hd > .b_traits,
     #rd_gtrtb_ttl,
