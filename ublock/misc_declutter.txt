@@ -140,9 +140,11 @@ dochub.com##.page-section--partners.page-section
 dochub.com##.page-section--security.page-section
 dochub.com##.page-section--workflow.page-section
 
+drive.google.com##.a-da-ji.a-U-ye
 drive.google.com##.d7xVPd > div > .rYfpJe
 drive.google.com##.g-Yd-Ya.g-Yd-Na.a-Ff-B.a-la-B.g-Yd
 
+duckduckgo.com###google-s-ad
 duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.legacy-homepage-variants_scrollCta__hNjqv
 duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.belowTheFold_featuredSectionHidden__E4pfe.legacy-homepage-variants_belowTheFold__b5i_x
 duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv.container_root__Lmrbx
@@ -156,7 +158,7 @@ facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+8):nth-child(
 facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-type(3)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+4):nth-child(-n+6)
 facebook.com##.x1iyjqo2 > ul
-facebook.com##.x1ja2u2z.x1n2onr6.x9f619 > div:nth-of-type(4) > div
+facebook.com##.x1ja2u2z.x1n2onr6.x9f619 > div:nth-child(n+4):nth-child(-n+5) > div
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-child(n+2):nth-child(-n+3)
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
 facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
