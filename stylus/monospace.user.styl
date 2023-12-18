@@ -12,10 +12,12 @@
     :root {
         /* Define variables */
         --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro",
-            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Avenir Next", "Avenir", "IBM Plex Sans", "Helvetica Neue", "Helvetica",
-            "Noto Sans", "Droid Sans", ".SF UI Display", "SF Pro Display", "SF Compact",
-            "SF Hello", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "IBM Plex Sans JP", "IBM Plex Sans KR";
+            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Avenir Next",
+            "Avenir", "IBM Plex Sans", "Helvetica Neue", "Helvetica",
+            "Noto Sans", "Droid Sans", ".SF UI Display", "SF Pro Display",
+            "SF Compact", "SF Hello", "Noto Sans JP", "Noto Sans TC",
+            "Noto Sans SC", "Noto Sans KR", "IBM Plex Sans JP",
+            "IBM Plex Sans KR";
         --serif: Fraunces, "Source Serif 4", "Source Serif Pro", "Serif UI",
             "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
             "Libre Baskerville", Georgia, "EB Garamond", "Lora",
@@ -108,10 +110,6 @@
     .mwe-popups-container {
         font-family: var(--not-monospace), sans-serif !important;
     }
-	
-	#mw-mf-page-center {
-		font-family: var(--not-monospace), -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Inter','Helvetica','Arial',sans-serif !important;
-	}
 
     .mw-page-title-main,
     .mw-headline {
@@ -620,8 +618,8 @@
     }
 
     /* Font styles */
-	.vrhcpt > .vrhtt,
-	.vrhcpt,
+    .vrhcpt > .vrhtt,
+    .vrhcpt,
     .b_respl,
     #bpage,
     .ua_wpr,
@@ -648,10 +646,13 @@
     .paa_tx {
         font-family: var(--not-segoe), "Roboto" !important;
     }
-	
-	h2, .mmtitle > a, .imgText, .b_topTitle > a {
-		font-family: var(--not-segoe), 'Segoe UI',Arial,Helvetica,Sans-Serif !important;
-	}
+
+    h2,
+    .mmtitle > a,
+    .imgText,
+    .b_topTitle > a {
+        font-family: var(--not-segoe), "Segoe UI", Arial, Helvetica, Sans-Serif !important;
+    }
 
     .MicrosoftMap .taskBar > ul li.inputbox input,
     .b_entityTitle,
@@ -681,7 +682,7 @@
             h2.mmtitle
         ):not(.b_algoheader > * > h2):not(h2.ua_e):not(.b_title > h2):not(
             li > h2
-        ):not(.mktplc_title > h2),
+        ),
     .b_mgridTitleCont,
     .b_mgridTitle > a,
     .v-ans-title,
@@ -734,7 +735,7 @@
         font-family: var(--roboto-then-segoe-small), Arial, sans-serif !important;
     }
 
-	.vsb_tr_t,
+    .vsb_tr_t,
     .asSectionHeading,
     .sa_tm_subText {
         font-family: var(--roboto-then-segoe-small), Arial, Helvetica,
@@ -780,7 +781,7 @@
     h2
         > span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol):not(
             .l_ecrd_txt_small
-        ),
+        ):not(.l_ecrd_txt_herom),
     container-title {
         font-weight: 600 !important;
     }
