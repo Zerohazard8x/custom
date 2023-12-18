@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.1.5
+@version        2.1.6
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -109,6 +109,11 @@
     cite,
     .mwe-popups-container {
         font-family: var(--not-monospace), sans-serif !important;
+    }
+
+    #mw-mf-page-center {
+        font-family: var(--not-monospace), -apple-system, "BlinkMacSystemFont",
+            "Segoe UI", "Roboto", "Inter", "Helvetica", "Arial", sans-serif !important;
     }
 
     .mw-page-title-main,
@@ -618,8 +623,6 @@
     }
 
     /* Font styles */
-    .vrhcpt > .vrhtt,
-    .vrhcpt,
     .b_respl,
     #bpage,
     .ua_wpr,
@@ -682,7 +685,7 @@
             h2.mmtitle
         ):not(.b_algoheader > * > h2):not(h2.ua_e):not(.b_title > h2):not(
             li > h2
-        ),
+        ):not(.mktplc_title > h2),
     .b_mgridTitleCont,
     .b_mgridTitle > a,
     .v-ans-title,
@@ -781,7 +784,7 @@
     h2
         > span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol):not(
             .l_ecrd_txt_small
-        ):not(.l_ecrd_txt_herom),
+        ),
     container-title {
         font-weight: 600 !important;
     }
