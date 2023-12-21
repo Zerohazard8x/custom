@@ -682,7 +682,9 @@
             h2.mmtitle
         ):not(.b_algoheader > * > h2):not(h2.ua_e):not(.b_title > h2):not(
             li > h2
-        ):not(.nws_sh > h2):not(.b_wpt_bl > h2),
+        ):not(.nws_sh > h2):not(.b_wpt_bl > h2):not(.b_subModule > h2):not(
+            .b_ami > h2
+        ),
     .b_mgridTitleCont,
     .b_mgridTitle > a,
     .v-ans-title,
@@ -752,6 +754,7 @@
     }
 
     /* Font weights */
+    .b_entityTitle > a,
     .carousel-title > h2 > *,
     .b_ilhTitle > h2,
     .rrrter_teTitle > h2,
