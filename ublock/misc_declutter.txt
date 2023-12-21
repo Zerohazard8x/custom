@@ -159,6 +159,7 @@ facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+4):nth-child(-n+6)
 facebook.com##.x1iyjqo2 > ul
 facebook.com##.x1ja2u2z.x1n2onr6.x9f619 > div:nth-child(n+4):nth-child(-n+5) > div
+facebook.com##.x1ja2u2z.x1n2onr6.x9f619 > div:nth-of-type(5) > div
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-child(n+2):nth-child(-n+3)
 facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
 facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
@@ -207,8 +208,12 @@ google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
 google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
 google.com##.h-u-mt-l.gacct-section.gacct-epilog
 
+hltv.org##.footer
+hltv.org##.gtSmartphone-only.streams-section
 hltv.org##.newsgrouping-header
 hltv.org##.right2Col > aside:nth-of-type(2)
+hltv.org##.yabo-firstcol-box
+hltv.org##aside:nth-of-type(1) > .presented-by-row
 
 imgur.com##.Button.EmeraldButton
 imgur.com##.Sticky.Top
@@ -356,6 +361,10 @@ shopee.*##._2ypCMv
 shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
 
 speedrun.com##div.lg\:block.hidden:nth-of-type(3)
+
+speedtest.net##.celebration-modal.modal-in-place.modal
+speedtest.net##.lower-content-view
+speedtest.net##.lowerboard-content
 
 stackoverflow.com,superuser.com,stackexchange.com###feed-link
 stackoverflow.com,superuser.com,stackexchange.com###hot-network-questions

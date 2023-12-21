@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        2.1.12
+@version        2.1.13
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -29,7 +29,10 @@
 
 @-moz-document domain("google.com") {
     /* Google */
-	c-wiz > div:not(c-wiz > div.h8plyb):not(c-wiz > div.ELfUzc):not(c-wiz > div.b2YVqc),
+    c-wiz
+        > div:not(c-wiz > div.h8plyb):not(c-wiz > div.ELfUzc):not(
+            c-wiz > div.b2YVqc
+        ),
     #Rvx4kc,
     #_2mOxZN2bHsP8hwP9q7jwBQ_1,
     #_2mOxZN2bHsP8hwP9q7jwBQ_55,
@@ -168,7 +171,7 @@
 
 @-moz-document domain("cagematch.net") {
     /* Cagematch */
-	.TemplateBody {
+    .TemplateBody {
         filter: sepia(60%);
     }
 }
@@ -303,7 +306,7 @@
 
 @-moz-document domain("instructure.com") {
     /* Canvas */
-	.css-kryo2y-view-listItem,
+    .css-kryo2y-view-listItem,
     #calendar_color_style_overrides,
     #canvasplus-convo-peeker,
     #canvasplus-convo-peeker-back,
@@ -488,43 +491,58 @@
 
 @-moz-document domain("bing.com") {
     /* Bing */
-	.b_topTitle > a,
-	.mktplc_title > h2 > a,
-	.multiLine_title,
-	.b_wpt_chat,
-	.vsb_tr_t,
-	.b_mgridTitle > a,
-	.b_seeMoreCont > a,
-	.rd_single,
-	.mmtitle,
-	.coll_vc > h2,
-	.prmb_title,
-	.lisn_sm > a,
-	.cCodeBg,
-	#tab_6 > a,
-	.slide:not(.b_slidebar > .slide),
-	.rms_img:not(.slide > * > * > * > .rms_img):not(.rd_tb_cnt_mdata > * > .rms_img):not(.cico > .rms_img):not(.cico > * > .rms_img),
-	.b_algo_group > h2 > a,
-	.b_algo_group > div > h2 > a,
-	cite:not(.b_attribution > cite),
-	.rrr_teSeeMore,
+    .b_topTitle > a,
+    .l_ecrd_ttl,
+    .l_ecrd_wptfcts_row,
+    .l_ecrd_simgset_item,
+    .sgt,
+    .b_wpt_bl > h2 > a,
+    .nws_sh > h2 > a,
+    .rrr_tedtinstlink,
+    .b_wpt_chat,
+    .vsb_tr_t,
+    .b_mgridTitle > a,
+    .b_seeMoreCont > a,
+    .rd_single,
+    .mmtitle,
+    .coll_vc > h2,
+    .prmb_title,
+    .lisn_sm > a,
+    .cCodeBg,
+    #tab_6 > a,
+    .slide:not(.b_slidebar > .slide),
+    .rms_img:not(.slide > * > * > * > .rms_img):not(
+            .rd_tb_cnt_mdata > * > .rms_img
+        ):not(.cico > .rms_img):not(.cico > * > .rms_img):not(
+            .itm_img > .rms_img
+        ),
+    .b_algo_group > h2 > a,
+    .b_algo_group > div > h2 > a,
+    cite:not(.b_attribution > cite),
+    .rrr_teSeeMore,
     .rrrter_teTitleCnt,
-	#sb_go_par,
-	#sbi_b,
-	.b_logo,
-	.b_mopexpref,
-	.b_traits,
-	.cico:not(.l_ecrd_imgpair_img > .cico):not(.slide > * > .cico):not(.simg > * > .cico),
-	.deeplink_title,
-	.exploreAns,
-	.fd-itm,
-	.imgContainer,
-	.lite-entcard-ans,
-	.mic_icon,
-	.mimg,
-	.sa_as,
-	.siteicon > .rms_img,
-	gb-button,
+    #sb_go_par,
+    #sbi_b,
+    .b_logo,
+    .b_mopexpref,
+    .b_traits,
+    .cico:not(.l_ecrd_imgpair_img > .cico):not(.slide > * > .cico):not(
+            .simg > * > .cico
+        ):not(.l_ecrd_simgset_item > * > .cico):not(
+            .l_ecrd_bt_rings_img > .cico
+        ):not(.dataoffset > .cico):not(.l_ecrd_c2_img > .cico):not(
+            .as_pasf_data > * > .cico
+        ),
+    .deeplink_title,
+    .exploreAns,
+    .fd-itm,
+    .imgContainer,
+    .lite-entcard-ans,
+    .mic_icon,
+    .mimg,
+    .sa_as,
+    .siteicon > .rms_img,
+    gb-button,
     #fltIdtCon,
     #imagemeta,
     #rd_gtrtb_ttl,
@@ -547,7 +565,7 @@
     .b_entityTitle,
     .b_fbText,
     .b_focusTextLarge,
-    .b_focusTextMedium, 
+    .b_focusTextMedium,
     .b_imagePair,
     .b_moreLink,
     .b_rc_gb_sub_cell,
@@ -608,7 +626,7 @@
 
 @-moz-document domain("discord.com") {
     /* Discord */
-	.roleMention__02469,
+    .roleMention__02469,
     .username_d30d99,
     .roleMention-11Aaqi,
     .membersGroup-2eiWxl,
@@ -718,7 +736,8 @@
 
 @-moz-document domain("duckduckgo.com") {
     /* DuckDuckGo */
-    #web_content_wrapper, .header__search-wrap {
+    #web_content_wrapper,
+    .header__search-wrap {
         filter: sepia(60%);
     }
 }
@@ -728,9 +747,9 @@
     div.image-gallery,
     div.l-container,
     header.row.open.slide.headroom--not-top.slide--reset,
-	header.row.slide.slide--reset.headroom--top,
-	header.row.slide.headroom--top,
-	div.price-balloon,
+    header.row.slide.slide--reset.headroom--top,
+    header.row.slide.headroom--top,
+    div.price-balloon,
     #pagetual-preload {
         filter: sepia(60%);
     }
