@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.1.7
+@version        2.1.8
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -335,13 +335,13 @@
 
     .monospaced,
     code,
-    pre {
+    pre:not(.openai_content__jNwCi > * > pre) {
         font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
             Courier New, Courier, monospace !important;
     }
 
     .monospaced,
-    pre {
+    pre:not(.openai_content__jNwCi > * > pre) {
         font-size: 16px !important;
     }
 
