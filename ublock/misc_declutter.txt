@@ -118,6 +118,7 @@ discord.com##.buttonContainer-2z-326
 discord.com##.colorDefault-1e8tQv.notice-2HEN-u
 discord.com##.colorPremium__32b12.colorPremiumTier2_b5437b.notice__5fd4c
 discord.com##.containerDefaultMargin-3T8Dq_.premiumFeatureBannerBackground-Epwl-X.container-5BK5-N
+discord.com##.container_cf0d66
 discord.com##.customizationSectionBackground-1-leQn.background-yH6t2p.premiumBackground-34OIdE > .title-1HgbhV.eyebrow-2wJAoF.h5-2feg8J > .baseShapeRound-3epLEv.eyebrow-132Xza.base-3IDx3L.textBadge-1fdDPJ.newBadge-2Y53Os.premiumBadge-2VNQ3o
 discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
 discord.com##.editorAnimate-2BAiXS.editor-1m9XtV
@@ -150,6 +151,21 @@ duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.belowTheFold_
 duckduckgo.com##.flameSection_flameSection__z1x_d > .container_responsive__IDWnv.container_root__Lmrbx
 duckduckgo.com##.footer
 duckduckgo.com##.legacy-homepage_ctaSection__5siuM
+
+ecosia.org##.badge--variant-primary.badge.new-badge
+ecosia.org##.forest-section--background-primary.forest-section
+ecosia.org##.forest-section--background-quaternary.forest-section
+ecosia.org##.hero--content-left.hero--variant-tertiary.hero.above-fold-section
+ecosia.org##.search-navigation__chat-new-highlight
+ecosia.org##.section-wrapper--primary.extension-section.section-wrapper
+ecosia.org##.section-wrapper--quaternary.before-after-section.section-wrapper
+ecosia.org##.section-wrapper--quaternary.join-section.section-wrapper
+ecosia.org##.section-wrapper--quaternary.map-section.section-wrapper
+ecosia.org##.section-wrapper--quaternary.projects-section.section-wrapper
+ecosia.org##.section-wrapper--secondary.claims-values-section.section-wrapper
+ecosia.org##.section-wrapper--secondary.financial-report-section.section-wrapper
+ecosia.org##.wave-separator--visible.wave-separator--variant-primary.wave-separator
+ecosia.org##.wave-separator--visible.wave-separator--variant-tertiary.wave-separator
 
 !------!
 ! Represents elements 8 and 10 (diff. of 2 -> -2n+10)
