@@ -35,7 +35,6 @@ bard.google.com##.location-buttons-dot
 bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
 bard.google.com##.location-footer-atl-text
 bard.google.com##.pagination-wrapper
-bard.google.com##chat-app > .ng-star-inserted
 bard.google.com##ogb-menu-controls > .ng-star-inserted
 bard.google.com##xap-count-badge
 
@@ -450,6 +449,7 @@ to-do.live.com##.obf-Visible.obf-Toast
 twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
 twitter.com##.r-15zivkp.r-b88u0q.r-rjixqe.r-a023e6.r-37j5jr.r-qvutc0.r-bcqeeo.css-1rynq56
 twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
+twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-1igl3o0.css-175oi2r > .css-175oi2r > .r-kemksi.css-175oi2r
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
 
 vlr.gg##.d8fyh
