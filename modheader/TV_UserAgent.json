@@ -10,15 +10,17 @@
             {
                 "enabled": true,
                 "name": "Forwarded",
-                "value": "for=94.140.14.14;proto=https"
+                "value": "for=94.140.14.14, for=\"[2a10:50c0::ad1:ff]\""
             },
             {
                 "enabled": true,
                 "name": "X-Forwarded-For",
-                "value": "94.140.14.14"
+                "value": "94.140.14.14, 2a10:50c0::ad1:ff"
             }
         ],
         "urlFilters": [{ "enabled": true, "urlRegex": ".*youtube.com\\/tv.*" }],
-        "shortTitle": "1"
+        "shortTitle": "1",
+        "version": 2,
+        "alwaysOn": true
     }
 ]
