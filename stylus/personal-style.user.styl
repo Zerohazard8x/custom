@@ -21,7 +21,6 @@
 }
 
 @-moz-document domain("youtube.com") {
-    /* youtube - subtitles, font changes */
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: "Fira Sans", "FF Meta", "Road UA", "Roadgeek 2014",
@@ -71,7 +70,6 @@
 }
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
-    /* facebook, messenger, instagram */
     :root {
         --facebook: "Optimistic Text", "Optimistic Display", "Facebook Sans",
             "Optimistic Text Normal", "Optimistic Display Bold",
@@ -159,7 +157,6 @@
 }
 
 @-moz-document domain("deepl.com") {
-    /* DeepL */
     body *:not(.fa) {
         font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
@@ -167,7 +164,6 @@
 }
 
 @-moz-document domain("quora.com") {
-    /* Quora */
     .q-box {
         font-family: var(--font-personal), -apple-system, system-ui,
             BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -176,7 +172,6 @@
 }
 
 @-moz-document domain("steampowered.com") {
-    /* Steam */
     #game_area_metascore > div,
     #queueActionsCtn,
     #review_context,
@@ -196,7 +191,6 @@
 }
 
 @-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
-    /* SoraNews24 */
     #container,
     #searchsubmit {
         font-family: var(--font-personal), arial, helvetica, clean, sans-serif !important;
@@ -209,7 +203,6 @@
 }
 
 @-moz-document domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in") {
-    /* Amazon */
     .NavigationBar-module__navHeader_myx_35WiMq43R8TeP3p0_dnLLH
         .NavigationBar-module__navOptions_myx_3-DW6_KRV7Rh8qixes2XJu,
     .NavigationBar-module__navHeader_title_style_myx_gLKlYY_oND8vgB6axwgyW {
@@ -246,7 +239,6 @@
 }
 
 @-moz-document domain("emojipedia.org") {
-    /* Emojipedia */
     :root {
         --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88",
             "__Plus_Jakarta_Sans_Fallback_c26b88";
@@ -262,14 +254,23 @@
 }
 
 @-moz-document domain("twitch.tv") {
-    /* Twitch - UI tweaks */
     .bTKXKk {
         background-color: none !important;
+    }
+
+    .chat-line__message,
+    .bQEtql {
+        font-size: 20px !important;
+    }
+
+    section[data-test-selector="chat-room-component-layout"].chat-scrollable-area__message-container,
+    .whispers .thread-message__message,
+    .video-chat__message {
+        line-height: 150% !important;
     }
 }
 
 @-moz-document domain("flightaware.com") {
-    /* FlightAware */
     input,
     #s2id_autogen1,
     #s2id_autogen2,
@@ -284,7 +285,6 @@
 }
 
 @-moz-document domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk") {
-    /* ESPN */
     .HeaderEvent__Headline,
     .ScoreCell__Score,
     .StatBlock,
@@ -309,7 +309,6 @@
 }
 
 @-moz-document domain("metacritic.com") {
-    /* Metacritic */
     #container,
     #content_section,
     #hpbanner,
@@ -324,7 +323,6 @@
 }
 
 @-moz-document domain("msn.com") {
-    /* MSN */
     .lightTheme,
     .locationItem-DS-EntryPoint1-6,
     .suggestion-DS-EntryPoint1-1,
@@ -334,22 +332,8 @@
     }
 }
 
-@-moz-document domain(twitch.tv) {
-    /* Twitch - UI tweaks */
-    .chat-line__message,
-    .bQEtql {
-        font-size: 20px !important;
-    }
-
-    section[data-test-selector="chat-room-component-layout"].chat-scrollable-area__message-container,
-    .whispers .thread-message__message,
-    .video-chat__message {
-        line-height: 150% !important;
-    }
-}
-
 @-moz-document domain("instructure.com") {
-    /* Canvas - Fix peeves with theme */
+    /* Canvas */
     /*     a {
         text-decoration: none !important;
     } */
@@ -367,14 +351,12 @@
 }
 
 @-moz-document domain("tvtropes.org") {
-    /* TV tropes */
     .sugarWiki {
         font-family: var(--font-personal), sans-serif;
     }
 }
 
 @-moz-document domain("unsplash.com") {
-    /* Unsplash */
     .EtnYM {
         font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
             San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto,
@@ -382,7 +364,6 @@
     }
 }
 @-moz-document domain("weibo.com") {
-    /* Weibo */
     .woo-box-flex {
         font-family: var(--font-personal), system-ui, -apple-system, Segoe UI,
             Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif !important;
@@ -390,7 +371,6 @@
 }
 
 @-moz-document domain("wordcounter.net") {
-    /* WordCounter */
     .container,
     #box {
         font-family: var(--font-personal), Helvetica, Arial !important;
@@ -398,7 +378,6 @@
 }
 
 @-moz-document domain("gsmarena.com") {
-    /* GSMarena */
     .autocomplete-desc,
     .pricing > span,
     .meta-item-time,
