@@ -283,6 +283,8 @@ microsoft.com##.css-205.ms-Stack
 monkeytype.com###bannerCenter
 monkeytype.com###newVersionIndicator
 
+music.apple.com##.svelte-36irpb.upsell-banner
+
 myanimelist.net##.ga-impression.bottom-bar
 myanimelist.net##.ga-impression.top_signup
 myanimelist.net##.js-scrollfix-bottom-rel.rightside > table > tbody > tr:nth-of-type(2)
@@ -337,6 +339,7 @@ poe.com##a.Button_secondary__IuV5T.Button_buttonBase__Bv9Vx
 
 reddit.com###credential_picker_container
 reddit.com###popular-posts
+reddit.com###redesign-beta-optin-btn
 reddit.com##._1GieMuLljOrqnVpRAwz7VP
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
 reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
@@ -450,6 +453,7 @@ twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175o
 twitter.com##.r-15zivkp.r-b88u0q.r-rjixqe.r-a023e6.r-37j5jr.r-qvutc0.r-bcqeeo.css-1rynq56
 twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
 twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-1igl3o0.css-175oi2r > .css-175oi2r > .r-kemksi.css-175oi2r
+twitter.com##.r-1p6iasa.r-4amgru.r-18u37iz.r-1awozwy.css-175oi2r
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
 
 vlr.gg##.d8fyh
@@ -491,10 +495,3 @@ you.com##.jlPksG.sc-69c436d2-2 > .dbxkjo.sc-42f19d8d-0
 you.com##.kEfGjV.sc-38580842-9
 you.com##.kvVbDV.sc-3022399e-0
 you.com##.ljWYYA.sc-18e0beb6-0
-
-youtube.com###about-these-results
-youtube.com##.ythd-israel-support
-youtube.com##.ytp-suggested-action-badge-with-controls.ytp-suggested-action-badge-expanded.ytp-suggested-action-badge-content-forward.ytp-suggested-action-badge-with-offline-slate.ytp-suggested-action-badge.ytp-button
-youtube.com##plasmo-csui
-youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
-youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n+3):nth-child(-n+4)

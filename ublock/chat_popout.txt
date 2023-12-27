@@ -36,5 +36,11 @@ twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
 ||static-cdn.jtvnw.net/badges/v1/bd444ec6-8f34-4bf9-91f4-af1e3428d80f/*$image
 ||static-cdn.jtvnw.net/badges/v1/e33d8b46-f63b-4e67-996d-4a7dcec0ad33/*$image
 
-youtube.com###live-chat-message-input
-youtube.com##yt-live-chat-header-renderer.style-scope.yt-live-chat-renderer:first-child
+youtube.com###Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D
+youtube.com###about-these-results
+youtube.com###ticker
+youtube.com##.ythd-israel-support
+youtube.com##.ytp-suggested-action-badge-with-controls.ytp-suggested-action-badge-expanded.ytp-suggested-action-badge-content-forward.ytp-suggested-action-badge-with-offline-slate.ytp-suggested-action-badge.ytp-button
+youtube.com##plasmo-csui
+youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
+youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n+3):nth-child(-n+4)
