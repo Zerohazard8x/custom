@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        2.2.3
+@version        2.2.2
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -748,4 +748,10 @@
     ._31N0dvxfpsO6Ur5AKx4O5d, ._2vkeRJojnV7cb9pMlPHy7d, ._2uYY-KeuYHKiwl-9aF0UiL > div, #overlayScrollContainer, .single-page {
         filter: sepia(60%);
     }
+}
+
+@-moz-document regexp(".*youtube.com\/live_chat.*") {
+	.yt-live-chat-renderer {
+		filter: sepia(60%);
+	}
 }
