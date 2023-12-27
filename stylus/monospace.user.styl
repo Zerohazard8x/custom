@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.1.8
+@version        2.2.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -12,7 +12,7 @@
     :root {
         /* Define variables */
         --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro",
-            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Avenir Next",
+            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Ubuntu", "Avenir Next",
             "Avenir", "IBM Plex Sans", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "Helvetica Neue", "Helvetica", "Noto Sans", "Noto Sans JP",
             "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Droid Sans",
@@ -43,6 +43,7 @@
 }
 
 @-moz-document domain("github.com") {
+    /* Github */
     .d-flex,
     .Link--primary,
     .d-inline-block,
@@ -84,14 +85,15 @@
             Menlo, Consolas, Liberation Mono, monospace !important;
     }
 
-    .blob-code-inner,
+    /*     .blob-code-inner,
     .blob-num,
     pre {
         font-size: 16px !important;
-    }
+    } */
 }
 
 @-moz-document domain("wikipedia.org") {
+    /* Wikipedia + serif */
     #searchform,
     #p-lang-btn-label,
     #vector-page-tools-dropdown-label,
@@ -118,11 +120,12 @@
     li > code,
     pre > span {
         font-family: var(--mono-combo), monospace !important;
-        font-size: 16px !important;
+        /*         font-size: 16px !important; */
     }
 }
 
 @-moz-document domain("reddit.com") {
+    /* Reddit */
     shreddit-app {
         font-family: Noto Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
@@ -233,15 +236,16 @@
 }
 
 @-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com") {
+    /* StackOverflow */
     code {
         font-family: var(--mono-combo), ui-monospace, "Cascadia Mono",
             "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas,
             monospace !important;
     }
 
-    .s-code-block > code {
+    /*     .s-code-block > code {
         font-size: 16px !important;
-    }
+    } */
 
     .dno,
     .fw-bold,
@@ -255,6 +259,7 @@
 }
 
 @-moz-document domain("poe.com") {
+    /* Poe */
     .BotInfoCardHeader_operatedBy__G5WAP,
     .BotInfoCardHeader_followerCount__nrf6H,
     .BotMetadataTag_BotMetadataTag__Jkq1r,
@@ -285,31 +290,34 @@
         font-family: var(--mono-combo), Consolas, monaco, monospace !important;
     }
 
-    code > span,
+    /*     code > span,
     code:not(.Markdown_markdownContainer__Tz3HQ > p > code) {
         font-size: 16px !important;
-    }
+    } */
 }
 
 @-moz-document domain("chat.openai.com") {
+    /* ChatGPT */
     code {
         font-family: var(--mono-combo), Söhne Mono, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
-        font-size: 16px !important;
+        /*         font-size: 16px !important; */
     }
 }
 
 @-moz-document domain("w3schools.com") {
+    /* W3Schools */
     .w3-code,
     .language-java,
     .w3-codespan {
         font-family: var(--mono-combo), Consolas, "Source Code Pro", Menlo,
             Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
-        font-size: 16px !important;
+        /*         font-size: 16px !important; */
     }
 }
 
 @-moz-document domain("learn.microsoft.com") {
+    /* MS Learn */
     pre > code,
     p > code,
     li > code {
@@ -317,12 +325,14 @@
             Liberation Mono, Menlo, Courier, monospace !important;
     }
 
-    pre > code {
+    /*     pre > code {
         font-size: 16px !important;
-    }
+    } */
 }
 
 @-moz-document domain("wikiwand.com") {
+    /* Wikiwand + serif */
+
     .monospaced,
     code,
     pre:not(.openai_content__jNwCi > * > pre) {
@@ -330,10 +340,10 @@
             Courier New, Courier, monospace !important;
     }
 
-    .monospaced,
+    /*     .monospaced,
     pre:not(.openai_content__jNwCi > * > pre) {
         font-size: 16px !important;
-    }
+    } */
 
     .poem,
     .item_anchor__rLB49,
@@ -344,20 +354,22 @@
 }
 
 @-moz-document domain("developer.mozilla.org") {
+    /* Mozilla Dev */
     code,
     .section-content > pre {
         font-family: var(--mono-combo), Menlo, Consolas, Monaco, Liberation Mono,
             Lucida Console, monospace !important;
     }
 
-    pre > code,
+    /*     pre > code,
     p > code:not(dd > p > code):not(.section-content > p > code),
     strong > code {
         font-size: 16px !important;
-    }
+    } */
 }
 
 @-moz-document domain("symbolab.com") {
+    /* Symbolab + LaTeX input interface */
     .latex-command-input {
         font-family: var(--mono-combo), "Courier New", monospace !important;
     }
@@ -402,6 +414,7 @@
 }
 
 @-moz-document domain("google.com") {
+    /* Google */
     :root {
         /* Define variables */
         --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft",
@@ -574,6 +587,7 @@
 }
 
 @-moz-document domain("bing.com") {
+    /* Bing + "fluent" changes */
     :root {
         --segoe: "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe, "Segoe UI Variable Display",
@@ -784,20 +798,22 @@
     .rd_code_blu,
     .rd_code_red {
         font-family: var(--mono-combo), Consolas, Courier, monospace !important;
-        font-size: 16px !important;
+        /*         font-size: 16px !important; */
     }
 }
 
 @-moz-document domain("geeksforgeeks.org") {
+    /* GeeksForGeeks */
     div .text > pre,
     .container > div code,
     .outputDiv > pre {
         font-family: var(--mono-combo), Consolas, monospace !important;
-        font-size: 16px !important;
+        /*         font-size: 16px !important; */
     }
 }
 
 @-moz-document domain("xdaforums.com") {
+    /* XDADevelopers */
     .tooltip-content,
     .node-description,
     .uix_welcomeSection__title,
@@ -824,6 +840,7 @@
 }
 
 @-moz-document domain("discord.com") {
+    /* Discord + add fallbacks */
     .card-3ie2dy > div div,
     .constrainedRow-3y91Xf,
     .container-1eFtFS,
@@ -860,6 +877,7 @@
 }
 
 @-moz-document domain("knowyourmeme.com") {
+    /* KnowYourMeme */
     .enlargeGalleryProgress,
     #content,
     #maru,
@@ -896,6 +914,7 @@
 }
 
 @-moz-document domain("codeberg.org") {
+    /* Codeberg */
     .height,
     .ui,
     .file-view,
@@ -915,11 +934,12 @@
             Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace,
             "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
             "Twemoji Mozilla" !important;
-        font-size: 16px !important;
+        /*         font-size: 16px !important; */
     }
 }
 
 @-moz-document domain("docs.oracle.com") {
+    /* Oracle docs */
     pre,
     dd,
     code {
@@ -929,6 +949,7 @@
 }
 
 @-moz-document domain("yahoo.com") {
+    /* Yahoo */
     #doc {
         font-family: YahooSans VF, Roboto, helvetica neue, helvetica, arial,
             sans-serif;
@@ -936,16 +957,19 @@
 
     .code-snippet {
         font-family: var(--mono-combo), "SourceCodePro" !important;
-        font-size: 16px !important;
     }
 
     .snippet-row {
         font-family: var(--mono-combo), CourierNewPSMT !important;
-        font-size: 16px !important;
     }
+
+    /* 	.code-snippet, .snippet-row {
+		font-size: 16px !important;
+	} */
 }
 
 @-moz-document domain("baeldung.com") {
+    /* Baeldung */
     code.hljs {
         font-family: var(--mono-combo), "Source Code Pro", "Consolas",
             "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
@@ -954,29 +978,32 @@
 }
 
 @-moz-document domain("duckduckgo.com") {
+    /* DuckDuckGo */
     code,
     .wZ4JdaHxSAhGy1HoNVja > span > span,
     .ddgpt > pre {
         font-family: var(--mono-combo), Consolas, Menlo, Monaco, monospace !important;
     }
 
-    .prettyprint > code {
+    /*     .prettyprint > code {
         font-size: 16px !important;
-    }
+    } */
 }
 
 @-moz-document domain("chat.lmsys.org") {
+    /* lmsys chat */
     code {
         font-family: var(--mono-combo), Consolas, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
     }
 
-    .svelte-15hifvz > pre > code {
+    /*     .svelte-15hifvz > pre > code {
         font-size: 16px !important;
-    }
+    } */
 }
 
 @-moz-document domain("cagematch.net") {
+    /* Cagematch */
     .FormSelect,
     .FormInput,
     .TemplateBody,
@@ -993,11 +1020,14 @@
 }
 
 @-moz-document domain("17track.net") {
-	.canvas, .page-content, .nav > li {
-		font-family: var(--not-monospace), sans-serif !important;
-	}
-	
-	.CodeMirror-sizer {
-		font-family: var(--mono-combo), Courier New,Andale Mono,Monaco !important;
-	}
+    /* Cagematch */
+    .canvas,
+    .page-content,
+    .nav > li {
+        font-family: var(--not-monospace), sans-serif !important;
+    }
+
+    .CodeMirror-sizer {
+        font-family: var(--mono-combo), Courier New, Andale Mono, Monaco !important;
+    }
 }
