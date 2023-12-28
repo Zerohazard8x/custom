@@ -342,10 +342,12 @@ reddit.com###popular-posts
 reddit.com###redesign-beta-optin-btn
 reddit.com##._1GieMuLljOrqnVpRAwz7VP
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
+reddit.com##._1zyV-XmoYeSNGWjfZiXbPc.efdkOLo3oigH_95whTYCp
 reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
-reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
+reddit.com##._2Vkdik1Q8k0lBEhhA_lRKE._34CfAAowTqdbNDYXz5tBTW
 reddit.com##._2jJNpBqXMbbyOiGCElTYxZ
 reddit.com##._2t7TYn6HwRZQwKXG47kpQR._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
+reddit.com##._3WmD5z1Jh2YlJtFiczfOPQ._2me05I1oHEys1gUyyDWswt._34CfAAowTqdbNDYXz5tBTW
 reddit.com##._3jiriKeNer8y0-1r6oWIFM:style(min-width: 40px !important)
 reddit.com##.flex-row.flex.dark\:bg-coolgray-850.bg-global-white.items-center.justify-between.w-full.fixed.bottom-0.px-md.m\:px-lg.pb-\[env\(safe-area-inset-bottom\)\].h-3xl.box-border.border-neutral-border-weak.border-solid.border-r-0.border-l-0.border-b-0.border-t-sm
 reddit.com##.h-jI8r2f9ozTNqu_2TBeY,._3jiriKeNer8y0-1r6oWIFM:style(width: 1px !important)
@@ -355,6 +357,7 @@ reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
 reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm
 reddit.com##.listingsignupbar.infobar
 reddit.com##.masthead
+reddit.com##.prompt
 reddit.com##.u6HtAZu8_LKL721-EnKuR._2J_zB4R1FH2EjGMkQjedwc
 reddit.com##.xs\:mx-0.mb-\[16px\].p-\[12px\].bg-tone-5.max-w-full.rounded-\[4px\].cursor-pointer.items-center.justify-start.relative.flex
 reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:h-\[calc\(100vh-var\(--shreddit-header-height\)-1px\)\].xs\:top-\[56px\].xs\:sticky.xs\:w-full.styled-scrollbars.xl\:col-span-4.l\:col-span-4.m\:col-span-3.s\:col-span-4.xs\:col-span-4.s\:block.hidden.right-sidebar > .mt-md
@@ -453,6 +456,7 @@ twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175o
 twitter.com##.r-15zivkp.r-b88u0q.r-rjixqe.r-a023e6.r-37j5jr.r-qvutc0.r-bcqeeo.css-1rynq56
 twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
 twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-1igl3o0.css-175oi2r > .css-175oi2r > .r-kemksi.css-175oi2r
+twitter.com##.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-xyw6el.r-18u37iz.r-6koalj.r-sdzlij.r-1awozwy.css-175oi2r > div.css-175oi2r:nth-of-type(1)
 twitter.com##.r-1p6iasa.r-4amgru.r-18u37iz.r-1awozwy.css-175oi2r
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
 
