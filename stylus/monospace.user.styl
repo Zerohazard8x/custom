@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.2.1
+@version        2.2.2
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -12,11 +12,12 @@
     :root {
         /* Define variables */
         --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro",
-            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Ubuntu", "Avenir Next",
-            "Avenir", "IBM Plex Sans", "IBM Plex Sans JP", "IBM Plex Sans KR",
-            "Helvetica Neue", "Helvetica", "Noto Sans", "Noto Sans JP",
-            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Droid Sans",
-            ".SF UI Display", "SF Pro Display", "SF Compact", "SF Hello";
+            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Ubuntu", "Lato",
+            "Avenir Next", "Avenir", "IBM Plex Sans", "IBM Plex Sans JP",
+            "IBM Plex Sans KR", "Helvetica Neue", "Helvetica", "Noto Sans",
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Droid Sans", ".SF UI Display", "SF Pro Display", "SF Compact",
+            "SF Hello";
         --serif: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
             "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
             "Libre Baskerville", Georgia, "EB Garamond", "Lora",
@@ -132,6 +133,8 @@
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
+    .gap-xs,
+    .label-container,
     .text-neutral-content-strong,
     .text-12:not(.text-neutral-content-weak) {
         font-family: "IBM Plex Sans", IBMPlexSans, -apple-system,
@@ -170,17 +173,19 @@
     .date > span {
         font-family: Noto Sans, arial, helvetica, sans-serif !important;
     }
-	
-	.md > * > * > * > * > tbody > tr > td {
-        font-family: Noto Sans, Lato,arial,sans-serif !important;
+
+    .md > * > * > * > * > tbody > tr > td {
+        font-family: Noto Sans, Lato, arial, sans-serif !important;
     }
-	
-	body > p {
-		font-family: Noto Sans, verdana, arial, helvetica, sans-serif !important;
-	}
-	
-    a:not(._3t5uN8xUmg0TOwRCOGQEcU):not(blockquote > p > a):not(.md > p > a),
-    .flex,
+
+    body > p {
+        font-family: Noto Sans, verdana, arial, helvetica, sans-serif !important;
+    }
+
+    a:not(._3t5uN8xUmg0TOwRCOGQEcU):not(blockquote > p > a):not(
+            .md > p > a
+        ):not(a.text-neutral-content-weak),
+    .flex:not(shreddit-subreddit-header > .flex),
     faceplate-number {
         font-family: "IBM Plex Sans", IBMPlexSans, "Helvetica Neue", "Helvetica",
             "Arial", sans-serif !important;
@@ -233,14 +238,14 @@
             sans-serif !important;
     }
 
-	.tagline {
-		font-family: "IBM Plex Sans", IBMPlexSans, sans-serif !important;
-	}
-	
-	body > h1 {
-		font-family: "IBM Plex Sans", verdana, arial, helvetica, sans-serif !important;
-	}
-	
+    .tagline {
+        font-family: "IBM Plex Sans", IBMPlexSans, sans-serif !important;
+    }
+
+    body > h1 {
+        font-family: "IBM Plex Sans", verdana, arial, helvetica, sans-serif !important;
+    }
+
     code,
     #shortlink-text {
         font-family: var(--mono-combo), monospace !important;
