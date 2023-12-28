@@ -30,11 +30,10 @@
             "BitstromWera Nerd Font", "DejaVu Sans Mono", "Cascadia Code",
             "CaskaydiaCove Nerd Font", "Cascadia Mono", "Segoe UI Mono",
             "Intel One Mono", Menlo, "MesloLG Nerd Font", Monaco, "Ubuntu Mono",
-            "Ubuntu Mono Nerd Font", "Hasklig", "Hasklug Nerd Font",
+            "Ubuntu Mono Nerd Font", "Agave", "Agave Nerd Font", "Hasklig", "Hasklug Nerd Font",
             "Source Code Pro", "Source Code Pro Nerd Font", "Andale Mono",
             "Lucida Console", "Lucida Sans Typewriter";
-        --block-mono: "IBM Plex Mono", "BlexMono Nerd Font", "Roboto Mono",
-            "Fantasque Sans Mono", "FantasqueSansM Nerd Font", "Agave Nerd Font",
+        --block-mono: "Fantasque Sans Mono", "FantasqueSansM Nerd Font", "IBM Plex Mono", "BlexMono Nerd Font", "Roboto Mono",
             "JetBrains Mono", "JetBrains Mono NL", "JetBrainsMono Nerd Font",
             ProFont, "Input Mono", "Envy Code R", "EnvyCodeR Nerd Font",
             "Iosevka Expanded", "Iosevka", "Iosevka Nerd Font",
@@ -44,7 +43,6 @@
 }
 
 @-moz-document domain("github.com") {
-    /* Github */
     .d-flex,
     .Link--primary,
     .d-inline-block,
@@ -94,7 +92,6 @@
 }
 
 @-moz-document domain("wikipedia.org") {
-    /* Wikipedia + serif */
     #searchform,
     #p-lang-btn-label,
     #vector-page-tools-dropdown-label,
@@ -126,7 +123,6 @@
 }
 
 @-moz-document domain("reddit.com") {
-    /* Reddit */
     shreddit-app {
         font-family: Noto Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
@@ -257,7 +253,6 @@
 }
 
 @-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com") {
-    /* StackOverflow */
     code {
         font-family: var(--mono-combo), ui-monospace, "Cascadia Mono",
             "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -280,7 +275,6 @@
 }
 
 @-moz-document domain("poe.com") {
-    /* Poe */
     .BotInfoCardHeader_operatedBy__G5WAP,
     .BotInfoCardHeader_followerCount__nrf6H,
     .BotMetadataTag_BotMetadataTag__Jkq1r,
@@ -327,7 +321,6 @@
 }
 
 @-moz-document domain("w3schools.com") {
-    /* W3Schools */
     .w3-code,
     .language-java,
     .w3-codespan {
@@ -338,7 +331,6 @@
 }
 
 @-moz-document domain("learn.microsoft.com") {
-    /* MS Learn */
     pre > code,
     p > code,
     li > code {
@@ -352,8 +344,6 @@
 }
 
 @-moz-document domain("wikiwand.com") {
-    /* Wikiwand + serif */
-
     .monospaced,
     code,
     pre:not(.openai_content__jNwCi > * > pre) {
@@ -375,7 +365,6 @@
 }
 
 @-moz-document domain("developer.mozilla.org") {
-    /* Mozilla Dev */
     code,
     .section-content > pre {
         font-family: var(--mono-combo), Menlo, Consolas, Monaco, Liberation Mono,
@@ -390,14 +379,12 @@
 }
 
 @-moz-document domain("symbolab.com") {
-    /* Symbolab + LaTeX input interface */
     .latex-command-input {
         font-family: var(--mono-combo), "Courier New", monospace !important;
     }
 }
 
 @-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com") {
-    /* MediaWiki */
     .mediawiki,
     #sidebar,
     h3 {
@@ -435,7 +422,6 @@
 }
 
 @-moz-document domain("google.com") {
-    /* Google */
     :root {
         /* Define variables */
         --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft",
@@ -608,7 +594,6 @@
 }
 
 @-moz-document domain("bing.com") {
-    /* Bing + "fluent" changes */
     :root {
         --segoe: "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe, "Segoe UI Variable Display",
@@ -824,7 +809,6 @@
 }
 
 @-moz-document domain("geeksforgeeks.org") {
-    /* GeeksForGeeks */
     div .text > pre,
     .container > div code,
     .outputDiv > pre {
@@ -834,7 +818,6 @@
 }
 
 @-moz-document domain("xdaforums.com") {
-    /* XDADevelopers */
     .tooltip-content,
     .node-description,
     .uix_welcomeSection__title,
@@ -861,7 +844,7 @@
 }
 
 @-moz-document domain("discord.com") {
-    /* Discord + add fallbacks */
+    /* Discord fallbacks */
     .card-3ie2dy > div div,
     .constrainedRow-3y91Xf,
     .container-1eFtFS,
@@ -898,7 +881,6 @@
 }
 
 @-moz-document domain("knowyourmeme.com") {
-    /* KnowYourMeme */
     .enlargeGalleryProgress,
     #content,
     #maru,
@@ -927,7 +909,6 @@
         font-family: var(--not-monospace), Helvetica, Arial, Verdana, sans-serif !important;
     }
 
-    /* monospace */
     textarea {
         font-family: var(--block-mono), var(--monospace), "monaco",
             "lucida console", "lucida sans typewriter", "consolas", "monospace" !important;
@@ -935,7 +916,6 @@
 }
 
 @-moz-document domain("codeberg.org") {
-    /* Codeberg */
     .height,
     .ui,
     .file-view,
@@ -960,7 +940,6 @@
 }
 
 @-moz-document domain("docs.oracle.com") {
-    /* Oracle docs */
     pre,
     dd,
     code {
@@ -970,7 +949,6 @@
 }
 
 @-moz-document domain("yahoo.com") {
-    /* Yahoo */
     #doc {
         font-family: YahooSans VF, Roboto, helvetica neue, helvetica, arial,
             sans-serif;
@@ -990,7 +968,6 @@
 }
 
 @-moz-document domain("baeldung.com") {
-    /* Baeldung */
     code.hljs {
         font-family: var(--mono-combo), "Source Code Pro", "Consolas",
             "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
@@ -999,7 +976,6 @@
 }
 
 @-moz-document domain("duckduckgo.com") {
-    /* DuckDuckGo */
     code,
     .wZ4JdaHxSAhGy1HoNVja > span > span,
     .ddgpt > pre {
@@ -1012,7 +988,6 @@
 }
 
 @-moz-document domain("chat.lmsys.org") {
-    /* lmsys chat */
     code {
         font-family: var(--mono-combo), Consolas, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
@@ -1024,7 +999,6 @@
 }
 
 @-moz-document domain("cagematch.net") {
-    /* Cagematch */
     .FormSelect,
     .FormInput,
     .TemplateBody,
@@ -1041,7 +1015,6 @@
 }
 
 @-moz-document domain("17track.net") {
-    /* Cagematch */
     .canvas,
     .page-content,
     .nav > li {
