@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        2.2.3
+@version        2.2.4
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -765,6 +765,24 @@
 
 @-moz-document regexp(".*youtube.com\/live_chat.*") {
     .yt-live-chat-renderer {
+        filter: sepia(60%);
+    }
+}
+
+@-moz-document domain("yandex.com") {
+    #lazy-react-state-post-search,
+    div.Root.Root_inited,
+    div.b-page__footer.serp.i-bem,
+    div.extra-content.serp.i-bem,
+    div.lazy-load.serp.i-bem,
+    div.offer-reviews-tooltip.offer-reviews-tooltip_view_default.offer-reviews-tooltip_theme_dark.light-popup.light-popup_autoclosable_yes.light-popup_autoclosable-scrollresize_yes.light-popup_animated_yes.i-bem,
+    div.overlay__panel,
+    div.paranja.paranja_state_close.paranja_theme_normal.z-index-group,
+    div.serp.serp__spin.i-bem,
+    div.verified-tooltip.verified-tooltip_view_default.light-popup.light-popup_animated_yes.i-bem,
+    main.main.serp.i-bem,
+    nav.a11y-fast-nav.i-bem,
+    div.detect-scripts {
         filter: sepia(60%);
     }
 }

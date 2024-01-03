@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.2.2
+@version        2.2.3
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -13,16 +13,17 @@
         /* Define variables */
         --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro",
             "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Ubuntu", "Lato",
-            "Avenir Next", "Avenir", "Proxima Nova", "IBM Plex Sans", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "Helvetica Neue", "Helvetica",
-            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Noto Sans",
-            "Droid Sans", ".SF UI Display", "SF Pro Display", "SF Compact",
-            "SF Hello";
+            "Avenir Next", "Avenir", "Proxima Nova", "IBM Plex Sans",
+            "IBM Plex Sans JP", "IBM Plex Sans KR", "Helvetica Neue",
+            "Helvetica", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+            "Noto Sans KR", "Noto Sans", "Droid Sans", ".SF UI Display",
+            "SF Pro Display", "SF Compact", "SF Hello";
         --serif: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
-            "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text", "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond", "Lora",
-            "Shippori Mincho", "Serif UI Display", "Noto Serif JP",
-            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif", "Noto Sans JP",
-            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR";
+            "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
+            "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond",
+            "Lora", "Shippori Mincho", "Serif UI Display", "Noto Serif JP",
+            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif",
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR";
         --monospace: "Fira Code", "Fira Mono", "Noto Mono", "Noto Sans Mono",
             "DroidSansM", "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font",
             "Consolas", "Hack", "Hack Nerd Font", "Bitstream Vera Sans Mono",
@@ -35,9 +36,10 @@
         --block-mono: "Fantasque Sans Mono", "FantasqueSansM Nerd Font",
             "IBM Plex Mono", "BlexMono Nerd Font", "Roboto Mono",
             "JetBrains Mono", "JetBrains Mono NL", "JetBrainsMono Nerd Font",
-            ProFont, ProFontIIx, ProFontWindows, "Input Mono", "Envy Code R", "EnvyCodeR Nerd Font",
-            "Iosevka Expanded", "Iosevka", "Iosevka Nerd Font",
-            "IosevkaTerm Nerd Font", "Input Sans", "Liberation Mono";
+            ProFont, ProFontIIx, ProFontWindows, "Input Mono", "Envy Code R",
+            "EnvyCodeR Nerd Font", "Iosevka Expanded", "Iosevka",
+            "Iosevka Nerd Font", "IosevkaTerm Nerd Font", "Input Sans",
+            "Liberation Mono";
         --mono-combo: var(--block-mono), var(--monospace);
     }
 }
@@ -428,6 +430,11 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .sign-out,
+    .add-account,
+    .account-name,
+    .account-email,
+    .accounts > li,
     .no-user-select,
     .wwUB2c,
     .toI8Rb,
@@ -537,6 +544,10 @@
             sans-serif !important;
     }
 
+    .wx62f {
+        font-family: var(--google), Helvetica Neue, Arial, sans-serif !important;
+    }
+
     /* Force Google Sans (if available) */
     input,
     .Czd4wf {
@@ -576,8 +587,8 @@
         font-family: "Google Sans", var(--google), arial, sans-serif !important;
     }
 
-    .wx62f {
-        font-family: var(--google), Helvetica Neue, Arial, sans-serif !important;
+    .banner > h1 {
+        font-family: "Google Sans", var(--google), "Open Sans", arial !important;
     }
 
     .googlegpt > pre,
