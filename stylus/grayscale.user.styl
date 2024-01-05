@@ -28,9 +28,11 @@
 
 @-moz-document domain("google.com") {
     c-wiz
-        > div:not(c-wiz > div.h8plyb):not(c-wiz > div.ELfUzc):not(
+        > div:not(c-wiz > .h8plyb):not(c-wiz > .ELfUzc):not(
             c-wiz > div.b2YVqc
-        ),
+        ):not(c-wiz > .B8qvqf):not(c-wiz > .WYuW0e):not(c-wiz > .YEXPof):not(
+            c-wiz > .VIrDCd
+        ):not(c-wiz > .pdAMZe):not(c-wiz > .v9czFf),
     #Rvx4kc,
     #_2mOxZN2bHsP8hwP9q7jwBQ_1,
     #_2mOxZN2bHsP8hwP9q7jwBQ_55,
@@ -88,8 +90,8 @@
     div.gb_bd,
     div.gb_ed,
     div.gb_jd,
-    div.gb_kd,
-    div.gb_ld,
+    div.gb_kd:not(.gb_ld > .gb_kd),
+    div.gb_ld:not(header > .gb_ld),
     div.gb_n,
     div.gb_od,
     div.gb_q,
@@ -770,19 +772,7 @@
 }
 
 @-moz-document domain("yandex.com") {
-    #lazy-react-state-post-search,
-    div.Root.Root_inited,
-    div.b-page__footer.serp.i-bem,
-    div.extra-content.serp.i-bem,
-    div.lazy-load.serp.i-bem,
-    div.offer-reviews-tooltip.offer-reviews-tooltip_view_default.offer-reviews-tooltip_theme_dark.light-popup.light-popup_autoclosable_yes.light-popup_autoclosable-scrollresize_yes.light-popup_animated_yes.i-bem,
-    div.overlay__panel,
-    div.paranja.paranja_state_close.paranja_theme_normal.z-index-group,
-    div.serp.serp__spin.i-bem,
-    div.verified-tooltip.verified-tooltip_view_default.light-popup.light-popup_animated_yes.i-bem,
-    main.main.serp.i-bem,
-    nav.a11y-fast-nav.i-bem,
-    div.detect-scripts {
+    .b-page__body, .body__wrapper {
         filter: sepia(60%);
     }
 }
