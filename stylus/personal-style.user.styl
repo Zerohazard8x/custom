@@ -8,7 +8,7 @@
 @version        2.1.4
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("inv.riverside.rocks"), domain("invidious.tiekoetter.com"), domain("yt.funami.tech"), domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("weibo.com"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com"), regexp(".*youtube.com\/live_chat.*") {
+@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("aftership.com"), domain("weibo.com"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com"), regexp(".*youtube.com\/live_chat.*") {
     :root {
         /* Define variables */
         --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro",
@@ -16,8 +16,8 @@
             "Avenir Next", "Avenir", "Proxima Nova", "IBM Plex Sans",
             "IBM Plex Sans JP", "IBM Plex Sans KR", "Helvetica Neue",
             "Helvetica", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans", "Droid Sans", ".SF UI Display",
-            "SF Pro Display", "SF Compact", "SF Hello";
+            "Noto Sans KR", "Noto Sans", "Open Sans", "Droid Sans",
+            ".SF UI Display", "SF Pro Display", "SF Compact", "SF Hello";
     }
 }
 
@@ -131,7 +131,7 @@
     }
 }
 
-@-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net") {
+@-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org") {
     /* Nitter */
     .container,
     .tweet-content,
@@ -545,19 +545,5 @@
     #img {
         height: 50px !important;
         width: auto !important;
-    }
-}
-
-@-moz-document domain("yandex.com") {
-    .SearchPage-Container {
-        font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
-            -apple-system, BlinkMacSystemFont, Helvetica Neue, Roboto, Segoe UI,
-            Arial, Helvetica, sans-serif !important;
-    }
-
-    .HeaderDesktop,
-    .mini-suggest__input {
-        font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
-            Arial, Helvetica, "Arial Unicode MS", sans-serif !important;
     }
 }
