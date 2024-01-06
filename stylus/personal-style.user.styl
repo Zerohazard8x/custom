@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.1.4
+@version        2.2.0
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("inv.riverside.rocks"),domain("invidious.tiekoetter.com"),domain("yt.funami.tech"),domain("yewtu.be"), domain("unsplash.com"), domain("tvtropes.org"), domain("instructure.com"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("aftership.com"), domain("weibo.com"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com"), regexp(".*youtube.com\/live_chat.*") {
@@ -256,7 +256,7 @@
 
 @-moz-document domain("twitch.tv") {
     .bTKXKk {
-        background-color: none !important;
+        background-color: transparent !important;
     }
 
     .chat-line__message,
@@ -264,14 +264,20 @@
         font-size: 50px !important;
     }
 
-    .cCvSAC {
+    .cCvSAC, .chat-line__status {
         font-size: 38px !important;
     }
 
+	.chat-line__message,
     section[data-test-selector="chat-room-component-layout"].chat-scrollable-area__message-container,
     .whispers .thread-message__message,
     .video-chat__message {
-        line-height: 175% !important;
+		line-height: 1.5 !important;
+    }
+	
+	.chat-badge, .chat-line__message--emote, .ScSvg-sc-1hrsqw6-1:not(.tw-svg > .ScSvg-sc-1hrsqw6-1), .tw-svg > svg:not(.tw-svg > .ihOSMR):not(.hZiShc > svg) {
+        height: 50px !important;
+        width: auto !important;
     }
 }
 
@@ -531,6 +537,7 @@
 @-moz-document regexp(".*youtube.com\/live_chat.*") {
     .yt-live-chat-text-message-renderer {
         font-size: 50px !important;
+		line-height: 1.5 !important;
     }
 
     #card,
@@ -538,6 +545,7 @@
     #header-subtext,
     #message {
         font-size: 38px !important;
+		line-height: 1.5 !important;
     }
 
     .emoji,

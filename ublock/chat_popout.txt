@@ -5,7 +5,9 @@
 ! Expires: 1 day
 
 twitch.tv###twilight-sticky-footer-root
+twitch.tv##.CoreText-sc-1txzju1-0 > .bTAXM.InjectLayout-sc-1i43xsx-0
 twitch.tv##.bTKXKk.ibtYyW.ScCoreButtonSecondary-sc-ocjdkq-2.ScCoreButton-sc-ocjdkq-0 > .irroFV.ScCoreButtonLabel-sc-s7h2b7-0 > .phMMp.Layout-sc-1xcs6mc-0
+twitch.tv##.cVmNmw.Layout-sc-1xcs6mc-0 > .kjARyu.Layout-sc-1xcs6mc-0
 twitch.tv##.chat-line__timestamp
 twitch.tv##.chat-room__content.fhQiFC.Layout-sc-1xcs6mc-0 > div.Layout-sc-1xcs6mc-0:nth-of-type(1) > .DGdsv.Layout-sc-1xcs6mc-0
 twitch.tv##.dUREKt.InjectLayout-sc-1i43xsx-0
@@ -14,6 +16,7 @@ twitch.tv##.hbsjFp.Layout-sc-1xcs6mc-0 > .cEaLXq.Layout-sc-1xcs6mc-0
 twitch.tv##.prime-offers.bZVrjx.Layout-sc-1xcs6mc-0
 twitch.tv##.smarter-sort-callout.eOZOED.Layout-sc-1xcs6mc-0
 twitch.tv##.top-nav__prime.bFqPcI.Layout-sc-1xcs6mc-0
+twitch.tv##.tw-svg.dMtnA.ScFigure-sc-wkgzod-0
 twitch.tv##.vod-message__header.cRArZq.Layout-sc-1xcs6mc-0
 twitch.tv##.vod-message__header.ejxjYm.Layout-sc-1xcs6mc-0
 twitch.tv##div.Layout-sc-1xcs6mc-0.bGyiZe.chat-input:nth-child(6) > div:last-child
@@ -27,14 +30,24 @@ twitch.tv##div.hjmDKV.Layout-sc-1xcs6mc-0:nth-child(n+4):nth-child(-n+5)
 twitch.tv##div.prime-offers__pill
 twitch.tv##div.side-nav-section.bSoSIm.Layout-sc-1xcs6mc-0:nth-of-type(3)
 twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
+||static-cdn.jtvnw.net/badges/v1/10cf46de-61e7-4a42-807a-7898408ce352/*$image
+||static-cdn.jtvnw.net/badges/v1/1d4b03b9-51ea-42c9-8f29-698e3c85be3d/*$image
 ||static-cdn.jtvnw.net/badges/v1/3158e758-3cb4-43c5-94b3-7639810451c5/*$image
 ||static-cdn.jtvnw.net/badges/v1/4b76d5f2-91cc-4400-adf2-908a1e6cfd1e/*$image
+||static-cdn.jtvnw.net/badges/v1/4d9e9812-ba9b-48a6-8690-13f3f338ee65/*$image
 ||static-cdn.jtvnw.net/badges/v1/5864739a-5e58-4623-9450-a2c0555ef90b/*$image
 ||static-cdn.jtvnw.net/badges/v1/aef2cd08-f29b-45a1-8c12-d44d7fd5e6f0/*$image
 ||static-cdn.jtvnw.net/badges/v1/b817aba4-fad8-49e2-b88a-7cc744dfa6ec/*$image
 ||static-cdn.jtvnw.net/badges/v1/bbbe0db0-a598-423e-86d0-f9fb98ca1933/*$image
 ||static-cdn.jtvnw.net/badges/v1/bd444ec6-8f34-4bf9-91f4-af1e3428d80f/*$image
+||static-cdn.jtvnw.net/badges/v1/bf370830-d79a-497b-81c6-a365b2b60dda/*$image
+||static-cdn.jtvnw.net/badges/v1/c8a0d95a-856e-4097-9fc0-7765300a4f58/*$image
+||static-cdn.jtvnw.net/badges/v1/d08658d7-205f-4f75-ad44-8c6e0acd8ef6/*$image
 ||static-cdn.jtvnw.net/badges/v1/e33d8b46-f63b-4e67-996d-4a7dcec0ad33/*$image
+||static-cdn.jtvnw.net/badges/v1/e33e0c67-c380-4241-828a-099c46e51c66/*$image
+||static-cdn.jtvnw.net/badges/v1/f9e3b4e4-200e-4045-bd71-3a6b480c23ae/*$image
+||static-cdn.jtvnw.net/badges/v1/fc46b10c-5b45-43fd-81ad-d5cb0de6d2f4/*$image
+||static-cdn.jtvnw.net/badges/v1/fe5b5ddc-93e7-4aaf-9b3e-799cd41808b1/*$image
 
 youtube.com###Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D
 youtube.com###about-these-results
