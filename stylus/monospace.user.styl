@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.2.4
+@version        2.2.5
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -141,19 +141,18 @@
     }
 
     .inline-block,
-    .side .md p,
     .add,
     .buttons > button,
     .login-required,
-    .md > p > strong,
-    .md > p,
     .user,
     .users-online > span,
     blockquote > ul > li {
-        font-family: Noto Sans, "Helvetica Neue", "Helvetica", "Arial",
-            sans-serif !important;
+        font-family: Noto Sans, "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
     }
 
+	.side .md p,
+	.md > p > strong,
+	.md > p,
     .author,
     .choice,
     .flat-list,
@@ -648,6 +647,7 @@
             Arial, sans-serif !important;
     }
 
+	.sa_rm,
     #detailMeta,
     .hlig,
     .b_download_text,
@@ -702,7 +702,7 @@
             li > h2
         ):not(.nws_sh > h2):not(.b_wpt_bl > h2):not(.b_subModule > h2):not(
             .b_ami > h2
-        ),
+        ):not(.b_go_big > h2),
     .b_mgridTitleCont,
     .b_mgridTitle > a,
     .v-ans-title,
