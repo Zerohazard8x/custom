@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.2.7
+@version        2.3.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -18,8 +18,8 @@
             "Helvetica", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
             "Noto Sans KR", "Noto Sans", "Open Sans", "Droid Sans",
             ".SF UI Display", "SF Pro Display", "SF Compact", "SF Hello";
-        --serif: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
-            "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
+        --serif: "Source Serif 4", "Source Serif Pro", "Serif UI",
+            "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text", Fraunces,
             "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond",
             "Lora", "Shippori Mincho", "Serif UI Display", "Noto Serif JP",
             "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif",
@@ -40,7 +40,7 @@
             "EnvyCodeR Nerd Font", "Iosevka Expanded", "Iosevka",
             "Iosevka Nerd Font", "IosevkaTerm Nerd Font", "Input Sans",
             "Liberation Mono";
-        --mono-combo: var(--block-mono), var(--monospace);
+        --mono-combo: var(--monospace), var(--block-mono);
     }
 }
 
@@ -878,7 +878,7 @@
     .inlineCode-ERyvy_,
     table,
     .inline {
-        font-family: var(--block-mono), var(--monospace), Consolas,
+        font-family: var(--mono-combo), Consolas,
             "Andale Mono WT", "Andale Mono", "Lucida Console",
             "Lucida Sans Typewriter", "Liberation Mono", "Nimbus Mono L", Monaco,
             "Courier New", Courier, monospace !important;
