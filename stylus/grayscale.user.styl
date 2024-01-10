@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        3.0.2
+@version        3.0.3
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -583,4 +583,10 @@
     .body__wrapper {
         filter: sepia(60%);
     }
+}
+
+@-moz-document domain("baked.live") {
+	#messagebuffer > div {
+		filter: sepia(60%);
+	}
 }
