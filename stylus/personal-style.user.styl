@@ -12,12 +12,13 @@
     :root {
         /* Define variables */
         --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro",
-            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Ubuntu", "Lato",
-            "Avenir Next", "Avenir", "Proxima Nova", "IBM Plex Sans",
-            "IBM Plex Sans JP", "IBM Plex Sans KR", "Helvetica Neue",
-            "Helvetica", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans", "Open Sans", "Droid Sans",
-            ".SF UI Display", "SF Pro Display", "SF Compact", "SF Hello";
+            "SF Pro Text", Inter, "Roboto Flex", "Roboto", "Ubuntu", "Lato",
+            "Fira Sans", FiraGO, "Avenir Next", Avenir, "Proxima Nova",
+            "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans",
+            "Helvetica Neue", "Helvetica", "Noto Sans JP", "Noto Sans TC",
+            "Noto Sans SC", "Noto Sans KR", "Noto Sans", "Open Sans",
+            "Droid Sans", ".SF UI Display", "SF Pro Display", "SF Compact",
+            "SF Hello";
     }
 }
 
@@ -83,7 +84,8 @@
     }
 
     .x9f619 {
-        font-family: var(--facebook), Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif, !important;
+        font-family: var(--facebook), Segoe UI Historic, Segoe UI, Helvetica,
+            Arial, sans-serif !important;
     }
 
     ._1gaz {
@@ -263,18 +265,22 @@
         font-size: 50px !important;
     }
 
-    .cCvSAC, .chat-line__status {
+    .cCvSAC,
+    .chat-line__status {
         font-size: 38px !important;
     }
 
-	.chat-line__message,
+    .chat-line__message,
     section[data-test-selector="chat-room-component-layout"].chat-scrollable-area__message-container,
     .whispers .thread-message__message,
     .video-chat__message {
-		line-height: 1.5 !important;
+        line-height: 1.5 !important;
     }
-	
-	.chat-badge, .chat-line__message--emote, .ScSvg-sc-1hrsqw6-1:not(.tw-svg > .ScSvg-sc-1hrsqw6-1), .tw-svg > svg:not(.tw-svg > .ihOSMR):not(.hZiShc > svg) {
+
+    .chat-badge,
+    .chat-line__message--emote,
+    .ScSvg-sc-1hrsqw6-1:not(.tw-svg > .ScSvg-sc-1hrsqw6-1),
+    .tw-svg > svg:not(.tw-svg > .ihOSMR):not(.hZiShc > svg) {
         height: 50px !important;
         width: auto !important;
     }
@@ -536,7 +542,7 @@
 @-moz-document regexp(".*youtube.com\/live_chat.*") {
     .yt-live-chat-text-message-renderer {
         font-size: 50px !important;
-		line-height: 1.5 !important;
+        line-height: 1.5 !important;
     }
 
     #card,
@@ -544,10 +550,10 @@
     #header-subtext,
     #message {
         font-size: 38px !important;
-		line-height: 1.5 !important;
+        line-height: 1.5 !important;
     }
 
-	#icon > * > * > div > svg,
+    #icon > * > * > div > svg,
     .emoji,
     .yt-live-chat-author-badge-renderer,
     #img {
@@ -568,15 +574,16 @@
         font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
             Arial, Helvetica, "Arial Unicode MS", sans-serif !important;
     }
-	
-	.mini-suggest__button-text {
-		font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif, arial, sans-serif !important;
-	}
+
+    .mini-suggest__button-text {
+        font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
+            arial, sans-serif !important;
+    }
 }
 
 @-moz-document domain("baked.live") {
-	#messagebuffer > div {
-		font-size: 50px !important;
-		line-height: 1.5 !important;
-	}
+    #messagebuffer > div {
+        font-size: 50px !important;
+        line-height: 1.5 !important;
+    }
 }
