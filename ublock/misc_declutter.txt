@@ -31,6 +31,11 @@ apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
 apps.apple.com##div.app-privacy__modal-section > p
 !------!
 
+baked.live###rightpane > .row
+baked.live###rustbanner
+baked.live###userlist
+baked.live##div > .timestamp
+
 bard.google.com##.location-buttons-dot
 bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
 bard.google.com##.location-footer-atl-text
@@ -62,6 +67,7 @@ bing.com###id_rh
 bing.com###imgcrtr_key
 bing.com###imginspn_key
 bing.com###mfa_srch
+bing.com###sa_zis_Banner
 bing.com###sydneyLetsChatWidgetContainer
 bing.com###textDeeplinksWidgetContainer
 bing.com###vs_cont > div.mc_caro:first-child
@@ -340,16 +346,21 @@ reddit.com###credential_picker_container
 reddit.com###popular-posts
 reddit.com###redesign-beta-optin-btn
 reddit.com##.RtAsN7UrR7u51W5kaOXvp._1W1pLIfaIb8rYU6YeTdAk6
+reddit.com##.RtAsN7UrR7u51W5kaOXvp._1W1pLIfaIb8rYU6YeTdAk6
 reddit.com##._1GieMuLljOrqnVpRAwz7VP
+reddit.com##._1W1pLIfaIb8rYU6YeTdAk6
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
 reddit.com##._1zyV-XmoYeSNGWjfZiXbPc.efdkOLo3oigH_95whTYCp
 reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
 reddit.com##._2Vkdik1Q8k0lBEhhA_lRKE._34CfAAowTqdbNDYXz5tBTW
+reddit.com##._2Zjw1QfT_iMHH7rfaGsfBs
 reddit.com##._2jJNpBqXMbbyOiGCElTYxZ
+reddit.com##._2ppRhKEnnVueVHY_G-Ursy
 reddit.com##._2q-ZKRaT1WjKg092R6La5J._1cubpGNEaCAVnpJl1KBPcO.cmR5BF4NpBUm3DBMZCmJS > ._1W1pLIfaIb8rYU6YeTdAk6
 reddit.com##._2t7TYn6HwRZQwKXG47kpQR._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
 reddit.com##._3WmD5z1Jh2YlJtFiczfOPQ._2me05I1oHEys1gUyyDWswt._34CfAAowTqdbNDYXz5tBTW
 reddit.com##._3jiriKeNer8y0-1r6oWIFM:style(min-width: 40px !important)
+reddit.com##.create.sidebox > .spacer
 reddit.com##.flex-row.flex.dark\:bg-coolgray-850.bg-global-white.items-center.justify-between.w-full.fixed.bottom-0.px-md.m\:px-lg.pb-\[env\(safe-area-inset-bottom\)\].h-3xl.box-border.border-neutral-border-weak.border-solid.border-r-0.border-l-0.border-b-0.border-t-sm
 reddit.com##.h-jI8r2f9ozTNqu_2TBeY,._3jiriKeNer8y0-1r6oWIFM:style(width: 1px !important)
 reddit.com##.help-hoverable.help.beta-hint
@@ -460,6 +471,7 @@ twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-1igl3o0.css-175oi2r > .css-175oi2r 
 twitter.com##.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-xyw6el.r-18u37iz.r-6koalj.r-sdzlij.r-1awozwy.css-175oi2r > div.css-175oi2r:nth-of-type(1)
 twitter.com##.r-1p6iasa.r-4amgru.r-18u37iz.r-1awozwy.css-175oi2r
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
+twitter.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r:nth-of-type(4) > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
 
 vlr.gg##.d8fyh
 vlr.gg##.jd8ag
@@ -479,6 +491,9 @@ web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
 weibo.com##.LoginCard_wrap_18dK4.Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
 
 wikiwand.com##.footer_donation__Cje_Q
+wikiwand.com##.footer_subTitle__2Qrwq
+wikiwand.com##.footer_title__GtcWC
+wikiwand.com##.logoIcon_sep__6ACnW
 
 wolframalpha.com##.QRoJJ.sc-f3dfd2ae-0
 
