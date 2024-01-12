@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        3.0.3
+@version        3.0.4
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -9,15 +9,18 @@
 ==/UserStyle== */
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
-	#mount_0_0_2n > div > div {
+    #mount_0_0_2n > div > div {
         filter: sepia(60%);
     }
 }
 
 @-moz-document domain("google.com") {
-	.L3eUgb,
-	.pdqVLc,
-	.pSp5K,
+    .Fh5muf,
+    #gb-main,
+    .EIlDfe,
+    .L3eUgb,
+    .pdqVLc,
+    .pSp5K,
     #cnt,
     #drive_main_page,
     .Q3DXx,
@@ -308,8 +311,8 @@
     div.mainContainer.background-color-body.has-default-focus,
     div.mainContainer.uhf-container.has-default-focus,
     div.mainContainer.uhf-container.uhf-container.is-full.has-default-focus,
-    div.position-fixed.bottom-0.right-0.has-z-index-one
-        footer.footer-layout.uhf-container.has-padding.has-default-focus,
+    div.position-fixed.bottom-0.right-0.has-z-index-one,
+    footer.footer-layout.uhf-container.has-padding.has-default-focus,
     section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm,
     section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm.margin-top-none {
         filter: sepia(60%);
@@ -317,6 +320,7 @@
 }
 
 @-moz-document domain("wikiwand.com") {
+    #article-root,
     .gallery_wrapper__1a7bM,
     article {
         filter: sepia(60%);
@@ -370,8 +374,9 @@
 }
 
 @-moz-document domain("bing.com") {
-    html > .b_respl.b_sbText,
-	.b_drk,
+    html > .b_respl.b_sbText:not(html > .b_sydConvMode),
+    .cib-serp-main,
+    .b_drk,
     .hp_body {
         filter: sepia(60%);
     }
@@ -586,7 +591,7 @@
 }
 
 @-moz-document domain("baked.live") {
-	#messagebuffer > div {
-		filter: sepia(60%);
-	}
+    #messagebuffer > div {
+        filter: sepia(60%);
+    }
 }
