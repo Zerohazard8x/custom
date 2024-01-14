@@ -11,12 +11,12 @@
             {
                 "enabled": true,
                 "name": "Forwarded",
-                "value": "for=94.140.14.14, for=\"[2a10:50c0::ad1:ff]\""
+                "value": "for=8.8.8.8, for=\"[2001:4860:4860::8888]\""
             },
             {
                 "enabled": true,
                 "name": "X-Forwarded-For",
-                "value": "94.140.14.14, 2a10:50c0::ad1:ff"
+                "value": "8.8.8.8, 2001:4860:4860::8888"
             }
         ],
         "urlFilters": [
