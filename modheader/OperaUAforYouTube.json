@@ -1,12 +1,12 @@
 [
     {
         "version": 2,
-        "title": "ChromeUAforGoogle",
+        "title": "OperaUAforYouTube",
         "headers": [
             {
                 "enabled": true,
                 "name": "User-Agent",
-                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0 GLS/97.10.5999.100"
             },
             {
                 "enabled": true,
@@ -19,11 +19,7 @@
                 "value": "8.8.8.8, 2001:4860:4860::8888"
             }
         ],
-        "urlFilters": [{ "enabled": true, "urlRegex": ".*google.com.*" }],
-        "excludeUrlFilters": [
-            { "enabled": true, "urlRegex": ".*docs.google.com.*" },
-            { "enabled": true, "urlRegex": ".*accounts.google.com.*" }
-        ],
+        "urlFilters": [{ "enabled": true, "urlRegex": ".*youtube.com.*" }],
         "shortTitle": "1",
         "alwaysOn": true
     }

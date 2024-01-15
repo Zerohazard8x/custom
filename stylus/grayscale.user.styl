@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        3.0.4
+@version        3.0.5
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -496,9 +496,8 @@
     }
 }
 
-@-moz-document domain("weibo.com") {
-    #__SVG_SPRITE_NODE,
-    #app {
+@-moz-document domain("weibo.com"), domain("weibo.cn") {
+    html {
         filter: sepia(60%);
     }
 }
