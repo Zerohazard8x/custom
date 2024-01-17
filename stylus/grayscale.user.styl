@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        3.0.5
+@version        3.1.0
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -151,20 +151,6 @@
     nav.navBarMobile,
     span.select2-hidden-accessible,
     div.ReactModalPortal {
-        filter: sepia(60%);
-    }
-}
-
-@-moz-document domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk") {
-    #cboxOverlay,
-    #colorbox,
-    #fb-root,
-    #global-viewport,
-    #oneid-secure-responder,
-    #oneid-wrapper,
-    div.ad-slot.ad-slot-exclusions,
-    div.ad-slot.ad-slot-overlay,
-    div.shim {
         filter: sepia(60%);
     }
 }
@@ -468,23 +454,8 @@
 }
 
 @-moz-document domain("yahoo.com") {
-    #HPSPON-ad,
-    #Header,
-    #Masterwrap,
-    #advertisement-thamba,
-    #doc,
-    #pagetual-preload,
-    #sa-feedback-panel,
-    #yui3-css-stamp,
-    div.darla,
-    div.hide,
-    div.sa-aria-live-region,
-    div.uh3-p,
-    div.uh3-p.uh3lite,
-    div.wafer-lightbox-overlay,
-    div.wafer-template,
-    div.yui3-widget.yui3-safesearch.hide,
-    div._yb_1ayze._yb_2ahyx {
+    .app > div > div,
+    #interactive-2col-qsp-m > div > canvas {
         filter: sepia(60%);
     }
 }

@@ -7,7 +7,19 @@
 ==/UserStyle== */
 
 @-moz-document domain("twitter.com") {
-	.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz {
-		filter: sepia(60%);
-	}
+    .css-175oi2r.r-13qz1uu.r-417010.r-18u37iz {
+        filter: sepia(60%);
+    }
+}
+
+@-moz-document domain("sofascore.com") {
+    #__next {
+        filter: sepia(60%);
+    }
+}
+
+@-moz-document domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk") {
+    #fitt-analytics > div {
+        filter: sepia(60%);
+    }
 }
