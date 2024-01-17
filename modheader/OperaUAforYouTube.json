@@ -11,12 +11,12 @@
             {
                 "enabled": true,
                 "name": "Forwarded",
-                "value": "for=8.8.8.8, for=\"[2001:4860:4860::8888]\""
+                "value": "for=208.67.220.220, for=\"[2620:119:35::35]\""
             },
             {
                 "enabled": true,
                 "name": "X-Forwarded-For",
-                "value": "8.8.8.8, 2001:4860:4860::8888"
+                "value": "208.67.220.220, 2620:119:35::35"
             }
         ],
         "urlFilters": [{ "enabled": true, "urlRegex": ".*youtube.com.*" }],
