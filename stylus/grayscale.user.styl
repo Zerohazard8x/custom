@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        3.2.1
+@version        3.2.2
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -246,9 +246,13 @@
 }
 
 @-moz-document domain("chat.openai.com") {
-    #__next {
+    div.relative.z-0.flex.h-full.w-full.overflow-hidden {
         filter: sepia(60%);
     }
+	
+	html > .antialiased {
+		background: #262321 !important;
+	}
 }
 
 @-moz-document domain("w3schools.com") {
