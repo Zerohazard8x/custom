@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.2.10
+@version        2.2.11
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -126,7 +126,7 @@
 }
 
 @-moz-document domain("reddit.com") {
-    shreddit-app {
+    shreddit-app, .tagline {
         font-family: Noto Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -136,12 +136,11 @@
     .label-container,
     .text-neutral-content-strong,
     .text-12:not(.text-neutral-content-weak) {
-        font-family: IBMPlexSans, "IBM Plex Sans" -apple-system,
+        font-family: IBMPlexSans, "IBM Plex Sans", -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
-    .title > span > span,
     body > p,
     .inline-block,
     .add,
@@ -176,19 +175,18 @@
 
     a:not(.content > li > a):not(.account-activity-box > p > a):not(
             .bottom > a
-        ):not(._1a_HxF03jCyxnx706hQmJR > a),
+        ):not(._1a_HxF03jCyxnx706hQmJR > a):not(.comments):not(.post-sharing-button):not(.login-required > a):not(form > span > a),
     time:not(.bottom > span > time),
-    .tagline,
     faceplate-number,
     .text-neutral-content-strong,
     .flex {
-        font-family: IBMPlexSans, "IBM Plex Sans" -apple-system,
+        font-family: IBMPlexSans, "IBM Plex Sans", -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
     #search > input {
-        font-family: IBMPlexSans, "IBM Plex Sans" Noto Sans, Verdana !important;
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, Verdana !important;
     }
 
     .score:not(.tagline > .score),
@@ -199,20 +197,21 @@
     .commentsignupbar__cta-button,
     #header,
     .head {
-        font-family: IBMPlexSans, "IBM Plex Sans" Noto Sans, verdana, arial,
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, verdana, arial,
             helvetica, sans-serif !important;
     }
 
     .morelink {
-        font-family: IBMPlexSans, "IBM Plex Sans" Noto Sans, arial, helvetica,
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, arial, helvetica,
             sans-serif !important;
     }
 
+	.flair,
     .titlebox > h1,
     .title:not(.sidecontentbox > .title),
     .title-button,
     .redditname {
-        font-family: IBMPlexSans, "IBM Plex Sans" Noto Sans, arial, verdana,
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, arial, verdana,
             "Helvetica Neue", "Helvetica", sans-serif !important;
     }
 
@@ -222,12 +221,12 @@
     .md > h3,
     h4,
     h5 {
-        font-family: IBMPlexSans, "IBM Plex Sans" Noto Sans, "Helvetica Neue",
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, "Helvetica Neue",
             "Helvetica", "Arial", sans-serif !important;
     }
 
     ._3oHXlwUZwpR5SS-8P9tILX {
-        font-family: IBMPlexSans, "IBM Plex Sans" Noto Sans, NotoSans, Arial,
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, NotoSans, Arial,
             sans-serif !important;
     }
 
