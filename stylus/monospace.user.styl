@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.2.11
+@version        2.3.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bard.google.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com") {
     :root {
         /* Define variables */
         --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro",
@@ -126,26 +126,94 @@
 }
 
 @-moz-document domain("reddit.com") {
-    shreddit-app, .tagline {
-        font-family: Noto Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-    }
-
-    .gap-xs,
+    #title,
     .label-container,
     .text-neutral-content-strong,
-    .text-12:not(.text-neutral-content-weak) {
+    .text-12:not(.text-neutral-content-weak),
+    a:not(.content > li > a):not(.account-activity-box > p > a):not(
+            .bottom > a
+        ):not(._1a_HxF03jCyxnx706hQmJR > a):not(.comments):not(
+            .post-sharing-button
+        ):not(.login-required > a):not(form > span > a):not(
+            ._3t5uN8xUmg0TOwRCOGQEcU
+        ):not(.button-small):not(.recover-password),
+    time:not(.bottom > span > time):not(.linkinfo > .date > time),
+    faceplate-number,
+    .text-neutral-content-strong {
         font-family: IBMPlexSans, "IBM Plex Sans", -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
+    #search > input {
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, Verdana !important;
+    }
+
+    .c-btn.login-required,
+    .title > h1,
+    .entry .buttons li a,
+    .score,
+    .loggedin,
+    .commentsignupbar__textarea-above,
+    .commentsignupbar__title,
+    .commentsignupbar__desc,
+    .commentsignupbar__cta-button,
+    #header,
+    .head {
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, verdana, arial,
+            helvetica, sans-serif !important;
+    }
+
+    .titlebox h1,
+    .titlebox::before,
+    .side::after,
+    .btn,
+    .top-matter > .tagline,
+    .morelink,
+    .hover,
+    .md > h1:not(.usertext-body > .md > h1),
+    .md > h2,
+    .md > h3,
+    h4,
+    h5,
+    ._3oHXlwUZwpR5SS-8P9tILX {
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, NotoSans,
+            "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+    }
+
+    .flair,
+    .titlebox > h1,
+    .title:not(.sidecontentbox > .title),
+    .title-button,
+    .redditname {
+        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, arial, verdana,
+            "Helvetica Neue", "Helvetica", sans-serif !important;
+    }
+
+    body > h1,
+    .flairrichtext {
+        font-family: "IBM Plex Sans", verdana, arial, helvetica, sans-serif !important;
+    }
+
+    shreddit-app,
+    .tagline,
+    #description,
+    a.button-small {
+        font-family: Noto Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    }
+
+    .gallery-nav-bar,
+    .md > * > * > * > * > tbody > tr > td,
+    .shortlink,
+    .date,
+    .date > span,
     body > p,
     .inline-block,
     .add,
     .buttons > button,
-    .login-required:not(.morelink > .login-required),
+    .login-required:not(.morelink > .login-required):not(.c-btn),
     .user,
     .users-online > span,
     blockquote > ul > li,
@@ -161,77 +229,6 @@
     .spacer,
     .usertext-body {
         font-family: Noto Sans, verdana, arial, helvetica, sans-serif !important;
-    }
-
-    .shortlink,
-    .date,
-    .date > span {
-        font-family: Noto Sans, arial, helvetica, sans-serif !important;
-    }
-
-    .md > * > * > * > * > tbody > tr > td {
-        font-family: Noto Sans, Lato, arial, sans-serif !important;
-    }
-
-    a:not(.content > li > a):not(.account-activity-box > p > a):not(
-            .bottom > a
-        ):not(._1a_HxF03jCyxnx706hQmJR > a):not(.comments):not(.post-sharing-button):not(.login-required > a):not(form > span > a),
-    time:not(.bottom > span > time),
-    faceplate-number,
-    .text-neutral-content-strong,
-    .flex {
-        font-family: IBMPlexSans, "IBM Plex Sans", -apple-system,
-            BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-    }
-
-    #search > input {
-        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, Verdana !important;
-    }
-
-    .score:not(.tagline > .score),
-    .loggedin,
-    .commentsignupbar__textarea-above,
-    .commentsignupbar__title,
-    .commentsignupbar__desc,
-    .commentsignupbar__cta-button,
-    #header,
-    .head {
-        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, verdana, arial,
-            helvetica, sans-serif !important;
-    }
-
-    .morelink {
-        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, arial, helvetica,
-            sans-serif !important;
-    }
-
-	.flair,
-    .titlebox > h1,
-    .title:not(.sidecontentbox > .title),
-    .title-button,
-    .redditname {
-        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, arial, verdana,
-            "Helvetica Neue", "Helvetica", sans-serif !important;
-    }
-
-    .hover,
-    .md > h1:not(.usertext-body > .md > h1),
-    .md > h2,
-    .md > h3,
-    h4,
-    h5 {
-        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, "Helvetica Neue",
-            "Helvetica", "Arial", sans-serif !important;
-    }
-
-    ._3oHXlwUZwpR5SS-8P9tILX {
-        font-family: IBMPlexSans, "IBM Plex Sans", Noto Sans, NotoSans, Arial,
-            sans-serif !important;
-    }
-
-    body > h1 {
-        font-family: "IBM Plex Sans", verdana, arial, helvetica, sans-serif !important;
     }
 
     code,
@@ -428,6 +425,7 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .yUTMj,
     #exps > button,
     #lud-search,
     #result-stats,
@@ -546,6 +544,7 @@
         font-family: var(--google), Roboto, Helvetica Neue, Arial, sans-serif !important;
     }
 
+    .jloFI,
     .eZHsk,
     .BYj5Bd > span,
     .VsEpQb,
@@ -556,7 +555,9 @@
             HelveticaNeue, Arial, sans-serif !important;
     }
 
-    .sjVJQd {
+    .sjVJQd,
+    .Yt787,
+    .clOx1e > span {
         font-family: var(--google), Google Sans, arial, sans-serif-medium,
             sans-serif !important;
     }
@@ -608,6 +609,7 @@
         font-family: "Google Sans", var(--google), "Open Sans", arial !important;
     }
 
+    .mv6bHd,
     .googlegpt > pre,
     #googlegpt-chatbar,
     .code-container,
