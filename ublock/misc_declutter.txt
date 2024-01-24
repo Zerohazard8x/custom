@@ -104,7 +104,6 @@ byjus.com###adtech-related-links-container
 byjus.com###adtech-top-banner-container
 
 chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
-chat.openai.com##.md\:flex-col.items-stretch.flex-1.h-full.flex.relative > div:nth-of-type(1)
 chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
 chegg.com##.TUcyk.styled__B1AdsWrapper-sc-1nx2zdf-0
@@ -120,6 +119,7 @@ discord.com##.badgeContainer-1OeZs3
 discord.com##.badgeContainer-3TDXH5
 discord.com##.banner-3BK9qN
 discord.com##.buttonContainer-2z-326
+discord.com##.channelNotice_bbc8e6
 discord.com##.colorDefault-1e8tQv.notice-2HEN-u
 discord.com##.colorPremium__32b12.colorPremiumTier2_b5437b.notice__5fd4c
 discord.com##.containerDefaultMargin-3T8Dq_.premiumFeatureBannerBackground-Epwl-X.container-5BK5-N
