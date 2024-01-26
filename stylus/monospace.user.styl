@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.3.0
+@version        2.4.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -11,14 +11,14 @@
 @-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com") {
     :root {
         /* Define variables */
-        --not-monospace: -apple-system, BlinkMacSystemFont, "SF Pro",
-            "SF Pro Text", Inter, "Roboto Flex", "Roboto", "Ubuntu", "Lato",
-            "Fira Sans", FiraGO, "Avenir Next", Avenir, "Proxima Nova",
-            "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans",
-            "Helvetica Neue", "Helvetica", "Noto Sans JP", "Noto Sans TC",
-            "Noto Sans SC", "Noto Sans KR", "Noto Sans", "Open Sans",
-            "Droid Sans", ".SF UI Display", "SF Pro Display", "SF Compact",
-            "SF Hello";
+        --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+            Inter, "Roboto Flex", "Roboto", "Ubuntu", "Lato", "Fira Sans",
+            FiraGO, "FF Meta", "Avenir Next", Avenir, "Proxima Nova", "Nunito",
+            "Nunito Sans", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans", "Helvetica Neue", "Helvetica", "Noto Sans JP",
+            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Noto Sans",
+            "Open Sans", "Droid Sans", ".SF UI Display", "SF Pro Display",
+            "SF Compact", "SF Hello";
         --serif: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
             "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
             "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond",
@@ -63,9 +63,9 @@
     details,
     blockquote,
     .container-lg {
-        font-family: var(--not-monospace), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
-            "Apple Color Emoji", "Segoe UI Emoji" !important;
+        font-family: var(--sans), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji" !important;
     }
 
     tt,
@@ -108,7 +108,7 @@
     .vector-toc,
     cite,
     .mwe-popups-container {
-        font-family: var(--not-monospace), sans-serif !important;
+        font-family: var(--sans), sans-serif !important;
     }
 
     .mw-page-title-main,
@@ -126,12 +126,12 @@
 }
 
 @-moz-document domain("reddit.com") {
-	:root {
+    :root {
         /* Define variables */
         --noto: "Noto Sans", NotoSans;
-		--plex: IBMPlexSans, "IBM Plex Sans";
+        --plex: IBMPlexSans, "IBM Plex Sans";
     }
-	
+
     #title,
     .label-container,
     .text-12:not(.text-neutral-content-weak),
@@ -146,9 +146,9 @@
     time:not(.bottom > span > time):not(.linkinfo > .date > time),
     faceplate-number,
     .text-neutral-content-strong {
-        font-family: var(--plex), var(--noto), -apple-system,
-            BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+        font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
     #header,
@@ -163,13 +163,13 @@
     .score,
     .title > h1,
     .head {
-        font-family: var(--plex), var(--noto), verdana, arial,
-            helvetica, sans-serif !important;
+        font-family: var(--plex), var(--noto), verdana, arial, helvetica,
+            sans-serif !important;
     }
 
-	._3yx4Dn0W3Yunucf5sVJeFU,
-	._1LHxa-yaHJwrPK8kuyv_Y4,
-	._3VvVLJHakguGRWc5JxUX40,
+    ._3yx4Dn0W3Yunucf5sVJeFU,
+    ._1LHxa-yaHJwrPK8kuyv_Y4,
+    ._3VvVLJHakguGRWc5JxUX40,
     .q_unSaY23rpdd3lDvGZ-,
     .btn,
     .hover,
@@ -184,8 +184,8 @@
     h4,
     h5,
     ._3oHXlwUZwpR5SS-8P9tILX {
-        font-family: var(--plex), var(--noto),
-            "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+        font-family: var(--plex), var(--noto), "Helvetica Neue", "Helvetica",
+            "Arial", sans-serif !important;
     }
 
     .flair,
@@ -193,13 +193,14 @@
     .title:not(.sidecontentbox > .title),
     .titlebox > h1,
     .redditname {
-        font-family: var(--plex), var(--noto), arial, verdana,
-            "Helvetica Neue", "Helvetica", sans-serif !important;
+        font-family: var(--plex), var(--noto), arial, verdana, "Helvetica Neue",
+            "Helvetica", sans-serif !important;
     }
 
     body > h1,
     .flairrichtext {
-        font-family: var(--plex), var(--noto), verdana, arial, helvetica, sans-serif !important;
+        font-family: var(--plex), var(--noto), verdana, arial, helvetica,
+            sans-serif !important;
     }
 
     #description,
@@ -265,7 +266,7 @@
     .question-hyperlink,
     .comment-copy,
     .s-prose {
-        font-family: var(--not-monospace), -apple-system, BlinkMacSystemFont,
+        font-family: var(--sans), -apple-system, BlinkMacSystemFont,
             "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
     }
 }
@@ -291,9 +292,9 @@
     h2,
     p,
     .ChatMessage_badge__ah1FU {
-        font-family: var(--not-monospace), -apple-system, system-ui,
-            BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-            Helvetica Neue, sans-serif !important;
+        font-family: var(--sans), -apple-system, system-ui, BlinkMacSystemFont,
+            Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue,
+            sans-serif !important;
     }
 
     code > span,
@@ -392,20 +393,20 @@
     .mediawiki,
     #sidebar,
     h3 {
-        font-family: var(--not-monospace), sans-serif !important;
+        font-family: var(--sans), sans-serif !important;
     }
 
     input {
-        font-family: var(--not-monospace), "MS Shell Dlg 2" !important;
+        font-family: var(--sans), "MS Shell Dlg 2" !important;
     }
 
     .pBody {
-        font-family: var(--not-monospace), verdana, sans-serif !important;
+        font-family: var(--sans), verdana, sans-serif !important;
     }
 
     #personal > h2 {
-        font-family: var(--not-monospace), "Helvetica Neue", "Nimbus Sans",
-            "Helvetica", "Arial", sans-serif !important;
+        font-family: var(--sans), "Helvetica Neue", "Nimbus Sans", "Helvetica",
+            "Arial", sans-serif !important;
     }
 
     h1,
@@ -872,8 +873,8 @@
     .button-text,
     .p-sectionLinks-list,
     .input {
-        font-family: var(--not-monospace), -apple-system, BlinkMacSystemFont,
-            segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji,
+        font-family: var(--sans), -apple-system, BlinkMacSystemFont, segoe ui,
+            Roboto, Helvetica, Arial, sans-serif, apple color emoji,
             segoe ui emoji, segoe ui symbol !important;
     }
 
@@ -948,7 +949,7 @@
     p > strong,
     p,
     div > h4 {
-        font-family: var(--not-monospace), Helvetica, Arial, Verdana, sans-serif !important;
+        font-family: var(--sans), Helvetica, Arial, Verdana, sans-serif !important;
     }
 
     textarea {
@@ -1047,7 +1048,7 @@
     .HeaderMenu,
     .RatingsBoxAdjustedRating,
     input {
-        font-family: var(--not-monospace), Arial, "Segoe UI", Frutiger,
+        font-family: var(--sans), Arial, "Segoe UI", Frutiger,
             "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
     }
 
@@ -1060,7 +1061,7 @@
     .canvas,
     .page-content,
     .nav > li {
-        font-family: var(--not-monospace), sans-serif !important;
+        font-family: var(--sans), sans-serif !important;
     }
 
     .CodeMirror-sizer {

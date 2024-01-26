@@ -11,27 +11,30 @@
 @-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("instructure.com"), domain("msn.com"), domain("metacritic.com"), domain("espn.com"), domain("espn.com.au"), domain("espn.ph"), domain("espn.co.uk"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("weibo.com"), domain("weibo.cn"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com"), regexp(".*youtube.com\/live_chat.*"), domain("baked.live") {
     :root {
         /* Define variables */
-        --font-personal: -apple-system, BlinkMacSystemFont, "SF Pro",
-            "SF Pro Text", "Inter", "Roboto Flex", "Roboto", "Ubuntu", "Lato",
-            "Avenir Next", "Avenir", "Proxima Nova", "IBM Plex Sans",
-            "IBM Plex Sans JP", "IBM Plex Sans KR", "Helvetica Neue",
-            "Helvetica", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans", "Open Sans", "Droid Sans",
-            ".SF UI Display", "SF Pro Display", "SF Compact", "SF Hello";
+        --font: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+            Inter, "Roboto Flex", "Roboto", "Ubuntu", "Lato", "Fira Sans",
+            FiraGO, "FF Meta", "Avenir Next", Avenir, "Proxima Nova", "Nunito",
+            "Nunito Sans", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans", "Helvetica Neue", "Helvetica", "Noto Sans JP",
+            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Noto Sans",
+            "Open Sans", "Droid Sans", ".SF UI Display", "SF Pro Display",
+            "SF Compact", "SF Hello";
+        --readable: "Fira Sans", FiraGO, "FF Meta", "Source Sans Pro",
+            "Nunito Sans", "Nunito", "Raleway", "Road UA", "DIN Next",
+            "Bahnschrift", "alte din 1451 mittelschrift", "Keiner", "Dinish",
+            "Dinish Expanded", "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN",
+            "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans",
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans", "Trebuchet MS", "Roadgeek 2014", "Roadgeek 2005";
     }
 }
 
 @-moz-document domain("youtube.com") {
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: "Fira Sans", "FF Meta", "Road UA", "Roadgeek 2014",
-            "Roadgeek 2005", "Source Sans Pro", "DIN Next", "Bahnschrift",
-            "Nunito Sans", "Nunito", "alte din 1451 mittelschrift", "Keiner",
-            "Dinish", "Dinish Expanded", "Altinn-DIN", "D-DIN", "D-DIN Expanded",
-            "DIN", "IBM Plex Sans", "Noto Sans", "Noto Sans JP", "Noto Sans TC",
-            "Noto Sans SC", "Noto Sans KR", "Trebuchet MS", var(--font-personal),
-            "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica,
-            Verdana, "PT Sans Caption", sans-serif !important;
+        font-family: var(--readable), var(--font), "YouTube Noto", Roboto,
+            "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption",
+            sans-serif !important;
         color: #fff000 !important;
         background: none !important;
 
@@ -78,7 +81,7 @@
     }
 
     .x12qp5cl {
-        font-family: var(--facebook), var(--font-personal), Placeholder Font,
+        font-family: var(--facebook), var(--font), Placeholder Font,
             Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif !important;
     }
 
@@ -90,14 +93,14 @@
     ._9o1- > div,
     ._9ai0,
     ._1gaz {
-        font-family: var(--facebook), var(--font-personal), SFProText-Medium,
-            Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font), SFProText-Medium, Helvetica,
+            Arial, sans-serif !important;
     }
 
     ._8e63,
     ._9axz,
     ._8eso {
-        font-family: var(--facebook), var(--font-personal), SFProDisplay-Regular,
+        font-family: var(--facebook), var(--font), SFProDisplay-Regular,
             Helvetica, Arial, sans-serif !important;
     }
 
@@ -107,43 +110,42 @@
     ._58mk,
     ._8e4l,
     #globalContainer {
-        font-family: var(--facebook), var(--font-personal), SFProText-Regular,
-            Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font), SFProText-Regular, Helvetica,
+            Arial, sans-serif !important;
     }
 
     ._9o1v,
     ._42ft,
     ._9ai2,
     ._8esh {
-        font-family: var(--facebook), var(--font-personal), SFProText-Semibold,
-            Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font), SFProText-Semibold, Helvetica,
+            Arial, sans-serif !important;
     }
 
     .uiHeaderTitle {
-        font-family: var(--facebook), var(--font-personal), SFProDisplay-Bold,
-            Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font), SFProDisplay-Bold, Helvetica,
+            Arial, sans-serif !important;
     }
 
     ._4g34,
     ._53jh {
-        font-family: var(--facebook), var(--font-personal), Helvetica, Arial,
-            sans-serif !important;
+        font-family: var(--facebook), var(--font), Helvetica, Arial, sans-serif !important;
     }
 
     ._aacl,
     .x1i0vuye,
     ._acan {
-        font-family: var(--facebook), var(--font-personal), -apple-system,
+        font-family: var(--facebook), var(--font), -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     ._7y88 {
-        font-family: var(--facebook), var(--font-personal), Arial;
+        font-family: var(--facebook), var(--font), Arial;
     }
 
     .inputtext {
-        font-family: var(--facebook), var(--font-personal), Roboto-Regular,
-            Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook), var(--font), Roboto-Regular, Helvetica,
+            Arial, sans-serif !important;
     }
 }
 
@@ -155,22 +157,22 @@
     button,
     select,
     input {
-        font-family: var(--font-personal), sans-serif !important;
+        font-family: var(--font), sans-serif !important;
     }
 }
 
 @-moz-document domain("deepl.com") {
     body *:not(.fa) {
-        font-family: var(--font-personal), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+        font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif !important;
     }
 }
 
 @-moz-document domain("quora.com") {
     .q-box {
-        font-family: var(--font-personal), -apple-system, system-ui,
-            BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-            Cantarell, "Helvetica Neue", sans-serif !important;
+        font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+            sans-serif !important;
     }
 }
 
@@ -196,12 +198,11 @@
 @-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
     #container,
     #searchsubmit {
-        font-family: var(--font-personal), arial, helvetica, clean, sans-serif !important;
+        font-family: var(--font), arial, helvetica, clean, sans-serif !important;
     }
 
     #main {
-        font-family: var(--font-personal), "Helvetica Neue", Helvetica, Arial,
-            sans-serif !important;
+        font-family: var(--font), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 }
 
@@ -249,10 +250,10 @@
 
     body,
     .flex {
-        font-family: var(--font-plus-jakarta), var(--font-personal),
-            ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-            segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
-            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
+        font-family: var(--font-plus-jakarta), var(--font), ui-sans-serif,
+            system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+            helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
+            segoe ui emoji, segoe ui symbol, noto color emoji !important;
     }
 }
 
@@ -271,6 +272,7 @@
         font-size: 38px !important;
     }
 
+    .CoreText-sc-1txzju1-0,
     .chat-line__message,
     section[data-test-selector="chat-room-component-layout"].chat-scrollable-area__message-container,
     .whispers .thread-message__message,
@@ -350,34 +352,32 @@
 }
 @-moz-document domain("weibo.com"), domain("weibo.cn") {
     .woo-box-flex {
-        font-family: var(--font-personal), system-ui, -apple-system, Segoe UI,
-            Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif !important;
+        font-family: var(--font), system-ui, -apple-system, Segoe UI, Roboto,
+            Ubuntu, Cantarell, Noto Sans, sans-serif !important;
     }
 
     .WB_main,
     .gn_position,
     .WB_footer {
-        font-family: var(--font-personal), Arial, "PingFang SC",
-            "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
-            sans-serif;
+        font-family: var(--font), Arial, "PingFang SC", "Hiragino Sans GB",
+            "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     }
 
     .card,
     .main-text,
     h4 {
-        font-family: var(--font-personal), Helvetica Neue, Helvetica, Arial,
-            sans-serif !important;
+        font-family: var(--font), Helvetica Neue, Helvetica, Arial, sans-serif !important;
     }
 
     .woo-input-main {
-        font-family: var(--font-personal), "MS Shell Dlg 2" !important;
+        font-family: var(--font), "MS Shell Dlg 2" !important;
     }
 }
 
 @-moz-document domain("wordcounter.net") {
     .container,
     #box {
-        font-family: var(--font-personal), Helvetica, Arial !important;
+        font-family: var(--font), Helvetica, Arial !important;
     }
 }
 
@@ -460,7 +460,7 @@
     .thread-content-detail,
     .type-wrap-txt,
     .bbs-index-web-bbsindexWarp > div {
-        font-family: var(--font-personal), PingFangSC-Regular, PingFang SC, miui,
+        font-family: var(--font), PingFangSC-Regular, PingFang SC, miui,
             system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
             Helvetica, sans-serif !important;
     }
@@ -469,11 +469,11 @@
     .index_bbs-post-web-main-title-provider__uHAn9 > span,
     .index_bbs-post-web-main-title-provider__uHAn9,
     .main-c {
-        font-family: var(--font-personal), PingFangSC-Semibold !important;
+        font-family: var(--font), PingFangSC-Semibold !important;
     }
 
     .content-header {
-        font-family: var(--font-personal), PingFangSC-Semibold, PingFang SC !important;
+        font-family: var(--font), PingFangSC-Semibold, PingFang SC !important;
     }
 
     .post-user_user-base-info__AxpCI > a,
@@ -492,7 +492,7 @@
     .text-list-model,
     .user-operate,
     .list-item-lights {
-        font-family: var(--font-personal), PingFangSC-Regular !important;
+        font-family: var(--font), PingFangSC-Regular !important;
     }
 
     .notLogin > a > span,
@@ -504,7 +504,7 @@
     .hp-pc-rc-TopMenu-top,
     .radio-txt,
     .hot-title {
-        font-family: var(--font-personal), PingFangSC-Regular, PingFang SC !important;
+        font-family: var(--font), PingFangSC-Regular, PingFang SC !important;
     }
 
     .index_right-post-title__zN9JN,
@@ -512,19 +512,18 @@
     .right-post-title,
     .post-title,
     .post-info > div {
-        font-family: var(--font-personal), PingFangSC !important;
+        font-family: var(--font), PingFangSC !important;
     }
 
     .nav_qiantao_hupu210316,
     .title,
     .cntv_list > ul > li > a {
-        font-family: var(--font-personal), PingFangSC-Regular, Helvetica, Arial,
+        font-family: var(--font), PingFangSC-Regular, Helvetica, Arial,
             Microsoft Yahei, sans-serif !important;
     }
 
     .hot-index {
-        font-family: var(--font-personal), HelveticaNeue-CondensedBold,
-            HelveticaNeue !important;
+        font-family: var(--font), HelveticaNeue-CondensedBold, HelveticaNeue !important;
     }
 }
 
@@ -567,6 +566,10 @@
     .mini-suggest__button-text {
         font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
             arial, sans-serif !important;
+    }
+
+    .Label-Content {
+        font-family: "YS Text", Verdana, Arial, Helvetica, sans-serif !important;
     }
 }
 
