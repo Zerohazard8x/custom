@@ -17,6 +17,16 @@
                 "enabled": true,
                 "name": "X-Forwarded-For",
                 "value": "208.67.220.220, 2620:119:35::35"
+            },
+            {
+                "enabled": true,
+                "name": "Referer",
+                "value": "http://google.com/"
+            },
+            {
+                "enabled": true,
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.5"
             }
         ],
         "urlFilters": [{ "enabled": true, "urlRegex": ".*google.com.*" }],
