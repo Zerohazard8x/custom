@@ -114,6 +114,7 @@ chegg.com##div.gHnNJJ.styled__ComponentWrapper-sc-1v7qxzh-1:nth-of-type(2)
 convertio.co##.text-center.rating
 convertio.co##.js-softobar.softobar
 
+discord.com##.arrowIcon__1bc6e
 discord.com##.art-3yfHpl
 discord.com##.badgeContainer-1OeZs3
 discord.com##.badgeContainer-3TDXH5

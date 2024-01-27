@@ -127,3 +127,7 @@ eurogamer.net##.poll_wrapper
 eurogamer.net##.smart-slot
 
 destructoid.com##.top-sidebar-wrapper
+
+ign.com##.avatars-1.author-avatars.jsx-1825775112
+ign.com##.small.balanced.jsx-957202555.jsx-2010869752.interface
+ign.com##section.jsx-537794787.box-wrapper
