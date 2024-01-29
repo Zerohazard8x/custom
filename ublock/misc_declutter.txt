@@ -451,6 +451,10 @@ symbolab.com##.hide-until-loaded.print-hide.center-section-narrow.sidebar-conten
 symbolab.com##div.leftMenu.leftMenu-narrow
 symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-child
 
+thespike.gg##div > div > ul > li
+thespike.gg##div.featured-event_column__sm8P6:first-child
+thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
+
 time.is###lC
 time.is###quote
 time.is###time_zone > h2
@@ -460,11 +464,9 @@ time.is##h3
 
 tumblr.com##.B15CE
 
-thespike.gg##div > div > ul > li
-thespike.gg##div.featured-event_column__sm8P6:first-child
-thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
-
 to-do.live.com##.obf-Visible.obf-Toast
+
+tracker.gg##.premium-upsell-tooltip.trn-tooltip--active.trn-tooltip
 
 twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
 twitter.com##.r-14gqq1x.r-6gpygo.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r
