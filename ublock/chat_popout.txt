@@ -6,6 +6,7 @@
 
 twitch.tv###twilight-sticky-footer-root
 twitch.tv##.CoreText-sc-1txzju1-0 > .bTAXM.InjectLayout-sc-1i43xsx-0
+twitch.tv##.bFxzAY.Layout-sc-1xcs6mc-0
 twitch.tv##.bTKXKk.ibtYyW.ScCoreButtonSecondary-sc-ocjdkq-2.ScCoreButton-sc-ocjdkq-0 > .irroFV.ScCoreButtonLabel-sc-s7h2b7-0 > .phMMp.Layout-sc-1xcs6mc-0
 twitch.tv##.cVmNmw.Layout-sc-1xcs6mc-0 > .kjARyu.Layout-sc-1xcs6mc-0
 twitch.tv##.chat-line__timestamp
