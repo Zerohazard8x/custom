@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.4.3
+@version        2.4.4
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -132,19 +132,19 @@
         --plex: IBMPlexSans, "IBM Plex Sans";
     }
 
-    .tagline > a,
     #title,
     .label-container,
     .text-12:not(.text-neutral-content-weak),
     .text-neutral-content-strong,
-    a:not(.content > li > a):not(* > p > a):not(.bottom > a):not(
-            ._1a_HxF03jCyxnx706hQmJR > a
-        ):not(.comments):not(.post-sharing-button):not(.login-required > a):not(
-            form > span > a
-        ):not(._3t5uN8xUmg0TOwRCOGQEcU):not(.button-small):not(
-            .recover-password
-        ):not(p > em > a):not(faceplate-tracker > a),
+    a:not(.content > li > a):not(.account-activity-box > p > a):not(
+            .bottom > a
+        ):not(._1a_HxF03jCyxnx706hQmJR > a):not(.comments):not(
+            .post-sharing-button
+        ):not(.login-required > a):not(form > span > a):not(
+            ._3t5uN8xUmg0TOwRCOGQEcU
+        ):not(.button-small):not(.recover-password):not(blockquote > p > a),
     time:not(.bottom > span > time):not(.linkinfo > .date > time),
+    faceplate-number,
     .text-neutral-content-strong {
         font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
@@ -203,8 +203,6 @@
             sans-serif !important;
     }
 
-    .text-14,
-    .button > .flex,
     #description,
     .tagline,
     shreddit-app,
@@ -435,7 +433,6 @@
             RobotoDraft, Roboto-Regular;
     }
 
-    .wx62f,
     .yUTMj,
     #exps > button,
     #lud-search,
@@ -527,10 +524,12 @@
     g-expandable-content,
     h4,
     g-menu-item,
-    .gb_Kd,
+    .gb_Kd {
+        font-family: var(--google), arial, sans-serif !important;
+    }
+
     .T8VaVe {
-        font-family: var(--google), "Helvetica Neue", HelveticaNeue, arial,
-            sans-serif !important;
+        font-family: var(--google), arial, sans-serif !important;
     }
 
     .imso-medium-font,
@@ -548,7 +547,6 @@
             sans-serif !important;
     }
 
-    .iGVLpd > div,
     #gb-main,
     .UynAtc > span {
         font-family: var(--google), Roboto, Helvetica Neue, Arial, sans-serif !important;
@@ -570,6 +568,10 @@
     .clOx1e > span {
         font-family: var(--google), Google Sans, arial, sans-serif-medium,
             sans-serif !important;
+    }
+
+    .wx62f {
+        font-family: var(--google), Helvetica Neue, Arial, sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
