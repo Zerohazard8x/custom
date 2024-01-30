@@ -130,6 +130,7 @@ discord.com##.customizationSectionBackground-1-leQn.background-yH6t2p.premiumBac
 discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
 discord.com##.editorAnimate-2BAiXS.editor-1m9XtV
 discord.com##.emptyHeader-2tT-AY.defaultColor-1GKx81.heading-md-semibold-2h_vsp.defaultColor-1EVLSt
+discord.com##.heroBanner_e16ab1
 discord.com##.moreSubtitleMargin__91793.fullWidth__2b90a.subtitle_c3170a.text-lg-normal_d5fdbe
 discord.com##.scrollerBase-1Pkza4.none-1rXy4P.scroller-3X7KbA > div.listItem-3SmSlK:nth-of-type(7)
 discord.com##.tryItOutSection-W9qeGH.featureBorder-2Jl8g4.premiumFeatureBorder-1i95si
@@ -394,6 +395,9 @@ search.yahoo.com##.searchRightTopAds.reg
 shopee.*##.MPbswA
 shopee.*##._2ypCMv
 shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
+
+sofascore.com##.eVYfOf.sc-fqkvVR
+sofascore.com##.kKRTNa.sc-fqkvVR
 
 speedrun.com##div.lg\:block.hidden:nth-of-type(3)
 
