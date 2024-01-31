@@ -117,6 +117,7 @@ convertio.co##.js-softobar.softobar
 discord.com###popout_29
 discord.com##.arrowIcon__1bc6e
 discord.com##.art-3yfHpl
+discord.com##.artContainer_fc2857
 discord.com##.badgeContainer-1OeZs3
 discord.com##.badgeContainer-3TDXH5
 discord.com##.banner-3BK9qN
@@ -134,6 +135,7 @@ discord.com##.heroBanner_e16ab1
 discord.com##.moreSubtitleMargin__91793.fullWidth__2b90a.subtitle_c3170a.text-lg-normal_d5fdbe
 discord.com##.scrollerBase-1Pkza4.none-1rXy4P.scroller-3X7KbA > div.listItem-3SmSlK:nth-of-type(7)
 discord.com##.tryItOutSection-W9qeGH.featureBorder-2Jl8g4.premiumFeatureBorder-1i95si
+discord.com##.tryItOutSection__0f9fb.featureBorder_a44f20.premiumFeatureBorder__9bbb3
 discord.com##.vc-error-card.vc-m-bottom-8 > .modeDefault-3Warim.formText-2UzJT0.default-h5DUM7.size14-k_3Hy4.colorStandard-1Xxp1s
 
 discussions.apple.com##.announcements
