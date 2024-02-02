@@ -10,8 +10,10 @@ adobe.com##.static.modalContainer
 aftership.com##.css-1ovtwck
 
 amazon.com###apex_desktop
+amazon.com###availability
 amazon.com###corePriceDisplay_desktop_feature_div
 amazon.com###image-canvas-caption
+amazon.com###mbb_feature_div
 amazon.com###nav-flyout-anchor
 amazon.com##.a-declarative.prime-details
 amazon.com##.bbop-content > b:nth-of-type(1)
