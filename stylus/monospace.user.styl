@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.4.4
+@version        2.5.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -12,20 +12,29 @@
     :root {
         /* Define variables */
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+            "Roboto Flex", "Roboto", "Fira Sans", FiraGO, "FF Meta",
+            "Helvetica Neue", "Helvetica", "Noto Sans";
+        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
             "Roboto Flex", "Roboto", Söhne, Lato, Inter, "Proxima Nova",
             "Avenir Next", Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO,
             "FF Meta", Manrope, "Helvetica Neue", "Helvetica",
             "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu",
             "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans", "Open Sans", "Droid Sans", ".SF UI Display",
-            "SF Pro Display", "SF Compact", "SF Hello";
-        --serif: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
+            "SF Pro Display", "SF Compact", "SF Hello"; */
+        --serif: "Source Serif 4", "Source Serif Pro", "Shippori Mincho",
+            "Serif UI Display", "Noto Serif JP", "Noto Serif TC",
+            "Noto Serif SC", "Noto Serif KR", "Noto Serif", "Noto Sans JP",
+            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR";
+        /* --serif-full: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
             "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
             "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond",
             Lora, "Shippori Mincho", "Serif UI Display", "Noto Serif JP",
             "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif",
-            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR";
-        --monospace: "Fira Code Retina", "Fira Code VF", "Fira Code",
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR"; */
+        --monospace: "Fira Code VF", "Fira Code", "Fira Code Retina",
+            "Fira Mono";
+        /* --monospace-other: "Fira Code Retina", "Fira Code VF", "Fira Code",
             "Fira Mono", "Noto Mono", "Noto Sans Mono", "DroidSansM", "SF Mono",
             "SFMono-Regular", "CodeNewRoman Nerd Font", Consolas, Hack,
             "Hack Nerd Font", "Bitstream Vera Sans Mono",
@@ -34,14 +43,15 @@
             "Intel One Mono", Menlo, "MesloLG Nerd Font", Monaco, "Ubuntu Mono",
             "Ubuntu Mono Nerd Font", Agave, "Agave Nerd Font", Hasklig,
             "Hasklug Nerd Font", "Source Code Pro", "Source Code Pro Nerd Font",
-            "Andale Mono", "Lucida Console", "Lucida Sans Typewriter";
-        --block-mono: "Fantasque Sans Mono", "FantasqueSansM Nerd Font",
+            "Andale Mono", "Lucida Console", "Lucida Sans Typewriter"; */
+        /* --block-mono: "Fantasque Sans Mono", "FantasqueSansM Nerd Font",
             "IBM Plex Mono", "BlexMono Nerd Font", "Roboto Mono",
             "JetBrains Mono", "JetBrains Mono NL", "JetBrainsMono Nerd Font",
             ProFont, ProFontIIx, ProFontWindows, "Input Mono", "Envy Code R",
             "EnvyCodeR Nerd Font", "Iosevka Expanded", "Iosevka",
-            "Iosevka Nerd Font", "IosevkaTerm Nerd Font", "Input Sans";
-        --mono-combo: var(--monospace), var(--block-mono);
+            "Iosevka Nerd Font", "IosevkaTerm Nerd Font", "Input Sans"; */
+        --mono-combo: var(--monospace);
+        /* --mono-combo: var(--monospace), var(--block-mono); */
     }
 }
 
@@ -132,25 +142,26 @@
         --plex: IBMPlexSans, "IBM Plex Sans";
     }
 
+    .tagline > a,
     #title,
     .label-container,
     .text-12:not(.text-neutral-content-weak),
     .text-neutral-content-strong,
-    a:not(.content > li > a):not(.account-activity-box > p > a):not(
-            .bottom > a
-        ):not(._1a_HxF03jCyxnx706hQmJR > a):not(.comments):not(
-            .post-sharing-button
-        ):not(.login-required > a):not(form > span > a):not(
-            ._3t5uN8xUmg0TOwRCOGQEcU
-        ):not(.button-small):not(.recover-password):not(blockquote > p > a),
+    a:not(.content > li > a):not(* > p > a):not(.bottom > a):not(
+            ._1a_HxF03jCyxnx706hQmJR > a
+        ):not(.comments):not(.post-sharing-button):not(.login-required > a):not(
+            form > span > a
+        ):not(._3t5uN8xUmg0TOwRCOGQEcU):not(.button-small):not(
+            .recover-password
+        ):not(p > em > a):not(faceplate-tracker > a),
     time:not(.bottom > span > time):not(.linkinfo > .date > time),
-    faceplate-number,
     .text-neutral-content-strong {
         font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
+    .stamp,
     #header,
     #search > input,
     .c-btn.login-required,
@@ -203,6 +214,8 @@
             sans-serif !important;
     }
 
+    .text-14,
+    .button > .flex,
     #description,
     .tagline,
     shreddit-app,
@@ -433,6 +446,7 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .wx62f,
     .yUTMj,
     #exps > button,
     #lud-search,
@@ -524,12 +538,10 @@
     g-expandable-content,
     h4,
     g-menu-item,
-    .gb_Kd {
-        font-family: var(--google), arial, sans-serif !important;
-    }
-
+    .gb_Kd,
     .T8VaVe {
-        font-family: var(--google), arial, sans-serif !important;
+        font-family: var(--google), "Helvetica Neue", HelveticaNeue, arial,
+            sans-serif !important;
     }
 
     .imso-medium-font,
@@ -547,6 +559,7 @@
             sans-serif !important;
     }
 
+    .iGVLpd > div,
     #gb-main,
     .UynAtc > span {
         font-family: var(--google), Roboto, Helvetica Neue, Arial, sans-serif !important;
@@ -568,10 +581,6 @@
     .clOx1e > span {
         font-family: var(--google), Google Sans, arial, sans-serif-medium,
             sans-serif !important;
-    }
-
-    .wx62f {
-        font-family: var(--google), Helvetica Neue, Arial, sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
