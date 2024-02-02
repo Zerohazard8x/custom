@@ -107,8 +107,6 @@ oneesports.gg###footer-mpli
 oneesports.gg##.reading-time.post-meta
 oneesports.gg##div.transition-none.col-lg-8:nth-of-type(1) > user-reactions
 
-sportbible.com##.css-mg9b9w
-
 fortune.com##.related-video-container
 
 dailymail.co.uk###mol-d1b20340-78a7-11ee-b370-15ff96628aa1
@@ -131,3 +129,5 @@ destructoid.com##.top-sidebar-wrapper
 ign.com##.avatars-1.author-avatars.jsx-1825775112
 ign.com##.small.balanced.jsx-957202555.jsx-2010869752.interface
 ign.com##section.jsx-537794787.box-wrapper
+
+tomsguide.com,windowscentral.com,pcgamer.com##aside.hawk-processed.hawk-nest
