@@ -855,7 +855,6 @@
 ||translate-pa.googleapis.com$all
 ||trfrance.co.uk$all
 ||trinitymedia.ai$all
-||turner.com$all
 ||tvid.in$all
 ||tvtoday.de/bundles/frontend/js/sourcepoint$all
 ||typeform.com$all
@@ -932,6 +931,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||turner.com$script,inline-script,object,ping,stylesheet,other
 ||adtidy.org$script,inline-script,object,ping,stylesheet,other
 ||js-cdn.music.apple.com$script,inline-script,object,ping,stylesheet,other
 ||betacdn.net$script,inline-script,object,ping,stylesheet,other
