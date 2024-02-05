@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.5.0
+@version        2.5.1
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -153,7 +153,7 @@
             form > span > a
         ):not(._3t5uN8xUmg0TOwRCOGQEcU):not(.button-small):not(
             .recover-password
-        ):not(p > em > a):not(faceplate-tracker > a),
+        ):not(p > em > a):not(faceplate-tracker > a):not(ul > li > a),
     time:not(.bottom > span > time):not(.linkinfo > .date > time),
     .text-neutral-content-strong {
         font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
@@ -178,13 +178,17 @@
             sans-serif !important;
     }
 
+    ._2-cXnP74241WI7fpcpfPmg,
     ._3yx4Dn0W3Yunucf5sVJeFU,
     ._1LHxa-yaHJwrPK8kuyv_Y4,
     ._3VvVLJHakguGRWc5JxUX40,
     .q_unSaY23rpdd3lDvGZ-,
     .btn,
     .hover,
-    .md > h1:not(.usertext-body > .md > h1),
+    .md
+        > h1:not(.usertext-body > .md > h1):not(
+            ._3ms2Z8z8rPWLXaErcTJ9yH > * > h1
+        ),
     .md > h2,
     .md > h3,
     .morelink,
