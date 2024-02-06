@@ -15,13 +15,14 @@
 }
 
 @-moz-document domain("google.com") {
+    .e9EfHf,
     .Fh5muf,
     #gb-main,
     .EIlDfe,
     .L3eUgb,
     .pdqVLc,
     .pSp5K,
-    #cnt,
+    #cnt:not(#main > #cnt),
     #drive_main_page,
     .Q3DXx,
     .RNNXgb:not(.A8SBwf > .RNNXgb),
@@ -251,10 +252,10 @@
     div.relative.z-0.flex.h-full.w-full.overflow-hidden {
         filter: sepia(60%);
     }
-	
-	html > .antialiased {
-		background: #262321 !important;
-	}
+
+    html > .antialiased {
+        background: #262321 !important;
+    }
 }
 
 @-moz-document domain("w3schools.com") {
@@ -525,7 +526,7 @@
 }
 
 @-moz-document regexp(".*youtube.com\/live_chat.*") {
-    .yt-live-chat-renderer {
+    #chat-messages.style-scope.yt-live-chat-renderer.iron-selected {
         filter: sepia(60%);
     }
 }
