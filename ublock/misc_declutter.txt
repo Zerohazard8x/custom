@@ -303,6 +303,7 @@ monkeytype.com###bannerCenter
 monkeytype.com###newVersionIndicator
 
 music.apple.com##.svelte-36irpb.upsell-banner
+music.apple.com##.svelte-vr90x9.upsell-banner
 
 myanimelist.net##.ga-impression.bottom-bar
 myanimelist.net##.ga-impression.top_signup
