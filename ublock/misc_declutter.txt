@@ -116,6 +116,9 @@ chegg.com##div.gHnNJJ.styled__ComponentWrapper-sc-1v7qxzh-1:nth-of-type(2)
 convertio.co##.text-center.rating
 convertio.co##.js-softobar.softobar
 
+deepl.com##.CharLimitSignupAdV2-module--heading--VD2iq
+deepl.com##.empty\:hidden.z-20.left-2.bottom-2.fixed
+
 discord.com###popout_29
 discord.com##.arrowIcon__1bc6e
 discord.com##.art-3yfHpl
@@ -234,6 +237,7 @@ google.com##.gacct-section.gacct-hero-feature
 google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
 google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
 google.com##.h-u-mt-l.gacct-section.gacct-epilog
+google.com##.h-u-mt-l.gacct-section.gacct-epilog
 
 hltv.org##.footer
 hltv.org##.gtSmartphone-only.streams-section
@@ -241,6 +245,9 @@ hltv.org##.newsgrouping-header
 hltv.org##.right2Col > aside:nth-of-type(2)
 hltv.org##.yabo-firstcol-box
 hltv.org##aside:nth-of-type(1) > .presented-by-row
+
+icloud.com##.icloud-animated-hero
+icloud.com##.tiles
 
 imgur.com##.Button.EmeraldButton
 imgur.com##.Sticky.Top
@@ -389,6 +396,7 @@ reddit.com##div.text-14.text-neutral-content-weak
 reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
+||www.redditstatic.com/desktop2x/img/powerups/moderator-achievement.svg$image
 
 search.yahoo.com###ft
 search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
