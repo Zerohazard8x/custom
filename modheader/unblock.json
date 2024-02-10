@@ -25,6 +25,7 @@
         "title": "unblock",
         "shortTitle": "1",
         "version": 2,
-        "alwaysOn": true
+        "alwaysOn": true,
+        "excludeUrlFilters": [{ "enabled": true, "urlRegex": ".*lazada.*" }]
     }
 ]

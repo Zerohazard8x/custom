@@ -278,6 +278,11 @@ lazada.*##.hotBorder--3N6k
 lazada.*##.hp-pc-lift-nav.J_LiftNav
 lazada.*##.pdp-mod-product-price-topbanner
 lazada.*##.pdp-seller-info-pc
+||img.lazcdn.com/g/tps/*.png$image
+||img.lazcdn.com/g/tps/imgextra/i2/O1CN014*_!!600000000*-2-tps-1*.png$image
+||laz-img-cdn.alicdn.com/images/ims-web/TB18x8whRr0gK0jSZFnXXbRRXXa.png$image
+||laz-img-cdn.alicdn.com/images/ims-web/TB1whF0i9slXu8jSZFuXXXg7FXa.png$image
+||laz-img-cdn.alicdn.com/images/ims-web/TB1x.lwhHj1gK0jSZFuXXcrHpXa.png$image 
 ||lzd-img-global.slatic.net/g/gcp/lazada/9dcfc6b9-6fe7-4845-a19f-32483484ce1b_ALL-121-52.png_2200x2200q80.png_.webp$image
 
 mathsolver.microsoft.com##.c0
