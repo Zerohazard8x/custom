@@ -38,13 +38,6 @@ baked.live###rustbanner
 baked.live###userlist
 baked.live##div > .timestamp
 
-bard.google.com##.location-buttons-dot
-bard.google.com##.location-clickable.update-location-text > span:nth-of-type(2)
-bard.google.com##.location-footer-atl-text
-bard.google.com##.pagination-wrapper
-bard.google.com##ogb-menu-controls > .ng-star-inserted
-bard.google.com##xap-count-badge
-
 !------!
 ! Represents the 6th and 7th elements
 bing.com###b_results > li.b_bfb_lcg:nth-child(n+6):nth-child(-n+7)
@@ -210,6 +203,8 @@ forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-o
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__text
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
 
+gemini.google.com##upsell-button.ng-star-inserted
+
 genius.com##.gTBWpu.SongComments__Footer-sc-131p4fy-11
 genius.com##.vrxkS.InnerSectionDivider-sc-1x4onqw-0
 
@@ -228,6 +223,7 @@ github.com##.mx-auto.col-8 > .mb-2
 github.com##.rounded-2.p-3.color-border-muted.border.color-bg-default.dashboard-changelog.mb-3
 github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
 
+google.com###OotqVd
 google.com###helpful
 google.com###personalized
 google.com###secure
@@ -236,7 +232,6 @@ google.com##.footer
 google.com##.gacct-section.gacct-hero-feature
 google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
 google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
-google.com##.h-u-mt-l.gacct-section.gacct-epilog
 google.com##.h-u-mt-l.gacct-section.gacct-epilog
 
 hltv.org##.footer
@@ -284,6 +279,11 @@ lazada.*##.hp-pc-lift-nav.J_LiftNav
 lazada.*##.pdp-mod-product-price-topbanner
 lazada.*##.pdp-seller-info-pc
 ||lzd-img-global.slatic.net/g/gcp/lazada/9dcfc6b9-6fe7-4845-a19f-32483484ce1b_ALL-121-52.png_2200x2200q80.png_.webp$image
+
+mathsolver.microsoft.com##.c0
+
+math.microsoft.com##.Hero_desktop__RD9zm.Hero_hero__ebQkO
+math.microsoft.com##div.ImageParagraphSection_imageParagraphSection__Ckf2_
 
 meet.google.com##.AkYcJb.dQO5xd
 meet.google.com##.k3Pzib.ws7pec
@@ -520,6 +520,7 @@ wikiwand.com##.footer_title__GtcWC
 wikiwand.com##.logoIcon_sep__6ACnW
 
 wolframalpha.com##.QRoJJ.sc-f3dfd2ae-0
+wolframalpha.com##.chGUCO.sc-373a152b-0
 
 wordcounter.net###top_counter > .row
 wordcounter.net###editor_container > div > .row
