@@ -4,6 +4,8 @@
 ! Title: Zerohazard's decluttering
 [uBlock Origin]
 
+accounts.google.com##.SYDc7
+
 adobe.com##.aem-GridColumn--offset--default--0.aem-GridColumn--offset--phone--0.aem-GridColumn--default--12.aem-GridColumn.aem-GridColumn--tablet--none.aem-GridColumn--phone--12.aem-GridColumn--default--none.aem-GridColumn--phone--hide.aem-GridColumn--offset--tablet--0.aem-GridColumn--tablet--12.flex
 adobe.com##.static.modalContainer
 
@@ -93,6 +95,13 @@ bing.com##div.musCard.focusin:last-child
 bing.com##section.msbModule.moduleCont:first-child
 !------!
 
+brainly.*###credential_picker_container
+brainly.*##.AnswerBoxLayout-module__blockade--LhO51.sg-animation-fade-in-fast
+brainly.*##.Tooltip-module__brn-tooltip-box--bottom-start-arrow-only--pDMYQ.Tooltip-module__brn-tooltip-box--e8HHN
+brainly.*##.Tooltip-module__brn-tooltip-box--left-start-arrow-only--RxGxj.Tooltip-module__brn-tooltip-box--e8HHN
+brainly.*##.Tooltip-module__brn-tooltip-box--top-start-arrow-only--6j96W.Tooltip-module__brn-tooltip-box--e8HHN
+brainly.*##.js-react-newest-questions
+
 breezewiki.com,antifandom.com,bw.artemislena.eu##.bw-top-banner
 
 byjus.com###adtech-related-links-container
@@ -105,6 +114,10 @@ chegg.com##.TUcyk.styled__B1AdsWrapper-sc-1nx2zdf-0
 chegg.com##.jVGOCz.styled__BannerAdPlaceholder-kj3hee-1
 chegg.com##.lhjuGU.styled__QnaAnswerExpertDisclaimer-sc-1n9zsh8-6
 chegg.com##div.gHnNJJ.styled__ComponentWrapper-sc-1v7qxzh-1:nth-of-type(2)
+
+codashop.com##.form-section__recent-transaction
+codashop.com##.product-faq-section
+codashop.com##.product-long-description__content
 
 convertio.co##.text-center.rating
 convertio.co##.js-softobar.softobar
@@ -265,6 +278,7 @@ instructure.com##.eesy_canvas.eesy_container_v4.eesy_container
 
 khanacademy.org###donate-banner
 
+lazada.*###J_CampaignBanner
 lazada.*###module_guide_app
 lazada.*###module_installment
 lazada.*###topActionLiveUpBanner
@@ -275,6 +289,7 @@ lazada.*##.flash-sale-banner.J_FSBgImg
 lazada.*##.footer-second
 lazada.*##.footer-third
 lazada.*##.hotBorder--3N6k
+lazada.*##.hp-mod-card-header.rax-view-v2
 lazada.*##.hp-pc-lift-nav.J_LiftNav
 lazada.*##.pdp-mod-product-price-topbanner
 lazada.*##.pdp-seller-info-pc
