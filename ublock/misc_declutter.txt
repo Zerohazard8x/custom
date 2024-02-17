@@ -210,6 +210,9 @@ fandom.com##.global-navigation
 fandom.com##.rail-module.railModule
 fandom.com##.rail-recentImages-module
 
+finance.yahoo.com##.Pos\(r\).End\(130px\).smartphone_D\(n\).C\(\$featureCueBgc\).Pos\(a\)\!.Fz\(s\).Bdrs\(8px\).D\(ib\).O\(n\)\:f.M\(0\).Whs\(n\)
+finance.yahoo.com##.Mend\(19px\).Mb\(8px\).Fz\(0\.875rem\)
+
 forum.xda-developers.com,xdaforums.com##.js-bottomFixTarget.u-bottomFixer
 forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
 forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-of-type(3)
@@ -299,6 +302,9 @@ lazada.*##.pdp-seller-info-pc
 ||laz-img-cdn.alicdn.com/images/ims-web/TB1whF0i9slXu8jSZFuXXXg7FXa.png$image
 ||laz-img-cdn.alicdn.com/images/ims-web/TB1x.lwhHj1gK0jSZFuXXcrHpXa.png$image 
 ||lzd-img-global.slatic.net/g/gcp/lazada/9dcfc6b9-6fe7-4845-a19f-32483484ce1b_ALL-121-52.png_2200x2200q80.png_.webp$image
+
+marketwatch.com##.afterhours.fixed.container--trending.container
+marketwatch.com##.has-ad.full-width.bulletins.column--full.column
 
 mathsolver.microsoft.com##.c0
 
