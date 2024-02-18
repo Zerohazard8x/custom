@@ -1059,7 +1059,6 @@
 ||drift.com$script,inline-script,object,ping,stylesheet,other
 ||driftt.com$script,inline-script,object,ping,stylesheet,other
 ||dscd.akamai.net$script,inline-script,object,ping,stylesheet,other
-||dscw27.akamai.net$script,inline-script,object,ping,stylesheet,other
 ||dyncdn2.com$script,inline-script,object,ping,stylesheet,other
 ||ebayimg.com$script,inline-script,object,ping,stylesheet,other
 ||edge-chat.messenger.com$script,inline-script,object,ping,stylesheet,other
