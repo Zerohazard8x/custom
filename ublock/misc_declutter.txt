@@ -188,6 +188,8 @@ ecosia.org##.section-wrapper--secondary.financial-report-section.section-wrapper
 ecosia.org##.wave-separator--visible.wave-separator--variant-primary.wave-separator
 ecosia.org##.wave-separator--visible.wave-separator--variant-tertiary.wave-separator
 
+emojipedia.org##.w-full.mb-9
+
 !------!
 ! Represents elements 8 and 10 (diff. of 2 -> -2n+10)
 facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+8):nth-child(-2n+10)
@@ -271,11 +273,14 @@ instructure.com###context_external_tool_242_menu_item
 instructure.com###context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
 instructure.com###eesy-tab-inner
 instructure.com###eesy-tab-inner > div.eesy-tab2-btn-content
+instructure.com###flash_message_holder
 instructure.com###global_nav_libraries_link
 instructure.com###global_nav_libraries_menu
 instructure.com###global_nav_student_services_link
 instructure.com###global_nav_student_services_menu
+instructure.com###quiz-time-elapsed > div:nth-of-type(1)
 instructure.com###right-side > div > h2.todo-list-header:nth-child(n+1):nth-child(-3n+4)
+instructure.com###right-side h3
 instructure.com##.eesy_canvas.eesy_container_v4.eesy_container
 ||chat-sin.instructure.com/mini$domain=instructure.com
 
@@ -424,6 +429,12 @@ reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 ||www.redditstatic.com/desktop2x/img/powerups/moderator-achievement.svg$image
+
+roblox.com###app-stores-container
+roblox.com###chat-container
+roblox.com###game-age-recommendation-details
+roblox.com##.ng-scope.social-links.stack > .container-header
+||images.rbxcdn.com/78*g$image
 
 search.yahoo.com###ft
 search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-ib.p-rel
