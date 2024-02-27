@@ -57,8 +57,8 @@ youtube.com###about-these-results
 youtube.com###paid-comment-background
 youtube.com###ticker
 youtube.com##.ytd-rich-section-renderer.style-scope
-youtube.com##.ythd-israel-support
 youtube.com##plasmo-csui
 youtube.com##yt-live-chat-author-chip.yt-live-chat-message-input-renderer.style-scope
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
 youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n+3):nth-child(-n+4)
+youtube.com##ytd-metadata-row-container-renderer.ytd-watch-metadata.style-scope

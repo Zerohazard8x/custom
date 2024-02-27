@@ -449,6 +449,10 @@ shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-
 sofascore.com##.eVYfOf.sc-fqkvVR
 sofascore.com##.kKRTNa.sc-fqkvVR
 
+softcobra.com###rjvtzejbrgxquxexyryxzqekxzvlamtblfocmveivdtnmzztvtpyjxb
+
+soundiiz.com##.title-inline.info-message.message
+
 speedrun.com##div.lg\:block.hidden:nth-of-type(3)
 
 speedtest.net##.celebration-modal.modal-in-place.modal
@@ -473,8 +477,10 @@ stackoverflow.com,superuser.com,stackexchange.com##li.ml8.mt16:nth-child(6)
 stackoverflow.com,superuser.com,stackexchange.com##li.ps-relative:nth-of-type(7)
 
 store.steampowered.com###achievement_block
+store.steampowered.com###noReviewsWriteOne
 store.steampowered.com###noteworthy_tab
 store.steampowered.com##.content > h1
+store.steampowered.com##.game_rating_agency
 store.steampowered.com##.glance_details
 store.steampowered.com##.responsive_apppage_reviewblock.block.steam_curators_block
 store.steampowered.com##a.top_promo.ds_no_flags.app_impression_tracked:first-child
@@ -532,6 +538,7 @@ twitter.com##.r-1p6iasa.r-4amgru.r-18u37iz.r-1awozwy.css-175oi2r
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
 twitter.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
 twitter.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r:nth-of-type(4) > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(1)
 
 vlr.gg##.d8fyh
 vlr.gg##.jd8ag
