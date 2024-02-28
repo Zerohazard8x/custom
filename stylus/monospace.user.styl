@@ -1,20 +1,20 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.5.4
+@version        2.6.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("appledb.dev") {
     :root {
         /* Define variables */
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-            "Roboto Flex", "Roboto", "Fira Sans", FiraGO, "FF Meta",
-            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
-            "Noto Sans";
+            "Roboto Flex", "Roboto", Inter, "Inter V", "Fira Sans", FiraGO,
+            "FF Meta", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+            "Noto Sans KR", "Noto Sans";
         /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
             "Roboto Flex", "Roboto", Barlow, Söhne, Lato, "Motiva Sans", "Proxima Nova", Inter,
             "Avenir Next", Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO,
@@ -174,7 +174,9 @@
             form > span > a
         ):not(._3t5uN8xUmg0TOwRCOGQEcU):not(.button-small):not(
             .recover-password
-        ):not(p > em > a):not(faceplate-tracker > a):not(ul > li > a),
+        ):not(p > em > a):not(faceplate-tracker > a):not(ul > li > a):not(
+            .pointer-events-auto
+        ):not(h6 > a),
     time:not(.bottom > span > time):not(.linkinfo > .date > time),
     .text-neutral-content-strong {
         font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
@@ -209,7 +211,7 @@
     .md
         > h1:not(.usertext-body > .md > h1):not(
             ._3ms2Z8z8rPWLXaErcTJ9yH > * > h1
-        ),
+        ):not(.mb-sm > div > h1),
     .md > h2:not(._3ms2Z8z8rPWLXaErcTJ9yH h2),
     .md > h3,
     .morelink,
@@ -1131,5 +1133,20 @@
 @-moz-document domain("fandom.com") {
     .text > b > code {
         font-family: var(--mono-combo), monospace !important;
+    }
+}
+
+@-moz-document domain("appledb.dev") {
+    .home,
+    .navbar,
+    .page {
+        font-family: var(--sans), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+            "Helvetica Neue", sans-serif !important;
+    }
+
+    .text > code {
+        font-family: var(--mono-combo), Consolas, Monaco, "Andale Mono",
+            "Ubuntu Mono", monospace !important;
     }
 }
