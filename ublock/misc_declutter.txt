@@ -462,7 +462,11 @@ shopee.*##.MPbswA
 shopee.*##._2ypCMv
 shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
 
+sofascore.com###portals
+sofascore.com##.dFWpTa.sc-fqkvVR
 sofascore.com##.eVYfOf.sc-fqkvVR
+sofascore.com##.hhyMoi.sc-fqkvVR
+sofascore.com##.hwVmER.sc-fqkvVR
 sofascore.com##.kKRTNa.sc-fqkvVR
 
 softcobra.com###rjvtzejbrgxquxexyryxzqekxzvlamtblfocmveivdtnmzztvtpyjxb
