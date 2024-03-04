@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.6.0
+@version        2.6.1
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -163,6 +163,8 @@
         --plex: IBMPlexSans, "IBM Plex Sans";
     }
 
+    .input-container > input,
+    .text-ellipsis > span,
     .tagline > a,
     #title,
     .label-container,
@@ -178,6 +180,7 @@
             .pointer-events-auto
         ):not(h6 > a),
     time:not(.bottom > span > time):not(.linkinfo > .date > time),
+    .text-neutral-content-weak:not(h2):not(.leading-4 > *),
     .text-neutral-content-strong {
         font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
@@ -213,7 +216,7 @@
             ._3ms2Z8z8rPWLXaErcTJ9yH > * > h1
         ):not(.mb-sm > div > h1),
     .md > h2:not(._3ms2Z8z8rPWLXaErcTJ9yH h2),
-    .md > h3,
+    .md > h3:not(.mb-sm > div > h3),
     .morelink,
     .side::after,
     .titlebox h1,
@@ -247,12 +250,7 @@
     #description,
     .tagline,
     shreddit-app,
-    a.button-small {
-        font-family: var(--noto), -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-    }
-
+    a.button-small,
     .add,
     .author,
     .buttons > button,
@@ -277,7 +275,10 @@
     blockquote > ul > li,
     body > p,
     .usertext-body {
-        font-family: var(--noto), verdana, arial, helvetica, sans-serif !important;
+        font-family: var(--noto), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, verdana, arial,
+            helvetica, sans-serif !important;
     }
 
     code,

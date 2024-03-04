@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        4.0.1
+@version        4.0.2
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -203,6 +203,7 @@
 }
 
 @-moz-document domain("github.com") {
+    body > #__next,
     div.logged-in.env-production.page-responsive.full-width,
     div.logged-in.env-production.page-responsive,
     div.sr-only {
@@ -556,6 +557,18 @@
     .home,
     .navbar,
     .page {
+        filter: sepia(40%);
+    }
+}
+
+@-moz-document domain("chat.mistral.ai") {
+    .bg-background {
+        filter: sepia(40%);
+    }
+}
+
+@-moz-document domain("9xbuddy.in") {
+    #root > section {
         filter: sepia(40%);
     }
 }

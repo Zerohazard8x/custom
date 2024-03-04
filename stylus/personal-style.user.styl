@@ -5,10 +5,10 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.5.0
+@version        2.5.1
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("instructure.com"), domain("msn.com"), domain("metacritic.com"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("weibo.com"), domain("weibo.cn"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com"), regexp(".*youtube.com\/live_chat.*"), domain("baked.live") {
+@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("instructure.com"), domain("msn.com"), domain("metacritic.com"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("weibo.com"), domain("weibo.cn"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com"), regexp(".*youtube.com\/live_chat.*"), domain("baked.live"), domain("chat.mistral.ai"), domain("9xbuddy.in") {
     :root {
         /* Define variables */
         --font: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
@@ -275,6 +275,10 @@
         font-size: 38px !important;
     }
 
+    .cCvSAC,
+    .chat-line__status,
+    .chat-line__message,
+    .bQEtql,
     .CoreText-sc-1txzju1-0,
     .chat-line__message,
     section[data-test-selector="chat-room-component-layout"].chat-scrollable-area__message-container,
@@ -580,5 +584,21 @@
     #messagebuffer > div {
         font-size: 50px !important;
         line-height: 1.5 !important;
+    }
+}
+
+@-moz-document domain("chat.mistral.ai") {
+    .bg-background {
+        font-family: var(--font), ui-sans-serif, system-ui, sans-serif,
+            Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
+    }
+}
+
+@-moz-document domain("9xbuddy.in") {
+    #root > section {
+        font-family: var(--font), ui-sans-serif, system-ui, -apple-system,
+            BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+            Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+            Segoe UI Symbol, Noto Color Emoji !important;
     }
 }
