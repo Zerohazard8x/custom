@@ -945,7 +945,6 @@
 ||cloudinary.com$script,inline-script,object,ping,stylesheet,other
 ||geogebra.org$script,inline-script,object,ping,stylesheet,other
 ||dspg.akamaiedge.net$script,inline-script,object,ping,stylesheet,other
-||people-pa.clients6.google.com$script,inline-script,object,ping,stylesheet,other
 ||mm-production.rappler.com$script,inline-script,object,ping,stylesheet,other
 ||firebaseio.com$script,inline-script,object,ping,stylesheet,other
 ||launchdarkly.com$script,inline-script,object,ping,stylesheet,other
