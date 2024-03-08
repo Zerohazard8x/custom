@@ -432,7 +432,6 @@ reddit.com##.icon-add.icon._3uVYL9qgX3QSEa_F4F-DPv
 reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
 reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm
 reddit.com##.listingsignupbar.infobar
-reddit.com##.masthead
 reddit.com##.prompt
 reddit.com##.u6HtAZu8_LKL721-EnKuR._2J_zB4R1FH2EjGMkQjedwc
 reddit.com##.xs\:mx-0.mb-\[16px\].p-\[12px\].bg-tone-5.max-w-full.rounded-\[4px\].cursor-pointer.items-center.justify-start.relative.flex
