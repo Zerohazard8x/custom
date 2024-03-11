@@ -12,12 +12,12 @@
 /.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(font-optical-sizing: auto !important)
 /.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon):style(font-synthesis: none !important)
 
-/.*/##pre,code,b,tt:style(font-feature-settings: "liga", "clig", "calt", "dlig", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08" !important)
+/.*/##pre,code,tt:style(font-feature-settings: "liga", "clig", "calt", "dlig", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08" !important)
 
-/.*/##pre,code,b,tt:style(-webkit-font-smoothing: antialiased !important)
-/.*/##pre,code,b,tt:style(-moz-osx-font-smoothing: grayscale !important)
-/.*/##pre,code,b,tt:style(-ms-font-smoothing: antialiased !important)
-/.*/##pre,code,b,tt:style(text-rendering: optimizeLegibility !important)
+/.*/##pre,code,tt:style(-webkit-font-smoothing: antialiased !important)
+/.*/##pre,code,tt:style(-moz-osx-font-smoothing: grayscale !important)
+/.*/##pre,code,tt:style(-ms-font-smoothing: antialiased !important)
+/.*/##pre,code,tt:style(text-rendering: optimizeLegibility !important)
 
-/.*/##pre,code,b,tt:style(font-optical-sizing: auto !important)
-/.*/##pre,code,b,tt:style(font-synthesis: none !important)
+/.*/##pre,code,tt:style(font-optical-sizing: auto !important)
+/.*/##pre,code,tt:style(font-synthesis: none !important)
