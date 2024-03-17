@@ -35,26 +35,21 @@
             "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR"; */
         --monospace: "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Mono";
-        /* --monospace-full: "Monaspace Argon Var", "Monaspace Argon VF",
-            "Monaspace Argon", "Fira Code VF", "Fira Code", "Fira Mono",
-            "Fira Code Retina", "Noto Mono", "Noto Sans Mono", "DroidSansM",
-            "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font", Consolas,
-            Hack, "Hack Nerd Font", "Bitstream Vera Sans Mono",
+        /* --monospace: "Monaspace Argon Var", "Monaspace Argon VF", "Monaspace Argon", "Fira Code VF", "Fira Code",
+            "Fira Mono", "Fira Code Retina", "Noto Mono", "Noto Sans Mono", "DroidSansM", "SF Mono",
+            "SFMono-Regular", "CodeNewRoman Nerd Font", Consolas, Hack,
+            "Hack Nerd Font", "Bitstream Vera Sans Mono",
             "BitstromWera Nerd Font", "DejaVu Sans Mono", "Cascadia Code",
             "CaskaydiaCove Nerd Font", "Cascadia Mono", "Segoe UI Mono",
             "Intel One Mono", Menlo, "MesloLG Nerd Font", Monaco, "Ubuntu Mono",
             "Ubuntu Mono Nerd Font", Agave, "Agave Nerd Font", Hasklig,
             "Hasklug Nerd Font", "Source Code Pro", "Source Code Pro Nerd Font",
             "Andale Mono", "Lucida Console", "Lucida Sans Typewriter"; */
-        /* --block-mono: "Monaspace Neon Var", "Monaspace Neon VF",
-            "Monaspace Neon", "IBM Plex Mono", "BlexMono Nerd Font",
-            "Roboto Mono", "JetBrains Mono", "JetBrains Mono NL",
-            "JetBrainsMono Nerd Font", "Fantasque Sans Mono",
-            "FantasqueSansM Nerd Font", "Monaspace Krypton Var",
-            "Monaspace Krypton VF", "Monaspace Krypton", ProFont, ProFontIIx,
-            ProFontWindows, "Input Mono", "Envy Code R", "EnvyCodeR Nerd Font",
-            "Iosevka Expanded", "Iosevka", "Iosevka Nerd Font",
-            "IosevkaTerm Nerd Font", "Input Sans"; */
+        /* --block-mono: "Monaspace Neon Var", "Monaspace Neon VF", "Monaspace Neon", "IBM Plex Mono", "BlexMono Nerd Font", "Roboto Mono",
+            "JetBrains Mono", "JetBrains Mono NL", "JetBrainsMono Nerd Font", "Fantasque Sans Mono", "FantasqueSansM Nerd Font",
+            "Monaspace Krypton Var", "Monaspace Krypton VF", "Monaspace Krypton", ProFont, ProFontIIx, ProFontWindows, "Input Mono", "Envy Code R",
+            "EnvyCodeR Nerd Font", "Iosevka Expanded", "Iosevka",
+            "Iosevka Nerd Font", "IosevkaTerm Nerd Font", "Input Sans"; */
         --mono-combo: var(--monospace);
         /* --mono-combo: var(--monospace), var(--block-mono); */
     }
@@ -232,12 +227,6 @@
     .q_unSaY23rpdd3lDvGZ-,
     .btn,
     .hover,
-    .md
-        > h1:not(.usertext-body > .md > h1):not(
-            ._3ms2Z8z8rPWLXaErcTJ9yH > * > h1
-        ):not(.h-full > div > h1),
-    .md > h2:not(._3ms2Z8z8rPWLXaErcTJ9yH h2),
-    .md > h3:not(.mb-sm > div > h3),
     .morelink,
     .side::after,
     .titlebox h1,
@@ -266,6 +255,12 @@
             sans-serif !important;
     }
 
+    .md
+        > h1:not(.usertext-body > .md > h1):not(
+            ._3ms2Z8z8rPWLXaErcTJ9yH > * > h1
+        ):not(.h-full > div > h1),
+    .md > h2:not(._3ms2Z8z8rPWLXaErcTJ9yH h2),
+    .md > h3:not(.mb-sm > div > h3),
     .text-14,
     .button > .flex,
     #description,
@@ -384,6 +379,10 @@
         font-family: var(--mono-combo), Söhne Mono, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
         /*         font-size: 16px !important; */
+    }
+
+    .katex-error {
+        color: var(--tw-prose-body) !important;
     }
 }
 
