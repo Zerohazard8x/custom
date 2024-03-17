@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.6.2
+@version        2.6.3
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -138,9 +138,17 @@
             "Source Serif Pro", serif !important;
     }
 
-    ul > li > span,
+    ul
+        > li
+        > span:not(#pagehistory > ul > li > span):not(
+            .mw-content-ltr.mw-parser-output > ul > li > span
+        ),
     dd > span > i,
-    .mw-content-ltr > p > span:not(.navigation-not-searchable),
+    .mw-content-ltr
+        > p
+        > span:not(.navigation-not-searchable):not(
+            .mw-content-ltr.mw-parser-output > p > span
+        ),
     blockquote > div > p,
     *
         > tr
@@ -150,7 +158,12 @@
     dl > dd > span,
     .block-indent > span,
     * > p > a > span,
-    * > .mw-parser-output > p > span {
+    *
+        > .mw-parser-output
+        > p
+        > span:not(.mw-history-legend > .mw-parser-output > p > span):not(
+            .mw-content-ltr.mw-parser-output > p > span
+        ) {
         font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
     }
 
@@ -410,6 +423,8 @@
         font-size: 16px !important;
     } */
 
+    .pcs-edit-section-title,
+    section > blockquote > p,
     .footer_title__GtcWC,
     h5,
     .header_header__DOKKH h1,
@@ -425,9 +440,17 @@
         font-family: var(--serif), Noto Serif !important;
     }
 
-    ul > li > span,
+    ul
+        > li
+        > span:not(#pagehistory > ul > li > span):not(
+            .mw-content-ltr.mw-parser-output > ul > li > span
+        ),
     dd > span > i,
-    .mw-content-ltr > p > span:not(.navigation-not-searchable),
+    .mw-content-ltr
+        > p
+        > span:not(.navigation-not-searchable):not(
+            .mw-content-ltr.mw-parser-output > p > span
+        ),
     blockquote > div > p,
     *
         > tr
@@ -437,7 +460,12 @@
     dl > dd > span,
     .block-indent > span,
     * > p > a > span,
-    * > .mw-parser-output > p > span {
+    *
+        > .mw-parser-output
+        > p
+        > span:not(.mw-history-legend > .mw-parser-output > p > span):not(
+            .mw-content-ltr.mw-parser-output > p > span
+        ):not(.wm_content__0bruk > .mw-parser-output > p > span) {
         font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
     }
 }
