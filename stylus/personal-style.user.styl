@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.5.1
+@version        2.5.2
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("instructure.com"), domain("msn.com"), domain("metacritic.com"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("weibo.com"), domain("weibo.cn"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com"), regexp(".*youtube.com\/live_chat.*"), domain("baked.live"), domain("chat.mistral.ai"), domain("9xbuddy.in") {
@@ -268,12 +268,13 @@
 
     .chat-line__message,
     .bQEtql {
-        font-size: 50px !important;
+        font-size: 25px !important;
     }
 
+    .chat-author__display-name,
     .cCvSAC,
     .chat-line__status {
-        font-size: 38px !important;
+        font-size: 20px !important;
     }
 
     .cCvSAC,
@@ -537,7 +538,7 @@
 
 @-moz-document regexp(".*youtube.com\/live_chat.*") {
     .yt-live-chat-text-message-renderer {
-        font-size: 50px !important;
+        font-size: 25px !important;
         line-height: 1.5 !important;
     }
 
@@ -545,7 +546,7 @@
     yt-live-chat-author-chip > #author-name,
     #header-subtext,
     #message {
-        font-size: 38px !important;
+        font-size: 20px !important;
         line-height: 1.5 !important;
     }
 
@@ -553,7 +554,7 @@
     .emoji,
     .yt-live-chat-author-badge-renderer,
     #img {
-        height: 50px !important;
+        height: 25px !important;
         width: auto !important;
     }
 }
