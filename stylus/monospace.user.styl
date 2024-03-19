@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.6.4
+@version        2.6.3
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -508,6 +508,13 @@
     #personal > h2 {
         font-family: var(--sans), "Helvetica Neue", "Nimbus Sans", "Helvetica",
             "Arial", sans-serif !important;
+    }
+
+    /* applies to e.g. <span lang="ja"> */
+    :lang(zh),
+    :lang(ja),
+    :lang(ko) {
+        font-family: var(--sans), sans-serif !important;
     }
 
     h1,
