@@ -4,6 +4,7 @@
 ! Title: Zerohazard's decluttering
 [uBlock Origin]
 
+accounts.google.com##.EE6QGf
 accounts.google.com##.SYDc7
 
 adobe.com##.aem-GridColumn--offset--default--0.aem-GridColumn--offset--phone--0.aem-GridColumn--default--12.aem-GridColumn.aem-GridColumn--tablet--none.aem-GridColumn--phone--12.aem-GridColumn--default--none.aem-GridColumn--phone--hide.aem-GridColumn--offset--tablet--0.aem-GridColumn--tablet--12.flex
@@ -373,6 +374,8 @@ mybib.com##.vue-portal-target
 office.com##.ms-fcl-nd.welcome__title--dark.welcome__title--visual.welcome__title--consumer-with-badge.welcome__title--consumer.ms-fontWeight-light
 office.com##ohp-learning-shelf-react.ng-star-inserted
 
+omnicalculator.com##.IntroductionModal.jsx-456407116
+
 onedrive.live.com###PROD_OneDrive-Web_SuiteNav_Unknown_HeaderDiamond_container
 onedrive.live.com##.od-PremiumUpsellBanner
 onedrive.live.com##.od-PremiumUpsellBanner-details
@@ -405,6 +408,9 @@ poe.com##.Banner_info__OWUd0.Banner_root__p5sUz
 poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
 poe.com##.SidebarFooter_footer__i_kOn > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
 poe.com##a.Button_secondary__IuV5T.Button_buttonBase__Bv9Vx
+
+quillbot.com##.css-nsjdv.MuiBox-root
+quillbot.com##div.css-vmq4q1.MuiContainer-maxWidthLg.MuiContainer-root:nth-of-type(1)
 
 reddit.com###credential_picker_container
 reddit.com###popular-posts
@@ -446,6 +452,9 @@ reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
 ||www.redditstatic.com/desktop2x/img/powerups/moderator-achievement.svg$image
+
+reverso.net##app-desktop-app-promotion
+reverso.net##app-features-promotion
 
 roblox.com###app-stores-container
 roblox.com###chat-container
@@ -532,6 +541,9 @@ thespike.gg##div > div > ul > li
 thespike.gg##div.featured-event_column__sm8P6:first-child
 thespike.gg##div.prediction-stats_column___KCpl.prediction-stats_predictionStatsSidebar__DRuG9:nth-child(2)
 
+tiktok.com##.e1gjoq3k0.css-py8jux-DivModalContainer
+tiktok.com##.efna91q1.css-cyk3qu-PLoginHint
+
 time.is###lC
 time.is###quote
 time.is###time_zone > h2
@@ -544,6 +556,8 @@ tumblr.com##.B15CE
 to-do.live.com##.obf-Visible.obf-Toast
 
 tracker.gg##.premium-upsell-tooltip.trn-tooltip--active.trn-tooltip
+
+||trello-backgrounds.s3.amazonaws.com/SharedBackground$image
 
 twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
 twitter.com##.r-14gqq1x.r-6gpygo.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r

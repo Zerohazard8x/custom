@@ -843,7 +843,6 @@
 ||thimatic-apps.com$all
 ||thomsonreuters.com$all
 ||thumbor.forbes.com$all
-||tiktokcdn-us.com$all
 ||tl.foxbusiness.com$all
 ||tmgonlinemedia.nl/consent/script/consent.js$all
 ||today.vuer.net$all
@@ -931,6 +930,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||tiktokcdn-us.com$script,inline-script,object,ping,stylesheet,other
 ||turner.com$script,inline-script,object,ping,stylesheet,other
 ||adtidy.org$script,inline-script,object,ping,stylesheet,other
 ||js-cdn.music.apple.com$script,inline-script,object,ping,stylesheet,other
