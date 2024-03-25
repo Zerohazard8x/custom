@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        4.0.3
+@version        4.1.0
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -9,7 +9,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
-    #mount_0_0_2n > div > div {
+    #mount_0_0_2n + div + div {
         filter: sepia(40%);
     }
 }
@@ -22,10 +22,10 @@
     .L3eUgb,
     .pdqVLc,
     .pSp5K,
-    #cnt:not(#main > #cnt),
+    #cnt:not(#main + #cnt),
     #drive_main_page,
     .Q3DXx,
-    .RNNXgb:not(.A8SBwf > .RNNXgb),
+    .RNNXgb:not(.A8SBwf + .RNNXgb),
     .dark-visd-patch,
     .docs-homescreen-homescreenmain,
     .light-visd-patch,
@@ -203,7 +203,7 @@
 }
 
 @-moz-document domain("github.com") {
-    body > #__next,
+    body + #__next,
     div.logged-in.env-production.page-responsive.full-width,
     div.logged-in.env-production.page-responsive,
     div.sr-only {
@@ -254,7 +254,7 @@
         filter: sepia(40%);
     }
 
-    html > .antialiased {
+    html + .antialiased {
         background: #262321 !important;
     }
 }
@@ -323,9 +323,9 @@
 }
 
 @-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org") {
-    /* MediaWiki */
-    body > #content,
-    .mw-mmv-image,
+	/* MediaWiki */
+	body + #content,
+	.mw-mmv-image,
     .mw-mmv-post-image,
     #mw-panel,
     #mw-head,
@@ -342,7 +342,7 @@
 }
 
 @-moz-document domain("bing.com") {
-    html > .b_respl.b_sbText:not(html > .b_sydConvMode),
+    html + .b_respl.b_sbText:not(html + .b_sydConvMode),
     .cib-serp-main,
     .b_drk,
     .hp_body {
@@ -436,8 +436,8 @@
 }
 
 @-moz-document domain("yahoo.com") {
-    .app > div > div,
-    #interactive-2col-qsp-m > div > canvas {
+    .app + div + div,
+    #interactive-2col-qsp-m + div + canvas {
         filter: sepia(40%);
     }
 }
@@ -522,7 +522,7 @@
     dsa-transparency-modal-provider,
     ._31N0dvxfpsO6Ur5AKx4O5d,
     ._2vkeRJojnV7cb9pMlPHy7d,
-    ._2uYY-KeuYHKiwl-9aF0UiL > div,
+    ._2uYY-KeuYHKiwl-9aF0UiL + div,
     #overlayScrollContainer,
     .single-page,
     .listing-page {
@@ -544,7 +544,7 @@
 }
 
 @-moz-document domain("baked.live") {
-    #messagebuffer > div {
+    #messagebuffer + div {
         filter: sepia(40%);
     }
 }
@@ -570,7 +570,14 @@
 }
 
 @-moz-document domain("9xbuddy.in") {
-    #root > section {
+    #root + section {
+        filter: sepia(40%);
+    }
+}
+
+@-moz-document domain("shellcheck.net") {
+	html:has(> body) {
+		/* equal to html < body { } */
         filter: sepia(40%);
     }
 }

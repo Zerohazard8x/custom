@@ -8,7 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("appledb.dev") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("appledb.dev"), domain("shellcheck.net") {
     :root {
         /* Define variables */
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
@@ -107,9 +107,9 @@
 }
 
 @-moz-document domain("wikipedia.org") {
-    * > span > span > i,
-    * > p > span > i,
-    * > span > span > span,
+    * + span + span + i,
+    * + p + span + i,
+    * + span + span + span,
     #searchform,
     #p-lang-btn-label,
     #vector-page-tools-dropdown-label,
@@ -123,6 +123,8 @@
     .vector-toc,
     cite,
     .mwe-popups-container {
+        /* "+" is adjacent sibling selector */
+        /* https://www.w3schools.com/Css/css_combinators.asp */
         font-family: var(--sans), sans-serif !important;
     }
 
@@ -134,37 +136,37 @@
     }
 
     ul
-        > li
-        > span:not(#pagehistory > ul > li > span):not(
-            .mw-content-ltr.mw-parser-output > ul > li > span
+        + li
+        + span:not(#pagehistory + ul + li + span):not(
+            .mw-content-ltr.mw-parser-output + ul + li + span
         ),
-    dd > span > i,
+    dd + span + i,
     .mw-content-ltr
-        > p
-        > span:not(.navigation-not-searchable):not(
-            .mw-content-ltr.mw-parser-output > p > span
+        + p
+        + span:not(.navigation-not-searchable):not(
+            .mw-content-ltr.mw-parser-output + p + span
         ),
-    blockquote > div > p,
+    blockquote + div + p,
     *
-        > tr
-        > td
-        > span:not(.wikitable > * > * > * > span):not(.infobox-data > *),
+        + tr
+        + td
+        + span:not(.wikitable + * + * + * + span):not(.infobox-data + *),
     dl,
-    dl > dd > span,
-    .block-indent > span,
-    * > p > a > span,
+    dl + dd + span,
+    .block-indent + span,
+    * + p + a + span,
     *
-        > .mw-parser-output
-        > p
-        > span:not(.mw-history-legend > .mw-parser-output > p > span):not(
-            .mw-content-ltr.mw-parser-output > p > span
+        + .mw-parser-output
+        + p
+        + span:not(.mw-history-legend + .mw-parser-output + p + span):not(
+            .mw-content-ltr.mw-parser-output + p + span
         ) {
         font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
     }
 
-    p > code,
-    li > code,
-    pre > span {
+    p + code,
+    li + code,
+    pre + span {
         font-family: var(--mono-combo), monospace !important;
         /*         font-size: 16px !important; */
     }
@@ -177,61 +179,66 @@
         --plex: IBMPlexSans, "IBM Plex Sans";
     }
 
-    thead > tr > th,
+    thead + tr + th,
     .flair-content,
-    .input-container > input,
-    .text-ellipsis > span,
-    .tagline > a,
+    .input-container + input,
+    .text-ellipsis + span,
+    .tagline + a,
     #title,
     .label-container,
     .text-12:not(.text-neutral-content-weak):not(.truncate),
     .text-neutral-content-strong,
-    a:not(.content > li > a):not(* > p > a):not(.bottom > a):not(
-            ._1a_HxF03jCyxnx706hQmJR > a
-        ):not(.comments):not(.post-sharing-button):not(.login-required > a):not(
-            form > span > a
+    a:not(.content + li + a):not(* + p + a):not(.bottom + a):not(
+            ._1a_HxF03jCyxnx706hQmJR + a
+        ):not(.comments):not(.post-sharing-button):not(.login-required + a):not(
+            form + span + a
         ):not(._3t5uN8xUmg0TOwRCOGQEcU):not(.button-small):not(
             .recover-password
-        ):not(p > em > a):not(faceplate-tracker > a):not(ul > li > a):not(
+        ):not(p + em + a):not(faceplate-tracker + a):not(ul + li + a):not(
             .pointer-events-auto
-        ):not(h6 > a):not(.a),
-    time:not(.bottom > span > time):not(.linkinfo > .date > time),
-    .text-neutral-content-weak:not(h2):not(.leading-4 > *),
+        ):not(h6 + a):not(.a),
+    time:not(.bottom + span + time):not(.linkinfo + .date + time),
+    .text-neutral-content-weak:not(h2):not(.leading-4 + *),
     .text-neutral-content-strong {
         font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
-    .stamp,
     #header,
-    #search > input,
+    #search + input,
+    ._1LHxa-yaHJwrPK8kuyv_Y4,
+    ._1ra1vBLrjtHjhYDZ_gOy8F,
+    ._2-cXnP74241WI7fpcpfPmg,
+    ._3VvVLJHakguGRWc5JxUX40,
+    ._3yx4Dn0W3Yunucf5sVJeFU,
+    .btn,
     .c-btn.login-required,
     .commentsignupbar__cta-button,
     .commentsignupbar__desc,
     .commentsignupbar__textarea-above,
     .commentsignupbar__title,
     .entry .buttons li a,
-    .loggedin,
-    .score,
-    .title > h1,
-    .head {
-        font-family: var(--plex), var(--noto), verdana, arial, helvetica,
-            sans-serif !important;
-    }
-
-    ._2-cXnP74241WI7fpcpfPmg,
-    ._3yx4Dn0W3Yunucf5sVJeFU,
-    ._1LHxa-yaHJwrPK8kuyv_Y4,
-    ._3VvVLJHakguGRWc5JxUX40,
-    .q_unSaY23rpdd3lDvGZ-,
-    .btn,
+    .flair,
+    .flairrichtext,
+    .head,
     .hover,
+    .linkflairlabel,
+    .loggedin,
     .morelink,
+    .q_unSaY23rpdd3lDvGZ-,
+    .redditname,
+    .score,
     .side::after,
+    .stamp,
+    .title + h1,
+    .title-button,
+    .title:not(.sidecontentbox + .title),
+    .titlebox + h1,
     .titlebox h1,
     .titlebox::before,
-    .top-matter > .tagline,
+    .top-matter + .tagline,
+    body + h1,
     h4,
     h5,
     ._3oHXlwUZwpR5SS-8P9tILX {
@@ -239,57 +246,41 @@
             "Arial", sans-serif !important;
     }
 
-    ._1ra1vBLrjtHjhYDZ_gOy8F,
-    .flair,
-    .title-button,
-    .title:not(.sidecontentbox > .title),
-    .titlebox > h1,
-    .redditname {
-        font-family: var(--plex), var(--noto), arial, verdana, "Helvetica Neue",
-            "Helvetica", sans-serif !important;
-    }
-
-    body > h1,
-    .flairrichtext {
-        font-family: var(--plex), var(--noto), verdana, arial, helvetica,
-            sans-serif !important;
-    }
-
-    .md
-        > h1:not(.usertext-body > .md > h1):not(
-            ._3ms2Z8z8rPWLXaErcTJ9yH > * > h1
-        ):not(.h-full > div > h1),
-    .md > h2:not(._3ms2Z8z8rPWLXaErcTJ9yH h2),
-    .md > h3:not(.mb-sm > div > h3),
-    .text-14,
-    .button > .flex,
     #description,
-    .tagline,
-    shreddit-app,
-    a.button-small,
     .add,
     .author,
-    .buttons > button,
+    .button + .flex,
+    .buttons + button,
     .choice,
-    .date > span,
+    .date + span,
     .date,
     .flat-list,
     .gallery-nav-bar,
     .inline-block,
-    .login-form > input,
+    .login-form + input,
     .login-form,
-    .login-required:not(.morelink > .login-required):not(.c-btn),
-    .md > * > * > * > * > tbody > tr > td,
-    .md > p > strong,
-    .md > p,
+    .login-required:not(.morelink + .login-required):not(.c-btn),
+    .md + * + * + * + * + tbody + tr + td,
+    .md
+        + h1:not(.usertext-body + .md + h1):not(
+            ._3ms2Z8z8rPWLXaErcTJ9yH + * + h1
+        ):not(.h-full + div + h1),
+    .md + h2:not(._3ms2Z8z8rPWLXaErcTJ9yH h2),
+    .md + h3:not(.mb-sm + div + h3),
+    .md + p + strong,
+    .md + p,
     .numchildren,
     .shortlink,
     .side .md p,
     .spacer,
+    .tagline,
+    .text-14,
     .user,
-    .users-online > span,
-    blockquote > ul > li,
-    body > p,
+    .users-online + span,
+    a.button-small,
+    blockquote + ul + li,
+    body + p,
+    shreddit-app,
     .usertext-body {
         font-family: var(--noto), -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
@@ -302,7 +293,7 @@
             sans-serif !important;
     }
 
-    .md > pre,
+    .md + pre,
     code,
     #shortlink-text {
         font-family: var(--mono-combo), monospace !important;
@@ -320,7 +311,7 @@
             monospace !important;
     }
 
-    /*     .s-code-block > code {
+    /*     .s-code-block + code {
         font-size: 16px !important;
     } */
 
@@ -361,13 +352,13 @@
             sans-serif !important;
     }
 
-    code > span,
+    code + span,
     code {
         font-family: var(--mono-combo), Consolas, monaco, monospace !important;
     }
 
-    /*     code > span,
-    code:not(.Markdown_markdownContainer__Tz3HQ > p > code) {
+    /*     code + span,
+    code:not(.Markdown_markdownContainer__Tz3HQ + p + code) {
         font-size: 16px !important;
     } */
 }
@@ -397,14 +388,14 @@
 }
 
 @-moz-document domain("learn.microsoft.com") {
-    pre > code,
-    p > code,
-    li > code {
+    pre + code,
+    p + code,
+    li + code {
         font-family: var(--mono-combo), SFMono-Regular, Consolas,
             Liberation Mono, Menlo, Courier, monospace !important;
     }
 
-    /*     pre > code {
+    /*     pre + code {
         font-size: 16px !important;
     } */
 }
@@ -412,22 +403,22 @@
 @-moz-document domain("wikiwand.com") {
     .monospaced,
     code,
-    pre:not(.openai_content__jNwCi > * > pre) {
+    pre:not(.openai_content__jNwCi + * + pre) {
         font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
             Courier New, Courier, monospace !important;
     }
 
     /*     .monospaced,
-    pre:not(.openai_content__jNwCi > * > pre) {
+    pre:not(.openai_content__jNwCi + * + pre) {
         font-size: 16px !important;
     } */
 
     .pcs-edit-section-title,
-    section > blockquote > p,
+    section + blockquote + p,
     .footer_title__GtcWC,
     h5,
     .header_header__DOKKH h1,
-    .mw-parser-output > blockquote,
+    .mw-parser-output + blockquote,
     .poem,
     .item_anchor__rLB49,
     .section-h {
@@ -440,45 +431,45 @@
     }
 
     ul
-        > li
-        > span:not(#pagehistory > ul > li > span):not(
-            .mw-content-ltr.mw-parser-output > ul > li > span
+        + li
+        + span:not(#pagehistory + ul + li + span):not(
+            .mw-content-ltr.mw-parser-output + ul + li + span
         ),
-    dd > span > i,
+    dd + span + i,
     .mw-content-ltr
-        > p
-        > span:not(.navigation-not-searchable):not(
-            .mw-content-ltr.mw-parser-output > p > span
+        + p
+        + span:not(.navigation-not-searchable):not(
+            .mw-content-ltr.mw-parser-output + p + span
         ),
-    blockquote > div > p,
+    blockquote + div + p,
     *
-        > tr
-        > td
-        > span:not(.wikitable > * > * > * > span):not(.infobox-data > *),
+        + tr
+        + td
+        + span:not(.wikitable + * + * + * + span):not(.infobox-data + *),
     dl,
-    dl > dd > span,
-    .block-indent > span,
-    * > p > a > span,
+    dl + dd + span,
+    .block-indent + span,
+    * + p + a + span,
     *
-        > .mw-parser-output
-        > p
-        > span:not(.mw-history-legend > .mw-parser-output > p > span):not(
-            .mw-content-ltr.mw-parser-output > p > span
-        ):not(.wm_content__0bruk > .mw-parser-output > p > span) {
+        + .mw-parser-output
+        + p
+        + span:not(.mw-history-legend + .mw-parser-output + p + span):not(
+            .mw-content-ltr.mw-parser-output + p + span
+        ):not(.wm_content__0bruk + .mw-parser-output + p + span) {
         font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
     }
 }
 
 @-moz-document domain("developer.mozilla.org") {
     code,
-    .section-content > pre {
+    .section-content + pre {
         font-family: var(--mono-combo), Menlo, Consolas, Monaco, Liberation Mono,
             Lucida Console, monospace !important;
     }
 
-    /*     pre > code,
-    p > code:not(dd > p > code):not(.section-content > p > code),
-    strong > code {
+    /*     pre + code,
+    p + code:not(dd + p + code):not(.section-content + p + code),
+    strong + code {
         font-size: 16px !important;
     } */
 }
@@ -505,7 +496,7 @@
         font-family: var(--sans), verdana, sans-serif !important;
     }
 
-    #personal > h2 {
+    #personal + h2 {
         font-family: var(--sans), "Helvetica Neue", "Nimbus Sans", "Helvetica",
             "Arial", sans-serif !important;
     }
@@ -524,11 +515,11 @@
 
     code,
     tt,
-    .mw-parser-output > pre {
+    .mw-parser-output + pre {
         font-family: var(--mono-combo), monospace !important;
     }
 
-    p > span > b:not(.Latn) {
+    p + span + b:not(.Latn) {
         font-family: var(--mono-combo), Consolas, DejaVu Sans Mono,
             Droid Sans Mono, Lucida Console, Courier New, monospace !important;
     }
@@ -544,7 +535,7 @@
     .ZtihLe,
     .wx62f,
     .yUTMj,
-    #exps > button,
+    #exps + button,
     #lud-search,
     #result-stats,
     #rhs,
@@ -582,7 +573,7 @@
     .aU5Y0c,
     .account-email,
     .account-name,
-    .accounts > li,
+    .accounts + li,
     .add-account,
     .b0KoTc,
     .c07z9,
@@ -648,22 +639,22 @@
     }
 
     .RiJqbb,
-    .Ilfrfc > a > div,
-    .SVWlSe > span {
+    .Ilfrfc + a + div,
+    .SVWlSe + span {
         font-family: var(--google), Google Sans, Roboto-Medium,
             HelveticaNeue-Medium, Helvetica Neue, sans-serif-medium, Arial,
             sans-serif !important;
     }
 
-    .iGVLpd > div,
+    .iGVLpd + div,
     #gb-main,
-    .UynAtc > span {
+    .UynAtc + span {
         font-family: var(--google), Roboto, Helvetica Neue, Arial, sans-serif !important;
     }
 
     .jloFI,
     .eZHsk,
-    .BYj5Bd > span,
+    .BYj5Bd + span,
     .VsEpQb,
     .CvgYje,
     .LT6XE,
@@ -674,7 +665,7 @@
 
     .sjVJQd,
     .Yt787,
-    .clOx1e > span {
+    .clOx1e + span {
         font-family: var(--google), Google Sans, arial, sans-serif-medium,
             sans-serif !important;
     }
@@ -691,7 +682,7 @@
     .MVwBGc,
     #a1grgf,
     .HXQjqf,
-    h3:not(td > h3),
+    h3:not(td + h3),
     .gsmt,
     .GmE3X,
     .ynRric,
@@ -718,20 +709,20 @@
         font-family: "Google Sans", var(--google), arial, sans-serif !important;
     }
 
-    .banner > h1 {
+    .banner + h1 {
         font-family: "Google Sans", var(--google), "Open Sans", arial !important;
     }
 
     .mv6bHd,
-    .googlegpt > pre,
+    .googlegpt + pre,
     #googlegpt-chatbar,
     .code-container,
-    .markdown > p code {
+    .markdown + p code {
         font-family: "Google Sans Mono", var(--mono-combo), monospace !important;
     }
 
     .code-container,
-    .markdown > p code {
+    .markdown + p code {
         font-size: 16px !important;
     }
 }
@@ -752,12 +743,12 @@
     }
 
     /* Navigation bar */
-    .b_scopebar > ul li {
+    .b_scopebar + ul li {
         text-transform: none !important;
         font-size: 14px !important;
     }
 
-    .b_scopebar_item > a {
+    .b_scopebar_item + a {
         text-transform: none !important;
         font-size: 13px !important;
     }
@@ -767,31 +758,31 @@
     }
 
     /* Font styles */
-    .vrhcpt > .vrhtt,
+    .vrhcpt + .vrhtt,
     .vrhcpt,
     .b_respl,
     #bpage,
     .ua_wpr,
-    .l_ecrd_txt_gl > *,
-    .ux_ecmp > h3,
+    .l_ecrd_txt_gl + *,
+    .ux_ecmp + h3,
     .hlig {
         font-family: var(--not-segoe), "-apple-system", HelveticaNeue, Roboto,
             Arial, sans-serif !important;
     }
 
-    #b_footerItems > ul > li > a,
+    #b_footerItems + ul + li + a,
     #b_footerItems,
     .sa_rm,
     #detailMeta,
     .hlig,
     .b_download_text,
-    .b_scopebar > ul,
+    .b_scopebar + ul,
     .hon,
     #fltIdtCon {
         font-family: var(--not-segoe), Arial, Helvetica, Sans-Serif !important;
     }
 
-    /*     li > h2 > a, .b_title > h2 > a {
+    /*     li + h2 + a, .b_title + h2 + a {
         font-family: var(--not-segoe), "Segoe UI", Arial, Helvetica, Sans-Serif !important;
     } */
 
@@ -800,13 +791,13 @@
     }
 
     h2,
-    .mmtitle > a,
+    .mmtitle + a,
     .imgText,
-    .b_topTitle > a {
+    .b_topTitle + a {
         font-family: var(--not-segoe), "Segoe UI", Arial, Helvetica, Sans-Serif !important;
     }
 
-    .MicrosoftMap .taskBar > ul li.inputbox input,
+    .MicrosoftMap .taskBar + ul li.inputbox input,
     .b_entityTitle,
     .b_searchboxForm,
     .b_topTitle,
@@ -819,8 +810,8 @@
     .sto_attrlitc,
     .vrhtt,
     .wpvn_ala_wtt,
-    h4:not(.wr_hli > h4),
-    span > h3,
+    h4:not(.wr_hli + h4),
+    span + h3,
     .b_rc_gb_widget_title {
         font-family: var(--segoe), Roboto, Arial, sans-serif !important;
     }
@@ -830,22 +821,22 @@
             sans-serif !important;
     }
 
-    h2:not(.lc_content > h2):not(.recommendationsTableTitle > h2):not(
+    h2:not(.lc_content + h2):not(.recommendationsTableTitle + h2):not(
             h2.mmtitle
-        ):not(.b_algoheader > * > h2):not(h2.ua_e):not(.b_title > h2):not(
-            li > h2
-        ):not(.nws_sh > h2):not(.b_wpt_bl > h2):not(.b_subModule > h2):not(
-            .b_ami > h2
-        ):not(.b_go_big > h2):not(.reverse > h2):not(
-            .pageRecoContainer > div > h2
+        ):not(.b_algoheader + * + h2):not(h2.ua_e):not(.b_title + h2):not(
+            li + h2
+        ):not(.nws_sh + h2):not(.b_wpt_bl + h2):not(.b_subModule + h2):not(
+            .b_ami + h2
+        ):not(.b_go_big + h2):not(.reverse + h2):not(
+            .pageRecoContainer + div + h2
         ),
     .b_mgridTitleCont,
-    .b_mgridTitle > a,
+    .b_mgridTitle + a,
     .v-ans-title,
     #tob_rail_title,
     .l_ecrd_imcolheader_ttl,
     .rs_chatText,
-    .df_hd > .b_traits,
+    .df_hd + .b_traits,
     #rd_gtrtb_ttl,
     .annotate .b_focusTextLarge,
     .b_focusTextMedium,
@@ -853,16 +844,16 @@
     .b_subModule .b_wfInfoCard .bm_phase2 .ent-dtab-nam-ov-dtnp,
     .irp-video-slogan,
     .nameContainer,
-    .sto_title > .sto_slidelr,
+    .sto_title + .sto_slidelr,
     .sto_title,
-    h2 > span,
-    p > span > a,
+    h2 + span,
+    p + span + a,
     container-title {
         font-family: "Segoe UI Variable Display", var(--segoe), var(--not-segoe),
             Helvetica, Arial, sans-serif !important;
     }
 
-    .b_vPanel:not(#ua_gcn > .b_vPanel),
+    .b_vPanel:not(#ua_gcn + .b_vPanel),
     cite {
         font-family: var(--roboto-then-segoe-small), "-apple-system",
             HelveticaNeue, Roboto, Arial, sans-serif !important;
@@ -871,7 +862,7 @@
     .ux_ecmp-sel,
     .title,
     .tit,
-    .b_title:not(.b_algo_group > .b_title),
+    .b_title:not(.b_algo_group + .b_title),
     .dirWp,
     .dg_b .infnmpt .infpd a,
     #imagemeta,
@@ -887,7 +878,7 @@
     .tdw_button,
     .ms-Button-label,
     .ms-search-text-h2,
-    .recommendationsTableTitle > h2 {
+    .recommendationsTableTitle + h2 {
         font-family: var(--roboto-then-segoe-small), Arial, sans-serif !important;
     }
 
@@ -908,22 +899,22 @@
     }
 
     /* Font weights */
-    .b_entityTitle > a,
-    .carousel-title > h2 > *,
-    .b_ilhTitle > h2,
-    .rrrter_teTitle > h2,
-    .hasImg > h2,
-    .rs_chatText > h2,
-    .rrr_teTitle > h2,
-    .scs_cpr > h2,
-    .b_rs > h2,
-    .b_rrsr > h2,
+    .b_entityTitle + a,
+    .carousel-title + h2 + *,
+    .b_ilhTitle + h2,
+    .rrrter_teTitle + h2,
+    .hasImg + h2,
+    .rs_chatText + h2,
+    .rrr_teTitle + h2,
+    .scs_cpr + h2,
+    .b_rs + h2,
+    .b_rrsr + h2,
     .ent-dtab-nam-ov-dtp,
     .v-ans-title,
-    .b_mgridTitle > a,
+    .b_mgridTitle + a,
     #tob_rail_title,
     .rs_chatText,
-    .df_hd > .b_traits,
+    .df_hd + .b_traits,
     #rd_gtrtb_ttl,
     .annotate .b_focusTextLarge,
     .b_focusTextMedium,
@@ -931,12 +922,12 @@
     .b_subModule .b_wfInfoCard .bm_phase2 .ent-dtab-nam-ov-dtnp,
     .irp-video-slogan,
     .nameContainer,
-    .sto_title > .sto_slidelr,
+    .sto_title + .sto_slidelr,
     .sto_title,
-    .lite-entcard-exp > h2,
-    .richrsrailtitle > h2,
+    .lite-entcard-exp + h2,
+    .richrsrailtitle + h2,
     h2
-        > span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol):not(
+        + span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol):not(
             .l_ecrd_txt_small
         ):not(.l_ecrd_txt_herom),
     container-title {
@@ -957,9 +948,9 @@
 }
 
 @-moz-document domain("geeksforgeeks.org") {
-    div .text > pre,
-    .container > div code,
-    .outputDiv > pre {
+    div .text + pre,
+    .container + div code,
+    .outputDiv + pre {
         font-family: var(--mono-combo), Consolas, monospace !important;
         /*         font-size: 16px !important; */
     }
@@ -993,7 +984,7 @@
 
 @-moz-document domain("discord.com") {
     /* Discord fallbacks */
-    .card-3ie2dy > div div,
+    .card-3ie2dy + div div,
     .constrainedRow-3y91Xf,
     .container-1eFtFS,
     .defaultColor-1EVLSt,
@@ -1004,8 +995,8 @@
     button,
     h2:not(.title-HAL6j-):not(.heading-style-h2),
     h3,
-    span:not(.codeLine__3797b > span > span):not(.codeLine__3797b > span):not(
-            .codeLine__3797b > span > span > span
+    span:not(.codeLine__3797b + span + span):not(.codeLine__3797b + span):not(
+            .codeLine__3797b + span + span + span
         ),
     input,
     .message-wB3GWa,
@@ -1051,9 +1042,9 @@
     h5,
     h6,
     li,
-    p > strong,
+    p + strong,
     p,
-    div > h4 {
+    div + h4 {
         font-family: var(--sans), Helvetica, Arial, Verdana, sans-serif !important;
     }
 
@@ -1125,12 +1116,12 @@
 
 @-moz-document domain("duckduckgo.com") {
     code,
-    .wZ4JdaHxSAhGy1HoNVja > span > span,
-    .ddgpt > pre {
+    .wZ4JdaHxSAhGy1HoNVja + span + span,
+    .ddgpt + pre {
         font-family: var(--mono-combo), Consolas, Menlo, Monaco, monospace !important;
     }
 
-    /*     .prettyprint > code {
+    /*     .prettyprint + code {
         font-size: 16px !important;
     } */
 }
@@ -1141,7 +1132,7 @@
             Ubuntu Mono, monospace !important;
     }
 
-    /*     .svelte-15hifvz > pre > code {
+    /*     .svelte-15hifvz + pre + code {
         font-size: 16px !important;
     } */
 }
@@ -1165,7 +1156,7 @@
 @-moz-document domain("17track.net") {
     .canvas,
     .page-content,
-    .nav > li {
+    .nav + li {
         font-family: var(--sans), sans-serif !important;
     }
 
@@ -1175,13 +1166,13 @@
 }
 
 @-moz-document domain("antifandom.com"), domain("breezewiki.com") {
-    .text > b > code {
+    .text + b + code {
         font-family: var(--mono-combo), monospace !important;
     }
 }
 
 @-moz-document domain("fandom.com") {
-    .text > b > code {
+    .text + b + code {
         font-family: var(--mono-combo), monospace !important;
     }
 }
@@ -1195,8 +1186,22 @@
             "Helvetica Neue", sans-serif !important;
     }
 
-    .text > code {
+    .text + code {
         font-family: var(--mono-combo), Consolas, Monaco, "Andale Mono",
             "Ubuntu Mono", monospace !important;
+    }
+}
+
+@-moz-document domain("shellcheck.net") {
+    html + body {
+        font-family: var(--sans), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: var(--mono-combo), Menlo, Monaco, Consolas, "Courier New",
+            monospace;
     }
 }
