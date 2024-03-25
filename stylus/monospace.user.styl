@@ -8,15 +8,15 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("appledb.dev"), domain("shellcheck.net") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("poe.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("wikiwand.com"), domain("developer.mozilla.org"), domain("symbolab.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("xdaforums.com"), domain("discord.com"), domain("knowyourmeme.com"), domain("codeberg.org"), domain("docs.oracle.com"), domain("yahoo.com"), domain("baeldung.com"), domain("17track.net"), domain("duckduckgo.com"), domain("chat.lmsys.org"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("appledb.dev"), domain("shellcheck.net"), domain("perplexity.ai"), domain("pi.ai"), domain("groq.com"), domain("chat.mistral.ai") {
     :root {
         /* Define variables */
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-            "Roboto Flex", "Roboto", Inter, "Inter V", "Fira Sans", FiraGO,
+            "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", FiraGO,
             "FF Meta", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
             "Noto Sans KR", "Noto Sans";
         /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-            "Roboto Flex", "Roboto", Barlow, Söhne, Lato, "Motiva Sans", "Proxima Nova", Inter,
+            "Roboto Flex", "Roboto", Barlow, Lato, "Motiva Sans", "Proxima Nova", Inter,
             "Avenir Next", Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO,
             "FF Meta", Manrope, "Helvetica Neue", "Helvetica",
             "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu",
@@ -727,7 +727,7 @@
     }
 }
 
-@-moz-document domain("bing.com") {
+@-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
     :root {
         --segoe: "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe, "Segoe UI Variable Display",
@@ -1203,5 +1203,50 @@
     samp {
         font-family: var(--mono-combo), Menlo, Monaco, Consolas, "Courier New",
             monospace;
+    }
+}
+
+@-moz-document domain("perplexity.ai") {
+    .ace_placeholder.ace_comment,
+    code {
+        font-family: var(--mono-combo), Berkeley Mono, source-code-pro, Menlo,
+            Monaco, Consolas, Courier New, monospace !important;
+    }
+
+    .font-mono {
+        font-family: var(--mono-combo), var(--font-berkeley-mono), ui-monospace,
+            SFMono-Regular, monospace !important;
+    }
+}
+
+@-moz-document domain("pi.ai") {
+    .t-code,
+    .t-code-inline {
+        font-family: var(--mono-combo), var(--font-mono), ui-monospace,
+            SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+            "Courier New", monospace !important;
+    }
+}
+
+@-moz-document domain("groq.com") {
+    * div pre code {
+        /* https://www.w3schools.com/cssref/sel_element_element.php */
+        font-family: var(--mono-combo), Consolas, Monaco, "Andale Mono",
+            "Ubuntu Mono", monospace !important;
+    }
+}
+
+@-moz-document domain("chat.mistral.ai") {
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: var(--mono-combo), ui-monospace, SFMono-Regular, Menlo,
+            Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+    }
+
+    * * div code span {
+        font-family: var(--mono-combo), Menlo, Monaco, Consolas, "Andale Mono",
+            "Ubuntu Mono", "Courier New", monospace !important;
     }
 }

@@ -10,6 +10,8 @@
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     #mount_0_0_2n + div + div {
+        /* "+" is adjacent sibling selector */
+        /* https://www.w3schools.com/Css/css_combinators.asp */
         filter: sepia(40%);
     }
 }
@@ -323,9 +325,9 @@
 }
 
 @-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org") {
-	/* MediaWiki */
-	body + #content,
-	.mw-mmv-image,
+    /* MediaWiki */
+    body + #content,
+    .mw-mmv-image,
     .mw-mmv-post-image,
     #mw-panel,
     #mw-head,
@@ -341,7 +343,7 @@
     }
 }
 
-@-moz-document domain("bing.com") {
+@-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
     html + .b_respl.b_sbText:not(html + .b_sydConvMode),
     .cib-serp-main,
     .b_drk,
@@ -576,8 +578,27 @@
 }
 
 @-moz-document domain("shellcheck.net") {
-	html:has(> body) {
-		/* equal to html < body { } */
+    body ~ html {
+        /* equal to html < body { } */
+        filter: sepia(40%);
+    }
+}
+
+@-moz-document domain("perplexity.ai") {
+    .h-full .h-full.flex {
+        /* https://www.w3schools.com/cssref/sel_element_element.php */
+        filter: sepia(40%);
+    }
+}
+
+@-moz-document domain("pi.ai") {
+    .h-dscreen .h-dscreen.flex {
+        filter: sepia(40%);
+    }
+}
+
+@-moz-document domain("groq.com") {
+    div.flex-1 div.flex {
         filter: sepia(40%);
     }
 }
