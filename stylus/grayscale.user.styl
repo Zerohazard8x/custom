@@ -9,7 +9,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
-    #mount_0_0_2n + div + div {
+    #mount_0_0_2n div div {
         /* "+" is adjacent sibling selector */
         /* https://www.w3schools.com/Css/css_combinators.asp */
         filter: sepia(40%);
@@ -25,10 +25,10 @@
     .L3eUgb,
     .pdqVLc,
     .pSp5K,
-    #cnt:not(#main + #cnt),
+    #cnt:not(#main #cnt),
     #drive_main_page,
     .Q3DXx,
-    .RNNXgb:not(.A8SBwf + .RNNXgb),
+    .RNNXgb:not(.A8SBwf .RNNXgb),
     .dark-visd-patch,
     .docs-homescreen-homescreenmain,
     .light-visd-patch,
@@ -257,7 +257,7 @@
         filter: sepia(40%);
     }
 
-    html + .antialiased {
+    html .antialiased {
         background: #262321 !important;
     }
 }
@@ -345,7 +345,7 @@
 }
 
 @-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
-    html + .b_respl.b_sbText:not(html + .b_sydConvMode),
+    html .b_respl.b_sbText:not(html .b_sydConvMode),
     .cib-serp-main,
     .b_drk,
     .hp_body {
@@ -439,8 +439,8 @@
 }
 
 @-moz-document domain("yahoo.com") {
-    .app + div + div,
-    #interactive-2col-qsp-m + div + canvas {
+    .app div div,
+    #interactive-2col-qsp-m div canvas {
         filter: sepia(40%);
     }
 }
@@ -525,7 +525,7 @@
     dsa-transparency-modal-provider,
     ._31N0dvxfpsO6Ur5AKx4O5d,
     ._2vkeRJojnV7cb9pMlPHy7d,
-    ._2uYY-KeuYHKiwl-9aF0UiL + div,
+    ._2uYY-KeuYHKiwl-9aF0UiL div,
     #overlayScrollContainer,
     .single-page,
     .listing-page {
@@ -547,7 +547,7 @@
 }
 
 @-moz-document domain("baked.live") {
-    #messagebuffer + div {
+    #messagebuffer div {
         filter: sepia(40%);
     }
 }
@@ -573,7 +573,7 @@
 }
 
 @-moz-document domain("9xbuddy.in") {
-    #root + section {
+    #root section {
         filter: sepia(40%);
     }
 }

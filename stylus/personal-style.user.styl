@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@author         Zerohazard8x + LLM
+@author         Zerohazard8x LLM
 @description    My personal userstyle
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 @name           personal
@@ -42,11 +42,11 @@
         /* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
             #000000 0 0 5px !important; */
 
-        /* line-height: calc(2px + 2ex + 2px); */
-        /* computed: 2px + (2 * 20px) + 2px = 44px */
+        /* line-height: calc(2px 2ex 2px); */
+        /* computed: 2px (2 * 20px) 2px = 44px */
 
-        /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
-        /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+        /* font-size: calc(14px (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+        /* font-size: calc([minimum size] ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
         /* https://madebymike.com.au/writing/fluid-type-calc-examples/ */
     }
 
@@ -57,20 +57,20 @@
     }
 
     /*     .dynamic-text-view-model-wiz,
-    #meta + ytd-channel-name + div + div + yt-formatted-string,
-    h2 + #title,
-    h2 + yt-formatted-string {
+    #meta ytd-channel-name div div yt-formatted-string,
+    h2 #title,
+    h2 yt-formatted-string {
         font-family: "YouTube Sans", "Arial", sans-serif !important;
     } */
 
     .dynamic-text-view-model-wiz,
-    #meta + ytd-channel-name + div + div + yt-formatted-string {
+    #meta ytd-channel-name div div yt-formatted-string {
 		/* "+" is adjacent sibling selector */
 		/* https://www.w3schools.com/Css/css_combinators.asp */
         font-weight: 700 !important;
     }
 
-    /*     h2 + yt-formatted-string {
+    /*     h2 yt-formatted-string {
         font-weight: 600 !important;
     } */
 }
@@ -92,7 +92,7 @@
             Arial, sans-serif !important;
     }
 
-    ._9o1- + div,
+    ._9o1- div,
     ._9ai0,
     ._1gaz {
         font-family: var(--facebook), var(--font), SFProText-Medium, Helvetica,
@@ -182,11 +182,11 @@
 @-moz-document domain("steampowered.com") {
     b,
     .review_box,
-    #game_area_metascore + div,
+    #game_area_metascore div,
     #queueActionsCtn,
     #review_context,
     #reviews_filter_language,
-    .block_header + div,
+    .block_header div,
     .flyout,
     .game_area_sys_req strong,
     .game_page_autocollapse_readmore,
@@ -194,7 +194,7 @@
     .store_nav,
     .store_horizontal_minislider,
     .tab_review_summary,
-    div + a,
+    div a,
     #footer_text {
         font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
     }
@@ -219,7 +219,7 @@
     }
 
     #a-page,
-    #e + input,
+    #e input,
     .a-container {
         font-family: "Amazon Ember", Arial, "Hiragino Kaku Gothic ProN",
             "Hiragino Sans", Meiryo, sans-serif !important;
@@ -230,8 +230,8 @@
     }
 
     .a-declarative,
-    tbody + tr + td,
-    span + span + a {
+    tbody tr td,
+    span span a {
         font-family: "Amazon Ember", Arial !important;
     }
 
@@ -293,11 +293,11 @@
 
     .chat-badge,
     .chat-line__message--emote,
-    .ScSvg-sc-1hrsqw6-1:not(.tw-svg + .ScSvg-sc-1hrsqw6-1),
+    .ScSvg-sc-1hrsqw6-1:not(.tw-svg .ScSvg-sc-1hrsqw6-1),
     .tw-svg
-        + svg:not(.tw-svg + .ihOSMR):not(.hZiShc + svg):not(
-            .ScFigure-sc-wkgzod-0 + svg
-        ):not(figure + svg) {
+        svg:not(.tw-svg .ihOSMR):not(.hZiShc svg):not(
+            .ScFigure-sc-wkgzod-0 svg
+        ):not(figure svg) {
         height: 25px !important;
         width: auto !important;
     }
@@ -317,8 +317,8 @@
         font-family: "FontAwesome", Roboto, "MS Shell Dlg 2" !important;
     }
 
-    #home-main-messaging + h1,
-    .messaging-title + h2 {
+    #home-main-messaging h1,
+    .messaging-title h2 {
         font-family: Lato, "Roboto", Arial, Helvetica, sans-serif !important;
     }
 }
@@ -394,64 +394,64 @@
 
 @-moz-document domain("gsmarena.com") {
     .autocomplete-desc,
-    .pricing + span,
+    .pricing span,
     .meta-item-time,
     .meta-item-comments,
-    #footmenu + p,
+    #footmenu p,
     #opinions-total,
     #topsearch-text,
     #wrapper,
-    .buyers-guide-notification + span,
-    .meta-line + time,
+    .buyers-guide-notification span,
+    .meta-line time,
     .meta-line,
     .module-fit,
     .module-phones-link,
-    .module-review-xl-title + span,
+    .module-review-xl-title span,
     .more-news-link,
     .news-item,
     .nfo,
     .review-body,
-    .row2 + span,
+    .row2 span,
     .ttl,
     .user-thread,
     a,
-    font + strong,
+    font strong,
     h3,
-    tr + th,
-    tbody + tr + td {
+    tr th,
+    tbody tr td {
         font-family: "Roboto Flex", Roboto, Arimo, Arial !important;
     }
 
-    .specs-fans + span,
-    .section-heading + a,
-    #menu + li + a,
-    #specs-list + table + tbody + tr + th,
-    #user-comments + h2 + a,
+    .specs-fans span,
+    .section-heading a,
+    #menu li a,
+    #specs-list table tbody tr th,
+    #user-comments h2 a,
     .accent,
     .article-info,
-    .article-info-meta-link + a,
-    .block-link + header + h3,
-    .brandmenu-v2 + ul + li + a,
+    .article-info-meta-link a,
+    .block-link header h3,
+    .brandmenu-v2 ul li a,
     .brandmenu-v2,
     .center-stage,
     .feat-item-header,
     .feat-item-title,
     .icon-count,
-    .module-review-xl-title + strong,
-    .news-item + a + h3,
-    .pad + a,
-    .pricing + tbody,
+    .module-review-xl-title strong,
+    .news-item a h3,
+    .pad a,
+    .pricing tbody,
     .specs-phone-name-title,
-    .specs-spotlight-features + li,
+    .specs-spotlight-features li,
     h4,
     h5,
-    tr + td + a:not(.collapse):not(.ttl + a):not(.nfo + a) {
+    tr td a:not(.collapse):not(.ttl a):not(.nfo a) {
         font-family: "Barlow Condensed", Google-Oswald, Arial !important;
     }
 }
 
 @-moz-document domain("hupu.com"), domain("sports.cctv.com") {
-    /* Hupu + Iframe */
+    /* Hupu Iframe */
     .index_simple-detail-content__3FPFA,
     .hp-pc-rc-SuperMenu-sub-menu-container,
     .bbs-search-web,
@@ -461,7 +461,7 @@
     .index_post-info___hEkW,
     .index_post-title__xE1Ku,
     .index_right-post-item__VLcv7,
-    .index_right-post__Yuzlv + a,
+    .index_right-post__Yuzlv a,
     .index_right-post__Yuzlv,
     .post-reply-list-user-info-top-name,
     .post-reply-list-user-info-top-time,
@@ -470,14 +470,14 @@
     .search-wrap-input,
     .thread-content-detail,
     .type-wrap-txt,
-    .bbs-index-web-bbsindexWarp + div {
+    .bbs-index-web-bbsindexWarp div {
         font-family: var(--font), PingFangSC-Regular, PingFang SC, miui,
             system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
             Helvetica, sans-serif !important;
     }
 
-    .post-wrapper_bbs-post-wrapper-title__TLQdd + p,
-    .index_bbs-post-web-main-title-provider__uHAn9 + span,
+    .post-wrapper_bbs-post-wrapper-title__TLQdd p,
+    .index_bbs-post-web-main-title-provider__uHAn9 span,
     .index_bbs-post-web-main-title-provider__uHAn9,
     .main-c {
         font-family: var(--font), PingFangSC-Semibold !important;
@@ -487,9 +487,9 @@
         font-family: var(--font), PingFangSC-Semibold, PingFang SC !important;
     }
 
-    .post-user_user-base-info__AxpCI + a,
-    .post-wrapper_toggle-tool__MGO_Q + span,
-    .index_quote-operate__28QIi + span,
+    .post-user_user-base-info__AxpCI a,
+    .post-wrapper_toggle-tool__MGO_Q span,
+    .index_quote-operate__28QIi span,
     .bbs-index-web,
     .bbs-index-web-body,
     .bbs-index-web-holder,
@@ -506,7 +506,7 @@
         font-family: var(--font), PingFangSC-Regular !important;
     }
 
-    .notLogin + a + span,
+    .notLogin a span,
     .banneritem,
     .content-wrap,
     .hot-search,
@@ -522,13 +522,13 @@
     font,
     .right-post-title,
     .post-title,
-    .post-info + div {
+    .post-info div {
         font-family: var(--font), PingFangSC !important;
     }
 
     .nav_qiantao_hupu210316,
     .title,
-    .cntv_list + ul + li + a {
+    .cntv_list ul li a {
         font-family: var(--font), PingFangSC-Regular, Helvetica, Arial,
             Microsoft Yahei, sans-serif !important;
     }
@@ -545,14 +545,14 @@
     }
 
     #card,
-    yt-live-chat-author-chip + #author-name,
+    yt-live-chat-author-chip #author-name,
     #header-subtext,
     #message {
         font-size: 20px !important;
         line-height: 1.5 !important;
     }
 
-    #icon + * + * + div + svg,
+    #icon * * div svg,
     .emoji,
     .yt-live-chat-author-badge-renderer,
     #img {
@@ -585,7 +585,7 @@
 }
 
 @-moz-document domain("baked.live") {
-    #messagebuffer + div {
+    #messagebuffer div {
         font-size: 50px !important;
         line-height: 1.5 !important;
     }
@@ -599,7 +599,7 @@
 }
 
 @-moz-document domain("9xbuddy.in") {
-    #root + section {
+    #root section {
         font-family: var(--font), ui-sans-serif, system-ui, -apple-system,
             BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
             Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
