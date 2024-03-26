@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        4.1.0
+@version        4.0.4
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -17,6 +17,7 @@
 }
 
 @-moz-document domain("google.com") {
+    fireconsole-home,
     .e9EfHf,
     .Fh5muf,
     #gb-main,
@@ -106,7 +107,7 @@
         filter: sepia(40%);
     }
 
-    body {
+    body ~ html {
         background: #b5361e !important;
     }
 }
@@ -205,7 +206,7 @@
 }
 
 @-moz-document domain("github.com") {
-    body + #__next,
+    body ~ html,
     div.logged-in.env-production.page-responsive.full-width,
     div.logged-in.env-production.page-responsive,
     div.sr-only {
@@ -326,8 +327,8 @@
 
 @-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org") {
     /* MediaWiki */
-    body + #content,
-    .mw-mmv-image,
+    body ~ html, /* equal to html < body { } */
+	.mw-mmv-image,
     .mw-mmv-post-image,
     #mw-panel,
     #mw-head,
@@ -579,7 +580,6 @@
 
 @-moz-document domain("shellcheck.net") {
     body ~ html {
-        /* equal to html < body { } */
         filter: sepia(40%);
     }
 }
