@@ -27,6 +27,16 @@ amazon.com##.widgetId\=search-results_5.template\=SEARCH_RESULTS.slot\=MAIN.celw
 
 appleid.apple.com##.landing__blocks
 
+apple.com##.image-hero
+apple.com##.image-icon-privacy
+apple.com##.section-airtag.section
+apple.com##.section-offline.section
+apple.com##.section-river.section-friends.section
+apple.com##.section-river.section-locate.section
+apple.com##.section-what-else.section
+apple.com##.typography-hero-intro
+apple.com##.typography-section-headline
+
 !------!
 ! Represents the 1st and 7th elements
 apps.apple.com##div.app-privacy__modal-section:nth-child(n+1):nth-child(-n+2)
@@ -136,6 +146,8 @@ deepl.com##.empty\:hidden.z-20.left-2.bottom-2.fixed
 
 developer.android.com##devsite-snackbar
 
+developer.mozilla.org##.fallback.top-banner
+
 discord.com###popout_29
 discord.com##.arrowIcon__1bc6e
 discord.com##.art-3yfHpl
@@ -222,6 +234,7 @@ facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1
 facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(1)
 facebook.com##.x1y1aw1k > div:nth-of-type(1) > .x1n2onr6 > .x1cnzs8.xjkvuk6.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6
 facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
+facebook.com##.xzd29fr.x1lku1pv.x5ib6vp.x18d9i69.xc73u3c.xexx8yu.xt55aet.x1c4vz4f.xknmibj.x1q0g3np.xozqiw3.x6s0dn4.x1qughib.xeuugli.xs83m0k.x1r8uery.x78zum5.x1ja2u2z.x1n2onr6.x9f619
 facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
 !------!
 
@@ -238,6 +251,13 @@ forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
 forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-of-type(3)
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__text
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
+
+firebase.google.com##.cta-hero-footer
+firebase.google.com##.devsite-banner-summit-blue.devsite-banner
+firebase.google.com##.homepage-hero__image-desktop
+firebase.google.com##.ng-star-inserted.firebase-logo-mark
+firebase.google.com##.ng-star-inserted.ng-tns-c3156041170-6.nav-section.quicklink-promo-card.mdc-card.mat-mdc-card
+firebase.google.com##promo-optin-banner.ng-star-inserted
 
 gemini.google.com##upsell-button.ng-star-inserted
 
@@ -277,6 +297,7 @@ hltv.org##.right2Col > aside:nth-of-type(2)
 hltv.org##.yabo-firstcol-box
 hltv.org##aside:nth-of-type(1) > .presented-by-row
 
+icloud.com##.application-title
 icloud.com##.icloud-animated-hero
 icloud.com##.tiles
 
@@ -400,6 +421,9 @@ parcelsapp.com##section.faq:nth-of-type(4)
 parcelsapp.com##section.faq:nth-of-type(8) > .container
 parcelsapp.com##section.light-gray-bg:nth-of-type(7)
 parcelsapp.com##section.light-gray-bg:nth-of-type(9)
+
+perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.md\:block.ease-out.duration-300.fade-in.animate-in.shadow-sm.p-md.border.rounded-lg.w-\[300px\].hidden.z-30.right-md.bottom-md.fixed
+perplexity.ai##.flex-col.flex > div.bg-transparent.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50:nth-of-type(1)
 
 play.google.com##.Ou5Yib
 play.google.com##.RGUlu

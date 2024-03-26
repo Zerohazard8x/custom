@@ -862,7 +862,6 @@
 ||uloz.to$all
 ||unity3d.com$all
 ||uri.sh$all
-||us-east-2.amazonaws.com$all
 ||us.xmlppcbuzz.com$all
 ||usemessages.com$all
 ||usercentrics.eu$all
@@ -930,6 +929,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||us-east-2.amazonaws.com$script,inline-script,object,ping,stylesheet,other
 ||tiktokcdn-us.com$script,inline-script,object,ping,stylesheet,other
 ||turner.com$script,inline-script,object,ping,stylesheet,other
 ||adtidy.org$script,inline-script,object,ping,stylesheet,other
