@@ -261,6 +261,7 @@ firebase.google.com##.homepage-hero__image-desktop
 firebase.google.com##.ng-star-inserted.firebase-logo-mark
 firebase.google.com##.ng-star-inserted.ng-tns-c3156041170-6.nav-section.quicklink-promo-card.mdc-card.mat-mdc-card
 firebase.google.com##promo-optin-banner.ng-star-inserted
+||www.gstatic.com/mobilesdk*g$image
 
 gemini.google.com##upsell-button.ng-star-inserted
 
