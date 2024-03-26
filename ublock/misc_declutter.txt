@@ -121,6 +121,7 @@ byjus.com###adtech-top-banner-container
 chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
 chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
+chegg.com###D_B1
 chegg.com##.TUcyk.styled__B1AdsWrapper-sc-1nx2zdf-0
 chegg.com##.jVGOCz.styled__BannerAdPlaceholder-kj3hee-1
 chegg.com##.lhjuGU.styled__QnaAnswerExpertDisclaimer-sc-1n9zsh8-6
@@ -191,6 +192,8 @@ dochub.com##.page-section--overview.page-section
 dochub.com##.page-section--partners.page-section
 dochub.com##.page-section--security.page-section
 dochub.com##.page-section--workflow.page-section
+
+docs.google.com###inproduct-guide-modal
 
 drive.google.com##.a-da-ji.a-U-ye
 drive.google.com##.d7xVPd > div > .rYfpJe
@@ -269,13 +272,22 @@ getpocket.com##div > div.onboarding-badge:first-child
 getpocket.com##div > nav > a.css-18qpw11
 getpocket.com##ul.css-1bjgl5h.links
 
+github.com###collaboration
+github.com###productivity
+github.com###security
 github.com##.Box-footer > div.mb-3:nth-of-type(1) > .color-fg-muted.mt-2
+github.com##.DklBG.Octicon-sc-9kayk9-0
 github.com##.border-bottom.mb-5.feed-right-sidebar > .js-notice
 github.com##.border-bottom.mb-5.feed-right-sidebar > div > .js-notice
+github.com##.col-12.build-in-animate.my-md-10.my-8
 github.com##.d-lg-block.d-md-block.d-sm-none.d-none.position-absolute.Popover.js-notice
+github.com##.font-mktg > .p-responsive.container-xl
 github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
+github.com##.ilHgdV.Box-sc-g0xbh4-0
 github.com##.js-notice
 github.com##.mx-auto.col-8 > .mb-2
+github.com##.mx-auto.home-globe-container-webgl.home-globe-container
+github.com##.px-3.z-2.position-relative.container-xl
 github.com##.rounded-2.p-3.color-border-muted.border.color-bg-default.dashboard-changelog.mb-3
 github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
 
@@ -374,6 +386,7 @@ monkeytype.com###bannerCenter
 monkeytype.com###newVersionIndicator
 
 music.apple.com##.svelte-36irpb.upsell-banner
+music.apple.com##.svelte-6ox3l2.banner-container
 music.apple.com##.svelte-vr90x9.upsell-banner
 
 myanimelist.net##.ga-impression.bottom-bar
@@ -620,6 +633,7 @@ wikiwand.com##.footer_subTitle__2Qrwq
 wikiwand.com##.footer_title__GtcWC
 wikiwand.com##.logoIcon_sep__6ACnW
 
+wolframalpha.com##.MmSr.sc-27aa800e-0.csqIdz.sc-183a9123-3
 wolframalpha.com##.QRoJJ.sc-f3dfd2ae-0
 wolframalpha.com##.chGUCO.sc-373a152b-0
 
