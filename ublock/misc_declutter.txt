@@ -127,17 +127,14 @@ chegg.com##.jVGOCz.styled__BannerAdPlaceholder-kj3hee-1
 chegg.com##.lhjuGU.styled__QnaAnswerExpertDisclaimer-sc-1n9zsh8-6
 chegg.com##div.gHnNJJ.styled__ComponentWrapper-sc-1v7qxzh-1:nth-of-type(2)
 
+codashop.com###banner-list-ph
 codashop.com##.active.product__tab-pane > div
 codashop.com##.form-section__recent-transaction
 codashop.com##.product-faq-section
 codashop.com##.product-long-description__content
-||cdn1.codashop.com/S/content/common/images/cashback/cashback.gif$image
-||cdn1.codashop.com/S/content/mobile/images/pc_version_coda.png$image
-||d1qgcmfii0ptfa.cloudfront.net/S/content/mobile/images/app_store_coda.png$image
-||d1qgcmfii0ptfa.cloudfront.net/S/content/mobile/images/google_play_coda.png$image
-
-! 2024-02-27 https://www.codashop.com
-www.codashop.com###banner-list-ph
+||cdn1.codashop.com*.gif$image
+||cdn1.codashop.com*coda*g$image
+||d1qgcmfii0ptfa.cloudfront.net*images/*coda*g$image
 
 convertio.co##.text-center.rating
 convertio.co##.js-softobar.softobar
@@ -145,7 +142,11 @@ convertio.co##.js-softobar.softobar
 deepl.com##.CharLimitSignupAdV2-module--heading--VD2iq
 deepl.com##.empty\:hidden.z-20.left-2.bottom-2.fixed
 
+developer.android.com##.android-promo.devsite-landing-row-no-image-background.devsite-landing-row-2-up.devsite-landing-row
 developer.android.com##devsite-snackbar
+||developer.android.com/*mages/*.svg$image
+||gstatic.com/images/icons/material/product*youtube*g$image
+
 
 developer.mozilla.org##.fallback.top-banner
 
