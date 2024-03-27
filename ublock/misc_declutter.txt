@@ -536,9 +536,12 @@ speedtest.net##.celebration-modal.modal-in-place.modal
 speedtest.net##.lower-content-view
 speedtest.net##.lowerboard-content
 
-stackoverflow.com##.mb16.s-anchors__grayscale.s-anchors.s-sidebarwidget__yellow.s-sidebarwidget
-stackoverflow.com##.overflow-hidden.blr-sm.fc-black-500.p12.bc-black-200.bb.bl.bt > .jc-space-between.d-flex
-stackoverflow.com##.spotCollective.svg-spot.fc-black-300.d-block.h-auto.mb12.mt16.mx-auto.wmx100
+stackoverflow.com,superuser.com,stackexchange.com###feed-link
+stackoverflow.com,superuser.com,stackexchange.com##.d-block.h-auto.mb12.mx-auto.wmx100
+stackoverflow.com,superuser.com,stackexchange.com##.mb16.s-anchors__grayscale.s-anchors.s-sidebarwidget__yellow.s-sidebarwidget
+stackoverflow.com,superuser.com,stackexchange.com##.overflow-hidden.blr-sm.fc-black-500.p12.bc-black-200.bb.bl.bt > .jc-space-between.d-flex
+stackoverflow.com,superuser.com,stackexchange.com##.spotCollective.svg-spot.fc-black-300.d-block.h-auto.mb12.mt16.mx-auto.wmx100
+stackoverflow.com,superuser.com,stackexchange.com##.tex2jax_ignore.module
 
 store.steampowered.com###achievement_block
 store.steampowered.com###noReviewsWriteOne
