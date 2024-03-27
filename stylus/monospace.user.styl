@@ -147,10 +147,7 @@
             .mw-content-ltr.mw-parser-output p span
         ),
     blockquote div p,
-    *
-        tr
-        td
-        span:not(.wikitable * * * span):not(.infobox-data *),
+    * tr td span:not(.wikitable * * * span):not(.infobox-data *),
     dl,
     dl dd span,
     .block-indent span,
@@ -246,6 +243,7 @@
             "Arial", sans-serif !important;
     }
 
+    #header .tabmenu li:first-child a::after,
     #description,
     .add,
     .author,
@@ -262,9 +260,9 @@
     .login-required:not(.morelink .login-required):not(.c-btn),
     .md * * * * tbody tr td,
     .md
-        h1:not(.usertext-body .md h1):not(
-            ._3ms2Z8z8rPWLXaErcTJ9yH * h1
-        ):not(.h-full div h1),
+        h1:not(.usertext-body .md h1):not(._3ms2Z8z8rPWLXaErcTJ9yH * h1):not(
+            .h-full div h1
+        ),
     .md h2:not(._3ms2Z8z8rPWLXaErcTJ9yH h2),
     .md h3:not(.mb-sm div h3),
     .md p,
@@ -444,10 +442,7 @@
             .mw-content-ltr.mw-parser-output p span
         ),
     blockquote div p,
-    *
-        tr
-        td
-        span:not(.wikitable * * * span):not(.infobox-data *),
+    * tr td span:not(.wikitable * * * span):not(.infobox-data *),
     dl,
     dl dd span,
     .block-indent span,
@@ -829,13 +824,11 @@
 
     h2:not(.lc_content h2):not(.recommendationsTableTitle h2):not(
             h2.mmtitle
-        ):not(.b_algoheader * h2):not(h2.ua_e):not(.b_title h2):not(
-            li h2
-        ):not(.nws_sh h2):not(.b_wpt_bl h2):not(.b_subModule h2):not(
-            .b_ami h2
-        ):not(.b_go_big h2):not(.reverse h2):not(
-            .pageRecoContainer div h2
-        ),
+        ):not(.b_algoheader * h2):not(h2.ua_e):not(.b_title h2):not(li h2):not(
+            .nws_sh h2
+        ):not(.b_wpt_bl h2):not(.b_subModule h2):not(.b_ami h2):not(
+            .b_go_big h2
+        ):not(.reverse h2):not(.pageRecoContainer div h2),
     .b_mgridTitleCont,
     .b_mgridTitle a,
     .v-ans-title,
@@ -1257,8 +1250,9 @@
     }
 }
 
-@-moz-document domain("developer.android.com") {
+@-moz-document domain("developer.android.com"), domain("firebase.google.com") {
     devsite-code pre,
+    devsite-code pre code,
     article div p code,
     * p a code {
         font-family: var(--mono-combo), Roboto Mono, monospace !important;
