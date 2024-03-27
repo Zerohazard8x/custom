@@ -913,7 +913,6 @@
 ||wus-streaming-video-rt-microsoft-com.akamaized.net$all
 ||wwd.com$all
 ||x.o2.pl$all
-||xboxlive.com$all
 ||xlxbvxntdkx.com$all
 ||xpoint.tech$all
 ||yahoosandbox.com$all
@@ -929,6 +928,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||xboxlive.com$script,inline-script,object,ping,stylesheet,other
 ||us-east-2.amazonaws.com$script,inline-script,object,ping,stylesheet,other
 ||tiktokcdn-us.com$script,inline-script,object,ping,stylesheet,other
 ||turner.com$script,inline-script,object,ping,stylesheet,other

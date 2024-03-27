@@ -147,7 +147,6 @@ developer.android.com##devsite-snackbar
 ||developer.android.com/*mages/*.svg$image
 ||gstatic.com/images/icons/material/product*youtube*g$image
 
-
 developer.mozilla.org##.fallback.top-banner
 
 discord.com###popout_29
