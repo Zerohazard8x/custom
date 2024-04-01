@@ -1250,7 +1250,6 @@
 ||tadst.com$script,inline-script,object,ping,stylesheet,other
 ||targetimg1.com$script,inline-script,object,ping,stylesheet,other
 ||techlab-cdn.com$script,inline-script,object,ping,stylesheet,other
-||telegram.me$script,inline-script,object,ping,stylesheet,other
 ||template.canva.com$script,inline-script,object,ping,stylesheet,other
 ||testfamilysafety.bing.com$script,inline-script,object,ping,stylesheet,other
 ||th.bing.com$script,inline-script,object,ping,stylesheet,other
