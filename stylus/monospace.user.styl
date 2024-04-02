@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.6.6
+@version        2.6.7
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -176,15 +176,6 @@
         --plex: IBMPlexSans, "IBM Plex Sans";
     }
 
-    .loggedin:not(.post-linkflair-switch.loggedin):not(.title.loggedin),
-    .c-btn.login-required,
-    .help-toggle a,
-    .domain a,
-    .entry .buttons li a,
-    .top-matter .tagline,
-    body h1,
-    .md p strong,
-    .md p a,
     thead tr th,
     .flair-content,
     .input-container input,
@@ -211,8 +202,6 @@
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
-    .title.loggedin,
-    .score:not(.tagline .score),
     #header,
     #search input,
     ._1LHxa-yaHJwrPK8kuyv_Y4,
@@ -221,26 +210,31 @@
     ._3VvVLJHakguGRWc5JxUX40,
     ._3yx4Dn0W3Yunucf5sVJeFU,
     .btn,
+    .c-btn.login-required,
     .commentsignupbar__cta-button,
     .commentsignupbar__desc,
     .commentsignupbar__textarea-above,
     .commentsignupbar__title,
+    .entry .buttons li a,
     .flair,
     .flairrichtext,
     .head,
     .hover,
     .linkflairlabel,
+    .loggedin,
     .morelink,
     .q_unSaY23rpdd3lDvGZ-,
     .redditname,
+    .score,
     .side::after,
     .stamp,
-    .title h1:not(.sidecontentbox .title h1),
+    .title h1,
     .title-button,
-    .title:not(.sidecontentbox .title):not(.entry div .title),
-    .titlebox h1,
+    .title:not(.sidecontentbox .title),
     .titlebox h1,
     .titlebox::before,
+    .top-matter .tagline,
+    body h1,
     h4,
     h5,
     ._3oHXlwUZwpR5SS-8P9tILX {
@@ -278,9 +272,10 @@
     .tagline,
     .text-14,
     .user,
+    .users-online span,
     a.button-small,
     blockquote ul li,
-    body p:not(.entry div p),
+    body p,
     shreddit-app,
     .usertext-body {
         font-family: var(--noto), -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -289,8 +284,9 @@
             helvetica, sans-serif !important;
     }
 
-    .users-online span,
     .subscribers,
+    .md p strong,
+    .md p a,
     .subscribers .number {
         font-family: var(--noto), "Helvetica Neue", "Helvetica", "Arial",
             sans-serif !important;
@@ -532,6 +528,8 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .zqOZs a,
+    .XAKuwe,
     .ZtihLe,
     .wx62f,
     .yUTMj,
