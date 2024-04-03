@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.6.7
+@version        2.6.8
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -137,8 +137,8 @@
 
     ul
         li
-        span:not(#pagehistory ul li span):not(
-            .mw-content-ltr.mw-parser-output ul li span
+        > span:not(#pagehistory ul li > span):not(
+            .mw-content-ltr.mw-parser-output ul li > span
         ),
     dd span i,
     .mw-content-ltr
@@ -161,6 +161,7 @@
         font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
     }
 
+    .diff tbody tr * *,
     p code,
     li code,
     pre span {
@@ -176,6 +177,7 @@
         --plex: IBMPlexSans, "IBM Plex Sans";
     }
 
+    .button .flex,
     thead tr th,
     .flair-content,
     .input-container input,
@@ -195,7 +197,9 @@
             .pointer-events-auto
         ):not(h6 a):not(.a),
     time:not(.bottom span time):not(.linkinfo .date time),
-    .text-neutral-content-weak:not(h2):not(.leading-4 *),
+    .text-neutral-content-weak:not(h2):not(.leading-4 *):not(
+            .py-md .text-neutral-content-weak
+        ),
     .text-neutral-content-strong {
         font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
@@ -246,7 +250,6 @@
     #description,
     .add,
     .author,
-    .button .flex,
     .buttons button,
     .choice,
     .date span,
@@ -735,8 +738,6 @@
             SegoeUI, Segoe, "Segoe UI Variable Display",
             "Segoe UI Variable Small", "WeblySleek UI";
         --not-segoe: "Roboto Flex", "Roboto", Aptos, "-apple-system";
-        --roboto-then-segoe-small: var(--not-segoe), "Segoe UI Variable Small",
-            var(--segoe);
     }
 
     /* Search box */
@@ -772,7 +773,7 @@
             Arial, sans-serif !important;
     }
 
-    #b_footerItems ul li a,
+    #b_footerItems ul li *,
     #b_footerItems,
     .sa_rm,
     #detailMeta,
@@ -784,14 +785,12 @@
         font-family: var(--not-segoe), Arial, Helvetica, Sans-Serif !important;
     }
 
-    /*     li h2 a, .b_title h2 a {
-        font-family: var(--not-segoe), "Segoe UI", Arial, Helvetica, Sans-Serif !important;
-    } */
-
     .paa_tx {
         font-family: var(--not-segoe), "Roboto" !important;
     }
 
+    li h2 a,
+    .b_title h2 a,
     h2,
     .mmtitle a,
     .imgText,
@@ -799,7 +798,7 @@
         font-family: var(--not-segoe), "Segoe UI", Arial, Helvetica, Sans-Serif !important;
     }
 
-    .MicrosoftMap .taskBar ul li.inputbox input,
+    * * ul li.inputbox input,
     .b_entityTitle,
     .b_searchboxForm,
     .b_topTitle,
@@ -841,7 +840,7 @@
     .annotate .b_focusTextLarge,
     .b_focusTextMedium,
     .b_mgridTitle,
-    .b_subModule .b_wfInfoCard .bm_phase2 .ent-dtab-nam-ov-dtnp,
+    .b_subModule .b_wfInfoCard .bm_phase2 *,
     .irp-video-slogan,
     .nameContainer,
     .sto_title .sto_slidelr,
@@ -855,10 +854,11 @@
 
     .b_vPanel:not(#ua_gcn .b_vPanel),
     cite {
-        font-family: var(--roboto-then-segoe-small), "-apple-system",
-            HelveticaNeue, Roboto, Arial, sans-serif !important;
+        font-family: var(--not-segoe), "Segoe UI Variable Small", var(--segoe),
+            "-apple-system", HelveticaNeue, Roboto, Arial, sans-serif !important;
     }
 
+    .b_smText,
     .ux_ecmp-sel,
     .title,
     .tit,
@@ -878,60 +878,17 @@
     .tdw_button,
     .ms-Button-label,
     .ms-search-text-h2,
-    .recommendationsTableTitle h2 {
-        font-family: var(--roboto-then-segoe-small), Arial, sans-serif !important;
-    }
-
+    .recommendationsTableTitle h2,
     .vsb_tr_t,
     .asSectionHeading,
     .sa_tm_subText {
-        font-family: var(--roboto-then-segoe-small), Arial, Helvetica,
-            sans-serif !important;
+        font-family: var(--not-segoe), "Segoe UI Variable Small", var(--segoe),
+            Arial, Helvetica, sans-serif !important;
     }
 
     .scopes {
-        font-family: var(--roboto-then-segoe-small), Tahoma, Arial, Verdana,
-            sans-serif !important;
-    }
-
-    .b_smText {
-        font-family: var(--roboto-then-segoe-small), Helvetica, sans-serif !important;
-    }
-
-    /* Font weights */
-    .b_entityTitle a,
-    .carousel-title h2 *,
-    .b_ilhTitle h2,
-    .rrrter_teTitle h2,
-    .hasImg h2,
-    .rs_chatText h2,
-    .rrr_teTitle h2,
-    .scs_cpr h2,
-    .b_rs h2,
-    .b_rrsr h2,
-    .ent-dtab-nam-ov-dtp,
-    .v-ans-title,
-    .b_mgridTitle a,
-    #tob_rail_title,
-    .rs_chatText,
-    .df_hd .b_traits,
-    #rd_gtrtb_ttl,
-    .annotate .b_focusTextLarge,
-    .b_focusTextMedium,
-    .b_mgridTitle,
-    .b_subModule .b_wfInfoCard .bm_phase2 .ent-dtab-nam-ov-dtnp,
-    .irp-video-slogan,
-    .nameContainer,
-    .sto_title .sto_slidelr,
-    .sto_title,
-    .lite-entcard-exp h2,
-    .richrsrailtitle h2,
-    h2
-        span:not(.l_ecrd_txt_heros):not(.l_ecrd_txt_herol):not(
-            .l_ecrd_txt_small
-        ):not(.l_ecrd_txt_herom),
-    container-title {
-        font-weight: 600 !important;
+        font-family: var(--not-segoe), "Segoe UI Variable Small", var(--segoe),
+            Tahoma, Arial, Verdana, sans-serif !important;
     }
 
     .code_blu,
@@ -1119,6 +1076,17 @@
     .wZ4JdaHxSAhGy1HoNVja span span,
     .ddgpt pre {
         font-family: var(--mono-combo), Consolas, Menlo, Monaco, monospace !important;
+    }
+
+    .eO9dloD5J8OJewxQVUem .D4hR0tobSBRm_mZ4hrlS span,
+    .eO9dloD5J8OJewxQVUem
+        .zOy00l5oxa1BzkYx8dfo
+        .N5t7rxvhA9HFhN2jgj_I
+        .hHVrjZST7zuknVVFtP6w {
+        font-family: var(--mono-combo), ui-monospace, Menlo, Monaco,
+            "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
+            "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
+            "Droid Sans Mono", "Courier New", monospace !important;
     }
 
     /*     .prettyprint code {
