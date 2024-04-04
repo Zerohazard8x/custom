@@ -407,6 +407,8 @@ mybib.com##.primary.show.tooltip-lg
 mybib.com##.vue-portal-target
 
 office.com##.ms-fcl-nd.welcome__title--dark.welcome__title--visual.welcome__title--consumer-with-badge.welcome__title--consumer.ms-fontWeight-light
+office.com##.root-113.ms-Layer--fixed.ms-Layer
+office.com##.width-restrictor--no-gutter > div:nth-of-type(3)
 office.com##ohp-learning-shelf-react.ng-star-inserted
 
 omnicalculator.com##.IntroductionModal.jsx-456407116
@@ -509,17 +511,6 @@ search.yahoo.com##.searchRightTopAds.reg
 shopee.*##.MPbswA
 shopee.*##._2ypCMv
 shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
-
-sofascore.com###portals
-sofascore.com##.cCvbUN.sc-fqkvVR
-sofascore.com##.ctnzfO.sc-fqkvVR
-sofascore.com##.dFWpTa.sc-fqkvVR
-sofascore.com##.eVYfOf.sc-fqkvVR
-sofascore.com##.effxrH.sc-fqkvVR
-sofascore.com##.hhyMoi.sc-fqkvVR
-sofascore.com##.hwVmER.sc-fqkvVR
-sofascore.com##.kKRTNa.sc-fqkvVR
-sofascore.com##.kONZKD.sc-fqkvVR
 
 softcobra.com###rjvtzejbrgxquxexyryxzqekxzvlamtblfocmveivdtnmzztvtpyjxb
 
