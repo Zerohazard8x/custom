@@ -25,6 +25,9 @@ inquirer.net##.showcookmsg.qni-cookmsg
 inquirer.net##a[href^="https://ruby.inquirer.net/redirect/redirect.php"]:nth-of-type(1)
 inquirer.net##section#inq_section:nth-of-type(2)
 
+msn.com##.consumption-page-feed-wrapper
+msn.com##.consumptionFeed_nextArticle-DS-EntryPoint1-1.consumption-feed-content
+
 nbcnews.com##.share-has-dropdown.h-h.share-list
 nbcnews.com##.HFSBumped.grid-col-push-half-xl.grid-col-3_5-xl.grid-col-4_5-l.layout-grid-item.article-body__right-rail
 nbcnews.com##.article-social-share-top
