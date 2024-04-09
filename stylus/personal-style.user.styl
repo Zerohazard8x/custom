@@ -5,10 +5,10 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.5.3
+@version        2.6.0
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("instructure.com"), domain("msn.com"), domain("metacritic.com"), domain("flightaware.com"), domain("twitch.tv"), domain("emojipedia.org"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("quora.com"), domain("deepl.com"), domain("weibo.com"), domain("weibo.cn"), domain("wordcounter.net"), domain("hupu.com"), domain("sports.cctv.com"), regexp(".*youtube.com\/live_chat.*"), domain("baked.live"), domain("chat.mistral.ai"), domain("9xbuddy.in") {
+@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("msn.com"), domain("twitch.tv"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in") {
     :root {
         /* Define variables */
         --font: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
@@ -65,14 +65,48 @@
 
     .dynamic-text-view-model-wiz,
     #meta > ytd-channel-name div div yt-formatted-string {
-        /* "+" is adjacent sibling selector */
-        /* https://www.w3schools.com/Css/css_combinators.asp */
+		/* "+" is adjacent sibling selector */
+		/* https://www.w3schools.com/Css/css_combinators.asp */
         font-weight: 700 !important;
     }
 
     /*     h2 yt-formatted-string {
         font-weight: 600 !important;
     } */
+}
+
+@-moz-document regexp(".*youtube.com\/live_chat.*") {
+    .yt-live-chat-text-message-renderer {
+        font-size: 25px !important;
+        line-height: 1.5 !important;
+    }
+
+    #card,
+    yt-live-chat-author-chip #author-name,
+    #header-subtext,
+    #message {
+        font-size: 20px !important;
+        line-height: 1.5 !important;
+    }
+
+    #icon * * div svg,
+    .emoji,
+    .yt-live-chat-author-badge-renderer,
+    #img {
+        height: 25px !important;
+        width: auto !important;
+    }
+}
+
+
+@-moz-document domain("msn.com") {
+    .lightTheme,
+    .locationItem-DS-EntryPoint1-6,
+    .suggestion-DS-EntryPoint1-1,
+    .weatherButtonWrapper-DS-EntryPoint1-3,
+    .weatherFeedbackDialogButton-DS-EntryPoint1-3 {
+        font-family: Segoe UI, Segoe WP, Arial, sans-serif, "MS Shell Dlg 2" !important;
+    }
 }
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
@@ -152,17 +186,6 @@
     }
 }
 
-@-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org") {
-    /* Nitter */
-    .container,
-    .tweet-content,
-    .site-name,
-    button,
-    select,
-    input {
-        font-family: var(--font), sans-serif !important;
-    }
-}
 
 @-moz-document domain("deepl.com") {
     body *:not(.fa) {
@@ -171,13 +194,6 @@
     }
 }
 
-@-moz-document domain("quora.com") {
-    .q-box {
-        font-family: var(--font), -apple-system, system-ui, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
-            sans-serif !important;
-    }
-}
 
 @-moz-document domain("steampowered.com") {
     b,
@@ -248,21 +264,6 @@
     }
 }
 
-@-moz-document domain("emojipedia.org") {
-    :root {
-        --font-plus-jakarta: "__Plus_Jakarta_Sans_c26b88",
-            "__Plus_Jakarta_Sans_Fallback_c26b88";
-    }
-
-    body,
-    .flex {
-        font-family: var(--font-plus-jakarta), var(--font), ui-sans-serif,
-            system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
-            helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
-            segoe ui emoji, segoe ui symbol, noto color emoji !important;
-    }
-}
-
 @-moz-document domain("twitch.tv") {
     .bTKXKk {
         background-color: transparent !important;
@@ -309,44 +310,6 @@
     }
 }
 
-@-moz-document domain("flightaware.com") {
-    input,
-    #s2id_autogen1,
-    #s2id_autogen2,
-    .localePicker {
-        font-family: "FontAwesome", Roboto, "MS Shell Dlg 2" !important;
-    }
-
-    #home-main-messaging h1,
-    .messaging-title h2 {
-        font-family: Lato, "Roboto", Arial, Helvetica, sans-serif !important;
-    }
-}
-
-@-moz-document domain("metacritic.com") {
-    #container,
-    #content_section,
-    #hpbanner,
-    #site_layout,
-    .col_layout,
-    .hpbanner_wrapper,
-    .metascore_w,
-    .site_gutters,
-    #primary_nav {
-        font-family: ProximaNova, sans-serif !important;
-    }
-}
-
-@-moz-document domain("msn.com") {
-    .lightTheme,
-    .locationItem-DS-EntryPoint1-6,
-    .suggestion-DS-EntryPoint1-1,
-    .weatherButtonWrapper-DS-EntryPoint1-3,
-    .weatherFeedbackDialogButton-DS-EntryPoint1-3 {
-        font-family: Segoe UI, Segoe WP, Arial, sans-serif, "MS Shell Dlg 2" !important;
-    }
-}
-
 @-moz-document domain("instructure.com") {
     /* Canvas */
     /*     a {
@@ -359,242 +322,6 @@
     .canvasplus-convo-peeker-convo-top,
     .css-14jozxf-view--inlineBlock {
         background: none !important;
-    }
-}
-@-moz-document domain("weibo.com"), domain("weibo.cn") {
-    .woo-box-flex {
-        font-family: var(--font), system-ui, -apple-system, Segoe UI, Roboto,
-            Ubuntu, Cantarell, Noto Sans, sans-serif !important;
-    }
-
-    .WB_main,
-    .gn_position,
-    .WB_footer {
-        font-family: var(--font), Arial, "PingFang SC", "Hiragino Sans GB",
-            "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    }
-
-    .card,
-    .main-text,
-    h4 {
-        font-family: var(--font), Helvetica Neue, Helvetica, Arial, sans-serif !important;
-    }
-
-    .woo-input-main {
-        font-family: var(--font), "MS Shell Dlg 2" !important;
-    }
-}
-
-@-moz-document domain("wordcounter.net") {
-    .container,
-    #box {
-        font-family: var(--font), Helvetica, Arial !important;
-    }
-}
-
-@-moz-document domain("gsmarena.com") {
-    .autocomplete-desc,
-    .pricing span,
-    .meta-item-time,
-    .meta-item-comments,
-    #footmenu p,
-    #opinions-total,
-    #topsearch-text,
-    #wrapper,
-    .buyers-guide-notification span,
-    .meta-line time,
-    .meta-line,
-    .module-fit,
-    .module-phones-link,
-    .module-review-xl-title span,
-    .more-news-link,
-    .news-item,
-    .nfo,
-    .review-body,
-    .row2 span,
-    .ttl,
-    .user-thread,
-    a,
-    font strong,
-    h3,
-    tr th,
-    tbody tr td {
-        font-family: "Roboto Flex", Roboto, Arimo, Arial !important;
-    }
-
-    .specs-fans span,
-    .section-heading a,
-    #menu li a,
-    #specs-list table tbody tr th,
-    #user-comments h2 a,
-    .accent,
-    .article-info,
-    .article-info-meta-link a,
-    .block-link header h3,
-    .brandmenu-v2 ul li a,
-    .brandmenu-v2,
-    .center-stage,
-    .feat-item-header,
-    .feat-item-title,
-    .icon-count,
-    .module-review-xl-title strong,
-    .news-item a h3,
-    .pad a,
-    .pricing tbody,
-    .specs-phone-name-title,
-    .specs-spotlight-features li,
-    h4,
-    h5,
-    tr td a:not(.collapse):not(.ttl a):not(.nfo a) {
-        font-family: "Barlow Condensed", Google-Oswald, Arial !important;
-    }
-}
-
-@-moz-document domain("hupu.com"), domain("sports.cctv.com") {
-    /* Hupu Iframe */
-    .index_simple-detail-content__3FPFA,
-    .hp-pc-rc-SuperMenu-sub-menu-container,
-    .bbs-search-web,
-    .bbs-search-web-content,
-    .index_game-center-entrance-container-title__BNope,
-    .index_hp-pc-breadcrumb___Sojb,
-    .index_post-info___hEkW,
-    .index_post-title__xE1Ku,
-    .index_right-post-item__VLcv7,
-    .index_right-post__Yuzlv a,
-    .index_right-post__Yuzlv,
-    .post-reply-list-user-info-top-name,
-    .post-reply-list-user-info-top-time,
-    .post-reply-list-user-info-user-location,
-    .post-user_post-user-comp-info-bottom__CqR2O,
-    .search-wrap-input,
-    .thread-content-detail,
-    .type-wrap-txt,
-    .bbs-index-web-bbsindexWarp div {
-        font-family: var(--font), PingFangSC-Regular, PingFang SC, miui,
-            system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
-            Helvetica, sans-serif !important;
-    }
-
-    .post-wrapper_bbs-post-wrapper-title__TLQdd p,
-    .index_bbs-post-web-main-title-provider__uHAn9 span,
-    .index_bbs-post-web-main-title-provider__uHAn9,
-    .main-c {
-        font-family: var(--font), PingFangSC-Semibold !important;
-    }
-
-    .content-header {
-        font-family: var(--font), PingFangSC-Semibold, PingFang SC !important;
-    }
-
-    .post-user_user-base-info__AxpCI a,
-    .post-wrapper_toggle-tool__MGO_Q span,
-    .index_quote-operate__28QIi span,
-    .bbs-index-web,
-    .bbs-index-web-body,
-    .bbs-index-web-holder,
-    .bbs-index-web-middle,
-    .list-item,
-    .list-item-desc,
-    .list-item-wrap,
-    .list-wrap,
-    .middle-module,
-    .post-user_user-base-info__AxpCI,
-    .text-list-model,
-    .user-operate,
-    .list-item-lights {
-        font-family: var(--font), PingFangSC-Regular !important;
-    }
-
-    .notLogin a span,
-    .banneritem,
-    .content-wrap,
-    .hot-search,
-    .hot-search-item,
-    .hot-search-title,
-    .hp-pc-rc-TopMenu-top,
-    .radio-txt,
-    .hot-title {
-        font-family: var(--font), PingFangSC-Regular, PingFang SC !important;
-    }
-
-    .index_right-post-title__zN9JN,
-    font,
-    .right-post-title,
-    .post-title,
-    .post-info div {
-        font-family: var(--font), PingFangSC !important;
-    }
-
-    .nav_qiantao_hupu210316,
-    .title,
-    .cntv_list ul li a {
-        font-family: var(--font), PingFangSC-Regular, Helvetica, Arial,
-            Microsoft Yahei, sans-serif !important;
-    }
-
-    .hot-index {
-        font-family: var(--font), HelveticaNeue-CondensedBold, HelveticaNeue !important;
-    }
-}
-
-@-moz-document regexp(".*youtube.com\/live_chat.*") {
-    .yt-live-chat-text-message-renderer {
-        font-size: 25px !important;
-        line-height: 1.5 !important;
-    }
-
-    #card,
-    yt-live-chat-author-chip #author-name,
-    #header-subtext,
-    #message {
-        font-size: 20px !important;
-        line-height: 1.5 !important;
-    }
-
-    #icon * * div svg,
-    .emoji,
-    .yt-live-chat-author-badge-renderer,
-    #img {
-        height: 25px !important;
-        width: auto !important;
-    }
-}
-
-@-moz-document domain("yandex.com") {
-    .SearchPage-Container {
-        font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
-            -apple-system, BlinkMacSystemFont, Helvetica Neue, Roboto, Segoe UI,
-            Arial, Helvetica, sans-serif !important;
-    }
-
-    .HeaderDesktop,
-    .mini-suggest__input {
-        font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
-            Arial, Helvetica, "Arial Unicode MS", sans-serif !important;
-    }
-
-    .mini-suggest__button-text {
-        font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
-            arial, sans-serif !important;
-    }
-
-    .Label-Content {
-        font-family: "YS Text", Verdana, Arial, Helvetica, sans-serif !important;
-    }
-}
-
-@-moz-document domain("baked.live") {
-    #messagebuffer div {
-        font-size: 50px !important;
-        line-height: 1.5 !important;
-    }
-}
-
-@-moz-document domain("chat.mistral.ai") {
-    .bg-background {
-        font-family: var(--font), ui-sans-serif, system-ui, sans-serif,
-            Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
     }
 }
 

@@ -1,0 +1,319 @@
+/* ==UserStyle==
+@name           monospace2
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    My personal changes to codeblocks, etc
+@author         Zerohazard8x LLM
+@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl
+@homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
+==/UserStyle== */
+
+:root {
+    /* Define variables */
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+        "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", FiraGO,
+        "FF Meta", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+        "Noto Sans KR", "Noto Sans";
+}
+
+@-moz-document domain("poe.com") {
+    .BotInfoCardHeader_operatedBy__G5WAP,
+    .BotInfoCardHeader_followerCount__nrf6H,
+    .BotMetadataTag_BotMetadataTag__Jkq1r,
+    .Button_buttonBase__Bv9Vx,
+    .ChatHeader_subText__JcFh3,
+    .ChatHistoryListItem_flexWithCenteredItems__Xmy6y,
+    .ChatHistoryListItem_secondaryText__bBw_y,
+    .ContinueLastChat_left___0Rco,
+    .ExploreBotListItem_botDescription__Ps9Jt,
+    .ExploreBotListItem_botName__W6Tyi,
+    .FileInfo_metadata__Wu4uZ,
+    .FileInfo_title__sUM2l,
+    .LinksSection_link__Z9CvZ,
+    .Markdown_markdownContainer__Tz3HQ,
+    .SidebarCard_link__ot_pN,
+    .SidebarLayout_layoutWrapper__mPYi4,
+    .DesktopAppAnnouncementBanner_ctaButton__3ppiO,
+    h2,
+    p,
+    .ChatMessage_badge__ah1FU {
+        font-family: var(--sans), -apple-system, system-ui, BlinkMacSystemFont,
+            Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue,
+            sans-serif !important;
+    }
+
+    code span,
+    code {
+        font-family: var(--mono-combo), Consolas, monaco, monospace !important;
+    }
+
+    /*     code span,
+    code:not(.Markdown_markdownContainer__Tz3HQ p code) {
+        font-size: 16px !important;
+    } */
+}
+
+@-moz-document domain("wikiwand.com") {
+    .monospaced,
+    code,
+    pre:not(.openai_content__jNwCi * pre) {
+        font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
+            Courier New, Courier, monospace !important;
+    }
+
+    /*     .monospaced,
+    pre:not(.openai_content__jNwCi * pre) {
+        font-size: 16px !important;
+    } */
+
+    .pcs-edit-section-title,
+    section blockquote p,
+    .footer_title__GtcWC,
+    h5,
+    .header_header__DOKKH h1,
+    .mw-parser-output blockquote,
+    .poem,
+    .item_anchor__rLB49,
+    .section-h {
+        font-family: var(--serif), "Noto Serif", "Noto Serif-fallback-1", serif !important;
+    }
+
+    .root_wrapper__apZti h1,
+    .root_wrapper__apZti h2 {
+        font-family: var(--serif), Noto Serif !important;
+    }
+
+    ul
+        li
+        span:not(#pagehistory ul li span):not(
+            .mw-content-ltr.mw-parser-output ul li span
+        ),
+    dd span i,
+    .mw-content-ltr
+        p
+        span:not(.navigation-not-searchable):not(
+            .mw-content-ltr.mw-parser-output p span
+        ),
+    blockquote div p,
+    * tr td span:not(.wikitable * * * span):not(.infobox-data *),
+    dl,
+    dl dd span,
+    .block-indent span,
+    * p a span,
+    *
+        .mw-parser-output
+        p
+        span:not(.mw-history-legend .mw-parser-output p span):not(
+            .mw-content-ltr.mw-parser-output p span
+        ):not(.wm_content__0bruk .mw-parser-output p span) {
+        font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
+    }
+}
+
+@-moz-document domain("developer.mozilla.org") {
+    code,
+    .section-content pre {
+        font-family: var(--mono-combo), Menlo, Consolas, Monaco, Liberation Mono,
+            Lucida Console, monospace !important;
+    }
+
+    /*     pre code,
+    p code:not(dd p code):not(.section-content p code),
+    strong code {
+        font-size: 16px !important;
+    } */
+}
+
+@-moz-document domain("symbolab.com") {
+    .latex-command-input {
+        font-family: var(--mono-combo), "Courier New", monospace !important;
+    }
+}
+
+@-moz-document domain("xdaforums.com") {
+    .tooltip-content,
+    .node-description,
+    .uix_welcomeSection__title,
+    #footer,
+    .menu-content,
+    .p-body,
+    .p-nav-inner,
+    .p-title-value,
+    .bbWrapper,
+    .button-text,
+    .p-sectionLinks-list,
+    .input {
+        font-family: var(--sans), -apple-system, BlinkMacSystemFont, segoe ui,
+            Roboto, Helvetica, Arial, sans-serif, apple color emoji,
+            segoe ui emoji, segoe ui symbol !important;
+    }
+
+    .bbCodeInline,
+    .bbCodeCode {
+        font-family: var(--mono-combo), Monaco, Menlo, Consolas, roboto mono,
+            andale mono, ubuntu mono, monospace !important;
+        font-size: 16px !important;
+    }
+}
+
+@-moz-document domain("codeberg.org") {
+    .height,
+    .ui,
+    .file-view,
+    h1,
+    h2,
+    h3,
+    .grid,
+    .gt-df {
+        font-family: var(--font-personal), -apple-system, "Segoe UI", system-ui,
+            Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+            sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Noto Color Emoji", "Twemoji Mozilla" !important;
+    }
+
+    code {
+        font-family: var(--mono-combo), ui-monospace, SFMono-Regular, "SF Mono",
+            Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace,
+            "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+            "Twemoji Mozilla" !important;
+        /*         font-size: 16px !important; */
+    }
+}
+
+@-moz-document domain("docs.oracle.com") {
+    pre,
+    dd,
+    code {
+        font-family: var(--mono-combo), "DejaVu Sans Mono", monospace !important;
+        font-size: 16px !important;
+    }
+}
+
+@-moz-document domain("yahoo.com") {
+    #doc {
+        font-family: YahooSans VF, Roboto, helvetica neue, helvetica, arial,
+            sans-serif;
+    }
+
+    .code-snippet {
+        font-family: var(--mono-combo), "SourceCodePro" !important;
+    }
+
+    .snippet-row {
+        font-family: var(--mono-combo), CourierNewPSMT !important;
+    }
+
+    /* 	.code-snippet, .snippet-row {
+		font-size: 16px !important;
+	} */
+}
+
+@-moz-document domain("baeldung.com") {
+    code.hljs {
+        font-family: var(--mono-combo), "Source Code Pro", "Consolas",
+            "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+        font-size: 16px !important;
+    }
+}
+
+@-moz-document domain("chat.lmsys.org") {
+    code {
+        font-family: var(--mono-combo), Consolas, Monaco, Andale Mono,
+            Ubuntu Mono, monospace !important;
+    }
+
+    /*     .svelte-15hifvz pre code {
+        font-size: 16px !important;
+    } */
+}
+
+@-moz-document domain("17track.net") {
+    .canvas,
+    .page-content,
+    .nav li {
+        font-family: var(--sans), sans-serif !important;
+    }
+
+    .CodeMirror-sizer {
+        font-family: var(--mono-combo), Courier New, Andale Mono, Monaco !important;
+    }
+}
+
+@-moz-document domain("appledb.dev") {
+    .home,
+    .navbar,
+    .page {
+        font-family: var(--sans), -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+            "Helvetica Neue", sans-serif !important;
+    }
+
+    .text code {
+        font-family: var(--mono-combo), Consolas, Monaco, "Andale Mono",
+            "Ubuntu Mono", monospace !important;
+    }
+}
+
+@-moz-document domain("shellcheck.net") {
+    html body {
+        font-family: var(--sans), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: var(--mono-combo), Menlo, Monaco, Consolas, "Courier New",
+            monospace;
+    }
+}
+
+@-moz-document domain("chat.mistral.ai") {
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: var(--mono-combo), ui-monospace, SFMono-Regular, Menlo,
+            Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+    }
+
+    * * div code span {
+        font-family: var(--mono-combo), Menlo, Monaco, Consolas, "Andale Mono",
+            "Ubuntu Mono", "Courier New", monospace !important;
+    }
+}
+
+@-moz-document domain("knowyourmeme.com") {
+    .enlargeGalleryProgress,
+    #content,
+    #maru,
+    #mast_links,
+    #omgkym,
+    #photo,
+    #search_box,
+    #section_header,
+    .home,
+    .sidebar_box,
+    .tc,
+    .welcome,
+    .bodycopy,
+    a,
+    aside,
+    em,
+    h1,
+    h2,
+    h3,
+    h5,
+    h6,
+    li,
+    p strong,
+    p,
+    div h4 {
+        font-family: var(--sans), Helvetica, Arial, Verdana, sans-serif !important;
+    }
+
+    textarea {
+        font-family: var(--block-mono), var(--monospace), "monaco",
+            "lucida console", "lucida sans typewriter", "consolas", "monospace" !important;
+    }
+}

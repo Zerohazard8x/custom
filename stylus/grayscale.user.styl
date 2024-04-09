@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        4.0.7
+@version        4.1.0
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -10,6 +10,7 @@
 
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     #mount_0_0_2n div div {
+        /* "+" is adjacent sibling selector */
         /* https://www.w3schools.com/Css/css_combinators.asp */
         filter: sepia(40%);
     }
@@ -35,24 +36,11 @@
         filter: sepia(40%);
     }
 
-    .sfbg,
+	.sfbg,
     #cnt,
     .SGWAac,
     .L3eUgb {
         background: #202124 !important;
-    }
-}
-
-@-moz-document domain("nitter.net"), domain("nitter.riverside.rocks"), domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org") {
-    /* Nitter */
-    div.container,
-    .container,
-    .tweet-content,
-    .site-name,
-    button,
-    select,
-    input {
-        filter: sepia(40%);
     }
 }
 
@@ -73,15 +61,6 @@
 
 @-moz-document domain("cagematch.net") {
     .TemplateBody {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("quora.com") {
-    #credential_picker_container,
-    #onetap_google_intermediate_iframe,
-    #root,
-    #staticError {
         filter: sepia(40%);
     }
 }
@@ -117,43 +96,6 @@
     #b,
     #h,
     #a-popover-root {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("emojipedia.org") {
-    #__next,
-    div.container,
-    footer.page-footer.v2,
-    div.sponsor,
-    header.page-header,
-    div.page-header-part.page-header-part--ad,
-    div.topMainAd,
-    #react-root {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("flightaware.com") {
-    #blockerDisclaimerContainer,
-    #cookieDisclaimerContainer,
-    #iecountdown,
-    #mainBody,
-    div.ac_results.fauxListWrapper,
-    div.autocomplete-suggestions,
-    div.select2-drop-mask,
-    div.select2-drop.select2-drop-multi.select2-display-none.omnisearch_dropdown.select2-drop-active,
-    div.select2-sizer,
-    nav.navBarMobile,
-    span.select2-hidden-accessible,
-    div.ReactModalPortal {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("metacritic.com") {
-    #__nuxt,
-    #onetrust-consent-sdk {
         filter: sepia(40%);
     }
 }
@@ -245,13 +187,6 @@
     }
 }
 
-@-moz-document domain("poe.com") {
-    #__next,
-    div.ReactModalPortal {
-        filter: sepia(40%);
-    }
-}
-
 @-moz-document domain("chat.openai.com") {
     div.relative.z-0.flex.h-full.w-full.overflow-hidden {
         filter: sepia(40%);
@@ -285,42 +220,6 @@
     footer.footer-layout.uhf-container.has-padding.has-default-focus,
     section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm,
     section.border-top.has-default-focus.is-hidden-interactive.margin-top-sm.margin-top-none {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("wikiwand.com") {
-    .gallery_wrapper__1a7bM,
-    article {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("developer.mozilla.org") {
-    #root,
-    #a11y-status-message {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("symbolab.com") {
-    #dateTimePicker,
-    #fb-root,
-    #force-svg,
-    #hiddenData,
-    #loading-spinner,
-    #no-render-svg,
-    #symbolabLogoPrint,
-    #symbolabLogoPrint1,
-    div.hide-important,
-    div.nl-cookiepolicy,
-    div.nl-footer.print-hide.no-select,
-    div.nl-generatePdf.nl-hidden,
-    div.nl-hidden.nl-generatePdf,
-    div.nl-page,
-    div.print-hide,
-    section.nl-center,
-    div.nl-hidden.page {
         filter: sepia(40%);
     }
 }
@@ -368,25 +267,8 @@
     }
 }
 
-@-moz-document domain("forum.xda-developers.com"), domain("xdaforums.com") {
-    #_qc_cookie_access,
-    #pagetual-preload,
-    div.menu.menu--wide.menu--right.is-active.is-complete,
-    div.menuOutsideClicker,
-    div.pagetual_tipsWords,
-    div.tooltip.tooltip--member.tooltip--bottom,
-    div.tooltip.tooltip--member.tooltip--top,
-    div.tooltipCover,
-    div.u-bottomFixer.js-bottomFixTarget,
-    div.uix_pageWrapper--fixed,
-    span.globalAction,
-    #jumpToTop {
-        filter: sepia(40%);
-    }
-}
-
 @-moz-document domain("discord.com") {
-    /* TODO */
+	/* TODO */
 }
 
 @-moz-document domain("knowyourmeme.com") {
@@ -407,103 +289,8 @@
     }
 }
 
-@-moz-document domain("codeberg.org") {
-    div.full.height,
-    footer.page-footer {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("docs.oracle.com") {
-    div.bottomNav,
-    div.contentContainer,
-    div.header,
-    div.subNav,
-    div.topNav,
-    p.legalCopy,
-    #footer-banner {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("yahoo.com") {
-    .app div div,
-    #interactive-2col-qsp-m div canvas {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("baeldung.com") {
-    #fvp,
-    #wrap {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("weibo.com"), domain("weibo.cn") {
-    html {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("wordcounter.net") {
-    #globalPreloader,
-    #fb-root,
-    #data-block,
-    div.navbar.navbar-default.navbar-static-top,
-    div.modal.fade,
-    div.container,
-    #wc_footer,
-    #rufous-sandbox {
-        filter: sepia(40%);
-    }
-}
-
 @-moz-document domain("duckduckgo.com") {
     .site-wrapper {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("gsmarena.com") {
-    div.image-gallery,
-    div.l-container,
-    header.row.open.slide.headroom--not-top.slide--reset,
-    header.row.slide.slide--reset.headroom--top,
-    header.row.slide.headroom--top,
-    div.price-balloon,
-    #pagetual-preload {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("hupu.com") {
-    #__next,
-    #pagetual-preload,
-    #container {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("ecosia.org") {
-    .layout {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("17track.net") {
-    #topBillboard,
-    div.modal.modal-primary.yqcr-modal-translate.in,
-    div.page,
-    header.navbar.navbar-default.yq-header.yq-header-v3,
-    div.modal.modal-primary.yqc-modal,
-    #topBillboard,
-    header.navbar.navbar-default.yq-header.yq-header-v3,
-    div.page,
-    div.modal.modal-primary.yqcr-modal-translate.in,
-    div.modal.modal-primary.yqc-modal,
-    div.modal.modal-warning.yqcr-verification.in,
-    div.modal-backdrop.in {
         filter: sepia(40%);
     }
 }
@@ -527,13 +314,6 @@
     }
 }
 
-@-moz-document domain("yandex.com") {
-    .b-page__body,
-    .body__wrapper {
-        filter: sepia(40%);
-    }
-}
-
 @-moz-document domain("baked.live") {
     #messagebuffer div {
         filter: sepia(40%);
@@ -546,35 +326,8 @@
     }
 }
 
-@-moz-document domain("appledb.dev") {
-    .home,
-    .navbar,
-    .page {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("chat.mistral.ai") {
-    .bg-background {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("9xbuddy.in") {
-    #root section {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("shellcheck.net") {
-    body ~ html {
-        filter: sepia(40%);
-    }
-}
-
 @-moz-document domain("perplexity.ai") {
     .h-full .h-full.flex {
-        /* https://www.w3schools.com/cssref/sel_element_element.php */
         filter: sepia(40%);
     }
 }
