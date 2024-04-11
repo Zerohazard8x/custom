@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.6.0
+@version        2.6.1
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("msn.com"), domain("twitch.tv"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in") {
@@ -65,8 +65,8 @@
 
     .dynamic-text-view-model-wiz,
     #meta > ytd-channel-name div div yt-formatted-string {
-		/* "+" is adjacent sibling selector */
-		/* https://www.w3schools.com/Css/css_combinators.asp */
+        /* "+" is adjacent sibling selector */
+        /* https://www.w3schools.com/Css/css_combinators.asp */
         font-weight: 700 !important;
     }
 
@@ -97,7 +97,6 @@
         width: auto !important;
     }
 }
-
 
 @-moz-document domain("msn.com") {
     .lightTheme,
@@ -186,14 +185,12 @@
     }
 }
 
-
 @-moz-document domain("deepl.com") {
     body *:not(.fa) {
         font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, Helvetica, Arial, sans-serif !important;
     }
 }
-
 
 @-moz-document domain("steampowered.com") {
     b,
@@ -265,10 +262,6 @@
 }
 
 @-moz-document domain("twitch.tv") {
-    .bTKXKk {
-        background-color: transparent !important;
-    }
-
     .chat-line__message,
     .bQEtql {
         font-size: 25px !important;
@@ -307,21 +300,6 @@
         font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
             sans-serif !important;
         font-weight: var(--font-weight-semibold) !important;
-    }
-}
-
-@-moz-document domain("instructure.com") {
-    /* Canvas */
-    /*     a {
-        text-decoration: none !important;
-    } */
-
-    .ic-DashboardCard__action-badge,
-    .css-xvfq40-view--flex-flex,
-    .convo-peeker-convo,
-    .canvasplus-convo-peeker-convo-top,
-    .css-14jozxf-view--inlineBlock {
-        background: none !important;
     }
 }
 

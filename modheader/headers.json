@@ -22,10 +22,13 @@
                 "value": "en-US,en;q=0.5"
             }
         ],
-        "title": "unblock",
+        "title": "headers",
         "shortTitle": "1",
         "version": 2,
         "alwaysOn": true,
-        "excludeUrlFilters": [{ "enabled": true, "urlRegex": ".*lazada.*" }]
+        "excludeUrlFilters": [
+            { "enabled": true, "urlRegex": ".*lazada.*" },
+            { "enabled": true, "urlRegex": ".*gaming.amazon.*" }
+        ]
     }
 ]

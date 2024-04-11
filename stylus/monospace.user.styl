@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.7.0
+@version        2.7.1
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("perplexity.ai"), domain("pi.ai"), domain("groq.com"), domain("developer.android.com") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("perplexity.ai"), domain("pi.ai"), domain("groq.com"), domain("developer.android.com"), domain("instructure.com") {
     :root {
         /* Define variables */
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
@@ -238,7 +238,7 @@
     .titlebox h1,
     .titlebox::before,
     .top-matter .tagline,
-    body h1,
+    body > h1,
     h4,
     h5,
     ._3oHXlwUZwpR5SS-8P9tILX {
@@ -665,6 +665,8 @@
             Arial, sans-serif !important;
     }
 
+    #id_a,
+    #copilot_app_cta,
     #b_footerItems ul li *,
     #b_footerItems,
     .sa_rm,
@@ -929,5 +931,40 @@
     article div p code,
     * p a code {
         font-family: var(--mono-combo), Roboto Mono, monospace !important;
+    }
+}
+
+@-moz-document domain("instructure.com") {
+    /* Canvas */
+    /*     a {
+        text-decoration: none !important;
+    } */
+
+    #wrapper,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .navigation-tray-container,
+    .tray-with-space-for-global-nav,
+    .css-1dsl5sr-view,
+    input,
+    button,
+    select,
+    textarea,
+    .css-1vfp3rz-text,
+    .menu-item__text {
+        font-family: var(--mono-combo), monospace, "Lato Extended", "Lato",
+            "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    }
+
+    .css-6t42ud-view-link:is(a),
+    .css-17undkt-text,
+    .css-16jy445-baseButton__content,
+    .css-pljkwv-view-heading {
+        font-family: var(--mono-combo), monospace, LatoWeb, "Lato Extended",
+            "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 }
