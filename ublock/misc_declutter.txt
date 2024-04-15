@@ -412,8 +412,14 @@ mybib.com##.primary.animate.show.tooltip-lg
 mybib.com##.primary.show.tooltip-lg
 mybib.com##.vue-portal-target
 
+office.com##.hero__content--unauth-rebrand-logos-container
+office.com##.m365-hero-section--m365-rebrand-banner
+office.com##.m365-hero__subtitle
+office.com##.m365-treatment-b-hero__image
 office.com##.ms-fcl-nd.welcome__title--dark.welcome__title--visual.welcome__title--consumer-with-badge.welcome__title--consumer.ms-fontWeight-light
 office.com##.root-113.ms-Layer--fixed.ms-Layer
+office.com##.root-138.ms-Layer--fixed.ms-Layer
+office.com##.unauth-tab-section__container
 office.com##.width-restrictor--no-gutter > div:nth-of-type(3)
 office.com##ohp-learning-shelf-react.ng-star-inserted
 
