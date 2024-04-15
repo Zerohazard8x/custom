@@ -520,10 +520,18 @@ shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-
 
 softcobra.com###rjvtzejbrgxquxexyryxzqekxzvlamtblfocmveivdtnmzztvtpyjxb
 
+soundiiz.com###sectionPlatforms
 soundiiz.com##.avatar-medal
 soundiiz.com##.connector-name
+soundiiz.com##.container-padding.container-new.container-column.container-flex.container
 soundiiz.com##.keep-sync-title
+soundiiz.com##.overhead-canvas
+soundiiz.com##.overhead-desc
 soundiiz.com##.result-avatars
+soundiiz.com##.section-faq.section
+soundiiz.com##.section-reviews.section
+soundiiz.com##.section-tools.section
+soundiiz.com##.section-trusted.section
 soundiiz.com##.title-inline.info-message.message
 ||soundiiz.com/build/images/47e231c0..jpg$image
 
