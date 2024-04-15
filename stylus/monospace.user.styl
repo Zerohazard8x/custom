@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.7.1
+@version        2.7.2
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -161,9 +161,9 @@
         font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
     }
 
+    .monospaced,
     .diff tbody tr * *,
-    p code,
-    li code,
+    code,
     pre span {
         font-family: var(--mono-combo), monospace !important;
         /*         font-size: 16px !important; */
@@ -195,7 +195,7 @@
             .recover-password
         ):not(p em a):not(faceplate-tracker a):not(ul li a):not(
             .pointer-events-auto
-        ):not(h6 a):not(.a),
+        ):not(h6 a):not(.a):not(object a),
     time:not(.bottom span time):not(.linkinfo .date time),
     .text-neutral-content-weak:not(h2):not(.leading-4 *):not(
             .py-md .text-neutral-content-weak
@@ -246,6 +246,7 @@
             "Arial", sans-serif !important;
     }
 
+    object a,
     #header .tabmenu li:first-child a::after,
     #description,
     .add,
@@ -940,6 +941,7 @@
         text-decoration: none !important;
     } */
 
+    #application,
     #wrapper,
     h1,
     h2,
@@ -960,6 +962,12 @@
             "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 
+    .css-m8032z-text,
+    .css-14ttj25-view--inlineBlock-inlineListItem,
+    .css-4bnp8a-text,
+    .css-10am28f-text,
+    .css-1onamjj-view-listItem,
+    .css-vftc6n-view--block-list,
     .css-6t42ud-view-link:is(a),
     .css-17undkt-text,
     .css-16jy445-baseButton__content,

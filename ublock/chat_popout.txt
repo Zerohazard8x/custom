@@ -61,8 +61,10 @@ twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
 youtube.com###Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D
 youtube.com###about-these-results
 youtube.com###paid-comment-background
+youtube.com###sub-header
 youtube.com###ticker
 youtube.com##.ytd-rich-section-renderer.style-scope
+youtube.com##.ytd-video-description-infocards-section-renderer.style-scope.yt-simple-endpoint
 youtube.com##plasmo-csui
 youtube.com##yt-live-chat-author-chip.yt-live-chat-message-input-renderer.style-scope
 youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
