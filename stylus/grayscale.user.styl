@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           color
 @namespace      github.com/openstyles/stylus
-@version        4.1.1
+@version        4.1.2
 @description    If it's filter: , it's here
 @author         Zerohazard8x
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/grayscale.user.styl
@@ -36,7 +36,7 @@
         filter: sepia(40%);
     }
 
-	.sfbg,
+    .sfbg,
     #cnt,
     .SGWAac,
     .L3eUgb {
@@ -236,7 +236,7 @@
     }
 }
 
-@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org") {
+@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("minecraft.wiki") {
     /* MediaWiki */
     body ~ html, /* equal to html < body { } */
 	.mw-mmv-image,
@@ -280,7 +280,7 @@
 }
 
 @-moz-document domain("discord.com") {
-	/* TODO */
+    /* TODO */
 }
 
 @-moz-document domain("knowyourmeme.com") {
@@ -322,12 +322,6 @@
 
 @-moz-document regexp(".*youtube.com\/live_chat.*") {
     #chat-messages.style-scope.yt-live-chat-renderer.iron-selected {
-        filter: sepia(40%);
-    }
-}
-
-@-moz-document domain("baked.live") {
-    #messagebuffer div {
         filter: sepia(40%);
     }
 }
