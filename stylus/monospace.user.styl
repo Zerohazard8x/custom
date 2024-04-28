@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.7.2
+@version        2.7.3
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("perplexity.ai"), domain("pi.ai"), domain("groq.com"), domain("developer.android.com"), domain("instructure.com") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("perplexity.ai"), domain("pi.ai"), domain("groq.com"), domain("developer.android.com"), domain("instructure.com"), domain("minecraft.wiki") {
     :root {
         /* Define variables */
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
@@ -178,7 +178,6 @@
     }
 
     .button .flex,
-    thead tr th,
     .flair-content,
     .input-container input,
     .text-ellipsis span,
@@ -246,6 +245,7 @@
             "Arial", sans-serif !important;
     }
 
+    thead tr th,
     object a,
     #header .tabmenu li:first-child a::after,
     #description,
@@ -366,11 +366,17 @@
     } */
 }
 
-@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org") {
+@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("minecraft.wiki") {
     /* 	MediaWiki */
+    .mw-editsection,
     .mediawiki,
     #sidebar,
     h3 {
+        font-family: var(--sans), sans-serif, "Liberation Sans", Arial,
+            Helvetica, FreeSans, sans-serif !important;
+    }
+
+    .mw-editsection {
         font-family: var(--sans), sans-serif !important;
     }
 
@@ -384,7 +390,7 @@
 
     #personal h2 {
         font-family: var(--sans), "Helvetica Neue", "Nimbus Sans", "Helvetica",
-            "Arial", sans-serif !important;
+            "Arial" !important;
     }
 
     /* applies to e.g. <span lang="ja"> */
