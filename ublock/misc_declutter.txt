@@ -251,6 +251,8 @@ fandom.com##.rail-recentImages-module
 finance.yahoo.com##.Pos\(r\).End\(130px\).smartphone_D\(n\).C\(\$featureCueBgc\).Pos\(a\)\!.Fz\(s\).Bdrs\(8px\).D\(ib\).O\(n\)\:f.M\(0\).Whs\(n\)
 finance.yahoo.com##.Mend\(19px\).Mb\(8px\).Fz\(0\.875rem\)
 
+fonts.google.com##.ng-star-inserted.fab-tablet-mobile-button
+
 forum.xda-developers.com,xdaforums.com##.js-bottomFixTarget.u-bottomFixer
 forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
 forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-of-type(3)
@@ -279,6 +281,7 @@ github.com###collaboration
 github.com###productivity
 github.com###security
 github.com##.Box-footer > div.mb-3:nth-of-type(1) > .color-fg-muted.mt-2
+github.com##.Box-header--blue.Box-header > h3
 github.com##.DklBG.Octicon-sc-9kayk9-0
 github.com##.border-bottom.mb-5.feed-right-sidebar > .js-notice
 github.com##.border-bottom.mb-5.feed-right-sidebar > div > .js-notice
@@ -391,6 +394,8 @@ microsoft.com##.css-205.ms-Stack
 
 monkeytype.com###bannerCenter
 monkeytype.com###newVersionIndicator
+
+msn.com##div.sectionContainer-DS-EntryPoint1-1:nth-of-type(3)
 
 music.apple.com##.svelte-36irpb.upsell-banner
 music.apple.com##.svelte-6ox3l2.banner-container

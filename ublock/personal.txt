@@ -435,7 +435,6 @@
 ||fnojdupjbufb.xyz$all
 ||fnptvpbwnoo.xyz$all
 ||fonts.net$all
-||forgecdn.net$all
 ||form.run$all
 ||fotosik.pl$all
 ||fpskctncgj.xyz$all
@@ -928,6 +927,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||forgecdn.net$script,inline-script,object,ping,stylesheet,other
 ||xboxlive.com$script,inline-script,object,ping,stylesheet,other
 ||us-east-2.amazonaws.com$script,inline-script,object,ping,stylesheet,other
 ||tiktokcdn-us.com$script,inline-script,object,ping,stylesheet,other
