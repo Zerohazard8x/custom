@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Font legibility style
 @namespace      github.com/openstyles/stylus
-@version        4.0.0
+@version        4.1.0
 @author         zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/text-rendering.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
@@ -51,14 +51,16 @@
         -moz-osx-font-smoothing: grayscale !important; /* for Firefox */
         -ms-font-smoothing: antialiased !important; /* for IE */
         text-rendering: optimizeLegibility !important;
-        
+
         font-synthesis: none !important;
         font-optical-sizing: auto !important;
+
+        font-size-adjust: from-font !important;
     }
 
     pre,
     code,
-    tt {        
+    tt {
         font-feature-settings: "liga", "clig", "calt" !important;
 
         /* -webkit-font-feature-settings: "liga", "calt" !important;
@@ -69,8 +71,10 @@
         -moz-osx-font-smoothing: grayscale !important;
         -ms-font-smoothing: antialiased !important;
         text-rendering: optimizeLegibility !important;
-        
+
         font-synthesis: none !important;
         font-optical-sizing: auto !important;
+
+        font-size-adjust: from-font !important;
     }
 }
