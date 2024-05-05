@@ -7,6 +7,8 @@
 accounts.google.com##.EE6QGf
 accounts.google.com##.SYDc7
 
+accuweather.com##.right-rail-article__thumb.js-content-image
+
 adobe.com##.aem-GridColumn--offset--default--0.aem-GridColumn--offset--phone--0.aem-GridColumn--default--12.aem-GridColumn.aem-GridColumn--tablet--none.aem-GridColumn--phone--12.aem-GridColumn--default--none.aem-GridColumn--phone--hide.aem-GridColumn--offset--tablet--0.aem-GridColumn--tablet--12.flex
 adobe.com##.static.modalContainer
 
@@ -140,6 +142,9 @@ convertio.co##.text-center.rating
 convertio.co##.js-softobar.softobar
 
 copilot.microsoft.com##.b_wlcmCont.b_ziTileCont
+
+curseforge.com##.top-banner
+curseforge.com##.game-header
 
 deepl.com##.CharLimitSignupAdV2-module--heading--VD2iq
 deepl.com##.empty\:hidden.z-20.left-2.bottom-2.fixed
@@ -457,6 +462,7 @@ parcelsapp.com##section.light-gray-bg:nth-of-type(9)
 
 perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.md\:block.ease-out.duration-300.fade-in.animate-in.shadow-sm.p-md.border.rounded-lg.w-\[300px\].hidden.z-30.right-md.bottom-md.fixed
 perplexity.ai##.flex-col.flex > div.bg-transparent.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50:nth-of-type(1)
+perplexity.ai##.md\:text-center.pb-xs.justify-center.items-center.flex.mb-lg
 
 play.google.com##.Ou5Yib
 play.google.com##.RGUlu
@@ -673,3 +679,5 @@ you.com##.jlPksG.sc-69c436d2-2 > .dbxkjo.sc-42f19d8d-0
 you.com##.kEfGjV.sc-38580842-9
 you.com##.kvVbDV.sc-3022399e-0
 you.com##.ljWYYA.sc-18e0beb6-0
+
+zoom.us##.layout-aside

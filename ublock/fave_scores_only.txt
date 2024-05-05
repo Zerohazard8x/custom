@@ -43,6 +43,7 @@ sofascore.com##.eVYfOf.sc-fqkvVR
 sofascore.com##.effxrH.sc-fqkvVR
 sofascore.com##.fAiLzF.Box
 sofascore.com##.fSiJSi.sc-fqkvVR
+sofascore.com##.hPBkha.Box
 sofascore.com##.heJcSB.sc-fqkvVR
 sofascore.com##.hhyMoi.sc-fqkvVR
 sofascore.com##.hwVmER.sc-fqkvVR
@@ -56,3 +57,5 @@ sofascore.com##.kONZKD.sc-fqkvVR
 sofascore.com##.kcHixx.sc-fqkvVR
 sofascore.com##.kzMIWn.sc-fqkvVR
 sofascore.com##[href="/en-us/betting-tips-today"]
+
+thescore.com##.MatchupArticle__column--3JVWj.MatchupArticle__desktopView--1IYDo.col-sm-4
