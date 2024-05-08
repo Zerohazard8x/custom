@@ -1,31 +1,29 @@
 /* ==UserStyle==
-@author         Zerohazard8x + LLM
+@author         Zerohazard8x LLM
 @description    My personal userstyle
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.7.1
+@version        2.7.2
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("msn.com"), domain("twitch.tv"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in") {
+@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("msn.com"), domain("twitch.tv"), domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in"), domain("soranews24.com"), domain("rocketnews24.com"), domain("steampowered.com"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("twitter.com") {
     :root {
         /* Define variables */
-        --font: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-            "Roboto Flex", "Roboto", "Fira Sans", FiraGO, "FF Meta",
-            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans";
+        --font: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+            "Roboto Flex", "Roboto", "Fira Sans", FiraGO, "FF Meta", var(--noto);
         --readable: "Public Sans", "Fira Sans", FiraGO, "FF Meta", "Bahnschrift",
             "Aptos Narrow", "IBM Plex Sans Var", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "IBM Plex Sans", "Noto Sans JP", "Noto Sans TC",
-            "Noto Sans SC", "Noto Sans KR", "Noto Sans";
+            "IBM Plex Sans KR", "IBM Plex Sans", var(--noto);
         /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta", "Atkinson Hyperlegible", "Aptos",
             "Source Sans Pro", "Nunito Sans", "Nunito", "Raleway", "Road UA",
             "DIN Next", "Bahnschrift", "Aptos Narrow",
             "alte din 1451 mittelschrift", "Keiner", "Dinish", "Dinish Expanded",
             "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN", "IBM Plex Sans Var", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "IBM Plex Sans", "Aptos Display", "Noto Sans JP",
-            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Noto Sans",
+            "IBM Plex Sans KR", "IBM Plex Sans", "Aptos Display", var(--noto),
             "Trebuchet MS", "Roadgeek 2014", "Roadgeek 2005"; */
     }
 }
@@ -292,5 +290,14 @@
             BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
             Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
             Segoe UI Symbol, Noto Color Emoji !important;
+    }
+}
+
+@-moz-document domain("twitter.com") {
+    /* Twitter fallbacks */
+    .css-175oi2r,
+    .css-175oi2r div {
+        font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Helvetica, Arial, var(--noto), sans-serif !important;
     }
 }

@@ -1,24 +1,24 @@
 /* ==UserStyle==
 @name           monospace2
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.1.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("chat.mistral.ai") {
+@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com") {
     :root {
         /* Define variables */
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans";
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
             "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", FiraGO,
-            "FF Meta", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans";
+            "FF Meta", var(--noto);
         --serif: "Source Serif 4", "Source Serif Pro", "Shippori Mincho",
             "Serif UI Display", "Noto Serif JP", "Noto Serif TC",
-            "Noto Serif SC", "Noto Serif KR", "Noto Serif", "Noto Sans JP",
-            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR";
+            "Noto Serif SC", "Noto Serif KR", "Noto Serif", var(--noto);
         --monospace: "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Mono";
         --mono-combo: var(--monospace);
@@ -63,17 +63,14 @@
 }
 
 @-moz-document domain("wikiwand.com") {
-    .monospaced,
+    pre:not(.openai_content__jNwCi * pre) .monospaced,
+    .diff tbody tr * *,
     code,
-    pre:not(.openai_content__jNwCi * pre) {
+    pre span {
         font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
             Courier New, Courier, monospace !important;
+        /*         font-size: 16px !important; */
     }
-
-    /*     .monospaced,
-    pre:not(.openai_content__jNwCi * pre) {
-        font-size: 16px !important;
-    } */
 
     .pcs-edit-section-title,
     section blockquote p,
@@ -92,10 +89,17 @@
         font-family: var(--serif), Noto Serif !important;
     }
 
+    #firstHeading,
+    .mw-page-title-main,
+    .mw-headline {
+        font-family: var(--serif), "Linux Libertine", "Georgia", "Times",
+            "Source Serif Pro", serif !important;
+    }
+
     ul
         li
-        span:not(#pagehistory ul li span):not(
-            .mw-content-ltr.mw-parser-output ul li span
+        > span:not(#pagehistory ul li > span):not(
+            .mw-content-ltr.mw-parser-output ul li > span
         ),
     dd span i,
     .mw-content-ltr
@@ -104,8 +108,13 @@
             .mw-content-ltr.mw-parser-output p span
         ),
     blockquote div p,
-    * tr td span:not(.wikitable * * * span):not(.infobox-data *),
-    dl,
+    *
+        tr
+        td
+        span:not(.wikitable * * * span):not(.infobox-data *):not(
+            .hide-when-compact
+        ),
+    dl:not(.mw-body-content * dl),
     dl dd span,
     .block-indent span,
     * p a span,
@@ -114,7 +123,7 @@
         p
         span:not(.mw-history-legend .mw-parser-output p span):not(
             .mw-content-ltr.mw-parser-output p span
-        ):not(.wm_content__0bruk .mw-parser-output p span) {
+        ) {
         font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
     }
 }

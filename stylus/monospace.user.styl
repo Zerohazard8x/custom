@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.7.2
+@version        2.8.0
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -11,28 +11,26 @@
 @-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("learn.microsoft.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("fandom.com"), domain("perplexity.ai"), domain("pi.ai"), domain("groq.com"), domain("developer.android.com"), domain("instructure.com"), domain("minecraft.wiki") {
     :root {
         /* Define variables */
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans";
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
             "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", FiraGO,
-            "FF Meta", "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans";
+            "FF Meta", var(--noto);
         /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
             "Roboto Flex", "Roboto", Barlow, Lato, "Motiva Sans", "Proxima Nova", Inter,
             "Avenir Next", Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO,
             "FF Meta", Manrope, "Helvetica Neue", "Helvetica",
             "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu",
-            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
-            "Noto Sans", "Open Sans", "Droid Sans", ".SF UI Display",
+            var(--noto), "Open Sans", "Droid Sans", ".SF UI Display",
             "SF Pro Display", "SF Compact", "SF Hello"; */
         --serif: "Source Serif 4", "Source Serif Pro", "Shippori Mincho",
             "Serif UI Display", "Noto Serif JP", "Noto Serif TC",
-            "Noto Serif SC", "Noto Serif KR", "Noto Serif", "Noto Sans JP",
-            "Noto Sans TC", "Noto Sans SC", "Noto Sans KR";
+            "Noto Serif SC", "Noto Serif KR", "Noto Serif", var(--noto);
         /* --serif-full: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
             "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
             "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond",
             Lora, "Shippori Mincho", "Serif UI Display", "Noto Serif JP",
-            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif",
-            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR"; */
+            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif", var(--noto); */
         --monospace: "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Mono";
         /* --monospace: "Monaspace Argon Var", "Monaspace Argon VF", "Monaspace Argon", "Fira Code VF", "Fira Code",
@@ -147,11 +145,16 @@
             .mw-content-ltr.mw-parser-output p span
         ),
     blockquote div p,
-    * tr td span:not(.wikitable * * * span):not(.infobox-data *):not(.hide-when-compact),
+    *
+        tr
+        td
+        span:not(.wikitable * * * span):not(.infobox-data *):not(
+            .hide-when-compact
+        ),
     dl:not(.mw-body-content * dl),
     dl dd span,
     .block-indent span,
-    * p a span,
+    * p a > span,
     *
         .mw-parser-output
         p
@@ -173,14 +176,14 @@
 @-moz-document domain("reddit.com") {
     :root {
         /* Define variables */
-        --noto: "Noto Sans JP", "Noto Sans TC",
-            "Noto Sans SC", "Noto Sans KR", "Noto Sans", NotoSans;
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans", NotoSans;
         --plex: IBMPlexSans, "IBM Plex Sans Var", "IBM Plex Sans JP",
             "IBM Plex Sans KR", "IBM Plex Sans";
     }
 
-	h1.font-bold,
-	a.text-neutral-content-strong,
+    h1.font-bold,
+    a.text-neutral-content-strong,
     .button .flex,
     .flair-content,
     .input-container input,
@@ -249,7 +252,7 @@
             "Arial", sans-serif !important;
     }
 
-	thead tr th,
+    thead tr th,
     object a,
     #header .tabmenu li:first-child a::after,
     #description,
@@ -372,14 +375,15 @@
 
 @-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("minecraft.wiki") {
     /* 	MediaWiki */
-	.mw-editsection,
+    .mw-editsection,
     .mediawiki,
     #sidebar,
     h3 {
-        font-family: var(--sans), sans-serif, "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif !important;
+        font-family: var(--sans), sans-serif, "Liberation Sans", Arial,
+            Helvetica, FreeSans, sans-serif !important;
     }
-	
-	.mw-editsection {
+
+    .mw-editsection {
         font-family: var(--sans), sans-serif !important;
     }
 
@@ -427,8 +431,8 @@
             RobotoDraft, Roboto-Regular;
     }
 
-	.JXa4nd div span,
-	* div a div,
+    .JXa4nd div span,
+    * div a div,
     .kVCdgb,
     .yXlkLe,
     .zqOZs a,
@@ -641,7 +645,8 @@
         --segoe: "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
             SegoeUI, Segoe, "Segoe UI Variable Display",
             "Segoe UI Variable Small", "WeblySleek UI";
-        --not-segoe: "-apple-system", "Roboto Flex", "Roboto", Aptos, "-apple-system";
+        --not-segoe: "-apple-system", "Roboto Flex", "Roboto", Aptos,
+            "-apple-system";
     }
 
     /* Search box */
@@ -838,8 +843,7 @@
     input,
     .message-wB3GWa,
     .text-md-semibold-2VMhBr {
-        font-family: "gg sans", "Noto Sans JP", "Noto Sans TC",
-            "Noto Sans SC", "Noto Sans KR", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+        font-family: "gg sans", var(--noto), "Helvetica Neue", Helvetica, Arial,
             sans-serif !important;
     }
 
@@ -857,11 +861,22 @@
 }
 
 @-moz-document domain("duckduckgo.com") {
-	.site-wrapper, body, input, select, textarea, .eVNpHGjtxRBq_gLOfGDr {
-		font-family: "Proxima Nova", "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova", "Noto Sans JP", "Noto Sans TC",
-            "Noto Sans SC", "Noto Sans KR", "Noto Sans", "Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif !important;
-	}
-	
+    .site-wrapper,
+    body,
+    input,
+    select,
+    textarea,
+    .eVNpHGjtxRBq_gLOfGDr {
+        font-family: "Proxima Nova", "DDG_ProximaNova", "DDG_ProximaNova_UI_0",
+            "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2",
+            "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
+            "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans", "Helvetica Neue", "Helvetica", "Segoe UI",
+            "Nimbus Sans L", "Liberation Sans", "Open Sans", FreeSans, Arial,
+            sans-serif !important;
+    }
+
     code,
     .wZ4JdaHxSAhGy1HoNVja span span,
     .ddgpt pre {
@@ -954,6 +969,7 @@
         text-decoration: none !important;
     } */
 
+    .event-details-content,
     #application,
     #wrapper,
     h1,
@@ -975,39 +991,62 @@
             "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 
-	.css-1sr6v3o-text,
-	.css-njf9hq-baseButton__content,
-	.css-j68kdy-formFieldLabel,
-	.css-ib3lif-view--flex-flex,
-	.css-m97t26-text,
-	.css-l3we3a-checkboxFacade__label,
-	.css-1f6zcte-baseButton__content,
-	.css-154i6x9-modal,
-	.css-5x3bz0-view--flex-flex,
-	.css-118ltkl-view--inlineBlock-badge,
-	.css-14gbvmm-text,
-	.css-1sp24u-text,
-	.css-1fvrx9c-text,
-	.css-2dlkjw-text,
-	.css-iar2kr-text,
-	.css-wj8vot-view-flexItem,
-	.css-1heif24-view--flex-flex,
-	.css-977qb-view,
-	.css-103zv00-view-flexItem,
-	.css-nq7u71-view--flex-flex,
-	.css-i4y43u-text,
-	.css-1ugbsk7-text,
-	.css-bvhjjg-text,
-	.css-zfx53q-text,
-	.css-tx1xxs-view,
-	.css-138gh4t-view,
-	.css-3z137p-view,
-	.css-znkzol-view,
-	.css-1fevy06-view-flexItem,
-	.css-sk7tr4-view--flex-flex,
-	.css-ty98t2-view-flexItem,
-	.css-1i012th-baseButton__content,
-	.css-qfe6jw,
+    .css-1ry2jff-view-flexItem,
+    .css-1ku4xx4-text,
+    .css-5us8pe-view--flex-flex,
+    .css-1f9fbs-text,
+    .css-1ekpoai-view--flex-flex,
+    .css-wxpmja-view,
+    .css-kxhpwf-view--flex-flex,
+    .css-1fqjks6-text,
+    .css-17bo7u5-text,
+    .css-q6kura-text,
+    .css-1ftbeea-text,
+    #tinymce,
+    .css-1c0bb43-baseButton__content,
+    .css-oowy02-view-flexItem,
+    .css-1vx9cwx-view--block,
+    .css-1gkhyq7-toggleDetails,
+    .css-15k3f08-text,
+    .css-1qprmw-view,
+    .css-h20mns-view--flex-flex,
+    .css-14fpfr2-text,
+    .css-1nxwd0x-text,
+    .css-feuh9k-view--block,
+    .css-3qn3vl-view--flex-flex,
+    .css-1sr6v3o-text,
+    .css-njf9hq-baseButton__content,
+    .css-j68kdy-formFieldLabel,
+    .css-ib3lif-view--flex-flex,
+    .css-m97t26-text,
+    .css-l3we3a-checkboxFacade__label,
+    .css-1f6zcte-baseButton__content,
+    .css-154i6x9-modal,
+    .css-5x3bz0-view--flex-flex,
+    .css-118ltkl-view--inlineBlock-badge,
+    .css-14gbvmm-text,
+    .css-1sp24u-text,
+    .css-1fvrx9c-text,
+    .css-2dlkjw-text,
+    .css-iar2kr-text,
+    .css-wj8vot-view-flexItem,
+    .css-1heif24-view--flex-flex,
+    .css-977qb-view,
+    .css-103zv00-view-flexItem,
+    .css-nq7u71-view--flex-flex,
+    .css-i4y43u-text,
+    .css-1ugbsk7-text,
+    .css-bvhjjg-text,
+    .css-zfx53q-text,
+    .css-tx1xxs-view,
+    .css-138gh4t-view,
+    .css-3z137p-view,
+    .css-znkzol-view,
+    .css-1fevy06-view-flexItem,
+    .css-sk7tr4-view--flex-flex,
+    .css-ty98t2-view-flexItem,
+    .css-1i012th-baseButton__content,
+    .css-qfe6jw,
     .css-m8032z-text,
     .css-14ttj25-view--inlineBlock-inlineListItem,
     .css-4bnp8a-text,
@@ -1020,5 +1059,10 @@
     .css-pljkwv-view-heading {
         font-family: var(--mono-combo), monospace, LatoWeb, "Lato Extended",
             "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    }
+
+    .ef-file-preview-header-download span,
+    #App {
+        font-family: var(--mono-combo), "Lato", sans-serif !important;
     }
 }
