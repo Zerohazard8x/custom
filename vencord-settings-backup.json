@@ -49,7 +49,8 @@
                 "enabled": true
             },
             "NoTrack": {
-                "enabled": true
+                "enabled": true,
+                "disableAnalytics": true
             },
             "Settings": {
                 "enabled": true,
@@ -59,7 +60,9 @@
                 "enabled": false
             },
             "AlwaysTrust": {
-                "enabled": true
+                "enabled": true,
+                "domain": true,
+                "file": true
             },
             "AnonymiseFileNames": {
                 "enabled": true
@@ -143,7 +146,7 @@
                 "enabled": false
             },
             "ForceOwnerCrown": {
-                "enabled": true
+                "enabled": false
             },
             "FriendInvites": {
                 "enabled": false
@@ -188,7 +191,9 @@
                 "enabled": false
             },
             "MemberCount": {
-                "enabled": true
+                "enabled": true,
+                "memberList": true,
+                "toolTip": true
             },
             "MessageClickActions": {
                 "enabled": false
@@ -365,7 +370,9 @@
                 "enabled": true
             },
             "ShowConnections": {
-                "enabled": true
+                "enabled": true,
+                "iconSize": 32,
+                "iconSpacing": 1
             },
             "ShowHiddenChannels": {
                 "enabled": false
@@ -523,9 +530,6 @@
             "ServerProfile": {
                 "enabled": false
             },
-            "ShowTimeouts": {
-                "enabled": true
-            },
             "ThemeAttributes": {
                 "enabled": false
             },
@@ -586,6 +590,57 @@
             },
             "NewGuildSettings": {
                 "enabled": false
+            },
+            "ShowHiddenThings": {
+                "enabled": true,
+                "showTimeouts": true,
+                "showInvitesPaused": true,
+                "showModView": true,
+                "disableDiscoveryFilters": true
+            },
+            "BetterRoleContext": {
+                "enabled": false
+            },
+            "BetterSessions": {
+                "enabled": false,
+                "backgroundCheck": false,
+                "checkInterval": 20
+            },
+            "BetterSettings": {
+                "enabled": false
+            },
+            "FriendsSince": {
+                "enabled": false
+            },
+            "ImageLink": {
+                "enabled": false
+            },
+            "ImplicitRelationships": {
+                "enabled": false
+            },
+            "MessageLatency": {
+                "enabled": false
+            },
+            "OverrideForumDefaults": {
+                "enabled": false
+            },
+            "PauseInvitesForever": {
+                "enabled": false
+            },
+            "ReplyTimestamp": {
+                "enabled": true
+            },
+            "ResurrectHome": {
+                "enabled": false
+            },
+            "StreamerModeOnStream": {
+                "enabled": true
+            },
+            "UnlockedAvatarZoom": {
+                "enabled": false
+            },
+            "VoiceDownload": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -598,9 +653,9 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1707987106814
+            "settingsSyncVersion": 1715351452786
         },
         "enabledThemes": []
     },
-    "quickCss": "@import url(\"https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Shippori+Mincho|Noto+Serif+JP|Noto+Serif+TC|Noto+Serif+SC|Noto+Serif+KR|Fira+Mono|Source+Serif+4\");\r\n\r\n:root {\r\n    /* Define variables */\r\n    --sans: -apple-system, BlinkMacSystemFont, \"SF Pro\", \"SF Pro Text\",\r\n        \"Roboto Flex\", \"Roboto\", \"Fira Sans\", FiraGO, \"FF Meta\",\r\n        \"Helvetica Neue\", \"Helvetica\", \"Noto Sans\";\r\n    --serif: \"Source Serif 4\", \"Source Serif Pro\", \"Shippori Mincho\",\r\n        \"Serif UI Display\", \"Noto Serif JP\", \"Noto Serif TC\",\r\n        \"Noto Serif SC\", \"Noto Serif KR\", \"Noto Serif\", \"Noto Sans JP\",\r\n        \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\";\r\n    --monospace: \"Fira Code VF\", \"Fira Code\", \"Fira Code Retina\",\r\n        \"Fira Mono\";\r\n    --mono-combo: var(--monospace);\r\n}\r\n\r\n.card-3ie2dy > div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2:not(.title-HAL6j-):not(.heading-style-h2),\r\nh3,\r\nspan:not(.codeLine__3797b > span > span):not(.codeLine__3797b > span):not(\r\n        .codeLine__3797b > span > span > span\r\n    ),\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", \"Noto Sans\", \"Noto Sans JP\", \"Noto Sans TC\",\r\n        \"Noto Sans SC\", \"Noto Sans KR\", \"Helvetica Neue\", Helvetica, Arial,\r\n        sans-serif !important;\r\n}\r\n\r\n.codeLine__3797b,\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--mono-combo), Consolas, \"Andale Mono WT\",\r\n        \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\",\r\n        \"Liberation Mono\", \"Nimbus Mono L\", Monaco, \"Courier New\", Courier,\r\n        monospace !important;\r\n}\r\n\r\n.roleMention__02469,\r\n.username_d30d99,\r\n.roleMention-11Aaqi,\r\n.membersGroup-2eiWxl,\r\n.roles-3vQPxb,\r\n.username-3_PJ5r,\r\n.username-h_Y3Us,\r\n.username-vAneIW,\r\n.name__4c9aa,\r\n.username__73ce9,\r\n.mention {\r\n    filter: sepia(40%);\r\n}\r\n\r\n*:not(\r\n        pre *,\r\n        .far,\r\n        .fa,\r\n        .glyphicon,\r\n        [class*=\"vjs-\"],\r\n        .fab,\r\n        .fa-github,\r\n        .fas,\r\n        .material-icons,\r\n        .icofont,\r\n        .typcn,\r\n        mu,\r\n        [class*=\"mu-\"],\r\n        .glyphicon,\r\n        .icon\r\n    ) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n    \r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n}\r\n\r\npre,\r\ncode,\r\nb,\r\ntt {        \r\n    font-feature-settings: \"liga\" 1, \"clig\" 1, \"calt\" 1 !important;\r\n\r\n    -webkit-font-smoothing: antialiased !important;\r\n    -moz-osx-font-smoothing: grayscale !important;\r\n    -ms-font-smoothing: antialiased !important;\r\n    text-rendering: optimizeLegibility !important;\r\n    \r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n}"
+    "quickCss": "@import url(\"https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Shippori+Mincho|Noto+Serif+JP|Noto+Serif+TC|Noto+Serif+SC|Noto+Serif+KR|Fira+Mono|Source+Serif+4\");\r\n\r\n:root {\r\n    /* Define variables */\r\n    --noto: \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\",\r\n            \"Noto Sans\";\r\n    --sans: -apple-system, BlinkMacSystemFont, \"SF Pro\", \"SF Pro Text\",\r\n        \"Roboto Flex\", \"Roboto\", \"Inter V\", Inter, \"Fira Sans\", FiraGO,\r\n        \"FF Meta\", var(--noto);\r\n    --mono-combo: \"Monaspace Argon Var\", \"Monaspace Argon VF\",\r\n            \"Monaspace Argon\", \"Fira Mono\";\r\n}\r\n\r\n.card-3ie2dy div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2:not(.title-HAL6j-):not(.heading-style-h2),\r\nh3,\r\nspan:not(.codeLine__3797b span span):not(.codeLine__3797b span):not(\r\n        .codeLine__3797b span span span\r\n    ),\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", var(--noto), \"Helvetica Neue\", Helvetica, Arial,\r\n        sans-serif !important;\r\n}\r\n\r\n.codeLine__3797b,\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--mono-combo), Consolas, \"Andale Mono WT\",\r\n        \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\",\r\n        \"Liberation Mono\", \"Nimbus Mono L\", Monaco, \"Courier New\", Courier,\r\n        monospace !important;\r\n}\r\n\r\n*:not(\r\n        pre *,\r\n        .far,\r\n        .fa,\r\n        .glyphicon,\r\n        [class*=\"vjs-\"],\r\n        .fab,\r\n        .fa-github,\r\n        .fas,\r\n        .material-icons,\r\n        .icofont,\r\n        .typcn,\r\n        mu,\r\n        [class*=\"mu-\"],\r\n        .glyphicon,\r\n        .icon\r\n    ) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n    \r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n        \r\n    font-size-adjust: from-font !important;\r\n}\r\n\r\npre,\r\ncode,\r\ntt {        \r\n    font-feature-settings: \"liga\", \"clig\", \"calt\" !important;\r\n\r\n    -webkit-font-smoothing: antialiased !important;\r\n    -moz-osx-font-smoothing: grayscale !important;\r\n    -ms-font-smoothing: antialiased !important;\r\n    text-rendering: optimizeLegibility !important;\r\n    \r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n    \r\n    font-size-adjust: from-font !important;\r\n}"
 }
