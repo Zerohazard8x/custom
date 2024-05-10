@@ -1,10 +1,10 @@
 {
-  "timeStamp": 1713159760337,
+  "timeStamp": 1715351632282,
   "version": "1.57.2",
   "userSettings": {
     "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
-    "externalLists": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/fave_scores_only.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt",
+    "externalLists": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/fave_scores_only.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt\nhttps://mirror.ghproxy.com/https://raw.githubusercontent.com/bpc-clone/bypass-paywalls-clean-filters/main/bpc-paywall-filter.txt",
     "importedLists": [
       "https://mirror.ghproxy.com/https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
       "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt",
@@ -13,7 +13,7 @@
       "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt",
       "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt",
       "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt",
-      "https://mirror.ghproxy.com/https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt"
+      "https://mirror.ghproxy.com/https://raw.githubusercontent.com/bpc-clone/bypass-paywalls-clean-filters/main/bpc-paywall-filter.txt"
     ],
     "suspendUntilListsAreLoaded": false
   },
@@ -37,14 +37,14 @@
     "adguard-popup-overlays",
     "adguard-widgets",
     "ublock-annoyances",
+    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/bpc-clone/bypass-paywalls-clean-filters/main/bpc-paywall-filter.txt",
     "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt",
     "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/fave_scores_only.txt",
     "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt",
     "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt",
     "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt",
-    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt",
-    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt",
-    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
+    "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt"
   ],
   "hiddenSettings": {
     "autoUpdateDelayAfterLaunch": 1
@@ -63,5 +63,5 @@
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false",
-  "userFilters": ""
+  "userFilters": "dlsu.instructure.com##span.css-iurmb7-view-flexItem:nth-of-type(1)\n\nsports.yahoo.com##.caas-cover-wrapper\n\n! 2024-05-07 https://sports.yahoo.com\nsports.yahoo.com##.caas-logo\n\n! 2024-05-07 https://canary.discord.com\ncanary.discord.com##.description__51014.text-md-normal__6e567\n\n! 2024-05-08 https://twitter.com\ntwitter.com##.r-1xcajam.r-1hycxz.css-175oi2r > .r-1adg3ll.css-175oi2r > .css-175oi2r > .r-ttdzmv.r-vacyoi.css-175oi2r > div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r\n\n! 2024-05-09 https://www.tiktok.com\n@@||lf16-tiktok-web.tiktokcdn-us.com^"
 }
