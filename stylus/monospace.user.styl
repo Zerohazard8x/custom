@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.8.1
+@version        2.8.2
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -13,32 +13,31 @@
         /* Define variables */
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans";
-        /* --multilang-full: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+        /* --noto-full: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans", "FOT-Rodin Pro", "A-OTF UD Shin Go Pro",
             "Hiragino Kaku Gothic Pro", "FOT-NewRodin Pro", "DFPHSGothic-W5",
             "DFGHSGothic-W5", "DFHSGothic-W5", "DFPGGothicP_U-W5",
             "DFGGGothicP_U-W5", "DFPHSGothic-W7", "DFGHSGothic-W7",
             "DFHSGothic-W7", "DFPGothic-EB", "DFGGothic-EB", "DFGothic-EB",
             "DFPGothic-SU", "DFGGothic-SU", "DFGothic-SU"; */
-        --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "Roboto Flex",
-            "Roboto", "Inter V", Inter, "Fira Sans", FiraGO, "FF Meta",
-            "SF Pro Text", var(--noto);
-        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "Roboto Flex",
-            "Roboto", Barlow, Lato, "Motiva Sans", "Proxima Nova", Inter,
+        --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+            "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", FiraGO,
+            "FF Meta", var(--noto);
+        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
+            "Roboto Flex", "Roboto", Barlow, Lato, "Motiva Sans", "Proxima Nova", Inter,
             "Avenir Next", Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO,
-            "FF Meta", Manrope, "IBM Plex Sans JP", "IBM Plex Sans KR",
-            "IBM Plex Sans", "Ubuntu", var(--noto), "Open Sans", "Droid Sans",
-            "SF Pro Text", "SF Pro Display", ".SF UI Display", "SF Compact",
-            "SF Hello"; */
+            "FF Meta", Manrope, "Helvetica Neue", "Helvetica",
+            "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu",
+            var(--noto), "Open Sans", "Droid Sans", ".SF UI Display",
+            "SF Pro Display", "SF Compact", "SF Hello"; */
         --serif: "Source Serif 4", "Source Serif Pro", "Shippori Mincho",
             "Serif UI Display", "Noto Serif JP", "Noto Serif TC",
             "Noto Serif SC", "Noto Serif KR", "Noto Serif", var(--noto);
         /* --serif-full: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
-            Alegreya, "Crimson Pro", "Crimson Text", "Garamond Premr Pro",
-            "Libre Baskerville", Georgia, "EB Garamond", Lora, "Shippori Mincho",
-            "Serif UI Text", "Serif UI Display", "Noto Serif JP",
-            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif",
-            var(--noto); */
+            "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
+            "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond",
+            Lora, "Shippori Mincho", "Serif UI Display", "Noto Serif JP",
+            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif", var(--noto); */
         --monospace: "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Mono";
         /* --monospace: "Monaspace Argon Var", "Monaspace Argon VF", "Monaspace Argon", "Fira Code VF", "Fira Code",
@@ -153,12 +152,7 @@
             .mw-content-ltr.mw-parser-output p span
         ),
     blockquote div p,
-    *
-        tr
-        td
-        span:not(.wikitable * * * span):not(.infobox-data *):not(
-            .hide-when-compact
-        ),
+    * tr td > span,
     dl:not(.mw-body-content * dl),
     dl dd span,
     .block-indent span,
@@ -439,6 +433,9 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .gcal-dialog,
+    .goog-imageless-button,
+    #target > div,
     .JXa4nd div span,
     * div a div,
     .kVCdgb,
@@ -628,6 +625,10 @@
 
     .banner h1 {
         font-family: "Google Sans", var(--google), "Open Sans", arial !important;
+    }
+
+    .st-c-pos {
+        font-family: Verdana, sans-serif !important;
     }
 
     .mv6bHd,
@@ -995,10 +996,12 @@
     textarea,
     .css-1vfp3rz-text,
     .menu-item__text {
-        font-family: var(--mono-combo), monospace, "Lato Extended", "Lato",
-            "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: Iosevka, var(--mono-combo), monospace, "Lato Extended",
+            "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 
+    .css-fl9w3x-view--inlineBlock-link:is(a),
+    .css-1ca1i6i-text,
     .css-1ry2jff-view-flexItem,
     .css-1ku4xx4-text,
     .css-5us8pe-view--flex-flex,
@@ -1065,12 +1068,13 @@
     .css-17undkt-text,
     .css-16jy445-baseButton__content,
     .css-pljkwv-view-heading {
-        font-family: var(--mono-combo), monospace, LatoWeb, "Lato Extended",
-            "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: Iosevka, var(--mono-combo), monospace, LatoWeb,
+            "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
+            sans-serif !important;
     }
 
     .ef-file-preview-header-download span,
     #App {
-        font-family: var(--mono-combo), "Lato", sans-serif !important;
+        font-family: Iosevka, var(--mono-combo), "Lato", sans-serif !important;
     }
 }
