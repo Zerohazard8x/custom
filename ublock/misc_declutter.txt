@@ -230,24 +230,6 @@ ecosia.org##.wave-separator--visible.wave-separator--variant-tertiary.wave-separ
 
 emojipedia.org##.w-full.mb-9
 
-!------!
-! Represents elements 8 and 10 (diff. of 2 -> -2n+10)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+8):nth-child(-2n+10)
-
-facebook.com##.x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > div:nth-of-type(3)
-facebook.com##.x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-child(n+4):nth-child(-n+6)
-facebook.com##.x1iyjqo2 > ul
-facebook.com##.x1ja2u2z.x1n2onr6.x9f619 > div:nth-of-type(5) > div
-facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-child(n+2):nth-child(-n+3)
-facebook.com##.x1n2onr6.x1iyjqo2.xdt5ytf.x78zum5 > .x1y1aw1k > div:nth-of-type(3)
-facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > div
-facebook.com##.x1us19tq.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2 > div:nth-of-type(1) > ul > li:nth-of-type(1)
-facebook.com##.x1y1aw1k > div:nth-of-type(1) > .x1n2onr6 > .x1cnzs8.xjkvuk6.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6
-facebook.com##.xh8yej3.xw7yly9 > div:nth-of-type(2)
-facebook.com##.xzd29fr.x1lku1pv.x5ib6vp.x18d9i69.xc73u3c.xexx8yu.xt55aet.x1c4vz4f.xknmibj.x1q0g3np.xozqiw3.x6s0dn4.x1qughib.xeuugli.xs83m0k.x1r8uery.x78zum5.x1ja2u2z.x1n2onr6.x9f619
-facebook.com##div.x1emribx.xl56j7k.x5yr21d.x78zum5.x6s0dn4:nth-of-type(3)
-!------!
-
 fandom.com###WikiaRail
 fandom.com##.global-navigation
 fandom.com##.rail-module.railModule
@@ -328,6 +310,10 @@ imgur.com##.BottomRecirc
 imgur.com##.Button.EmeraldButton
 imgur.com##.Sticky.Top
 
+!------!
+! Represents elements 1 and 4 (diff. of 3 -> -3n+4)
+instructure.com###right-side > div > h2.todo-list-header:nth-child(n+1):nth-child(-3n+4)
+
 instructure.com###bettercanvas-announcement-list
 instructure.com###bettercanvas-todo-list
 instructure.com###context_external_tool_13589_menu_item
@@ -342,10 +328,10 @@ instructure.com###global_nav_libraries_menu
 instructure.com###global_nav_student_services_link
 instructure.com###global_nav_student_services_menu
 instructure.com###quiz-time-elapsed > div:nth-of-type(1)
-instructure.com###right-side > div > h2.todo-list-header:nth-child(n+1):nth-child(-3n+4)
 instructure.com###right-side h3
 instructure.com##.eesy_canvas.eesy_container_v4.eesy_container
 ||chat-sin.instructure.com/mini$domain=instructure.com
+!------!
 
 khanacademy.org###donate-banner
 
