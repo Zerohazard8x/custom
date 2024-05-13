@@ -8,15 +8,18 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
+/* "+" is adjacent sibling selector */
+/* https://www.w3schools.com/Css/css_combinators.asp */
+
 @-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
     #mount_0_0_2n div div {
-        /* "+" is adjacent sibling selector */
-        /* https://www.w3schools.com/Css/css_combinators.asp */
         filter: sepia(40%);
     }
 }
 
 @-moz-document domain("google.com") {
+    .gcal-dialog,
+    #target > div,
     fireconsole-home,
     .e9EfHf,
     .Fh5muf,
@@ -150,6 +153,7 @@
         filter: sepia(40%);
     }
 
+    .css-18m4bch-textArea,
     .ic-DashboardCard__action-badge,
     .css-xvfq40-view--flex-flex,
     .convo-peeker-convo,
@@ -302,20 +306,13 @@
 }
 
 @-moz-document domain("duckduckgo.com") {
-    .site-wrapper {
+    .react body {
         filter: sepia(40%);
     }
 }
 
 @-moz-document domain("reddit.com") {
-    header.v2,
-    dsa-transparency-modal-provider,
-    ._31N0dvxfpsO6Ur5AKx4O5d,
-    ._2vkeRJojnV7cb9pMlPHy7d,
-    ._2uYY-KeuYHKiwl-9aF0UiL div,
-    #overlayScrollContainer,
-    .single-page,
-    .listing-page {
+    shreddit-app.overflow-visible {
         filter: sepia(40%);
     }
 }
@@ -333,7 +330,7 @@
 }
 
 @-moz-document domain("perplexity.ai") {
-    .h-full .h-full.flex {
+    .h-full.flex {
         filter: sepia(40%);
     }
 }
