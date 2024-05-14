@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.8.0
+@version        2.8.1
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -63,7 +63,7 @@
             ProFontWindows, "Iosevka", "Iosevka Nerd Font",
             "IosevkaTerm Nerd Font", "Input Sans"; */
         /* --mono-combo: var(--monospace); */
-        --mono-combo: var(--monospace), var(--block-mono);
+        --mono-combo: var(--block-mono), var(--monospace);
     }
 }
 
@@ -221,6 +221,8 @@
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
+    #header .redditname a::after,
+    .titlebox h1.redditname a::after,
     #header,
     #search input,
     ._1LHxa-yaHJwrPK8kuyv_Y4,
@@ -657,14 +659,6 @@
 }
 
 @-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
-    :root {
-        --segoe: "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-            SegoeUI, Segoe, "Segoe UI Variable Display",
-            "Segoe UI Variable Small", "WeblySleek UI";
-        --not-segoe: "-apple-system", "Roboto Flex", "Roboto", Aptos,
-            "-apple-system";
-    }
-
     /* Search box */
     .b_searchboxForm {
         border-radius: 6px !important;
@@ -686,69 +680,6 @@
     }
 
     /* Font styles */
-    .vrhcpt .vrhtt,
-    .vrhcpt,
-    .b_respl,
-    #bpage,
-    .ua_wpr,
-    .l_ecrd_txt_gl *,
-    .ux_ecmp h3,
-    .hlig {
-        font-family: var(--not-segoe), "-apple-system", HelveticaNeue, Roboto,
-            Arial, sans-serif !important;
-    }
-
-    #id_a,
-    #copilot_app_cta,
-    #b_footerItems ul li *,
-    #b_footerItems,
-    .sa_rm,
-    #detailMeta,
-    .hlig,
-    .b_download_text,
-    .b_scopebar ul,
-    .hon,
-    #fltIdtCon {
-        font-family: var(--not-segoe), Arial, Helvetica, Sans-Serif !important;
-    }
-
-    .paa_tx {
-        font-family: var(--not-segoe), "Roboto" !important;
-    }
-
-    li h2 a,
-    .b_title h2 a,
-    h2,
-    .mmtitle a,
-    .imgText,
-    .b_topTitle a {
-        font-family: var(--not-segoe), "Segoe UI", Arial, Helvetica, Sans-Serif !important;
-    }
-
-    * * ul li.inputbox input,
-    .b_entityTitle,
-    .b_searchboxForm,
-    .b_topTitle,
-    .dest_name,
-    .ent-dtab-nam-ov-dtp,
-    .hb_title_col,
-    .ms-search-tenantLogo-text,
-    .qna_algoLink_title,
-    .sto_attr_table,
-    .sto_attrlitc,
-    .vrhtt,
-    .wpvn_ala_wtt,
-    h4:not(.wr_hli h4),
-    span h3,
-    .b_rc_gb_widget_title {
-        font-family: var(--segoe), Roboto, Arial, sans-serif !important;
-    }
-
-    .rd_gtrtb_nav_item {
-        font-family: "Segoe UI Variable Small", var(--segoe), Roboto, Arial,
-            sans-serif !important;
-    }
-
     h2:not(.lc_content h2):not(.recommendationsTableTitle h2):not(
             h2.mmtitle
         ):not(.b_algoheader * h2):not(h2.ua_e):not(.b_title h2):not(li h2):not(
@@ -775,47 +706,10 @@
     h2 span,
     p span a,
     container-title {
-        font-family: "Segoe UI Variable Display", var(--segoe), var(--not-segoe),
-            Helvetica, Arial, sans-serif !important;
-    }
-
-    .b_vPanel:not(#ua_gcn .b_vPanel),
-    cite {
-        font-family: var(--not-segoe), "Segoe UI Variable Small", var(--segoe),
-            "-apple-system", HelveticaNeue, Roboto, Arial, sans-serif !important;
-    }
-
-    .b_smText,
-    .ux_ecmp-sel,
-    .title,
-    .tit,
-    .b_title:not(.b_algo_group .b_title),
-    .dirWp,
-    .dg_b .infnmpt .infpd a,
-    #imagemeta,
-    .sb_f_count,
-    .b_algospacing,
-    .b_bfbLcgAnchorText,
-    .b_fbText,
-    .b_seeMoreCont,
-    .fdbtext,
-    .l_ecrd_ftr_txt,
-    .rstc,
-    .sto_attr_header,
-    .tdw_button,
-    .ms-Button-label,
-    .ms-search-text-h2,
-    .recommendationsTableTitle h2,
-    .vsb_tr_t,
-    .asSectionHeading,
-    .sa_tm_subText {
-        font-family: var(--not-segoe), "Segoe UI Variable Small", var(--segoe),
-            Arial, Helvetica, sans-serif !important;
-    }
-
-    .scopes {
-        font-family: var(--not-segoe), "Segoe UI Variable Small", var(--segoe),
-            Tahoma, Arial, Verdana, sans-serif !important;
+        font-family: "Segoe UI Variable Display", "Segoe UI Variable",
+            "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
+            "Segoe UI Variable Small", "-apple-system", "Roboto Flex", "Roboto",
+            Aptos, "Roboto", sans-serif !important;
     }
 
     .code_blu,
