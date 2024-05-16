@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("tweetdeck.twitter.com") {
+@-moz-document domain("tweetdeck.twitter.com"), domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com") {
     :root {
         /* Define variables */
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
@@ -60,8 +60,8 @@
     .btn-on-dark,
     .Button,
     .js-action-button {
-        font-family: "TwitterChirp", var(--font), Helvetica Neue,
-            Helvetica, Arial, sans-serif !important;
+        font-family: "TwitterChirp", var(--font), Helvetica Neue, Helvetica,
+            Arial, sans-serif !important;
     }
 
     /* AMOLED dark */
@@ -171,24 +171,26 @@
 @-moz-document domain("weibo.com"), domain("weibo.cn") {
     .woo-box-flex {
         font-family: var(--font), system-ui, -apple-system, Segoe UI, Roboto,
-            Ubuntu, Cantarell, Noto Sans, sans-serif !important;
+            Ubuntu, Cantarell, Noto Sans, var(--noto), sans-serif !important;
     }
 
+    .woo-like-count,
     .WB_main,
     .gn_position,
     .WB_footer {
         font-family: var(--font), Arial, "PingFang SC", "Hiragino Sans GB",
-            "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+            "Microsoft YaHei", "WenQuanYi Micro Hei", var(--noto), sans-serif;
     }
 
     .card,
     .main-text,
     h4 {
-        font-family: var(--font), Helvetica Neue, Helvetica, Arial, sans-serif !important;
+        font-family: var(--font), Helvetica Neue, Helvetica, Arial, var(--noto),
+            sans-serif !important;
     }
 
     .woo-input-main {
-        font-family: var(--font), "MS Shell Dlg 2" !important;
+        font-family: var(--font), var(--noto), "MS Shell Dlg 2" !important;
     }
 }
 
@@ -258,7 +260,15 @@
 }
 
 @-moz-document domain("hupu.com"), domain("sports.cctv.com") {
-    /* Hupu Iframe */
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-family: var(--font), "lucida grande", tahoma, verdana, arial,
+            \5b8b\4f53, var(--noto), sans-serif !important;
+    }
+
     .index_simple-detail-content__3FPFA,
     .hp-pc-rc-SuperMenu-sub-menu-container,
     .bbs-search-web,
@@ -280,20 +290,34 @@
     .bbs-index-web-bbsindexWarp div {
         font-family: var(--font), PingFangSC-Regular, PingFang SC, miui,
             system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
-            Helvetica, sans-serif !important;
+            Helvetica, var(--noto), sans-serif !important;
+    }
+
+    .bbs-sl-web-post-body,
+    .bbs-sl-web-post-header,
+    .bbs-sl-web-intro-detail-desc-title {
+        font-family: var(--font), PingFangSC-Medium, var(--noto) !important;
     }
 
     .post-wrapper_bbs-post-wrapper-title__TLQdd p,
     .index_bbs-post-web-main-title-provider__uHAn9 span,
     .index_bbs-post-web-main-title-provider__uHAn9,
     .main-c {
-        font-family: var(--font), PingFangSC-Semibold !important;
+        font-family: var(--font), PingFangSC-Semibold, var(--noto) !important;
     }
 
     .content-header {
-        font-family: var(--font), PingFangSC-Semibold, PingFang SC !important;
+        font-family: var(--font), PingFangSC-Semibold, PingFang SC, var(--noto) !important;
     }
 
+    .post-reply-list_post-reply-list-wrapper__o4_81
+        .post-reply-list
+        .reply-list-content
+        .post-reply-list-operate,
+    .post-operate_post-operate-comp-wrapper___odBI .post-operate-comp,
+    .bbs-sl-web-intro-detail div,
+    .bbs-sl-web-admin-detail-desc-text,
+    .bbs-sl-web-intro-detail-desc-text,
     .post-user_user-base-info__AxpCI a,
     .post-wrapper_toggle-tool__MGO_Q span,
     .index_quote-operate__28QIi span,
@@ -310,7 +334,7 @@
     .text-list-model,
     .user-operate,
     .list-item-lights {
-        font-family: var(--font), PingFangSC-Regular !important;
+        font-family: var(--font), PingFangSC-Regular, var(--noto) !important;
     }
 
     .notLogin a span,
@@ -322,26 +346,29 @@
     .hp-pc-rc-TopMenu-top,
     .radio-txt,
     .hot-title {
-        font-family: var(--font), PingFangSC-Regular, PingFang SC !important;
+        font-family: var(--font), PingFangSC-Regular, PingFang SC, var(--noto) !important;
     }
 
+    .bbs-sl-web-intro-detail-title,
+    .bbs-sl-web-type-wrap div,
+    .bbs-sl-web-type,
     .index_right-post-title__zN9JN,
-    font,
     .right-post-title,
     .post-title,
     .post-info div {
-        font-family: var(--font), PingFangSC !important;
+        font-family: var(--font), PingFangSC, var(--noto) !important;
     }
 
     .nav_qiantao_hupu210316,
     .title,
     .cntv_list ul li a {
         font-family: var(--font), PingFangSC-Regular, Helvetica, Arial,
-            Microsoft Yahei, sans-serif !important;
+            Microsoft Yahei, var(--noto), sans-serif !important;
     }
 
     .hot-index {
-        font-family: var(--font), HelveticaNeue-CondensedBold, HelveticaNeue !important;
+        font-family: var(--font), HelveticaNeue-CondensedBold, HelveticaNeue,
+            var(--noto) !important;
     }
 }
 
@@ -352,15 +379,11 @@
             Arial, Helvetica, sans-serif !important;
     }
 
+    .mini-suggest__button-text,
     .HeaderDesktop,
     .mini-suggest__input {
         font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
             Arial, Helvetica, "Arial Unicode MS", sans-serif !important;
-    }
-
-    .mini-suggest__button-text {
-        font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
-            arial, sans-serif !important;
     }
 
     .Label-Content {
@@ -372,5 +395,27 @@
     #messagebuffer div {
         font-size: 50px !important;
         line-height: 1.5 !important;
+    }
+}
+
+@-moz-document domain("naver.com") {
+    body,
+    button,
+    input,
+    select,
+    table,
+    textarea,
+    .nng-viewer .se-viewer:lang(ko-KR),
+    .nng-viewer .se-viewer:lang(ko-KR) .se-ff-system,
+    .nng-viewer
+        .se-viewer:lang(ko-KR)
+        .se-section-image.se-l-default
+        .se-caption
+        .se-ff-,
+    .nng-viewer .se-viewer:lang(ko-KR) .se-section-text.se-l-default .se-ff- {
+        font-family: var(--font), -apple-system, BlinkMacSystemFont,
+            Apple SD Gothic Neo, Helvetica, Arial, NanumGothic, 나눔고딕,
+            Malgun Gothic, 맑은 고딕, Dotum, 굴림, gulim, 새굴림, noto sans,
+            돋움, var(--noto), sans-serif !important;
     }
 }

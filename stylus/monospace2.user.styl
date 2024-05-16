@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace2
 @namespace      github.com/openstyles/stylus
-@version        1.2.1
+@version        1.2.2
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl
@@ -110,16 +110,11 @@
             .mw-content-ltr.mw-parser-output p span
         ),
     blockquote div p,
-    *
-        tr
-        td
-        span:not(.wikitable * * * span):not(.infobox-data *):not(
-            .hide-when-compact
-        ),
+    * tr td > span:not(table tr td > span),
     dl:not(.mw-body-content * dl),
     dl dd span,
     .block-indent span,
-    * p a span,
+    * p > a > span,
     *
         .mw-parser-output
         p
