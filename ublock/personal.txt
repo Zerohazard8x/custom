@@ -434,7 +434,6 @@
 ||fncstatic.com$all
 ||fnojdupjbufb.xyz$all
 ||fnptvpbwnoo.xyz$all
-||fonts.net$all
 ||form.run$all
 ||fotosik.pl$all
 ||fpskctncgj.xyz$all
@@ -927,10 +926,10 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||fonts.net$script,inline-script,object,ping,stylesheet,other
 ||forgecdn.net$script,inline-script,object,ping,stylesheet,other
 ||xboxlive.com$script,inline-script,object,ping,stylesheet,other
 ||us-east-2.amazonaws.com$script,inline-script,object,ping,stylesheet,other
-||tiktokcdn-us.com$script,inline-script,object,ping,stylesheet,other
 ||turner.com$script,inline-script,object,ping,stylesheet,other
 ||adtidy.org$script,inline-script,object,ping,stylesheet,other
 ||js-cdn.music.apple.com$script,inline-script,object,ping,stylesheet,other
@@ -959,7 +958,6 @@
 ||adform.net$script,inline-script,object,ping,stylesheet,other
 ||adlooxtracking.com$script,inline-script,object,ping,stylesheet,other
 ||adnxs.com$script,inline-script,object,ping,stylesheet,other
-||adobedtm.com$script,inline-script,object,ping,stylesheet,other
 ||ads-twitter.com$script,inline-script,object,ping,stylesheet,other
 ||adsafeprotected.com$script,inline-script,object,ping,stylesheet,other
 ||adspsp.com$script,inline-script,object,ping,stylesheet,other
@@ -1048,7 +1046,6 @@
 ||defybrick.com$script,inline-script,object,ping,stylesheet,other
 ||deviantart.net$script,inline-script,object,ping,stylesheet,other
 ||digitaloceanspaces.com$script,inline-script,object,ping,stylesheet,other
-||discordapp.com$script,inline-script,object,ping,stylesheet,other
 ||disqus.map.fastlylb.net$script,inline-script,object,ping,stylesheet,other
 ||dmpwow64jb5ov.cloudfront.net$script,inline-script,object,ping,stylesheet,other
 ||document-export.canva.com$script,inline-script,object,ping,stylesheet,other

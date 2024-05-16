@@ -173,6 +173,7 @@ discord.com##.container_b03b4b
 discord.com##.container_cf0d66
 discord.com##.content__15401.middleBodyContentWrapper_fdfda8
 discord.com##.customizationSectionBackground-1-leQn.background-yH6t2p.premiumBackground-34OIdE > .title-1HgbhV.eyebrow-2wJAoF.h5-2feg8J > .baseShapeRound-3epLEv.eyebrow-132Xza.base-3IDx3L.textBadge-1fdDPJ.newBadge-2Y53Os.premiumBadge-2VNQ3o
+discord.com##.description__51014.text-md-normal__6e567
 discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
 discord.com##.editorAnimate-2BAiXS.editor-1m9XtV
 discord.com##.emptyHeader-2tT-AY.defaultColor-1GKx81.heading-md-semibold-2h_vsp.defaultColor-1EVLSt
@@ -330,6 +331,7 @@ instructure.com###global_nav_student_services_menu
 instructure.com###quiz-time-elapsed > div:nth-of-type(1)
 instructure.com###right-side h3
 instructure.com##.eesy_canvas.eesy_container_v4.eesy_container
+instructure.com##span.css-iurmb7-view-flexItem:nth-of-type(1)
 ||chat-sin.instructure.com/mini$domain=instructure.com
 !------!
 
@@ -517,6 +519,9 @@ search.yahoo.com##.searchCenterTop.reg > .last
 search.yahoo.com##.searchRightBottom.reg
 search.yahoo.com##.searchRightTopAds.reg
 
+sports.yahoo.com##.caas-cover-wrapper
+sports.yahoo.com##.caas-logo
+
 shopee.*##.MPbswA
 shopee.*##._2ypCMv
 shopee.*##.shopee-header-section--simple.F--Nrr.shopee-header-section > .shopee-header-section__header
@@ -614,6 +619,7 @@ twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-1igl3o0.css-175oi2r > .css-175oi2r 
 twitter.com##.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-xyw6el.r-18u37iz.r-6koalj.r-sdzlij.r-1awozwy.css-175oi2r > div.css-175oi2r:nth-of-type(1)
 twitter.com##.r-1p6iasa.r-4amgru.r-18u37iz.r-1awozwy.css-175oi2r
 twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
+twitter.com##.r-1xcajam.r-1hycxz.css-175oi2r > .r-1adg3ll.css-175oi2r > .css-175oi2r > .r-ttdzmv.r-vacyoi.css-175oi2r > div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r
 twitter.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
 twitter.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r:nth-of-type(4) > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
 twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(1)
