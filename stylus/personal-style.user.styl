@@ -54,6 +54,26 @@
         border-radius: 5px !important;
         background-color: rgba(8, 8, 8, 0.75) !important;
     }
+
+    ytd-page-manager * .style-scope,
+    div#items.ytd-mini-guide-renderer,
+    tp-yt-paper-toast.yt-notification-action-renderer,
+    div#guide-content.ytd-app,
+    div.style-scope.ytd-guide-renderer,
+    div.style-scope.ytd-guide-section-renderer,
+    div.title.ytd-guide-entry-renderer,
+    div.style-scope.ytd-popup-container,
+    div.style-scope.ytd-multi-page-menu-renderer,
+    div.style-scope.ytd-active-account-header-renderer,
+    #label.ytd-compact-link-renderer,
+    #label.ytd-toggle-theme-compact-link-renderer {
+        font-family: Roboto, Arial, var(--noto), sans-serif !important;
+    }
+
+    #search-input.ytd-searchbox-spt input,
+    tp-yt-paper-item {
+        font-family: Roboto, Noto, var(--noto), sans-serif !important;
+    }
 }
 
 @-moz-document regexp(".*youtube.com\/live_chat.*") {
@@ -301,7 +321,6 @@
 }
 
 @-moz-document domain("twitter.com") {
-    /* Twitter fallbacks */
     .css-175oi2r,
     .css-175oi2r div {
         font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont,
