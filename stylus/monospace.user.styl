@@ -21,9 +21,11 @@
             "DFHSGothic-W7", "DFPGothic-EB", "DFGGothic-EB", "DFGothic-EB",
             "DFPGothic-SU", "DFGGothic-SU", "DFGothic-SU"; */
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-            "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", var(--noto);
+            "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", Lato,
+            "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans", var(--noto);
         /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-            "Roboto Flex", "Roboto", Barlow, Lato, "Motiva Sans", "Proxima Nova", Inter,
+            "Roboto Flex", "Roboto", Barlow, Lato, "Motiva Sans", "Proxima Vara", "Proxima Nova", Inter,
             "Avenir Next", Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO,
             "FF Meta", Manrope, "Helvetica Neue", "Helvetica",
             "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu",
@@ -109,12 +111,6 @@
             var(--mono-combo), ui-monospace, SFMono-Regular, SF Mono, Menlo,
             Consolas, Liberation Mono, monospace !important;
     }
-
-    /*     .blob-code-inner,
-    .blob-num,
-    pre {
-        font-size: 16px !important;
-    } */
 }
 
 @-moz-document domain("wikipedia.org") {
@@ -178,7 +174,6 @@
     code,
     pre span {
         font-family: var(--mono-combo), monospace !important;
-        /*         font-size: 16px !important; */
     }
 }
 
@@ -332,10 +327,6 @@
             monospace !important;
     }
 
-    /*     .s-code-block code {
-        font-size: 16px !important;
-    } */
-
     .dno,
     .fw-bold,
     .unified-theme,
@@ -353,7 +344,6 @@
     .shrink-0 {
         font-family: var(--mono-combo), Söhne Mono, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
-        /*         font-size: 16px !important; */
     }
 
     .katex-error {
@@ -367,21 +357,7 @@
     .w3-codespan {
         font-family: var(--mono-combo), Consolas, "Source Code Pro", Menlo,
             Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
-        /*         font-size: 16px !important; */
     }
-}
-
-@-moz-document domain("learn.microsoft.com") {
-    pre code,
-    p code,
-    li code {
-        font-family: var(--mono-combo), SFMono-Regular, Consolas,
-            Liberation Mono, Menlo, Courier, monospace !important;
-    }
-
-    /*     pre code {
-        font-size: 16px !important;
-    } */
 }
 
 @-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("minecraft.wiki") {
@@ -655,11 +631,6 @@
     .CodeMirror-sizer {
         font-family: var(--mono-combo), "Roboto Mono", monospace !important;
     }
-
-    /*     .code-container,
-    .markdown p code {
-        font-size: 16px !important;
-    } */
 }
 
 @-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
@@ -725,7 +696,6 @@
     .rd_code_blu,
     .rd_code_red {
         font-family: var(--mono-combo), Consolas, Courier, monospace !important;
-        /*         font-size: 16px !important; */
     }
 }
 
@@ -734,7 +704,6 @@
     .container div code,
     .outputDiv pre {
         font-family: var(--mono-combo), Consolas, monospace !important;
-        /*         font-size: 16px !important; */
     }
 }
 
@@ -781,7 +750,7 @@
     select,
     textarea,
     .eVNpHGjtxRBq_gLOfGDr {
-        font-family: "Proxima Nova", "DDG_ProximaNova", "DDG_ProximaNova_UI_0",
+        font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0",
             "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2",
             "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
             "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
@@ -804,10 +773,6 @@
         .hHVrjZST7zuknVVFtP6w {
         font-family: var(--mono-combo), var(--sds-font-family-monospace) !important;
     }
-
-    /*     .prettyprint code {
-        font-size: 16px !important;
-    } */
 }
 
 @-moz-document domain("cagematch.net") {
@@ -826,18 +791,6 @@
     }
 }
 
-@-moz-document domain("antifandom.com"), domain("breezewiki.com") {
-    .text b code {
-        font-family: var(--mono-combo), monospace !important;
-    }
-}
-
-@-moz-document domain("fandom.com") {
-    .text b code {
-        font-family: var(--mono-combo), monospace !important;
-    }
-}
-
 @-moz-document domain("perplexity.ai") {
     .ace_placeholder.ace_comment,
     code {
@@ -848,32 +801,6 @@
     .font-mono {
         font-family: var(--mono-combo), var(--font-berkeley-mono), ui-monospace,
             SFMono-Regular, monospace !important;
-    }
-}
-
-@-moz-document domain("pi.ai") {
-    .t-code,
-    .t-code-inline {
-        font-family: var(--mono-combo), var(--font-mono), ui-monospace,
-            SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-            "Courier New", monospace !important;
-    }
-}
-
-@-moz-document domain("groq.com") {
-    * div pre code {
-        /* https://www.w3schools.com/cssref/sel_element_element.php */
-        font-family: var(--mono-combo), Consolas, Monaco, "Andale Mono",
-            "Ubuntu Mono", monospace !important;
-    }
-}
-
-@-moz-document domain("developer.android.com"), domain("firebase.google.com") {
-    devsite-code pre,
-    devsite-code pre code,
-    article div p code,
-    * p a code {
-        font-family: var(--mono-combo), Roboto Mono, monospace !important;
     }
 }
 

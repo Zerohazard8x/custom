@@ -14,8 +14,9 @@
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans";
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-            "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", FiraGO,
-            "FF Meta", var(--noto);
+            "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", Lato,
+            "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans", var(--noto);
         --serif: "Source Serif 4", "Source Serif Pro", "Shippori Mincho",
             "Serif UI Display", "Noto Serif JP", "Noto Serif TC",
             "Noto Serif SC", "Noto Serif KR", "Noto Serif", var(--noto);
@@ -57,11 +58,6 @@
     code {
         font-family: var(--mono-combo), Consolas, monaco, monospace !important;
     }
-
-    /*     code span,
-    code:not(.Markdown_markdownContainer__Tz3HQ p code) {
-        font-size: 16px !important;
-    } */
 }
 
 @-moz-document domain("wikiwand.com") {
@@ -71,7 +67,6 @@
     pre span {
         font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
             Courier New, Courier, monospace !important;
-        /*         font-size: 16px !important; */
     }
 
     .pcs-edit-section-title,
@@ -131,12 +126,6 @@
         font-family: var(--mono-combo), Menlo, Consolas, Monaco, Liberation Mono,
             Lucida Console, monospace !important;
     }
-
-    /*     pre code,
-    p code:not(dd p code):not(.section-content p code),
-    strong code {
-        font-size: 16px !important;
-    } */
 }
 
 @-moz-document domain("symbolab.com") {
@@ -167,7 +156,6 @@
     .bbCodeCode {
         font-family: var(--mono-combo), Monaco, Menlo, Consolas, roboto mono,
             andale mono, ubuntu mono, monospace !important;
-        font-size: 16px !important;
     }
 }
 
@@ -191,7 +179,6 @@
             Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace,
             "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
             "Twemoji Mozilla" !important;
-        /*         font-size: 16px !important; */
     }
 }
 
@@ -200,7 +187,6 @@
     dd,
     code {
         font-family: var(--mono-combo), "DejaVu Sans Mono", monospace !important;
-        font-size: 16px !important;
     }
 }
 
@@ -217,17 +203,12 @@
     .snippet-row {
         font-family: var(--mono-combo), CourierNewPSMT !important;
     }
-
-    /* 	.code-snippet, .snippet-row {
-		font-size: 16px !important;
-	} */
 }
 
 @-moz-document domain("baeldung.com") {
     code.hljs {
         font-family: var(--mono-combo), "Source Code Pro", "Consolas",
             "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
-        font-size: 16px !important;
     }
 }
 
@@ -236,10 +217,6 @@
         font-family: var(--mono-combo), Consolas, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
     }
-
-    /*     .svelte-15hifvz pre code {
-        font-size: 16px !important;
-    } */
 }
 
 @-moz-document domain("17track.net") {
@@ -341,5 +318,52 @@
 @-moz-document domain("monkeytype.com") {
     #app.content-grid {
         font-family: var(--mono-combo), var(--font) !important;
+    }
+}
+
+@-moz-document domain("developer.android.com"), domain("firebase.google.com") {
+    devsite-code pre,
+    devsite-code pre code,
+    article div p code,
+    * p a code {
+        font-family: var(--mono-combo), Roboto Mono, monospace !important;
+    }
+}
+
+@-moz-document domain("pi.ai") {
+    .t-code,
+    .t-code-inline {
+        font-family: var(--mono-combo), var(--font-mono), ui-monospace,
+            SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+            "Courier New", monospace !important;
+    }
+}
+
+@-moz-document domain("groq.com") {
+    * div pre code {
+        /* https://www.w3schools.com/cssref/sel_element_element.php */
+        font-family: var(--mono-combo), Consolas, Monaco, "Andale Mono",
+            "Ubuntu Mono", monospace !important;
+    }
+}
+
+@-moz-document domain("antifandom.com"), domain("breezewiki.com") {
+    .text b code {
+        font-family: var(--mono-combo), monospace !important;
+    }
+}
+
+@-moz-document domain("fandom.com") {
+    .text b code {
+        font-family: var(--mono-combo), monospace !important;
+    }
+}
+
+@-moz-document domain("learn.microsoft.com") {
+    pre code,
+    p code,
+    li code {
+        font-family: var(--mono-combo), SFMono-Regular, Consolas,
+            Liberation Mono, Menlo, Courier, monospace !important;
     }
 }

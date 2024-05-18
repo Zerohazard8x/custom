@@ -14,8 +14,10 @@
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans";
         --font: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
-            "Roboto Flex", "Roboto", "Fira Sans", var(--noto);
-        --readable: "Public Sans", "Fira Sans", "Work Sans", "Bahnschrift",
+            "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", Lato,
+            "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans", var(--noto);
+        --readable: "Public Sans", "Fira Sans", FiraGO, "FF Meta", "Bahnschrift",
             "Aptos Narrow", "IBM Plex Sans Var", "IBM Plex Sans JP",
             "IBM Plex Sans KR", "IBM Plex Sans", var(--noto);
         /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta", "Atkinson Hyperlegible", "Aptos",
@@ -55,6 +57,13 @@
         background-color: rgba(8, 8, 8, 0.75) !important;
     }
 
+    li.sbsb_c.gsfs div,
+    .badge-shape-wiz,
+    .badge.ytd-badge-supported-renderer,
+    #owner-name.ytd-miniplayer,
+    #modern-owner-name.ytd-miniplayer,
+    .miniplayer-title.ytd-miniplayer,
+    div.metadata.style-scope.ytd-miniplayer,
     ytd-page-manager * .style-scope,
     div#items.ytd-mini-guide-renderer,
     tp-yt-paper-toast.yt-notification-action-renderer,
@@ -103,16 +112,7 @@
     #img {
         height: 25px !important;
         width: auto !important;
-    }
-}
-
-@-moz-document domain("msn.com") {
-    .lightTheme,
-    .locationItem-DS-EntryPoint1-6,
-    .suggestion-DS-EntryPoint1-1,
-    .weatherButtonWrapper-DS-EntryPoint1-3,
-    .weatherFeedbackDialogButton-DS-EntryPoint1-3 {
-        font-family: Segoe UI, Segoe WP, Arial, sans-serif, "MS Shell Dlg 2" !important;
+        line-height: normal !important;
     }
 }
 
@@ -197,75 +197,6 @@
     body *:not(.fa) {
         font-family: var(--font), -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, Helvetica, Arial, sans-serif !important;
-    }
-}
-
-@-moz-document domain("steampowered.com") {
-    b,
-    .review_box,
-    #game_area_metascore div,
-    #queueActionsCtn,
-    #review_context,
-    #reviews_filter_language,
-    .block_header div,
-    .flyout,
-    .game_area_sys_req strong,
-    .game_page_autocollapse_readmore,
-    .rightcol,
-    .store_nav,
-    .store_horizontal_minislider,
-    .tab_review_summary,
-    div a,
-    #footer_text {
-        font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
-    }
-}
-
-@-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
-    #container,
-    #searchsubmit {
-        font-family: var(--font), arial, helvetica, clean, sans-serif !important;
-    }
-
-    #main {
-        font-family: var(--font), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    }
-}
-
-@-moz-document domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in") {
-    .NavigationBar-module__navHeader_myx_35WiMq43R8TeP3p0_dnLLH
-        .NavigationBar-module__navOptions_myx_3-DW6_KRV7Rh8qixes2XJu,
-    .NavigationBar-module__navHeader_title_style_myx_gLKlYY_oND8vgB6axwgyW {
-        font-family: "Amazon Ember", Arial, sans-serif !important;
-    }
-
-    #a-page,
-    #e input,
-    .a-container {
-        font-family: "Amazon Ember", Arial, "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, sans-serif !important;
-    }
-
-    .bucket h2 {
-        font-family: "Amazon Ember", verdana, arial, helvetica, sans-serif !important;
-    }
-
-    .a-declarative,
-    tbody tr td,
-    span span a {
-        font-family: "Amazon Ember", Arial !important;
-    }
-
-    .a-color-link {
-        font-family: "Amazon Ember", AmazonEmber-Regular,
-            helvetica_ne_lt_55_roman, HelveticaNeueLTStd-Roman, Helvetica,
-            sans-serif !important;
-    }
-
-    .a-popover-wrapper,
-    .a-meter-animate {
-        font-family: "Amazon Ember", "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, sans-serif !important;
     }
 }
 

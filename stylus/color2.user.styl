@@ -285,3 +285,46 @@
         filter: sepia(40%);
     }
 }
+
+@-moz-document domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in") {
+    #a-page,
+    #b,
+    #h,
+    #a-popover-root {
+        filter: sepia(40%);
+    }
+}
+
+@-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
+    #container,
+    #div-gpt-ad-oop,
+    #fb-root,
+    #rufous-sandbox,
+    #likes-master,
+    #likes-other-gravatars,
+    #wrapper,
+    div.ad-sticky,
+    #pagetual-preload {
+        filter: sepia(40%);
+    }
+
+    body ~ html {
+        background: #b5361e !important;
+    }
+}
+
+@-moz-document domain("steampowered.com") {
+    div.miniprofile_hover,
+    div.responsive_page_frame.with_header,
+    div.FullModalOverlay {
+        filter: sepia(40%);
+    }
+}
+
+@-moz-document domain("msn.com") {
+    #ssr,
+    #root,
+    #recharts_measurement_span {
+        filter: sepia(40%);
+    }
+}
