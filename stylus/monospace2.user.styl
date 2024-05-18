@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace2
 @namespace      github.com/openstyles/stylus
-@version        1.2.2
+@version        1.2.3
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com") {
+@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com"), domain("monkeytype.com") {
     :root {
         /* Define variables */
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
@@ -333,7 +333,13 @@
     }
 
     textarea {
-        font-family: var(--block-mono), var(--monospace), "monaco",
-            "lucida console", "lucida sans typewriter", "consolas", "monospace" !important;
+        font-family: var(--mono-combo), "monaco", "lucida console",
+            "lucida sans typewriter", "consolas", "monospace" !important;
+    }
+}
+
+@-moz-document domain("monkeytype.com") {
+    #app.content-grid {
+        font-family: var(--mono-combo), var(--font) !important;
     }
 }
