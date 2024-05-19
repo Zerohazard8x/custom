@@ -470,7 +470,6 @@
 ||gigantech.org/systems/chromesetup.exe$all
 ||gistdockergist-legacying.net.zooplus.de$all
 ||gitengine-priv-frontpage-management-wwwowa.net.zooplus.de$all
-||global.ssl.fastly.net$all
 ||glomex.com$all
 ||gloss.workers.dev$all
 ||glue1lazy.com$all
@@ -926,6 +925,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||global.ssl.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||fonts.net$script,inline-script,object,ping,stylesheet,other
 ||forgecdn.net$script,inline-script,object,ping,stylesheet,other
 ||xboxlive.com$script,inline-script,object,ping,stylesheet,other
@@ -1054,7 +1054,6 @@
 ||dr282zn36sxxg.cloudfront.net$script,inline-script,object,ping,stylesheet,other
 ||drift.com$script,inline-script,object,ping,stylesheet,other
 ||driftt.com$script,inline-script,object,ping,stylesheet,other
-||dscd.akamai.net$script,inline-script,object,ping,stylesheet,other
 ||dyncdn2.com$script,inline-script,object,ping,stylesheet,other
 ||ebayimg.com$script,inline-script,object,ping,stylesheet,other
 ||edge-chat.messenger.com$script,inline-script,object,ping,stylesheet,other

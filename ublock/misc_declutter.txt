@@ -609,6 +609,8 @@ to-do.live.com##.obf-Visible.obf-Toast
 
 tracker.gg##.premium-upsell-tooltip.trn-tooltip--active.trn-tooltip
 
+tradingview.com###overlap-manager-root
+
 ||trello-backgrounds.s3.amazonaws.com/SharedBackground$image
 
 twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
