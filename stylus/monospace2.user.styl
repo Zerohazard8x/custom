@@ -1,26 +1,26 @@
 /* ==UserStyle==
 @name           monospace2
 @namespace      github.com/openstyles/stylus
-@version        1.2.5
+@version        1.2.6
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com"), domain("monkeytype.com"), domain("keybr.com") {
+@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com"), domain("monkeytype.com"), domain("keybr.com"), domain("redlib.privacyredirect.com") {
     :root {
         /* Define variables */
-        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR", "Noto Sans Thai",
-            "Noto Sans";
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans Thai", "Noto Sans";
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
             "Roboto Flex", "Roboto", "Inter V", Inter, "Fira Sans", Lato,
             "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans", var(--noto);
         --serif: "Source Serif 4", "Source Serif Pro", "Shippori Mincho",
             "Serif UI Display", Century, "Century Schoolbook", "Noto Serif JP",
-            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif", "Noto Serif Thai",
-            var(--noto);
+            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif",
+            "Noto Serif Thai", var(--noto);
         --monospace: "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Mono";
         --block-mono: "JetBrains Mono", "JetBrains Mono NL",
@@ -374,5 +374,11 @@
     .ZiMQFjE365,
     .T5Dbe9eY7n {
         font-family: var(--mono-combo), var(--monospace-font-family) !important;
+    }
+}
+
+@-moz-document domain("redlib.privacyredirect.com") {
+    .md code {
+        font-family: var(--mono-combo), monospace, sans-serif !important;
     }
 }
