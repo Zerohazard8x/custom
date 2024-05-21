@@ -614,20 +614,6 @@ tradingview.com###overlap-manager-root > div > div
 
 ||trello-backgrounds.s3.amazonaws.com/SharedBackground$image
 
-twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
-twitter.com##.r-14gqq1x.r-6gpygo.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r
-twitter.com##.r-15zivkp.r-b88u0q.r-rjixqe.r-a023e6.r-37j5jr.r-qvutc0.r-bcqeeo.css-1rynq56
-twitter.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
-twitter.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-1igl3o0.css-175oi2r > .css-175oi2r > .r-kemksi.css-175oi2r
-twitter.com##.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-xyw6el.r-18u37iz.r-6koalj.r-sdzlij.r-1awozwy.css-175oi2r > div.css-175oi2r:nth-of-type(1)
-twitter.com##.r-1p6iasa.r-4amgru.r-18u37iz.r-1awozwy.css-175oi2r
-twitter.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
-twitter.com##.r-1xcajam.r-1hycxz.css-175oi2r > .r-1adg3ll.css-175oi2r > .css-175oi2r > .r-ttdzmv.r-vacyoi.css-175oi2r > div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r
-twitter.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
-twitter.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r:nth-of-type(4) > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
-twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(1)
-twitter.com##div.r-ymttw5.css-175oi2r:nth-of-type(2)
-
 vlr.gg##.d8fyh
 vlr.gg##.jd8ag
 vlr.gg##.mod-flat.wf-card
@@ -658,6 +644,20 @@ wolframalpha.com##.chGUCO.sc-373a152b-0
 
 wordcounter.net###top_counter > .row
 wordcounter.net###editor_container > div > .row
+
+x.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
+x.com##.r-14gqq1x.r-6gpygo.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r
+x.com##.r-15zivkp.r-b88u0q.r-rjixqe.r-a023e6.r-37j5jr.r-qvutc0.r-bcqeeo.css-1rynq56
+x.com##.r-1f1sjgu.r-ymttw5.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
+x.com##.r-1ny4l3l.r-1adg3ll.r-qklmqi.r-1igl3o0.css-175oi2r > .css-175oi2r > .r-kemksi.css-175oi2r
+x.com##.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-xyw6el.r-18u37iz.r-6koalj.r-sdzlij.r-1awozwy.css-175oi2r > div.css-175oi2r:nth-of-type(1)
+x.com##.r-1p6iasa.r-4amgru.r-18u37iz.r-1awozwy.css-175oi2r
+x.com##.r-1r5su4o.r-e7q0ms.css-175oi2r
+x.com##.r-1xcajam.r-1hycxz.css-175oi2r > .r-1adg3ll.css-175oi2r > .css-175oi2r > .r-ttdzmv.r-vacyoi.css-175oi2r > div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r
+x.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
+x.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r:nth-of-type(4) > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
+x.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(1)
+x.com##div.r-ymttw5.css-175oi2r:nth-of-type(2)
 
 you.com##.LQwHO.sc-196cc170-0
 you.com##.blpnYK.sc-bb226f16-0
