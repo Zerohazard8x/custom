@@ -610,7 +610,7 @@ to-do.live.com##.obf-Visible.obf-Toast
 
 tracker.gg##.premium-upsell-tooltip.trn-tooltip--active.trn-tooltip
 
-tradingview.com###overlap-manager-root > div
+tradingview.com###overlap-manager-root > div > div
 
 ||trello-backgrounds.s3.amazonaws.com/SharedBackground$image
 
