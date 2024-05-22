@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.8.6
+@version        2.8.7
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
-@updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
+@updateURL      https://ghproxy.net/https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
@@ -87,9 +87,12 @@
     details,
     blockquote,
     .container-lg {
-        font-family: "Mona Sans", "MonaSansFallback", var(--sans), -apple-system,
-            BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial,
-            sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+        font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            "MonaSansFallback", -apple-system, BlinkMacSystemFont, "Segoe UI",
+            "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji" !important;
     }
 
     tt,
@@ -109,8 +112,16 @@
     code {
         font-family: __monaspaceNeon_4fcba3, __monaspaceNeon_Fallback_4fcba3,
             "Monaspace Neon Var", "Monaspace Neon VF", "Monaspace Neon",
-            var(--mono-combo), ui-monospace, SFMono-Regular, SF Mono, Menlo,
-            Consolas, Liberation Mono, monospace !important;
+            var(
+                --fontStack-monospace,
+                ui-monospace,
+                SFMono-Regular,
+                SF Mono,
+                Menlo,
+                Consolas,
+                Liberation Mono,
+                monospace
+            ) !important;
     }
 }
 
@@ -212,9 +223,8 @@
             .py-md .text-neutral-content-weak
         ),
     .text-neutral-content-strong {
-        font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+        font-family: var(--plex), var(--noto), var(--font-sans), -apple-system,
+            BlinkMacSystemFont !important;
     }
 
     #header .redditname a::after,
@@ -259,6 +269,8 @@
             "Arial", sans-serif !important;
     }
 
+    .md p strong,
+    .md p a,
     thead tr th,
     object a,
     #header .tabmenu li:first-child a::after,
@@ -303,8 +315,6 @@
     }
 
     .subscribers,
-    .md p strong,
-    .md p a,
     .subscribers .number {
         font-family: var(--noto), "Helvetica Neue", "Helvetica", "Arial",
             sans-serif !important;
@@ -400,7 +410,6 @@
         font-family: var(--serif), "Linux Libertine", "Georgia", "Times", serif !important;
     }
 
-    .template-infotable-monospace,
     code,
     tt,
     .mw-parser-output pre {

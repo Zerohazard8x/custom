@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
 ! Expires: 1 day
 
-!!!!!!!!
+!------!
 ! Represents elements 3 and 9 (diff. of 6 -> -6n+9)
 espn.*##li.pillar.logo.fantasy:nth-child(n+3):nth-child(-6n+9)
 
@@ -20,14 +20,15 @@ espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__Accessibl
 espn.*##li.Nav__Primary__Menu__Item.flex.items-center.relative.n7.Nav__AccessibleMenuItem_Wrapper:nth-child(2)
 espn.*##ul.flex-none.Nav__Primary__Menu--right.flex.Nav__Primary__Menu:nth-of-type(2) > li.Nav__AccessibleMenuItem_Wrapper.n7.relative.items-center.flex.Nav__Primary__Menu__Item:nth-of-type(4)
 
-!!!!!!!!
+!------!
 
 ! Represents all elements after 1 (1+1=2)
 fotmob.com##div.e7pc1841.css-mq7mn-Group:nth-child(n+2)
 
 fotmob.com##.e1linw372.css-1q9econ-TrendingNewsTopHeadlinesCSS
 fotmob.com##div.e1ju7a501.css-mq7mn-Group:nth-child(n+2)
-!!!!!!!!
+
+!------!
 
 sofascore.com###portals
 sofascore.com##.bEAMMG.sc-fqkvVR
