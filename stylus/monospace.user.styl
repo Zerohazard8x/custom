@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.8.5
+@version        2.8.6
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net") {
     :root {
         /* Define variables */
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
@@ -33,8 +33,8 @@
             "SF Pro Display", "SF Compact", "SF Hello"; */
         --serif: "Source Serif 4", "Source Serif Pro", "Shippori Mincho",
             "Serif UI Display", Century, "Century Schoolbook", "Noto Serif JP",
-            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif", "Noto Serif Thai",
-            var(--noto);
+            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif",
+            "Noto Serif Thai", var(--noto);
         /* --serif-full: "Source Serif 4", "Source Serif Pro", Fraunces, "Serif UI",
             "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
             Century, "Century Schoolbook", "Century Oldstyle", "Century Old Style", "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond",
@@ -361,14 +361,14 @@
     }
 }
 
-@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("minecraft.wiki") {
+@-moz-document domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("remywiki.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net") {
     /* 	MediaWiki */
     .mw-editsection,
     .mediawiki,
     #sidebar,
     h3 {
-        font-family: var(--sans), sans-serif, "Liberation Sans", Arial,
-            Helvetica, FreeSans, sans-serif !important;
+        font-family: var(--sans), "Open Sans", "Helvetica Neue", Helvetica,
+            "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif !important;
     }
 
     .mw-editsection {
@@ -400,6 +400,7 @@
         font-family: var(--serif), "Linux Libertine", "Georgia", "Times", serif !important;
     }
 
+    .template-infotable-monospace,
     code,
     tt,
     .mw-parser-output pre {
@@ -839,6 +840,7 @@
             "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 
+    .css-1l8k4me-radioInput__label,
     .css-mum2ig-text,
     .css-13i8155-text,
     .css-cpteea-text,

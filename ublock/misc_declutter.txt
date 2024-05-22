@@ -7,6 +7,7 @@
 accounts.google.com##.EE6QGf
 accounts.google.com##.SYDc7
 
+accuweather.com##.air-quality-module-wrapper
 accuweather.com##.right-rail-article__thumb.js-content-image
 
 adobe.com##.aem-GridColumn--offset--default--0.aem-GridColumn--offset--phone--0.aem-GridColumn--default--12.aem-GridColumn.aem-GridColumn--tablet--none.aem-GridColumn--phone--12.aem-GridColumn--default--none.aem-GridColumn--phone--hide.aem-GridColumn--offset--tablet--0.aem-GridColumn--tablet--12.flex
@@ -390,6 +391,7 @@ microsoft.com##.css-205.ms-Stack
 monkeytype.com###bannerCenter
 monkeytype.com###newVersionIndicator
 
+msn.com##.BubbleMessageContainer-DS-EntryPoint1-2.BubbleMessageContainer-DS-EntryPoint1-1.BubbleMessageContainerRight-DS-EntryPoint1-2.BubbleMessageContainerRight-DS-EntryPoint1-1
 msn.com##div.sectionContainer-DS-EntryPoint1-1:nth-of-type(3)
 
 music.apple.com##.svelte-36irpb.upsell-banner
@@ -558,8 +560,10 @@ stackoverflow.com,superuser.com,stackexchange.com##.spotCollective.svg-spot.fc-b
 stackoverflow.com,superuser.com,stackexchange.com##.tex2jax_ignore.module
 
 store.steampowered.com###achievement_block
+store.steampowered.com###game_highlights > div:nth-of-type(1)
 store.steampowered.com###noReviewsWriteOne
 store.steampowered.com###noteworthy_tab
+store.steampowered.com##.banner_open_in_steam
 store.steampowered.com##.content > h1
 store.steampowered.com##.game_rating_agency
 store.steampowered.com##.glance_details
@@ -575,6 +579,9 @@ store.steampowered.com##div.gutter_header.pad:nth-child(6)
 store.steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
 store.steampowered.com##div.home_ctn:nth-child(n+5):nth-child(-6n+11)
 store.steampowered.com##div.rightcol.recent_reviews:nth-child(2)
+||cdn.cloudflare.steamstatic.com/steam/apps/*/broadcast_*.jpg$image
+||clan.cloudflare.steamstatic.com/images/*.png$image
+||clan.cloudflare.steamstatic.com/images/*.png$image
 
 symbolab.com###Examples_section
 symbolab.com###bar-Example
@@ -591,6 +598,9 @@ symbolab.com###send-us-feedback
 symbolab.com##.hide-until-loaded.print-hide.center-section-narrow.sidebar-content1
 symbolab.com##div.leftMenu.leftMenu-narrow
 symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-child
+
+tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###site-notice
+tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###site-sub
 
 threads.net##.xmch72m.x4ga4hn.x6n63s2.x1ja2u2z.x13vifvy.x10l6tqk
 
@@ -627,6 +637,9 @@ vlr.gg##div.mod-sidebar.wf-label
 vlr.gg##h1.mod-sidebar.wf-label:nth-of-type(2)
 
 w3schools.com##.m12.l2.w3-col
+
+weather.com###AnonymousNewsletter-sidebar-1fe58dbc-2aa4-4df2-8af4-a4a4804efdc0
+weather.com##.ContentMedia--mediaImg--Ehafk.MediaObject--mediaImg--mY1W6
 
 web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
 
