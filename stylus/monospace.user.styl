@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.8.7
+@version        2.8.8
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -12,7 +12,7 @@
     :root {
         /* Define variables */
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
-            "Noto Sans";
+            "Noto Sans Thai", "Noto Sans";
         /* --noto-full: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans", "FOT-Rodin Pro", "A-OTF UD Shin Go Pro",
             "Hiragino Kaku Gothic Pro", "FOT-NewRodin Pro", "DFPHSGothic-W5",
@@ -167,7 +167,7 @@
             .mw-content-ltr.mw-parser-output p span
         ),
     blockquote div p,
-    * tr td > span:not(.url),
+    * tr td > span:not(.url):not(.noprint),
     dl:not(.mw-body-content * dl),
     dl dd span,
     .block-indent span,
@@ -223,8 +223,9 @@
             .py-md .text-neutral-content-weak
         ),
     .text-neutral-content-strong {
-        font-family: var(--plex), var(--noto), var(--font-sans), -apple-system,
-            BlinkMacSystemFont !important;
+        font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
     #header .redditname a::after,
@@ -269,8 +270,6 @@
             "Arial", sans-serif !important;
     }
 
-    .md p strong,
-    .md p a,
     thead tr th,
     object a,
     #header .tabmenu li:first-child a::after,
@@ -315,6 +314,8 @@
     }
 
     .subscribers,
+    .md p strong,
+    .md p a,
     .subscribers .number {
         font-family: var(--noto), "Helvetica Neue", "Helvetica", "Arial",
             sans-serif !important;
@@ -410,6 +411,7 @@
         font-family: var(--serif), "Linux Libertine", "Georgia", "Times", serif !important;
     }
 
+    .template-infotable-monospace,
     code,
     tt,
     .mw-parser-output pre {
@@ -429,6 +431,7 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .e9EfHf,
     .gcal-dialog,
     .goog-imageless-button,
     #target > div,
@@ -815,7 +818,8 @@
             Monaco, Consolas, Courier New, monospace !important;
     }
 
-    .font-mono {
+    .font-mono,
+    .marker\:font-mono ::marker {
         font-family: var(--mono-combo), var(--font-berkeley-mono), ui-monospace,
             SFMono-Regular, monospace !important;
     }

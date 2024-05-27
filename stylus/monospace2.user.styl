@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace2
 @namespace      github.com/openstyles/stylus
-@version        1.2.6
+@version        1.2.7
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl
@@ -378,6 +378,34 @@
 }
 
 @-moz-document domain("redlib.privacyredirect.com") {
+    html,
+    body,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    dl,
+    li,
+    dt,
+    dd,
+    p,
+    blockquote,
+    pre,
+    form,
+    fieldset,
+    table,
+    th,
+    td,
+    select,
+    input {
+        font-family: "Inter", var(--noto), sans-serif !important;
+    }
+
     .md code {
         font-family: var(--mono-combo), monospace, sans-serif !important;
     }
