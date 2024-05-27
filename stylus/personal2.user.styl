@@ -509,15 +509,20 @@
 }
 
 @-moz-document domain("bilibili.com") {
+    .harmony-font,
+    .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
+    .video-page-card-small .card-box .info .title {
+        font-family: var(--font), PingFang SC, HarmonyOS_Regular, Helvetica Neue,
+            Microsoft YaHei, var(--noto), sans-serif !important;
+    }
+
     @media (-webkit-max-device-pixel-ratio: 1) {
-        .harmony-font {
+        .harmony-font,
+        .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
+        .video-page-card-small .card-box .info .title {
             font-family: var(--font), -apple-system, BlinkMacSystemFont,
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
-                Microsoft YaHei, sans-serif !important;
+                Microsoft YaHei, var(--noto), sans-serif !important;
         }
-    }
-    .harmony-font {
-        font-family: var(--font), PingFang SC, HarmonyOS_Regular, Helvetica Neue,
-            Microsoft YaHei, sans-serif !important;
     }
 }
