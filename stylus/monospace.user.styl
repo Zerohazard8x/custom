@@ -21,23 +21,23 @@
             "DFHSGothic-W7", "DFPGothic-EB", "DFGGothic-EB", "DFGothic-EB",
             "DFPGothic-SU", "DFGGothic-SU", "DFGothic-SU"; */
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Roboto",
-            var(--noto);
+            var(--noto, "");
         /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text",
             "Roboto Flex", "Roboto", Barlow, Lato, "Motiva Sans", "Proxima Vara", "Proxima Nova", Inter,
             "Avenir Next", Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO,
             "FF Meta", Manrope, "Helvetica Neue", "Helvetica",
             "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu",
-            var(--noto), "Open Sans", "Droid Sans", ".SF UI Display",
+            var(--noto, ""), "Open Sans", "Droid Sans", ".SF UI Display",
             "SF Pro Display", "SF Compact", "SF Hello"; */
         --serif: "Source Serif Pro", "Source Serif 4", Century,
             "Century Schoolbook", Georgia, "Noto Serif JP", "Noto Serif TC",
             "Noto Serif SC", "Noto Serif KR", "Noto Serif", "Noto Serif Thai",
-            var(--noto);
+            var(--noto, "");
         /* --serif-full: "Source Serif", "Source Serif Pro", "Source Serif 4", Fraunces, "Serif UI",
             "Serif UI Text", Alegreya, "Crimson Pro", "Crimson Text",
             Century, "Century Schoolbook", "Century Oldstyle", "Century Old Style", "Garamond Premr Pro", "Libre Baskerville", Georgia, "EB Garamond",
             Lora, "Shippori Mincho", "Serif UI Display", "Noto Serif JP",
-            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif", var(--noto); */
+            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif", var(--noto, ""); */
         --monospace: "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Mono";
         /* --monospace-full: "Monaspace Argon Var", "Monaspace Argon VF",
@@ -62,8 +62,8 @@
             "Monaspace Krypton VF", "Monaspace Krypton", ProFontIIx,
             ProFontWindows, "Iosevka", "Iosevka Nerd Font",
             "IosevkaTerm Nerd Font", "Input Sans"; */
-        /* --mono-combo: var(--monospace); */
-        --mono-combo: var(--block-mono), var(--monospace);
+        /* --mono-combo: var(--monospace, ""); */
+        --mono-combo: var(--block-mono, ""), var(--monospace, "");
     }
 }
 
@@ -142,14 +142,14 @@
     .mwe-popups-container {
         /* "+" is adjacent sibling selector */
         /* https://www.w3schools.com/Css/css_combinators.asp */
-        font-family: var(--sans), sans-serif !important;
+        font-family: var(--sans, ""), sans-serif !important;
     }
 
     blockquote,
     #firstHeading,
     .mw-page-title-main,
     .mw-headline {
-        font-family: var(--serif), "Linux Libertine", "Georgia", "Times",
+        font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
             "Source Serif Pro", serif !important;
     }
 
@@ -175,14 +175,14 @@
         span:not(.mw-history-legend .mw-parser-output p span):not(
             .mw-content-ltr.mw-parser-output p span
         ) {
-        font-family: var(--serif), Georgia, "DejaVu Serif", serif !important;
+        font-family: var(--serif, ""), Georgia, "DejaVu Serif", serif !important;
     }
 
     .monospaced,
     .diff tbody tr * *,
     code,
     pre span {
-        font-family: var(--mono-combo), monospace !important;
+        font-family: var(--mono-combo, ""), monospace !important;
     }
 }
 
@@ -220,7 +220,7 @@
             .py-md .text-neutral-content-weak
         ),
     .text-neutral-content-strong {
-        font-family: var(--plex), var(--noto), -apple-system, BlinkMacSystemFont,
+        font-family: var(--plex), var(--noto, ""), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
@@ -263,7 +263,7 @@
     h4,
     h5,
     ._3oHXlwUZwpR5SS-8P9tILX {
-        font-family: var(--plex), var(--noto), "Helvetica Neue", "Helvetica",
+        font-family: var(--plex), var(--noto, ""), "Helvetica Neue", "Helvetica",
             "Arial", sans-serif !important;
     }
 
@@ -304,7 +304,7 @@
     body p,
     shreddit-app,
     .usertext-body {
-        font-family: var(--noto), -apple-system, BlinkMacSystemFont, "Segoe UI",
+        font-family: var(--noto, ""), -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, verdana, arial,
             helvetica, sans-serif !important;
@@ -314,24 +314,24 @@
     .md p strong,
     .md p a,
     .subscribers .number {
-        font-family: var(--noto), "Helvetica Neue", "Helvetica", "Arial",
+        font-family: var(--noto, ""), "Helvetica Neue", "Helvetica", "Arial",
             sans-serif !important;
     }
 
     .md pre,
     code,
     #shortlink-text {
-        font-family: var(--mono-combo), monospace !important;
+        font-family: var(--mono-combo, ""), monospace !important;
     }
 
     ._34q3PgLsx9zIU5BiSOjFoM {
-        font-family: var(--mono-combo), Noto Mono, Monaco, Consolas, monospace !important;
+        font-family: var(--mono-combo, ""), Noto Mono, Monaco, Consolas, monospace !important;
     }
 }
 
 @-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com") {
     code {
-        font-family: var(--mono-combo), ui-monospace, "Cascadia Mono",
+        font-family: var(--mono-combo, ""), ui-monospace, "Cascadia Mono",
             "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas,
             monospace !important;
     }
@@ -342,7 +342,7 @@
     .question-hyperlink,
     .comment-copy,
     .s-prose {
-        font-family: var(--sans), -apple-system, BlinkMacSystemFont,
+        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
             "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
     }
 }
@@ -351,7 +351,7 @@
     /* ChatGPT */
     code,
     .shrink-0 {
-        font-family: var(--mono-combo), Söhne Mono, Monaco, Andale Mono,
+        font-family: var(--mono-combo, ""), Söhne Mono, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
     }
 
@@ -364,7 +364,7 @@
     .w3-code,
     .language-java,
     .w3-codespan {
-        font-family: var(--mono-combo), Consolas, "Source Code Pro", Menlo,
+        font-family: var(--mono-combo, ""), Consolas, "Source Code Pro", Menlo,
             Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
     }
 }
@@ -375,24 +375,24 @@
     .mediawiki,
     #sidebar,
     h3 {
-        font-family: var(--sans), "Open Sans", "Helvetica Neue", Helvetica,
+        font-family: var(--sans, ""), "Open Sans", "Helvetica Neue", Helvetica,
             "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif !important;
     }
 
     .mw-editsection {
-        font-family: var(--sans), sans-serif !important;
+        font-family: var(--sans, ""), sans-serif !important;
     }
 
     input {
-        font-family: var(--sans), "MS Shell Dlg 2" !important;
+        font-family: var(--sans, ""), "MS Shell Dlg 2" !important;
     }
 
     .pBody {
-        font-family: var(--sans), verdana, sans-serif !important;
+        font-family: var(--sans, ""), verdana, sans-serif !important;
     }
 
     #personal h2 {
-        font-family: var(--sans), "Helvetica Neue", "Nimbus Sans", "Helvetica",
+        font-family: var(--sans, ""), "Helvetica Neue", "Nimbus Sans", "Helvetica",
             "Arial" !important;
     }
 
@@ -400,23 +400,23 @@
     :lang(zh),
     :lang(ja),
     :lang(ko) {
-        font-family: var(--sans), sans-serif !important;
+        font-family: var(--sans, ""), sans-serif !important;
     }
 
     h1,
     h2 {
-        font-family: var(--serif), "Linux Libertine", "Georgia", "Times", serif !important;
+        font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times", serif !important;
     }
 
     .template-infotable-monospace,
     code,
     tt,
     .mw-parser-output pre {
-        font-family: var(--mono-combo), monospace !important;
+        font-family: var(--mono-combo, ""), monospace !important;
     }
 
     p span b:not(.Latn) {
-        font-family: var(--mono-combo), Consolas, DejaVu Sans Mono,
+        font-family: var(--mono-combo, ""), Consolas, DejaVu Sans Mono,
             Droid Sans Mono, Lucida Console, Courier New, monospace !important;
     }
 }
@@ -428,6 +428,7 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .VwiC3b,
     .e9EfHf,
     .gcal-dialog,
     .goog-imageless-button,
@@ -534,14 +535,14 @@
     .gb_Kd,
     .T8VaVe {
         font-family: var(--google), "Helvetica Neue", HelveticaNeue, arial,
-            var(--noto), sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     .imso-medium-font,
     .imso-light-font,
     .H1HQf,
     .SW5pqf {
-        font-family: var(--google), arial, sans-serif-medium, var(--noto),
+        font-family: var(--google), arial, sans-serif-medium, var(--noto, ""),
             sans-serif !important;
     }
 
@@ -564,7 +565,7 @@
     .iGVLpd div,
     #gb-main,
     .UynAtc span {
-        font-family: var(--google), Roboto, Helvetica Neue, Arial, var(--noto),
+        font-family: var(--google), Roboto, Helvetica Neue, Arial, var(--noto, ""),
             sans-serif !important;
     }
 
@@ -573,7 +574,7 @@
     .SVWlSe span {
         font-family: var(--google), Google Sans, Roboto-Medium,
             HelveticaNeue-Medium, Helvetica Neue, sans-serif-medium, Arial,
-            var(--noto), sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     .jloFI,
@@ -584,24 +585,24 @@
     .LT6XE,
     .Fzsovc {
         font-family: var(--google), Google Sans, Roboto, Helvetica Neue,
-            HelveticaNeue, Arial, var(--noto), sans-serif !important;
+            HelveticaNeue, Arial, var(--noto, ""), sans-serif !important;
     }
 
     .nNzjpf-cS4Vcb-PvZLI-Q1vkfd-bN97Pc {
-        font-family: var(--google), Google Sans, arial, var(--noto), sans-serif !important;
+        font-family: var(--google), Google Sans, arial, var(--noto, ""), sans-serif !important;
     }
 
     .sjVJQd,
     .Yt787,
     .clOx1e span {
-        font-family: var(--google), Google Sans, arial, var(--noto),
+        font-family: var(--google), Google Sans, arial, var(--noto, ""),
             sans-serif-medium, sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
     input,
     .Czd4wf {
-        font-family: "Google Sans", var(--google), arial, var(--noto) !important;
+        font-family: "Google Sans", var(--google), arial, var(--noto, "") !important;
     }
 
     .a-no-hover-decoration,
@@ -634,17 +635,17 @@
     h1.mGOaCb,
     input[type="submit"],
     .gLFyf {
-        font-family: "Google Sans", var(--google), arial, var(--noto),
+        font-family: "Google Sans", var(--google), arial, var(--noto, ""),
             sans-serif !important;
     }
 
     .banner h1 {
         font-family: "Google Sans", var(--google), "Open Sans", arial,
-            var(--noto) !important;
+            var(--noto, "") !important;
     }
 
     .st-c-pos {
-        font-family: Verdana, var(--noto), sans-serif !important;
+        font-family: Verdana, var(--noto, ""), sans-serif !important;
     }
 
     .mv6bHd,
@@ -652,11 +653,11 @@
     #googlegpt-chatbar,
     .code-container,
     .markdown p code {
-        font-family: "Google Sans Mono", var(--mono-combo), monospace !important;
+        font-family: "Google Sans Mono", var(--mono-combo, ""), monospace !important;
     }
 
     .CodeMirror-sizer {
-        font-family: var(--mono-combo), "Roboto Mono", monospace !important;
+        font-family: var(--mono-combo, ""), "Roboto Mono", monospace !important;
     }
 }
 
@@ -722,7 +723,7 @@
     .rd_cCodeBg,
     .rd_code_blu,
     .rd_code_red {
-        font-family: var(--mono-combo), Consolas, Courier, monospace !important;
+        font-family: var(--mono-combo, ""), Consolas, Courier, monospace !important;
     }
 }
 
@@ -730,7 +731,7 @@
     div .text pre,
     .container div code,
     .outputDiv pre {
-        font-family: var(--mono-combo), Consolas, monospace !important;
+        font-family: var(--mono-combo, ""), Consolas, monospace !important;
     }
 }
 
@@ -760,7 +761,7 @@
     .message-wB3GWa,
     .text-md-semibold-2VMhBr {
         font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
-            var(--noto), sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     .codeLine__3797b,
@@ -769,7 +770,7 @@
     .inlineCode-ERyvy_,
     table,
     .inline {
-        font-family: var(--mono-combo), Consolas, "Andale Mono WT",
+        font-family: var(--mono-combo, ""), Consolas, "Andale Mono WT",
             "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
             "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
             monospace !important;
@@ -796,7 +797,7 @@
     code,
     .wZ4JdaHxSAhGy1HoNVja span span,
     .ddgpt pre {
-        font-family: var(--mono-combo), Consolas, Menlo, Monaco, monospace !important;
+        font-family: var(--mono-combo, ""), Consolas, Menlo, Monaco, monospace !important;
     }
 
     .eO9dloD5J8OJewxQVUem .D4hR0tobSBRm_mZ4hrlS span,
@@ -804,7 +805,7 @@
         .zOy00l5oxa1BzkYx8dfo
         .N5t7rxvhA9HFhN2jgj_I
         .hHVrjZST7zuknVVFtP6w {
-        font-family: var(--mono-combo), var(--sds-font-family-monospace) !important;
+        font-family: var(--mono-combo, ""), var(--sds-font-family-monospace) !important;
     }
 }
 
@@ -815,25 +816,25 @@
     .HeaderMenu,
     .RatingsBoxAdjustedRating,
     input {
-        font-family: var(--sans), Arial, "Segoe UI", Frutiger,
+        font-family: var(--sans, ""), Arial, "Segoe UI", Frutiger,
             "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
     }
 
     .starRating {
-        font-family: var(--mono-combo), Courier, serif !important;
+        font-family: var(--mono-combo, ""), Courier, serif !important;
     }
 }
 
 @-moz-document domain("perplexity.ai") {
     .ace_placeholder.ace_comment,
     code {
-        font-family: var(--mono-combo), Berkeley Mono, source-code-pro, Menlo,
+        font-family: var(--mono-combo, ""), Berkeley Mono, source-code-pro, Menlo,
             Monaco, Consolas, Courier New, monospace !important;
     }
 
     .font-mono,
     .marker\:font-mono ::marker {
-        font-family: var(--mono-combo), var(--font-berkeley-mono), ui-monospace,
+        font-family: var(--mono-combo, ""), var(--font-berkeley-mono), ui-monospace,
             SFMono-Regular, monospace !important;
     }
 }
@@ -862,7 +863,7 @@
     textarea,
     .css-1vfp3rz-text,
     .menu-item__text {
-        font-family: Iosevka, var(--mono-combo), monospace, "Lato Extended",
+        font-family: Iosevka, var(--mono-combo, ""), monospace, "Lato Extended",
             "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 
@@ -950,13 +951,13 @@
     .css-17undkt-text,
     .css-16jy445-baseButton__content,
     .css-pljkwv-view-heading {
-        font-family: Iosevka, var(--mono-combo), monospace, LatoWeb,
+        font-family: Iosevka, var(--mono-combo, ""), monospace, LatoWeb,
             "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
             sans-serif !important;
     }
 
     .ef-file-preview-header-download span,
     #App {
-        font-family: Iosevka, var(--mono-combo), monospace, "Lato", sans-serif !important;
+        font-family: Iosevka, var(--mono-combo, ""), monospace, "Lato", sans-serif !important;
     }
 }

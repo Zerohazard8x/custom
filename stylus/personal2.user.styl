@@ -13,95 +13,11 @@
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans Thai", "Noto Sans", "Yu Gothic";
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Roboto",
-            var(--noto);
+            var(--noto, "");
         --readable: "Public Sans", "Fira Sans", "Work Sans", "Bahnschrift",
             "Aptos Narrow", "IBM Plex Sans Var", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "IBM Plex Sans", var(--noto);
+            "IBM Plex Sans KR", "IBM Plex Sans", var(--noto, "");
     }
-}
-
-@-moz-document domain("tweetdeck.twitter.com") {
-    .js-column.column {
-        /* Change column width */
-        width: 370px !important;
-    }
-
-    html.dark .is-wide-columns .media-size-medium,
-    .media-image,
-    .media-grid-container {
-        /* Make images taller */
-        height: 360px !important;
-    }
-
-    .is-wide-columns,
-    .js-dropdown-content,
-    .js-modal-panel,
-    .js-submittable-input,
-    .action-text,
-    .s-fluid-height,
-    .prf,
-    .js-popover-content,
-    .is-focused,
-    label,
-    .js-filter-types,
-    .js-filter-input,
-    .login-container,
-    .r-1qd0xha {
-        font-family: "TwitterChirp", var(--sans), -apple-system,
-            BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue",
-            sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-            Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
-            Meiryo, "ＭＳ Ｐゴシック", "MS PGothic" !important;
-    }
-
-    .btn,
-    .label,
-    .btn-on-dark,
-    .Button,
-    .js-action-button {
-        font-family: "TwitterChirp", var(--sans), Helvetica Neue, Helvetica,
-            Arial, sans-serif !important;
-    }
-
-    /* AMOLED dark */
-    html.dark .app-columns-container,
-    html.dark .stream-item,
-    html.dark .column-panel,
-    html.dark .column-title-edit-box,
-    html.dark .column-header,
-    html.dark .app-header,
-    html.dark .column-nav-item,
-    html.dark .app-navigator,
-    html.dark .app-title,
-    html.dark .border-divider,
-    html.dark .with-column-divider-bottom,
-    html.dark .column-options .button-tray,
-    html.dark .dropdown-menu,
-    html.dark .popover,
-    html.dark input,
-    html.dark .detail-view-inline,
-    html.dark .detail-view-inline-text,
-    html.dark .facet-type.is-active,
-    html.dark .column,
-    html.dark .mdl {
-        background-color: black !important;
-        border-bottom-color: black !important;
-        border-color: black !important;
-    }
-
-    /* #btdRoot,
-    #update-sound,
-    div.application.js-app.is-condensed,
-    div.context-menu,
-    div.is-hidden.js-message-banner.message-banner,
-    div.js-app-loading.login-container,
-    div.js-modals-container,
-    div.js-app-loading.login-container,
-    div.is-hidden.application.js-app,
-    div.Layer.NotificationListLayer,
-    #react-root {
-        filter: sepia(40%);
-    } */
 }
 
 @-moz-document domain("nitter.tiekoetter.com"), domain("twt.funami.tech"), domain("nitter.privacydev.net"), domain("nitter.poast.org") {
@@ -112,13 +28,13 @@
     button,
     select,
     input {
-        font-family: var(--sans), sans-serif !important;
+        font-family: var(--sans, ""), sans-serif !important;
     }
 }
 
 @-moz-document domain("quora.com") {
     .q-box {
-        font-family: var(--sans), -apple-system, system-ui, BlinkMacSystemFont,
+        font-family: var(--sans, ""), -apple-system, system-ui, BlinkMacSystemFont,
             "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
             sans-serif !important;
     }
@@ -132,7 +48,7 @@
 
     body,
     .flex {
-        font-family: var(--sans-plus-jakarta), var(--sans), ui-sans-serif,
+        font-family: var(--sans-plus-jakarta), var(--sans, ""), ui-sans-serif,
             system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
             helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
             segoe ui emoji, segoe ui symbol, noto color emoji !important;
@@ -169,34 +85,34 @@
 
 @-moz-document domain("weibo.com"), domain("weibo.cn") {
     .woo-box-flex {
-        font-family: var(--sans), system-ui, -apple-system, Segoe UI, Roboto,
-            Ubuntu, Cantarell, Noto Sans, var(--noto), sans-serif !important;
+        font-family: var(--sans, ""), system-ui, -apple-system, Segoe UI, Roboto,
+            Ubuntu, Cantarell, Noto Sans, var(--noto, ""), sans-serif !important;
     }
 
     .woo-like-count,
     .WB_main,
     .gn_position,
     .WB_footer {
-        font-family: var(--sans), Arial, "PingFang SC", "Hiragino Sans GB",
-            "Microsoft YaHei", "WenQuanYi Micro Hei", var(--noto), sans-serif;
+        font-family: var(--sans, ""), Arial, "PingFang SC", "Hiragino Sans GB",
+            "Microsoft YaHei", "WenQuanYi Micro Hei", var(--noto, ""), sans-serif;
     }
 
     .card,
     .main-text,
     h4 {
-        font-family: var(--sans), Helvetica Neue, Helvetica, Arial, var(--noto),
+        font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial, var(--noto, ""),
             sans-serif !important;
     }
 
     .woo-input-main {
-        font-family: var(--sans), var(--noto), "MS Shell Dlg 2" !important;
+        font-family: var(--sans, ""), var(--noto, ""), "MS Shell Dlg 2" !important;
     }
 }
 
 @-moz-document domain("wordcounter.net") {
     .container,
     #box {
-        font-family: var(--sans), Helvetica, Arial !important;
+        font-family: var(--sans, ""), Helvetica, Arial !important;
     }
 }
 
@@ -264,8 +180,8 @@
     input,
     select,
     textarea {
-        font-family: var(--sans), "lucida grande", tahoma, verdana, arial,
-            \5b8b\4f53, var(--noto), sans-serif !important;
+        font-family: var(--sans, ""), "lucida grande", tahoma, verdana, arial,
+            \5b8b\4f53, var(--noto, ""), sans-serif !important;
     }
 
     .index_simple-detail-content__3FPFA,
@@ -287,26 +203,26 @@
     .thread-content-detail,
     .type-wrap-txt,
     .bbs-index-web-bbsindexWarp div {
-        font-family: var(--sans), PingFangSC-Regular, PingFang SC, miui,
+        font-family: var(--sans, ""), PingFangSC-Regular, PingFang SC, miui,
             system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
-            Helvetica, var(--noto), sans-serif !important;
+            Helvetica, var(--noto, ""), sans-serif !important;
     }
 
     .bbs-sl-web-post-body,
     .bbs-sl-web-post-header,
     .bbs-sl-web-intro-detail-desc-title {
-        font-family: var(--sans), PingFangSC-Medium, var(--noto) !important;
+        font-family: var(--sans, ""), PingFangSC-Medium, var(--noto, "") !important;
     }
 
     .post-wrapper_bbs-post-wrapper-title__TLQdd p,
     .index_bbs-post-web-main-title-provider__uHAn9 span,
     .index_bbs-post-web-main-title-provider__uHAn9,
     .main-c {
-        font-family: var(--sans), PingFangSC-Semibold, var(--noto) !important;
+        font-family: var(--sans, ""), PingFangSC-Semibold, var(--noto, "") !important;
     }
 
     .content-header {
-        font-family: var(--sans), PingFangSC-Semibold, PingFang SC, var(--noto) !important;
+        font-family: var(--sans, ""), PingFangSC-Semibold, PingFang SC, var(--noto, "") !important;
     }
 
     .post-reply-list_post-reply-list-wrapper__o4_81
@@ -333,7 +249,7 @@
     .text-list-model,
     .user-operate,
     .list-item-lights {
-        font-family: var(--sans), PingFangSC-Regular, var(--noto) !important;
+        font-family: var(--sans, ""), PingFangSC-Regular, var(--noto, "") !important;
     }
 
     .notLogin a span,
@@ -345,7 +261,7 @@
     .hp-pc-rc-TopMenu-top,
     .radio-txt,
     .hot-title {
-        font-family: var(--sans), PingFangSC-Regular, PingFang SC, var(--noto) !important;
+        font-family: var(--sans, ""), PingFangSC-Regular, PingFang SC, var(--noto, "") !important;
     }
 
     .bbs-sl-web-intro-detail-title,
@@ -355,19 +271,19 @@
     .right-post-title,
     .post-title,
     .post-info div {
-        font-family: var(--sans), PingFangSC, var(--noto) !important;
+        font-family: var(--sans, ""), PingFangSC, var(--noto, "") !important;
     }
 
     .nav_qiantao_hupu210316,
     .title,
     .cntv_list ul li a {
-        font-family: var(--sans), PingFangSC-Regular, Helvetica, Arial,
-            Microsoft Yahei, var(--noto), sans-serif !important;
+        font-family: var(--sans, ""), PingFangSC-Regular, Helvetica, Arial,
+            Microsoft Yahei, var(--noto, ""), sans-serif !important;
     }
 
     .hot-index {
-        font-family: var(--sans), HelveticaNeue-CondensedBold, HelveticaNeue,
-            var(--noto) !important;
+        font-family: var(--sans, ""), HelveticaNeue-CondensedBold, HelveticaNeue,
+            var(--noto, "") !important;
     }
 }
 
@@ -412,10 +328,10 @@
         .se-caption
         .se-ff-,
     .nng-viewer .se-viewer:lang(ko-KR) .se-section-text.se-l-default .se-ff- {
-        font-family: var(--sans), -apple-system, BlinkMacSystemFont,
+        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
             Apple SD Gothic Neo, Helvetica, Arial, NanumGothic, 나눔고딕,
             Malgun Gothic, 맑은 고딕, Dotum, 굴림, gulim, 새굴림, noto sans,
-            돋움, var(--noto), sans-serif !important;
+            돋움, var(--noto, ""), sans-serif !important;
     }
 }
 
@@ -459,11 +375,11 @@
 @-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
     #container,
     #searchsubmit {
-        font-family: var(--sans), arial, helvetica, clean, sans-serif !important;
+        font-family: var(--sans, ""), arial, helvetica, clean, sans-serif !important;
     }
 
     #main {
-        font-family: var(--sans), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: var(--sans, ""), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 }
 
@@ -509,17 +425,17 @@
     .harmony-font,
     .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
     .video-page-card-small .card-box .info .title {
-        font-family: var(--sans), PingFang SC, HarmonyOS_Regular, Helvetica Neue,
-            Microsoft YaHei, var(--noto), sans-serif !important;
+        font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular, Helvetica Neue,
+            Microsoft YaHei, var(--noto, ""), sans-serif !important;
     }
 
     @media (-webkit-max-device-pixel-ratio: 1) {
         .harmony-font,
         .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
         .video-page-card-small .card-box .info .title {
-            font-family: var(--sans), -apple-system, BlinkMacSystemFont,
+            font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
-                Microsoft YaHei, var(--noto), sans-serif !important;
+                Microsoft YaHei, var(--noto, ""), sans-serif !important;
         }
     }
 }

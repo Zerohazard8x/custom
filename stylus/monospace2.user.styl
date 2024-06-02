@@ -13,16 +13,16 @@
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans Thai", "Noto Sans", "Yu Gothic";
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Roboto",
-            var(--noto);
+            var(--noto, "");
         --serif: "Source Serif Pro", "Source Serif 4", Century,
             "Century Schoolbook", Georgia, "Noto Serif JP", "Noto Serif TC",
             "Noto Serif SC", "Noto Serif KR", "Noto Serif", "Noto Serif Thai",
-            var(--noto);
+            var(--noto, "");
         --monospace: "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Mono";
         --block-mono: "JetBrains Mono", "JetBrains Mono NL",
             "JetBrainsMono Nerd Font", "Fantasque Sans Mono";
-        --mono-combo: var(--block-mono), var(--monospace);
+        --mono-combo: var(--block-mono, ""), var(--monospace, "");
     }
 }
 
@@ -47,14 +47,14 @@
     h2,
     p,
     .ChatMessage_badge__ah1FU {
-        font-family: var(--sans), -apple-system, system-ui, BlinkMacSystemFont,
+        font-family: var(--sans, ""), -apple-system, system-ui, BlinkMacSystemFont,
             Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue,
             sans-serif !important;
     }
 
     code span,
     code {
-        font-family: var(--mono-combo), Consolas, monaco, monospace !important;
+        font-family: var(--mono-combo, ""), Consolas, monaco, monospace !important;
     }
 }
 
@@ -63,7 +63,7 @@
     .diff tbody tr * *,
     code,
     pre span {
-        font-family: var(--mono-combo), Noto Sans Mono, Menlo, Consolas,
+        font-family: var(--mono-combo, ""), Noto Sans Mono, Menlo, Consolas,
             Courier New, Courier, monospace !important;
     }
 
@@ -121,13 +121,13 @@
 @-moz-document domain("developer.mozilla.org") {
     code,
     .section-content pre {
-        font-family: var(--mono-combo), var(--font-code) !important;
+        font-family: var(--mono-combo, ""), var(--font-code) !important;
     }
 }
 
 @-moz-document domain("symbolab.com") {
     .latex-command-input {
-        font-family: var(--mono-combo), "Courier New", monospace !important;
+        font-family: var(--mono-combo, ""), "Courier New", monospace !important;
     }
 }
 
@@ -144,14 +144,14 @@
     .button-text,
     .p-sectionLinks-list,
     .input {
-        font-family: var(--sans), -apple-system, BlinkMacSystemFont, segoe ui,
+        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont, segoe ui,
             Roboto, Helvetica, Arial, sans-serif, apple color emoji,
             segoe ui emoji, segoe ui symbol !important;
     }
 
     .bbCodeInline,
     .bbCodeCode {
-        font-family: var(--mono-combo), Monaco, Menlo, Consolas, roboto mono,
+        font-family: var(--mono-combo, ""), Monaco, Menlo, Consolas, roboto mono,
             andale mono, ubuntu mono, monospace !important;
     }
 }
@@ -172,7 +172,7 @@
     }
 
     code {
-        font-family: var(--mono-combo), ui-monospace, SFMono-Regular, "SF Mono",
+        font-family: var(--mono-combo, ""), ui-monospace, SFMono-Regular, "SF Mono",
             Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace,
             "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
             "Twemoji Mozilla" !important;
@@ -183,7 +183,7 @@
     pre,
     dd,
     code {
-        font-family: var(--mono-combo), "DejaVu Sans Mono", monospace !important;
+        font-family: var(--mono-combo, ""), "DejaVu Sans Mono", monospace !important;
     }
 }
 
@@ -194,24 +194,24 @@
     }
 
     .code-snippet {
-        font-family: var(--mono-combo), "SourceCodePro" !important;
+        font-family: var(--mono-combo, ""), "SourceCodePro" !important;
     }
 
     .snippet-row {
-        font-family: var(--mono-combo), CourierNewPSMT !important;
+        font-family: var(--mono-combo, ""), CourierNewPSMT !important;
     }
 }
 
 @-moz-document domain("baeldung.com") {
     code.hljs {
-        font-family: var(--mono-combo), "Source Code Pro", "Consolas",
+        font-family: var(--mono-combo, ""), "Source Code Pro", "Consolas",
             "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
     }
 }
 
 @-moz-document domain("chat.lmsys.org") {
     code {
-        font-family: var(--mono-combo), Consolas, Monaco, Andale Mono,
+        font-family: var(--mono-combo, ""), Consolas, Monaco, Andale Mono,
             Ubuntu Mono, monospace !important;
     }
 }
@@ -220,11 +220,11 @@
     .canvas,
     .page-content,
     .nav li {
-        font-family: var(--sans), sans-serif !important;
+        font-family: var(--sans, ""), sans-serif !important;
     }
 
     .CodeMirror-sizer {
-        font-family: var(--mono-combo), Courier New, Andale Mono, Monaco !important;
+        font-family: var(--mono-combo, ""), Courier New, Andale Mono, Monaco !important;
     }
 }
 
@@ -232,34 +232,34 @@
     .home,
     .navbar,
     .page {
-        font-family: var(--sans), -apple-system, BlinkMacSystemFont, "Segoe UI",
+        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
             "Helvetica Neue", sans-serif !important;
     }
 
     .text code {
-        font-family: var(--mono-combo), Consolas, Monaco, "Andale Mono",
+        font-family: var(--mono-combo, ""), Consolas, Monaco, "Andale Mono",
             "Ubuntu Mono", monospace !important;
     }
 }
 
 @-moz-document domain("shellcheck.net") {
     html body {
-        font-family: var(--sans), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: var(--sans, ""), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     }
 
     code,
     kbd,
     pre,
     samp {
-        font-family: var(--mono-combo), Menlo, Monaco, Consolas, "Courier New",
+        font-family: var(--mono-combo, ""), Menlo, Monaco, Consolas, "Courier New",
             monospace;
     }
 }
 
 @-moz-document domain("chat.mistral.ai") {
     .font-sans {
-        font-family: var(--sans), ui-sans-serif, system-ui, sans-serif,
+        font-family: var(--sans, ""), ui-sans-serif, system-ui, sans-serif,
             Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
     }
 
@@ -267,12 +267,12 @@
     kbd,
     pre,
     samp {
-        font-family: var(--mono-combo), ui-monospace, SFMono-Regular, Menlo,
+        font-family: var(--mono-combo, ""), ui-monospace, SFMono-Regular, Menlo,
             Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
     }
 
     * * div code span {
-        font-family: var(--mono-combo), Menlo, Monaco, Consolas, "Andale Mono",
+        font-family: var(--mono-combo, ""), Menlo, Monaco, Consolas, "Andale Mono",
             "Ubuntu Mono", "Courier New", monospace !important;
     }
 }
@@ -303,18 +303,18 @@
     p strong,
     p,
     div h4 {
-        font-family: var(--sans), Helvetica, Arial, Verdana, sans-serif !important;
+        font-family: var(--sans, ""), Helvetica, Arial, Verdana, sans-serif !important;
     }
 
     textarea {
-        font-family: var(--mono-combo), "monaco", "lucida console",
+        font-family: var(--mono-combo, ""), "monaco", "lucida console",
             "lucida sans typewriter", "consolas", "monospace" !important;
     }
 }
 
 @-moz-document domain("monkeytype.com") {
     #app.content-grid {
-        font-family: var(--mono-combo), var(--font) !important;
+        font-family: var(--mono-combo, ""), var(--font) !important;
     }
 }
 
@@ -323,14 +323,14 @@
     devsite-code pre code,
     article div p code,
     * p a code {
-        font-family: var(--mono-combo), Roboto Mono, monospace !important;
+        font-family: var(--mono-combo, ""), Roboto Mono, monospace !important;
     }
 }
 
 @-moz-document domain("pi.ai") {
     .t-code,
     .t-code-inline {
-        font-family: var(--mono-combo), var(--font-mono), ui-monospace,
+        font-family: var(--mono-combo, ""), var(--font-mono), ui-monospace,
             SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
             "Courier New", monospace !important;
     }
@@ -339,20 +339,20 @@
 @-moz-document domain("groq.com") {
     * div pre code {
         /* https://www.w3schools.com/cssref/sel_element_element.php */
-        font-family: var(--mono-combo), Consolas, Monaco, "Andale Mono",
+        font-family: var(--mono-combo, ""), Consolas, Monaco, "Andale Mono",
             "Ubuntu Mono", monospace !important;
     }
 }
 
 @-moz-document domain("antifandom.com"), domain("breezewiki.com") {
     .text b code {
-        font-family: var(--mono-combo), monospace !important;
+        font-family: var(--mono-combo, ""), monospace !important;
     }
 }
 
 @-moz-document domain("fandom.com") {
     .text b code {
-        font-family: var(--mono-combo), monospace !important;
+        font-family: var(--mono-combo, ""), monospace !important;
     }
 }
 
@@ -360,7 +360,7 @@
     pre code,
     p code,
     li code {
-        font-family: var(--mono-combo), SFMono-Regular, Consolas,
+        font-family: var(--mono-combo, ""), SFMono-Regular, Consolas,
             Liberation Mono, Menlo, Courier, monospace !important;
     }
 }
@@ -370,7 +370,7 @@
     .JbmeqBVGxym,
     .ZiMQFjE365,
     .T5Dbe9eY7n {
-        font-family: var(--mono-combo), var(--monospace-font-family) !important;
+        font-family: var(--mono-combo, ""), var(--monospace-font-family) !important;
     }
 }
 
@@ -400,10 +400,10 @@
     td,
     select,
     input {
-        font-family: "Inter", var(--noto), sans-serif !important;
+        font-family: "Inter", var(--noto, ""), sans-serif !important;
     }
 
     .md code {
-        font-family: var(--mono-combo), monospace, sans-serif !important;
+        font-family: var(--mono-combo, ""), monospace, sans-serif !important;
     }
 }
