@@ -190,7 +190,6 @@
 ||cdn-go.cn$all
 ||cdn.pelcro.com/js/bab$all
 ||cdn.trustcommander.net/privacy$all
-||cdn20.com$all
 ||cdnhub.co$all
 ||certria.com$all
 ||cesnet.cz$all
@@ -582,7 +581,6 @@
 ||login4play.com$all
 ||loli.net$all
 ||lottiefiles.com$all
-||lrcontent.com$all
 ||lukas-heinrich.com$all
 ||lynxus.com/usq/atiuqs$all
 ||mageworx.com$all
@@ -925,6 +923,8 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||lrcontent.com$script,inline-script,object,ping,stylesheet,other
+||cdn20.com$script,inline-script,object,ping,stylesheet,other
 ||global.ssl.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||fonts.net$script,inline-script,object,ping,stylesheet,other
 ||forgecdn.net$script,inline-script,object,ping,stylesheet,other
@@ -1131,7 +1131,6 @@
 ||kinstacdn.com$script,inline-script,object,ping,stylesheet,other
 ||klaviyo.com$script,inline-script,object,ping,stylesheet,other
 ||krxd.net$script,inline-script,object,ping,stylesheet,other
-||kunlunar.com$script,inline-script,object,ping,stylesheet,other
 ||kunlunsl.com$script,inline-script,object,ping,stylesheet,other
 ||lahuashanbx.com$script,inline-script,object,ping,stylesheet,other
 ||lh3.google.com$script,inline-script,object,ping,stylesheet,other

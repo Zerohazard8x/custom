@@ -191,6 +191,7 @@ discord.com##.wrapper__26ed7
 
 discussions.apple.com##.announcements
 
+dochub.com###modal-stack
 dochub.com##.page-section--benefits.page-section
 dochub.com##.page-section--c2a-get-form.page-section
 dochub.com##.page-section--c2a-install-add-on.page-section
@@ -239,6 +240,9 @@ fandom.com##.global-navigation
 fandom.com##.rail-module.railModule
 fandom.com##.rail-recentImages-module
 
+feedly.com##.Layout_main__nbmiJ > .Container_container__uz3px
+feedly.com##.LogoSection_logoSection__t58uZ
+
 finance.yahoo.com##.Pos\(r\).End\(130px\).smartphone_D\(n\).C\(\$featureCueBgc\).Pos\(a\)\!.Fz\(s\).Bdrs\(8px\).D\(ib\).O\(n\)\:f.M\(0\).Whs\(n\)
 finance.yahoo.com##.Mend\(19px\).Mb\(8px\).Fz\(0\.875rem\)
 
@@ -256,7 +260,7 @@ firebase.google.com##.homepage-hero__image-desktop
 firebase.google.com##.ng-star-inserted.firebase-logo-mark
 firebase.google.com##.ng-star-inserted.ng-tns-c3156041170-6.nav-section.quicklink-promo-card.mdc-card.mat-mdc-card
 firebase.google.com##promo-optin-banner.ng-star-inserted
-||www.gstatic.com/mobilesdk*g$image
+||gstatic.com/mobilesdk*g$image
 
 gemini.google.com##upsell-button.ng-star-inserted
 
@@ -313,6 +317,13 @@ icloud.com##.tiles
 imgur.com##.BottomRecirc
 imgur.com##.Button.EmeraldButton
 imgur.com##.Sticky.Top
+
+inoreader.com###hero
+inoreader.com###onboard_overlay
+inoreader.com###tourbus-0
+inoreader.com##.info-div
+inoreader.com##.py-lg-5
+inoreader.com##div.z-index-10.position-relative.py-5
 
 !------!
 ! Represents elements 1 and 4 (diff. of 3 -> -3n+4)
@@ -427,12 +438,9 @@ office.com##ohp-learning-shelf-react.ng-star-inserted
 
 omnicalculator.com##.IntroductionModal.jsx-456407116
 
-onedrive.live.com###PROD_OneDrive-Web_SuiteNav_Unknown_HeaderDiamond_container
-onedrive.live.com##.od-PremiumUpsellBanner
-onedrive.live.com##.od-PremiumUpsellBanner-details
-onedrive.live.com##.od-QuotaBar-bottom
-onedrive.live.com##.root-193.leftNavNotificationsLink_13fd1f41.ms-Link
-onedrive.live.com##.root-199.leftNavNotificationsLink_13fd1f41.ms-Link
+onedrive.live.com##.od-QuotaBannerWrapper-placeholder.od-QuotaBannerWrapper
+onedrive.live.com##.storageUpsellBannerText_8bf2f56c
+onedrive.live.com##.quotaBarHeader_2b3ef397
 
 open.spotify.com##.cZ3IJprhLYLVtLoxVtDe
 
@@ -451,6 +459,7 @@ parcelsapp.com##section.faq:nth-of-type(8) > .container
 parcelsapp.com##section.light-gray-bg:nth-of-type(7)
 parcelsapp.com##section.light-gray-bg:nth-of-type(9)
 
+perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.ease-out.duration-300.fade-in.animate-in.shadow-md.p-md.border.rounded-lg
 perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.md\:block.ease-out.duration-300.fade-in.animate-in.shadow-sm.p-md.border.rounded-lg.w-\[300px\].hidden.z-30.right-md.bottom-md.fixed
 perplexity.ai##.flex-col.flex > div.bg-transparent.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50:nth-of-type(1)
 perplexity.ai##.md\:text-center.pb-xs.justify-center.items-center.flex.mb-lg
@@ -505,7 +514,7 @@ reddit.com##div.text-14.text-neutral-content-weak
 reddit.com##reddit-recent-pages
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
 reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
-||www.redditstatic.com/desktop2x/img/powerups/moderator-achievement.svg$image
+||redditstatic.com/desktop2x/img/powerups/moderator-achievement.svg$image
 
 reverso.net##app-desktop-app-promotion
 reverso.net##app-features-promotion
@@ -582,6 +591,8 @@ store.steampowered.com##div.rightcol.recent_reviews:nth-child(2)
 ||cdn.cloudflare.steamstatic.com/steam/apps/*/broadcast_*.jpg$image
 ||clan.cloudflare.steamstatic.com/images/*.png$image
 ||clan.cloudflare.steamstatic.com/images/*.png$image
+
+studocu.com###main-wrapper > div:nth-of-type(17)
 
 symbolab.com###Examples_section
 symbolab.com###bar-Example
