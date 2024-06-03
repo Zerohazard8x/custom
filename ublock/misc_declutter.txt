@@ -444,6 +444,8 @@ onedrive.live.com##.quotaBarHeader_2b3ef397
 
 open.spotify.com##.cZ3IJprhLYLVtLoxVtDe
 
+openweathermap.org##.pop-up
+
 parcelsapp.com###features
 parcelsapp.com###tisunov > .container > div.row:nth-of-type(1)
 parcelsapp.com##.content.carrier-info
@@ -661,6 +663,8 @@ wikiwand.com##.footer_donation__Cje_Q
 wikiwand.com##.footer_subTitle__2Qrwq
 wikiwand.com##.footer_title__GtcWC
 wikiwand.com##.logoIcon_sep__6ACnW
+
+windy.com##.show.weather-box.animation
 
 wolframalpha.com##.MmSr.sc-27aa800e-0.csqIdz.sc-183a9123-3
 wolframalpha.com##.QRoJJ.sc-f3dfd2ae-0
