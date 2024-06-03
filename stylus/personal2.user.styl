@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.0.6
+@version        1.0.7
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.styl
@@ -34,9 +34,9 @@
 
 @-moz-document domain("quora.com") {
     .q-box {
-        font-family: var(--sans, ""), -apple-system, system-ui, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
-            sans-serif !important;
+        font-family: var(--sans, ""), -apple-system, system-ui,
+            BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+            Cantarell, "Helvetica Neue", sans-serif !important;
     }
 }
 
@@ -94,14 +94,15 @@
     .gn_position,
     .WB_footer {
         font-family: var(--sans, ""), Arial, "PingFang SC", "Hiragino Sans GB",
-            "Microsoft YaHei", "WenQuanYi Micro Hei", var(--noto, ""), sans-serif;
+            "Microsoft YaHei", "WenQuanYi Micro Hei", var(--noto, ""),
+            sans-serif;
     }
 
     .card,
     .main-text,
     h4 {
-        font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial, var(--noto, ""),
-            sans-serif !important;
+        font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
+            var(--noto, ""), sans-serif !important;
     }
 
     .woo-input-main {
@@ -175,13 +176,24 @@
 }
 
 @-moz-document domain("hupu.com"), domain("sports.cctv.com") {
+    :root {
+        --hupu: hupufont, hupufont-Medium, hupufont-Regular, var(--sans, "");
+    }
+
     body,
     button,
     input,
     select,
     textarea {
-        font-family: var(--sans, ""), "lucida grande", tahoma, verdana, arial,
+        font-family: var(--hupu, ""), "lucida grande", tahoma, verdana, arial,
             \5b8b\4f53, var(--noto, ""), sans-serif !important;
+    }
+
+    body,
+    body *,
+    html {
+        font-family: var(--hupu, ""), hupufont-Regular, PingFangSC-Regular,
+            PingFang SC, Helvetica Neue, Helvetica, STHeiTi, sans-serif !important;
     }
 
     .index_simple-detail-content__3FPFA,
@@ -203,7 +215,7 @@
     .thread-content-detail,
     .type-wrap-txt,
     .bbs-index-web-bbsindexWarp div {
-        font-family: var(--sans, ""), PingFangSC-Regular, PingFang SC, miui,
+        font-family: var(--hupu, ""), PingFangSC-Regular, PingFang SC, miui,
             system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
             Helvetica, var(--noto, ""), sans-serif !important;
     }
@@ -211,18 +223,19 @@
     .bbs-sl-web-post-body,
     .bbs-sl-web-post-header,
     .bbs-sl-web-intro-detail-desc-title {
-        font-family: var(--sans, ""), PingFangSC-Medium, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Medium, var(--noto, "") !important;
     }
 
     .post-wrapper_bbs-post-wrapper-title__TLQdd p,
     .index_bbs-post-web-main-title-provider__uHAn9 span,
     .index_bbs-post-web-main-title-provider__uHAn9,
     .main-c {
-        font-family: var(--sans, ""), PingFangSC-Semibold, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Semibold, var(--noto, "") !important;
     }
 
     .content-header {
-        font-family: var(--sans, ""), PingFangSC-Semibold, PingFang SC, var(--noto, "") !important;
+        font-family: var(--sans, ""), PingFangSC-Semibold, PingFang SC,
+            var(--noto, "") !important;
     }
 
     .post-reply-list_post-reply-list-wrapper__o4_81
@@ -249,7 +262,7 @@
     .text-list-model,
     .user-operate,
     .list-item-lights {
-        font-family: var(--sans, ""), PingFangSC-Regular, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Regular, var(--noto, "") !important;
     }
 
     .notLogin a span,
@@ -261,7 +274,8 @@
     .hp-pc-rc-TopMenu-top,
     .radio-txt,
     .hot-title {
-        font-family: var(--sans, ""), PingFangSC-Regular, PingFang SC, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Regular, PingFang SC,
+            var(--noto, "") !important;
     }
 
     .bbs-sl-web-intro-detail-title,
@@ -271,18 +285,18 @@
     .right-post-title,
     .post-title,
     .post-info div {
-        font-family: var(--sans, ""), PingFangSC, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC, var(--noto, "") !important;
     }
 
     .nav_qiantao_hupu210316,
     .title,
     .cntv_list ul li a {
-        font-family: var(--sans, ""), PingFangSC-Regular, Helvetica, Arial,
+        font-family: var(--hupu, ""), PingFangSC-Regular, Helvetica, Arial,
             Microsoft Yahei, var(--noto, ""), sans-serif !important;
     }
 
     .hot-index {
-        font-family: var(--sans, ""), HelveticaNeue-CondensedBold, HelveticaNeue,
+        font-family: var(--hupu, ""), HelveticaNeue-CondensedBold, HelveticaNeue,
             var(--noto, "") !important;
     }
 }
@@ -379,7 +393,8 @@
     }
 
     #main {
-        font-family: var(--sans, ""), "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: var(--sans, ""), "Helvetica Neue", Helvetica, Arial,
+            sans-serif !important;
     }
 }
 
@@ -425,8 +440,8 @@
     .harmony-font,
     .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
     .video-page-card-small .card-box .info .title {
-        font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular, Helvetica Neue,
-            Microsoft YaHei, var(--noto, ""), sans-serif !important;
+        font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular,
+            Helvetica Neue, Microsoft YaHei, var(--noto, ""), sans-serif !important;
     }
 
     @media (-webkit-max-device-pixel-ratio: 1) {
