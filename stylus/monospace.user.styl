@@ -220,9 +220,9 @@
             .py-md .text-neutral-content-weak
         ),
     .text-neutral-content-strong {
-        font-family: var(--plex), var(--noto, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+        font-family: var(--plex), var(--noto, ""), -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
 
     #header .redditname a::after,
@@ -304,8 +304,8 @@
     body p,
     shreddit-app,
     .usertext-body {
-        font-family: var(--noto, ""), -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+        font-family: var(--noto, ""), -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, verdana, arial,
             helvetica, sans-serif !important;
     }
@@ -325,25 +325,33 @@
     }
 
     ._34q3PgLsx9zIU5BiSOjFoM {
-        font-family: var(--mono-combo, ""), Noto Mono, Monaco, Consolas, monospace !important;
+        font-family: var(--mono-combo, ""), Noto Mono, Monaco, Consolas,
+            monospace !important;
     }
 }
 
 @-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com") {
-    code {
-        font-family: var(--mono-combo, ""), ui-monospace, "Cascadia Mono",
-            "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-            monospace !important;
+    html,
+    body {
+        font-family: var(--sans, ""), var(--theme-body-font-family, "") !important;
     }
 
-    .dno,
-    .fw-bold,
-    .unified-theme,
-    .question-hyperlink,
+    .ff-sans {
+        font-family: var(--sans, ""), var(--ff-sans, "") !important;
+    }
+
+    .s-prose,
     .comment-copy,
-    .s-prose {
-        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif !important;
+    .question-status,
+    .excerpt,
+    #question-header .question-hyperlink {
+        font-family: var(--sans, "")
+            var(--theme-post-body-font-family, var(--theme-body-font-family)) !important;
+    }
+
+    .s-prose code,
+    pre.s-code-block > code {
+        font-family: var(--mono-combo, ""), var(--ff-mono, "") !important;
     }
 }
 
@@ -392,8 +400,8 @@
     }
 
     #personal h2 {
-        font-family: var(--sans, ""), "Helvetica Neue", "Nimbus Sans", "Helvetica",
-            "Arial" !important;
+        font-family: var(--sans, ""), "Helvetica Neue", "Nimbus Sans",
+            "Helvetica", "Arial" !important;
     }
 
     /* applies to e.g. <span lang="ja"> */
@@ -405,7 +413,8 @@
 
     h1,
     h2 {
-        font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times", serif !important;
+        font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
+            serif !important;
     }
 
     .template-infotable-monospace,
@@ -565,8 +574,8 @@
     .iGVLpd div,
     #gb-main,
     .UynAtc span {
-        font-family: var(--google), Roboto, Helvetica Neue, Arial, var(--noto, ""),
-            sans-serif !important;
+        font-family: var(--google), Roboto, Helvetica Neue, Arial,
+            var(--noto, ""), sans-serif !important;
     }
 
     .RiJqbb,
@@ -589,7 +598,8 @@
     }
 
     .nNzjpf-cS4Vcb-PvZLI-Q1vkfd-bN97Pc {
-        font-family: var(--google), Google Sans, arial, var(--noto, ""), sans-serif !important;
+        font-family: var(--google), Google Sans, arial, var(--noto, ""),
+            sans-serif !important;
     }
 
     .sjVJQd,
@@ -828,14 +838,14 @@
 @-moz-document domain("perplexity.ai") {
     .ace_placeholder.ace_comment,
     code {
-        font-family: var(--mono-combo, ""), Berkeley Mono, source-code-pro, Menlo,
-            Monaco, Consolas, Courier New, monospace !important;
+        font-family: var(--mono-combo, ""), Berkeley Mono, source-code-pro,
+            Menlo, Monaco, Consolas, Courier New, monospace !important;
     }
 
     .font-mono,
     .marker\:font-mono ::marker {
-        font-family: var(--mono-combo, ""), var(--font-berkeley-mono), ui-monospace,
-            SFMono-Regular, monospace !important;
+        font-family: var(--mono-combo, ""), var(--font-berkeley-mono),
+            ui-monospace, SFMono-Regular, monospace !important;
     }
 }
 
@@ -958,6 +968,7 @@
 
     .ef-file-preview-header-download span,
     #App {
-        font-family: Iosevka, var(--mono-combo, ""), monospace, "Lato", sans-serif !important;
+        font-family: Iosevka, var(--mono-combo, ""), monospace, "Lato",
+            sans-serif !important;
     }
 }
