@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.9.1
+@version        2.9.2
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net"), domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com") {
     :root {
         /* Define variables */
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
@@ -971,5 +971,39 @@
     #App {
         font-family: Iosevka, var(--mono-combo, ""), monospace, "Lato",
             sans-serif !important;
+    }
+}
+
+@-moz-document domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com") {
+    html,
+    body,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    dl,
+    li,
+    dt,
+    dd,
+    p,
+    blockquote,
+    pre,
+    form,
+    fieldset,
+    table,
+    th,
+    td,
+    select,
+    input {
+        font-family: "Inter", var(--noto, ""), sans-serif !important;
+    }
+
+    .md code {
+        font-family: var(--mono-combo, ""), monospace, sans-serif !important;
     }
 }
