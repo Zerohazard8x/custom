@@ -220,7 +220,7 @@
             .py-md .text-neutral-content-weak
         ),
     .text-neutral-content-strong {
-        font-family: var(--plex), var(--noto, ""), -apple-system,
+        font-family: var(--plex, ""), var(--noto, ""), -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
     }
@@ -263,10 +263,16 @@
     h4,
     h5,
     ._3oHXlwUZwpR5SS-8P9tILX {
-        font-family: var(--plex), var(--noto, ""), "Helvetica Neue", "Helvetica",
-            "Arial", sans-serif !important;
+        font-family: var(--plex, ""), var(--noto, ""), "Helvetica Neue",
+            "Helvetica", "Arial", sans-serif !important;
     }
 
+    .md p a,
+    :root,
+    button,
+    html,
+    input,
+    select,
     thead tr th,
     object a,
     #header .tabmenu li:first-child a::after,
@@ -304,15 +310,11 @@
     body p,
     shreddit-app,
     .usertext-body {
-        font-family: var(--noto, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, verdana, arial,
-            helvetica, sans-serif !important;
+        font-family: var(--noto, ""), var(--font-sans, "") !important;
     }
 
     .subscribers,
     .md p strong,
-    .md p a,
     .subscribers .number {
         font-family: var(--noto, ""), "Helvetica Neue", "Helvetica", "Arial",
             sans-serif !important;
@@ -444,7 +446,7 @@
     .goog-imageless-button,
     #target > div,
     .JXa4nd div span,
-    * div a div,
+    * div a div:not(.YmvwI),
     .kVCdgb,
     .yXlkLe,
     .zqOZs a,
@@ -544,7 +546,7 @@
     g-menu-item,
     .gb_Kd,
     .T8VaVe {
-        font-family: var(--google), "Helvetica Neue", HelveticaNeue, arial,
+        font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, arial,
             var(--noto, ""), sans-serif !important;
     }
 
@@ -552,8 +554,8 @@
     .imso-light-font,
     .H1HQf,
     .SW5pqf {
-        font-family: var(--google), arial, sans-serif-medium, var(--noto, ""),
-            sans-serif !important;
+        font-family: var(--google, ""), arial, sans-serif-medium,
+            var(--noto, ""), sans-serif !important;
     }
 
     .qjntzf,
@@ -575,14 +577,14 @@
     .iGVLpd div,
     #gb-main,
     .UynAtc span {
-        font-family: var(--google), Roboto, Helvetica Neue, Arial,
+        font-family: var(--google, ""), Roboto, Helvetica Neue, Arial,
             var(--noto, ""), sans-serif !important;
     }
 
     .RiJqbb,
     .Ilfrfc a div,
     .SVWlSe span {
-        font-family: var(--google), Google Sans, Roboto-Medium,
+        font-family: var(--google, ""), Google Sans, Roboto-Medium,
             HelveticaNeue-Medium, Helvetica Neue, sans-serif-medium, Arial,
             var(--noto, ""), sans-serif !important;
     }
@@ -594,19 +596,19 @@
     .CvgYje,
     .LT6XE,
     .Fzsovc {
-        font-family: var(--google), Google Sans, Roboto, Helvetica Neue,
+        font-family: var(--google, ""), Google Sans, Roboto, Helvetica Neue,
             HelveticaNeue, Arial, var(--noto, ""), sans-serif !important;
     }
 
     .nNzjpf-cS4Vcb-PvZLI-Q1vkfd-bN97Pc {
-        font-family: var(--google), Google Sans, arial, var(--noto, ""),
+        font-family: var(--google, ""), Google Sans, arial, var(--noto, ""),
             sans-serif !important;
     }
 
     .sjVJQd,
     .Yt787,
     .clOx1e span {
-        font-family: var(--google), Google Sans, arial, var(--noto, ""),
+        font-family: var(--google, ""), Google Sans, arial, var(--noto, ""),
             sans-serif-medium, sans-serif !important;
     }
 
@@ -646,12 +648,12 @@
     h1.mGOaCb,
     input[type="submit"],
     .gLFyf {
-        font-family: "Google Sans", var(--google), arial, var(--noto, ""),
+        font-family: "Google Sans", var(--google, ""), arial, var(--noto, ""),
             sans-serif !important;
     }
 
     .banner h1 {
-        font-family: "Google Sans", var(--google), "Open Sans", arial,
+        font-family: "Google Sans", var(--google, ""), "Open Sans", arial,
             var(--noto, "") !important;
     }
 
@@ -839,13 +841,12 @@
 @-moz-document domain("perplexity.ai") {
     .ace_placeholder.ace_comment,
     code {
-        font-family: var(--mono-combo, ""), Berkeley Mono, source-code-pro,
-            Menlo, Monaco, Consolas, Courier New, monospace !important;
+        font-family: var(--mono-combo, ""), var(--font-berkeley-mono, "") !important;
     }
 
     .font-mono,
     .marker\:font-mono ::marker {
-        font-family: var(--mono-combo, ""), var(--font-berkeley-mono),
+        font-family: var(--mono-combo, ""), var(--font-berkeley-mono, ""),
             ui-monospace, SFMono-Regular, monospace !important;
     }
 }
