@@ -5,17 +5,16 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.7.6
+@version        2.7.7
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com") {
+@-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com") {
     :root {
         /* Define variables */
         --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
-            "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans", PingFang,
-            "PingFang SC", "Hiragino Sans GB", "Apple SD Gothic Neo", Thonburi,
-            "Tiro Devanagari Hindi", "Yu Gothic", "Microsoft YaHei UI",
-            "Microsoft YaHei", "Malgun Gothic", "Leelawadee UI", "Nirmala UI";
+            "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans", "Yu Gothic",
+            "Microsoft YaHei UI", "Microsoft YaHei", "Malgun Gothic",
+            "Leelawadee UI", "Nirmala UI";
         --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Roboto",
             var(--noto, "");
         --readable: "Public Sans", "Fira Sans", "Bahnschrift", "Aptos Narrow",
@@ -34,9 +33,9 @@
 @-moz-document domain("youtube.com") {
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: var(--readable, ""), var(--font, ""), "YouTube Noto", Roboto,
-            "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption",
-            sans-serif !important;
+        font-family: var(--readable, ""), var(--font, ""), "YouTube Noto",
+            Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana,
+            "PT Sans Caption", sans-serif !important;
         color: #fff000 !important;
         background: none !important;
 
@@ -132,26 +131,26 @@
     }
 
     .x12qp5cl {
-        font-family: var(--facebook), var(--font, ""), Placeholder Font,
+        font-family: var(--facebook, ""), var(--font, ""), Placeholder Font,
             Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif !important;
     }
 
     .x78zum5 {
-        font-family: var(--facebook), var(--font, ""), Segoe UI Historic, Segoe UI,
-            Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook, ""), var(--font, ""), Segoe UI Historic,
+            Segoe UI, Helvetica, Arial, sans-serif !important;
     }
 
     ._9o1- div,
     ._9ai0,
     ._1gaz {
-        font-family: var(--facebook), var(--font, ""), SFProText-Medium, Helvetica,
-            Arial, sans-serif !important;
+        font-family: var(--facebook, ""), var(--font, ""), SFProText-Medium,
+            Helvetica, Arial, sans-serif !important;
     }
 
     ._8e63,
     ._9axz,
     ._8eso {
-        font-family: var(--facebook), var(--font, ""), SFProDisplay-Regular,
+        font-family: var(--facebook, ""), var(--font, ""), SFProDisplay-Regular,
             Helvetica, Arial, sans-serif !important;
     }
 
@@ -161,50 +160,51 @@
     ._58mk,
     ._8e4l,
     #globalContainer {
-        font-family: var(--facebook), var(--font, ""), SFProText-Regular, Helvetica,
-            Arial, sans-serif !important;
+        font-family: var(--facebook, ""), var(--font, ""), SFProText-Regular,
+            Helvetica, Arial, sans-serif !important;
     }
 
     ._9o1v,
     ._42ft,
     ._9ai2,
     ._8esh {
-        font-family: var(--facebook), var(--font, ""), SFProText-Semibold, Helvetica,
-            Arial, sans-serif !important;
+        font-family: var(--facebook, ""), var(--font, ""), SFProText-Semibold,
+            Helvetica, Arial, sans-serif !important;
     }
 
     .uiHeaderTitle {
-        font-family: var(--facebook), var(--font, ""), SFProDisplay-Bold, Helvetica,
-            Arial, sans-serif !important;
+        font-family: var(--facebook, ""), var(--font, ""), SFProDisplay-Bold,
+            Helvetica, Arial, sans-serif !important;
     }
 
     ._4g34,
     ._53jh {
-        font-family: var(--facebook), var(--font, ""), Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook, ""), var(--font, ""), Helvetica, Arial,
+            sans-serif !important;
     }
 
     ._ap3a,
     ._aacl,
     .x1i0vuye,
     ._acan {
-        font-family: var(--facebook), var(--font, ""), -apple-system,
+        font-family: var(--facebook, ""), var(--font, ""), -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     ._7y88 {
-        font-family: var(--facebook), var(--font, ""), Arial;
+        font-family: var(--facebook, ""), var(--font, ""), Arial;
     }
 
     .inputtext {
-        font-family: var(--facebook), var(--font, ""), Roboto-Regular, Helvetica,
+        font-family: var(--facebook, ""), var(--font, ""), Roboto-Regular, Helvetica,
             Arial, sans-serif !important;
     }
 }
 
 @-moz-document domain("deepl.com") {
     body *:not(.fa) {
-        font-family: var(--font, ""), -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, Helvetica, Arial, sans-serif !important;
+        font-family: var(--font, ""), -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
     }
 }
 
@@ -277,5 +277,17 @@
     select,
     input {
         font-family: var(--font, ""), sans-serif !important;
+    }
+}
+
+@-moz-document domain("feedly.com") {
+    body {
+        font-family: var(--font, ""), var(--sans-serif, "") !important;
+    }
+}
+
+@-moz-document domain("inoreader.com") {
+    body {
+        font-family: Roboto, var(--noto, ""), sans-serif !important;
     }
 }
