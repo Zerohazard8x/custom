@@ -177,6 +177,7 @@ discord.com##.customizationSectionBackground-1-leQn.background-yH6t2p.premiumBac
 discord.com##.description__51014.text-md-normal__6e567
 discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
 discord.com##.editorAnimate-2BAiXS.editor-1m9XtV
+discord.com##.embedMargin__99b82.embedProvider_f3e807
 discord.com##.emptyHeader-2tT-AY.defaultColor-1GKx81.heading-md-semibold-2h_vsp.defaultColor-1EVLSt
 discord.com##.guildBoostCountWrapper__701cb
 discord.com##.heroBanner_e16ab1
@@ -213,7 +214,7 @@ duckduckgo.com##.belowTheFold_howItWorksSection__nbvql
 duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.homepage-cta-section_scrollCta__HuSCL
 duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.desktop-homepage_belowTheFold__w0uDu
 duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.desktop-homepage_heroContent__px79B
-duckduckgo.com##.privacy-reminder.dropdown--region.dropdown
+duckduckgo.com##.yjuFYcjOI844d3KiuLhz.nOpYdHAdSD_d47TfU1p8.KE_4ibtn0WI3iUo6lJw9
 ||duckduckgo.com/*static*.png$image
 
 ecosia.org##.badge--variant-primary.badge.new-badge
@@ -239,9 +240,6 @@ fandom.com###WikiaRail
 fandom.com##.global-navigation
 fandom.com##.rail-module.railModule
 fandom.com##.rail-recentImages-module
-
-feedly.com##.Layout_main__nbmiJ > .Container_container__uz3px
-feedly.com##.LogoSection_logoSection__t58uZ
 
 finance.yahoo.com##.Pos\(r\).End\(130px\).smartphone_D\(n\).C\(\$featureCueBgc\).Pos\(a\)\!.Fz\(s\).Bdrs\(8px\).D\(ib\).O\(n\)\:f.M\(0\).Whs\(n\)
 finance.yahoo.com##.Mend\(19px\).Mb\(8px\).Fz\(0\.875rem\)
@@ -317,13 +315,6 @@ icloud.com##.tiles
 imgur.com##.BottomRecirc
 imgur.com##.Button.EmeraldButton
 imgur.com##.Sticky.Top
-
-inoreader.com###hero
-inoreader.com###onboard_overlay
-inoreader.com###tourbus-0
-inoreader.com##.info-div
-inoreader.com##.py-lg-5
-inoreader.com##div.z-index-10.position-relative.py-5
 
 !------!
 ! Represents elements 1 and 4 (diff. of 3 -> -3n+4)
@@ -401,9 +392,6 @@ microsoft.com##.css-205.ms-Stack
 
 monkeytype.com###bannerCenter
 monkeytype.com###newVersionIndicator
-
-msn.com##.BubbleMessageContainer-DS-EntryPoint1-2.BubbleMessageContainer-DS-EntryPoint1-1.BubbleMessageContainerRight-DS-EntryPoint1-2.BubbleMessageContainerRight-DS-EntryPoint1-1
-msn.com##div.sectionContainer-DS-EntryPoint1-1:nth-of-type(3)
 
 music.apple.com##.svelte-36irpb.upsell-banner
 music.apple.com##.svelte-6ox3l2.banner-container

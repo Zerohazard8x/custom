@@ -141,3 +141,21 @@ ign.com##.small.balanced.jsx-957202555.jsx-2010869752.interface
 ign.com##section.jsx-537794787.box-wrapper
 
 tomsguide.com,windowscentral.com,pcgamer.com##aside.hawk-processed.hawk-nest
+
+vg247.com##.coverage_header
+
+feedly.com###dotContainer
+feedly.com##.Layout_main__nbmiJ > .Container_container__uz3px
+feedly.com##.LogoSection_logoSection__t58uZ
+feedly.com##.dot-pulse.dot.bottom-left
+
+msn.com##.BubbleMessageContainer-DS-EntryPoint1-2.BubbleMessageContainer-DS-EntryPoint1-1.BubbleMessageContainerRight-DS-EntryPoint1-2.BubbleMessageContainerRight-DS-EntryPoint1-1
+msn.com##.intra-article-relatedcontent
+msn.com##div.sectionContainer-DS-EntryPoint1-1:nth-of-type(3)
+
+inoreader.com###hero
+inoreader.com###onboard_overlay
+inoreader.com###tourbus-0
+inoreader.com##.info-div
+inoreader.com##.py-lg-5
+inoreader.com##div.z-index-10.position-relative.py-5
