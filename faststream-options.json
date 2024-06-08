@@ -1,0 +1,133 @@
+{
+  "playMP4URLs": true,
+  "playStreamURLs": true,
+  "analyzeVideos": false,
+  "downloadAll": true,
+  "previewEnabled": true,
+  "autoEnableBestSubtitles": true,
+  "storeProgress": true,
+  "autoplayYoutube": false,
+  "defaultQuality": "4320p",
+  "autoEnableURLs": [],
+  "customSourcePatterns": "",
+  "keybinds": {
+    "HidePlayer": "AltRight",
+    "PlayPause": "Space",
+    "Fullscreen": "KeyF",
+    "WindowedFullscreen": "KeyW",
+    "PictureInPicture": "KeyP",
+    "VolumeUp": "ArrowUp",
+    "VolumeDown": "ArrowDown",
+    "Mute": "KeyM",
+    "SeekForward": "ArrowRight",
+    "SeekBackward": "ArrowLeft",
+    "SeekForwardLarge": "Period",
+    "SeekBackwardLarge": "Comma",
+    "SeekForwardFrame": "Shift+ArrowRight",
+    "SeekBackwardFrame": "Shift+ArrowLeft",
+    "IncreasePlaybackRate": "Shift+ArrowUp",
+    "DecreasePlaybackRate": "Shift+ArrowDown",
+    "UndoSeek": "KeyZ",
+    "RedoSeek": "Shift+KeyZ",
+    "ResetFailed": "Backquote",
+    "AddDownloader": "Equal",
+    "RemoveDownloader": "Minus",
+    "SkipIntroOutro": "KeyS",
+    "NextChapter": "None",
+    "GoToStart": "Digit0",
+    "ToggleSubtitles": "KeyC",
+    "SubtrackDelete": "Delete",
+    "SubtrackShiftRight": "BracketRight",
+    "SubtrackShiftLeft": "BracketLeft",
+    "SubtrackDownload": "KeyD",
+    "SubtrackToggleResync": "KeyR",
+    "FlipVideo": "None",
+    "RotateVideo": "None"
+  },
+  "videoBrightness": 1,
+  "videoContrast": 1,
+  "videoSaturation": 1,
+  "videoGrayscale": 0,
+  "videoSepia": 0,
+  "videoInvert": 0,
+  "videoHueRotate": 0,
+  "videoDaltonizerType": "none",
+  "videoDaltonizerStrength": 1,
+  "maxSpeed": -1,
+  "maxVideoSize": 5000000000,
+  "seekStepSize": 2,
+  "singleClickAction": "playpause",
+  "doubleClickAction": "playpause",
+  "tripleClickAction": "fullscreen",
+  "visChangeAction": "nothing",
+  "miniSize": 0.25,
+  "miniPos": "bottomright",
+  "subtitlesSettings": {
+    "fontFamily": "\"Public Sans\", var(--readable, \"\"), var(--font, \"\"), Arial",
+    "fontWeight": "normal",
+    "fontSize": "150%",
+    "color": "#fff000",
+    "background": "rgba(8, 8, 8, 0.75)",
+    "outlineColor": "none",
+    "outlineWidth": "0px",
+    "defaultLanguage": "en"
+  },
+  "toolSettings": {
+    "sources": {
+      "enabled": true,
+      "priority": 100
+    },
+    "audioconfig": {
+      "enabled": true,
+      "priority": 200
+    },
+    "subtitles": {
+      "enabled": true,
+      "priority": 300
+    },
+    "quality": {
+      "enabled": true,
+      "priority": 400
+    },
+    "languages": {
+      "enabled": true,
+      "priority": 500
+    },
+    "playrate": {
+      "enabled": true,
+      "priority": 600
+    },
+    "settings": {
+      "enabled": true,
+      "priority": 700
+    },
+    "download": {
+      "enabled": true,
+      "priority": 900
+    },
+    "screenshot": {
+      "enabled": false,
+      "priority": 200
+    },
+    "pip": {
+      "enabled": false,
+      "priority": 300
+    },
+    "fullscreen": {
+      "enabled": true,
+      "priority": 1000
+    },
+    "windowedfs": {
+      "enabled": false,
+      "priority": 400
+    },
+    "more": {
+      "enabled": true,
+      "priority": 800
+    },
+    "loop": {
+      "enabled": false,
+      "priority": 100
+    }
+  }
+}

@@ -166,9 +166,14 @@
     }
 }
 
-@-moz-document domain("hupu.com"), domain("sports.cctv.com") {
+@-moz-document domain("hupu.com") {
     :root {
         --hupu: hupufont, hupufont-Medium, hupufont-Regular, var(--sans, "");
+    }
+
+    /* iframe */
+    html[stylus-iframe$="sports.cctv.com"] {
+        font-family: var(--hupu, ""), PingFangSC, var(--noto, "") !important;
     }
 
     body,
