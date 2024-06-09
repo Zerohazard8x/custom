@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace2
 @namespace      github.com/openstyles/stylus
-@version        1.2.7
+@version        1.2.8
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl
@@ -14,7 +14,10 @@
             "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans", PingFang,
             "PingFang SC", "Hiragino Sans GB", "Apple SD Gothic Neo", Thonburi,
             "Tiro Devanagari Hindi", "Yu Gothic", "Microsoft YaHei UI",
-            "Microsoft YaHei", "Malgun Gothic", "Leelawadee UI", "Nirmala UI";
+            "Microsoft YaHei", "Malgun Gothic", "Leelawadee UI", "Nirmala UI",
+            var(--emoji, "");
+        --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            "Noto Color Emoji", "EmojiOne Color";
         --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Roboto",
             var(--noto, "");
         --serif: "Source Serif Pro", "Source Serif 4", Century,
