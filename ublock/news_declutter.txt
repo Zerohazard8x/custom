@@ -142,6 +142,8 @@ tomsguide.com,windowscentral.com,pcgamer.com##aside.hawk-processed.hawk-nest
 
 vg247.com##.coverage_header
 
+feedly.com###\:r7u\:
+feedly.com###\:r9f\:
 feedly.com###dotContainer
 feedly.com##.Layout_main__nbmiJ > .Container_container__uz3px
 feedly.com##.LogoSection_logoSection__t58uZ
