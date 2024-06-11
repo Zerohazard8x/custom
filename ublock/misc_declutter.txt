@@ -246,6 +246,8 @@ finance.yahoo.com##.Mend\(19px\).Mb\(8px\).Fz\(0\.875rem\)
 
 fonts.google.com##.ng-star-inserted.fab-tablet-mobile-button
 
+||www.formula1.com/etc/designs/fom-website/images/rolex-clock/face.png$image
+
 forum.xda-developers.com,xdaforums.com##.js-bottomFixTarget.u-bottomFixer
 forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
 forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-of-type(3)
