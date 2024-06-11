@@ -13,7 +13,7 @@
         /* Define variables */
         --noto: var(--emoji, ""), "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
             "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari",
-            "Noto Sans", PingFang, "PingFang SC", "Hiragino Sans GB",
+            "Noto Sans", PingFang, "PingFang SC", "Hiragino Sans",
             "Apple SD Gothic Neo", Thonburi, "Tiro Devanagari Hindi",
             "Yu Gothic", "Microsoft YaHei UI", "Microsoft YaHei",
             "Malgun Gothic", "Leelawadee UI", "Nirmala UI";
@@ -136,25 +136,26 @@
 
     .x12qp5cl {
         font-family: var(--facebook, ""), Placeholder Font, Segoe UI Historic,
-            Segoe UI, Helvetica, Arial, sans-serif !important;
+            Segoe UI, Helvetica, Arial, var(--noto, ""), sans-serif !important;
     }
 
     .x78zum5 {
-        font-family: var(--facebook, ""), var(--font-family-segoe, "") !important;
+        font-family: var(--facebook, ""), var(--font-family-segoe, ""),
+            var(--noto, "") !important;
     }
 
     ._9o1- div,
     ._9ai0,
     ._1gaz {
         font-family: var(--facebook, ""), SFProText-Medium, Helvetica, Arial,
-            sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     ._8e63,
     ._9axz,
     ._8eso {
         font-family: var(--facebook, ""), SFProDisplay-Regular, Helvetica, Arial,
-            sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     ._9nq2,
@@ -164,7 +165,7 @@
     ._8e4l,
     #globalContainer {
         font-family: var(--facebook, ""), SFProText-Regular, Helvetica, Arial,
-            sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     ._9o1v,
@@ -172,17 +173,18 @@
     ._9ai2,
     ._8esh {
         font-family: var(--facebook, ""), SFProText-Semibold, Helvetica, Arial,
-            sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     .uiHeaderTitle {
         font-family: var(--facebook, ""), SFProDisplay-Bold, Helvetica, Arial,
-            sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     ._4g34,
     ._53jh {
-        font-family: var(--facebook, ""), Helvetica, Arial, sans-serif !important;
+        font-family: var(--facebook, ""), Helvetica, Arial, var(--noto, ""),
+            sans-serif !important;
     }
 
     ._ap3a,
@@ -190,16 +192,16 @@
     .x1i0vuye,
     ._acan {
         font-family: var(--facebook, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            "Segoe UI", Roboto, Helvetica, Arial, var(--noto, ""), sans-serif;
     }
 
     ._7y88 {
-        font-family: var(--facebook, ""), Arial;
+        font-family: var(--facebook, ""), var(--noto, ""), Arial;
     }
 
     .inputtext {
         font-family: var(--facebook, ""), Roboto-Regular, Helvetica, Arial,
-            sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 }
 

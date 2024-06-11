@@ -12,7 +12,7 @@
     :root {
         --noto: var(--emoji, ""), "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
             "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari",
-            "Noto Sans", PingFang, "PingFang SC", "Hiragino Sans GB",
+            "Noto Sans", PingFang, "PingFang SC", "Hiragino Sans",
             "Apple SD Gothic Neo", Thonburi, "Tiro Devanagari Hindi",
             "Yu Gothic", "Microsoft YaHei UI", "Microsoft YaHei",
             "Malgun Gothic", "Leelawadee UI", "Nirmala UI";
@@ -305,18 +305,19 @@
     .SearchPage-Container {
         font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
             -apple-system, BlinkMacSystemFont, Helvetica Neue, Roboto, Segoe UI,
-            Arial, Helvetica, sans-serif !important;
+            Arial, Helvetica, var(--noto, ""), sans-serif !important;
     }
 
     .mini-suggest__button-text,
     .HeaderDesktop,
     .mini-suggest__input {
         font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
-            Arial, Helvetica, "Arial Unicode MS", sans-serif !important;
+            Arial, Helvetica, "Arial Unicode MS", var(--noto, ""), sans-serif !important;
     }
 
     .Label-Content {
-        font-family: "YS Text", Verdana, Arial, Helvetica, sans-serif !important;
+        font-family: "YS Text", Verdana, Arial, Helvetica, var(--noto, ""),
+            sans-serif !important;
     }
 }
 
@@ -353,36 +354,37 @@
     .NavigationBar-module__navHeader_myx_35WiMq43R8TeP3p0_dnLLH
         .NavigationBar-module__navOptions_myx_3-DW6_KRV7Rh8qixes2XJu,
     .NavigationBar-module__navHeader_title_style_myx_gLKlYY_oND8vgB6axwgyW {
-        font-family: "Amazon Ember", Arial, sans-serif !important;
+        font-family: "Amazon Ember", Arial, var(--noto, ""), sans-serif !important;
     }
 
     #a-page,
     #e input,
     .a-container {
         font-family: "Amazon Ember", Arial, "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, sans-serif !important;
+            "Hiragino Sans", Meiryo, var(--noto, ""), sans-serif !important;
     }
 
     .bucket h2 {
-        font-family: "Amazon Ember", verdana, arial, helvetica, sans-serif !important;
+        font-family: "Amazon Ember", verdana, arial, helvetica, var(--noto, ""),
+            sans-serif !important;
     }
 
     .a-declarative,
     tbody tr td,
     span span a {
-        font-family: "Amazon Ember", Arial !important;
+        font-family: "Amazon Ember", Arial, var(--noto, "") !important;
     }
 
     .a-color-link {
         font-family: "Amazon Ember", AmazonEmber-Regular,
             helvetica_ne_lt_55_roman, HelveticaNeueLTStd-Roman, Helvetica,
-            sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     .a-popover-wrapper,
     .a-meter-animate {
         font-family: "Amazon Ember", "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, sans-serif !important;
+            "Hiragino Sans", Meiryo, var(--noto, ""), sans-serif !important;
     }
 }
 
