@@ -34,8 +34,10 @@ nbcnews.com##.article-social-share-top
 nbcnews.com##.styles_alignMobileBottom__bhgkQ.styles_alignDesktopBottom__4cHaO.styles_stuck__Yq04P.styles_adNotPlaying__Q51_C.isStuck.styles_videoPlayer__bL8AJ.videoPlayer
 
 news.abs-cbn.com###rollingLeaderBoardLarge > div
+news.abs-cbn.com###sticker
+news.abs-cbn.com##.clearfix.article-label
 news.abs-cbn.com##.css-1ha4th6.MuiGrid-grid-md-3.MuiGrid-grid-xs-12.MuiGrid-item.MuiGrid-root
-news.abs-cbn.com##.css-isbt42.MuiGrid-spacing-xs-2.MuiGrid-container.MuiGrid-root > div.css-15j76c0.MuiGrid-grid-md-12.MuiGrid-grid-xs-12.MuiGrid-item.MuiGrid-root:nth-of-type(1) > div > div:nth-of-type(1)
+news.abs-cbn.com##.op-interactive
 
 soranews24.com,rocketnews24.com###custom_html-2 > .custom-html-widget.textwidget > div
 soranews24.com,rocketnews24.com###responses
@@ -67,10 +69,6 @@ gmanetwork.com##.dailymotion-container.dm-wrapper
 gmanetwork.com##.mrec_336.mrect.mrect1
 gmanetwork.com##.story_main > .ad
 gmanetwork.com##.text-center.leaderboard.padded.row
-
-news.abs-cbn.com###sticker
-news.abs-cbn.com##.clearfix.article-label
-news.abs-cbn.com##.op-interactive
 
 howtogeek.com##.affiliate-sponsored
 howtogeek.com##.article-footer-newsletter
