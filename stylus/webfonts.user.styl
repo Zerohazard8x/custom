@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zerohazard's Web Fonts
 @namespace      github.com/openstyles/stylus
-@version        3.2.1
+@version        3.2.2
 @description    web font imports
 @author         Zerohazard8x
 @updateURL      https://mirror.ghproxy.com/https://github.com/Zerohazard8x/custom/raw/main/stylus/webfonts.user.styl
@@ -9,8 +9,17 @@
 ==/UserStyle== */
 
 @-moz-document regexp(".*") {
-    @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex|Fira+Mono:wght@100..900&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@100..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex|Fira+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,100..900;1,100..900&display=swap");
     /* @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@100..900&display=swap"); */
-    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Noto+Sans+Thai|Shippori+Mincho|Noto+Serif+JP|Noto+Serif+TC|Noto+Serif+SC|Noto+Serif+KR|Noto+Serif+Thai|Noto+Serif+Devanagari:wght@100..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Noto+Sans+Thai|Shippori+Mincho|Noto+Serif+JP|Noto+Serif+TC|Noto+Serif+SC|Noto+Serif+KR|Noto+Serif+Thai|Noto+Serif+Devanagari:ital,wght@0,100..900;1,100..900&display=swap");
+
+    /* Japanese only */
+    /* @font-face {
+        font-family: 'Noto Sans JP';
+        font-weight: 100 1000;
+        font-stretch: 0% 200%;
+        src: url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:ital,wght@0,100..900;1,100..900&display=swap) format('woff2');
+        unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF;
+    } */
 }
