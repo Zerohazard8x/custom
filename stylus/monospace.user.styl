@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.10.0
+@version        2.10.1
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net"), domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("undelete.pullpush.io") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("google.com"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net"), domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("undelete.pullpush.io") {
     :root {
         /* Define variables */
         --noto: var(--emoji, ""), "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
@@ -685,6 +685,7 @@
 }
 
 @-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
+    /* Bing */
     /* Search box */
     .b_searchboxForm {
         border-radius: 6px !important;
@@ -706,36 +707,25 @@
     }
 
     /* Font styles */
-    h2:not(.lc_content h2):not(.recommendationsTableTitle h2):not(
-            h2.mmtitle
-        ):not(.b_algoheader * h2):not(h2.ua_e):not(.b_title h2):not(li h2):not(
-            .nws_sh h2
-        ):not(.b_wpt_bl h2):not(.b_subModule h2):not(.b_ami h2):not(
-            .b_go_big h2
-        ):not(.reverse h2):not(.pageRecoContainer div h2),
-    .b_mgridTitleCont,
-    .b_mgridTitle a,
-    .v-ans-title,
-    #tob_rail_title,
-    .l_ecrd_imcolheader_ttl,
-    .rs_chatText,
-    .df_hd .b_traits,
-    #rd_gtrtb_ttl,
-    .annotate .b_focusTextLarge,
-    .b_focusTextMedium,
-    .b_mgridTitle,
-    .b_subModule .b_wfInfoCard .bm_phase2 *,
-    .irp-video-slogan,
-    .nameContainer,
-    .sto_title .sto_slidelr,
-    .sto_title,
-    h2 span,
-    p span a,
-    container-title {
-        font-family: "Segoe UI Variable Display", "Segoe UI Variable",
-            "Segoe UI Variable Text", "Segoe UI", SegoeUI, Segoe,
-            "Segoe UI Variable Small", "-apple-system", "Roboto Flex", "Roboto",
-            Aptos, "Roboto", sans-serif !important;
+    /* mobile */
+    /* body {
+		font-family: "-apple-system",HelveticaNeue,Roboto,Arial,var(--noto, ""),sans-serif !important;
+	} */
+
+    body,
+    .b_no h4,
+    h2 .b_secondaryText,
+    h2 .b_alert,
+    .b_underSearchbox,
+    #b_header {
+        font-family: Roboto, Helvetica, "-apple-system", HelveticaNeue, Roboto,
+            Arial, var(--noto, ""), sans-serif !important;
+    }
+
+    div.content {
+        font-family: -apple-system, Roboto, SegoeUI, "Segoe UI",
+            "Helvetica Neue", Helvetica, "Microsoft YaHei", "Meiryo UI", Meiryo,
+            Arial Unicode MS, var(--noto, ""), sans-serif !important;
     }
 
     .code_blu,
@@ -985,7 +975,7 @@
     }
 }
 
-@-moz-document domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com") {
+@-moz-document domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee") {
     html,
     body,
     div,
