@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.1.0
+@version        1.1.1
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.styl
@@ -171,7 +171,8 @@
 
 @-moz-document domain("hupu.com") {
     :root {
-        --hupu: hupufont, hupufont-Medium, hupufont-Regular, var(--sans, "");
+        --hupu: hupufont, hupufont-Medium, hupufont-Regular, "DIN Next",
+            "URW DIN", "DIN", var(--sans, "");
     }
 
     /* iframe */
@@ -436,11 +437,31 @@
 }
 
 @-moz-document domain("bilibili.com") {
+    body {
+        font-family: var(--sans, ""), Arial, "Microsoft YaHei",
+            "Microsoft Sans Serif", "Microsoft SanSerf", "微软雅黑" !important;
+    }
+
+    .gift-item[data-v-43b0ef2a],
+    .follow-cntr
+        .anchor-list
+        .three-anchor
+        .one-anchor
+        .anchor-name
+        p[data-v-c58bfb0e] {
+        font-family: var(--sans, ""), "PingFang SC" !important;
+    }
+
+    .fans-medal-item {
+        font-family: var(--sans, ""), "Microsoft YaHei", "Microsoft Sans Serif",
+            "Microsoft SanSerf", "微软雅黑" !important;
+    }
+
     .harmony-font,
     .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
     .video-page-card-small .card-box .info .title {
         font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular,
-            Helvetica Neue, Microsoft YaHei, var(--noto, ""), sans-serif !important;
+            Helvetica Neue, Microsoft YaHei, sans-serif !important;
     }
 
     @media (-webkit-max-device-pixel-ratio: 1) {
@@ -449,7 +470,7 @@
         .video-page-card-small .card-box .info .title {
             font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
-                Microsoft YaHei, var(--noto, ""), sans-serif !important;
+                Microsoft YaHei, sans-serif !important;
         }
     }
 }
