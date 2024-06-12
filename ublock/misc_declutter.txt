@@ -121,6 +121,18 @@ breezewiki.com,antifandom.com,bw.artemislena.eu##.bw-top-banner
 byjus.com###adtech-related-links-container
 byjus.com###adtech-top-banner-container
 
+canva.com##.CU_JsA
+canva.com##.R7yFSw
+canva.com##.STBGnQ.LkC0ZQ
+canva.com##._1aH35Q
+canva.com##._3vTl8w
+canva.com##._8RKGUQ
+canva.com##.epjEDw
+canva.com##.light.theme.cUPK7A.FILRcg
+canva.com##.mRFx9A
+canva.com##.nv6FFQ
+canva.com##.xOEd1Q
+
 chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
 chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
@@ -357,6 +369,7 @@ lazada.*##.footer-third
 lazada.*##.hotBorder--3N6k
 lazada.*##.hp-mod-card-header.rax-view-v2
 lazada.*##.hp-pc-lift-nav.J_LiftNav
+lazada.*##.pc-download-module.rax-view-v2
 lazada.*##.pdp-mod-product-price-topbanner
 lazada.*##.pdp-seller-info-pc
 ||img.lazcdn.com/g/tps/*.png$image
@@ -553,6 +566,7 @@ speedtest.net##.celebration-modal.modal-in-place.modal
 speedtest.net##.lower-content-view
 speedtest.net##.lowerboard-content
 
+stackoverflow.com,superuser.com,stackexchange.com###announcement-banner
 stackoverflow.com,superuser.com,stackexchange.com###feed-link
 stackoverflow.com,superuser.com,stackexchange.com##.d-block.h-auto.mb12.mx-auto.wmx100
 stackoverflow.com,superuser.com,stackexchange.com##.mb16.s-anchors__grayscale.s-anchors.s-sidebarwidget__yellow.s-sidebarwidget

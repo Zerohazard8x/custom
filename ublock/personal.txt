@@ -562,7 +562,6 @@
 ||klaviyo-onsite.map.fastly.net$all
 ||knotch-cdn.com$all
 ||kota3chat.com$all
-||kunlungr.com$all
 ||kunlunhuf.com$all
 ||kvwuugo.cn$all
 ||kyodo-d.info$all
@@ -923,6 +922,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||kunlungr.com$script,inline-script,object,ping,stylesheet,other
 ||lrcontent.com$script,inline-script,object,ping,stylesheet,other
 ||cdn20.com$script,inline-script,object,ping,stylesheet,other
 ||global.ssl.fastly.net$script,inline-script,object,ping,stylesheet,other
