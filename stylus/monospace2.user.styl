@@ -8,14 +8,13 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com"), domain("monkeytype.com"), domain("keybr.com") {
+@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com"), domain("monkeytype.com"), domain("keybr.com"), domain("antifandom.com"), domain("breezewiki.com") {
     :root {
         --noto: var(--emoji, ""), "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari",
-            PingFang, "PingFang SC", "Hiragino Sans",
-            "Apple SD Gothic Neo", Thonburi, "Tiro Devanagari Hindi",
-            "Yu Gothic", "Microsoft YaHei UI", "Microsoft YaHei",
-            "Malgun Gothic", "Leelawadee UI", "Nirmala UI";
+            "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari", PingFang,
+            "PingFang SC", "Hiragino Sans GB", "Apple SD Gothic Neo", Thonburi,
+            "Tiro Devanagari Hindi", "Yu Gothic", "Microsoft YaHei UI",
+            "Microsoft YaHei", "Malgun Gothic", "Leelawadee UI", "Nirmala UI";
         --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
             "Noto Color Emoji", "EmojiOne Color", "Twemoji Mozilla";
         --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto", "Segoe UI Variable", "Segoe UI",
@@ -352,12 +351,28 @@
 }
 
 @-moz-document domain("antifandom.com"), domain("breezewiki.com") {
+    body.skin-fandomdesktop,
+    button,
+    input,
+    textarea,
+    .wikitable,
+    .va-table {
+        font-family: "Source Sans Pro", "Segoe UI", var(--noto, ""), sans-serif !important;
+    }
+
     .text b code {
         font-family: var(--mono-combo, ""), monospace !important;
     }
 }
 
 @-moz-document domain("fandom.com") {
+    body.skin-fandomdesktop,
+    button,
+    input,
+    textarea {
+        font-family: rubik, helvetica, arial, var(--noto, ""), sans-serif !important;
+    }
+
     .text b code {
         font-family: var(--mono-combo, ""), monospace !important;
     }
