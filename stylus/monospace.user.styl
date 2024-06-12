@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.10.1
+@version        2.10.2
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -681,6 +681,20 @@
 
     .CodeMirror-sizer {
         font-family: var(--mono-combo, ""), "Roboto Mono", monospace !important;
+    }
+}
+
+@-moz-document domain("mail.google.com") {
+    body,
+    input,
+    textarea,
+    select,
+    .zA > .a4W,
+    .yW,
+    .ha > .hP,
+    .gb_xe {
+        font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial,
+            var(--noto, ""), sans-serif !important;
     }
 }
 
