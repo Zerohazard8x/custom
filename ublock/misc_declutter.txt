@@ -169,38 +169,10 @@ developer.android.com##devsite-snackbar
 
 developer.mozilla.org##.fallback.top-banner
 
-discord.com###popout_29
-discord.com##.arrowIcon__1bc6e
-discord.com##.art-3yfHpl
-discord.com##.artContainer_fc2857
-discord.com##.badgeContainer-1OeZs3
-discord.com##.badgeContainer-3TDXH5
-discord.com##.banner-3BK9qN
-discord.com##.buttonContainer-2z-326
-discord.com##.channelNotice_bbc8e6
-discord.com##.colorDefault-1e8tQv.notice-2HEN-u
-discord.com##.colorPremium__32b12.colorPremiumTier2_b5437b.notice__5fd4c
-discord.com##.containerDefaultMargin-3T8Dq_.premiumFeatureBannerBackground-Epwl-X.container-5BK5-N
-discord.com##.container__686c4
-discord.com##.container_b03b4b
-discord.com##.container_cf0d66
-discord.com##.content__15401.middleBodyContentWrapper_fdfda8
-discord.com##.customizationSectionBackground-1-leQn.background-yH6t2p.premiumBackground-34OIdE > .title-1HgbhV.eyebrow-2wJAoF.h5-2feg8J > .baseShapeRound-3epLEv.eyebrow-132Xza.base-3IDx3L.textBadge-1fdDPJ.newBadge-2Y53Os.premiumBadge-2VNQ3o
-discord.com##.description__51014.text-md-normal__6e567
-discord.com##.didRender-2dwLEv.translate-2vghI-.animatorTop-3DwSmU
-discord.com##.editorAnimate-2BAiXS.editor-1m9XtV
 discord.com##.embedMargin__99b82.embedProvider_f3e807
-discord.com##.emptyHeader-2tT-AY.defaultColor-1GKx81.heading-md-semibold-2h_vsp.defaultColor-1EVLSt
-discord.com##.guildBoostCountWrapper__701cb
-discord.com##.heroBanner_e16ab1
-discord.com##.moreSubtitleMargin__91793.fullWidth__2b90a.subtitle_c3170a.text-lg-normal_d5fdbe
-discord.com##.progressBar__0d793
-discord.com##.scrollerBase-1Pkza4.none-1rXy4P.scroller-3X7KbA > div.listItem-3SmSlK:nth-of-type(7)
-discord.com##.tierComparisonTable_b4d962
-discord.com##.tryItOutSection_d658ca.featureBorder__404e3.premiumFeatureBorder__6ac04
-discord.com##.vc-error-card.vc-m-bottom-8 > .modeDefault-3Warim.formText-2UzJT0.default-h5DUM7.size14-k_3Hy4.colorStandard-1Xxp1s
+discord.com##.sectionTitle__3e02b > .defaultMarginh5__6e314.eyebrow__4e5bb.h5__28baa
 discord.com##.welcomeCTA__927ef
-discord.com##.wrapper__26ed7
+||media.discordapp.net/stickers/1039992459209490513.png$image
 
 discussions.apple.com##.announcements
 
