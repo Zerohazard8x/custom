@@ -619,7 +619,7 @@ symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-chi
 
 tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###site-notice
 tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###siteNotice
-tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###site-sub
+tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com,deskthority.net###site-sub
 
 threads.net##.xmch72m.x4ga4hn.x6n63s2.x1ja2u2z.x13vifvy.x10l6tqk
 
