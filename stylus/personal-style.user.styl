@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.8.0
+@version        2.8.1
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com") {
@@ -19,8 +19,8 @@
             "Malgun Gothic", "Leelawadee UI", "Nirmala UI";
         --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
             "Noto Color Emoji", "EmojiOne Color", "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto", "Segoe UI Variable", "Segoe UI",
-            var(--noto, "");
+        --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
+            "Segoe UI Variable", "Segoe UI", var(--noto, "");
         --readable: "Public Sans", "Fira Sans", "Bahnschrift", "Aptos Narrow",
             "IBM Plex Sans", var(--noto, "");
         /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
@@ -86,6 +86,19 @@
     #search-input.ytd-searchbox-spt input,
     tp-yt-paper-item {
         font-family: Roboto, Noto, var(--noto, ""), sans-serif !important;
+    }
+}
+
+@-moz-document domain("music.youtube.com") {
+    html,
+    .title.ytmusic-two-row-item-renderer,
+    .subtitle.ytmusic-two-row-item-renderer,
+    .third-title.ytmusic-two-row-item-renderer,
+    .title.ytmusic-responsive-list-item-renderer,
+    .secondary-flex-columns.ytmusic-responsive-list-item-renderer
+        .flex-column.ytmusic-responsive-list-item-renderer {
+        font-family: Roboto, Noto Naskh Arabic UI, Arial, var(--noto, ""),
+            sans-serif !important;
     }
 }
 
