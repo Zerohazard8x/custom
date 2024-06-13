@@ -226,6 +226,7 @@ duckduckgo.com##.belowTheFold_howItWorksSection__nbvql
 duckduckgo.com##.center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.homepage-cta-section_scrollCta__HuSCL
 duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.desktop-homepage_belowTheFold__w0uDu
 duckduckgo.com##.container_responsive__IDWnv.container_root__Lmrbx.desktop-homepage_heroContent__px79B
+duckduckgo.com##.privacy-reminder.dropdown--region.dropdown
 duckduckgo.com##.yjuFYcjOI844d3KiuLhz.nOpYdHAdSD_d47TfU1p8.KE_4ibtn0WI3iUo6lJw9
 ||duckduckgo.com/*static*.png$image
 
