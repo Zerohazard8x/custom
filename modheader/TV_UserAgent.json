@@ -5,27 +5,32 @@
             {
                 "enabled": true,
                 "name": "User-Agent",
-                "value": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 7.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5216.6 Safari/537.36"
+                "value": "Mozilla/5.0 (PS4; Leanback Shell) Gecko/20100101 Firefox/65.0 LeanbackShell/01.00.01.75 Sony PS4/ (PS4, , no, CH)"
             },
             {
-                "enabled": true,
-                "name": "X-Forwarded-For",
-                "value": "208.67.220.220, 2001:4860:4860::8888"
-            },
-            {
-                "enabled": true,
+                "enabled": false,
                 "name": "Forwarded",
                 "value": "for=208.67.220.220, for=\"[2620:119:35::35]\""
             },
             {
-                "enabled": true,
-                "name": "Referer",
-                "value": "http://google.com/"
+                "enabled": false,
+                "name": "X-Forwarded-For",
+                "value": "208.67.220.220, 2620:119:35::35"
             },
             {
                 "enabled": true,
                 "name": "Accept-Language",
                 "value": "en-US,en;q=0.5"
+            },
+            {
+                "enabled": true,
+                "name": "Forwarded",
+                "value": "for=8.8.8.8, for=\"[2001:4860:4860::8888]\""
+            },
+            {
+                "enabled": true,
+                "name": "X-Forwarded-For",
+                "value": "8.8.8.8, 2001:4860:4860::8888"
             }
         ],
         "urlFilters": [{ "enabled": true, "urlRegex": ".*youtube.com\\/tv.*" }],
