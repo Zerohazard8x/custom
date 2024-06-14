@@ -202,20 +202,14 @@ duckduckgo.com##.privacy-reminder.dropdown--region.dropdown
 duckduckgo.com##.yjuFYcjOI844d3KiuLhz.nOpYdHAdSD_d47TfU1p8.KE_4ibtn0WI3iUo6lJw9
 ||duckduckgo.com/*static*.png$image
 
-ecosia.org##.badge--variant-primary.badge.new-badge
-ecosia.org##.forest-section--background-primary.forest-section
-ecosia.org##.forest-section--background-quaternary.forest-section
-ecosia.org##.hero--content-left.hero--variant-tertiary.hero.above-fold-section
-ecosia.org##.search-navigation__chat-new-highlight
-ecosia.org##.section-wrapper--primary.extension-section.section-wrapper
-ecosia.org##.section-wrapper--quaternary.before-after-section.section-wrapper
-ecosia.org##.section-wrapper--quaternary.join-section.section-wrapper
-ecosia.org##.section-wrapper--quaternary.map-section.section-wrapper
-ecosia.org##.section-wrapper--quaternary.projects-section.section-wrapper
-ecosia.org##.section-wrapper--secondary.claims-values-section.section-wrapper
-ecosia.org##.section-wrapper--secondary.financial-report-section.section-wrapper
-ecosia.org##.wave-separator--visible.wave-separator--variant-primary.wave-separator
-ecosia.org##.wave-separator--visible.wave-separator--variant-tertiary.wave-separator
+ecosia.org##.global-counter--visible.global-counter.above-fold-section__counter
+ecosia.org##.section-wrapper--primary.claims-section.section-wrapper
+ecosia.org##.section-wrapper--primary.financial-report-section.section-wrapper
+ecosia.org##.section-wrapper--tertiary.before-after-section.section-wrapper
+ecosia.org##.section-wrapper--tertiary.join-section.section-wrapper
+ecosia.org##.section-wrapper--tertiary.map-section.section-wrapper
+ecosia.org##.section-wrapper--tertiary.projects-section.section-wrapper
+||ecosia.org/static/indexpage/*$image
 
 emojipedia.org##.w-full.mb-9
 
@@ -231,7 +225,7 @@ finance.yahoo.com##.Mend\(19px\).Mb\(8px\).Fz\(0\.875rem\)
 
 fonts.google.com##.ng-star-inserted.fab-tablet-mobile-button
 
-||www.formula1.com/etc/designs/fom-website/images/rolex-clock/face.png$image
+||formula1.com/etc/designs/fom-website/images/rolex-clock/face.png$image
 
 forum.xda-developers.com,xdaforums.com##.js-bottomFixTarget.u-bottomFixer
 forum.xda-developers.com,xdaforums.com##.js-notices.notices--block.notices
