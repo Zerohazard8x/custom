@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.10.2
+@version        2.10.3
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -17,7 +17,7 @@
             "Tiro Devanagari Hindi", "Geeza Pro", Geeza, "Yu Gothic",
             "Microsoft YaHei UI", "Microsoft YaHei", "Malgun Gothic",
             "Leelawadee UI", "Nirmala UI", "Segoe UI Arabic";
-        --noto-full: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+        /* --noto-full: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
             "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari",
             "Noto Sans Arabic", "Noto Sans", "FOT-Rodin Pro",
             "A-OTF UD Shin Go Pro", "FOT-NewRodin Pro", "Hiragino Sans",
@@ -27,7 +27,7 @@
             "Apple SD Gothic Neo", Thonburi, "Tiro Devanagari Hindi",
             "Geeza Pro", Geeza, "Yu Gothic", "Microsoft YaHei UI",
             "Microsoft YaHei", "Malgun Gothic", "Leelawadee UI", "Nirmala UI",
-            "Segoe UI Arabic", var(--emoji, "");
+            "Segoe UI Arabic", var(--emoji, ""); */
         --emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
             "Noto Color Emoji", "EmojiOne Color", "Twemoji Mozilla";
         --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
@@ -161,8 +161,11 @@
 
     blockquote,
     #firstHeading,
-    .mw-page-title-main,
-    .mw-headline {
+    .pre-content h1,
+    .content .mw-heading1,
+    .content h1,
+    .content .mw-heading2,
+    .content h2 {
         font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
             "Source Serif Pro", serif !important;
     }
@@ -454,6 +457,12 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    html {
+        font-family: var(--google, ""), Roboto, Helvetica Neue, Arial,
+            var(--noto, ""), sans-serif !important;
+    }
+
+    .g,
     .VwiC3b,
     .e9EfHf,
     .gcal-dialog,
@@ -501,65 +510,7 @@
     .YrbPuc,
     .ZU8Abc,
     .ZkkK1e,
-    .ZwRhJd,
-    .aJB11e,
-    .aU5Y0c,
-    .account-email,
-    .account-name,
-    .accounts li,
-    .add-account,
-    .b0KoTc,
-    .c07z9,
-    .cS4Vcb-pGL6qe-k1Ncfe,
-    .cS4Vcb-pGL6qe-lfQAOe,
-    .card-section,
-    .cygiMd,
-    .eJBTYb,
-    .eUOBKb,
-    .eniVJf,
-    .esVihe,
-    .f3LoEf,
-    .fYFvJb,
-    .g,
-    .gJBeNe,
-    .gb_Bd,
-    .gb_F,
-    .gb_Md,
-    .gb_yd,
-    .gnU4tc,
-    .gsrt,
-    .guK3rf,
-    .hgKElc,
-    .iAIpCb,
-    .kFwPee,
-    .kLPFrd,
-    .no-user-select,
-    .oBlg4e,
-    .pKZ7Wd,
-    .paD5uf,
-    .rx7XFb,
-    .s75CSd,
-    .sign-out,
-    .srp,
-    .swB7v,
-    .tNxQIb,
-    .tVRLD,
-    .toI8Rb,
-    .tsp-fm,
-    .tsp-fr,
-    .wHYlTd,
-    .wWmbec,
-    .wbJOMb,
-    .wfg6Pb,
-    .wwUB2c,
-    a.K1yPdf,
-    c-wiz,
-    g-expandable-container,
-    g-expandable-content,
-    h4,
-    g-menu-item,
-    .gb_Kd,
-    .T8VaVe {
+    .ZwRhJd {
         font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, arial,
             var(--noto, ""), sans-serif !important;
     }
@@ -572,64 +523,10 @@
             var(--noto, ""), sans-serif !important;
     }
 
-    .qjntzf,
-    .x07oe .uch-xa,
-    .AzLckf,
-    .uBJawc,
-    .PIcVAb,
-    .ovFAff,
-    .V25Vr,
-    .D6n3Jc,
-    .dpV3Nb,
-    .q1AuFe,
-    .CGgaQ,
-    .ApHyTb,
-    .mPUmSe,
-    .tvOP6,
-    .fUr1zf,
-    .nwMUnb,
-    .iGVLpd div,
-    #gb-main,
-    .UynAtc span {
-        font-family: var(--google, ""), Roboto, Helvetica Neue, Arial,
-            var(--noto, ""), sans-serif !important;
-    }
-
-    .RiJqbb,
-    .Ilfrfc a div,
-    .SVWlSe span {
-        font-family: var(--google, ""), Google Sans, Roboto-Medium,
-            HelveticaNeue-Medium, Helvetica Neue, sans-serif-medium, Arial,
-            var(--noto, ""), sans-serif !important;
-    }
-
-    .jloFI,
-    .eZHsk,
-    .BYj5Bd span,
-    .VsEpQb,
-    .CvgYje,
-    .LT6XE,
-    .Fzsovc {
-        font-family: var(--google, ""), Google Sans, Roboto, Helvetica Neue,
-            HelveticaNeue, Arial, var(--noto, ""), sans-serif !important;
-    }
-
-    .nNzjpf-cS4Vcb-PvZLI-Q1vkfd-bN97Pc {
-        font-family: var(--google, ""), Google Sans, arial, var(--noto, ""),
-            sans-serif !important;
-    }
-
-    .sjVJQd,
-    .Yt787,
-    .clOx1e span {
-        font-family: var(--google, ""), Google Sans, arial, var(--noto, ""),
-            sans-serif-medium, sans-serif !important;
-    }
-
     /* Force Google Sans (if available) */
     input,
     .Czd4wf {
-        font-family: "Google Sans", var(--google), arial, var(--noto, "") !important;
+        font-family: "Google Sans", var(--google, ""), arial, var(--noto, "") !important;
     }
 
     .a-no-hover-decoration,
@@ -673,6 +570,11 @@
 
     .st-c-pos {
         font-family: Verdana, var(--noto, ""), sans-serif !important;
+    }
+
+    .YmvwI {
+        font-family: Google Sans, var(--google, ""), arial, sans-serif-medium,
+            var(--noto, ""), sans-serif !important;
     }
 
     .mv6bHd,
@@ -739,7 +641,7 @@
             Arial, var(--noto, ""), sans-serif !important;
     }
 
-    div.scroller.scroller-enabled {
+    div.content {
         font-family: -apple-system, Roboto, SegoeUI, "Segoe UI",
             "Helvetica Neue", Helvetica, "Microsoft YaHei", "Meiryo UI", Meiryo,
             Arial Unicode MS, var(--noto, ""), sans-serif !important;
