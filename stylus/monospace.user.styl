@@ -160,7 +160,6 @@
     }
 
     blockquote,
-    #firstHeading,
     .pre-content h1,
     .content .mw-heading1,
     .content h1,
@@ -168,6 +167,18 @@
     .content h2 {
         font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
             "Source Serif Pro", serif !important;
+    }
+
+    @media screen {
+        .mw-body h1,
+        .mw-body .mw-heading1,
+        .mw-body-content h1,
+        .mw-body-content .mw-heading1,
+        .mw-body-content h2,
+        .mw-body-content .mw-heading2 {
+            font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
+                "Source Serif Pro", serif;
+        }
     }
 
     ul
