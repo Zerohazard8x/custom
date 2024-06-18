@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.10.3
+@version        2.10.4
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -138,25 +138,16 @@
 }
 
 @-moz-document domain("wikipedia.org") {
-    * span span i,
-    * p span i,
-    * span span span,
-    #searchform,
-    #p-lang-btn-label,
-    #vector-page-tools-dropdown-label,
-    .grid,
-    .noime,
-    .invite,
-    .vector-body,
-    .vector-menu,
-    .vector-menu-content-list,
-    .vector-pinnable-header-toggle-button,
-    .vector-toc,
-    cite,
-    .mwe-popups-container {
-        /* "+" is adjacent sibling selector */
-        /* https://www.w3schools.com/Css/css_combinators.asp */
-        font-family: var(--sans, ""), sans-serif !important;
+    @media screen {
+        html,
+        body {
+            font-family: var(--sans, ""), sans-serif !important;
+        }
+    }
+
+    body {
+        font-family: var(--sans, ""), -apple-system, "BlinkMacSystemFont",
+            "Segoe UI", "Roboto", "Inter", "Helvetica", "Arial", sans-serif;
     }
 
     blockquote,
@@ -179,31 +170,6 @@
             font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
                 "Source Serif Pro", serif;
         }
-    }
-
-    ul
-        li
-        > span:not(#pagehistory ul li > span):not(
-            .mw-content-ltr.mw-parser-output ul li > span
-        ),
-    dd span i,
-    .mw-content-ltr
-        p
-        span:not(.navigation-not-searchable):not(
-            .mw-content-ltr.mw-parser-output p span
-        ),
-    blockquote div p,
-    dl:not(.mw-body-content * dl),
-    dl dd span,
-    .block-indent span,
-    * p > a > span,
-    *
-        .mw-parser-output
-        p
-        span:not(.mw-history-legend .mw-parser-output p span):not(
-            .mw-content-ltr.mw-parser-output p span
-        ) {
-        font-family: var(--serif, ""), Georgia, "DejaVu Serif", serif !important;
     }
 
     .monospaced,
@@ -461,9 +427,11 @@
     }
 }
 
-@-moz-document domain("google.com") {
+@-moz-document regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
+    /* Google */
+    /* Regex excludes e.g. mail.google.com */
+    /* Combined: ^(?:.*www\.google\.com.*|(?!.*(\w+\.google\.com)).*google\.com.*) */
     :root {
-        /* Define variables */
         --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft",
             RobotoDraft, Roboto-Regular;
     }
@@ -526,20 +494,7 @@
             var(--noto, ""), sans-serif !important;
     }
 
-    .imso-medium-font,
-    .imso-light-font,
-    .H1HQf,
-    .SW5pqf {
-        font-family: var(--google, ""), arial, sans-serif-medium,
-            var(--noto, ""), sans-serif !important;
-    }
-
     /* Force Google Sans (if available) */
-    input,
-    .Czd4wf {
-        font-family: "Google Sans", var(--google, ""), arial, var(--noto, "") !important;
-    }
-
     .a-no-hover-decoration,
     .JgzqYd,
     .TUOsUe,
@@ -572,20 +527,6 @@
     .gLFyf {
         font-family: "Google Sans", var(--google, ""), arial, var(--noto, ""),
             sans-serif !important;
-    }
-
-    .banner h1 {
-        font-family: "Google Sans", var(--google, ""), "Open Sans", arial,
-            var(--noto, "") !important;
-    }
-
-    .st-c-pos {
-        font-family: Verdana, var(--noto, ""), sans-serif !important;
-    }
-
-    .YmvwI {
-        font-family: Google Sans, var(--google, ""), arial, sans-serif-medium,
-            var(--noto, ""), sans-serif !important;
     }
 
     .mv6bHd,
