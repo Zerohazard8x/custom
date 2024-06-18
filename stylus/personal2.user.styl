@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.1.1
+@version        1.1.2
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.styl
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com") {
+@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com") {
     :root {
         --noto: var(--emoji, ""), "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
             "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari", PingFang,
@@ -156,8 +156,9 @@
 
 @-moz-document domain("hupu.com") {
     :root {
-        --hupu: hupufont, hupufont-Medium, hupufont-Regular, "HarmonyOS Sans TC", "HarmonyOS Sans SC", "HarmonyOS Sans", 
-            "DIN Next", "URW DIN", "DIN", var(--sans, "");
+        --hupu: hupufont, hupufont-Medium, hupufont-Regular, "HarmonyOS Sans TC",
+            "HarmonyOS Sans SC", "HarmonyOS Sans", "DIN Next", "URW DIN", "DIN",
+            var(--sans, "");
     }
 
     /* iframe */
@@ -465,5 +466,40 @@
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
                 Microsoft YaHei, sans-serif !important;
         }
+    }
+}
+
+@-moz-document domain("spotify.com") {
+    .circular-sp-vietnamese,
+    .circular-sp-vietnamese button,
+    .circular-sp-vietnamese input,
+    .circular-sp-vietnamese select,
+    .circular-sp-vietnamese textarea {
+        font-family: Roboto, CircularSpVietnamese, CircularSp-Arab,
+            CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+            var(--noto, ""), var(--fallback-fonts, sans-serif) !important;
+    }
+
+    .encore-text-body-medium,
+    .encore-text-body-medium-bold,
+    .encore-text-body-small,
+    .encore-text-body-small-bold {
+        font-family: Roboto, CircularSp, CircularSp-Arab, CircularSp-Hebr,
+            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--noto, ""),
+            var(--fallback-fonts, sans-serif) !important;
+    }
+
+    .encore-text-headline-large {
+        font-family: Roboto, CircularSpVietnameseTitle, CircularSp-Arab,
+            CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+            var(--noto, ""), var(--fallback-fonts, sans-serif) !important;
+    }
+}
+
+@-moz-document domain("music.apple.com") {
+    html {
+        font-family: Roboto, -apple-system, BlinkMacSystemFont,
+            Apple Color Emoji, SF Pro, SF Pro Icons, Helvetica Neue, Helvetica,
+            Arial, var(--noto, ""), sans-serif !important;
     }
 }
