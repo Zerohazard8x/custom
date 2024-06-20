@@ -542,7 +542,6 @@ stackoverflow.com,superuser.com,stackexchange.com##.spotCollective.svg-spot.fc-b
 stackoverflow.com,superuser.com,stackexchange.com##.tex2jax_ignore.module
 
 store.steampowered.com###achievement_block
-store.steampowered.com###game_highlights > div:nth-of-type(1)
 store.steampowered.com###noReviewsWriteOne
 store.steampowered.com###noteworthy_tab
 store.steampowered.com##.banner_open_in_steam
