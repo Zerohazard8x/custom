@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.10.4
+@version        2.10.5
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -443,6 +443,9 @@
             var(--noto, ""), sans-serif !important;
     }
 
+    html,
+    body,
+    h1,
     .g,
     .e9EfHf,
     .gb_Kd,
@@ -472,7 +475,7 @@
     .ZU8Abc,
     .ZkkK1e,
     .ZwRhJd {
-        font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, arial,
+        font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, Arial,
             var(--noto, ""), sans-serif !important;
     }
 
@@ -603,7 +606,7 @@
             "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans", "Helvetica Neue", "Helvetica", "Segoe UI",
             "Nimbus Sans L", "Liberation Sans", "Open Sans", FreeSans, Arial,
-            sans-serif !important;
+            var(--noto, ""), sans-serif !important;
     }
 
     code,
