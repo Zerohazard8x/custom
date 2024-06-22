@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.10.5
+@version        2.10.6
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl
@@ -475,15 +475,20 @@
     }
 
     /* Force Google Sans (if available) */
-    .a-no-hover-decoration {
+    .a-no-hover-decoration,
+    .GLcBOb,
+    #result-stats {
         font-family: "Google Sans", var(--google, ""), arial, var(--noto, ""),
             sans-serif !important;
     }
 
-    .mv6bHd,
+    .YmvwI {
+        font-family: Google Sans, var(--google, ""), Arial, var(--noto, ""),
+            sans-serif-medium, sans-serif !important;
+    }
+
     .googlegpt pre,
     #googlegpt-chatbar,
-    .code-container,
     .markdown p code {
         font-family: "Google Sans Mono", var(--mono-combo, ""), monospace !important;
     }
@@ -517,6 +522,12 @@
     #b_header {
         font-family: Roboto, Helvetica, "-apple-system", HelveticaNeue, Roboto,
             Arial, var(--noto, ""), sans-serif !important;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: Roboto, var(--noto, ""), sans-serif !important;
     }
 
     div.content {
