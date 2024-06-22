@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl
-@version        2.8.2
+@version        2.8.3
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com") {
@@ -108,9 +108,21 @@
 }
 
 @-moz-document regexp(".*youtube.com\/live_chat.*"), regexp(".*hyperchat.*") {
-    div.content.overflow-y-scroll {
-        font-family: "Comic Sans MS", Roboto, var(--noto, ""), sans-serif !important;
+    div.content.overflow-y-scroll,
+    .yt-live-chat-text-message-renderer,
+    #card,
+    yt-live-chat-author-chip #author-name,
+    #header-subtext,
+    #message,
+    #icon * * div svg,
+    .emoji,
+    .yt-live-chat-author-badge-renderer,
+    #img {
         line-height: normal !important;
+    }
+
+    div.content.overflow-y-scroll {
+        font-family: Roboto, var(--noto, ""), sans-serif !important;
     }
 
     .yt-live-chat-text-message-renderer,
@@ -119,7 +131,6 @@
     #header-subtext,
     #message {
         font-family: Roboto, Arial, var(--noto, ""), sans-serif !important;
-        line-height: normal !important;
     }
 
     .yt-live-chat-text-message-renderer,
@@ -141,7 +152,6 @@
     #img {
         height: 25px !important;
         width: auto !important;
-        line-height: normal !important;
     }
 }
 
@@ -245,44 +255,48 @@
 }
 
 @-moz-document domain("twitch.tv") {
-    .chat-line__message,
-    .bQEtql {
-        font-size: 25px !important;
-    }
-
-    .chat-author__display-name,
-    .cCvSAC,
-    .chat-line__status {
-        font-size: 20px !important;
-    }
-
-    .cCvSAC,
+    /* Twitch */
+    div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .chat-line__status,
-    .chat-line__message,
-    .bQEtql,
-    .CoreText-sc-1txzju1-0,
-    .chat-line__message,
-    section[data-test-selector="chat-room-component-layout"].chat-scrollable-area__message-container,
-    .whispers .thread-message__message,
-    .video-chat__message {
-        line-height: 1.5 !important;
+    span.CoreText-sc-1txzju1-0.doCFUd {
+        line-height: normal !important;
     }
 
-    .chat-badge,
-    .chat-line__message--emote,
-    .ScSvg-sc-1hrsqw6-1:not(.tw-svg .ScSvg-sc-1hrsqw6-1),
-    .tw-svg
-        svg:not(.tw-svg .ihOSMR):not(.hZiShc svg):not(
-            .ScFigure-sc-wkgzod-0 svg
-        ):not(figure svg) {
-        height: 25px !important;
+    img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA,
+    .chat-badge {
         width: auto !important;
     }
 
+    div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
+    span.CoreText-sc-1txzju1-0.doCFUd,
+    .chat-author__display-name,
+    .chat-line__status,
+    .bQEtql,
     body,
     .live-time {
         font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
             var(--noto, ""), sans-serif !important;
+    }
+
+    /* Chat messages */
+    div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
+    .bQEtql {
+        font-size: 25px !important;
+    }
+
+    img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA {
+        height: 25px !important;
+    }
+
+    /* Chat authors */
+    span.CoreText-sc-1txzju1-0.doCFUd,
+    .chat-author__display-name,
+    .chat-line__status {
+        font-size: 20px !important;
+    }
+
+    .chat-badge {
+        height: 20px !important;
     }
 }
 
