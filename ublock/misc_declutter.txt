@@ -10,11 +10,6 @@ accounts.google.com##.SYDc7
 accuweather.com##.air-quality-module-wrapper
 accuweather.com##.right-rail-article__thumb.js-content-image
 
-adobe.com##.aem-GridColumn--offset--default--0.aem-GridColumn--offset--phone--0.aem-GridColumn--default--12.aem-GridColumn.aem-GridColumn--tablet--none.aem-GridColumn--phone--12.aem-GridColumn--default--none.aem-GridColumn--phone--hide.aem-GridColumn--offset--tablet--0.aem-GridColumn--tablet--12.flex
-adobe.com##.static.modalContainer
-
-aftership.com##.css-1ovtwck
-
 amazon.com###apex_desktop
 amazon.com###availability
 amazon.com###corePriceDisplay_desktop_feature_div
@@ -39,75 +34,6 @@ apple.com##.section-river.section-locate.section
 apple.com##.section-what-else.section
 apple.com##.typography-hero-intro
 apple.com##.typography-section-headline
-
-!------!
-! Represents the 1st and 7th elements
-apps.apple.com##div.app-privacy__modal-section:nth-child(n+1):nth-child(-n+2)
-
-apps.apple.com##.app-privacy.section--bordered.section.l-content-width > p
-apps.apple.com##.is-visible.animation-wrapper > div:nth-of-type(2)
-apps.apple.com##div.app-privacy__modal-section > p
-!------!
-
-baked.live###rightpane > .row
-baked.live###rustbanner
-baked.live###userlist
-baked.live##div > .timestamp
-
-!------!
-! Represents the 6th and 7th elements
-bing.com###b_results > li.b_bfb_lcg:nth-child(n+6):nth-child(-n+7)
-
-bing.com###asmsbribbon_li
-bing.com###b-scopeListItem-bingatwork
-bing.com###b_algospacing
-bing.com###b_alsotry
-bing.com###b_metaChat
-bing.com###b_op_anch
-bing.com###b_op_flyout
-bing.com###b_results > li.b_bfb_mainline.b_ans:first-child
-bing.com###b_syd_sm_input
-bing.com###bingatwork
-bing.com###bnp\.nid\.64024
-bing.com###footer
-bing.com###google-s-ad
-bing.com###iasabtlnk
-bing.com###id_mobile
-bing.com###id_rfob
-bing.com###id_rh
-bing.com###imgcrtr_key
-bing.com###imginspn_key
-bing.com###mfa_srch
-bing.com###sa_zis_Banner
-bing.com###sydneyLetsChatWidgetContainer
-bing.com###textDeeplinksWidgetContainer
-bing.com###vs_cont > div.mc_caro:first-child
-bing.com###vs_cont > div.vs:nth-child(2)
-bing.com###wiki_expand
-bing.com##.active.id_button
-bing.com##.b_bfb_lcg
-bing.com##.b_phead_chat_link
-bing.com##.b_vPanel > div:nth-of-type(3)
-bing.com##.below_sbox
-bing.com##.btwrap > .iasabt
-bing.com##.bw-unNot5.bw-unSerp.bw-unAcctRt
-bing.com##.cdxConv
-bing.com##.fabcolapse
-bing.com##.hp_body > div:nth-of-type(1)
-bing.com##.langdisp.b_hide
-bing.com##.new_see_more_container
-bing.com##.popup.b_bnp_bopc
-bing.com##.rh_scale.rh_reedm.toolTip.id_button
-bing.com##.rs_chat
-bing.com##.rs_chatReD
-bing.com##.sa_hv.bordertop
-bing.com##.sw_mktsw
-bing.com##.wpt_bc_container
-bing.com##a.b_phead_chat_link.b_LinksColorMD:last-child
-bing.com##div > section.msbModule.moduleCont:first-child > div.msbLogo:first-child
-bing.com##div.musCard.focusin:last-child
-bing.com##section.msbModule.moduleCont:first-child
-!------!
 
 brainly.*###credential_picker_container
 brainly.*##.AnswerBoxLayout-module__blockade--LhO51.sg-animation-fade-in-fast
@@ -169,7 +95,7 @@ developer.android.com##devsite-snackbar
 
 developer.mozilla.org##.fallback.top-banner
 
-discord.com##.embedMargin__99b82.embedProvider_f3e807
+discord.com##.embedMargin_ad0b71.embedProvider_ad0b71
 discord.com##.sectionTitle__3e02b > .defaultMarginh5__6e314.eyebrow__4e5bb.h5__28baa
 discord.com##.welcomeCTA__927ef
 ||media.discordapp.net/stickers/1039992459209490513.png$image
@@ -202,13 +128,18 @@ duckduckgo.com##.privacy-reminder.dropdown--region.dropdown
 duckduckgo.com##.yjuFYcjOI844d3KiuLhz.nOpYdHAdSD_d47TfU1p8.KE_4ibtn0WI3iUo6lJw9
 ||duckduckgo.com/*static*.png$image
 
+ecosia.org##.forest-section--background-primary.forest-section
+ecosia.org##.forest-section--background-tertiary.forest-section
 ecosia.org##.global-counter--visible.global-counter.above-fold-section__counter
+ecosia.org##.hero__right
 ecosia.org##.section-wrapper--primary.claims-section.section-wrapper
-ecosia.org##.section-wrapper--primary.financial-report-section.section-wrapper
+ecosia.org##.section-wrapper--primary.extension-section.section-wrapper
 ecosia.org##.section-wrapper--tertiary.before-after-section.section-wrapper
 ecosia.org##.section-wrapper--tertiary.join-section.section-wrapper
 ecosia.org##.section-wrapper--tertiary.map-section.section-wrapper
 ecosia.org##.section-wrapper--tertiary.projects-section.section-wrapper
+ecosia.org##.wave-separator--visible.wave-separator--variant-primary.wave-separator
+ecosia.org##.wave-separator--visible.wave-separator--variant-tertiary.wave-separator
 ||ecosia.org/static/indexpage/*$image
 
 emojipedia.org##.w-full.mb-9
@@ -233,43 +164,7 @@ forum.xda-developers.com,xdaforums.com##.uix_sidebar--scroller > div.block:nth-o
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__text
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
 
-firebase.google.com##.cta-hero-footer
-firebase.google.com##.devsite-banner-summit-blue.devsite-banner
-firebase.google.com##.homepage-hero__image-desktop
-firebase.google.com##.ng-star-inserted.firebase-logo-mark
-firebase.google.com##.ng-star-inserted.ng-tns-c3156041170-6.nav-section.quicklink-promo-card.mdc-card.mat-mdc-card
-firebase.google.com##promo-optin-banner.ng-star-inserted
-||gstatic.com/mobilesdk*g$image
-
 gemini.google.com##upsell-button.ng-star-inserted
-
-genius.com##.gTBWpu.SongComments__Footer-sc-131p4fy-11
-genius.com##.vrxkS.InnerSectionDivider-sc-1x4onqw-0
-
-getpocket.com##.css-1ww0nxx
-getpocket.com##div > div.onboarding-badge:first-child
-getpocket.com##div > nav > a.css-18qpw11
-getpocket.com##ul.css-1bjgl5h.links
-
-github.com###collaboration
-github.com###productivity
-github.com###security
-github.com##.Box-footer > div.mb-3:nth-of-type(1) > .color-fg-muted.mt-2
-github.com##.Box-header--blue.Box-header > h3
-github.com##.DklBG.Octicon-sc-9kayk9-0
-github.com##.border-bottom.mb-5.feed-right-sidebar > .js-notice
-github.com##.border-bottom.mb-5.feed-right-sidebar > div > .js-notice
-github.com##.col-12.build-in-animate.my-md-10.my-8
-github.com##.d-lg-block.d-md-block.d-sm-none.d-none.position-absolute.Popover.js-notice
-github.com##.font-mktg > .p-responsive.container-xl
-github.com##.gQjvB.Box-sc-g0xbh4-0 > div.Box-sc-g0xbh4-0:nth-of-type(2)
-github.com##.ilHgdV.Box-sc-g0xbh4-0
-github.com##.js-notice
-github.com##.mx-auto.col-8 > .mb-2
-github.com##.mx-auto.home-globe-container-webgl.home-globe-container
-github.com##.px-3.z-2.position-relative.container-xl
-github.com##.rounded-2.p-3.color-border-muted.border.color-bg-default.dashboard-changelog.mb-3
-github.com##div.react-code-size-details-in-header.Box-sc-g0xbh4-0:nth-of-type(2)
 
 google.com###OotqVd
 google.com###helpful
@@ -346,8 +241,7 @@ lazada.*##.pdp-seller-info-pc
 ||laz-img-cdn.alicdn.com/images/ims-web/TB1x.lwhHj1gK0jSZFuXXcrHpXa.png$image 
 ||lzd-img-global.slatic.net/g/gcp/lazada/9dcfc6b9-6fe7-4845-a19f-32483484ce1b_ALL-121-52.png_2200x2200q80.png_.webp$image
 
-marketwatch.com##.afterhours.fixed.container--trending.container
-marketwatch.com##.has-ad.full-width.bulletins.column--full.column
+mail.google.com##.AFNENd.aoW.bgX.T-P
 
 mathsolver.microsoft.com##.c0
 
@@ -357,12 +251,6 @@ math.microsoft.com##div.ImageParagraphSection_imageParagraphSection__Ckf2_
 mediafire.com##.DLExtraInfo-additional.DLExtraInfo
 mediafire.com##.sidebar
 ||static.mediafire.com/images/filetype*.png$image
-
-meet.google.com##.AkYcJb.dQO5xd
-meet.google.com##.k3Pzib.ws7pec
-
-merriam-webster.com##.pe-0.position-relative.left-sidebar-col.col-2
-merriam-webster.com##.show-full-list.additional-content-area
 
 messenger.com##.x12nzpgo.x1lku1pv.x5ib6vp.x18d9i69.xc73u3c.xexx8yu.xt55aet.x1c4vz4f.xb756pt.x1q0g3np.xozqiw3.x6s0dn4.x1qughib.xeuugli.xs83m0k.x1r8uery.x78zum5.x1ja2u2z.x1n2onr6.x9f619
 messenger.com##a.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.xe8uvvx.x1hl2dhg.xggy1nq.x1o1ewxj.x3x9cwd.x1e5q0jg.x13rtm0m.x87ps6o.x1lku1pv.x1a2a7pz.xjyslct.x9f619.x1ypdohk.x78zum5.x1q0g3np.x2lah0s.xnqzcj9.x1gh759c.xdj266r.xat24cr.x1344otq.x1de53dj.x1n2onr6.x16tdsg8.x1ja2u2z.x6s0dn4.x1y1aw1k.xwib8y2
@@ -378,18 +266,6 @@ monkeytype.com###newVersionIndicator
 music.apple.com##.svelte-36irpb.upsell-banner
 music.apple.com##.svelte-6ox3l2.banner-container
 music.apple.com##.svelte-vr90x9.upsell-banner
-
-myanimelist.net##.ga-impression.bottom-bar
-myanimelist.net##.ga-impression.top_signup
-myanimelist.net##.js-scrollfix-bottom-rel.rightside > table > tbody > tr:nth-of-type(2)
-myanimelist.net##.pb24 > .border_top
-myanimelist.net##article.left.widget-container:nth-child(n+1):nth-child(-5n+6)
-myanimelist.net##article.left.widget-container:nth-child(n+3):nth-child(-n+4)
-myanimelist.net##article.left.widget-container:nth-of-type(8)
-myanimelist.net##mal-tooltip
-myanimelist.net##td > .anime-slide-block
-myanimelist.net##tr:nth-of-type(1) > td > .border_top
-myanimelist.net##tr:nth-of-type(1) > td > div:nth-of-type(4)
 
 mybib.com##.primary.animate.show.tooltip-lg
 mybib.com##.primary.show.tooltip-lg
@@ -408,36 +284,19 @@ office.com##ohp-learning-shelf-react.ng-star-inserted
 
 omnicalculator.com##.IntroductionModal.jsx-456407116
 
+onedrive.live.com##.container-107.ms-PositioningContainer
 onedrive.live.com##.od-QuotaBannerWrapper-placeholder.od-QuotaBannerWrapper
-onedrive.live.com##.storageUpsellBannerText_8bf2f56c
 onedrive.live.com##.quotaBarHeader_2b3ef397
+onedrive.live.com##.storageUpsellBannerText_8bf2f56c
 
 open.spotify.com##.cZ3IJprhLYLVtLoxVtDe
 
 openweathermap.org##.pop-up
 
-parcelsapp.com###features
-parcelsapp.com###tisunov > .container > div.row:nth-of-type(1)
-parcelsapp.com##.content.carrier-info
-parcelsapp.com##.landing-section
-parcelsapp.com##.light-gray-bg.faq
-parcelsapp.com##.people-tracking
-parcelsapp.com##.shops
-parcelsapp.com##.text-center.content
-parcelsapp.com##body > div:nth-of-type(2)
-parcelsapp.com##section.faq:nth-child(n+4):nth-child(-4n+8)
-parcelsapp.com##section.faq:nth-of-type(4)
-parcelsapp.com##section.faq:nth-of-type(8) > .container
-parcelsapp.com##section.light-gray-bg:nth-of-type(7)
-parcelsapp.com##section.light-gray-bg:nth-of-type(9)
-
 perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.ease-out.duration-300.fade-in.animate-in.shadow-md.p-md.border.rounded-lg
 perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.md\:block.ease-out.duration-300.fade-in.animate-in.shadow-sm.p-md.border.rounded-lg.w-\[300px\].hidden.z-30.right-md.bottom-md.fixed
 perplexity.ai##.flex-col.flex > div.bg-transparent.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50:nth-of-type(1)
 perplexity.ai##.md\:text-center.pb-xs.justify-center.items-center.flex.mb-lg
-
-play.google.com##.Ou5Yib
-play.google.com##.RGUlu
 
 poe.com##.Banner_info__OWUd0.Banner_root__p5sUz
 poe.com##.ChatPageLeftSidebar_menuFooter__HQhug > a.Button_secondary__eZeoz.Button_buttonBase__0QP_m
@@ -446,47 +305,6 @@ poe.com##a.Button_secondary__IuV5T.Button_buttonBase__Bv9Vx
 
 quillbot.com##.css-nsjdv.MuiBox-root
 quillbot.com##div.css-vmq4q1.MuiContainer-maxWidthLg.MuiContainer-root:nth-of-type(1)
-
-reddit.com###credential_picker_container
-reddit.com###popular-posts
-reddit.com###redesign-beta-optin-btn
-reddit.com##.RtAsN7UrR7u51W5kaOXvp._1W1pLIfaIb8rYU6YeTdAk6
-reddit.com##.RtAsN7UrR7u51W5kaOXvp._1W1pLIfaIb8rYU6YeTdAk6
-reddit.com##._1GieMuLljOrqnVpRAwz7VP
-reddit.com##._1W1pLIfaIb8rYU6YeTdAk6
-reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
-reddit.com##._1zyV-XmoYeSNGWjfZiXbPc.efdkOLo3oigH_95whTYCp
-reddit.com##._288IzKhWMb7Dw403RofBU8._2h6EM3mo5Qn9Eqm18v5Hiz._1sDiFFHKyPJghjPpVTW7vB
-reddit.com##._2Vkdik1Q8k0lBEhhA_lRKE._34CfAAowTqdbNDYXz5tBTW
-reddit.com##._2Zjw1QfT_iMHH7rfaGsfBs
-reddit.com##._2jJNpBqXMbbyOiGCElTYxZ
-reddit.com##._2ppRhKEnnVueVHY_G-Ursy
-reddit.com##._2q-ZKRaT1WjKg092R6La5J._1cubpGNEaCAVnpJl1KBPcO.cmR5BF4NpBUm3DBMZCmJS > ._1W1pLIfaIb8rYU6YeTdAk6
-reddit.com##._2t7TYn6HwRZQwKXG47kpQR._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
-reddit.com##._3WmD5z1Jh2YlJtFiczfOPQ._2me05I1oHEys1gUyyDWswt._34CfAAowTqdbNDYXz5tBTW
-reddit.com##._3jiriKeNer8y0-1r6oWIFM:style(min-width: 40px !important)
-reddit.com##.create.sidebox > .spacer
-reddit.com##.flex-row.flex.dark\:bg-coolgray-850.bg-global-white.items-center.justify-between.w-full.fixed.bottom-0.px-md.m\:px-lg.pb-\[env\(safe-area-inset-bottom\)\].h-3xl.box-border.border-neutral-border-weak.border-solid.border-r-0.border-l-0.border-b-0.border-t-sm
-reddit.com##.h-jI8r2f9ozTNqu_2TBeY,._3jiriKeNer8y0-1r6oWIFM:style(width: 1px !important)
-reddit.com##.help-hoverable.help.beta-hint
-reddit.com##.icon-add.icon._3uVYL9qgX3QSEa_F4F-DPv
-reddit.com##.icon-side_menu.icon._2FVCfsIPxXtl6S-c69sXO4
-reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium.mx-xs.ml-sm
-reddit.com##.listingsignupbar.infobar
-reddit.com##.prompt
-reddit.com##.u6HtAZu8_LKL721-EnKuR._2J_zB4R1FH2EjGMkQjedwc
-reddit.com##.xs\:mx-0.mb-\[16px\].p-\[12px\].bg-tone-5.max-w-full.rounded-\[4px\].cursor-pointer.items-center.justify-start.relative.flex
-reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:h-\[calc\(100vh-var\(--shreddit-header-height\)-1px\)\].xs\:top-\[56px\].xs\:sticky.xs\:w-full.styled-scrollbars.xl\:col-span-4.l\:col-span-4.m\:col-span-3.s\:col-span-4.xs\:col-span-4.s\:block.hidden.right-sidebar > .mt-md
-reddit.com##div > div > a._3dZnYgFFpifT-M_Vs2FAq6:first-child
-reddit.com##div > div > div._1oRQu-aolgpPPJDblUGTw5:last-child
-reddit.com##div > div > div._2f5uYHvlfzs2DngQsiCdvB:last-child
-reddit.com##div > div > div._2jJNpBqXMbbyOiGCElTYxZ:first-child
-reddit.com##div > div > div._2vEf-C2keJaBMY9qk_BxVn:nth-child(2)
-reddit.com##div.text-14.text-neutral-content-weak
-reddit.com##reddit-recent-pages
-reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y._2I12Htze2UzJmmfnrgYJOn._1dBtowHdRHcGyLbVEaOL8t:nth-child(4)
-reddit.com##span._2zZ-KGHbWWqrwGlHWXR90y:nth-of-type(3)
-||redditstatic.com/desktop2x/img/powerups/moderator-achievement.svg$image
 
 reverso.net##app-desktop-app-promotion
 reverso.net##app-features-promotion
@@ -502,9 +320,6 @@ search.yahoo.com##.bgc-solocup.c-white.fw-br.c1.bdr-2.pr-3.pl-2.ivmr-10.ml-4.d-i
 search.yahoo.com##.searchCenterTop.reg > .last
 search.yahoo.com##.searchRightBottom.reg
 search.yahoo.com##.searchRightTopAds.reg
-
-sports.yahoo.com##.caas-cover-wrapper
-sports.yahoo.com##.caas-logo
 
 shopee.*##.MPbswA
 shopee.*##._2ypCMv
@@ -541,46 +356,30 @@ stackoverflow.com,superuser.com,stackexchange.com##.overflow-hidden.blr-sm.fc-bl
 stackoverflow.com,superuser.com,stackexchange.com##.spotCollective.svg-spot.fc-black-300.d-block.h-auto.mb12.mt16.mx-auto.wmx100
 stackoverflow.com,superuser.com,stackexchange.com##.tex2jax_ignore.module
 
-store.steampowered.com###achievement_block
-store.steampowered.com###noReviewsWriteOne
-store.steampowered.com###noteworthy_tab
-store.steampowered.com##.banner_open_in_steam
-store.steampowered.com##.content > h1
-store.steampowered.com##.game_rating_agency
-store.steampowered.com##.glance_details
-store.steampowered.com##.responsive_apppage_reviewblock.block.steam_curators_block
-store.steampowered.com##a.top_promo.ds_no_flags.app_impression_tracked:first-child
-store.steampowered.com##div > div > a.menuitem:nth-child(5)
-store.steampowered.com##div > div > a.tab:nth-child(9)
-store.steampowered.com##div > div > div.block:nth-child(12)
-store.steampowered.com##div > div > div.game_page_autocollapse:first-child
-store.steampowered.com##div > div.queue_overflow_ctn:nth-child(3)
-store.steampowered.com##div > div_block > div.gutter_items:last-child
-store.steampowered.com##div.gutter_header.pad:nth-child(6)
-store.steampowered.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
-store.steampowered.com##div.home_ctn:nth-child(n+5):nth-child(-6n+11)
-store.steampowered.com##div.rightcol.recent_reviews:nth-child(2)
+store.steampowered.com,steamcommunity.com###achievement_block
+store.steampowered.com,steamcommunity.com###noReviewsWriteOne
+store.steampowered.com,steamcommunity.com###noteworthy_tab
+store.steampowered.com,steamcommunity.com##.banner_open_in_steam
+store.steampowered.com,steamcommunity.com##.content > h1
+store.steampowered.com,steamcommunity.com##.game_rating_agency
+store.steampowered.com,steamcommunity.com##.glance_details
+store.steampowered.com,steamcommunity.com##.responsive_apppage_reviewblock.block.steam_curators_block
+store.steampowered.com,steamcommunity.com##a.top_promo.ds_no_flags.app_impression_tracked:first-child
+store.steampowered.com,steamcommunity.com##div > div > a.menuitem:nth-child(5)
+store.steampowered.com,steamcommunity.com##div > div > a.tab:nth-child(9)
+store.steampowered.com,steamcommunity.com##div > div > div.block:nth-child(12)
+store.steampowered.com,steamcommunity.com##div > div > div.game_page_autocollapse:first-child
+store.steampowered.com,steamcommunity.com##div > div.queue_overflow_ctn:nth-child(3)
+store.steampowered.com,steamcommunity.com##div > div_block > div.gutter_items:last-child
+store.steampowered.com,steamcommunity.com##div.gutter_header.pad:nth-child(6)
+store.steampowered.com,steamcommunity.com##div.home_ctn.live_streams_ctn.no_paging:nth-child(22)
+store.steampowered.com,steamcommunity.com##div.home_ctn:nth-child(n+5):nth-child(-6n+11)
+store.steampowered.com,steamcommunity.com##div.rightcol.recent_reviews:nth-child(2)
 ||cdn.cloudflare.steamstatic.com/steam/apps/*/broadcast_*.jpg$image
 ||clan.cloudflare.steamstatic.com/images/*.png$image
 ||clan.cloudflare.steamstatic.com/images/*.png$image
 
 studocu.com###main-wrapper > div:nth-of-type(17)
-
-symbolab.com###Examples_section
-symbolab.com###bar-Example
-symbolab.com###brand-homepage > table.homepage-center:nth-child(2)
-symbolab.com###go-to-store > img
-symbolab.com###homepage-explore
-symbolab.com###homepage-headline
-symbolab.com###homepage-second-block
-symbolab.com###nl-subNav
-symbolab.com###right-section
-symbolab.com###save-as-bookmark-notebook
-symbolab.com###save-as-bookmark-signin
-symbolab.com###send-us-feedback
-symbolab.com##.hide-until-loaded.print-hide.center-section-narrow.sidebar-content1
-symbolab.com##div.leftMenu.leftMenu-narrow
-symbolab.com##section.sidebar-content1.center-section-narrow.print-hide:last-child
 
 tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###site-notice
 tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###siteNotice
@@ -599,8 +398,6 @@ time.is##div.onedate:nth-of-type(1)
 time.is##h3
 
 tumblr.com##.B15CE
-
-to-do.live.com##.obf-Visible.obf-Toast
 
 tracker.gg##.premium-upsell-tooltip.trn-tooltip--active.trn-tooltip
 
@@ -627,9 +424,6 @@ weather.com##.ContentMedia--mediaImg--Ehafk.MediaObject--mediaImg--mY1W6
 
 web.telegram.org##.chatlist-bottom > .sidebar-left-section-container
 
-weibo.com##.LoginCard_wrap_18dK4.Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
-weibo.com##.LoginTopNav_videoc_1MUJ1
-
 wikiwand.com##.footer_donation__Cje_Q
 wikiwand.com##.footer_subTitle__2Qrwq
 wikiwand.com##.footer_title__GtcWC
@@ -640,9 +434,6 @@ windy.com##.show.weather-box.animation
 wolframalpha.com##.MmSr.sc-27aa800e-0.csqIdz.sc-183a9123-3
 wolframalpha.com##.QRoJJ.sc-f3dfd2ae-0
 wolframalpha.com##.chGUCO.sc-373a152b-0
-
-wordcounter.net###top_counter > .row
-wordcounter.net###editor_container > div > .row
 
 x.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r:nth-of-type(1) > .r-12vffkv.css-175oi2r
 x.com##.r-14gqq1x.r-6gpygo.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r > .r-1ny4l3l.r-dnmrzs.r-1wbh5a2.css-175oi2r
@@ -657,21 +448,3 @@ x.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.c
 x.com##div.r-14wv3jr.r-g2wdr4.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.css-175oi2r:nth-of-type(4) > .r-1ny4l3l.r-1f1sjgu.r-ymttw5.r-1wtj0ep.css-175oi2r > .r-7cikom.r-18u37iz.css-175oi2r
 x.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(1)
 x.com##div.r-ymttw5.css-175oi2r:nth-of-type(2)
-
-you.com##.LQwHO.sc-196cc170-0
-you.com##.blpnYK.sc-bb226f16-0
-you.com##.cnaKES.sc-6c4b6bfa-0
-you.com##.dVxNFJ.sc-8c28d312-9
-you.com##.dWukXE.sc-d7e0e095-0
-you.com##.eDRRLP.sc-f838178a-0
-you.com##.fGblHt.sc-191b525d-9
-you.com##.ffsAZk.sc-cc5a18b7-1
-you.com##.hzrZBZ.sc-49290fb9-0
-you.com##.inBNP.sc-91f548bc-1
-you.com##.izqrBn.sc-d9f31138-0
-you.com##.jlPksG.sc-69c436d2-2 > .dbxkjo.sc-42f19d8d-0
-you.com##.kEfGjV.sc-38580842-9
-you.com##.kvVbDV.sc-3022399e-0
-you.com##.ljWYYA.sc-18e0beb6-0
-
-zoom.us##.layout-aside
