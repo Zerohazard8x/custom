@@ -88,11 +88,6 @@ curseforge.com##.game-header
 deepl.com##.CharLimitSignupAdV2-module--heading--VD2iq
 deepl.com##.empty\:hidden.z-20.left-2.bottom-2.fixed
 
-developer.android.com##.android-promo.devsite-landing-row-no-image-background.devsite-landing-row-2-up.devsite-landing-row
-developer.android.com##devsite-snackbar
-||developer.android.com/*mages/*.svg$image
-||gstatic.com/images/icons/material/product*youtube*g$image
-
 developer.mozilla.org##.fallback.top-banner
 
 discord.com##.embedMargin_ad0b71.embedProvider_ad0b71
