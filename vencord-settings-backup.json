@@ -89,7 +89,7 @@
                 "enabled": false
             },
             "BiggerStreamPreview": {
-                "enabled": true
+                "enabled": false
             },
             "BlurNSFW": {
                 "enabled": true,
@@ -156,7 +156,7 @@
                 "oldIcon": false
             },
             "GifPaste": {
-                "enabled": true
+                "enabled": false
             },
             "HideAttachments": {
                 "enabled": false
@@ -182,7 +182,7 @@
                 "enabled": false
             },
             "KeepCurrentChannel": {
-                "enabled": true
+                "enabled": false
             },
             "LastFMRichPresence": {
                 "enabled": false
@@ -252,7 +252,7 @@
                 "enabled": false
             },
             "MutualGroupDMs": {
-                "enabled": true
+                "enabled": false
             },
             "NoBlockedMessages": {
                 "enabled": false
@@ -288,9 +288,6 @@
                 "enabled": false
             },
             "OpenInApp": {
-                "enabled": false
-            },
-            "Party mode 🎉": {
                 "enabled": false
             },
             "PermissionsViewer": {
@@ -349,7 +346,8 @@
                 "enabled": true,
                 "chatMentions": true,
                 "memberList": true,
-                "voiceUsers": true
+                "voiceUsers": true,
+                "reactorsList": true
             },
             "SearchReply": {
                 "enabled": false
@@ -370,12 +368,15 @@
                 "enabled": true
             },
             "ShowConnections": {
-                "enabled": true,
+                "enabled": false,
                 "iconSize": 32,
                 "iconSpacing": 1
             },
             "ShowHiddenChannels": {
-                "enabled": false
+                "enabled": true,
+                "hideUnreads": true,
+                "showMode": 0,
+                "defaultAllowedUsersAndRolesDropdownState": true
             },
             "ShowMeYourName": {
                 "enabled": true,
@@ -425,7 +426,8 @@
                 "enabled": true,
                 "includeMutedChannels": false,
                 "includeBlockedUsers": false,
-                "includeCurrentChannel": true
+                "includeCurrentChannel": true,
+                "indicatorMode": 3
             },
             "TypingTweaks": {
                 "enabled": true,
@@ -473,7 +475,7 @@
                 "enabled": true
             },
             "ViewIcons": {
-                "enabled": true,
+                "enabled": false,
                 "format": "png",
                 "imgSize": "4096"
             },
@@ -527,9 +529,6 @@
             "SecretRingToneEnabler": {
                 "enabled": false
             },
-            "ServerProfile": {
-                "enabled": false
-            },
             "ThemeAttributes": {
                 "enabled": false
             },
@@ -546,7 +545,7 @@
                 "enabled": false
             },
             "NoTypingAnimation": {
-                "enabled": true
+                "enabled": false
             },
             "WebKeybinds": {
                 "enabled": true
@@ -583,7 +582,7 @@
                 "enabled": false
             },
             "FixYoutubeEmbeds": {
-                "enabled": false
+                "enabled": true
             },
             "DisableCallIdle": {
                 "enabled": true
@@ -596,7 +595,8 @@
                 "showTimeouts": true,
                 "showInvitesPaused": true,
                 "showModView": true,
-                "disableDiscoveryFilters": true
+                "disableDiscoveryFilters": true,
+                "disableDisallowedDiscoveryFilters": true
             },
             "BetterRoleContext": {
                 "enabled": false
@@ -610,7 +610,7 @@
                 "enabled": false
             },
             "FriendsSince": {
-                "enabled": false
+                "enabled": true
             },
             "ImageLink": {
                 "enabled": false
@@ -640,7 +640,65 @@
                 "enabled": false
             },
             "VoiceDownload": {
+                "enabled": true
+            },
+            "PartyMode": {
                 "enabled": false
+            },
+            "AutomodContext": {
+                "enabled": false
+            },
+            "CtrlEnterSend": {
+                "enabled": false
+            },
+            "CustomIdle": {
+                "enabled": false
+            },
+            "NoDefaultHangStatus": {
+                "enabled": false
+            },
+            "NoServerEmojis": {
+                "enabled": false
+            },
+            "ReplaceGoogleSearch": {
+                "enabled": false
+            },
+            "ShowTimeoutDuration": {
+                "enabled": false
+            },
+            "ValidReply": {
+                "enabled": false
+            },
+            "MessageUpdaterAPI": {
+                "enabled": true
+            },
+            "DontRoundMyTimestamps": {
+                "enabled": false
+            },
+            "MaskedLinkPaste": {
+                "enabled": true
+            },
+            "ServerInfo": {
+                "enabled": false
+            },
+            "UserSettingsAPI": {
+                "enabled": true
+            },
+            "AppleMusicRichPresence": {
+                "enabled": false
+            },
+            "CopyEmojiMarkdown": {
+                "enabled": false
+            },
+            "NoOnboardingDelay": {
+                "enabled": false
+            },
+            "Summaries": {
+                "enabled": true,
+                "summaryExpiryThresholdDays": 3
+            },
+            "WatchTogetherAdblock": {
+                "enabled": true
             }
         },
         "notifications": {
@@ -653,9 +711,9 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1715351452786
+            "settingsSyncVersion": 1719280167757
         },
         "enabledThemes": []
     },
-    "quickCss": "@import url(\"https://fonts.googleapis.com/css?family=Inter|Noto+Sans+JP|Noto+Sans+TC|Noto+Sans+SC|Noto+Sans+KR|Shippori+Mincho|Noto+Serif+JP|Noto+Serif+TC|Noto+Serif+SC|Noto+Serif+KR|Fira+Mono|Source+Serif+4\");\r\n\r\n:root {\r\n    /* Define variables */\r\n    --noto: \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\",\r\n            \"Noto Sans\";\r\n    --sans: -apple-system, BlinkMacSystemFont, \"SF Pro\", \"SF Pro Text\",\r\n        \"Roboto Flex\", \"Roboto\", \"Inter V\", Inter, \"Fira Sans\", FiraGO,\r\n        \"FF Meta\", var(--noto);\r\n    --mono-combo: \"Monaspace Argon Var\", \"Monaspace Argon VF\",\r\n            \"Monaspace Argon\", \"Fira Mono\";\r\n}\r\n\r\n.card-3ie2dy div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2:not(.title-HAL6j-):not(.heading-style-h2),\r\nh3,\r\nspan:not(.codeLine__3797b span span):not(.codeLine__3797b span):not(\r\n        .codeLine__3797b span span span\r\n    ),\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", var(--noto), \"Helvetica Neue\", Helvetica, Arial,\r\n        sans-serif !important;\r\n}\r\n\r\n.codeLine__3797b,\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--mono-combo), Consolas, \"Andale Mono WT\",\r\n        \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\",\r\n        \"Liberation Mono\", \"Nimbus Mono L\", Monaco, \"Courier New\", Courier,\r\n        monospace !important;\r\n}\r\n\r\n*:not(\r\n        pre *,\r\n        .far,\r\n        .fa,\r\n        .glyphicon,\r\n        [class*=\"vjs-\"],\r\n        .fab,\r\n        .fa-github,\r\n        .fas,\r\n        .material-icons,\r\n        .icofont,\r\n        .typcn,\r\n        mu,\r\n        [class*=\"mu-\"],\r\n        .glyphicon,\r\n        .icon\r\n    ) {\r\n    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */\r\n    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */\r\n    -ms-font-smoothing: antialiased !important; /* for IE */\r\n    text-rendering: optimizeLegibility !important;\r\n    \r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n        \r\n    font-size-adjust: from-font !important;\r\n}\r\n\r\npre,\r\ncode,\r\ntt {        \r\n    font-feature-settings: \"liga\", \"clig\", \"calt\" !important;\r\n\r\n    -webkit-font-smoothing: antialiased !important;\r\n    -moz-osx-font-smoothing: grayscale !important;\r\n    -ms-font-smoothing: antialiased !important;\r\n    text-rendering: optimizeLegibility !important;\r\n    \r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n    \r\n    font-size-adjust: from-font !important;\r\n}"
+    "quickCss": ":root {\r\n    --noto: var(--sans, \"\"), var(--emoji, \"\"), \"Noto Sans JP\",\r\n        \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\", \"Noto Sans Thai\",\r\n        \"Noto Sans Devanagari\", PingFang, \"PingFang SC\", \"Hiragino Sans\",\r\n        \"Apple SD Gothic Neo\", Thonburi, \"Tiro Devanagari Hindi\",\r\n        \"Geeza Pro\", Geeza, \"Yu Gothic\", \"Microsoft YaHei UI\",\r\n        \"Microsoft YaHei\", \"Malgun Gothic\", \"Leelawadee UI\", \"Nirmala UI\",\r\n        \"Segoe UI Arabic\";\r\n    --emoji: \"Apple Color Emoji\", \"SF Symbols\", \"Segoe UI Emoji\",\r\n        \"Segoe Fluent Icons\", \"Segoe MDL2 Assets\", \"Segoe UI Symbol\",\r\n        \"Noto Color Emoji\", \"Noto Sans Symbols\", \"EmojiOne Color\",\r\n        \"Twemoji Mozilla\";\r\n    --sans: -apple-system, BlinkMacSystemFont, \"Inter V\", \"Roboto\",\r\n        \"Avenir Next\", Avenir, \"Segoe UI Variable\", \"Segoe UI\",\r\n        var(--noto, \"\");\r\n    --serif: Rockwell, Century, \"Century Schoolbook\", Georgia,\r\n        \"Noto Serif JP\", \"Noto Serif TC\", \"Noto Serif SC\", \"Noto Serif KR\",\r\n        \"Noto Serif Thai\", \"Noto Serif Devanagari\", \"Noto Naskh Arabic\",\r\n        \"Noto Serif\", var(--noto, \"\");\r\n    --monospace: \"Monaspace Argon Var\", \"Monaspace Argon VF\",\r\n        \"Monaspace Argon\", \"Fira Mono\";\r\n    --block-mono: \"JetBrains Mono\", \"JetBrains Mono NL\",\r\n        \"JetBrainsMono Nerd Font\", \"Fantasque Sans Mono\";\r\n    --mono-combo: var(--block-mono, \"\"), var(--monospace, \"\");\r\n}\r\n\r\nbody,\r\ntextarea,\r\ninput,\r\nbutton,\r\nselect,\r\n::placeholder,\r\n.card-3ie2dy div div,\r\n.constrainedRow-3y91Xf,\r\n.container-1eFtFS,\r\n.defaultColor-1EVLSt,\r\n.headerText-10ez_d,\r\n.standardSidebarView-E9Pc3j,\r\n.text-sm-normal-AEQz4v,\r\n.text-xs-normal-3O7EaX,\r\nbutton,\r\nh2:not(.title-HAL6j-):not(.heading-style-h2),\r\nh3,\r\nspan:not(.codeLine__3797b span span):not(.codeLine__3797b span):not(\r\n        .codeLine__3797b span span span\r\n    ),\r\ninput,\r\n.message-wB3GWa,\r\n.text-md-semibold-2VMhBr {\r\n    font-family: \"gg sans\", \"Noto Sans\", \"Helvetica Neue\", Helvetica, Arial,\r\n        var(--noto, \"\"), sans-serif !important;\r\n}\r\n\r\n.codeLine__3797b,\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--mono-combo, \"\"), Consolas, \"Andale Mono WT\",\r\n        \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\",\r\n        \"Liberation Mono\", \"Nimbus Mono L\", Monaco, \"Courier New\", Courier,\r\n        monospace !important;\r\n}"
 }
