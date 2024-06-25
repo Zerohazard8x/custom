@@ -8,7 +8,7 @@
 @version        2.8.6
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com") {
+@-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("nitter.net"), domain("instructure.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com"), domain("mail.google.com"), domain("translate.google.com") {
     :root {
         /* Define variables */
         --noto: var(--emoji, ""), "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
@@ -341,5 +341,26 @@
 @-moz-document domain("inoreader.com") {
     body {
         font-family: Roboto, var(--noto, ""), sans-serif !important;
+    }
+}
+
+@-moz-document domain("mail.google.com") {
+    body,
+    input,
+    textarea,
+    select,
+    .zA > .a4W,
+    .yW,
+    .ha > .hP,
+    .gb_xe {
+        font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial,
+            var(--noto, ""), sans-serif !important;
+    }
+}
+
+@-moz-document domain("translate.google.com") {
+    body {
+        font-family: Roboto, RobotoDraft, Helvetica, Arial, var(--noto, ""),
+            sans-serif !important;
     }
 }
