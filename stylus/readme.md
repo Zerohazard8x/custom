@@ -1,7 +1,7 @@
 # Easy-import links
 
 - [Monospace](https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.styl)
-- [Monospace 2](ttps://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl)
+- [Monospace 2](https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.styl)
 - [Personal](https://github.com/Zerohazard8x/custom/raw/main/stylus/personal-style.user.styl)
 - [Personal 2](https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.styl)
 - [Text Rendering Tweaks](https://github.com/Zerohazard8x/custom/raw/main/stylus/text-rendering.user.styl)
