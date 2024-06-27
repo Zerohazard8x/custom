@@ -170,12 +170,16 @@
 
 @-moz-document domain("reddit.com"), domain("undelete.pullpush.io") {
     body,
-    #search input[type="text"] {
-        font-family: NotoSans, "Noto Sans", var(--sans, ""), verdana, arial,
-            helvetica, sans-serif, var(--noto, "") !important;
-    }
-
-    shreddit-app,
+    #search input[type="text"],
+    .flat-vert.title,
+    :root,
+    button,
+    html,
+    input,
+    select,
+    .side .titlebox .md,
+    .comments-page .commentarea .menuarea,
+    .comments-page .panestack-title,
     .entry .buttons li a,
     .entry .buttons li,
     .linkinfo,
@@ -187,11 +191,17 @@
     .side .md p,
     .side .md ul,
     .side .md ol {
-        font-family: NotoSans, "Noto Sans", -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, var(--noto, "") !important;
+        font-family: NotoSans, "Noto Sans",
+            var(
+                --font-sans,
+                "var(--sans, " "), verdana, arial, helvetica, sans-serif"
+            ),
+            var(--noto, "") !important;
     }
 
+    div.prefixedName.font-bold.truncate.mr-xs,
+    h1,
+    #header-bottom-left .tabmenu,
     .link .title,
     .entry .tagline,
     .flair,
@@ -206,10 +216,8 @@
         ):not(p em a):not(faceplate-tracker a):not(ul li a):not(
             .pointer-events-auto
         ):not(h6 a):not(.a):not(object a):not(span.nowrap a) {
-        font-family: IBMPlexSans, var(--plex, ""), Lato, NotoSans, "Noto Sans",
-            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", sans-serif, var(--noto, "") !important;
+        font-family: IBMPlexSans, var(--plex, ""), Lato, var(--font-sans, ""),
+            var(--noto, "") !important;
     }
 
     .md pre,
