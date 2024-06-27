@@ -169,7 +169,8 @@
 }
 
 @-moz-document domain("reddit.com"), domain("undelete.pullpush.io") {
-    body {
+    body,
+    #search input[type="text"] {
         font-family: NotoSans, "Noto Sans", var(--sans, ""), verdana, arial,
             helvetica, sans-serif, var(--noto, "") !important;
     }
@@ -177,7 +178,6 @@
     shreddit-app,
     .entry .buttons li a,
     .entry .buttons li,
-    #search input[type="text"],
     .linkinfo,
     .side .md .-blocks,
     .side .md .-lists,
