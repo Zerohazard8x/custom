@@ -201,7 +201,7 @@
         font-family: var(--plex, ""), "Noto Sans", -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-            var(--noto, ""), sans-serif, var(--noto, "") !important;
+            sans-serif, var(--noto, "") !important;
     }
 
     #header .redditname a::after,
