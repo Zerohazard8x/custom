@@ -38,9 +38,10 @@
             "Roboto", Barlow, Whitney, Lato, "Segoe UI Variable", "Segoe UI",
             "Motiva Sans", "Proxima Vara", "Proxima Nova", Inter, "Avenir Next",
             Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO, "FF Meta",
-            Manrope, "Helvetica Neue", "Helvetica", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu",
+            Manrope, "Helvetica Neue", "Helvetica", var(--plex, ""), "Ubuntu",
             "Open Sans", "Droid Sans"; */
+        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans";
         --serif: Rockwell, Century, "Century Schoolbook", Georgia,
             "Noto Serif JP", "Noto Serif TC", "Noto Serif SC", "Noto Serif KR",
             "Noto Serif Thai", "Noto Serif Devanagari", "Noto Naskh Arabic",
@@ -81,7 +82,8 @@
 }
 
 @-moz-document domain("github.com") {
-    body, .markdown-body {
+    body,
+    .markdown-body {
         font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
             BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial,
             sans-serif, "Apple Color Emoji", "Segoe UI Emoji", var(--noto, "") !important;
@@ -167,23 +169,35 @@
 }
 
 @-moz-document domain("reddit.com"), domain("undelete.pullpush.io") {
-    :root {
-        /* Define variables */
-        --plex: IBMPlexSans, "IBM Plex Sans Var", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "IBM Plex Sans";
+    body {
+        font-family: NotoSans, "Noto Sans", var(--sans, ""), verdana, arial,
+            helvetica, sans-serif, var(--noto, "") !important;
     }
 
-    h1.font-bold,
-    a.text-neutral-content-strong,
-    .button .flex,
-    .flair-content,
-    .input-container input,
-    .text-ellipsis span,
-    .tagline a,
-    #title,
-    .label-container,
-    .text-12:not(.text-neutral-content-weak):not(.truncate),
-    .text-neutral-content-strong,
+    shreddit-app,
+    .linkinfo,
+    .side .md .-blocks,
+    .side .md .-lists,
+    .side .md pre,
+    .side .md blockquote,
+    .side .md table,
+    .side .md p,
+    .side .md ul,
+    .side .md ol {
+        font-family: NotoSans, "Noto Sans", -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, var(--noto, "") !important;
+    }
+
+    .link .title,
+    .entry .tagline,
+    .flair,
+    .titlebox .usertext a,
+    .side::after {
+        font-family: IBMPlexSans, var(--plex, ""), Lato, Arial, "Helvetica Neue",
+            "Helvetica", sans-serif, var(--noto, "") !important;
+    }
+
     a:not(.content li a):not(* p a):not(.bottom a):not(
             ._1a_HxF03jCyxnx706hQmJR a
         ):not(.comments):not(.post-sharing-button):not(.login-required a):not(
@@ -192,117 +206,11 @@
             .recover-password
         ):not(p em a):not(faceplate-tracker a):not(ul li a):not(
             .pointer-events-auto
-        ):not(h6 a):not(.a):not(object a):not(span.nowrap a),
-    time:not(.bottom span time):not(.linkinfo .date time),
-    .text-neutral-content-weak:not(h2):not(.leading-4 *):not(
-            .py-md .text-neutral-content-weak
-        ),
-    .text-neutral-content-strong {
-        font-family: var(--plex, ""), "Noto Sans", -apple-system,
-            BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-            sans-serif, var(--noto, "") !important;
-    }
-
-    #header .redditname a::after,
-    .titlebox h1.redditname a::after,
-    #header,
-    #search input,
-    ._1LHxa-yaHJwrPK8kuyv_Y4,
-    ._1ra1vBLrjtHjhYDZ_gOy8F,
-    ._2-cXnP74241WI7fpcpfPmg,
-    ._3VvVLJHakguGRWc5JxUX40,
-    ._3yx4Dn0W3Yunucf5sVJeFU,
-    .btn,
-    .c-btn.login-required,
-    .commentsignupbar__cta-button,
-    .commentsignupbar__desc,
-    .commentsignupbar__textarea-above,
-    .commentsignupbar__title,
-    .entry .buttons li a,
-    .flair,
-    .flairrichtext,
-    .head,
-    .hover,
-    .linkflairlabel,
-    .loggedin,
-    .morelink,
-    .q_unSaY23rpdd3lDvGZ-,
-    .redditname,
-    .score,
-    .side::after,
-    .stamp,
-    .title h1,
-    .title-button,
-    .title:not(.sidecontentbox .title),
-    .titlebox h1,
-    .titlebox::before,
-    .top-matter .tagline,
-    body > h1,
-    h4,
-    h5,
-    ._3oHXlwUZwpR5SS-8P9tILX {
-        font-family: NotoSans, "Noto Sans", var(--plex, ""), "Helvetica Neue",
-            "Helvetica", "Arial", sans-serif, var(--noto, "") !important;
-    }
-
-    .titlebox .fancy-toggle-button .add.active.option:before,
-    .linkinfo .score,
-    .linkinfo .number,
-    .linkinfo .word,
-    .md p a,
-    :root,
-    button,
-    html,
-    input,
-    select,
-    thead tr th,
-    object a,
-    #header .tabmenu li:first-child a::after,
-    #description,
-    .add,
-    .author,
-    .buttons button,
-    .choice,
-    .date span,
-    .date,
-    .flat-list,
-    .gallery-nav-bar,
-    .inline-block,
-    .login-form input,
-    .login-form,
-    .login-required:not(.morelink .login-required):not(.c-btn),
-    .md table td,
-    .md
-        h1:not(.usertext-body .md h1):not(._3ms2Z8z8rPWLXaErcTJ9yH * h1):not(
-            .h-full div h1
-        ),
-    div.usertext-body div.md h1,
-    .md h2:not(._3ms2Z8z8rPWLXaErcTJ9yH h2),
-    .md h3:not(.mb-sm div h3),
-    .md p,
-    .numchildren,
-    .shortlink,
-    .side .md p,
-    .spacer,
-    .tagline,
-    .text-14:not(h3),
-    .user,
-    .users-online span,
-    a.button-small,
-    blockquote ul li,
-    body p,
-    shreddit-app,
-    .usertext-body {
-        font-family: NotoSans, "Noto Sans", var(--font-sans, ""), verdana,
-            var(--noto, ""), sans-serif, var(--noto, "") !important;
-    }
-
-    .subscribers,
-    .md p strong,
-    .subscribers .number {
-        font-family: NotoSans, "Noto Sans", "Helvetica Neue", "Helvetica",
-            "Arial", sans-serif, var(--noto, "") !important;
+        ):not(h6 a):not(.a):not(object a):not(span.nowrap a) {
+        font-family: IBMPlexSans, var(--plex, ""), NotoSans, "Noto Sans",
+            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol", sans-serif, var(--noto, "") !important;
     }
 
     .md pre,

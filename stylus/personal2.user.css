@@ -22,9 +22,10 @@
             "Twemoji Mozilla";
         --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
             "Avenir Next", Avenir, "Segoe UI Variable", "Segoe UI";
-        --readable: "Public Sans", "Fira Sans", "Work Sans", "Bahnschrift",
-            "Aptos Narrow", "IBM Plex Sans Var", "IBM Plex Sans JP",
+        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP",
             "IBM Plex Sans KR", "IBM Plex Sans";
+        --readable: "Public Sans", "Fira Sans", "Bahnschrift", "Aptos Narrow",
+            var(--plex, "");
     }
 }
 

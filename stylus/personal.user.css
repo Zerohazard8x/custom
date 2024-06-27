@@ -23,15 +23,16 @@
             "Twemoji Mozilla";
         --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
             "Avenir Next", Avenir, "Segoe UI Variable", "Segoe UI";
+        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP",
+            "IBM Plex Sans KR", "IBM Plex Sans";
         --readable: "Public Sans", "Fira Sans", "Bahnschrift", "Aptos Narrow",
-            "IBM Plex Sans";
+            var(--plex, "");
         /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
             Recursive, "Atkinson Hyperlegible", "Aptos", "Source Sans Pro",
             "Nunito Sans", "Nunito", "Raleway", "Road UA", "Akshar", "DIN Next",
             "URW DIN", "DIN Alternate", "Bahnschrift", "Aptos Narrow",
             "alte din 1451 mittelschrift", "Keiner", "Dinish", "Dinish Expanded",
-            "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN", "IBM Plex Sans Var",
-            "IBM Plex Sans JP", "IBM Plex Sans KR", "IBM Plex Sans",
+            "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN", var(--plex, ""),
             "Aptos Display", "Trebuchet MS", "Roadgeek 2014",
             "Roadgeek 2005"; */
     }
