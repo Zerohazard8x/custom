@@ -193,11 +193,7 @@
     .entry .tagline,
     .flair,
     .titlebox .usertext a,
-    .side::after {
-        font-family: IBMPlexSans, var(--plex, ""), Lato, Arial, "Helvetica Neue",
-            "Helvetica", sans-serif, var(--noto, "") !important;
-    }
-
+    .side::after,
     a:not(.content li a):not(* p a):not(.bottom a):not(
             ._1a_HxF03jCyxnx706hQmJR a
         ):not(.comments):not(.post-sharing-button):not(.login-required a):not(
@@ -207,7 +203,7 @@
         ):not(p em a):not(faceplate-tracker a):not(ul li a):not(
             .pointer-events-auto
         ):not(h6 a):not(.a):not(object a):not(span.nowrap a) {
-        font-family: IBMPlexSans, var(--plex, ""), NotoSans, "Noto Sans",
+        font-family: IBMPlexSans, var(--plex, ""), Lato, NotoSans, "Noto Sans",
             -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
             "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
             "Segoe UI Symbol", sans-serif, var(--noto, "") !important;
