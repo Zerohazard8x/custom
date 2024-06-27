@@ -84,12 +84,12 @@
     .item_anchor__rLB49,
     .section-h {
         font-family: var(--serif, ""), "Noto Serif", "Noto Serif-fallback-1",
-            serif !important;
+            serif, var(--noto, "") !important;
     }
 
     .root_wrapper__apZti h1,
     .root_wrapper__apZti h2 {
-        font-family: var(--serif, ""), Noto Serif !important;
+        font-family: var(--serif, ""), Noto Serif, var(--noto, "") !important;
     }
 }
 

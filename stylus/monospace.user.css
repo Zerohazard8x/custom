@@ -147,7 +147,7 @@
 
     body {
         font-family: var(--sans, ""), -apple-system, "BlinkMacSystemFont",
-            "Segoe UI", "Roboto", "Inter", "Helvetica", "Arial", sans-serif;
+            "Segoe UI", "Roboto", "Inter", "Helvetica", "Arial", sans-serif, var(--noto, "");
     }
 
     blockquote,
@@ -157,7 +157,7 @@
     .content .mw-heading2,
     .content h2 {
         font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
-            "Source Serif Pro", serif !important;
+            "Source Serif Pro", serif, var(--noto, "") !important;
     }
 
     @media screen {
@@ -416,7 +416,7 @@
     h1,
     h2 {
         font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
-            serif !important;
+            serif, var(--noto, "") !important;
     }
 
     .template-infotable-monospace,
@@ -627,7 +627,7 @@
     }
 
     .starRating {
-        font-family: var(--mono, ""), Courier, serif !important;
+        font-family: var(--mono, ""), Courier, serif, var(--noto, "") !important;
     }
 }
 
