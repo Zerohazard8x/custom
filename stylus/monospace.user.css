@@ -8,7 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net"), domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("undelete.pullpush.io"), domain("deskthority.net"), domain("libreddit.bus-hit.me"), domain("redlib.freedit.eu"), regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net"), domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("undelete.pullpush.io"), domain("deskthority.net"), domain("libreddit.bus-hit.me"), domain("redlib.freedit.eu"), domain("redlib.pussthecat.org"), regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     :root {
         /* Define variables */
         --noto: var(--emoji, ""), "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
@@ -33,19 +33,18 @@
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
         --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
-            "Avenir Next", Avenir, "Segoe UI Variable", "Segoe UI",
-            var(--noto, "");
+            "Avenir Next", Avenir, "Segoe UI Variable", "Segoe UI";
         /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "Roboto Flex",
             "Roboto", Barlow, Whitney, Lato, "Segoe UI Variable", "Segoe UI",
             "Motiva Sans", "Proxima Vara", "Proxima Nova", Inter, "Avenir Next",
             Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO, "FF Meta",
             Manrope, "Helvetica Neue", "Helvetica", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu", var(--noto, ""),
+            "IBM Plex Sans KR", "IBM Plex Sans", "Ubuntu",
             "Open Sans", "Droid Sans"; */
         --serif: Rockwell, Century, "Century Schoolbook", Georgia,
             "Noto Serif JP", "Noto Serif TC", "Noto Serif SC", "Noto Serif KR",
             "Noto Serif Thai", "Noto Serif Devanagari", "Noto Naskh Arabic",
-            "Noto Serif", var(--noto, "");
+            "Noto Serif";
         /* --serif-full: "Source Serif", "Source Serif Pro", "Source Serif 4",
             "STIX Two Text", "Beaufort", "Beaufort Pro", Rockwell, Rokkitt,
             "Zilla Slab", "Serif UI", "Serif UI Text", Fraunces, Alegreya,
@@ -53,11 +52,10 @@
             "Century Schoolbook", "Libre Baskerville", Georgia, "ITC Garamond",
             "Apple Garamond", "Shippori Mincho", "Serif UI Display",
             "Noto Serif JP", "Noto Serif TC", "Noto Serif SC", "Noto Serif KR",
-            "Noto Serif Thai", "Noto Serif Devanagari", "Noto Serif",
-            var(--noto, ""); */
-        --monospace: "Monaspace Argon Var", "Monaspace Argon VF",
+            "Noto Serif Thai", "Noto Serif Devanagari", "Noto Serif"; */
+        --mono: var(--block-mono, ""), "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Mono";
-        /* --monospace-full: "Monaspace Argon Var", "Monaspace Argon VF",
+        /* --mono-full: var(--block-mono-full, ""), "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Code VF", "Fira Code", "Fira Mono",
             "Fira Code Retina", "Noto Mono", "Noto Sans Mono", "DroidSansM",
             "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font", Consolas,
@@ -79,8 +77,6 @@
             "Monaspace Krypton VF", "Monaspace Krypton", ProFontIIx,
             ProFontWindows, "Iosevka", "Iosevka Nerd Font",
             "IosevkaTerm Nerd Font", "Input Sans"; */
-        /* --mono-combo: var(--monospace, ""); */
-        --mono-combo: var(--block-mono, ""), var(--monospace, "");
     }
 }
 
@@ -106,8 +102,8 @@
             BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
             "MonaSansFallback", -apple-system, BlinkMacSystemFont, "Segoe UI",
-            "Noto Sans", Helvetica, Arial, var(--noto, ""), sans-serif,
-            "Apple Color Emoji", "Segoe UI Emoji" !important;
+            "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", var(--noto, "") !important;
     }
 
     tt,
@@ -136,7 +132,8 @@
                 Consolas,
                 Liberation Mono,
                 monospace
-            ) !important;
+            ),
+            var(--noto, "") !important;
     }
 }
 
@@ -144,7 +141,7 @@
     @media screen {
         html,
         body {
-            font-family: var(--sans, ""), sans-serif !important;
+            font-family: var(--sans, ""), sans-serif, var(--noto, "") !important;
         }
     }
 
@@ -179,7 +176,7 @@
     .diff tbody tr * *,
     code,
     pre span {
-        font-family: var(--mono-combo, ""), monospace !important;
+        font-family: var(--mono, ""), monospace, var(--noto, "") !important;
     }
 }
 
@@ -218,7 +215,7 @@
         font-family: var(--plex, ""), "Noto Sans", -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-            var(--noto, ""), sans-serif !important;
+            var(--noto, ""), sans-serif, var(--noto, "") !important;
     }
 
     #header .redditname a::after,
@@ -260,7 +257,7 @@
     h5,
     ._3oHXlwUZwpR5SS-8P9tILX {
         font-family: NotoSans, "Noto Sans", var(--plex, ""), "Helvetica Neue",
-            "Helvetica", "Arial", var(--noto, ""), sans-serif !important;
+            "Helvetica", "Arial", sans-serif, var(--noto, "") !important;
     }
 
     .titlebox .fancy-toggle-button .add.active.option:before,
@@ -312,25 +309,25 @@
     shreddit-app,
     .usertext-body {
         font-family: NotoSans, "Noto Sans", var(--font-sans, ""), verdana,
-            var(--noto, ""), sans-serif !important;
+            var(--noto, ""), sans-serif, var(--noto, "") !important;
     }
 
     .subscribers,
     .md p strong,
     .subscribers .number {
         font-family: NotoSans, "Noto Sans", "Helvetica Neue", "Helvetica",
-            "Arial", var(--noto, ""), sans-serif !important;
+            "Arial", sans-serif, var(--noto, "") !important;
     }
 
     .md pre,
     code,
     #shortlink-text {
-        font-family: var(--mono-combo, ""), monospace !important;
+        font-family: var(--mono, ""), monospace, var(--noto, "") !important;
     }
 
     ._34q3PgLsx9zIU5BiSOjFoM {
-        font-family: var(--mono-combo, ""), Noto Mono, Monaco, Consolas,
-            monospace !important;
+        font-family: var(--mono, ""), Noto Mono, Monaco, Consolas,
+            monospace, var(--noto, "") !important;
     }
 }
 
@@ -356,7 +353,7 @@
     .s-prose code,
     pre.s-code-block > code,
     code {
-        font-family: var(--mono-combo, ""), var(--ff-mono, "") !important;
+        font-family: var(--mono, ""), var(--ff-mono, "") !important;
     }
 }
 
@@ -364,8 +361,8 @@
     /* ChatGPT */
     code,
     .shrink-0 {
-        font-family: var(--mono-combo, ""), Söhne Mono, Monaco, Andale Mono,
-            Ubuntu Mono, monospace !important;
+        font-family: var(--mono, ""), Söhne Mono, Monaco, Andale Mono,
+            Ubuntu Mono, monospace, var(--noto, "") !important;
     }
 
     .katex-error {
@@ -377,8 +374,8 @@
     .w3-code,
     .language-java,
     .w3-codespan {
-        font-family: var(--mono-combo, ""), Consolas, "Source Code Pro", Menlo,
-            Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+        font-family: var(--mono, ""), Consolas, "Source Code Pro", Menlo,
+            Monaco, "Andale Mono", "Ubuntu Mono", monospace, var(--noto, "") !important;
     }
 }
 
@@ -389,11 +386,11 @@
     #sidebar,
     h3 {
         font-family: var(--sans, ""), "Open Sans", "Helvetica Neue", Helvetica,
-            "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif !important;
+            "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif, var(--noto, "") !important;
     }
 
     .mw-editsection {
-        font-family: var(--sans, ""), sans-serif !important;
+        font-family: var(--sans, ""), sans-serif, var(--noto, "") !important;
     }
 
     input {
@@ -401,7 +398,7 @@
     }
 
     .pBody {
-        font-family: var(--sans, ""), verdana, sans-serif !important;
+        font-family: var(--sans, ""), verdana, sans-serif, var(--noto, "") !important;
     }
 
     #personal h2 {
@@ -413,7 +410,7 @@
     :lang(zh),
     :lang(ja),
     :lang(ko) {
-        font-family: var(--sans, ""), sans-serif !important;
+        font-family: var(--sans, ""), sans-serif, var(--noto, "") !important;
     }
 
     h1,
@@ -426,12 +423,12 @@
     code,
     tt,
     .mw-parser-output pre {
-        font-family: var(--mono-combo, ""), monospace !important;
+        font-family: var(--mono, ""), monospace, var(--noto, "") !important;
     }
 
     p span b:not(.Latn) {
-        font-family: var(--mono-combo, ""), Consolas, DejaVu Sans Mono,
-            Droid Sans Mono, Lucida Console, Courier New, monospace !important;
+        font-family: var(--mono, ""), Consolas, DejaVu Sans Mono,
+            Droid Sans Mono, Lucida Console, Courier New, monospace, var(--noto, "") !important;
     }
 }
 
@@ -477,7 +474,7 @@
     .ZkkK1e,
     .ZwRhJd {
         font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, Arial,
-            var(--noto, ""), sans-serif !important;
+            var(--noto, ""), sans-serif, var(--noto, "") !important;
     }
 
     /* Force Google Sans (if available) */
@@ -485,24 +482,24 @@
     .GLcBOb,
     #result-stats {
         font-family: "Google Sans", var(--google, ""), arial, var(--noto, ""),
-            sans-serif !important;
+            sans-serif, var(--noto, "") !important;
     }
 
     .YmvwI {
         font-family: Google Sans, var(--google, ""), Arial, var(--noto, ""),
-            sans-serif-medium, sans-serif !important;
+            sans-serif-medium, sans-serif, var(--noto, "") !important;
     }
 
     .googlegpt pre,
     #googlegpt-chatbar,
     .markdown p code {
-        font-family: "Google Sans Mono", var(--mono-combo, ""), monospace !important;
+        font-family: "Google Sans Mono", var(--mono, ""), monospace, var(--noto, "") !important;
     }
 }
 @-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
     /* Bing */
     /* 	body {
-		font-family: "-apple-system",HelveticaNeue,Roboto,Arial,var(--noto, ""),sans-serif !important;
+		font-family: "-apple-system",HelveticaNeue,Roboto,Arial,var(--noto, ""),sans-serif, var(--noto, "") !important;
 	} */
 
     body,
@@ -512,19 +509,19 @@
     .b_underSearchbox,
     #b_header {
         font-family: Roboto, Helvetica, "-apple-system", HelveticaNeue, Roboto,
-            Arial, var(--noto, ""), sans-serif !important;
+            Arial, sans-serif, var(--noto, "") !important;
     }
 
     h1,
     h2,
     h3 {
-        font-family: Roboto, var(--noto, ""), sans-serif !important;
+        font-family: Roboto, sans-serif, var(--noto, "") !important;
     }
 
     div.content {
         font-family: -apple-system, Roboto, SegoeUI, "Segoe UI",
             "Helvetica Neue", Helvetica, "Microsoft YaHei", "Meiryo UI", Meiryo,
-            Arial Unicode MS, var(--noto, ""), sans-serif !important;
+            Arial Unicode MS, sans-serif, var(--noto, "") !important;
     }
 
     .code_blu,
@@ -535,7 +532,7 @@
     .rd_cCodeBg,
     .rd_code_blu,
     .rd_code_red {
-        font-family: var(--mono-combo, ""), Consolas, Courier, monospace !important;
+        font-family: var(--mono, ""), Consolas, Courier, monospace, var(--noto, "") !important;
     }
 }
 
@@ -543,7 +540,7 @@
     div .text pre,
     .container div code,
     .outputDiv pre {
-        font-family: var(--mono-combo, ""), Consolas, monospace !important;
+        font-family: var(--mono, ""), Consolas, monospace, var(--noto, "") !important;
     }
 }
 
@@ -573,7 +570,7 @@
     .message-wB3GWa,
     .text-md-semibold-2VMhBr {
         font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
-            var(--noto, ""), sans-serif !important;
+            var(--noto, ""), sans-serif, var(--noto, "") !important;
     }
 
     .codeLine__3797b,
@@ -582,10 +579,10 @@
     .inlineCode-ERyvy_,
     table,
     .inline {
-        font-family: var(--mono-combo, ""), Consolas, "Andale Mono WT",
+        font-family: var(--mono, ""), Consolas, "Andale Mono WT",
             "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
             "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
-            monospace !important;
+            monospace, var(--noto, "") !important;
     }
 }
 
@@ -600,13 +597,13 @@
             "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
             "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L",
             "Liberation Sans", "Open Sans", FreeSans, Arial, var(--noto, ""),
-            sans-serif !important;
+            sans-serif, var(--noto, "") !important;
     }
 
     code,
     .wZ4JdaHxSAhGy1HoNVja span span,
     .ddgpt pre {
-        font-family: var(--mono-combo, ""), Consolas, Menlo, Monaco, monospace !important;
+        font-family: var(--mono, ""), Consolas, Menlo, Monaco, monospace, var(--noto, "") !important;
     }
 
     .eO9dloD5J8OJewxQVUem .D4hR0tobSBRm_mZ4hrlS span,
@@ -614,7 +611,7 @@
         .zOy00l5oxa1BzkYx8dfo
         .N5t7rxvhA9HFhN2jgj_I
         .hHVrjZST7zuknVVFtP6w {
-        font-family: var(--mono-combo, ""), var(--sds-font-family-monospace) !important;
+        font-family: var(--mono, ""), var(--sds-font-family-monospace) !important;
     }
 }
 
@@ -626,24 +623,24 @@
     .RatingsBoxAdjustedRating,
     input {
         font-family: var(--sans, ""), Arial, "Segoe UI", Frutiger,
-            "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif !important;
+            "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif, var(--noto, "") !important;
     }
 
     .starRating {
-        font-family: var(--mono-combo, ""), Courier, serif !important;
+        font-family: var(--mono, ""), Courier, serif !important;
     }
 }
 
 @-moz-document domain("perplexity.ai") {
     .ace_placeholder.ace_comment,
     code {
-        font-family: var(--mono-combo, ""), var(--font-berkeley-mono, "") !important;
+        font-family: var(--mono, ""), var(--font-berkeley-mono, "") !important;
     }
 
     .font-mono,
     .marker\:font-mono ::marker {
-        font-family: var(--mono-combo, ""), var(--font-berkeley-mono, ""),
-            ui-monospace, SFMono-Regular, monospace !important;
+        font-family: var(--mono, ""), var(--font-berkeley-mono, ""),
+            ui-monospace, SFMono-Regular, monospace, var(--noto, "") !important;
     }
 }
 
@@ -671,8 +668,8 @@
     textarea,
     .css-1vfp3rz-text,
     .menu-item__text {
-        font-family: Iosevka, var(--mono-combo, ""), monospace, "Lato Extended",
-            "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: Iosevka, var(--mono, ""), monospace, "Lato Extended",
+            "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, var(--noto, "") !important;
     }
 
     .css-i83wtf-baseButton__content,
@@ -760,19 +757,19 @@
     .css-17undkt-text,
     .css-16jy445-baseButton__content,
     .css-pljkwv-view-heading {
-        font-family: Iosevka, var(--mono-combo, ""), monospace, LatoWeb,
+        font-family: Iosevka, var(--mono, ""), monospace, LatoWeb,
             "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
-            sans-serif !important;
+            sans-serif, var(--noto, "") !important;
     }
 
     .ef-file-preview-header-download span,
     #App {
-        font-family: Iosevka, var(--mono-combo, ""), monospace, "Lato",
-            sans-serif !important;
+        font-family: Iosevka, var(--mono, ""), monospace, "Lato",
+            sans-serif, var(--noto, "") !important;
     }
 }
 
-@-moz-document domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("libreddit.bus-hit.me"), domain("redlib.freedit.eu") {
+@-moz-document domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("libreddit.bus-hit.me"), domain("redlib.pussthecat.org"), domain("redlib.freedit.eu") {
     /* Redlib */
     html,
     body,
@@ -799,10 +796,10 @@
     td,
     select,
     input {
-        font-family: "Inter", var(--noto, ""), sans-serif !important;
+        font-family: "Inter", sans-serif, var(--noto, "") !important;
     }
 
     .md code {
-        font-family: var(--mono-combo, ""), monospace, sans-serif !important;
+        font-family: var(--mono, ""), monospace, sans-serif, var(--noto, "") !important;
     }
 }
