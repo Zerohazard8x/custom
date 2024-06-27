@@ -175,7 +175,9 @@
     }
 
     shreddit-app,
-	#search input[type="text"],
+    .entry .buttons li a,
+    .entry .buttons li,
+    #search input[type="text"],
     .linkinfo,
     .side .md .-blocks,
     .side .md .-lists,
@@ -209,7 +211,7 @@
             "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
             "Segoe UI Symbol", sans-serif, var(--noto, "") !important;
     }
-	
+
     .md pre,
     code,
     #shortlink-text {
