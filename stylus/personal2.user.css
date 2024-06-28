@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.1.7
+@version        1.1.8
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
@@ -10,18 +10,19 @@
 
 @-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com") {
     :root {
-        --noto: var(--emoji, ""), "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari", PingFang,
+        --foreign: var(--emoji, ""), var(--noto, ""), PingFang,
             "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
             "Tiro Devanagari Hindi", "Geeza Pro", Geeza, "Yu Gothic",
             "Microsoft YaHei UI", "Microsoft YaHei", "Malgun Gothic",
             "Leelawadee UI", "Nirmala UI", "Segoe UI Arabic";
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
+            "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari";
         --emoji: "Apple Color Emoji", "SF Symbols", "Segoe UI Emoji",
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
         --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
-            "Avenir Next", Avenir, "Segoe UI Variable", "Segoe UI";
+            "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP",
             "IBM Plex Sans KR", "IBM Plex Sans";
         --readable: "Public Sans", "Fira Sans", "Bahnschrift", "Aptos Narrow",
@@ -33,7 +34,7 @@
     .q-box {
         font-family: var(--sans, ""), -apple-system, system-ui,
             BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-            Cantarell, "Helvetica Neue", sans-serif, var(--noto, "") !important;
+            Cantarell, "Helvetica Neue", sans-serif, var(--foreign, "") !important;
     }
 }
 
@@ -62,14 +63,14 @@
 
     #home-main-messaging h1,
     .messaging-title h2 {
-        font-family: Lato, "Roboto", Arial, Helvetica, sans-serif, var(--noto, "") !important;
+        font-family: Lato, "Roboto", Arial, Helvetica, sans-serif, var(--foreign, "") !important;
     }
 }
 
 @-moz-document domain("weibo.com"), domain("weibo.cn") {
     .woo-box-flex {
         font-family: var(--sans, ""), system-ui, -apple-system, Segoe UI, Roboto,
-            Ubuntu, Cantarell, Noto Sans, sans-serif, var(--noto, "") !important;
+            Ubuntu, Cantarell, Noto Sans, sans-serif, var(--foreign, "") !important;
     }
 
     .woo-like-count,
@@ -77,7 +78,7 @@
     .gn_position,
     .WB_footer {
         font-family: var(--sans, ""), Arial, "PingFang SC", "Hiragino Sans GB",
-            "Microsoft YaHei", "WenQuanYi Micro Hei", var(--noto, ""),
+            "Microsoft YaHei", "WenQuanYi Micro Hei", var(--foreign, ""),
             sans-serif;
     }
 
@@ -85,7 +86,7 @@
     .main-text,
     h4 {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
-            var(--noto, ""), sans-serif, var(--noto, "") !important;
+            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
     }
 
     .woo-input-main {
@@ -167,7 +168,7 @@
 
     /* iframe */
     html[stylus-iframe$="sports.cctv.com"] {
-        font-family: var(--hupu, ""), PingFangSC, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC, var(--foreign, "") !important;
     }
 
     body,
@@ -176,14 +177,14 @@
     select,
     textarea {
         font-family: var(--hupu, ""), "lucida grande", tahoma, verdana, arial,
-            \5b8b\4f53, sans-serif, var(--noto, "") !important;
+            \5b8b\4f53, sans-serif, var(--foreign, "") !important;
     }
 
     body,
     body *,
     html {
         font-family: var(--hupu, ""), hupufont-Regular, PingFangSC-Regular,
-            PingFang SC, Helvetica Neue, Helvetica, STHeiTi, sans-serif, var(--noto, "") !important;
+            PingFang SC, Helvetica Neue, Helvetica, STHeiTi, sans-serif, var(--foreign, "") !important;
     }
 
     .index_simple-detail-content__3FPFA,
@@ -207,25 +208,25 @@
     .bbs-index-web-bbsindexWarp div {
         font-family: var(--hupu, ""), PingFangSC-Regular, PingFang SC, miui,
             system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
-            Helvetica, sans-serif, var(--noto, "") !important;
+            Helvetica, sans-serif, var(--foreign, "") !important;
     }
 
     .bbs-sl-web-post-body,
     .bbs-sl-web-post-header,
     .bbs-sl-web-intro-detail-desc-title {
-        font-family: var(--hupu, ""), PingFangSC-Medium, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Medium, var(--foreign, "") !important;
     }
 
     .post-wrapper_bbs-post-wrapper-title__TLQdd p,
     .index_bbs-post-web-main-title-provider__uHAn9 span,
     .index_bbs-post-web-main-title-provider__uHAn9,
     .main-c {
-        font-family: var(--hupu, ""), PingFangSC-Semibold, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Semibold, var(--foreign, "") !important;
     }
 
     .content-header {
         font-family: var(--sans, ""), PingFangSC-Semibold, PingFang SC,
-            var(--noto, "") !important;
+            var(--foreign, "") !important;
     }
 
     .post-reply-list_post-reply-list-wrapper__o4_81
@@ -252,7 +253,7 @@
     .text-list-model,
     .user-operate,
     .list-item-lights {
-        font-family: var(--hupu, ""), PingFangSC-Regular, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Regular, var(--foreign, "") !important;
     }
 
     .notLogin a span,
@@ -265,7 +266,7 @@
     .radio-txt,
     .hot-title {
         font-family: var(--hupu, ""), PingFangSC-Regular, PingFang SC,
-            var(--noto, "") !important;
+            var(--foreign, "") !important;
     }
 
     .bbs-sl-web-intro-detail-title,
@@ -275,19 +276,19 @@
     .right-post-title,
     .post-title,
     .post-info div {
-        font-family: var(--hupu, ""), PingFangSC, var(--noto, "") !important;
+        font-family: var(--hupu, ""), PingFangSC, var(--foreign, "") !important;
     }
 
     .nav_qiantao_hupu210316,
     .title,
     .cntv_list ul li a {
         font-family: var(--hupu, ""), PingFangSC-Regular, Helvetica, Arial,
-            Microsoft Yahei, sans-serif, var(--noto, "") !important;
+            Microsoft Yahei, sans-serif, var(--foreign, "") !important;
     }
 
     .hot-index {
         font-family: var(--hupu, ""), HelveticaNeue-CondensedBold, HelveticaNeue,
-            var(--noto, "") !important;
+            var(--foreign, "") !important;
     }
 }
 
@@ -316,7 +317,7 @@
         font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
             Apple SD Gothic Neo, Helvetica, Arial, NanumGothic, 나눔고딕,
             Malgun Gothic, 맑은 고딕, Dotum, 굴림, gulim, 새굴림, noto sans,
-            돋움, sans-serif, var(--noto, "") !important;
+            돋움, sans-serif, var(--foreign, "") !important;
     }
 }
 
@@ -324,56 +325,56 @@
     .NavigationBar-module__navHeader_myx_35WiMq43R8TeP3p0_dnLLH
         .NavigationBar-module__navOptions_myx_3-DW6_KRV7Rh8qixes2XJu,
     .NavigationBar-module__navHeader_title_style_myx_gLKlYY_oND8vgB6axwgyW {
-        font-family: "Amazon Ember", Arial, sans-serif, var(--noto, "") !important;
+        font-family: "Amazon Ember", Arial, sans-serif, var(--foreign, "") !important;
     }
 
     #a-page,
     #e input,
     .a-container {
         font-family: "Amazon Ember", Arial, "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, sans-serif, var(--noto, "") !important;
+            "Hiragino Sans", Meiryo, sans-serif, var(--foreign, "") !important;
     }
 
     .bucket h2 {
-        font-family: "Amazon Ember", verdana, arial, helvetica, var(--noto, ""),
-            sans-serif, var(--noto, "") !important;
+        font-family: "Amazon Ember", verdana, arial, helvetica, var(--foreign, ""),
+            sans-serif, var(--foreign, "") !important;
     }
 
     .a-declarative,
     tbody tr td,
     span span a {
-        font-family: "Amazon Ember", Arial, var(--noto, "") !important;
+        font-family: "Amazon Ember", Arial, var(--foreign, "") !important;
     }
 
     .a-color-link {
         font-family: "Amazon Ember", AmazonEmber-Regular,
             helvetica_ne_lt_55_roman, HelveticaNeueLTStd-Roman, Helvetica,
-            var(--noto, ""), sans-serif, var(--noto, "") !important;
+            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
     }
 
     .a-popover-wrapper,
     .a-meter-animate {
         font-family: "Amazon Ember", "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, sans-serif, var(--noto, "") !important;
+            "Hiragino Sans", Meiryo, sans-serif, var(--foreign, "") !important;
     }
 }
 
 @-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
     #container,
     #searchsubmit {
-        font-family: var(--sans, ""), arial, helvetica, clean, sans-serif, var(--noto, "") !important;
+        font-family: var(--sans, ""), arial, helvetica, clean, sans-serif, var(--foreign, "") !important;
     }
 
     #main {
         font-family: var(--sans, ""), "Helvetica Neue", Helvetica, Arial,
-            sans-serif, var(--noto, "") !important;
+            sans-serif, var(--foreign, "") !important;
     }
 }
 
 @-moz-document domain("steampowered.com"), domain("steamcommunity.com") {
     .workshopItemTitle,
     body.v6 {
-        font-family: "Motiva Sans", Arial, Helvetica, sans-serif, var(--noto, "") !important;
+        font-family: "Motiva Sans", Arial, Helvetica, sans-serif, var(--foreign, "") !important;
     }
 }
 
@@ -399,7 +400,7 @@
     div.ModalContent--content--yXRDl {
         font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-            Helvetica Neue, sans-serif, var(--noto, "") !important;
+            Helvetica Neue, sans-serif, var(--foreign, "") !important;
     }
 }
 
@@ -412,7 +413,7 @@
     .feed-card[data-v-87ed4514] {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
             Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei,
-            sans-serif, var(--noto, "") !important;
+            sans-serif, var(--foreign, "") !important;
     }
 
     .gift-item[data-v-43b0ef2a],
@@ -434,7 +435,7 @@
     .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
     .video-page-card-small .card-box .info .title {
         font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular,
-            Helvetica Neue, Microsoft YaHei, sans-serif, var(--noto, "") !important;
+            Helvetica Neue, Microsoft YaHei, sans-serif, var(--foreign, "") !important;
     }
 
     @media (-webkit-max-device-pixel-ratio: 1) {
@@ -443,7 +444,7 @@
         .video-page-card-small .card-box .info .title {
             font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
-                Microsoft YaHei, sans-serif, var(--noto, "") !important;
+                Microsoft YaHei, sans-serif, var(--foreign, "") !important;
         }
     }
 }
@@ -455,7 +456,7 @@
     .circular-sp-vietnamese select,
     .circular-sp-vietnamese textarea {
         font-family: CircularSpVietnamese, CircularSp-Arab, CircularSp-Hebr,
-            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--noto, ""),
+            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--foreign, ""),
             var(--fallback-fonts, sans-serif) !important;
     }
 
@@ -464,13 +465,13 @@
     .encore-text-body-small,
     .encore-text-body-small-bold {
         font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr,
-            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--noto, ""),
+            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--foreign, ""),
             var(--fallback-fonts, sans-serif) !important;
     }
 
     .encore-text-headline-large {
         font-family: CircularSpVietnameseTitle, CircularSp-Arab, CircularSp-Hebr,
-            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--noto, ""),
+            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--foreign, ""),
             var(--fallback-fonts, sans-serif) !important;
     }
 }
@@ -479,6 +480,6 @@
     html {
         font-family: -apple-system, BlinkMacSystemFont, Apple Color Emoji,
             SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-            var(--noto, ""), sans-serif, var(--noto, "") !important;
+            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
     }
 }
