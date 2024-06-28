@@ -94,6 +94,10 @@
     tp-yt-paper-item {
         font-family: Roboto, Noto, sans-serif, var(--noto, "") !important;
     }
+
+    ytd-engagement-panel-title-header-renderer[modern-panels]:not([ads-semantic-text]) #title-text.ytd-engagement-panel-title-header-renderer {
+		font-family: "YouTube Sans","Roboto",sans-serif,var(--noto, "") !important;
+	}
 }
 
 @-moz-document domain("music.youtube.com") {
