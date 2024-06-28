@@ -135,6 +135,8 @@ eurogamer.net##.smart-slot
 destructoid.com##.top-sidebar-wrapper
 
 ign.com##.avatars-1.author-avatars.jsx-1825775112
+ign.com##.bottom-content.jsx-329910105
+ign.com##.small.balanced.jsx-957202555.jsx-1257025712.interface
 ign.com##.small.balanced.jsx-957202555.jsx-2010869752.interface
 ign.com##section.jsx-537794787.box-wrapper
 

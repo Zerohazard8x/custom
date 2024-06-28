@@ -290,6 +290,7 @@ openweathermap.org##.pop-up
 
 perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.ease-out.duration-300.fade-in.animate-in.shadow-md.p-md.border.rounded-lg
 perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.md\:block.ease-out.duration-300.fade-in.animate-in.shadow-sm.p-md.border.rounded-lg.w-\[300px\].hidden.z-30.right-md.bottom-md.fixed
+perplexity.ai##.dark\:bg-backgroundDark.bg-background.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50.md\:block.fade-in.animate-in.ease-out.duration-300.shadow-sm.p-md.border.rounded-lg.w-\[350px\].hidden.z-30.right-md.bottom-md.fixed
 perplexity.ai##.flex-col.flex > div.bg-transparent.dark\:border-borderMainDark\/50.dark\:ring-borderMainDark\/50.dark\:divide-borderMainDark\/50.divide-borderMain\/50.ring-borderMain\/50.border-borderMain\/50:nth-of-type(1)
 perplexity.ai##.md\:text-center.pb-xs.justify-center.items-center.flex.mb-lg
 

@@ -681,7 +681,6 @@
 ||payments-amazon.com$all
 ||pdmntn.com/popups$all
 ||peoplestack-pa.clients6.google.com$all
-||peoplestackwebexperiments-pa.clients6.google.com$all
 ||pinterest.com$all
 ||pkrchp001.com$all
 ||plug1luge.com$all
@@ -922,9 +921,9 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||peoplestackwebexperiments-pa.clients6.google.com$script,inline-script,object,ping,stylesheet,other
 ||kunlungr.com$script,inline-script,object,ping,stylesheet,other
 ||lrcontent.com$script,inline-script,object,ping,stylesheet,other
-||cdn20.com$script,inline-script,object,ping,stylesheet,other
 ||global.ssl.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||fonts.net$script,inline-script,object,ping,stylesheet,other
 ||forgecdn.net$script,inline-script,object,ping,stylesheet,other
