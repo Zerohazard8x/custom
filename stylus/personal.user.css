@@ -38,8 +38,11 @@
     }
 }
 
-@-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
+@-moz-document regexp("^.*www\.youtube\.com.*"), regexp("^(?!.*(\w+\.youtube\.com)).*youtube\.com.*"), domain("youtube-nocookie.com") {
     /* YouTube */
+    /* Regex excludes e.g. music.youtube.com */
+    /* Combined: ^(?:.*www\.youtube\.com.*|(?!.*(\w+\.google\.com)).*youtube\.com.*) */
+    
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: var(--readable, ""), var(--sans, ""), "YouTube Noto",
