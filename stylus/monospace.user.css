@@ -11,13 +11,13 @@
 @-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net"), domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("undelete.pullpush.io"), domain("deskthority.net"), domain("libreddit.bus-hit.me"), domain("redlib.freedit.eu"), domain("redlib.pussthecat.org"), regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     :root {
         /* Define variables */
-        --foreign: var(--emoji, ""), var(--noto, ""), PingFang,
-            "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
+        --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
+            "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
             "Tiro Devanagari Hindi", "Geeza Pro", Geeza, "Yu Gothic",
             "Microsoft YaHei UI", "Microsoft YaHei", "Malgun Gothic",
             "Leelawadee UI", "Nirmala UI", "Segoe UI Arabic";
-        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari";
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans Thai", "Noto Sans Devanagari";
         /* --foreign-full: var(--noto, ""), "FOT-Rodin Pro",
             "A-OTF UD Shin Go Pro", "FOT-NewRodin Pro", "Hiragino Sans",
             "Hiragino Sans GB", "Hiragino Kaku Gothic",
@@ -85,7 +85,8 @@
     .markdown-body {
         font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
             BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial,
-            sans-serif, "Apple Color Emoji", "Segoe UI Emoji", var(--foreign, "") !important;
+            sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            var(--foreign, "") !important;
     }
 
     code,
@@ -190,7 +191,7 @@
     .side .md p,
     .side .md ul,
     .side .md ol {
-        font-family: NotoSans, "Noto Sans",
+        font-family: var(--noto, ""), "Noto Sans", NotoSans,
             var(
                 --font-sans,
                 "var(--sans, " "), verdana, arial, helvetica, sans-serif"
@@ -215,8 +216,8 @@
         ):not(p em a):not(faceplate-tracker a):not(ul li a):not(
             .pointer-events-auto
         ):not(h6 a):not(.a):not(object a):not(span.nowrap a) {
-        font-family: IBMPlexSans, var(--plex, ""), Lato, var(--font-sans, ""),
-            var(--foreign, "") !important;
+        font-family: IBMPlexSans, var(--plex, ""), Lato, var(--noto, ""),
+            "Noto Sans", NotoSans, var(--font-sans, ""), var(--foreign, "") !important;
     }
 
     .md pre,
