@@ -23,8 +23,8 @@
             "Twemoji Mozilla";
         --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
             "Avenir Next", Avenir, "Segoe UI Variable", "Segoe UI";
-        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "IBM Plex Sans";
+        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans";
         --readable: "Public Sans", "Fira Sans", "Bahnschrift", "Aptos Narrow",
             var(--plex, "");
         /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
@@ -42,7 +42,7 @@
     /* YouTube */
     /* Regex excludes e.g. music.youtube.com */
     /* Combined: ^(?:.*www\.youtube\.com.*|(?!.*(\w+\.google\.com)).*youtube\.com.*) */
-    
+
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: var(--readable, ""), var(--sans, ""), "YouTube Noto",
@@ -98,9 +98,12 @@
         font-family: Roboto, Noto, sans-serif, var(--noto, "") !important;
     }
 
-    ytd-engagement-panel-title-header-renderer[modern-panels]:not([ads-semantic-text]) #title-text.ytd-engagement-panel-title-header-renderer {
-		font-family: "YouTube Sans","Roboto",sans-serif,var(--noto, "") !important;
-	}
+    ytd-engagement-panel-title-header-renderer[modern-panels]:not(
+            [ads-semantic-text]
+        )
+        #title-text.ytd-engagement-panel-title-header-renderer {
+        font-family: "YouTube Sans", "Roboto", sans-serif, var(--noto, "") !important;
+    }
 }
 
 @-moz-document domain("music.youtube.com") {
@@ -109,8 +112,8 @@
     .subtitle.ytmusic-two-row-item-renderer,
     .third-title.ytmusic-two-row-item-renderer,
     .title.ytmusic-responsive-list-item-renderer,
-    .secondary-flex-columns.ytmusic-responsive-list-item-renderer
-        .flex-column.ytmusic-responsive-list-item-renderer {
+    .secondary-flex-columns.ytmusic-responsive-list-item-renderer,
+    .flex-column.ytmusic-responsive-list-item-renderer {
         font-family: Roboto, Noto Naskh Arabic UI, Arial, var(--noto, ""),
             sans-serif, var(--noto, "") !important;
     }
