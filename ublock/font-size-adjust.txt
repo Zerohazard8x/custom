@@ -1,0 +1,7 @@
+! Description: conversion of my Stylus style for text rendering
+! Expires: 1 day
+! Homepage: https://github.com/Zerohazard8x/custom/tree/main/ublock
+! Title: Zerohazard's text rendering tweaks
+[uBlock Origin]
+
+/.*/##*:not(pre *,.far,.fa,.glyphicon,[class*="vjs-"],.fab,.fa-github,.fas,.material-icons,.icofont,.typcn,mu,[class*="mu-"],.glyphicon,.icon),pre,code,tt:style(font-size-adjust: from-font !important)
