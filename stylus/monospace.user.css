@@ -424,13 +424,13 @@
     .a-no-hover-decoration,
     .GLcBOb,
     #result-stats {
-        font-family: "Google Sans", var(--google, ""), arial, var(--foreign, ""),
-            sans-serif, var(--foreign, "") !important;
+        font-family: "Google Sans", var(--google, ""), arial, sans-serif,
+            var(--foreign, "") !important;
     }
 
     .YmvwI {
-        font-family: Google Sans, var(--google, ""), Arial, var(--foreign, ""),
-            sans-serif-medium, sans-serif, var(--foreign, "") !important;
+        font-family: Google Sans, var(--google, ""), Arial, sans-serif-medium,
+            sans-serif, var(--foreign, "") !important;
     }
 
     .googlegpt pre,
@@ -497,7 +497,7 @@
     select,
     ::placeholder {
         font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
-            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
+            sans-serif, var(--foreign, "") !important;
     }
 
     .codeLine__3797b,
@@ -523,8 +523,8 @@
             "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
             "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
             "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L",
-            "Liberation Sans", "Open Sans", FreeSans, Arial, var(--foreign, ""),
-            sans-serif, var(--foreign, "") !important;
+            "Liberation Sans", "Open Sans", FreeSans, Arial, sans-serif,
+            var(--foreign, "") !important;
     }
 
     code,

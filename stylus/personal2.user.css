@@ -119,7 +119,7 @@
     .main-text,
     h4 {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
-            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
+            sans-serif, var(--foreign, "") !important;
     }
 
     .woo-input-main {
@@ -370,8 +370,8 @@
     }
 
     .bucket h2 {
-        font-family: "Amazon Ember", verdana, arial, helvetica,
-            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
+        font-family: "Amazon Ember", verdana, arial, helvetica, sans-serif,
+            var(--foreign, "") !important;
     }
 
     .a-declarative,
@@ -383,7 +383,7 @@
     .a-color-link {
         font-family: "Amazon Ember", AmazonEmber-Regular,
             helvetica_ne_lt_55_roman, HelveticaNeueLTStd-Roman, Helvetica,
-            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
+            sans-serif, var(--foreign, "") !important;
     }
 
     .a-popover-wrapper,
@@ -515,7 +515,7 @@
 @-moz-document domain("music.apple.com") {
     html {
         font-family: -apple-system, BlinkMacSystemFont, Apple Color Emoji,
-            SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
+            SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif,
+            var(--foreign, "") !important;
     }
 }

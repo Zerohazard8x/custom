@@ -428,8 +428,8 @@
     }
 
     .Label-Content {
-        font-family: "YS Text", Verdana, Arial, Helvetica, var(--foreign, ""),
-            sans-serif, var(--foreign, "") !important;
+        font-family: "YS Text", Verdana, Arial, Helvetica, sans-serif,
+            var(--foreign, "") !important;
     }
 
     .Article.Article_type_fact,
