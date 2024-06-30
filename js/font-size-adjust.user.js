@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Zerohazard8x's Text Rendering
+// @name         Zerohazard8x's font-size adjust
 // @namespace    http://tampermonkey.net/
 // @version      2024-06-30
 // @author       LLM + Zerohazard8x
