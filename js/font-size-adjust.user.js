@@ -7,6 +7,8 @@
 // @grant        GM_addStyle
 // @downloadURL https://github.com/Zerohazard8x/custom/raw/main/js/font-size-adjust.user.js
 // @updateURL https://github.com/Zerohazard8x/custom/raw/main/js/font-size-adjust.user.js
+// @homepageURL     https://github.com/Zerohazard8x/custom/tree/main/js
+// @supportURL      https://github.com/Zerohazard8x/custom/tree/main/js
 // ==/UserScript==
 
 (function () {
