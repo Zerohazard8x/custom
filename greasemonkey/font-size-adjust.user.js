@@ -5,6 +5,8 @@
 // @author       LLM + Zerohazard8x
 // @match        *://*/*
 // @grant        GM_addStyle
+// @downloadURL https://github.com/Zerohazard8x/custom/raw/main/js/font-size-adjust.user.js
+// @updateURL https://github.com/Zerohazard8x/custom/raw/main/js/font-size-adjust.user.js
 // ==/UserScript==
 
 (function () {
