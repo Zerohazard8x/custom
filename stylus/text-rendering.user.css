@@ -46,7 +46,10 @@
             [class*="mu-"],
             .glyphicon,
             .icon
-        ) {
+        ),
+    pre,
+    code,
+    tt {
         -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */
         -moz-osx-font-smoothing: grayscale !important; /* for Firefox */
         -ms-font-smoothing: antialiased !important; /* for IE */
@@ -65,16 +68,7 @@
 
         /* -webkit-font-feature-settings: "liga", "calt" !important;
         -moz-font-feature-settings: "liga", "calt" !important;
+        -ms-font-feature-settings: "liga", "calt" !important;
         -o-font-feature-settings: "liga", "calt" !important; */
-
-        -webkit-font-smoothing: antialiased !important;
-        -moz-osx-font-smoothing: grayscale !important;
-        -ms-font-smoothing: antialiased !important;
-        text-rendering: optimizeLegibility !important;
-
-        font-synthesis: none !important;
-        font-optical-sizing: auto !important;
-
-        font-size-adjust: from-font !important;
     }
 }

@@ -10,23 +10,55 @@
 
 @-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com") {
     :root {
-        --foreign: var(--emoji, ""), var(--noto, ""), PingFang,
-            "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
+        --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
+            "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
             "Tiro Devanagari Hindi", "Geeza Pro", Geeza, "Yu Gothic",
             "Microsoft YaHei UI", "Microsoft YaHei", "Malgun Gothic",
             "Leelawadee UI", "Nirmala UI", "Segoe UI Arabic";
-        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC",
-            "Noto Sans KR", "Noto Sans Thai", "Noto Sans Devanagari";
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans Thai", "Noto Sans Devanagari";
         --emoji: "Apple Color Emoji", "SF Symbols", "Segoe UI Emoji",
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
         --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
-        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP",
-            "IBM Plex Sans KR", "IBM Plex Sans";
+        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans";
         --readable: "Public Sans", "Fira Sans", "Bahnschrift", "Aptos Narrow",
             var(--plex, "");
+    }
+
+    *:not(
+            pre *,
+            .far,
+            .fa,
+            .glyphicon,
+            [class*="vjs-"],
+            .fab,
+            .fa-github,
+            .fas,
+            .material-icons,
+            .icofont,
+            .typcn,
+            mu,
+            [class*="mu-"],
+            .glyphicon,
+            .icon
+        ),
+    pre,
+    code,
+    tt {
+        font-feature-settings: "liga", "clig", "calt", "kern" !important;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        -ms-font-smoothing: antialiased !important;
+        text-rendering: optimizeLegibility !important;
+        font-synthesis: none !important;
+        font-optical-sizing: auto !important;
+        font-size-adjust: from-font !important;
+        font-kerning: auto !important;
+        letter-spacing: normal !important;
     }
 }
 
@@ -63,7 +95,8 @@
 
     #home-main-messaging h1,
     .messaging-title h2 {
-        font-family: Lato, "Roboto", Arial, Helvetica, sans-serif, var(--foreign, "") !important;
+        font-family: Lato, "Roboto", Arial, Helvetica, sans-serif,
+            var(--foreign, "") !important;
     }
 }
 
@@ -184,7 +217,8 @@
     body *,
     html {
         font-family: var(--hupu, ""), hupufont-Regular, PingFangSC-Regular,
-            PingFang SC, Helvetica Neue, Helvetica, STHeiTi, sans-serif, var(--foreign, "") !important;
+            PingFang SC, Helvetica Neue, Helvetica, STHeiTi, sans-serif,
+            var(--foreign, "") !important;
     }
 
     .index_simple-detail-content__3FPFA,
@@ -336,8 +370,8 @@
     }
 
     .bucket h2 {
-        font-family: "Amazon Ember", verdana, arial, helvetica, var(--foreign, ""),
-            sans-serif, var(--foreign, "") !important;
+        font-family: "Amazon Ember", verdana, arial, helvetica,
+            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
     }
 
     .a-declarative,
@@ -362,7 +396,8 @@
 @-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
     #container,
     #searchsubmit {
-        font-family: var(--sans, ""), arial, helvetica, clean, sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), arial, helvetica, clean, sans-serif,
+            var(--foreign, "") !important;
     }
 
     #main {
@@ -374,7 +409,8 @@
 @-moz-document domain("steampowered.com"), domain("steamcommunity.com") {
     .workshopItemTitle,
     body.v6 {
-        font-family: "Motiva Sans", Arial, Helvetica, sans-serif, var(--foreign, "") !important;
+        font-family: "Motiva Sans", Arial, Helvetica, sans-serif,
+            var(--foreign, "") !important;
     }
 }
 
@@ -456,8 +492,8 @@
     .circular-sp-vietnamese select,
     .circular-sp-vietnamese textarea {
         font-family: CircularSpVietnamese, CircularSp-Arab, CircularSp-Hebr,
-            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--foreign, ""),
-            var(--fallback-fonts, sans-serif) !important;
+            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+            var(--foreign, ""), var(--fallback-fonts, sans-serif) !important;
     }
 
     .encore-text-body-medium,
@@ -465,14 +501,14 @@
     .encore-text-body-small,
     .encore-text-body-small-bold {
         font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr,
-            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--foreign, ""),
-            var(--fallback-fonts, sans-serif) !important;
+            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+            var(--foreign, ""), var(--fallback-fonts, sans-serif) !important;
     }
 
     .encore-text-headline-large {
         font-family: CircularSpVietnameseTitle, CircularSp-Arab, CircularSp-Hebr,
-            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--foreign, ""),
-            var(--fallback-fonts, sans-serif) !important;
+            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+            var(--foreign, ""), var(--fallback-fonts, sans-serif) !important;
     }
 }
 
