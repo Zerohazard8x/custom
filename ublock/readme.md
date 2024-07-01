@@ -6,6 +6,7 @@
 - [News Decluttering](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Fnews%5Fdeclutter.txt&title=Zerohazard's%20News%20Decluttering)
 - [Filters](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Fpersonal.txt&title=Zerohazard's%20Filters)
 - [Text Rendering Tweaks](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Ftext%2Drendering.txt&title=Zerohazard's%20text%20rendering%20tweaks)
+- [Font Size Adjust](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fgithub%2Ecom%2FZerohazard8x%2Fcustom%2Fraw%2Fmain%2Fublock%2Ffont%2Dsize%2Dadjust.txt&title=Zerohazard's%20font%2Dsize%2Dadjust)
 
 <https://github.com/Zerohazard8x/custom/raw/main/ublock/chat-popout.txt>
 <https://github.com/Zerohazard8x/custom/raw/main/ublock/fave_scores_only.txt>
