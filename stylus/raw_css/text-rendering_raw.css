@@ -1,0 +1,41 @@
+*:not(
+        pre *,
+        .far,
+        .fa,
+        .glyphicon,
+        [class*="vjs-"],
+        .fab,
+        .fa-github,
+        .fas,
+        .material-icons,
+        .icofont,
+        .typcn,
+        mu,
+        [class*="mu-"],
+        .glyphicon,
+        .icon
+    ),
+pre,
+code,
+tt {
+    -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */
+    -moz-osx-font-smoothing: grayscale !important; /* for Firefox */
+    -ms-font-smoothing: antialiased !important; /* for IE */
+    text-rendering: optimizeLegibility !important;
+
+    font-synthesis: none !important;
+    font-optical-sizing: auto !important;
+
+    font-size-adjust: from-font !important;
+}
+
+pre,
+code,
+tt {
+    font-feature-settings: "liga", "clig", "calt" !important;
+
+    /* -webkit-font-feature-settings: "liga", "calt" !important;
+        -moz-font-feature-settings: "liga", "calt" !important;
+        -ms-font-feature-settings: "liga", "calt" !important;
+        -o-font-feature-settings: "liga", "calt" !important; */
+}

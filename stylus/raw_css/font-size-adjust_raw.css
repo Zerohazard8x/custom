@@ -1,0 +1,22 @@
+*:not(
+        pre *,
+        .far,
+        .fa,
+        .glyphicon,
+        [class*="vjs-"],
+        .fab,
+        .fa-github,
+        .fas,
+        .material-icons,
+        .icofont,
+        .typcn,
+        mu,
+        [class*="mu-"],
+        .glyphicon,
+        .icon
+    ),
+pre,
+code,
+tt {
+    font-size-adjust: from-font !important;
+}
