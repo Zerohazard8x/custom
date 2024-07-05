@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Font legibility style
 @namespace      github.com/openstyles/stylus
-@version        4.1.0
+@version        4.1.1
 @author         zerohazard8x + LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/text-rendering.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
@@ -57,8 +57,6 @@
 
         font-synthesis: none !important;
         font-optical-sizing: auto !important;
-
-        font-size-adjust: from-font !important;
     }
 
     pre,
