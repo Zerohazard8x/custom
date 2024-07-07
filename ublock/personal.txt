@@ -94,7 +94,6 @@
 ||bazaarvoice.com$all
 ||bbynetwork.nl$all
 ||bbystatic.com$all
-||bdstatic.com$all
 ||bestsportsite.autos$all
 ||bestsportsite.shop$all
 ||betanews.com/wp-content/plugins/adtoniq$all
@@ -921,6 +920,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||bdstatic.com$script,inline-script,object,ping,stylesheet,other
 ||peoplestackwebexperiments-pa.clients6.google.com$script,inline-script,object,ping,stylesheet,other
 ||kunlungr.com$script,inline-script,object,ping,stylesheet,other
 ||lrcontent.com$script,inline-script,object,ping,stylesheet,other
