@@ -160,7 +160,7 @@
     @media screen {
         html,
         body {
-            font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
+            font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
         }
     }
 
@@ -518,17 +518,13 @@
 }
 
 @-moz-document domain("duckduckgo.com") {
+    .eVNpHGjtxRBq_gLOfGDr,
     body,
     input,
     select,
     textarea {
-        font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0",
-            "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2",
-            "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
-            "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
-            "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L",
-            "Liberation Sans", "Open Sans", FreeSans, Arial, var(--foreign, ""),
-            sans-serif, var(--foreign, "") !important;
+        font-family: var(--theme-font-family-result-title, ""),
+            var(--foreign, "") !important;
     }
 
     code,
@@ -565,6 +561,24 @@
 }
 
 @-moz-document domain("perplexity.ai") {
+    :host,
+    html,
+    .font-sans {
+        font-family: var(--font-fk-grotesk-neue, ""), ui-sans-serif, system-ui,
+            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Helvetica Neue, Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+            var(--foreign, "") !important;
+    }
+
+    .font-display {
+        font-family: var(--font-fk-grotesk, ""), ui-sans-serif, system-ui,
+            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Helvetica Neue, Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+            var(--foreign, "");
+    }
+
     .ace_placeholder.ace_comment,
     code {
         font-family: var(--mono, ""), var(--font-berkeley-mono, "") !important;
