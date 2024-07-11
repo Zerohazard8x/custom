@@ -31,14 +31,15 @@
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
+        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
-        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", "Inter V", Inter, "Roboto Flex",
-            "Roboto", Barlow, Whitney, Lato, "Segoe UI Variable", "Segoe UI",
-            "Motiva Sans", "Proxima Vara", "Proxima Nova", "FF Mark", "FF Mark Pro", "Avenir Next",
-            Avenir, "Nunito", "Nunito Sans", "Fira Sans", FiraGO, "FF Meta",
-            Manrope, "Helvetica Neue", "Helvetica", var(--plex, ""), "Ubuntu",
-            "Open Sans", "Droid Sans"; */
+        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", Inter,
+            "Roboto Flex", "Roboto", Barlow, Whitney, Lato, "Segoe UI Variable",
+            "Segoe UI", "Motiva Sans", "Proxima Vara", "Proxima Nova", "FF Mark",
+            "FF Mark Pro", "Avenir Next", Avenir, "HarmonyOS Sans TC",
+            "HarmonyOS Sans SC", "HarmonyOS Sans", "Nunito", "Nunito Sans",
+            "Fira Sans", FiraGO, "FF Meta", Manrope, "Helvetica Neue",
+            "Helvetica", var(--plex, ""), "Ubuntu", "Open Sans", "Droid Sans"; */
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans";
         --serif: Rockwell, Century, "Century Schoolbook", Georgia,

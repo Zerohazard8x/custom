@@ -22,7 +22,7 @@
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, "Inter V", "Roboto",
+        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans";
