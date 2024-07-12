@@ -495,15 +495,12 @@
 }
 
 @-moz-document domain("discord.com") {
-    body,
-    textarea,
-    input,
-    button,
-    select,
-    ::placeholder {
-        font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
-            var(--foreign, ""), sans-serif, var(--foreign, "") !important;
-    }
+	:root {
+	--disc-font: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, var(--foreign, "");
+
+	--font-primary: var(--disc-font);
+	--font-display: var(--disc-font);
+	}
 
     .codeLine__3797b,
     .hljs,
