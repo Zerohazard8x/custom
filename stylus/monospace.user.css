@@ -266,28 +266,16 @@
 }
 
 @-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com") {
+    body.unified-theme *,
     html,
     body {
-        font-family: var(--sans, ""), var(--theme-body-font-family, "") !important;
-    }
-
-    .ff-sans {
-        font-family: var(--sans, ""), var(--ff-sans, "") !important;
-    }
-
-    .s-prose,
-    .comment-copy,
-    .question-status,
-    .excerpt,
-    #question-header .question-hyperlink {
-        font-family: var(--sans, "")
-            var(--theme-post-body-font-family, var(--theme-body-font-family)) !important;
-    }
-
-    pre,
-    .s-prose code,
-    code {
-        font-family: var(--mono, ""), var(--ff-mono, ""), var(--foreign, "") !important;
+        --ff-sans: var(--sans, ""), -apple-system, BlinkMacSystemFont,
+            "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+        --theme-body-font-family: var(--sans, ""), var(--ff-sans);
+        --theme-post-body-font-family: var(--sans, ""), var(--ff-sans);
+        --ff-mono: var(--mono, ""), ui-monospace, "Cascadia Mono",
+            "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+            monospace, var(--foreign, "");
     }
 }
 
@@ -495,12 +483,13 @@
 }
 
 @-moz-document domain("discord.com") {
-	:root {
-	--disc-font: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, var(--foreign, "");
+    :root {
+        --disc-font: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+            sans-serif, var(--foreign, "");
 
-	--font-primary: var(--disc-font);
-	--font-display: var(--disc-font);
-	}
+        --font-primary: var(--disc-font);
+        --font-display: var(--disc-font);
+    }
 
     .codeLine__3797b,
     .hljs,
