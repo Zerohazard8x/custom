@@ -31,9 +31,9 @@
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
+        --sans: -apple-system, BlinkMacSystemFont, Inter, "GitLab Sans", "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
-        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", Inter,
+        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", Inter, "GitLab Sans",
             "Roboto Flex", "Roboto", Barlow, Whitney, Lato, "Segoe UI Variable",
             "Segoe UI", "Motiva Sans", "Proxima Vara", "Proxima Nova", "FF Mark",
             "FF Mark Pro", "Avenir Next", Avenir, "HarmonyOS Sans TC",
@@ -67,7 +67,7 @@
             "Ubuntu Mono Nerd Font", Agave, "Agave Nerd Font", Hasklig,
             "Hasklug Nerd Font", "Source Code Pro", "Source Code Pro Nerd Font",
             "Andale Mono", "Lucida Console", "Lucida Sans Typewriter"; */
-        --block-mono: "JetBrains Mono", "JetBrains Mono NL",
+        --block-mono: "GitLab Mono", "JetBrains Mono", "JetBrains Mono NL",
             "JetBrainsMono Nerd Font", "Fantasque Sans Mono";
         /* --block-mono-full: "JetBrains Mono", "JetBrains Mono NL",
             "JetBrainsMono Nerd Font", "Fantasque Sans Mono",

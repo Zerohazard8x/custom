@@ -22,12 +22,12 @@
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
+        --sans: -apple-system, BlinkMacSystemFont, Inter, "GitLab Sans", "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans";
         --readable: "Public Sans", "Fira Sans", "Bahnschrift", var(--plex, "");
-        /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
+        /* --readable-full: "Public Sans", "GitLab Sans", "Fira Sans", FiraGO, "FF Meta",
             Recursive, "Atkinson Hyperlegible", "Source Sans Pro",
             "Nunito Sans", "Nunito", "Raleway", "Road UA", "Akshar", "DIN Next",
             "URW DIN", "DIN Alternate", "Bahnschrift",

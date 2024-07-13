@@ -31,7 +31,7 @@
             "Noto Serif";
         --mono: var(--block-mono, ""), "Monaspace Argon Var",
             "Monaspace Argon VF", "Monaspace Argon", "Fira Mono";
-        --block-mono: "JetBrains Mono", "JetBrains Mono NL",
+        --block-mono: "GitLab Mono", "JetBrains Mono", "JetBrains Mono NL",
             "JetBrainsMono Nerd Font", "Fantasque Sans Mono";
     }
 

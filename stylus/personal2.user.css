@@ -25,7 +25,7 @@
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans";
-        --readable: "Public Sans", "Fira Sans", "Bahnschrift", var(--plex, "");
+        --readable: "Public Sans", "GitLab Sans", "Fira Sans", "Bahnschrift", var(--plex, "");
     }
 
     *:not(
