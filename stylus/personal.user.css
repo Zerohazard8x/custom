@@ -103,6 +103,8 @@
         background-color: rgba(8, 8, 8, 0.75) !important;
     }
 
+    .page-header-view-model-wiz__page-header-title--page-header-title-large,
+    .truncated-text-wiz,
     li.sbsb_c.gsfs div,
     .badge-shape-wiz,
     .badge.ytd-badge-supported-renderer,
@@ -122,12 +124,13 @@
     div.style-scope.ytd-active-account-header-renderer,
     #label.ytd-compact-link-renderer,
     #label.ytd-toggle-theme-compact-link-renderer {
-        font-family: Roboto, Arial, sans-serif, var(--foreign, "") !important;
+        font-family: Roboto, var(--foreign, ""), Arial, sans-serif !important;
     }
 
+    tp-yt-paper-dialog,
     #search-input.ytd-searchbox-spt input,
     tp-yt-paper-item {
-        font-family: Roboto, Noto, sans-serif, var(--foreign, "") !important;
+        font-family: Roboto, var(--foreign, ""), Noto, sans-serif !important;
     }
 
     ytd-engagement-panel-title-header-renderer[modern-panels]:not(
