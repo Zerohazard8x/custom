@@ -114,6 +114,13 @@
 }
 
 @-moz-document domain("github.com") {
+    :root {
+        --fontStack-monospace: __monaspaceNeon_4fcba3,
+            __monaspaceNeon_Fallback_4fcba3, "Monaspace Neon Var",
+            "Monaspace Neon VF", "Monaspace Neon", ui-monospace, SFMono-Regular,
+            SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    }
+
     body,
     .markdown-body {
         font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
@@ -129,24 +136,6 @@
         font-family: __monaspaceNeon_4fcba3, __monaspaceNeon_Fallback_4fcba3,
             "Monaspace Neon Var", "Monaspace Neon VF", "Monaspace Neon",
             monospace, var(--foreign, "") !important;
-    }
-
-    tt,
-    code,
-    samp {
-        font-family: __monaspaceNeon_4fcba3, __monaspaceNeon_Fallback_4fcba3,
-            "Monaspace Neon Var", "Monaspace Neon VF", "Monaspace Neon",
-            var(
-                --fontStack-monospace,
-                ui-monospace,
-                SFMono-Regular,
-                SF Mono,
-                Menlo,
-                Consolas,
-                Liberation Mono,
-                monospace
-            ),
-            var(--foreign, "") !important;
     }
 
     .react-blob-print-hide {
@@ -584,29 +573,36 @@
         text-decoration: none !important;
     } */
 
-    .event-details-content,
-    #application,
-    #wrapper,
+    html,
     h1,
     h2,
     h3,
     h4,
     h5,
     h6,
-    .navigation-tray-container,
-    .tray-with-space-for-global-nav,
-    .css-1dsl5sr-view,
     input,
     button,
     select,
-    textarea,
-    .css-1vfp3rz-text,
-    .menu-item__text {
+    textarea {
         font-family: Iosevka, var(--mono, ""), monospace, "Lato Extended",
             "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif,
             var(--foreign, "") !important;
     }
 
+    .css-j68kdy-formFieldLabel,
+    .css-1orhfp7-toggleFacade__label,
+    .css-16qo2i4-text,
+    .css-qfe6jw,
+    .css-pljkwv-view-heading,
+    .css-9ca8iq-textInput:is(input)[type],
+    .css-1f6zcte-baseButton__content,
+    .css-1fvrx9c-text,
+    .css-bvhjjg-text,
+    .css-1vfp3rz-text,
+    .css-m97t26-text,
+    .css-1p1uj7k-truncateText,
+    .css-i9zmp9-menuItem,
+    .css-h5et3u-formFieldMessage,
     .css-10v72nd-view-heading,
     .css-1eo48d6-view-billboard,
     .css-1o975z5-view-tab,
@@ -645,61 +641,7 @@
     .css-17bo7u5-text,
     .css-q6kura-text,
     .css-1ftbeea-text,
-    #tinymce,
-    .css-1c0bb43-baseButton__content,
-    .css-oowy02-view-flexItem,
-    .css-1vx9cwx-view--block,
-    .css-1gkhyq7-toggleDetails,
-    .css-15k3f08-text,
-    .css-1qprmw-view,
-    .css-h20mns-view--flex-flex,
-    .css-14fpfr2-text,
-    .css-1nxwd0x-text,
-    .css-feuh9k-view--block,
-    .css-3qn3vl-view--flex-flex,
-    .css-1sr6v3o-text,
-    .css-njf9hq-baseButton__content,
-    .css-j68kdy-formFieldLabel,
-    .css-ib3lif-view--flex-flex,
-    .css-m97t26-text,
-    .css-l3we3a-checkboxFacade__label,
-    .css-1f6zcte-baseButton__content,
-    .css-154i6x9-modal,
-    .css-5x3bz0-view--flex-flex,
-    .css-118ltkl-view--inlineBlock-badge,
-    .css-14gbvmm-text,
-    .css-1sp24u-text,
-    .css-1fvrx9c-text,
-    .css-2dlkjw-text,
-    .css-iar2kr-text,
-    .css-wj8vot-view-flexItem,
-    .css-1heif24-view--flex-flex,
-    .css-977qb-view,
-    .css-103zv00-view-flexItem,
-    .css-nq7u71-view--flex-flex,
-    .css-i4y43u-text,
-    .css-1ugbsk7-text,
-    .css-bvhjjg-text,
-    .css-zfx53q-text,
-    .css-tx1xxs-view,
-    .css-138gh4t-view,
-    .css-3z137p-view,
-    .css-znkzol-view,
-    .css-1fevy06-view-flexItem,
-    .css-sk7tr4-view--flex-flex,
-    .css-ty98t2-view-flexItem,
-    .css-1i012th-baseButton__content,
-    .css-qfe6jw,
-    .css-m8032z-text,
-    .css-14ttj25-view--inlineBlock-inlineListItem,
-    .css-4bnp8a-text,
-    .css-10am28f-text,
-    .css-1onamjj-view-listItem,
-    .css-vftc6n-view--block-list,
-    .css-6t42ud-view-link:is(a),
-    .css-17undkt-text,
-    .css-16jy445-baseButton__content,
-    .css-pljkwv-view-heading {
+    #tinymce {
         font-family: Iosevka, var(--mono, ""), monospace, LatoWeb,
             "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
             sans-serif, var(--foreign, "") !important;
