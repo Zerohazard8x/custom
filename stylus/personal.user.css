@@ -112,7 +112,7 @@
     #modern-owner-name.ytd-miniplayer,
     .miniplayer-title.ytd-miniplayer,
     div.metadata.style-scope.ytd-miniplayer,
-    ytd-page-manager * .style-scope,
+    ytd-page-manager > * > .style-scope,
     div#items.ytd-mini-guide-renderer,
     tp-yt-paper-toast.yt-notification-action-renderer,
     div#guide-content.ytd-app,
@@ -136,7 +136,12 @@
     ytd-engagement-panel-title-header-renderer[modern-panels]:not(
             [ads-semantic-text]
         )
-        #title-text.ytd-engagement-panel-title-header-renderer {
+        #title-text.ytd-engagement-panel-title-header-renderer,
+    .yt-sans-20.yt-dynamic-sizing-formatted-string,
+    .yt-sans-22.yt-dynamic-sizing-formatted-string,
+    .yt-sans-24.yt-dynamic-sizing-formatted-string,
+    .yt-sans-26.yt-dynamic-sizing-formatted-string,
+    .yt-sans-28.yt-dynamic-sizing-formatted-string {
         font-family: "YouTube Sans", "Roboto", sans-serif, var(--foreign, "") !important;
     }
 }
