@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.11.2
+@version        2.11.3
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -31,9 +31,9 @@
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, Inter, "GitLab Sans", "Roboto",
+        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
-        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", Inter, "GitLab Sans",
+        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", Inter,
             "Roboto Flex", "Roboto", Barlow, Whitney, Lato, "Segoe UI Variable",
             "Segoe UI", "Motiva Sans", "Proxima Vara", "Proxima Nova", "FF Mark",
             "FF Mark Pro", "Avenir Next", Avenir, "HarmonyOS Sans TC",
@@ -67,7 +67,7 @@
             "Ubuntu Mono Nerd Font", Agave, "Agave Nerd Font", Hasklig,
             "Hasklug Nerd Font", "Source Code Pro", "Source Code Pro Nerd Font",
             "Andale Mono", "Lucida Console", "Lucida Sans Typewriter"; */
-        --block-mono: "GitLab Mono", "JetBrains Mono", "JetBrains Mono NL",
+        --block-mono: "JetBrains Mono", "JetBrains Mono NL",
             "JetBrainsMono Nerd Font", "Fantasque Sans Mono";
         /* --block-mono-full: "JetBrains Mono", "JetBrains Mono NL",
             "JetBrainsMono Nerd Font", "Fantasque Sans Mono",
@@ -386,7 +386,7 @@
     .ZkkK1e,
     .ZwRhJd {
         font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     .og3lId,
@@ -397,7 +397,7 @@
     h1,
     .VwiC3b {
         font-family: var(--google, ""), Roboto, "Helvetica Neue", HelveticaNeue,
-            Arial, sans-serif, var(--foreign, "") !important;
+            Arial, var(--foreign, ""), sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
@@ -405,21 +405,21 @@
     .a-no-hover-decoration,
     .GLcBOb,
     #result-stats {
-        font-family: "Google Sans", var(--google, ""), arial, sans-serif,
-            var(--foreign, "") !important;
+        font-family: "Google Sans", var(--google, ""), arial, var(--foreign, ""),
+            sans-serif !important;
     }
 
     .YmvwI,
     .FMKtTb {
         font-family: Google Sans, var(--google, ""), Arial, sans-serif-medium,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     .googlegpt pre,
     #googlegpt-chatbar,
     .markdown p code {
-        font-family: "Google Sans Mono", var(--mono, ""), monospace,
-            var(--foreign, "") !important;
+        font-family: "Google Sans Mono", var(--mono, ""), var(--foreign, ""),
+            monospace !important;
     }
 }
 @-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
@@ -654,7 +654,7 @@
     }
 }
 
-@-moz-document domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("libreddit.bus-hit.me"), domain("redlib.pussthecat.org"), domain("redlib.freedit.eu") {
+@-moz-document domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("libreddit.bus-hit.me"), domain("redlib.pussthecat.org"), domain("redlib.freedit.eu"), domain("red.artemislena.eu") {
     /* Redlib */
     html,
     body,
