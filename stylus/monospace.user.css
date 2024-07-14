@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.11.3
+@version        2.11.2
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -417,7 +417,8 @@
 
     .googlegpt pre,
     #googlegpt-chatbar,
-    .markdown p code {
+    .markdown p code,
+    div.otByu div.cwqNnb span.BFlQMb {
         font-family: "Google Sans Mono", var(--mono, ""), var(--foreign, ""),
             monospace !important;
     }
