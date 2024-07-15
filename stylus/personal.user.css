@@ -22,7 +22,7 @@
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
+		--sans: -apple-system, BlinkMacSystemFont, Inter, "GitLab Sans", "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans";
@@ -103,9 +103,11 @@
         background-color: rgba(8, 8, 8, 0.75) !important;
     }
 
-    /* class containing "ytd-miniplayer", etc */
-    [class*="ytd-miniplayer"],
-    div[class*="ytd"][class*="renderer"],
+	/* class containing "ytd-miniplayer", etc */
+	[class*="ytd-miniplayer"],
+	[class*="ytd"][id*="title"],
+	div[class*="ytd"][class*="renderer"],
+    div.style-scope.ytd-popup-container,
     .page-header-view-model-wiz__page-header-title--page-header-title-large,
     .truncated-text-wiz,
     li.sbsb_c.gsfs div,
@@ -130,14 +132,14 @@
             [ads-semantic-text]
         )
         #title-text.ytd-engagement-panel-title-header-renderer,
-    [class*="yt-sans"] {
+	[class*="yt-sans"] {
         font-family: "YouTube Sans", "Roboto", sans-serif, var(--foreign, "") !important;
     }
 }
 
 @-moz-document domain("music.youtube.com") {
     html,
-    [class*="ytmusic"][class*="renderer"] {
+	[class*="ytmusic"][class*="renderer"] {
         font-family: Roboto, Noto Naskh Arabic UI, Arial, sans-serif,
             var(--foreign, "") !important;
     }
