@@ -22,12 +22,12 @@
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, Inter, "GitLab Sans", "Roboto",
+        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans";
         --readable: "Public Sans", "Fira Sans", "Bahnschrift", var(--plex, "");
-        /* --readable-full: "Public Sans", "GitLab Sans", "Fira Sans", FiraGO, "FF Meta",
+        /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
             Recursive, "Atkinson Hyperlegible", "Source Sans Pro",
             "Nunito Sans", "Nunito", "Raleway", "Road UA", "Akshar", "DIN Next",
             "URW DIN", "DIN Alternate", "Bahnschrift",
@@ -103,25 +103,18 @@
         background-color: rgba(8, 8, 8, 0.75) !important;
     }
 
+    /* class containing "ytd-miniplayer", etc */
+    [class*="ytd-miniplayer"],
+    div[class*="ytd"][class*="renderer"],
     .page-header-view-model-wiz__page-header-title--page-header-title-large,
     .truncated-text-wiz,
     li.sbsb_c.gsfs div,
     .badge-shape-wiz,
     .badge.ytd-badge-supported-renderer,
-    #owner-name.ytd-miniplayer,
-    #modern-owner-name.ytd-miniplayer,
-    .miniplayer-title.ytd-miniplayer,
-    div.metadata.style-scope.ytd-miniplayer,
     ytd-page-manager > * > .style-scope,
     div#items.ytd-mini-guide-renderer,
     tp-yt-paper-toast.yt-notification-action-renderer,
     div#guide-content.ytd-app,
-    div.style-scope.ytd-guide-renderer,
-    div.style-scope.ytd-guide-section-renderer,
-    div.title.ytd-guide-entry-renderer,
-    div.style-scope.ytd-popup-container,
-    div.style-scope.ytd-multi-page-menu-renderer,
-    div.style-scope.ytd-active-account-header-renderer,
     #label.ytd-compact-link-renderer,
     #label.ytd-toggle-theme-compact-link-renderer {
         font-family: Roboto, var(--foreign, ""), Arial, sans-serif !important;
@@ -137,23 +130,14 @@
             [ads-semantic-text]
         )
         #title-text.ytd-engagement-panel-title-header-renderer,
-    .yt-sans-20.yt-dynamic-sizing-formatted-string,
-    .yt-sans-22.yt-dynamic-sizing-formatted-string,
-    .yt-sans-24.yt-dynamic-sizing-formatted-string,
-    .yt-sans-26.yt-dynamic-sizing-formatted-string,
-    .yt-sans-28.yt-dynamic-sizing-formatted-string {
+    [class*="yt-sans"] {
         font-family: "YouTube Sans", "Roboto", sans-serif, var(--foreign, "") !important;
     }
 }
 
 @-moz-document domain("music.youtube.com") {
     html,
-    .title.ytmusic-two-row-item-renderer,
-    .subtitle.ytmusic-two-row-item-renderer,
-    .third-title.ytmusic-two-row-item-renderer,
-    .title.ytmusic-responsive-list-item-renderer,
-    .secondary-flex-columns.ytmusic-responsive-list-item-renderer,
-    .flex-column.ytmusic-responsive-list-item-renderer {
+    [class*="ytmusic"][class*="renderer"] {
         font-family: Roboto, Noto Naskh Arabic UI, Arial, sans-serif,
             var(--foreign, "") !important;
     }
