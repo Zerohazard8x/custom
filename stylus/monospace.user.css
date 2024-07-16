@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.11.2
+@version        2.12.0
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -160,23 +160,22 @@
             var(--foreign, "");
     }
 
+    /* matches all with class containing heading */
+    /* ... i] means case insensitive */
     blockquote,
     .pre-content h1,
-    .content .mw-heading1,
     .content h1,
-    .content .mw-heading2,
+    [class*="heading" i],
     .content h2 {
         font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
             "Source Serif Pro", serif, var(--foreign, "") !important;
     }
 
     @media screen {
+        [class*="heading" i],
         .mw-body h1,
-        .mw-body .mw-heading1,
         .mw-body-content h1,
-        .mw-body-content .mw-heading1,
-        .mw-body-content h2,
-        .mw-body-content .mw-heading2 {
+        .mw-body-content h2 {
             font-family: var(--serif, ""), "Linux Libertine", "Georgia", "Times",
                 "Source Serif Pro", serif;
         }
@@ -451,8 +450,7 @@
             Arial Unicode MS, sans-serif, var(--foreign, "") !important;
     }
 
-	/* class containing "code", etc */
-    [class*="code"], [class*="Code"] {
+    [class*="code" i] {
         font-family: var(--mono, ""), Consolas, Courier, monospace,
             var(--foreign, "") !important;
     }
@@ -584,9 +582,11 @@
             var(--foreign, "") !important;
     }
 
-	[class*="css"][class*="text"],
-	[class*="css"][class*="Text"],
-	.css-6t42ud-view-link:is(a), .css-6t42ud-view-link:is(button),
+    .css-qfe6jw,
+    [class*="css" i][class*="button" i],
+    [class*="css" i][class*="text" i],
+    .css-6t42ud-view-link:is(a),
+    .css-6t42ud-view-link:is(button),
     .css-pljkwv-view-heading,
     #tinymce {
         font-family: Iosevka, var(--mono, ""), monospace, LatoWeb,
