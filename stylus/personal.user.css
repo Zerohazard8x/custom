@@ -97,9 +97,11 @@
     }
 
     .caption-window {
-        padding: 0.45% !important;
+        /* vw = viewport width */
+        /* vh = viewport height */
+        padding: 0.45vw !important;
         border-radius: 5px !important;
-        margin-bottom: 4% !important;
+        margin-bottom: 4vh !important;
         background-color: rgba(8, 8, 8, 0.75) !important;
     }
 
@@ -280,7 +282,7 @@
     }
 
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z {
-        padding: 0.45% !important;
+        padding: 0.45vw !important;
         border-radius: 5px !important;
         background-color: rgba(8, 8, 8, 0.75) !important;
     }

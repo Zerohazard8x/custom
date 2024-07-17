@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.12.0
+@version        2.11.2
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -161,7 +161,7 @@
     }
 
     /* matches all with class containing heading */
-    /* ... i] means case insensitive */
+    /* ... i] means case insensitive*/
     blockquote,
     .pre-content h1,
     .content h1,
@@ -582,12 +582,11 @@
             var(--foreign, "") !important;
     }
 
+    [class*="css" i][class*="head" i],
     .css-qfe6jw,
     [class*="css" i][class*="button" i],
     [class*="css" i][class*="text" i],
-    .css-6t42ud-view-link:is(a),
-    .css-6t42ud-view-link:is(button),
-    .css-pljkwv-view-heading,
+    [class*="css" i][class*="view" i],
     #tinymce {
         font-family: Iosevka, var(--mono, ""), monospace, LatoWeb,
             "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
