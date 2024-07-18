@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.11.2
+@version        2.12.1
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -487,13 +487,20 @@
 }
 
 @-moz-document domain("duckduckgo.com") {
-    .eVNpHGjtxRBq_gLOfGDr,
+    :root {
+        --theme-font-family-result-title: var(--default-font, ""),
+            var(--foreign, "");
+        --sds-font-family-monospace: var(--mono, ""), ui-monospace, Menlo,
+            Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
+            "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
+            "Droid Sans Mono", "Courier New", monospace;
+    }
+
     body,
     input,
     select,
     textarea {
-        font-family: var(--theme-font-family-result-title, ""),
-            var(--foreign, "") !important;
+        font-family: var(--theme-font-family-result-title, "") !important;
     }
 
     code,
@@ -501,14 +508,6 @@
     .ddgpt pre {
         font-family: var(--mono, ""), Consolas, Menlo, Monaco, monospace,
             var(--foreign, "") !important;
-    }
-
-    .eO9dloD5J8OJewxQVUem .D4hR0tobSBRm_mZ4hrlS span,
-    .eO9dloD5J8OJewxQVUem
-        .zOy00l5oxa1BzkYx8dfo
-        .N5t7rxvhA9HFhN2jgj_I
-        .hHVrjZST7zuknVVFtP6w {
-        font-family: var(--mono, ""), var(--sds-font-family-monospace) !important;
     }
 }
 
