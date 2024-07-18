@@ -35,6 +35,12 @@ apple.com##.section-what-else.section
 apple.com##.typography-hero-intro
 apple.com##.typography-section-headline
 
+bing.com###sa_zis_banner_block
+bing.com##.below_sbox
+bing.com##.cdxConv.\:.cdxConv_slsboxl.\?.false
+bing.com##.nomvs.msnpeek.widget.bottom_row
+||www.bing.com/th?id=OHR*webp*$image
+
 brainly.*###credential_picker_container
 brainly.*##.AnswerBoxLayout-module__blockade--LhO51.sg-animation-fade-in-fast
 brainly.*##.Tooltip-module__brn-tooltip-box--bottom-start-arrow-only--pDMYQ.Tooltip-module__brn-tooltip-box--e8HHN
