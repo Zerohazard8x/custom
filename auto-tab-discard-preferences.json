@@ -33,7 +33,7 @@
     "online": true,
     "page.context": false,
     "paused": true,
-    "period": 180,
+    "period": 600,
     "pinned": true,
     "prepends": "💤",
     "simultaneous-jobs": 10,
@@ -41,22 +41,11 @@
     "startup-release-pinned": true,
     "startup-unpinned": false,
     "tab.context": true,
-    "trash.keys": {
-      "https://mail.google.com/mail/u/1/#label/08%2F29%2F2023-11%2F12%2F2023": [
-        1699795577836,
-        86400
-      ]
-    },
+    "trash.keys": {},
     "trash.period": 24,
     "trash.unloaded": false,
     "trash.whitelist-url": [],
-    "whitelist": [
-      "web.telegram.org",
-      "webwhiteboard.com",
-      "reddit.com",
-      "you.com",
-      "www.bing.com"
-    ],
+    "whitelist": [],
     "whitelist-url": []
   },
   "localStorage": {
