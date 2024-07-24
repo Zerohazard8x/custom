@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.1.8
+@version        1.1.9
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com") {
+@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com") {
     :root {
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
             "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
@@ -25,7 +25,8 @@
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans";
-        --readable: "Public Sans", "GitLab Sans", "Fira Sans", "Bahnschrift", var(--plex, "");
+        --readable: "Public Sans", "GitLab Sans", "Fira Sans", "Bahnschrift",
+            var(--plex, "");
     }
 
     *:not(
@@ -516,5 +517,56 @@
         font-family: -apple-system, BlinkMacSystemFont, Apple Color Emoji,
             SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif,
             var(--foreign, "") !important;
+    }
+}
+
+@-moz-document domain("huya.com") {
+    #videoContainer,
+    .more-activity-icon .more-activity-icon-box .icon-span,
+    .news-v2-wrap {
+        font-family: var(--sans, ""), var(--foreign, ""), Microsoft YaHei !important;
+    }
+
+    body,
+    button,
+    input,
+    select,
+    textarea,
+    .mod-sidebar,
+    .duya-header {
+        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
+            var(--foreign, ""), Microsoft Yahei, Segoe UI, Helvetica Neue,
+            Helvetica, Tahoma, Arial, Hiragino Sans GB, Heiti SC,
+            WenQuanYi Micro Hei, sans-serif !important;
+    }
+
+    .jzIsBn {
+        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
+            "PingFang SC", Helvetica, Tahoma, Arial, "Hiragino Sans GB",
+            var(--foreign, ""), "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Heiti,
+            黑体, sans-serif !important;
+    }
+
+    .danmu-item span {
+        font-family: var(--sans, ""), SimHei, var(--foreign, ""),
+            Microsoft Yahei, -apple-system, BlinkMacSystemFont, Segoe UI,
+            Helvetica Neue, Helvetica, Tahoma, Arial, Hiragino Sans GB, Heiti SC,
+            WenQuanYi Micro Hei, sans-serif !important;
+    }
+
+    div#chat-room_list.chat-room_list,
+    .chat-room__list {
+        line-height: normal !important;
+    }
+
+    span.msg,
+    div.tit-h-send {
+        font-size: 25px !important;
+    }
+
+    .chat-room__list .msg-bubble,
+    span.cont-item.name.J_userMenu,
+    .chat-room__list .msg-normal {
+        font-size: 20px !important;
     }
 }
