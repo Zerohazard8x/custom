@@ -42,14 +42,14 @@
             "Helvetica", var(--plex, ""), "Ubuntu", "Open Sans", "Droid Sans"; */
         --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
             "IBM Plex Sans";
-        --serif: Rockwell, Century, "Century Schoolbook", Georgia,
+        --serif: Rockitt, Rockwell, Century, "Century Schoolbook", Georgia,
             "Noto Serif JP", "Noto Serif TC", "Noto Serif SC", "Noto Serif KR",
             "Noto Serif Thai", "Noto Serif Devanagari", "Noto Naskh Arabic",
             "Noto Serif";
         /* --serif-full: "Source Serif", "Source Serif Pro", "Source Serif 4",
-            "STIX Two Text", "Beaufort", "Beaufort Pro", Rockwell, Rokkitt,
-            "Zilla Slab", "Serif UI", "Serif UI Text", Fraunces, Alegreya,
-            Crimson, "Crimson Pro", "Crimson Text", Lora, Century,
+            "STIX Two Text", "Beaufort", "Beaufort Pro", Rokkitt,
+            "Zilla Slab", Rockwell,  "Serif UI", "Serif UI Text", Fraunces, Alegreya,
+            Crimson, "Crimson Pro", "Crimson Text", Lora, "Montagu Slab", Century,
             "Century Schoolbook", "Libre Baskerville", Georgia, "ITC Garamond",
             "Apple Garamond", "Shippori Mincho", "Serif UI Display",
             "Noto Serif JP", "Noto Serif TC", "Noto Serif SC", "Noto Serif KR",
