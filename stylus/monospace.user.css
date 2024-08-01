@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.12.2
+@version        2.12.3
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -266,8 +266,7 @@
     }
 }
 
-@-moz-document domain("chat.openai.com") {
-    /* ChatGPT */
+@-moz-document domain("chatgpt.com") {
     code,
     .shrink-0 {
         font-family: var(--mono, ""), Söhne Mono, Monaco, Andale Mono,
@@ -383,8 +382,7 @@
     .ZU8Abc,
     .ZkkK1e,
     .ZwRhJd {
-        font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, Arial,
-            var(--foreign, ""), sans-serif !important;
+        font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, var(--foreign, ""), Arial, sans-serif !important;
     }
 
     .og3lId,
@@ -395,22 +393,26 @@
     h1,
     .VwiC3b {
         font-family: var(--google, ""), Roboto, "Helvetica Neue", HelveticaNeue,
-            Arial, var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), Arial, sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
+	.di3YZe,
+	.CSkcDe, .related-question-pair div.iDjcJe,
+	.IFnjPb,
+	.GvPZzd,
+	.VuuXrf,
     .sjVJQd,
     .a-no-hover-decoration,
     .GLcBOb,
     #result-stats {
-        font-family: "Google Sans", var(--google, ""), arial, var(--foreign, ""),
+        font-family: "Google Sans", var(--google, ""), var(--foreign, ""), arial,
             sans-serif !important;
     }
 
     .YmvwI,
     .FMKtTb {
-        font-family: Google Sans, var(--google, ""), Arial, sans-serif-medium,
-            var(--foreign, ""), sans-serif !important;
+        font-family: Google Sans, var(--google, ""), var(--foreign, ""), Arial, sans-serif-medium, sans-serif !important;
     }
 
     .googlegpt pre,
@@ -452,6 +454,13 @@
     [class*="code" i] {
         font-family: var(--mono, ""), Consolas, Courier, monospace,
             var(--foreign, "") !important;
+    }
+
+    #sa_zis_banner_block,
+    .below_sbox,
+    .cdxConv.\:.cdxConv_slsboxl.\?.false,
+    .nomvs.msnpeek.widget.bottom_row {
+        display: none !important;
     }
 }
 
@@ -513,6 +522,15 @@
     .ddgpt pre {
         font-family: var(--mono, ""), Consolas, Menlo, Monaco, monospace,
             var(--foreign, "") !important;
+    }
+
+    .belowTheFold_howItWorksSection__nbvql,
+    .center_andText__ejUnC.center_intrinsic__mk_Ab.center_root__Uf1xM.homepage-cta-section_scrollCta__HuSCL,
+    .container_responsive__IDWnv.container_root__Lmrbx.desktop-homepage_belowTheFold__w0uDu,
+    .container_responsive__IDWnv.container_root__Lmrbx.desktop-homepage_heroContent__px79B,
+    .privacy-reminder.dropdown--region.dropdown,
+    .yjuFYcjOI844d3KiuLhz.nOpYdHAdSD_d47TfU1p8.KE_4ibtn0WI3iUo6lJw9 {
+        display: none !important;
     }
 }
 
@@ -586,6 +604,7 @@
             var(--foreign, "") !important;
     }
 
+	.css-l3we3a-checkboxFacade__label,
     [class*="css" i][class*="head" i],
     .css-qfe6jw,
     [class*="css" i][class*="button" i],
