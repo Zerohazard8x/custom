@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.0
+@version        2.9.1
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com"), domain("mail.google.com"), domain("translate.google.com"), domain("searx.tiekoetter.com") {
@@ -107,6 +107,7 @@
 
     /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
+    ytd-video-meta-block:not([rich-meta]) #byline-container.ytd-video-meta-block,
     ytd-video-meta-block[rich-meta] #byline-container.ytd-video-meta-block,
     [class*="ytd-miniplayer" i],
     [class*="ytd" i][id*="title" i],
@@ -141,6 +142,21 @@
     }
 
     /* Cleaning */
+    #mealbar-promo-renderer,
+    #Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D,
+    #about-these-results,
+    #paid-comment-background,
+    #sub-header,
+    #ticker,
+    .ytd-rich-section-renderer.style-scope,
+    .ytd-video-description-infocards-section-renderer.style-scope.yt-simple-endpoint,
+    #plasmo-csui,
+    #yt-live-chat-author-chip.yt-live-chat-message-input-renderer.style-scope,
+    #ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2),
+    #ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n+3):nth-child(-n+4),
+    #ytd-metadata-row-container-renderer.ytd-watch-metadata.style-scope {
+        display: none !important;
+    }
 }
 
 @-moz-document domain("music.youtube.com") {
