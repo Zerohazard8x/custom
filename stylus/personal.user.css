@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.1
+@version        2.9.2
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com"), domain("mail.google.com"), domain("translate.google.com"), domain("searx.tiekoetter.com") {
@@ -107,23 +107,14 @@
 
     /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
-    ytd-video-meta-block:not([rich-meta]) #byline-container.ytd-video-meta-block,
+    ytd-video-meta-block:not([rich-meta])
+        #byline-container.ytd-video-meta-block,
     ytd-video-meta-block[rich-meta] #byline-container.ytd-video-meta-block,
     [class*="ytd-miniplayer" i],
     [class*="ytd" i][id*="title" i],
     div[class*="ytd" i][class*="renderer" i],
-    div.style-scope.ytd-popup-container,
-    .page-header-view-model-wiz__page-header-title--page-header-title-large,
-    .truncated-text-wiz,
-    li.sbsb_c.gsfs div,
-    .badge-shape-wiz,
-    .badge.ytd-badge-supported-renderer,
-    ytd-page-manager > * > .style-scope,
-    div#items.ytd-mini-guide-renderer,
-    tp-yt-paper-toast.yt-notification-action-renderer,
-    div#guide-content.ytd-app,
-    #label.ytd-compact-link-renderer,
-    #label.ytd-toggle-theme-compact-link-renderer {
+    #content-text.ytd-comment-view-model,
+    yt-chip-cloud-chip-renderer[modern] {
         font-family: Roboto, var(--foreign, ""), Arial, sans-serif !important;
     }
 
@@ -152,8 +143,12 @@
     .ytd-video-description-infocards-section-renderer.style-scope.yt-simple-endpoint,
     #plasmo-csui,
     #yt-live-chat-author-chip.yt-live-chat-message-input-renderer.style-scope,
-    #ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2),
-    #ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n+3):nth-child(-n+4),
+    #ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(
+            2
+        ),
+    #ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(
+            n + 3
+        ):nth-child(-n + 4),
     #ytd-metadata-row-container-renderer.ytd-watch-metadata.style-scope {
         display: none !important;
     }
