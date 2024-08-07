@@ -107,6 +107,7 @@
 
     /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
+	[class*="metadata-view-model-wiz" i],
     #description.ytd-channel-renderer,
     ytd-video-meta-block:not([rich-meta])
         #byline-container.ytd-video-meta-block,
