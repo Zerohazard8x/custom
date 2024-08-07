@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           font-synthesis style
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@author         zerohazard8x + LLM
+@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/font-synthesis.user.css
+@homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
+==/UserStyle== */
+
+@-moz-document regexp(".*") {
+    *:not(
+            pre *,
+            .far,
+            .fa,
+            .glyphicon,
+            [class*="vjs-"],
+            .fab,
+            .fa-github,
+            .fas,
+            .material-icons,
+            .icofont,
+            .typcn,
+            mu,
+            [class*="mu-"],
+            .glyphicon,
+            .icon
+        ),
+    pre,
+    code,
+    tt {
+        font-synthesis: none !important;
+    }
+}
