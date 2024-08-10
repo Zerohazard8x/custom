@@ -268,7 +268,6 @@
 ||cyijqhwm.xyz$all
 ||cyqrqsuju.xyz$all
 ||d.delivery.consentmanager.net$all
-||d.newsweek.com$all
 ||d1hcrjcdtouu7e.cloudfront.net$all
 ||d1m52owuimzmrz.cloudfront.net$all
 ||d226aj4ao1t61q.cloudfront.net$all
@@ -920,6 +919,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||d.newsweek.com$script,inline-script,object,ping,stylesheet,other
 ||bdstatic.com$script,inline-script,object,ping,stylesheet,other
 ||peoplestackwebexperiments-pa.clients6.google.com$script,inline-script,object,ping,stylesheet,other
 ||kunlungr.com$script,inline-script,object,ping,stylesheet,other
@@ -1219,7 +1219,6 @@
 ||scorecardresearch.com$script,inline-script,object,ping,stylesheet,other
 ||scroll.com$script,inline-script,object,ping,stylesheet,other
 ||segment.com$script,inline-script,object,ping,stylesheet,other
-||sentry-cdn.com$script,inline-script,object,ping,stylesheet,other
 ||sharethrough.com$script,inline-script,object,ping,stylesheet,other
 ||shields.io$script,inline-script,object,ping,stylesheet,other
 ||shinobi.jp$script,inline-script,object,ping,stylesheet,other

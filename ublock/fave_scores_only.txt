@@ -30,32 +30,13 @@ fotmob.com##div.e1ju7a501.css-mq7mn-Group:nth-child(n+2)
 
 !------!
 
-sofascore.com##.bEAMMG.sc-fqkvVR
-sofascore.com##.bgUNaL.sc-fqkvVR
-sofascore.com##.cCvbUN.sc-fqkvVR
+sofascore.com##.sc-fqkvVR
 sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
-sofascore.com##.ctnzfO.sc-fqkvVR
-sofascore.com##.dFWpTa.sc-fqkvVR
 sofascore.com##.dNFnnE.Box
-sofascore.com##.dNFnnE.Box
-sofascore.com##.eUkCqv.sc-fqkvVR
-sofascore.com##.eVYfOf.sc-fqkvVR
-sofascore.com##.effxrH.sc-fqkvVR
 sofascore.com##.fAiLzF.Box
-sofascore.com##.fSiJSi.sc-fqkvVR
 sofascore.com##.hPBkha.Box
-sofascore.com##.heJcSB.sc-fqkvVR
-sofascore.com##.hhyMoi.sc-fqkvVR
-sofascore.com##.hwVmER.sc-fqkvVR
+sofascore.com##.hlfQJP.Box
 sofascore.com##.iIhqUI.Box
-sofascore.com##.ioCiyy.sc-fqkvVR
-sofascore.com##.iskzTm.sc-fqkvVR
-sofascore.com##.jMZkBK.sc-fqkvVR
-sofascore.com##.kKRTNa.sc-fqkvVR
-sofascore.com##.kMNHmZ.sc-fqkvVR
-sofascore.com##.kONZKD.sc-fqkvVR
-sofascore.com##.kcHixx.sc-fqkvVR
-sofascore.com##.kzMIWn.sc-fqkvVR
 sofascore.com##[href="/en-us/betting-tips-today"]
 
 thescore.com##.MatchupArticle__column--3JVWj.MatchupArticle__desktopView--1IYDo.col-sm-4
