@@ -36,6 +36,7 @@ apple.com##.typography-hero-intro
 apple.com##.typography-section-headline
 
 bing.com###sa_zis_banner_block
+bing.com##.b_hideOnChat
 bing.com##.below_sbox
 bing.com##.cdxConv.\:.cdxConv_slsboxl.\?.false
 bing.com##.nomvs.msnpeek.widget.bottom_row
@@ -64,9 +65,6 @@ canva.com##.light.theme.cUPK7A.FILRcg
 canva.com##.mRFx9A
 canva.com##.nv6FFQ
 canva.com##.xOEd1Q
-
-chat.openai.com##.justify-center.md\:gap-2.gap-0.md\:mb-4.md\:m-auto.md\:w-full.ml-1.flex.h-full
-chat.openai.com##div.md\:flex.items-start.text-center.gap-3\.5:last-child
 
 chegg.com###D_B1
 chegg.com##.TUcyk.styled__B1AdsWrapper-sc-1nx2zdf-0
@@ -169,6 +167,7 @@ forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__text
 forum.xda-developers.com,xdaforums.com##.uix_welcomeSection__title
 
 gemini.google.com##upsell-button.ng-star-inserted
+gemini.google.com##h1.ng-tns-c2198619035-2
 
 google.com###OotqVd
 google.com###helpful
