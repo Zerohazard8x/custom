@@ -64,17 +64,19 @@ twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
 ||static-cdn.jtvnw.net/badges/v1/ffdda3fe-8012-4db3-981e-7a131402b057/*$image
 ||static-cdn.jtvnw.net/subs-image-assets/turbo-ads-upsell-background.svg$image
 
-youtube.com###Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D
-youtube.com###about-these-results
-youtube.com###paid-comment-background
-youtube.com###sub-header
-youtube.com###ticker
-youtube.com##.ytd-rich-section-renderer.style-scope
-youtube.com##.ytd-video-description-infocards-section-renderer.style-scope.yt-simple-endpoint
-youtube.com##plasmo-csui
-youtube.com##yt-live-chat-author-chip.yt-live-chat-message-input-renderer.style-scope
-youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
-youtube.com##ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n+3):nth-child(-n+4)
-youtube.com##ytd-metadata-row-container-renderer.ytd-watch-metadata.style-scope
+youtube.com###Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D,
+youtube.com###about-these-results,
+youtube.com###mealbar-promo-renderer,
+youtube.com###paid-comment-background,
+youtube.com###plasmo-csui,
+youtube.com###sub-header,
+youtube.com###ticker,
+youtube.com###yt-live-chat-author-chip.yt-live-chat-message-input-renderer.style-scope,
+youtube.com###ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2),
+youtube.com###ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n + 3):nth-child(-n + 4),
+youtube.com###ytd-metadata-row-container-renderer.ytd-watch-metadata.style-scope
+youtube.com##.ytd-rich-section-renderer.style-scope,
+youtube.com##.ytd-video-description-infocards-section-renderer.style-scope.yt-simple-endpoint,
+youtube.com##ytd-merch-shelf-renderer.style-scope.ytd-watch-flexy,
 
 live.bilibili.com###room-background-vm
