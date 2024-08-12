@@ -189,6 +189,8 @@
 }
 
 @-moz-document domain("reddit.com"), domain("undelete.pullpush.io") {
+    .button,
+    h3,
     body,
     #search input[type="text"],
     .flat-vert.title,
@@ -203,20 +205,14 @@
     .entry .buttons li a,
     .entry .buttons li,
     .linkinfo,
-    .side .md .-blocks,
-    .side .md .-lists,
-    .side .md pre,
-    .side .md blockquote,
-    .side .md table,
-    .side .md p,
-    .side .md ul,
-    .side .md ol {
+    .side .md * {
         font-family: var(--noto, ""), "Noto Sans", NotoSans,
             var(
                 --font-sans,
                 'var(--sans, ""), verdana, arial, helvetica, sans-serif'
             ),
             var(--foreign, "") !important;
+        /* --font-18: normal undefined null/null var(--font-sans); */
     }
 
     div.prefixedName.font-bold.truncate.mr-xs,
@@ -351,6 +347,13 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .og3lId,
+    .GdCiyb,
+    .M2qv4b,
+    html,
+    body,
+    h1,
+    .VwiC3b,
     .BwPElf .toI8Rb,
     .Pqkn2e,
     .g,
@@ -382,37 +385,37 @@
     .ZU8Abc,
     .ZkkK1e,
     .ZwRhJd {
-        font-family: var(--google, ""), "Helvetica Neue", HelveticaNeue, var(--foreign, ""), Arial, sans-serif !important;
-    }
-
-    .og3lId,
-    .GdCiyb,
-    .M2qv4b,
-    html,
-    body,
-    h1,
-    .VwiC3b {
-        font-family: var(--google, ""), Roboto, "Helvetica Neue", HelveticaNeue,
-            var(--foreign, ""), Arial, sans-serif !important;
+        font-family: "Google Sans Text", var(--google, ""), Roboto, RobotoDraft,
+            Helvetica, "Helvetica Neue", HelveticaNeue, var(--foreign, ""),
+            Arial, sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
-	.di3YZe,
-	.CSkcDe, .related-question-pair div.iDjcJe,
-	.IFnjPb,
-	.GvPZzd,
-	.VuuXrf,
+    .cNacUd,
+    .ALPRDc,
+    .fm06If .ILfuVd,
+    .c2xzTb .ILfuVd,
+    .Jb0Zif .c2xzTb .ILfuVd,
+    .di3YZe,
+    .CSkcDe,
+    .related-question-pair div.iDjcJe,
+    .IFnjPb,
+    .GvPZzd,
+    .VuuXrf,
     .sjVJQd,
     .a-no-hover-decoration,
     .GLcBOb,
     #result-stats {
-        font-family: "Google Sans", var(--google, ""), var(--foreign, ""), arial,
-            sans-serif !important;
+        font-family: "Google Sans", "Google Sans Text", var(--google, ""),
+            Roboto, RobotoDraft, Helvetica, "Helvetica Neue", HelveticaNeue,
+            var(--foreign, ""), Arial, sans-serif !important;
     }
 
     .YmvwI,
     .FMKtTb {
-        font-family: Google Sans, var(--google, ""), var(--foreign, ""), Arial, sans-serif-medium, sans-serif !important;
+        font-family: Google Sans, "Google Sans Text", var(--google, ""), Roboto,
+            RobotoDraft, Helvetica, "Helvetica Neue", HelveticaNeue,
+            var(--foreign, ""), Arial, sans-serif-medium, sans-serif !important;
     }
 
     .googlegpt pre,
@@ -604,7 +607,7 @@
             var(--foreign, "") !important;
     }
 
-	.css-l3we3a-checkboxFacade__label,
+    .css-l3we3a-checkboxFacade__label,
     [class*="css" i][class*="head" i],
     .css-qfe6jw,
     [class*="css" i][class*="button" i],
