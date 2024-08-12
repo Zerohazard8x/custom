@@ -106,9 +106,11 @@
         text-rendering: optimizeLegibility !important;
         font-synthesis: none !important;
         font-optical-sizing: auto !important;
+
         font-size-adjust: from-font !important;
+
         font-kerning: auto !important;
-        letter-spacing: normal !important;
+        /* letter-spacing: normal !important; */
     }
 }
 

@@ -64,9 +64,10 @@
         text-rendering: optimizeLegibility !important;
         font-synthesis: none !important;
         font-optical-sizing: auto !important;
+
         font-size-adjust: from-font !important;
+
         font-kerning: auto !important;
-        letter-spacing: normal !important;
     }
 }
 
@@ -107,7 +108,7 @@
 
     /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
-	[class*="metadata-view-model-wiz" i],
+    [class*="metadata-view-model-wiz" i],
     #description.ytd-channel-renderer,
     ytd-video-meta-block:not([rich-meta])
         #byline-container.ytd-video-meta-block,
@@ -165,7 +166,7 @@
     }
 }
 
-@-moz-document regexp(".*youtube.com\/live_chat.*"), regexp(".*hyperchat.*") {
+@-moz-document regexp(".*youtube\\.com\\/live_chat.*") {
     div.content.overflow-y-scroll,
     .yt-live-chat-text-message-renderer,
     #card,
