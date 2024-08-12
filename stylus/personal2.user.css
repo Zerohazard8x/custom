@@ -8,7 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com") {
+@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com"), domain("faceit.com") {
     :root {
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
             "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
@@ -567,6 +567,30 @@
     .chat-room__list .msg-bubble,
     span.cont-item.name.J_userMenu,
     .chat-room__list .msg-normal {
+        font-size: 20px !important;
+    }
+}
+
+@-moz-document regexp(".*faceit\\.com.*\\/watch.*") {
+    .codsZE,
+    .kDLXzz {
+        font-family: "Play", sans-serif, var(--foreign, "") !important;
+    }
+
+    .codsZE,
+    .kDLXzz,
+    div.sc-hwdzOV.kOYNaN,
+    div.sc-eBMEME.hutjIi img {
+        line-height: normal !important;
+    }
+
+    .codsZE,
+    .kDLXzz,
+    div.sc-eBMEME.hutjIi img {
+        font-size: 25px !important;
+    }
+
+    div.sc-hwdzOV.kOYNaN {
         font-size: 20px !important;
     }
 }
