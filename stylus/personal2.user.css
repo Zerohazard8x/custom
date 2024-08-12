@@ -8,7 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com"), domain("faceit.com") {
+@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com"), regexp(".*faceit\\.com.*\\/watch.*") {
     :root {
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
             "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
