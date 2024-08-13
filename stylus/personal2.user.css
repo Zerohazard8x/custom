@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.1.10
+@version        1.1.9
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
@@ -56,11 +56,41 @@
         text-rendering: optimizeLegibility !important;
         font-synthesis: none !important;
         font-optical-sizing: auto !important;
-
         font-size-adjust: from-font !important;
-
+		
         font-kerning: auto !important;
     }
+	
+    /* restrict arial */
+	@font-face {
+	  font-family: 'Arial';
+	  src: local('Arial');
+	  unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+	}
+
+	@font-face {
+	  font-family: 'Arial Black';
+	  src: local('Arial Black');
+	  unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+	}
+
+	@font-face {
+	  font-family: 'Arial Bold';
+	  src: local('Arial Bold');
+	  unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+	}
+
+	@font-face {
+	  font-family: 'Arial Italic';
+	  src: local('Arial Italic');
+	  unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+	}
+
+	@font-face {
+	  font-family: 'Arial Bold Italic';
+	  src: local('Arial Bold Italic');
+	  unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+	}
 }
 
 @-moz-document domain("quora.com") {
