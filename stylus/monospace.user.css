@@ -107,8 +107,8 @@
         font-synthesis: none !important;
         font-optical-sizing: auto !important;
         font-size-adjust: from-font !important;
+        
         font-kerning: auto !important;
-        letter-spacing: normal !important;
     }
 	
 	/* restrict arial */
