@@ -2,6 +2,7 @@
   "allowlistedDomains": {
     "discord.com": true,
     "riotgames.com": true
+    "deepl.com": true
   },
   "blockGoogleFonts": false,
   "changeBadgeColorMissingResources": true
