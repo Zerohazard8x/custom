@@ -107,8 +107,8 @@
         font-synthesis: none !important;
         font-optical-sizing: auto !important;
         font-size-adjust: from-font !important;
-
         font-kerning: auto !important;
+        letter-spacing: normal !important;
     }
 
     /* restrict arial */
@@ -120,22 +120,8 @@
     }
 
     @font-face {
-        font-family: "Arial Regular";
-        src: local("Arial Regular");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
         font-family: "Arial Black";
         src: local("Arial Black");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow";
-        src: local("Arial Narrow");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
             U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     }
@@ -157,27 +143,6 @@
     @font-face {
         font-family: "Arial Bold Italic";
         src: local("Arial Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Bold";
-        src: local("Arial Narrow Bold");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Italic";
-        src: local("Arial Narrow Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Bold Italic";
-        src: local("Arial Narrow Bold Italic");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
             U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     }
@@ -418,6 +383,7 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .tNxQIb,
     .og3lId,
     .GdCiyb,
     .M2qv4b,
@@ -498,6 +464,11 @@
     div.otByu div.cwqNnb span.BFlQMb {
         font-family: "Google Sans Mono", var(--mono, ""), var(--foreign, ""),
             monospace !important;
+    }
+
+    .sfbg,
+    .appbar {
+        background: none !important;
     }
 }
 @-moz-document domain("bing.com"), domain("copilot.microsoft.com") {

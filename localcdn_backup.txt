@@ -1,0 +1,8 @@
+{
+  "allowlistedDomains": {
+    "discord.com": true,
+    "riotgames.com": true
+  },
+  "blockGoogleFonts": false,
+  "changeBadgeColorMissingResources": true
+}
