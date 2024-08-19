@@ -1,8 +1,9 @@
 {
   "allowlistedDomains": {
     "discord.com": true,
-    "riotgames.com": true
-    "deepl.com": true
+    "riotgames.com": true,
+    "deepl.com": true,
+    "twitch.tv": true
   },
   "blockGoogleFonts": false,
   "changeBadgeColorMissingResources": true

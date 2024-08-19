@@ -79,22 +79,8 @@
     }
 
     @font-face {
-        font-family: "Arial Regular";
-        src: local("Arial Regular");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
         font-family: "Arial Black";
         src: local("Arial Black");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow";
-        src: local("Arial Narrow");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
             U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     }
@@ -116,27 +102,6 @@
     @font-face {
         font-family: "Arial Bold Italic";
         src: local("Arial Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Bold";
-        src: local("Arial Narrow Bold");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Italic";
-        src: local("Arial Narrow Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Bold Italic";
-        src: local("Arial Narrow Bold Italic");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
             U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     }
@@ -385,7 +350,11 @@
 }
 
 @-moz-document domain("twitch.tv") {
-    /* Twitch */
+    :root {
+        --font-base: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
+            sans-serif, var(--foreign, "");
+    }
+
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .chat-line__status,
     span.CoreText-sc-1txzju1-0.doCFUd {
@@ -393,22 +362,14 @@
     }
 
     img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA,
+    .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg,
     .chat-badge {
         width: auto !important;
     }
 
-    div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
-    span.CoreText-sc-1txzju1-0.doCFUd,
-    .chat-author__display-name,
-    .chat-line__status,
-    .bQEtql,
-    body,
-    .live-time {
-        font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
-    }
-
     /* Chat messages */
+    a.ScCoreLink-sc-16kq0mq-0.eFqEFL.link-fragment.tw-link,
+    span.text-fragment,
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .bQEtql {
         font-size: 25px !important;
@@ -419,13 +380,15 @@
     }
 
     /* Chat authors */
+    p.CoreText-sc-1txzju1-0.cCvSAC,
     span.CoreText-sc-1txzju1-0.doCFUd,
     .chat-author__display-name,
     .chat-line__status {
         font-size: 20px !important;
     }
 
-    a.ScCoreLink-sc-16kq0mq-0.eFqEFL.tw-link img.chat-badge {
+    a.ScCoreLink-sc-16kq0mq-0.eFqEFL.tw-link img.chat-badge,
+    .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg {
         height: 20px !important;
     }
 }
