@@ -25,6 +25,8 @@ amazon.com##.widgetId\=search-results_5.template\=SEARCH_RESULTS.slot\=MAIN.celw
 
 appleid.apple.com##.landing__blocks
 
+apps.apple.com##.we-banner.l-content-width
+
 apple.com##.image-hero
 apple.com##.image-icon-privacy
 apple.com##.section-airtag.section
@@ -390,6 +392,8 @@ store.steampowered.com,steamcommunity.com##div.rightcol.recent_reviews:nth-child
 ||clan.cloudflare.steamstatic.com/images/*.png$image
 
 studocu.com###main-wrapper > div:nth-of-type(17)
+
+support.google.com##.sgeDesktopFabRoot
 
 tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###site-notice
 tcrf.net,mariowiki.com,ssbwiki.com,wikirby.com,splatoonwiki.org,niwanetwork.org,betawiki.net,raymanpc.com,remywiki.com,consolemods.org,wiktionary.org,minecraft.wiki,liquipedia.net,pcgamingwiki.com###siteNotice
