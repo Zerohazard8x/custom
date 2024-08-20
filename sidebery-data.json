@@ -1,0 +1,75 @@
+{
+    "settings": {
+        "ctxMenuNative": true,
+        "tabsTree": false,
+        "syncName": "",
+        "syncSaveSettings": true,
+        "syncSaveCtxMenu": true,
+        "syncSaveStyles": true,
+        "syncSaveKeybindings": true,
+        "selectActiveTabFirst": true
+    },
+    "contextMenu": {
+        "tabs": [
+            { "opts": ["undoRmTab", "mute", "reload", "bookmark"] },
+            "separator-1",
+            {
+                "name": "%menu.tab.move_to_sub_menu_name",
+                "opts": [
+                    "moveToNewWin",
+                    "moveToWin",
+                    "separator-5",
+                    "moveToPanel",
+                    "moveToNewPanel"
+                ]
+            },
+            {
+                "name": "%menu.tab.reopen_in_sub_menu_name",
+                "opts": [
+                    "reopenInNewWin",
+                    "reopenInWin",
+                    "separator-6",
+                    "reopenInCtr",
+                    "reopenInNewCtr"
+                ]
+            },
+            { "name": "%menu.tab.colorize_", "opts": ["colorizeTab"] },
+            {
+                "name": "%menu.tab.sort_sub_menu_name",
+                "opts": [
+                    "sortTabsByTitleAscending",
+                    "sortTabsByTitleDescending",
+                    "sortTabsByUrlAscending",
+                    "sortTabsByUrlDescending",
+                    "sortTabsByAccessTimeAscending",
+                    "sortTabsByAccessTimeDescending",
+                    "separator-45654",
+                    "sortTabsTreeByTitleAscending",
+                    "sortTabsTreeByTitleDescending",
+                    "sortTabsTreeByUrlAscending",
+                    "sortTabsTreeByUrlDescending",
+                    "sortTabsTreeByAccessTimeAscending",
+                    "sortTabsTreeByAccessTimeDescending"
+                ]
+            },
+            "separator-2",
+            "pin",
+            "duplicate",
+            "discard",
+            "copyTabsUrls",
+            "copyTabsTitles",
+            "editTabTitle",
+            "separator-3",
+            "group",
+            "flatten",
+            "separator-4",
+            "urlConf",
+            "clearCookies",
+            "close",
+            "closeOtherTabs"
+        ]
+    },
+    "sidebarCSS": ":root {\n    /* Define variables */\n    --foreign: var(--emoji, \"\"), var(--noto, \"\"), PingFang, \"PingFang SC\",\n        \"Hiragino Sans\", \"Apple SD Gothic Neo\", Thonburi,\n        \"Tiro Devanagari Hindi\", \"Geeza Pro\", Geeza, \"Yu Gothic\",\n        \"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Malgun Gothic\",\n        \"Leelawadee UI\", \"Nirmala UI\", \"Segoe UI Arabic\";\n    --noto: \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\",\n        \"Noto Sans Thai\", \"Noto Sans Devanagari\";\n    --emoji: \"Apple Color Emoji\", \"SF Symbols\", \"Segoe UI Emoji\",\n        \"Segoe Fluent Icons\", \"Segoe MDL2 Assets\", \"Segoe UI Symbol\",\n        \"Noto Color Emoji\", \"Noto Sans Symbols\", \"EmojiOne Color\",\n        \"Twemoji Mozilla\";\n}\n\n#root {\n    --tabs-height: 34px;\n    --tabs-margin: 2px;\n    --general-margin: 2px;\n}\n\n*:not(\n        pre *,\n        .far,\n        .fa,\n        .glyphicon,\n        [class*=\"vjs-\"],\n        .fab,\n        .fa-github,\n        .fas,\n        .material-icons,\n        .icofont,\n        .typcn,\n        mu,\n        [class*=\"mu-\"],\n        .glyphicon,\n        .icon\n    ),\npre,\ncode,\ntt {\n    font-feature-settings: \"liga\", \"clig\", \"calt\", \"kern\" !important;\n    -webkit-font-smoothing: antialiased !important;\n    -moz-osx-font-smoothing: grayscale !important;\n    -ms-font-smoothing: antialiased !important;\n    text-rendering: optimizeLegibility !important;\n    font-synthesis: none !important;\n    font-optical-sizing: auto !important;\n    font-size-adjust: from-font !important;\n\n    font-kerning: auto !important;\n}\n\n@layer {\n    html,\n    body {\n        font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu,\n            \"Helvetica Neue\", sans-serif, var(--foreign, \"\") !important;\n    }\n}\n\n.Tab .title,\n.CtxMenu .opt {\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu,\n        \"Helvetica Neue\", sans-serif, var(--foreign, \"\") !important;\n}\n\ndiv.top-horizontal-box,\ndiv.BottomBar {\n    display: none !important;\n}\n\ndiv#root_container:not(:hover) {\n    div.t-box {\n        display: none !important;\n    }\n    div.fav {\n        margin-left: auto !important;\n        margin-right: auto !important;\n    }\n}",
+    "groupCSS": ":root {\n    /* Define variables */\n    --foreign: var(--emoji, \"\"), var(--noto, \"\"), PingFang, \"PingFang SC\",\n        \"Hiragino Sans\", \"Apple SD Gothic Neo\", Thonburi,\n        \"Tiro Devanagari Hindi\", \"Geeza Pro\", Geeza, \"Yu Gothic\",\n        \"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Malgun Gothic\",\n        \"Leelawadee UI\", \"Nirmala UI\", \"Segoe UI Arabic\";\n    --noto: \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\",\n        \"Noto Sans Thai\", \"Noto Sans Devanagari\";\n    --emoji: \"Apple Color Emoji\", \"SF Symbols\", \"Segoe UI Emoji\",\n        \"Segoe Fluent Icons\", \"Segoe MDL2 Assets\", \"Segoe UI Symbol\",\n        \"Noto Color Emoji\", \"Noto Sans Symbols\", \"EmojiOne Color\",\n        \"Twemoji Mozilla\";\n}\n\n*:not(\n        pre *,\n        .far,\n        .fa,\n        .glyphicon,\n        [class*=\"vjs-\"],\n        .fab,\n        .fa-github,\n        .fas,\n        .material-icons,\n        .icofont,\n        .typcn,\n        mu,\n        [class*=\"mu-\"],\n        .glyphicon,\n        .icon\n    ),\npre,\ncode,\ntt {\n    font-feature-settings: \"liga\", \"clig\", \"calt\", \"kern\" !important;\n    -webkit-font-smoothing: antialiased !important;\n    -moz-osx-font-smoothing: grayscale !important;\n    -ms-font-smoothing: antialiased !important;\n    text-rendering: optimizeLegibility !important;\n    font-synthesis: none !important;\n    font-optical-sizing: auto !important;\n    font-size-adjust: from-font !important;\n  \n    font-kerning: auto !important;\n}\n\n@layer {\n  html, body {\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu,\n        \"Helvetica Neue\", sans-serif, var(--foreign, \"\") !important;\n  }\n}\n\nbody {\n  font-family: Roboto, sans-serif, var(--foreign, \"\") !important;\n}",
+    "ver": "5.2.0"
+}
