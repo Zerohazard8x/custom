@@ -47,7 +47,7 @@
             "IBM Plex Sans";
         --slab-serif: Rokkitt, "Hepta Slab", "Zilla Slab", Rockwell;
         --serif: var(--slab-serif, ""), var(--foreign-serif, "");
-        /* --serif-full: var(--slab-serif, ""), "Source Serif", "Source Serif Pro",
+        /* --serif-full: var(--slab-serif, ""), "Cheltenham Classic", "Source Serif", "Source Serif Pro",
             "Source Serif 4", "STIX Two Text", "Beaufort", "Beaufort Pro",
             "Serif UI", "Serif UI Text", Fraunces, Alegreya, Crimson,
             "Crimson Pro", "Crimson Text", Lora, "Montagu Slab", Century,
@@ -418,6 +418,7 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .wHYlTd,
     .tNxQIb,
     .og3lId,
     .GdCiyb,
@@ -463,6 +464,8 @@
     }
 
     /* Force Google Sans (if available) */
+    .CVxCqb,
+    .JgzqYd,
     .cUnQKe .ILfuVd,
     .cUnQKe .UiGGAb.ILfuVd,
     .w5mTAe .ILfuVd,
