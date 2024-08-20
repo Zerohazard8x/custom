@@ -8,7 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com"), regexp(".*faceit\\.com.*\\/watch.*") {
+@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com"), regexp(".*faceit\\.com.*\\/watch.*"), domain("lostmediawiki.com") {
     :root {
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
             "Hiragino Sans", "Apple SD Gothic Neo", Thonburi,
@@ -70,22 +70,8 @@
     }
 
     @font-face {
-        font-family: "Arial Regular";
-        src: local("Arial Regular");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
         font-family: "Arial Black";
         src: local("Arial Black");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow";
-        src: local("Arial Narrow");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
             U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     }
@@ -107,27 +93,6 @@
     @font-face {
         font-family: "Arial Bold Italic";
         src: local("Arial Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Bold";
-        src: local("Arial Narrow Bold");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Italic";
-        src: local("Arial Narrow Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Narrow Bold Italic";
-        src: local("Arial Narrow Bold Italic");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
             U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     }
@@ -663,5 +628,12 @@
 
     div.sc-hwdzOV.kOYNaN {
         font-size: 20px !important;
+    }
+}
+
+@-moz-document domain("lostmediawiki.com") {
+    html,
+    body {
+        font-family: "Levenim MT", var(--foreign, ""), serif !important;
     }
 }
