@@ -21,7 +21,8 @@
             "Noto Sans Arabic";
         --foreign-serif: var(--emoji, ""), "Shippori Mincho", "Noto Serif JP",
             "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif Thai",
-            "Noto Serif Devanagari", "Noto Naskh Arabic", "Noto Serif";
+            "Noto Serif Bengali", "Noto Serif Devanagari", "Noto Naskh Arabic",
+            "Noto Serif";
         /* --foreign-full: var(--noto, ""), "FOT-Rodin Pro",
             "A-OTF UD Shin Go Pro", "FOT-NewRodin Pro", "Hiragino Sans",
             "Hiragino Sans GB", "Hiragino Kaku Gothic",
