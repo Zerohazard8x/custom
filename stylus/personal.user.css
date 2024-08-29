@@ -201,6 +201,11 @@
         font-family: Roboto, Noto Naskh Arabic UI, Arial, sans-serif,
             var(--foreign, "") !important;
     }
+
+    .title.ytmusic-carousel-shelf-basic-header-renderer {
+        font-family: YouTube Sans, Roboto, Noto Naskh Arabic UI, Arial,
+            sans-serif, var(--foreign, "") !important;
+    }
 }
 
 @-moz-document regexp(".*youtube\\.com\\/live_chat.*") {
