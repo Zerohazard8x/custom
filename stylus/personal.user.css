@@ -202,7 +202,11 @@
             var(--foreign, "") !important;
     }
 
-    .title.ytmusic-carousel-shelf-basic-header-renderer {
+    .title.ytmusic-carousel-shelf-basic-header-renderer,
+    .title.ytmusic-responsive-header-renderer,
+    ytmusic-shelf-renderer[is-bauhaus-web-detail-page-redesign-enabled]
+        .title.ytmusic-shelf-renderer
+        > yt-formatted-string.ytmusic-shelf-renderer {
         font-family: YouTube Sans, Roboto, Noto Naskh Arabic UI, Arial,
             sans-serif, var(--foreign, "") !important;
     }
