@@ -1,0 +1,12 @@
+[
+    {
+        "version": 2,
+        "title": "imgur referer",
+        "headers": [
+            { "enabled": true, "name": "Referer", "value": "imgur.com" }
+        ],
+        "initiatorDomainFilters": [{ "enabled": true, "domain": "imgur.com" }],
+        "shortTitle": "1",
+        "alwaysOn": true
+    }
+]

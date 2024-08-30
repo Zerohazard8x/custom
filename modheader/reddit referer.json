@@ -1,0 +1,12 @@
+[
+    {
+        "version": 2,
+        "title": "reddit referer",
+        "headers": [
+            { "enabled": true, "name": "Referer", "value": "reddit.com" }
+        ],
+        "initiatorDomainFilters": [{ "enabled": true, "domain": "reddit.com" }],
+        "shortTitle": "2",
+        "alwaysOn": true
+    }
+]
