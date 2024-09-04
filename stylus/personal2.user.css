@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.1.9
+@version        1.2.0
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
@@ -103,7 +103,7 @@
     .q-box {
         font-family: var(--sans, ""), -apple-system, system-ui,
             BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-            Cantarell, "Helvetica Neue", sans-serif, var(--foreign, "") !important;
+            Cantarell, "Helvetica Neue", var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -140,7 +140,7 @@
 @-moz-document domain("weibo.com"), domain("weibo.cn") {
     .woo-box-flex {
         font-family: var(--sans, ""), system-ui, -apple-system, Segoe UI, Roboto,
-            Ubuntu, Cantarell, Noto Sans, sans-serif, var(--foreign, "") !important;
+            Ubuntu, Cantarell, Noto Sans, var(--foreign, ""), sans-serif !important;
     }
 
     .woo-like-count,
@@ -156,7 +156,7 @@
     .main-text,
     h4 {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     .woo-input-main {
@@ -247,7 +247,7 @@
     select,
     textarea {
         font-family: var(--hupu, ""), "lucida grande", tahoma, verdana, arial,
-            \5b8b\4f53, sans-serif, var(--foreign, "") !important;
+            \5b8b\4f53, var(--foreign, ""), sans-serif !important;
     }
 
     body,
@@ -279,7 +279,7 @@
     .bbs-index-web-bbsindexWarp div {
         font-family: var(--hupu, ""), PingFangSC-Regular, PingFang SC, miui,
             system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
-            Helvetica, sans-serif, var(--foreign, "") !important;
+            Helvetica, var(--foreign, ""), sans-serif !important;
     }
 
     .bbs-sl-web-post-body,
@@ -354,7 +354,7 @@
     .title,
     .cntv_list ul li a {
         font-family: var(--hupu, ""), PingFangSC-Regular, Helvetica, Arial,
-            Microsoft Yahei, sans-serif, var(--foreign, "") !important;
+            Microsoft Yahei, var(--foreign, ""), sans-serif !important;
     }
 
     .hot-index {
@@ -388,7 +388,7 @@
         font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
             Apple SD Gothic Neo, Helvetica, Arial, NanumGothic, 나눔고딕,
             Malgun Gothic, 맑은 고딕, Dotum, 굴림, gulim, 새굴림, noto sans,
-            돋움, sans-serif, var(--foreign, "") !important;
+            돋움, var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -396,14 +396,14 @@
     .NavigationBar-module__navHeader_myx_35WiMq43R8TeP3p0_dnLLH
         .NavigationBar-module__navOptions_myx_3-DW6_KRV7Rh8qixes2XJu,
     .NavigationBar-module__navHeader_title_style_myx_gLKlYY_oND8vgB6axwgyW {
-        font-family: "Amazon Ember", Arial, sans-serif, var(--foreign, "") !important;
+        font-family: "Amazon Ember", Arial, var(--foreign, ""), sans-serif !important;
     }
 
     #a-page,
     #e input,
     .a-container {
         font-family: "Amazon Ember", Arial, "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, sans-serif, var(--foreign, "") !important;
+            "Hiragino Sans", Meiryo, var(--foreign, ""), sans-serif !important;
     }
 
     .bucket h2 {
@@ -420,13 +420,13 @@
     .a-color-link {
         font-family: "Amazon Ember", AmazonEmber-Regular,
             helvetica_ne_lt_55_roman, HelveticaNeueLTStd-Roman, Helvetica,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     .a-popover-wrapper,
     .a-meter-animate {
         font-family: "Amazon Ember", "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, sans-serif, var(--foreign, "") !important;
+            "Hiragino Sans", Meiryo, var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -439,7 +439,7 @@
 
     #main {
         font-family: var(--sans, ""), "Helvetica Neue", Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -473,7 +473,7 @@
     div.ModalContent--content--yXRDl {
         font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-            Helvetica Neue, sans-serif, var(--foreign, "") !important;
+            Helvetica Neue, var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -486,7 +486,7 @@
     .feed-card[data-v-87ed4514] {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
             Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     .gift-item[data-v-43b0ef2a],
@@ -508,7 +508,7 @@
     .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
     .video-page-card-small .card-box .info .title {
         font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular,
-            Helvetica Neue, Microsoft YaHei, sans-serif, var(--foreign, "") !important;
+            Helvetica Neue, Microsoft YaHei, var(--foreign, ""), sans-serif !important;
     }
 
     @media (-webkit-max-device-pixel-ratio: 1) {
@@ -517,7 +517,7 @@
         .video-page-card-small .card-box .info .title {
             font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
-                Microsoft YaHei, sans-serif, var(--foreign, "") !important;
+                Microsoft YaHei, var(--foreign, ""), sans-serif !important;
         }
     }
 }
@@ -611,7 +611,7 @@
 @-moz-document regexp(".*faceit\\.com.*\\/watch.*") {
     .codsZE,
     .kDLXzz {
-        font-family: "Play", sans-serif, var(--foreign, "") !important;
+        font-family: "Play", var(--foreign, ""), sans-serif !important;
     }
 
     .codsZE,

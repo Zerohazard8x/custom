@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace2
 @namespace      github.com/openstyles/stylus
-@version        1.3.4
+@version        1.3.5
 @description    My personal changes to codeblocks, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.css
@@ -166,7 +166,7 @@
     .ChatMessage_badge__ah1FU {
         font-family: var(--sans, ""), -apple-system, system-ui,
             BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-            Helvetica Neue, sans-serif, var(--foreign, "") !important;
+            Helvetica Neue, var(--foreign, ""), sans-serif !important;
     }
 
     code span,
@@ -309,7 +309,7 @@
     .canvas,
     .page-content,
     .nav li {
-        font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
     }
 
     .CodeMirror-sizer {
@@ -323,7 +323,7 @@
     .page {
         font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
-            "Droid Sans", "Helvetica Neue", sans-serif, var(--foreign, "") !important;
+            "Droid Sans", "Helvetica Neue", var(--foreign, ""), sans-serif !important;
     }
 
     .text code {
@@ -335,7 +335,7 @@
 @-moz-document domain("shellcheck.net") {
     html body {
         font-family: var(--sans, ""), "Helvetica Neue", Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     code,
@@ -457,7 +457,7 @@
     button,
     input,
     textarea {
-        font-family: rubik, helvetica, arial, sans-serif, var(--foreign, "") !important;
+        font-family: rubik, helvetica, arial, var(--foreign, ""), sans-serif !important;
     }
 
     .text b code {
@@ -486,20 +486,20 @@
 @-moz-document domain("yandex.com") {
     html[lang] {
         font-family: "YS Text", YS Text Home, -apple-system, BlinkMacSystemFont,
-            Arial, Helvetica, Arial Unicode MS, sans-serif, var(--foreign, "") !important;
+            Arial, Helvetica, Arial Unicode MS, var(--foreign, ""), sans-serif !important;
     }
 
     .SearchPage-Container {
         font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
             -apple-system, BlinkMacSystemFont, Helvetica Neue, Roboto, Segoe UI,
-            Arial, Helvetica, sans-serif, var(--foreign, "") !important;
+            Arial, Helvetica, var(--foreign, ""), sans-serif !important;
     }
 
     .mini-suggest__button-text,
     .HeaderDesktop,
     .mini-suggest__input {
         font-family: "YS Text", Arial, Helvetica, "Arial Unicode MS", sans-serif,
-            Arial, Helvetica, "Arial Unicode MS", sans-serif, var(--foreign, "") !important;
+            Arial, Helvetica, "Arial Unicode MS", var(--foreign, ""), sans-serif !important;
     }
 
     .Label-Content {
@@ -512,7 +512,7 @@
     .Typo,
     .Organic .Organic-Subtitle.Typo_type_greenurl > .Path {
         font-family: "YS Text", -apple-system, BlinkMacSystemFont, Arial,
-            Helvetica, sans-serif, var(--foreign, "") !important;
+            Helvetica, var(--foreign, ""), sans-serif !important;
     }
 
     .HeaderPhone,
@@ -525,14 +525,14 @@
     .Article-Code {
         font-family: var(--mono, ""), Consolas, Menlo, Monaco, "Lucida Console",
             "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
-            "Courier New", monospace, sans-serif, var(--foreign, "") !important;
+            "Courier New", monospace, var(--foreign, ""), sans-serif !important;
     }
 }
 
 @-moz-document domain("vlr.gg") {
     html,
     body {
-        font-family: "Roboto", sans-serif, var(--foreign, "") !important;
+        font-family: "Roboto", var(--foreign, ""), sans-serif !important;
     }
 
     .m-item-team-core {

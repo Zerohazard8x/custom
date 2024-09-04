@@ -5,10 +5,10 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.3
+@version        2.9.4
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com"), domain("mail.google.com"), domain("translate.google.com"), domain("searx.tiekoetter.com") {
+@-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com"), domain("mail.google.com"), domain("translate.google.com"), domain("searx.tiekoetter.com"), domain("threads.net") {
     :root {
         /* Define variables */
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
@@ -117,7 +117,7 @@
     .ytp-caption-segment {
         font-family: var(--readable, ""), var(--sans, ""), "YouTube Noto",
             Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana,
-            "PT Sans Caption", sans-serif, var(--foreign, "") !important;
+            "PT Sans Caption", var(--foreign, ""), sans-serif !important;
         color: #fff000 !important;
         background: none !important;
         font-size: 175% !important;
@@ -154,7 +154,7 @@
     [class*="ytd" i][class*="renderer" i],
     #content-text.ytd-comment-view-model,
     yt-chip-cloud-chip-renderer[modern] {
-        font-family: Roboto, Arial, sans-serif, var(--foreign, "") !important;
+        font-family: Roboto, Arial, var(--foreign, ""), sans-serif !important;
     }
 
     tp-yt-paper-dialog,
@@ -168,7 +168,7 @@
         )
         #title-text.ytd-engagement-panel-title-header-renderer,
     [class*="yt-sans" i] {
-        font-family: "YouTube Sans", "Roboto", sans-serif, var(--foreign, "") !important;
+        font-family: "YouTube Sans", "Roboto", var(--foreign, ""), sans-serif !important;
     }
 
     /* Cleaning */
@@ -207,7 +207,7 @@
         .title.ytmusic-shelf-renderer
         > yt-formatted-string.ytmusic-shelf-renderer {
         font-family: YouTube Sans, Roboto, Noto Naskh Arabic UI, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -226,7 +226,7 @@
     }
 
     div.content.overflow-y-scroll {
-        font-family: Roboto, sans-serif, var(--foreign, "") !important;
+        font-family: Roboto, var(--foreign, ""), sans-serif !important;
     }
 
     .yt-live-chat-text-message-renderer,
@@ -234,7 +234,7 @@
     yt-live-chat-author-chip #author-name,
     #header-subtext,
     #message {
-        font-family: Roboto, Arial, sans-serif, var(--foreign, "") !important;
+        font-family: Roboto, Arial, var(--foreign, ""), sans-serif !important;
     }
 
     .yt-live-chat-text-message-renderer,
@@ -259,7 +259,7 @@
     }
 }
 
-@-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com") {
+@-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("threads.net") {
     :root {
         --facebook: Optimistic, "Optimistic Text", "Optimistic Display",
             "Optimistic Text Normal", "Optimistic Display Bold";
@@ -267,26 +267,26 @@
 
     .x12qp5cl {
         font-family: var(--facebook, ""), Placeholder Font, Segoe UI Historic,
-            Segoe UI, Helvetica, Arial, sans-serif, var(--foreign, "") !important;
+            Segoe UI, Helvetica, Arial, var(--foreign, ""), sans-serif !important;
     }
 
     .x78zum5 {
         font-family: var(--facebook, ""), Segoe UI Historic, Segoe UI, Helvetica,
-            Arial, sans-serif, var(--foreign, "") !important;
+            Arial, var(--foreign, ""), sans-serif !important;
     }
 
     ._9o1- div,
     ._9ai0,
     ._1gaz {
         font-family: var(--facebook, ""), SFProText-Medium, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     ._8e63,
     ._9axz,
     ._8eso {
         font-family: var(--facebook, ""), SFProDisplay-Regular, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     ._9nq2,
@@ -296,7 +296,7 @@
     ._8e4l,
     #globalContainer {
         font-family: var(--facebook, ""), SFProText-Regular, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     ._9o1v,
@@ -304,12 +304,12 @@
     ._9ai2,
     ._8esh {
         font-family: var(--facebook, ""), SFProText-Semibold, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     .uiHeaderTitle {
         font-family: var(--facebook, ""), SFProDisplay-Bold, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     ._4g34,
@@ -323,7 +323,7 @@
     .x1i0vuye,
     ._acan {
         font-family: var(--facebook, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif;
     }
 
     ._7y88 {
@@ -332,7 +332,7 @@
 
     .inputtext {
         font-family: var(--facebook, ""), Roboto-Regular, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z
@@ -354,14 +354,14 @@
 @-moz-document domain("deepl.com") {
     body *:not(.fa) {
         font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, sans-serif, var(--foreign, "") !important;
+            "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif !important;
     }
 }
 
 @-moz-document domain("twitch.tv") {
     :root {
         --font-base: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
-            sans-serif, var(--foreign, "");
+            var(--foreign, ""), sans-serif;
     }
 
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
@@ -416,7 +416,7 @@
     .css-175oi2r,
     .css-175oi2r div {
         font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, sans-serif, var(--foreign, "") !important;
+            "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -428,7 +428,7 @@
     button,
     select,
     input {
-        font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -440,7 +440,7 @@
 
 @-moz-document domain("inoreader.com") {
     body {
-        font-family: Roboto, sans-serif, var(--foreign, "") !important;
+        font-family: Roboto, var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -454,7 +454,7 @@
     .ha > .hP,
     .gb_xe {
         font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -466,13 +466,13 @@
 
     .VhOj3e,
     .l6Jrx {
-        font-family: "Google Sans", sans-serif, var(--foreign, "") !important;
+        font-family: "Google Sans", var(--foreign, ""), sans-serif !important;
     }
 }
 
 @-moz-document domain("searx.tiekoetter.com") {
     /* SearX */
     html {
-        font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
     }
 }

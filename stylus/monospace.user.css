@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.12.3
+@version        2.12.4
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -368,7 +368,7 @@
     }
 
     .mw-editsection {
-        font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
     }
 
     input {
@@ -376,7 +376,7 @@
     }
 
     .pBody {
-        font-family: var(--sans, ""), verdana, sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), verdana, var(--foreign, ""), sans-serif !important;
     }
 
     #personal h2 {
@@ -388,7 +388,7 @@
     :lang(zh),
     :lang(ja),
     :lang(ko) {
-        font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
     }
 
     h1,
@@ -528,19 +528,19 @@
     .b_underSearchbox,
     #b_header {
         font-family: Roboto, Helvetica, "-apple-system", HelveticaNeue, Roboto,
-            Arial, sans-serif, var(--foreign, "") !important;
+            Arial, var(--foreign, ""), sans-serif !important;
     }
 
     h1,
     h2,
     h3 {
-        font-family: Roboto, sans-serif, var(--foreign, "") !important;
+        font-family: Roboto, var(--foreign, ""), sans-serif !important;
     }
 
     div.content {
         font-family: -apple-system, Roboto, SegoeUI, "Segoe UI",
             "Helvetica Neue", Helvetica, "Microsoft YaHei", "Meiryo UI", Meiryo,
-            Arial Unicode MS, sans-serif, var(--foreign, "") !important;
+            Arial Unicode MS, var(--foreign, ""), sans-serif !important;
     }
 
     [class*="code" i] {
@@ -567,7 +567,7 @@
 @-moz-document domain("discord.com") {
     :root {
         --disc-font: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
-            sans-serif, var(--foreign, "");
+            var(--foreign, ""), sans-serif;
 
         --font-primary: var(--disc-font);
         --font-display: var(--disc-font);
@@ -705,7 +705,7 @@
     #tinymce {
         font-family: Iosevka, var(--mono, ""), monospace, LatoWeb,
             "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     .ef-file-preview-header-download span,
@@ -742,10 +742,10 @@
     td,
     select,
     input {
-        font-family: "Inter", sans-serif, var(--foreign, "") !important;
+        font-family: "Inter", var(--foreign, ""), sans-serif !important;
     }
 
     .md code {
-        font-family: var(--mono, ""), monospace, sans-serif, var(--foreign, "") !important;
+        font-family: var(--mono, ""), monospace, var(--foreign, ""), sans-serif !important;
     }
 }
