@@ -945,7 +945,6 @@
 ||mm-production.rappler.com$script,inline-script,object,ping,stylesheet,other
 ||firebaseio.com$script,inline-script,object,ping,stylesheet,other
 ||launchdarkly.com$script,inline-script,object,ping,stylesheet,other
-||wcpstatic.microsoft.com$script,inline-script,object,ping,stylesheet,other
 ||123movies.cards$script,inline-script,object,ping,stylesheet,other
 ||33across.com$script,inline-script,object,ping,stylesheet,other
 ||365dm.com$script,inline-script,object,ping,stylesheet,other

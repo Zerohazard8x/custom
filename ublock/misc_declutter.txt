@@ -37,6 +37,9 @@ apple.com##.section-what-else.section
 apple.com##.typography-hero-intro
 apple.com##.typography-section-headline
 
+aptoide.com##.QXmvU.appcoins-bundle__Container-sc-i6hit7-0
+aptoide.com##div.jzxGCb.bundle__BundleContainer-sc-1lzl7v3-0
+
 bing.com###sa_zis_banner_block
 bing.com##.b_hideOnChat
 bing.com##.below_sbox
