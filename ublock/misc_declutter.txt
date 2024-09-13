@@ -73,6 +73,7 @@ canva.com##.xOEd1Q
 
 chegg.com###D_B1
 chegg.com##.TUcyk.styled__B1AdsWrapper-sc-1nx2zdf-0
+chegg.com##.ijWTm.styles__AnimatedPopoverWrapper-sc-1k2mtbt-4
 chegg.com##.jVGOCz.styled__BannerAdPlaceholder-kj3hee-1
 chegg.com##.lhjuGU.styled__QnaAnswerExpertDisclaimer-sc-1n9zsh8-6
 chegg.com##div.gHnNJJ.styled__ComponentWrapper-sc-1v7qxzh-1:nth-of-type(2)
@@ -184,6 +185,7 @@ google.com##.gacct-section.gacct-hero-feature
 google.com##.gb_Kf.gb_Tf.gb_A.gb_yd
 google.com##.gb_Nf.gb_Wf.gb_D.gb_Bd
 google.com##.h-u-mt-l.gacct-section.gacct-epilog
+google.com##promo-inline-card
 
 hltv.org##.footer
 hltv.org##.gtSmartphone-only.streams-section

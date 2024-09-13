@@ -193,6 +193,7 @@
             SF Mono, Menlo, Consolas, Liberation Mono, monospace;
     }
 
+    .PageHeader .PageHeader-titleWrap.PageHeader-titleWrap--medium,
     body,
     .markdown-body {
         font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
@@ -420,6 +421,8 @@
             RobotoDraft, Roboto-Regular;
     }
 
+    .jEYSNd .qXOWAb,
+    .cHQvTb,
     .IVvPP .zloOqf,
     #rhs .ss6qqb .zloOqf,
     .IFvyDb.hb8SAc,
@@ -513,6 +516,20 @@
     .sfbg,
     .appbar {
         background: none !important;
+    }
+
+    #promo-inline-card,
+    #OotqVd,
+    #helpful,
+    #personalized,
+    #secure,
+    .RB2q5e.OSrXXb.oYWfcb.GTERze,
+    .footer,
+    .gacct-section.gacct-hero-feature,
+    .gb_Kf.gb_Tf.gb_A.gb_yd,
+    .gb_Nf.gb_Wf.gb_D.gb_Bd,
+    .h-u-mt-l.gacct-section.gacct-epilog {
+        display: none !important;
     }
 }
 @-moz-document domain("bing.com"), domain("copilot.microsoft.com") {
@@ -696,7 +713,7 @@
             var(--foreign, "") !important;
     }
 
-    .css-l3we3a-checkboxFacade__label,
+    [class*="css" i][class*="label" i],
     [class*="css" i][class*="head" i],
     .css-qfe6jw,
     [class*="css" i][class*="button" i],

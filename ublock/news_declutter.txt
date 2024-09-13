@@ -164,3 +164,5 @@ inoreader.com##div.z-index-10.position-relative.py-5
 
 newsweek.com##.hidden-print.article-videoplayer
 newsweek.com##.img-container
+
+investing.com###\:r1b\:
