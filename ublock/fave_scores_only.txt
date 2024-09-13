@@ -40,3 +40,5 @@ sofascore.com##.iIhqUI.Box
 sofascore.com##[href="/en-us/betting-tips-today"]
 
 thescore.com##.MatchupArticle__column--3JVWj.MatchupArticle__desktopView--1IYDo.col-sm-4
+
+m.aiscore.com##.footer
