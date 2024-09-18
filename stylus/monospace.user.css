@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.12.4
+@version        2.12.5
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chat.openai.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net"), domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("undelete.pullpush.io"), domain("deskthority.net"), domain("libreddit.bus-hit.me"), domain("redlib.freedit.eu"), domain("redlib.pussthecat.org"), regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
+@-moz-document domain("github.com"), domain("wikipedia.org"), domain("reddit.com"), domain("stackoverflow.com"), domain("superuser.com"), domain("stackexchange.com"), domain("chatgpt.com"), domain("w3schools.com"), domain("tcrf.net"), domain("mariowiki.com"), domain("ssbwiki.com"), domain("wikirby.com"), domain("splatoonwiki.org"), domain("niwanetwork.org"), domain("betawiki.net"), domain("raymanpc.com"), domain("consolemods.org"), domain("wiktionary.org"), domain("bing.com"), domain("copilot.microsoft.com"), domain("geeksforgeeks.org"), domain("discord.com"), domain("duckduckgo.com"), domain("remywiki.com"), domain("cagematch.net"), domain("perplexity.ai"), domain("instructure.com"), domain("minecraft.wiki"), domain("pcgamingwiki.com"), domain("liquipedia.net"), domain("redlib.privacyredirect.com"), domain("redlib.catsarch.com"), domain("redlib.private.coffee"), domain("undelete.pullpush.io"), domain("deskthority.net"), domain("libreddit.bus-hit.me"), domain("redlib.freedit.eu"), domain("redlib.pussthecat.org"), regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     :root {
         /* Define variables */
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
@@ -337,6 +337,16 @@
 }
 
 @-moz-document domain("chatgpt.com") {
+    :host,
+    html {
+        font-family: Söhne, var(--sans, ""), ui-sans-serif, system-ui,
+            -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+            sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji,
+            Segoe UI Symbol, Noto Color Emoji, ui-sans-serif, -apple-system,
+            system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif,
+            Segoe UI Emoji, Segoe UI Symbol, var(--foreign, "") !important;
+    }
+
     code,
     .shrink-0 {
         font-family: var(--mono, ""), Söhne Mono, Monaco, Andale Mono,
@@ -344,7 +354,7 @@
     }
 
     .katex-error {
-        color: var(--tw-prose-body) !important;
+        color: var(--tw-prose-body, "") !important;
     }
 }
 

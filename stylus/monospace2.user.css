@@ -8,7 +8,7 @@
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com"), domain("monkeytype.com"), domain("keybr.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("yandex.com"), domain("vlr.gg") {
+@-moz-document domain("chat.mistral.ai"), domain("xdaforums.com"), domain("developer.mozilla.org"), domain("wikiwand.com"), domain("monkeytype.com"), domain("keybr.com"), domain("antifandom.com"), domain("breezewiki.com"), domain("yandex.com"), domain("vlr.gg"), domain("poe.com") {
     :root {
         /* Define variables */
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
@@ -144,29 +144,14 @@
 }
 
 @-moz-document domain("poe.com") {
-    .BotInfoCardHeader_operatedBy__G5WAP,
-    .BotInfoCardHeader_followerCount__nrf6H,
-    .BotMetadataTag_BotMetadataTag__Jkq1r,
-    .Button_buttonBase__Bv9Vx,
-    .ChatHeader_subText__JcFh3,
-    .ChatHistoryListItem_flexWithCenteredItems__Xmy6y,
-    .ChatHistoryListItem_secondaryText__bBw_y,
-    .ContinueLastChat_left___0Rco,
-    .ExploreBotListItem_botDescription__Ps9Jt,
-    .ExploreBotListItem_botName__W6Tyi,
-    .FileInfo_metadata__Wu4uZ,
-    .FileInfo_title__sUM2l,
-    .LinksSection_link__Z9CvZ,
-    .Markdown_markdownContainer__Tz3HQ,
-    .SidebarCard_link__ot_pN,
-    .SidebarLayout_layoutWrapper__mPYi4,
-    .DesktopAppAnnouncementBanner_ctaButton__3ppiO,
-    h2,
-    p,
-    .ChatMessage_badge__ah1FU {
-        font-family: var(--sans, ""), -apple-system, system-ui,
+    :root {
+        --pdl-font-family-web: var(--sans, ""), -apple-system, system-ui,
             BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-            Helvetica Neue, var(--foreign, ""), sans-serif !important;
+            Helvetica Neue, sans-serif, var(--foreign, "");
+    }
+
+    body {
+        font-family: var(--pdl-font-family-web, "") !important;
     }
 
     code span,
@@ -252,7 +237,7 @@
     h3,
     .grid,
     .gt-df {
-        font-family: var(--font-personal), -apple-system, "Segoe UI", system-ui,
+        font-family: var(--sans, ""), -apple-system, "Segoe UI", system-ui,
             Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
             sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
             "Noto Color Emoji", "Twemoji Mozilla" !important;
