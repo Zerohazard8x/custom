@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.2.0
+@version        1.2.1
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
 
-@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com"), regexp(".*faceit\\.com.*\\/watch.*"), domain("lostmediawiki.com") {
+@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com"), regexp(".*faceit\\.com.*\\/watch.*"), domain("lostmediawiki.com"), domain("steampowered.com"), domain("steamcommunity.com") {
     :root {
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
             "Hiragino Sans", "Apple SD Gothic Neo", "Bangla MN", Thonburi,
@@ -444,6 +444,8 @@
 }
 
 @-moz-document domain("steampowered.com"), domain("steamcommunity.com") {
+    body,
+    body._2LxgdMcpWJRjkxZKbmeEEb,
     .workshopItemTitle,
     body.v6 {
         font-family: "Motiva Sans", Arial, Helvetica, sans-serif,
@@ -523,29 +525,13 @@
 }
 
 @-moz-document domain("spotify.com") {
-    .circular-sp-vietnamese,
-    .circular-sp-vietnamese button,
-    .circular-sp-vietnamese input,
-    .circular-sp-vietnamese select,
-    .circular-sp-vietnamese textarea {
-        font-family: CircularSpVietnamese, CircularSp-Arab, CircularSp-Hebr,
+    :root {
+        --encore-body-font-stack: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr,
             CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
-            var(--foreign, ""), var(--fallback-fonts, sans-serif) !important;
-    }
-
-    .encore-text-body-medium,
-    .encore-text-body-medium-bold,
-    .encore-text-body-small,
-    .encore-text-body-small-bold {
-        font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr,
-            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
-            var(--foreign, ""), var(--fallback-fonts, sans-serif) !important;
-    }
-
-    .encore-text-headline-large {
-        font-family: CircularSpVietnameseTitle, CircularSp-Arab, CircularSp-Hebr,
-            CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
-            var(--foreign, ""), var(--fallback-fonts, sans-serif) !important;
+            var(--fallback-fonts, sans-serif), var(--foreign, "");
+        --encore-title-font-stack: SpotifyMixUITitle, CircularSp-Arab,
+            CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
+            var(--fallback-fonts, sans-serif), var(--foreign, "");
     }
 }
 

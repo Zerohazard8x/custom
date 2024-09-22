@@ -338,7 +338,8 @@
 
 @-moz-document domain("chatgpt.com") {
     :host,
-    html {
+    html,
+    .font-sans {
         font-family: Söhne, var(--sans, ""), ui-sans-serif, system-ui,
             -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
             sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji,
@@ -348,13 +349,10 @@
     }
 
     code,
-    .shrink-0 {
+    pre {
         font-family: var(--mono, ""), Söhne Mono, Monaco, Andale Mono,
-            Ubuntu Mono, monospace, var(--foreign, "") !important;
-    }
-
-    .katex-error {
-        color: var(--tw-prose-body, "") !important;
+            Ubuntu Mono, monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo,
+            Consolas, Liberation Mono, monospace, var(--foreign, "") !important;
     }
 }
 

@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.4
+@version        2.9.5
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com"), domain("mail.google.com"), domain("translate.google.com"), domain("searx.tiekoetter.com"), domain("threads.net") {
@@ -265,14 +265,15 @@
             "Optimistic Text Normal", "Optimistic Display Bold";
     }
 
-    .x12qp5cl {
-        font-family: var(--facebook, ""), Placeholder Font, Segoe UI Historic,
-            Segoe UI, Helvetica, Arial, var(--foreign, ""), sans-serif !important;
+    .__fb-dark-mode {
+        --font-family-segoe: var(--facebook, ""), Segoe UI Historic, Segoe UI,
+            Helvetica, Arial, sans-serif, var(--foreign, "");
     }
 
-    .x78zum5 {
-        font-family: var(--facebook, ""), Segoe UI Historic, Segoe UI, Helvetica,
-            Arial, var(--foreign, ""), sans-serif !important;
+    #facebook .system-fonts--body div,
+    #facebook .system-fonts--body span,
+    #facebook .system-fonts--body a {
+        font-family: var(--font-family-segoe, "") !important;
     }
 
     ._9o1- div,
@@ -422,13 +423,16 @@
 
 @-moz-document domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com") {
     /* Nitter */
-    .container,
+    body {
+        font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
+            sans-serif, var(--foreign, "") !important;
+    }
+
     .tweet-content,
-    .site-name,
-    button,
-    select,
-    input {
-        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
+    input[type="text"],
+    input[type="date"],
+    select {
+        font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
     }
 }
 
