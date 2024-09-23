@@ -8,7 +8,7 @@
 @version        2.9.5
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("x.com"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("feedly.com"), domain("inoreader.com"), domain("mail.google.com"), domain("translate.google.com"), domain("searx.tiekoetter.com"), domain("threads.net") {
+@-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("mail.google.com"), domain("translate.google.com"), domain("searx.tiekoetter.com"), domain("threads.net") {
     :root {
         /* Define variables */
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
@@ -412,15 +412,6 @@
     }
 }
 
-@-moz-document domain("x.com") {
-    .r-poiln3 .r-37j5jr,
-    .css-175oi2r,
-    .css-175oi2r div {
-        font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif !important;
-    }
-}
-
 @-moz-document domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com") {
     /* Nitter */
     body {
@@ -433,18 +424,6 @@
     input[type="date"],
     select {
         font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
-    }
-}
-
-@-moz-document domain("feedly.com") {
-    body {
-        font-family: var(--sans, ""), var(--sans-serif, "") !important;
-    }
-}
-
-@-moz-document domain("inoreader.com") {
-    body {
-        font-family: Roboto, var(--foreign, ""), sans-serif !important;
     }
 }
 
