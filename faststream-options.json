@@ -1,4 +1,6 @@
 {
+  "dev": false,
+  "replaceDelay": 500,
   "playMP4URLs": true,
   "playStreamURLs": true,
   "analyzeVideos": false,
@@ -7,8 +9,18 @@
   "autoEnableBestSubtitles": true,
   "storeProgress": true,
   "autoplayYoutube": false,
+  "autoplayNext": false,
+  "defaultYoutubeClient4": "IOS",
   "defaultQuality": "4320p",
-  "autoEnableURLs": [],
+  "autoEnableURLs": [
+    "~.*kimcartoon.*",
+    "~.*onshape.com.*",
+    "~.*redlib.*",
+    "~.*libreddit.*",
+    "~.*invidious.*",
+    "~.*yewtube.*",
+    "~.*instructure.*"
+  ],
   "customSourcePatterns": "",
   "keybinds": {
     "HidePlayer": "AltRight",
@@ -32,17 +44,17 @@
     "ResetFailed": "Backquote",
     "AddDownloader": "Equal",
     "RemoveDownloader": "Minus",
+    "SaveVideo": "KeyD",
+    "Screenshot": "KeyX",
     "SkipIntroOutro": "KeyS",
     "NextChapter": "None",
     "GoToStart": "Digit0",
+    "NextVideo": "KeyN",
+    "PreviousVideo": "None",
     "ToggleSubtitles": "KeyC",
-    "SubtrackDelete": "Delete",
-    "SubtrackShiftRight": "BracketRight",
-    "SubtrackShiftLeft": "BracketLeft",
-    "SubtrackDownload": "KeyD",
-    "SubtrackToggleResync": "KeyR",
     "FlipVideo": "None",
-    "RotateVideo": "None"
+    "RotateVideo": "None",
+    "ToggleVisualFilters": "KeyQ"
   },
   "videoBrightness": 1,
   "videoContrast": 1,
@@ -62,6 +74,8 @@
   "visChangeAction": "nothing",
   "miniSize": 0.25,
   "miniPos": "bottomright",
+  "videoDelay": 0,
+  "maximumDownloaders": 6,
   "subtitlesSettings": {
     "fontFamily": "\"Public Sans\", var(--readable, \"\"), var(--font, \"\"), Arial",
     "fontWeight": "normal",
@@ -73,61 +87,89 @@
     "defaultLanguage": "en"
   },
   "toolSettings": {
+    "playpause": {
+      "location": "left",
+      "priority": 100
+    },
+    "previous": {
+      "location": "left",
+      "priority": 200
+    },
+    "next": {
+      "location": "left",
+      "priority": 300
+    },
+    "volume": {
+      "location": "left",
+      "priority": 400
+    },
+    "duration": {
+      "location": "left",
+      "priority": 500
+    },
     "sources": {
-      "enabled": true,
+      "location": "right",
       "priority": 100
     },
     "audioconfig": {
-      "enabled": true,
+      "location": "right",
       "priority": 200
     },
     "subtitles": {
-      "enabled": true,
+      "location": "right",
       "priority": 300
     },
-    "quality": {
-      "enabled": true,
-      "priority": 400
-    },
     "languages": {
-      "enabled": true,
+      "location": "right",
       "priority": 500
     },
+    "quality": {
+      "location": "right",
+      "priority": 400
+    },
     "playrate": {
-      "enabled": true,
+      "location": "right",
       "priority": 600
     },
     "settings": {
-      "enabled": true,
+      "location": "right",
       "priority": 700
     },
-    "download": {
-      "enabled": true,
-      "priority": 900
-    },
-    "screenshot": {
-      "enabled": false,
-      "priority": 200
-    },
-    "pip": {
-      "enabled": false,
-      "priority": 300
-    },
-    "fullscreen": {
-      "enabled": true,
-      "priority": 1000
-    },
-    "windowedfs": {
-      "enabled": false,
-      "priority": 400
-    },
     "more": {
-      "enabled": true,
+      "location": "right",
       "priority": 800
     },
+    "download": {
+      "location": "right",
+      "priority": 900
+    },
+    "fullscreen": {
+      "location": "right",
+      "priority": 1000
+    },
     "loop": {
-      "enabled": false,
+      "location": "extra",
       "priority": 100
+    },
+    "pip": {
+      "location": "extra",
+      "priority": 300
+    },
+    "windowedfs": {
+      "location": "extra",
+      "priority": 400
+    },
+    "backward": {
+      "location": "extra",
+      "priority": 500
+    },
+    "screenshot": {
+      "location": "extra",
+      "priority": 200
+    },
+    "forward": {
+      "location": "extra",
+      "priority": 600
     }
   }
 }
