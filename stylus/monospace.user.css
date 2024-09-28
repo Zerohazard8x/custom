@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.12.5
+@version        2.12.6
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -190,7 +190,8 @@
         --fontStack-monospace: __monaspaceNeon_4fcba3,
             __monaspaceNeon_Fallback_4fcba3, "Monaspace Neon Var",
             "Monaspace Neon VF", "Monaspace Neon", ui-monospace, SFMono-Regular,
-            SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+            SF Mono, Menlo, Consolas, Liberation Mono, monospace,
+            var(--foreign, "");
     }
 
     .PageHeader .PageHeader-titleWrap.PageHeader-titleWrap--medium,
@@ -619,7 +620,12 @@
 
 @-moz-document domain("duckduckgo.com") {
     :root {
-        --theme-font-family-result-title: var(--default-font, ""),
+        --default-font: "DDG_ProximaNova", "DDG_ProximaNova_UI_0",
+            "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2",
+            "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
+            "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
+            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+            Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
             var(--foreign, "");
         --sds-font-family-monospace: var(--mono, ""), ui-monospace, Menlo,
             Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
