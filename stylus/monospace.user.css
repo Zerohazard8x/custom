@@ -695,7 +695,8 @@
 
     .ace_placeholder.ace_comment,
     code {
-        font-family: var(--mono, ""), var(--font-berkeley-mono, "") !important;
+        font-family: var(--mono, ""), var(--font-berkeley-mono, ""),
+            var(--foreign, "") !important;
     }
 
     .font-mono,
