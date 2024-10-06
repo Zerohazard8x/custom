@@ -1,14 +1,26 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.2.1
+@version        1.2.2
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
-
-@-moz-document domain("weibo.com"), domain("weibo.cn"), domain("hupu.com"), domain("sports.cctv.com"), domain("naver.com"), domain("bilibili.com"), domain("spotify.com"), domain("music.apple.com"), domain("huya.com"), regexp(".*faceit\\.com.*\\/watch.*"), domain("lostmediawiki.com"), domain("steampowered.com"), domain("steamcommunity.com"), domain("x.com") {
+@-moz-document domain("weibo.com"),
+domain("weibo.cn"),
+domain("hupu.com"),
+domain("sports.cctv.com"),
+domain("naver.com"),
+domain("bilibili.com"),
+domain("spotify.com"),
+domain("music.apple.com"),
+domain("huya.com"),
+regexp(".*faceit\\.com.*\\/watch.*"),
+domain("lostmediawiki.com"),
+domain("steampowered.com"),
+domain("steamcommunity.com"),
+domain("x.com") {
     :root {
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
             "Hiragino Sans", "Apple SD Gothic Neo", "Bangla MN", Thonburi,
@@ -101,24 +113,19 @@
 
 @-moz-document domain("quora.com") {
     .q-box {
-        font-family: var(--sans, ""), -apple-system, system-ui,
-            BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-            Cantarell, "Helvetica Neue", var(--foreign, ""), sans-serif !important;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+            var(--foreign, ""), sans-serif !important;
     }
 }
 
 @-moz-document domain("emojipedia.org") {
-    :root {
-        --sans-plus-jakarta: "__Plus_Jakarta_Sans_c26b88",
-            "__Plus_Jakarta_Sans_Fallback_c26b88";
-    }
-
     body,
     .flex {
-        font-family: var(--sans-plus-jakarta), var(--sans, ""), ui-sans-serif,
-            system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
-            helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
-            segoe ui emoji, segoe ui symbol, noto color emoji !important;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+            segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji,
+            var(--foreign, "") !important;
     }
 }
 
@@ -137,7 +144,8 @@
     }
 }
 
-@-moz-document domain("weibo.com"), domain("weibo.cn") {
+@-moz-document domain("weibo.com"),
+domain("weibo.cn") {
     .woo-box-flex {
         font-family: var(--sans, ""), system-ui, -apple-system, Segoe UI, Roboto,
             Ubuntu, Cantarell, Noto Sans, var(--foreign, ""), sans-serif !important;
@@ -392,7 +400,9 @@
     }
 }
 
-@-moz-document domain("amazon.com"), domain("amazon.co.jp"), domain("amazon.in") {
+@-moz-document domain("amazon.com"),
+domain("amazon.co.jp"),
+domain("amazon.in") {
     .NavigationBar-module__navHeader_myx_35WiMq43R8TeP3p0_dnLLH
         .NavigationBar-module__navOptions_myx_3-DW6_KRV7Rh8qixes2XJu,
     .NavigationBar-module__navHeader_title_style_myx_gLKlYY_oND8vgB6axwgyW {
@@ -430,7 +440,8 @@
     }
 }
 
-@-moz-document domain("soranews24.com"), domain("rocketnews24.com") {
+@-moz-document domain("soranews24.com"),
+domain("rocketnews24.com") {
     #container,
     #searchsubmit {
         font-family: var(--sans, ""), arial, helvetica, clean, sans-serif,
@@ -443,7 +454,8 @@
     }
 }
 
-@-moz-document domain("steampowered.com"), domain("steamcommunity.com") {
+@-moz-document domain("steampowered.com"),
+domain("steamcommunity.com") {
     body,
     body._2LxgdMcpWJRjkxZKbmeEEb,
     .workshopItemTitle,
@@ -459,7 +471,8 @@
     .suggestion-DS-EntryPoint1-1,
     .weatherButtonWrapper-DS-EntryPoint1-3,
     .weatherFeedbackDialogButton-DS-EntryPoint1-3 {
-        font-family: Segoe UI, Segoe WP, Arial, sans-serif, "MS Shell Dlg 2" !important;
+        font-family: Segoe UI, Segoe WP, Arial, sans-serif, "MS Shell Dlg 2",
+            var(--foreign, "") !important;
     }
 }
 
@@ -482,7 +495,12 @@
 @-moz-document domain("bilibili.com") {
     body {
         font-family: var(--sans, ""), Arial, "Microsoft YaHei",
-            "Microsoft Sans Serif", "Microsoft SanSerf", "微软雅黑" !important;
+            "Microsoft Sans Serif", "Microsoft SanSerf", "微软雅黑",
+            var(--foreign, "") !important;
+    }
+
+    .n .n-num {
+        font-family: var(--sans, ""), Arial, var(--foreign, "") !important;
     }
 
     .feed-card[data-v-87ed4514] {
@@ -498,12 +516,12 @@
         .one-anchor
         .anchor-name
         p[data-v-c58bfb0e] {
-        font-family: var(--sans, ""), "PingFang SC" !important;
+        font-family: var(--sans, ""), "PingFang SC", var(--foreign, "") !important;
     }
 
     .fans-medal-item {
         font-family: var(--sans, ""), "Microsoft YaHei", "Microsoft Sans Serif",
-            "Microsoft SanSerf", "微软雅黑" !important;
+            "Microsoft SanSerf", "微软雅黑", var(--foreign, "") !important;
     }
 
     .harmony-font,
@@ -557,10 +575,9 @@
     textarea,
     .mod-sidebar,
     .duya-header {
-        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
-            var(--foreign, ""), Microsoft Yahei, Segoe UI, Helvetica Neue,
-            Helvetica, Tahoma, Arial, Hiragino Sans GB, Heiti SC,
-            WenQuanYi Micro Hei, sans-serif !important;
+        font-family: -apple-system, BlinkMacSystemFont, var(--foreign, ""),
+            Microsoft Yahei, Segoe UI, Helvetica Neue, Helvetica, Tahoma, Arial,
+            Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif !important;
     }
 
     .jzIsBn {
@@ -632,17 +649,5 @@
         font-family: "TwitterChirp", "TwitterChirpExtendedHeavy", -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
             var(--foreign, ""), sans-serif !important;
-    }
-}
-
-@-moz-document domain("feedly.com") {
-    body {
-        font-family: var(--sans, ""), var(--sans-serif, "") !important;
-    }
-}
-
-@-moz-document domain("inoreader.com") {
-    body {
-        font-family: Roboto, var(--foreign, ""), sans-serif !important;
     }
 }

@@ -5,10 +5,25 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.5
+@version        2.9.6
 ==/UserStyle== */
-
-@-moz-document domain("youtube.com"), domain("youtube-nocookie.com"), domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("twitch.tv"), domain("deepl.com"), regexp(".*youtube.com\/live_chat.*"), domain("9xbuddy.in"), domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com"), domain("mail.google.com"), domain("translate.google.com"), domain("searx.tiekoetter.com"), domain("threads.net") {
+@-moz-document domain("youtube.com"),
+domain("youtube-nocookie.com"),
+domain("facebook.com"),
+domain("messenger.com"),
+domain("instagram.com"),
+domain("twitch.tv"),
+domain("deepl.com"),
+regexp(".*youtube.com\/live_chat.*"),
+domain("9xbuddy.in"),
+domain("nitter.tiekoetter.com"),
+domain("nitter.privacydev.net"),
+domain("nitter.poast.org"),
+domain("xcancel.com"),
+domain("mail.google.com"),
+domain("translate.google.com"),
+domain("searx.tiekoetter.com"),
+domain("threads.net") {
     :root {
         /* Define variables */
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
@@ -108,11 +123,12 @@
     }
 }
 
-@-moz-document regexp("^.*www\.youtube\.com.*"), regexp("^(?!.*(\w+\.youtube\.com)).*youtube\.com.*"), domain("youtube-nocookie.com") {
+@-moz-document regexp("^.*www\.youtube\.com.*"),
+regexp("^(?!.*(\w+\.youtube\.com)).*youtube\.com.*"),
+domain("youtube-nocookie.com") {
     /* YouTube */
     /* Regex excludes e.g. music.youtube.com */
     /* Combined: ^(?:.*www\.youtube\.com.*|(?!.*(\w+\.google\.com)).*youtube\.com.*) */
-
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: var(--readable, ""), var(--sans, ""), "YouTube Noto",
@@ -125,10 +141,8 @@
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
         /* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
             #000000 0 0 5px !important; */
-
         /* line-height: calc(2px 2ex 2px); */
         /* computed: 2px (2 * 20px) 2px = 44px */
-
         /* font-size: calc(14px (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
         /* font-size: calc([minimum size] ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
         /* https://madebymike.com.au/writing/fluid-type-calc-examples/ */
@@ -172,6 +186,7 @@
     }
 
     /* Cleaning */
+    .YtwTopBannerImageTextIconButtonedLayoutViewModelHostBannerImage,
     ytd-merch-shelf-renderer.style-scope.ytd-watch-flexy,
     #mealbar-promo-renderer,
     #Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D,
@@ -259,7 +274,10 @@
     }
 }
 
-@-moz-document domain("facebook.com"), domain("messenger.com"), domain("instagram.com"), domain("threads.net") {
+@-moz-document domain("facebook.com"),
+domain("messenger.com"),
+domain("instagram.com"),
+domain("threads.net") {
     :root {
         --facebook: Optimistic, "Optimistic Text", "Optimistic Display",
             "Optimistic Text Normal", "Optimistic Display Bold";
@@ -268,6 +286,9 @@
     .__fb-dark-mode {
         --font-family-segoe: var(--facebook, ""), Segoe UI Historic, Segoe UI,
             Helvetica, Arial, sans-serif, var(--foreign, "");
+        --font-family-system: var(--facebook, ""), system-ui, -apple-system,
+            BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif,
+            var(--foreign, "");
     }
 
     #facebook .system-fonts--body div,
@@ -321,7 +342,6 @@
 
     ._ap3a,
     ._aacl,
-    .x1i0vuye,
     ._acan {
         font-family: var(--facebook, ""), -apple-system, BlinkMacSystemFont,
             "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif;
@@ -405,14 +425,17 @@
 
 @-moz-document domain("9xbuddy.in") {
     #root section {
-        font-family: var(--sans, ""), ui-sans-serif, system-ui, -apple-system,
-            BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
-            Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-            Segoe UI Symbol, Noto Color Emoji !important;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+            Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+            Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji,
+            var(--foreign, "") !important;
     }
 }
 
-@-moz-document domain("nitter.tiekoetter.com"), domain("nitter.privacydev.net"), domain("nitter.poast.org"), domain("xcancel.com") {
+@-moz-document domain("nitter.tiekoetter.com"),
+domain("nitter.privacydev.net"),
+domain("nitter.poast.org"),
+domain("xcancel.com") {
     /* Nitter */
     body {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
