@@ -1,0 +1,272 @@
+/* ==UserStyle==
+@name           variables
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    My personal changes to monospace fonts, etc
+@author         Zerohazard8x LLM
+@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
+@homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
+==/UserStyle== */
+@-moz-document domain("github.com"),
+/* monospace */
+domain("wikipedia.org"),
+domain("reddit.com"),
+domain("stackoverflow.com"),
+domain("superuser.com"),
+domain("stackexchange.com"),
+domain("chatgpt.com"),
+domain("w3schools.com"),
+domain("tcrf.net"),
+domain("mariowiki.com"),
+domain("ssbwiki.com"),
+domain("wikirby.com"),
+domain("splatoonwiki.org"),
+domain("niwanetwork.org"),
+domain("betawiki.net"),
+domain("raymanpc.com"),
+domain("consolemods.org"),
+domain("wiktionary.org"),
+domain("bing.com"),
+domain("copilot.microsoft.com"),
+domain("geeksforgeeks.org"),
+domain("discord.com"),
+domain("duckduckgo.com"),
+domain("remywiki.com"),
+domain("cagematch.net"),
+domain("perplexity.ai"),
+domain("instructure.com"),
+domain("minecraft.wiki"),
+domain("pcgamingwiki.com"),
+domain("liquipedia.net"),
+domain("redlib.privacyredirect.com"),
+domain("redlib.catsarch.com"),
+domain("redlib.private.coffee"),
+domain("undelete.pullpush.io"),
+domain("deskthority.net"),
+domain("libreddit.bus-hit.me"),
+domain("redlib.freedit.eu"),
+domain("redlib.pussthecat.org"),
+regexp("^.*www\.google\.com.*"),
+/* monospace2 */
+regexp("^(?!.*(\w+\.google\.com)).*google\.com.*"),
+domain("chat.mistral.ai"),
+domain("xdaforums.com"),
+domain("developer.mozilla.org"),
+domain("wikiwand.com"),
+domain("monkeytype.com"),
+domain("keybr.com"),
+domain("antifandom.com"),
+domain("breezewiki.com"),
+domain("yandex.com"),
+domain("vlr.gg"),
+domain("poe.com"),
+/* personal */
+domain("youtube.com"),
+domain("youtube-nocookie.com"),
+domain("facebook.com"),
+domain("messenger.com"),
+domain("instagram.com"),
+domain("twitch.tv"),
+domain("deepl.com"),
+regexp(".*youtube.com\/live_chat.*"),
+domain("9xbuddy.in"),
+domain("nitter.tiekoetter.com"),
+domain("nitter.privacydev.net"),
+domain("nitter.poast.org"),
+domain("xcancel.com"),
+domain("mail.google.com"),
+domain("translate.google.com"),
+domain("searx.tiekoetter.com"),
+domain("threads.net"),
+/* personal2 */
+domain("soranews24.com"),
+domain("rocketnews24.com"),
+domain("weibo.com"),
+domain("weibo.cn"),
+domain("hupu.com"),
+domain("sports.cctv.com"),
+domain("naver.com"),
+domain("bilibili.com"),
+domain("spotify.com"),
+domain("music.apple.com"),
+domain("huya.com"),
+regexp(".*faceit\\.com.*\\/watch.*"),
+domain("lostmediawiki.com"),
+domain("steampowered.com"),
+domain("steamcommunity.com"),
+domain("x.com") {
+    :root {
+        /* Define variables */
+        --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
+            "Hiragino Sans", "Apple SD Gothic Neo", "Bangla MN", Thonburi,
+            "Tiro Devanagari Hindi", "Geeza Pro", Geeza, "Yu Gothic",
+            "Microsoft YaHei UI", "Microsoft YaHei", "Malgun Gothic",
+            "Leelawadee UI", "Nirmala UI", "Segoe UI Arabic";
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans Thai", "Noto Sans Bengali", "Noto Sans Devanagari",
+            "Noto Sans Arabic";
+        --foreign-serif: var(--emoji, ""), "Shippori Mincho", "Noto Serif JP",
+            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif Thai",
+            "Noto Serif Bengali", "Noto Serif Devanagari", "Noto Naskh Arabic",
+            "Noto Serif";
+        /* --foreign-full: var(--noto, ""), "FOT-Rodin Pro",
+            "A-OTF UD Shin Go Pro", "FOT-NewRodin Pro", "Hiragino Sans",
+            "Hiragino Sans GB", "Hiragino Kaku Gothic",
+            "Hiragino Kaku Gothic Pro", "HarmonyOS Sans TC", "HarmonyOS Sans SC",
+            "HarmonyOS Sans", PingFang, "PingFang SC", "Hiragino Sans GB",
+            "Apple SD Gothic Neo", "Bangla MN", Thonburi, "Tiro Devanagari Hindi",
+            "Geeza Pro", Geeza, "Yu Gothic", "Microsoft YaHei UI",
+            "Microsoft YaHei", "Malgun Gothic", "Leelawadee UI", "Nirmala UI",
+            "Segoe UI Arabic", var(--emoji, ""); */
+        --emoji: "Apple Color Emoji", "SF Symbols", "Segoe UI Emoji",
+            "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
+            "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
+            "Twemoji Mozilla";
+        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
+            "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
+        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", Inter,
+            "Roboto Flex", "Roboto", Barlow, Whitney, Lato, "Segoe UI Variable",
+            "Segoe UI", "Motiva Sans", "Proxima Vara", "Proxima Nova", "FF Mark",
+            "FF Mark Pro", "Avenir Next", Avenir, "HarmonyOS Sans TC",
+            "HarmonyOS Sans SC", "HarmonyOS Sans", "Nunito", "Nunito Sans",
+            "Fira Sans", FiraGO, "FF Meta", Manrope, "Helvetica Neue",
+            "Helvetica", var(--plex, ""), "Ubuntu", "Open Sans", "Droid Sans"; */
+        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans";
+        --slab-serif: Rokkitt, "Hepta Slab", "Zilla Slab", Rockwell;
+        --serif: var(--slab-serif, ""), var(--foreign-serif, "");
+        /* --serif-full: var(--slab-serif, ""), "Cheltenham Classic", "Source Serif", "Source Serif Pro",
+            "Source Serif 4", "STIX Two Text", "Beaufort", "Beaufort Pro",
+            "Serif UI", "Serif UI Text", Fraunces, Alegreya, Crimson,
+            "Crimson Pro", "Crimson Text", Lora, "Montagu Slab", Century,
+            "Century Schoolbook", "Libre Baskerville", Georgia, "ITC Garamond",
+            "Apple Garamond", "Serif UI Display", var(--foreign-serif, ""); */
+        --mono: var(--block-mono, ""), "Monaspace Argon Var",
+            "Monaspace Argon VF", "Monaspace Argon", "Fira Mono";
+        /* --mono-full: var(--block-mono-full, ""), "Monaspace Argon Var", "Monaspace Argon VF",
+            "Monaspace Argon", "Fira Code VF", "Fira Code", "Fira Mono",
+            "Fira Code Retina", "Noto Mono", "Noto Sans Mono", "DroidSansM",
+            "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font", Consolas,
+            Hack, "Hack Nerd Font", "Bitstream Vera Sans Mono",
+            "BitstromWera Nerd Font", "DejaVu Sans Mono", "Cascadia Code",
+            "CaskaydiaCove Nerd Font", "Cascadia Mono", "Segoe UI Mono",
+            "Intel One Mono", Menlo, "MesloLG Nerd Font", Monaco, "Ubuntu Mono",
+            "Ubuntu Mono Nerd Font", Agave, "Agave Nerd Font", Hasklig,
+            "Hasklug Nerd Font", "Source Code Pro", "Source Code Pro Nerd Font",
+            "Andale Mono", "Lucida Console", "Lucida Sans Typewriter"; */
+        --block-mono: "JetBrains Mono", "JetBrains Mono NL",
+            "JetBrainsMono Nerd Font", "Fantasque Sans Mono";
+        /* --block-mono-full: "JetBrains Mono", "JetBrains Mono NL",
+            "JetBrainsMono Nerd Font", "Fantasque Sans Mono",
+            "FantasqueSansM Nerd Font", "Input Mono", "Envy Code R",
+            "EnvyCodeR Nerd Font", "Monaspace Neon Var", "Monaspace Neon VF",
+            "Monaspace Neon", "IBM Plex Mono", "BlexMono Nerd Font",
+            "Roboto Mono", ProFont, "Monaspace Krypton Var",
+            "Monaspace Krypton VF", "Monaspace Krypton", ProFontIIx,
+            ProFontWindows, "Iosevka", "Iosevka Nerd Font",
+            "IosevkaTerm Nerd Font", "Input Sans"; */
+    }
+
+    *:not(
+            pre *,
+            .far,
+            .fa,
+            .glyphicon,
+            [class*="vjs-"],
+            .fab,
+            .fa-github,
+            .fas,
+            .material-icons,
+            .icofont,
+            .typcn,
+            mu,
+            [class*="mu-"],
+            .glyphicon,
+            .icon
+        ),
+    pre,
+    code,
+    tt {
+        font-feature-settings: "liga", "clig", "calt", "kern" !important;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        -ms-font-smoothing: antialiased !important;
+        text-rendering: optimizeLegibility !important;
+        font-synthesis: none !important;
+        font-optical-sizing: auto !important;
+        font-size-adjust: from-font !important;
+        font-kerning: auto !important;
+        letter-spacing: normal !important;
+    }
+
+    /* restrict arial */
+    @font-face {
+        font-family: "Arial";
+        src: local("Arial");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Regular";
+        src: local("Arial Regular");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Black";
+        src: local("Arial Black");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Narrow";
+        src: local("Arial Narrow");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Bold";
+        src: local("Arial Bold");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Italic";
+        src: local("Arial Italic");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Bold Italic";
+        src: local("Arial Bold Italic");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Narrow Bold";
+        src: local("Arial Narrow Bold");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Narrow Italic";
+        src: local("Arial Narrow Italic");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Arial Narrow Bold Italic";
+        src: local("Arial Narrow Bold Italic");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+}
