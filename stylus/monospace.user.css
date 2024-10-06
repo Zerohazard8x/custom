@@ -87,6 +87,10 @@
 
 @-moz-document domain("reddit.com"),
 domain("undelete.pullpush.io") {
+    shreddit-ad-post .feed-card-text-preview *,
+    shreddit-post:not([view-context="BrandPostPerformanceFeed"])
+        .feed-card-text-preview
+        :not(ol, ul, li, h1),
     .button,
     h3,
     body,
@@ -125,11 +129,7 @@ domain("undelete.pullpush.io") {
             ._1a_HxF03jCyxnx706hQmJR a
         ):not(.comments):not(.post-sharing-button):not(.login-required a):not(
             form span a
-        ):not(._3t5uN8xUmg0TOwRCOGQEcU):not(.button-small):not(
-            .recover-password
-        ):not(p em a):not(faceplate-tracker a):not(ul li a):not(
-            .pointer-events-auto
-        ):not(h6 a):not(.a):not(object a):not(span.nowrap a) {
+        ):not(._3t5uN8xUmg0TOwRCOGQEcU) {
         font-family: IBMPlexSans, var(--plex, ""), Lato, var(--noto, ""),
             "Noto Sans", NotoSans, var(--font-sans, ""), var(--foreign, "") !important;
     }
