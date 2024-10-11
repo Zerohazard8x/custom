@@ -381,20 +381,15 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
         display: none !important;
     }
 }
-@-moz-document domain("bing.com"),
-domain("copilot.microsoft.com") {
-    /* Bing */
-    /* 	body {
-		font-family: "-apple-system",HelveticaNeue,Roboto,Arial,var(--noto, ""),sans-serif, var(--noto, "") !important;
-	} */
+@-moz-document domain("bing.com") {
+    #sw_as .sa_prnt .sa_rm,
     body,
     .b_no h4,
     h2 .b_secondaryText,
     h2 .b_alert,
     .b_underSearchbox,
     #b_header {
-        font-family: Roboto, Helvetica, "-apple-system", HelveticaNeue, Roboto,
-            Arial, var(--foreign, ""), sans-serif !important;
+        font-family: Roboto, Arial, Helvetica, var(--foreign, ""), Sans-Serif !important;
     }
 
     h1,
@@ -419,6 +414,14 @@ domain("copilot.microsoft.com") {
     .cdxConv.\:.cdxConv_slsboxl.\?.false,
     .nomvs.msnpeek.widget.bottom_row {
         display: none !important;
+    }
+}
+
+@-moz-document domain("copilot.microsoft.com") {
+    body {
+        font-family: Ginto, ui-sans-serif, system-ui, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+            "Noto Color Emoji", var(--foreign, "") !important;
     }
 }
 
