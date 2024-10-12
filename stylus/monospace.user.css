@@ -587,6 +587,27 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
         font-family: Iosevka, var(--mono, ""), monospace, "Lato", sans-serif,
             var(--foreign, "") !important;
     }
+
+    #right-side > div > h2.todo-list-header:nth-child(n+1):nth-child(-3n+4),
+    #bettercanvas-announcement-list,
+    #bettercanvas-todo-list,
+    #context_external_tool_13589_menu_item,
+    #context_external_tool_13589_menu_item > a.ic-app-header__menu-list-link,
+    #context_external_tool_242_menu_item,
+    #context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
+    #eesy-tab-inner,
+    #eesy-tab-inner > div.eesy-tab2-btn-content,
+    #flash_message_holder,
+    #global_nav_libraries_link,
+    #global_nav_libraries_menu,
+    #global_nav_student_services_link,
+    #global_nav_student_services_menu,
+    #quiz-time-elapsed > div:nth-of-type(1),
+    #right-side h3,
+    .eesy_canvas.eesy_container_v4.eesy_container,
+    span.css-iurmb7-view-flexItem:nth-of-type(1) {
+        display: none !important;
+    }
 }
 
 @-moz-document domain("redlib.privacyredirect.com"),
