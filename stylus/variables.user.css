@@ -60,6 +60,8 @@ domain("breezewiki.com"),
 domain("yandex.com"),
 domain("vlr.gg"),
 domain("poe.com"),
+domain("colab.research.google.com"),
+regexp(".*colab\\.googleusercontent\\.com.*"),
 /* personal */
 domain("youtube.com"),
 domain("youtube-nocookie.com"),
@@ -166,6 +168,15 @@ domain("baidu.com") {
             "Monaspace Krypton VF", "Monaspace Krypton", ProFontIIx,
             ProFontWindows, "Iosevka", "Iosevka Nerd Font",
             "IosevkaTerm Nerd Font", "Input Sans"; */
+        --readable: "Public Sans", "Fira Sans", "Bahnschrift", var(--plex, "");
+        /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
+            Recursive, "Atkinson Hyperlegible", "Source Sans Pro",
+            "Nunito Sans", "Nunito", "Raleway", "Road UA", "Akshar", "DIN Next",
+            "URW DIN", "DIN Alternate", "Bahnschrift",
+            "alte din 1451 mittelschrift", "Keiner", "Dinish", "Dinish Expanded",
+            "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN", var(--plex, ""),
+            "Aptos Display", "Trebuchet MS", "Roadgeek 2014",
+            "Roadgeek 2005"; */
     }
 
     *:not(
