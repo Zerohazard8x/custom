@@ -7,7 +7,6 @@
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
-
 @-moz-document domain("emojipedia.org") {
     body,
     .flex {
@@ -612,5 +611,15 @@ domain("steamcommunity.com") {
     nav,
     section {
         font-family: var(--sans, ""), Arial, sans-serif, var(--foreign, "") !important;
+    }
+}
+
+@-moz-document domain("fmkorea.com") {
+    body,
+    .fm_best_widget *,
+    .fm_hot_key .li,
+    #header {
+        font-family: var(--sans, ""), "Apple SD Gothic Neo", "Malgun Gothic",
+            "맑은 고딕", arial, sans-serif, var(--foreign, "") !important;
     }
 }

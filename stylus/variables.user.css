@@ -97,7 +97,8 @@ domain("lostmediawiki.com"),
 domain("steampowered.com"),
 domain("steamcommunity.com"),
 domain("x.com"),
-domain("baidu.com") {
+domain("baidu.com"),
+domain("fmkorea.com") {
     :root {
         /* Define variables */
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
