@@ -48,6 +48,8 @@ domain("weibo.cn") {
             sans-serif;
     }
 
+    .mod-fil-fans span,
+    .m-container-max,
     .card,
     .main-text,
     h4 {
