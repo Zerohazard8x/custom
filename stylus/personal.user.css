@@ -283,6 +283,7 @@ domain("threads.net") {
     }
 
     /* Chat messages */
+    strong.chat-line__message-mention,
     a.ScCoreLink-sc-16kq0mq-0.eFqEFL.link-fragment.tw-link,
     span.text-fragment,
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
@@ -305,6 +306,10 @@ domain("threads.net") {
     a.ScCoreLink-sc-16kq0mq-0.eFqEFL.tw-link img.chat-badge,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg {
         height: 20px !important;
+    }
+
+    span.chat-author__intl-login {
+        font-size: 15px !important;
     }
 }
 

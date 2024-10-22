@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.12.7
+@version        2.12.8
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -85,55 +85,25 @@
     }
 }
 
-@-moz-document domain("reddit.com"),
+@-moz-document domain("old.reddit.com"),
 domain("undelete.pullpush.io") {
-    shreddit-ad-post .feed-card-text-preview *,
-    shreddit-post:not([view-context="BrandPostPerformanceFeed"])
-        .feed-card-text-preview
-        :not(ol, ul, li, h1),
-    .button,
-    h3,
+    .sitetable,
     body,
-    #search input[type="text"],
-    .flat-vert.title,
-    :root,
-    button,
-    html,
-    input,
-    select,
-    .side .titlebox .md,
-    .comments-page .commentarea .menuarea,
-    .comments-page .panestack-title,
-    .entry .buttons li a,
-    .entry .buttons li,
+    .users-online::after,
+    .side .md table tbody tr td,
     .linkinfo,
-    .side .md * {
-        font-family: var(--noto, ""), "Noto Sans", NotoSans,
-            var(
-                --font-sans,
-                'var(--sans, ""), verdana, arial, helvetica, sans-serif'
-            ),
+    .titlebox h1 {
+        font-family: var(--sans, ""), verdana, arial, helvetica, sans-serif,
             var(--foreign, "") !important;
-        /* --font-18: normal undefined null/null var(--font-sans); */
     }
 
-    div.prefixedName.font-bold.truncate.mr-xs,
-    h1,
-    #header-bottom-left .tabmenu,
-    .link .title,
-    .entry .tagline,
-    .flair,
-    .titlebox .usertext a,
-    .side::after,
-    a:not(.content li a):not(* p a):not(.bottom a):not(
-            ._1a_HxF03jCyxnx706hQmJR a
-        ):not(.comments):not(.post-sharing-button):not(.login-required a):not(
-            form span a
-        ):not(._3t5uN8xUmg0TOwRCOGQEcU) {
-        font-family: IBMPlexSans, var(--plex, ""), Lato, var(--noto, ""),
-            "Noto Sans", NotoSans, var(--font-sans, ""), var(--foreign, "") !important;
+    .link .title {
+        font-family: var(--serif, ""), var(--sans, ""), verdana, arial,
+            helvetica, sans-serif, var(--foreign, "") !important;
     }
+}
 
+@-moz-document domain("reddit.com") {
     .md pre,
     code,
     #shortlink-text {
@@ -395,7 +365,8 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     h1,
     h2,
     h3 {
-        font-family: Roboto, var(--foreign, ""), sans-serif !important;
+        font-family: "Segoe UI", Roboto, Arial, Helvetica, var(--foreign, ""),
+            Sans-Serif !important;
     }
 
     div.content {
@@ -588,14 +559,15 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
             var(--foreign, "") !important;
     }
 
-    #right-side > div > h2.todo-list-header:nth-child(n+1):nth-child(-3n+4),
+    #right-side > div > h2.todo-list-header:nth-child(n + 1):nth-child(-3n + 4),
     #bettercanvas-announcement-list,
     #bettercanvas-todo-list,
     #context_external_tool_13589_menu_item,
     #context_external_tool_13589_menu_item > a.ic-app-header__menu-list-link,
     #context_external_tool_242_menu_item,
-    #context_external_tool_242_menu_item > a.ic-app-header__menu-list-link
-    #eesy-tab-inner,
+    #context_external_tool_242_menu_item
+        > a.ic-app-header__menu-list-link
+        #eesy-tab-inner,
     #eesy-tab-inner > div.eesy-tab2-btn-content,
     #flash_message_holder,
     #global_nav_libraries_link,
