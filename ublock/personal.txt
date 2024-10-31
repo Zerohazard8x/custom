@@ -1039,7 +1039,6 @@
 ||d3m5pmku5z3tzn.cloudfront.net$script,inline-script,object,ping,stylesheet,other
 ||d3t2hlxboiur0e.cloudfront.net$script,inline-script,object,ping,stylesheet,other
 ||d3tvd1u91rr79.cloudfront.net$script,inline-script,object,ping,stylesheet,other
-||datatables.net$script,inline-script,object,ping,stylesheet,other
 ||defybrick.com$script,inline-script,object,ping,stylesheet,other
 ||deviantart.net$script,inline-script,object,ping,stylesheet,other
 ||digitaloceanspaces.com$script,inline-script,object,ping,stylesheet,other
@@ -1214,7 +1213,6 @@
 ||sail-personalize.com$script,inline-script,object,ping,stylesheet,other
 ||sapphiretech.com.cn$script,inline-script,object,ping,stylesheet,other
 ||scene7.com$script,inline-script,object,ping,stylesheet,other
-||sciencedirectassets.com$script,inline-script,object,ping,stylesheet,other
 ||scorecardresearch.com$script,inline-script,object,ping,stylesheet,other
 ||scroll.com$script,inline-script,object,ping,stylesheet,other
 ||segment.com$script,inline-script,object,ping,stylesheet,other
