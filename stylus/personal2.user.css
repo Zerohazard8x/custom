@@ -34,6 +34,13 @@
 
 @-moz-document domain("weibo.com"),
 domain("weibo.cn") {
+    html,
+    :host {
+        font-family: var(--sans, ""), ui-sans-serif, system-ui, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+            "Noto Color Emoji", var(--foreign, "") !important;
+    }
+
     .woo-box-flex {
         font-family: var(--sans, ""), system-ui, -apple-system, Segoe UI, Roboto,
             Ubuntu, Cantarell, Noto Sans, var(--foreign, ""), sans-serif !important;

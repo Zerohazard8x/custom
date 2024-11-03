@@ -98,7 +98,9 @@ domain("steampowered.com"),
 domain("steamcommunity.com"),
 domain("x.com"),
 domain("baidu.com"),
-domain("fmkorea.com") {
+domain("amazon.com"),
+domain("amazon.co.jp"),
+domain("amazon.in") {
     :root {
         /* Define variables */
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
