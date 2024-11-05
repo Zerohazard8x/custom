@@ -100,7 +100,9 @@ domain("x.com"),
 domain("baidu.com"),
 domain("amazon.com"),
 domain("amazon.co.jp"),
-domain("amazon.in") {
+domain("amazon.in"),
+domain("fmkorea.com"),
+domain("kick.com") {
     :root {
         /* Define variables */
         --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",

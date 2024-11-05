@@ -632,3 +632,19 @@ domain("steamcommunity.com") {
             "맑은 고딕", arial, sans-serif, var(--foreign, "") !important;
     }
 }
+
+@-moz-document domain("kick.com") {
+    div#chatroom-messages.relative.h-full.w-full.overflow-y-auto.contain-strict
+        div {
+        line-height: normal !important;
+    }
+
+    div.w-full.min-w-0.shrink-0.break-words span.font-normal {
+        font-size: 25px !important;
+    }
+
+    div.inline-flex.min-w-0.flex-nowrap.items-baseline.rounded.cursor-pointer.transition-colors.duration-150.ease-out,
+    div.w-full.min-w-0.shrink-0.truncate.text-xs.font-medium {
+        font-size: 20px !important;
+    }
+}
