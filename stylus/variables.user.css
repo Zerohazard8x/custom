@@ -286,4 +286,81 @@ domain("kick.com") {
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
             U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     }
+
+    @font-face {
+        font-family: "Helvetica";
+        src: local("Helvetica");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica";
+        src: local("Helvetica");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Regular";
+        src: local("Helvetica Regular");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Black";
+        src: local("Helvetica Black");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Narrow";
+        src: local("Helvetica Narrow");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Bold";
+        src: local("Helvetica Bold");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Italic";
+        src: local("Helvetica Italic");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Bold Italic";
+        src: local("Helvetica Bold Italic");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Narrow Bold";
+        src: local("Helvetica Narrow Bold");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Narrow Italic";
+        src: local("Helvetica Narrow Italic");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+    @font-face {
+        font-family: "Helvetica Narrow Bold Italic";
+        src: local("Helvetica Narrow Bold Italic");
+        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
+            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
 }
