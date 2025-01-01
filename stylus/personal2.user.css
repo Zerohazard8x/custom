@@ -423,7 +423,8 @@ domain("steamcommunity.com") {
 
     .harmony-font,
     .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
-    .video-page-card-small .card-box .info .title {
+    .video-page-card-small .card-box .info .title,
+    .bili-video-card .bili-video-card__info--tit[data-v-74991839] {
         font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular,
             Helvetica Neue, Microsoft YaHei, var(--foreign, ""), sans-serif !important;
     }
@@ -431,7 +432,8 @@ domain("steamcommunity.com") {
     @media (-webkit-max-device-pixel-ratio: 1) {
         .harmony-font,
         .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
-        .video-page-card-small .card-box .info .title {
+        .video-page-card-small .card-box .info .title,
+        .bili-video-card .bili-video-card__info--tit[data-v-74991839] {
             font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
                 Microsoft YaHei, var(--foreign, ""), sans-serif !important;

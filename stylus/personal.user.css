@@ -168,7 +168,8 @@ domain("threads.net") {
             "Optimistic Text Normal", "Optimistic Display Bold";
     }
 
-    .__fb-dark-mode {
+    .__fb-dark-mode,
+    ._aa4c {
         --font-family-segoe: var(--facebook, ""), Segoe UI Historic, Segoe UI,
             Helvetica, Arial, sans-serif, var(--foreign, "");
         --font-family-system: var(--facebook, ""), system-ui, -apple-system,
