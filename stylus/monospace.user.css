@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.12.8
+@version        2.12.9
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -15,15 +15,20 @@
             "Monaspace Neon VF", "Monaspace Neon", ui-monospace, SFMono-Regular,
             SF Mono, Menlo, Consolas, Liberation Mono, monospace,
             var(--foreign, "");
+        --fontStack-sansSerif: "Mona Sans", "Mona Sans Header Fallback",
+            -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            var(--foreign, "");
     }
 
-    .PageHeader .PageHeader-titleWrap.PageHeader-titleWrap--medium,
-    body,
+    @layer primer-css-base {
+        body {
+            font-family: var(--fontStack-sansSerif, "") !important;
+        }
+    }
+
     .markdown-body {
-        font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
-            BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial,
-            sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-            var(--foreign, "") !important;
+        font-family: var(--fontStack-sansSerif, "") !important;
     }
 
     code,
@@ -92,18 +97,33 @@ domain("undelete.pullpush.io") {
     .users-online::after,
     .side .md table tbody tr td,
     .linkinfo,
-    .titlebox h1 {
-        font-family: var(--sans, ""), verdana, arial, helvetica, sans-serif,
-            var(--foreign, "") !important;
+    .titlebox h1,
+    .side,
+    .linklisting .link .entry,
+    .linklisting .link .score,
+    .organic-listing .link.promotedlink .score,
+    #header-bottom-left ul.tabmenu,
+    .morelink,
+    .footer div.col,
+    .flat-vert.title {
+        font-family: var(--sans, ""), arial, "helvetica neue", helvetica,
+            verdana, sans-serif, var(--foreign, "") !important;
     }
 
     .link .title {
-        font-family: var(--serif, ""), var(--sans, ""), verdana, arial,
-            helvetica, sans-serif, var(--foreign, "") !important;
+        font-family: var(--serif, ""), var(--sans, ""), arial, "helvetica neue",
+            helvetica, verdana, sans-serif, var(--foreign, "") !important;
     }
 }
 
 @-moz-document domain("reddit.com") {
+    .theme-light,
+    :root {
+        --font-sans: "Reddit Sans", RedditSans, -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+
     .md pre,
     code,
     #shortlink-text {
@@ -240,6 +260,11 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
             RobotoDraft, Roboto-Regular;
     }
 
+    .JNI6Yb,
+    .vqseUe,
+    .yUTMj,
+    .cyspcb,
+    .p4wth,
     .jEYSNd .qXOWAb,
     .cHQvTb,
     .IVvPP .zloOqf,
@@ -292,6 +317,13 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     }
 
     /* Force Google Sans (if available) */
+    .hdzaWe,
+    .Fzsovc,
+    .YWpX0d,
+    .q8U8x,
+    .YmvwI,
+    .FMKtTb,
+    .jloFI,
     .CVxCqb,
     .JgzqYd,
     .cUnQKe .ILfuVd,
@@ -352,6 +384,8 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     }
 }
 @-moz-document domain("bing.com") {
+    .rqnaContainerwithfeedback #df_listaa .df_hd .b_traits,
+    .rqnaContainerwithfeedback #cr_df_listaa .df_hd .b_traits,
     #sw_as .sa_prnt .sa_rm,
     body,
     .b_no h4,
@@ -541,6 +575,7 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
             var(--foreign, "") !important;
     }
 
+    .css-1ogjq1j-avatar__initials,
     [class*="css" i][class*="label" i],
     [class*="css" i][class*="head" i],
     .css-qfe6jw,
