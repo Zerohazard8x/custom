@@ -423,8 +423,7 @@ domain("steamcommunity.com") {
 
     .harmony-font,
     .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
-    .video-page-card-small .card-box .info .title,
-    .bili-video-card .bili-video-card__info--tit[data-v-74991839] {
+    .video-page-card-small .card-box .info .title {
         font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular,
             Helvetica Neue, Microsoft YaHei, var(--foreign, ""), sans-serif !important;
     }
@@ -432,8 +431,7 @@ domain("steamcommunity.com") {
     @media (-webkit-max-device-pixel-ratio: 1) {
         .harmony-font,
         .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
-        .video-page-card-small .card-box .info .title,
-        .bili-video-card .bili-video-card__info--tit[data-v-74991839] {
+        .video-page-card-small .card-box .info .title {
             font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
                 Microsoft YaHei, var(--foreign, ""), sans-serif !important;
@@ -626,27 +624,61 @@ domain("steamcommunity.com") {
 }
 
 @-moz-document domain("fmkorea.com") {
+    .btn_pack,
+    .btn_pack a,
+    .btn_pack button,
+    .btn_pack input,
+    .btn_pack span,
+    .cnb_n_list,
+    .fm_hot_key *,
+    #gnb .a1 span,
+    .top_hotdeal a,
     body,
     .fm_best_widget *,
-    .fm_hot_key .li,
     #header {
         font-family: var(--sans, ""), "Apple SD Gothic Neo", "Malgun Gothic",
             "맑은 고딕", arial, sans-serif, var(--foreign, "") !important;
     }
+
+    .rd_body .document_address .a {
+        font-family: var(--sans, ""), verdana, var(--foreign, "") !important;
+    }
 }
 
-@-moz-document domain("kick.com") {
-    div#chatroom-messages.relative.h-full.w-full.overflow-y-auto.contain-strict
-        div {
-        line-height: normal !important;
+@-moz-document domain("espn.com"),
+domain("espn.ph") {
+    :root {
+        --espn: -apple-system, BlinkMacSystemFont, Roboto, Arial, Helvetica Neue,
+            Helvetica, sans-serif;
     }
 
-    div.w-full.min-w-0.shrink-0.break-words span.font-normal {
-        font-size: 25px !important;
+    body,
+    .mod-page-header .player-bio ul.general-info li,
+    .player-card .mod-page-header h1,
+    .mod-page-header .player-bio ul.player-metadata li,
+    .mod-header h4,
+    .mod-content-feed .result h3,
+    .view-more-posts,
+    a.view-more-posts:visited,
+    #footer,
+    .mod-page-header .player-bio .follow-text {
+        font-family: var(--espn, ""), helvetica, arial, clean, sans-serif !important;
     }
 
-    div.inline-flex.min-w-0.flex-nowrap.items-baseline.rounded.cursor-pointer.transition-colors.duration-150.ease-out,
-    div.w-full.min-w-0.shrink-0.truncate.text-xs.font-medium {
-        font-size: 20px !important;
+    #global-viewport,
+    #global-nav-secondary .global-nav-container > ul > li > a,
+    #global-nav-secondary .tertiary-nav-container > ul > li > a,
+    #global-nav-tertiary .global-nav-container > ul > li > a,
+    #global-nav-tertiary .tertiary-nav-container > ul > li > a {
+        font-family: var(--espn, ""), "BentonSans", -apple-system, "Roboto",
+            Helvetica, Arial, sans-serif !important;
+    }
+
+    .mod-container,
+    .tablehead th,
+    .tablehead td,
+    .mod-page-header .player-stats p,
+    .mod-page-tabs ul.ui-tabs {
+        font-family: var(--espn, ""), verdana, helvetica, arial, sans-serif !important;
     }
 }

@@ -101,6 +101,9 @@ domain("baidu.com"),
 domain("amazon.com"),
 domain("amazon.co.jp"),
 domain("amazon.in"),
+domain("boxofficemojo.com"),
+domain("espn.ph"),
+domain("espn.com"),
 domain("fandom.com") {
     :root {
         /* Define variables */
