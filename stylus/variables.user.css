@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.1.0
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
@@ -104,6 +104,7 @@ domain("amazon.in"),
 domain("boxofficemojo.com"),
 domain("espn.ph"),
 domain("espn.com"),
+domain("lazada.com.ph"),
 domain("fandom.com") {
     :root {
         /* Define variables */
