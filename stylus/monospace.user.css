@@ -1,13 +1,12 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.12.9
+@version        2.13.0
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 ==/UserStyle== */
-
 @-moz-document domain("github.com") {
     :root {
         --fontStack-monospace: __monaspaceNeon_4fcba3,
@@ -412,6 +411,10 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     [class*="code" i] {
         font-family: var(--mono, ""), Consolas, Courier, monospace,
             var(--foreign, "") !important;
+    }
+
+    .b_wptc_resp code {
+        font-family: var(--mono, ""), monospace, var(--foreign, "") !important;
     }
 
     #sa_zis_banner_block,
