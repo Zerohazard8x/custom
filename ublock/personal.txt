@@ -746,7 +746,6 @@
 ||scone-pa.clients6.google.com$all
 ||script.boerse-online.de/Content/Scripts/web-push$all
 ||script.google.com$all
-||script.wikia.nocookie.net$all
 ||scripts.tv2a.dk/oil-sdk$all
 ||sealapps.com$all
 ||seamlessaccess.org$all
@@ -938,7 +937,6 @@
 ||salesforce.com$script,inline-script,object,ping,stylesheet,other
 ||prismic.io$script,inline-script,object,ping,stylesheet,other
 ||byteoversea.com$script,inline-script,object,ping,stylesheet,other
-||jwplayer-dualstack.map.fastly.net$script,inline-script,object,ping,stylesheet,other
 ||cloudinary.com$script,inline-script,object,ping,stylesheet,other
 ||geogebra.org$script,inline-script,object,ping,stylesheet,other
 ||dspg.akamaiedge.net$script,inline-script,object,ping,stylesheet,other
@@ -1228,7 +1226,6 @@
 ||squarespace-cdn.com$script,inline-script,object,ping,stylesheet,other
 ||stands4.com$script,inline-script,object,ping,stylesheet,other
 ||static.cambridge.org$script,inline-script,object,ping,stylesheet,other
-||static.wikia.nocookie.net$script,inline-script,object,ping,stylesheet,other
 ||static2.jetpens.com$script,inline-script,object,ping,stylesheet,other
 ||storify.com$script,inline-script,object,ping,stylesheet,other
 ||stripe.network$script,inline-script,object,ping,stylesheet,other
