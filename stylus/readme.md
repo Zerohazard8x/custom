@@ -8,3 +8,5 @@
 - [Web Font Imports](https://github.com/Zerohazard8x/custom/raw/main/stylus/webfonts.user.css)
 - [Color](https://github.com/Zerohazard8x/custom/raw/main/stylus/color.user.css)
 - [Color 2](https://github.com/Zerohazard8x/custom/raw/main/stylus/color2.user.css)
+- [Variables](https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css)
+- [S.E.A.A.](https://github.com/Zerohazard8x/custom/raw/main/stylus/seaa.user.css)

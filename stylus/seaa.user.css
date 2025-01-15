@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name           Search Engine Assistant... Assistant
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Companion to https://github.com/F9y4ng/GreasyFork-Scripts - Thanks to original authors
+@author         Zerohazard8x
+@updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/seaa.user.css
+@homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
+==/UserStyle== */
+@-moz-document domain("bing.com"), domain("google.com"), domain("duckduckgo.com") {
+    gb-button {
+        display: inline-grid !important;
+        height: unset !important;
+        min-width: unset !important;
+    }
+
+    gb-button span input {
+        border-radius: 24px !important;
+        padding: unset !important;
+    }
+
+    gb-button span {
+        height: unset !important;
+    }
+
+    gb-button input {
+        height: unset !important;
+        min-width: 115px !important;
+    }
+}
