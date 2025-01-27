@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.3.0
+@version        1.3.1
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
@@ -619,7 +619,7 @@ domain("steamcommunity.com") {
     hgroup,
     nav,
     section {
-        font-family: var(--sans, ""), Arial, sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), Arial, var(--foreign, ""), sans-serif !important;
     }
 }
 
@@ -637,7 +637,7 @@ domain("steamcommunity.com") {
     .fm_best_widget *,
     #header {
         font-family: var(--sans, ""), "Apple SD Gothic Neo", "Malgun Gothic",
-            "맑은 고딕", arial, sans-serif, var(--foreign, "") !important;
+            "맑은 고딕", arial, var(--foreign, ""), sans-serif !important;
     }
 
     .rd_body .document_address .a {

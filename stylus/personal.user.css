@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.6
+@version        2.9.7
 ==/UserStyle== */
 
 @-moz-document regexp("^.*www\.youtube\.com.*"),
@@ -44,6 +44,9 @@ domain("youtube-nocookie.com") {
 
     /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
+    .truncated-text-wiz,
+    .page-header-view-model-wiz__page-header-title--page-header-title-large,
+    ytd-watch-metadata[title-headline-xs] h1.ytd-watch-metadata,
     [class*="metadata-view-model-wiz" i],
     ytd-video-meta-block:not([rich-meta])
         #byline-container.ytd-video-meta-block,
@@ -59,7 +62,7 @@ domain("youtube-nocookie.com") {
     tp-yt-paper-dialog,
     #search-input.ytd-searchbox-spt input,
     tp-yt-paper-item {
-        font-family: Roboto, var(--foreign, ""), Noto, sans-serif !important;
+        font-family: Roboto, Noto, var(--foreign, ""), sans-serif !important;
     }
 
     ytd-engagement-panel-title-header-renderer[modern-panels]:not(
@@ -171,15 +174,14 @@ domain("threads.net") {
     .__fb-dark-mode,
     ._aa4c {
         --font-family-segoe: var(--facebook, ""), Segoe UI Historic, Segoe UI,
-            Helvetica, Arial, sans-serif, var(--foreign, "");
+            Helvetica, Arial, var(--foreign, ""), sans-serif;
         --font-family-system: var(--facebook, ""), system-ui, -apple-system,
             BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif,
             var(--foreign, "");
     }
 
-    #facebook .system-fonts--body div,
-    #facebook .system-fonts--body span,
-    #facebook .system-fonts--body a {
+    #facebook .system-fonts--body *,
+    #facebook .system-fonts--body.segoe {
         font-family: var(--font-family-segoe, "") !important;
     }
 
@@ -330,14 +332,14 @@ domain("xcancel.com") {
     /* Nitter */
     body {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
-            sans-serif, var(--foreign, "") !important;
+            var(--foreign, ""), sans-serif !important;
     }
 
     .tweet-content,
     input[type="text"],
     input[type="date"],
     select {
-        font-family: var(--sans, ""), sans-serif, var(--foreign, "") !important;
+        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
     }
 }
 
