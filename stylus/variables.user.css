@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        2.0.0
+@version        2.0.1
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
@@ -134,10 +134,10 @@ domain("fandom.com") {
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, Inter, "Roboto",
+        --sans: -apple-system, BlinkMacSystemFont, "Adwaita Sans", "Roboto",
             "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
         /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", Inter,
-            "Roboto Flex", "Roboto", Barlow, Whitney, Lato, "Segoe UI Variable",
+            "Roboto Flex", "Roboto", Barlow, Cantarell, Whitney, Lato, "Segoe UI Variable",
             "Segoe UI", "Motiva Sans", "Proxima Vara", "Proxima Nova", "FF Mark",
             "FF Mark Pro", "Avenir Next", Avenir, "HarmonyOS Sans TC",
             "HarmonyOS Sans SC", "HarmonyOS Sans", "Nunito", "Nunito Sans",
