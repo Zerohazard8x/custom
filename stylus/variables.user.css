@@ -62,6 +62,7 @@ domain("vlr.gg"),
 domain("poe.com"),
 domain("colab.research.google.com"),
 regexp(".*colab\\.googleusercontent\\.com.*"),
+domain("chat.deepseek.com"),
 /* personal */
 domain("youtube.com"),
 domain("youtube-nocookie.com"),
@@ -220,7 +221,7 @@ domain("fandom.com") {
         letter-spacing: normal !important;
     }
 
-    /* restrict */
+    /* restrict arial */
     @font-face {
         font-family: "Arial";
         src: local("Arial");
