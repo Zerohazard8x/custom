@@ -155,10 +155,9 @@ domain("stackexchange.com") {
     :host,
     html,
     .font-sans {
-        font-family: OpenAI Sans, Helvetica Neue, Arial, Apple Color Emoji,
-            Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, ui-sans-serif,
-            -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji,
-            Arial, Segoe UI Emoji, Segoe UI Symbol, var(--foreign, "") !important;
+        font-family: OpenAI Sans, ui-sans-serif, -apple-system, system-ui,
+            Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif,
+            Segoe UI Emoji, Segoe UI Symbol, var(--foreign, "") !important;
     }
 
     code,
