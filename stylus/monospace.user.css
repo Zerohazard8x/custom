@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.13.1
+@version        2.14.0
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -16,7 +16,7 @@
             var(--foreign, "");
         --fontStack-sansSerif: "Mona Sans", "Mona Sans Header Fallback",
             -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji",
             var(--foreign, "");
     }
 
@@ -155,12 +155,10 @@ domain("stackexchange.com") {
     :host,
     html,
     .font-sans {
-        font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI,
-            Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue,
-            Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-            Noto Color Emoji, ui-sans-serif, -apple-system, system-ui, Segoe UI,
-            Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji,
-            Segoe UI Symbol, var(--foreign, "") !important;
+        font-family: OpenAI Sans, Helvetica Neue, Arial, Apple Color Emoji,
+            Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, ui-sans-serif,
+            -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji,
+            Arial, Segoe UI Emoji, Segoe UI Symbol, var(--foreign, "") !important;
     }
 
     code,
@@ -201,8 +199,8 @@ domain("deskthority.net") {
     #sidebar,
     h3 {
         font-family: var(--sans, ""), "Open Sans", "Helvetica Neue", Helvetica,
-            "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif,
-            var(--foreign, "") !important;
+            "Liberation Sans", Arial, Helvetica, FreeSans, var(--foreign, ""),
+            sans-serif !important;
     }
 
     .mw-editsection {
@@ -427,9 +425,9 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
 
 @-moz-document domain("copilot.microsoft.com") {
     body {
-        font-family: Ginto, ui-sans-serif, system-ui, sans-serif,
-            "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
-            "Noto Color Emoji", var(--foreign, "") !important;
+        font-family: Ginto, ui-sans-serif, system-ui, "Apple Color Emoji",
+            "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji",
+            var(--foreign, "") !important;
     }
 }
 
@@ -476,8 +474,8 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
             "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
             "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
             -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
-            Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-            var(--foreign, "");
+            Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans",
+            var(--foreign, ""), sans-serif;
         --sds-font-family-monospace: var(--mono, ""), ui-monospace, Menlo,
             Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
             "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
@@ -516,8 +514,8 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     .RatingsBoxAdjustedRating,
     input {
         font-family: var(--sans, ""), Arial, "Segoe UI", Frutiger,
-            "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", sans-serif,
-            var(--foreign, "") !important;
+            "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue",
+            var(--foreign, ""), sans-serif !important;
     }
 
     .starRating {
@@ -531,7 +529,7 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     .font-sans {
         font-family: var(--font-fk-grotesk-neue, ""), ui-sans-serif, system-ui,
             -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            Helvetica Neue, Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+            Helvetica Neue, Arial, "Noto Sans", "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
             var(--foreign, "") !important;
     }
@@ -539,7 +537,7 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     .font-display {
         font-family: var(--font-fk-grotesk, ""), ui-sans-serif, system-ui,
             -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            Helvetica Neue, Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+            Helvetica Neue, Arial, "Noto Sans", "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
             var(--foreign, "");
     }
@@ -574,8 +572,8 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     select,
     textarea {
         font-family: Iosevka, var(--mono, ""), monospace, "Lato Extended",
-            "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif,
-            var(--foreign, "") !important;
+            "Lato", "Helvetica Neue", Helvetica, Arial, var(--foreign, ""),
+            sans-serif !important;
     }
 
     .css-1ogjq1j-avatar__initials,
@@ -593,8 +591,8 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
 
     .ef-file-preview-header-download span,
     #App {
-        font-family: Iosevka, var(--mono, ""), monospace, "Lato", sans-serif,
-            var(--foreign, "") !important;
+        font-family: Iosevka, var(--mono, ""), monospace, "Lato",
+            var(--foreign, ""), sans-serif !important;
     }
 
     #right-side > div > h2.todo-list-header:nth-child(n + 1):nth-child(-3n + 4),

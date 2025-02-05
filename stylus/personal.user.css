@@ -100,8 +100,8 @@ domain("youtube-nocookie.com") {
 @-moz-document domain("music.youtube.com") {
     html,
     [class*="ytmusic" i][class*="renderer" i] {
-        font-family: Roboto, Noto Naskh Arabic UI, Arial, sans-serif,
-            var(--foreign, "") !important;
+        font-family: Roboto, Noto Naskh Arabic UI, Arial, var(--foreign, ""),
+            sans-serif !important;
     }
 
     .title.ytmusic-carousel-shelf-basic-header-renderer,
@@ -176,8 +176,8 @@ domain("threads.net") {
         --font-family-segoe: var(--facebook, ""), Segoe UI Historic, Segoe UI,
             Helvetica, Arial, var(--foreign, ""), sans-serif;
         --font-family-system: var(--facebook, ""), system-ui, -apple-system,
-            BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif,
-            var(--foreign, "");
+            BlinkMacSystemFont, Roboto, Helvetica, Arial, var(--foreign, ""),
+            sans-serif;
     }
 
     #facebook .system-fonts--body *,
@@ -224,8 +224,8 @@ domain("threads.net") {
 
     ._4g34,
     ._53jh {
-        font-family: var(--facebook, ""), Helvetica, Arial, sans-serif,
-            var(--foreign, "") !important;
+        font-family: var(--facebook, ""), Helvetica, Arial, var(--foreign, ""),
+            sans-serif !important;
     }
 
     ._ap3a,
@@ -247,8 +247,8 @@ domain("threads.net") {
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z
         span {
         font-family: var(--readable, ""), var(--facebook, ""), Placeholder Font,
-            Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif,
-            var(--foreign, "") !important;
+            Segoe UI Historic, Segoe UI, Helvetica, Arial, var(--foreign, ""),
+            sans-serif !important;
         color: #fff000 !important;
         background: none !important;
     }
@@ -319,7 +319,7 @@ domain("threads.net") {
 @-moz-document domain("9xbuddy.in") {
     #root section {
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-            Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+            Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
             Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji,
             var(--foreign, "") !important;
     }
@@ -359,8 +359,8 @@ domain("xcancel.com") {
 
 @-moz-document domain("translate.google.com") {
     body {
-        font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif,
-            var(--foreign, "") !important;
+        font-family: Roboto, RobotoDraft, Helvetica, Arial, var(--foreign, ""),
+            sans-serif !important;
     }
 
     .VhOj3e,
