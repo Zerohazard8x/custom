@@ -728,7 +728,6 @@
 ||repair.org$all
 ||reshort.com$all
 ||resource.logitech.com$all
-||rgpub.io$all
 ||rime8lope.com$all
 ||risk.aonunited.com$all
 ||roar9beer.com$all
@@ -918,6 +917,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||rgpub.io$script,inline-script,object,ping,stylesheet,other
 ||d.newsweek.com$script,inline-script,object,ping,stylesheet,other
 ||bdstatic.com$script,inline-script,object,ping,stylesheet,other
 ||peoplestackwebexperiments-pa.clients6.google.com$script,inline-script,object,ping,stylesheet,other

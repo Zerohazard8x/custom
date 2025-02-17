@@ -326,6 +326,8 @@ quillbot.com##.css-nsjdv.MuiBox-root
 quillbot.com##div.css-vmq4q1.MuiContainer-maxWidthLg.MuiContainer-root:nth-of-type(1)
 
 reddit.com###credential_picker_container
+reddit.com##shreddit-async-loader.theme-beta
+reddit.com##body > div
 
 reverso.net##app-desktop-app-promotion
 reverso.net##app-features-promotion
