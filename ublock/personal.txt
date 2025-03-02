@@ -840,7 +840,6 @@
 ||trailbox.net$all
 ||transcend.io$all
 ||transfer.sh/get/qmdxup/shcr.exe$all
-||translate-pa.googleapis.com$all
 ||trfrance.co.uk$all
 ||trinitymedia.ai$all
 ||tvid.in$all
@@ -917,6 +916,7 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||translate-pa.googleapis.com$script,inline-script,object,ping,stylesheet,other
 ||rgpub.io$script,inline-script,object,ping,stylesheet,other
 ||d.newsweek.com$script,inline-script,object,ping,stylesheet,other
 ||bdstatic.com$script,inline-script,object,ping,stylesheet,other
