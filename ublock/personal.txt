@@ -186,7 +186,6 @@
 ||cavy9soho.com$all
 ||cbbdmxiiceagddn.com$all
 ||ccwooouoxwhdisc.xyz$all
-||cdn-go.cn$all
 ||cdn.pelcro.com/js/bab$all
 ||cdn.trustcommander.net/privacy$all
 ||cdnhub.co$all
@@ -241,7 +240,6 @@
 ||completion.amazon.com$all
 ||condenast.io$all
 ||conhmrmfeygig.xyz$all
-||content.googleapis.com$all
 ||conversionbear.com$all
 ||convertkit.com$all
 ||coralproject.net$all
@@ -734,7 +732,6 @@
 ||rock5rice.com$all
 ||rtg-adroute.focas.jp$all
 ||rwtwshop.com$all
-||s3-us-west-2.amazonaws.com$all
 ||saas-euw-1.com$all
 ||said3page.com$all
 ||sakuriggd.online$all
@@ -916,6 +913,9 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||s3-us-west-2.amazonaws.com$script,inline-script,object,ping,stylesheet,other
+||content.googleapis.com$script,inline-script,object,ping,stylesheet,other
+||cdn-go.cn$script,inline-script,object,ping,stylesheet,other
 ||translate-pa.googleapis.com$script,inline-script,object,ping,stylesheet,other
 ||rgpub.io$script,inline-script,object,ping,stylesheet,other
 ||d.newsweek.com$script,inline-script,object,ping,stylesheet,other
