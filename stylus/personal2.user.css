@@ -11,7 +11,7 @@
     body,
     .flex {
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-            segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+            segoe ui, Roboto, helvetica neue, Arial, noto sans,
             apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji,
             var(--foreign, "") !important;
     }
@@ -36,7 +36,7 @@
 domain("weibo.cn") {
     html,
     :host {
-        font-family: var(--sans, ""), ui-sans-serif, system-ui, sans-serif,
+        font-family: var(--sans, ""), ui-sans-serif, system-ui,
             "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
             "Noto Color Emoji", var(--foreign, "") !important;
     }
@@ -159,8 +159,8 @@ domain("weibo.cn") {
     body *,
     html {
         font-family: var(--hupu, ""), hupufont-Regular, PingFangSC-Regular,
-            PingFang SC, Helvetica Neue, Helvetica, STHeiTi, sans-serif,
-            var(--foreign, "") !important;
+            PingFang SC, Helvetica Neue, Helvetica, STHeiTi, var(--foreign, ""),
+            sans-serif !important;
     }
 
     .index_simple-detail-content__3FPFA,
@@ -314,8 +314,8 @@ domain("amazon.in") {
     }
 
     .bucket h2 {
-        font-family: "Amazon Ember", verdana, arial, helvetica, sans-serif,
-            var(--foreign, "") !important;
+        font-family: "Amazon Ember", verdana, arial, helvetica,
+            var(--foreign, ""), sans-serif !important;
     }
 
     .a-declarative,
@@ -341,8 +341,8 @@ domain("amazon.in") {
 domain("rocketnews24.com") {
     #container,
     #searchsubmit {
-        font-family: var(--sans, ""), arial, helvetica, clean, sans-serif,
-            var(--foreign, "") !important;
+        font-family: var(--sans, ""), arial, helvetica, clean,
+            var(--foreign, ""), sans-serif !important;
     }
 
     #main {
@@ -357,8 +357,8 @@ domain("steamcommunity.com") {
     body._2LxgdMcpWJRjkxZKbmeEEb,
     .workshopItemTitle,
     body.v6 {
-        font-family: "Motiva Sans", Arial, Helvetica, sans-serif,
-            var(--foreign, "") !important;
+        font-family: "Motiva Sans", Arial, Helvetica, var(--foreign, ""),
+            sans-serif !important;
     }
 }
 
@@ -368,7 +368,7 @@ domain("steamcommunity.com") {
     .suggestion-DS-EntryPoint1-1,
     .weatherButtonWrapper-DS-EntryPoint1-3,
     .weatherFeedbackDialogButton-DS-EntryPoint1-3 {
-        font-family: Segoe UI, Segoe WP, Arial, sans-serif, "MS Shell Dlg 2",
+        font-family: Segoe UI, Segoe WP, Arial, "MS Shell Dlg 2",
             var(--foreign, "") !important;
     }
 }
@@ -443,10 +443,10 @@ domain("steamcommunity.com") {
     :root {
         --encore-body-font-stack: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr,
             CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
-            var(--fallback-fonts, sans-serif), var(--foreign, "");
+            var(--fallback-fonts, ""), var(--foreign, "");
         --encore-title-font-stack: SpotifyMixUITitle, CircularSp-Arab,
             CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,
-            var(--fallback-fonts, sans-serif), var(--foreign, "");
+            var(--fallback-fonts, ""), var(--foreign, "");
     }
 }
 
@@ -710,8 +710,8 @@ domain("espn.ph") {
     .search-box__input--O34g {
         font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto,
             "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC",
-            "Microsoft YaHei", sans-serif, Roboto-Regular, Helvetica Neue,
-            Helvetica, Tahoma, Arial, Sans-serif !important;
+            "Microsoft YaHei", Roboto-Regular, Helvetica Neue, Helvetica, Tahoma,
+            Arial, var(--foreign, ""), Sans-serif !important;
     }
 
     .lzd-site-nav-menu
