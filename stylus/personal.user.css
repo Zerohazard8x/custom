@@ -76,7 +76,7 @@ domain("youtube-nocookie.com") {
     }
 
     /* Cleaning */
-    ytd-popup-container.style-scope.ytd-app,
+    /* ytd-popup-container.style-scope.ytd-app, */
     div#player-ads.style-scope.ytd-watch-flexy,
     .YtwTopBannerImageTextIconButtonedLayoutViewModelHostBannerImage,
     ytd-merch-shelf-renderer.style-scope.ytd-watch-flexy,
