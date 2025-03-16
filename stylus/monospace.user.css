@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.14.0
+@version        2.14.1
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -58,6 +58,16 @@
     body {
         font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
             "Inter", "Helvetica", "Arial", var(--foreign, ""), sans-serif;
+    }
+
+    .mw-parser-output .script-arabic {
+        font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+            "Inter", "Helvetica", "Arial", var(--foreign, ""), sans-serif,
+            "Scheherazade New", "SF Arabic", Amiri, "Noto Naskh Arabic",
+            "Droid Arabic Naskh", "Noto Sans Arabic", "Sakkal Majalla",
+            "Harmattan", "Arabic Typesetting", "Arabic Transparent",
+            "Times New Roman", Arial, Calibri, "Microsoft Sans Serif",
+            "Segoe UI", serif, sans-serif !important;
     }
 
     /* matches all with class containing heading */
@@ -256,6 +266,10 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
             RobotoDraft, Roboto-Regular;
     }
 
+    .NNMgCf,
+    .REySof,
+    .FtYymb,
+    .LLotyc,
     .JNI6Yb,
     .vqseUe,
     .yUTMj,
@@ -313,6 +327,10 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     }
 
     /* Force Google Sans (if available) */
+    .pe7FNb,
+    .xd0Ff .TLIZ,
+    .FNMYpd .CVouqc,
+    .e8Ck0d,
     .hdzaWe,
     .Fzsovc,
     .YWpX0d,
@@ -489,7 +507,6 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     }
 
     code,
-    .wZ4JdaHxSAhGy1HoNVja span span,
     .ddgpt pre {
         font-family: var(--mono, ""), Consolas, Menlo, Monaco, monospace,
             var(--foreign, "") !important;

@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.7
+@version        2.9.8
 ==/UserStyle== */
 
 @-moz-document regexp("^.*www\.youtube\.com.*"),
@@ -44,6 +44,8 @@ domain("youtube-nocookie.com") {
 
     /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
+    .yt-spec-button-shape-next,
+    ytd-text-inline-expander,
     .truncated-text-wiz,
     .page-header-view-model-wiz__page-header-title--page-header-title-large,
     ytd-watch-metadata[title-headline-xs] h1.ytd-watch-metadata,
@@ -74,6 +76,8 @@ domain("youtube-nocookie.com") {
     }
 
     /* Cleaning */
+    ytd-popup-container.style-scope.ytd-app,
+    div#player-ads.style-scope.ytd-watch-flexy,
     .YtwTopBannerImageTextIconButtonedLayoutViewModelHostBannerImage,
     ytd-merch-shelf-renderer.style-scope.ytd-watch-flexy,
     #mealbar-promo-renderer,
@@ -100,8 +104,8 @@ domain("youtube-nocookie.com") {
 @-moz-document domain("music.youtube.com") {
     html,
     [class*="ytmusic" i][class*="renderer" i] {
-        font-family: Roboto, Noto Naskh Arabic UI, Arial, var(--foreign, ""),
-            sans-serif !important;
+        font-family: Roboto, Noto Naskh Arabic UI, Arial, sans-serif,
+            var(--foreign, "") !important;
     }
 
     .title.ytmusic-carousel-shelf-basic-header-renderer,
@@ -176,8 +180,8 @@ domain("threads.net") {
         --font-family-segoe: var(--facebook, ""), Segoe UI Historic, Segoe UI,
             Helvetica, Arial, var(--foreign, ""), sans-serif;
         --font-family-system: var(--facebook, ""), system-ui, -apple-system,
-            BlinkMacSystemFont, Roboto, Helvetica, Arial, var(--foreign, ""),
-            sans-serif;
+            BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif,
+            var(--foreign, "");
     }
 
     #facebook .system-fonts--body *,
@@ -224,8 +228,8 @@ domain("threads.net") {
 
     ._4g34,
     ._53jh {
-        font-family: var(--facebook, ""), Helvetica, Arial, var(--foreign, ""),
-            sans-serif !important;
+        font-family: var(--facebook, ""), Helvetica, Arial, sans-serif,
+            var(--foreign, "") !important;
     }
 
     ._ap3a,
@@ -247,8 +251,8 @@ domain("threads.net") {
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z
         span {
         font-family: var(--readable, ""), var(--facebook, ""), Placeholder Font,
-            Segoe UI Historic, Segoe UI, Helvetica, Arial, var(--foreign, ""),
-            sans-serif !important;
+            Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif,
+            var(--foreign, "") !important;
         color: #fff000 !important;
         background: none !important;
     }
@@ -286,6 +290,7 @@ domain("threads.net") {
     }
 
     /* Chat messages */
+    a.link-fragment,
     strong.chat-line__message-mention,
     a.ScCoreLink-sc-16kq0mq-0.eFqEFL.link-fragment.tw-link,
     span.text-fragment,
@@ -319,7 +324,7 @@ domain("threads.net") {
 @-moz-document domain("9xbuddy.in") {
     #root section {
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-            Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+            Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
             Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji,
             var(--foreign, "") !important;
     }
@@ -344,6 +349,11 @@ domain("xcancel.com") {
 }
 
 @-moz-document domain("mail.google.com") {
+    .asor_c,
+    .asor_e,
+    .asor_b,
+    .aqe,
+    .gb_2d,
     body,
     input,
     textarea,
@@ -359,8 +369,8 @@ domain("xcancel.com") {
 
 @-moz-document domain("translate.google.com") {
     body {
-        font-family: Roboto, RobotoDraft, Helvetica, Arial, var(--foreign, ""),
-            sans-serif !important;
+        font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif,
+            var(--foreign, "") !important;
     }
 
     .VhOj3e,
