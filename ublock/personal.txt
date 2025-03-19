@@ -928,7 +928,6 @@
 ||forgecdn.net$script,inline-script,object,ping,stylesheet,other
 ||xboxlive.com$script,inline-script,object,ping,stylesheet,other
 ||us-east-2.amazonaws.com$script,inline-script,object,ping,stylesheet,other
-||turner.com$script,inline-script,object,ping,stylesheet,other
 ||adtidy.org$script,inline-script,object,ping,stylesheet,other
 ||js-cdn.music.apple.com$script,inline-script,object,ping,stylesheet,other
 ||betacdn.net$script,inline-script,object,ping,stylesheet,other
@@ -1078,7 +1077,6 @@
 ||go-mpulse.net$script,inline-script,object,ping,stylesheet,other
 ||gogocdn.net$script,inline-script,object,ping,stylesheet,other
 ||google-analytics.com$script,inline-script,object,ping,stylesheet,other
-||google.com.ph$script,inline-script,object,ping,stylesheet,other
 ||googleoptimize.com$script,inline-script,object,ping,stylesheet,other
 ||googlesyndication.com$script,inline-script,object,ping,stylesheet,other
 ||googletagmanager.com$script,inline-script,object,ping,stylesheet,other

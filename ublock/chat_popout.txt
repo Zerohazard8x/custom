@@ -35,48 +35,51 @@ twitch.tv##div.htiGKh.Layout-sc-1xcs6mc-0
 twitch.tv##div.prime-offers__pill
 twitch.tv##div.side-nav-section.bSoSIm.Layout-sc-1xcs6mc-0:nth-of-type(3)
 twitch.tv##div.side-nav-section.kLNslf.Layout-sc-1xcs6mc-0:nth-of-type(3)
-||static-cdn.jtvnw.net/badges/v1/10cf46de-61e7-4a42-807a-7898408ce352/*$image
-||static-cdn.jtvnw.net/badges/v1/178077b2-8b86-4f8d-927c-66ed6c1b025f/*$image
-||static-cdn.jtvnw.net/badges/v1/1d4b03b9-51ea-42c9-8f29-698e3c85be3d/*$image
-||static-cdn.jtvnw.net/badges/v1/3158e758-3cb4-43c5-94b3-7639810451c5/*$image
-||static-cdn.jtvnw.net/badges/v1/4a9acdc7-30be-4dd1-9898-fc9e42b3d304/*$image
-||static-cdn.jtvnw.net/badges/v1/4b76d5f2-91cc-4400-adf2-908a1e6cfd1e/*$image
-||static-cdn.jtvnw.net/badges/v1/4d9e9812-ba9b-48a6-8690-13f3f338ee65/*$image
-||static-cdn.jtvnw.net/badges/v1/569c829d-c216-4f56-a191-3db257ed657c/*$image
-||static-cdn.jtvnw.net/badges/v1/5864739a-5e58-4623-9450-a2c0555ef90b/*$image
-||static-cdn.jtvnw.net/badges/v1/a539dc18-ae19-49b0-98c4-8391a594332b/*$image
-||static-cdn.jtvnw.net/badges/v1/aef2cd08-f29b-45a1-8c12-d44d7fd5e6f0/*$image
-||static-cdn.jtvnw.net/badges/v1/b817aba4-fad8-49e2-b88a-7cc744dfa6ec/*$image
-||static-cdn.jtvnw.net/badges/v1/bbbe0db0-a598-423e-86d0-f9fb98ca1933/*$image
-||static-cdn.jtvnw.net/badges/v1/bd444ec6-8f34-4bf9-91f4-af1e3428d80f/*$image
-||static-cdn.jtvnw.net/badges/v1/bf370830-d79a-497b-81c6-a365b2b60dda/*$image
-||static-cdn.jtvnw.net/badges/v1/bfb7399a-c632-42f7-8d5f-154610dede81/*$image
-||static-cdn.jtvnw.net/badges/v1/c4a29737-e8a5-4420-917a-314a447f083e/*$image
-||static-cdn.jtvnw.net/badges/v1/c8a0d95a-856e-4097-9fc0-7765300a4f58/*$image
-||static-cdn.jtvnw.net/badges/v1/d08658d7-205f-4f75-ad44-8c6e0acd8ef6/*$image
-||static-cdn.jtvnw.net/badges/v1/df95317d-9568-46de-a421-a8520edb9349/*$image
-||static-cdn.jtvnw.net/badges/v1/e33d8b46-f63b-4e67-996d-4a7dcec0ad33/*$image
-||static-cdn.jtvnw.net/badges/v1/e33e0c67-c380-4241-828a-099c46e51c66/*$image
-||static-cdn.jtvnw.net/badges/v1/ee113e59-c839-4472-969a-1e16d20f3962/*$image
-||static-cdn.jtvnw.net/badges/v1/f9e3b4e4-200e-4045-bd71-3a6b480c23ae/*$image
-||static-cdn.jtvnw.net/badges/v1/fc46b10c-5b45-43fd-81ad-d5cb0de6d2f4/*$image
-||static-cdn.jtvnw.net/badges/v1/fe5b5ddc-93e7-4aaf-9b3e-799cd41808b1/*$image
-||static-cdn.jtvnw.net/badges/v1/ffdda3fe-8012-4db3-981e-7a131402b057/*$image
-||static-cdn.jtvnw.net/subs-image-assets/turbo-ads-upsell-background.svg$image
+! ||static-cdn.jtvnw.net/badges/v1/10cf46de-61e7-4a42-807a-7898408ce352/*$image
+! ||static-cdn.jtvnw.net/badges/v1/178077b2-8b86-4f8d-927c-66ed6c1b025f/*$image
+! ||static-cdn.jtvnw.net/badges/v1/1d4b03b9-51ea-42c9-8f29-698e3c85be3d/*$image
+! ||static-cdn.jtvnw.net/badges/v1/3158e758-3cb4-43c5-94b3-7639810451c5/*$image
+! ||static-cdn.jtvnw.net/badges/v1/4a9acdc7-30be-4dd1-9898-fc9e42b3d304/*$image
+! ||static-cdn.jtvnw.net/badges/v1/4b76d5f2-91cc-4400-adf2-908a1e6cfd1e/*$image
+! ||static-cdn.jtvnw.net/badges/v1/4d9e9812-ba9b-48a6-8690-13f3f338ee65/*$image
+! ||static-cdn.jtvnw.net/badges/v1/569c829d-c216-4f56-a191-3db257ed657c/*$image
+! ||static-cdn.jtvnw.net/badges/v1/5864739a-5e58-4623-9450-a2c0555ef90b/*$image
+! ||static-cdn.jtvnw.net/badges/v1/a539dc18-ae19-49b0-98c4-8391a594332b/*$image
+! ||static-cdn.jtvnw.net/badges/v1/aef2cd08-f29b-45a1-8c12-d44d7fd5e6f0/*$image
+! ||static-cdn.jtvnw.net/badges/v1/b817aba4-fad8-49e2-b88a-7cc744dfa6ec/*$image
+! ||static-cdn.jtvnw.net/badges/v1/bbbe0db0-a598-423e-86d0-f9fb98ca1933/*$image
+! ||static-cdn.jtvnw.net/badges/v1/bd444ec6-8f34-4bf9-91f4-af1e3428d80f/*$image
+! ||static-cdn.jtvnw.net/badges/v1/bf370830-d79a-497b-81c6-a365b2b60dda/*$image
+! ||static-cdn.jtvnw.net/badges/v1/bfb7399a-c632-42f7-8d5f-154610dede81/*$image
+! ||static-cdn.jtvnw.net/badges/v1/c4a29737-e8a5-4420-917a-314a447f083e/*$image
+! ||static-cdn.jtvnw.net/badges/v1/c8a0d95a-856e-4097-9fc0-7765300a4f58/*$image
+! ||static-cdn.jtvnw.net/badges/v1/d08658d7-205f-4f75-ad44-8c6e0acd8ef6/*$image
+! ||static-cdn.jtvnw.net/badges/v1/df95317d-9568-46de-a421-a8520edb9349/*$image
+! ||static-cdn.jtvnw.net/badges/v1/e33d8b46-f63b-4e67-996d-4a7dcec0ad33/*$image
+! ||static-cdn.jtvnw.net/badges/v1/e33e0c67-c380-4241-828a-099c46e51c66/*$image
+! ||static-cdn.jtvnw.net/badges/v1/ee113e59-c839-4472-969a-1e16d20f3962/*$image
+! ||static-cdn.jtvnw.net/badges/v1/f9e3b4e4-200e-4045-bd71-3a6b480c23ae/*$image
+! ||static-cdn.jtvnw.net/badges/v1/fc46b10c-5b45-43fd-81ad-d5cb0de6d2f4/*$image
+! ||static-cdn.jtvnw.net/badges/v1/fe5b5ddc-93e7-4aaf-9b3e-799cd41808b1/*$image
+! ||static-cdn.jtvnw.net/badges/v1/ffdda3fe-8012-4db3-981e-7a131402b057/*$image
+! ||static-cdn.jtvnw.net/subs-image-assets/turbo-ads-upsell-background.svg$image
 
-youtube.com###Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D,
-youtube.com###about-these-results,
-youtube.com###mealbar-promo-renderer,
-youtube.com###paid-comment-background,
-youtube.com###plasmo-csui,
-youtube.com###sub-header,
-youtube.com###ticker,
-youtube.com###yt-live-chat-author-chip.yt-live-chat-message-input-renderer.style-scope,
-youtube.com###ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2),
-youtube.com###ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n + 3):nth-child(-n + 4),
+! youtube.com##ytd-popup-container.style-scope.ytd-app
+youtube.com###Ci0KK1NVQlNDUklCRVJTX09OTFlfVkVNMjAyMy8xMi8yNy0wMzoxODo1OS4zMDU\%3D
+youtube.com###about-these-results
+youtube.com###mealbar-promo-renderer
+youtube.com###paid-comment-background
+youtube.com###plasmo-csui
+youtube.com###sub-header
+youtube.com###ticker
+youtube.com###yt-live-chat-author-chip.yt-live-chat-message-input-renderer.style-scope
+youtube.com###ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
+youtube.com###ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(n + 3):nth-child(-n + 4)
 youtube.com###ytd-metadata-row-container-renderer.ytd-watch-metadata.style-scope
-youtube.com##.ytd-rich-section-renderer.style-scope,
-youtube.com##.ytd-video-description-infocards-section-renderer.style-scope.yt-simple-endpoint,
-youtube.com##ytd-merch-shelf-renderer.style-scope.ytd-watch-flexy,
+youtube.com##.YtwTopBannerImageTextIconButtonedLayoutViewModelHostBannerImage
+youtube.com##.ytd-rich-section-renderer.style-scope
+youtube.com##.ytd-video-description-infocards-section-renderer.style-scope.yt-simple-endpoint
+youtube.com##div#player-ads.style-scope.ytd-watch-flexy
+youtube.com##ytd-merch-shelf-renderer.style-scope.ytd-watch-flexy
 
 live.bilibili.com###room-background-vm
