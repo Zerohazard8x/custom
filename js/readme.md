@@ -6,7 +6,6 @@
 <https://github.com/Equicord/Equicord/releases/download/latest/Vencord.user.js>  
 <https://github.com/F9y4ng/GreasyFork-Scripts/raw/master/Google%20%26%20Baidu%20Switcher.user.js>  
 <https://github.com/XIU2/UserScript/raw/master/GithubEnhanced-High-Speed-Download.user.js>  
-<https://greasyfork.org/scripts/423851-simple-youtube-age-restriction-bypass/code/Simple%20YouTube%20Age%20Restriction%20Bypass.user.js>  
 <https://greasyfork.org/scripts/465887-twitch-player-quality-changer/code/Twitch%20Player%20Quality%20Changer.user.js>  
 <https://greasyfork.org/scripts/469384-twitch-skip-content-warnings/code/Twitch%20-%20Skip%20content%20warnings.user.js>  
 <https://openuserjs.org/install/sjehuda/Proxy_Redirect.user.js>  
