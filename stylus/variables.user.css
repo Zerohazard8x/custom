@@ -1,11 +1,15 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        2.0.1
+@version        3.0.0
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
+@var text sans "Choose the replacement sans-serif font" ""
+@var text serif "Choose the replacement serif font" ""
+@var text fontMono "Choose the replacement monospace font" ""
+@var text readable "Choose the replacement alternate readable font" ""
 ==/UserStyle== */
 @-moz-document domain("github.com"),
 /* monospace */
@@ -135,28 +139,21 @@ domain("fandom.com") {
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla";
-        --sans: -apple-system, BlinkMacSystemFont, "Adwaita Sans", "Roboto",
-            "Segoe UI Variable", "Segoe UI", "Avenir Next", Avenir;
-        /* --sans-full: -apple-system, BlinkMacSystemFont, "SF Pro", Inter,
+        /* --sans-recommended: -apple-system, BlinkMacSystemFont, "SF Pro", Inter,
             "Roboto Flex", "Roboto", Barlow, Cantarell, Whitney, Lato, "Segoe UI Variable",
             "Segoe UI", "Motiva Sans", "Proxima Vara", "Proxima Nova", "FF Mark",
             "FF Mark Pro", "Avenir Next", Avenir, "HarmonyOS Sans TC",
             "HarmonyOS Sans SC", "HarmonyOS Sans", "Nunito", "Nunito Sans",
             "Fira Sans", FiraGO, "FF Meta", Manrope, "Helvetica Neue",
-            "Helvetica", var(--plex, ""), "Ubuntu", "Open Sans", "Droid Sans"; */
-        --plex: "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
-            "IBM Plex Sans";
-        --slab-serif: Rokkitt, "Hepta Slab", "Zilla Slab", Rockwell;
-        --serif: var(--slab-serif, ""), var(--foreign-serif, "");
-        /* --serif-full: var(--slab-serif, ""), "Cheltenham Classic", "Source Serif", "Source Serif Pro",
+            "Helvetica", "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            "IBM Plex Sans", "Ubuntu", "Open Sans", "Droid Sans"; */
+        /* --serif-recommended: var(--slab-serif, ""), "Cheltenham Classic", "Source Serif", "Source Serif Pro",
             "Source Serif 4", "STIX Two Text", "Beaufort", "Beaufort Pro",
             "Serif UI", "Serif UI Text", Fraunces, Alegreya, Crimson,
             "Crimson Pro", "Crimson Text", Lora, "Montagu Slab", Century,
             "Century Schoolbook", "Libre Baskerville", Georgia, "ITC Garamond",
             "Apple Garamond", "Serif UI Display", var(--foreign-serif, ""); */
-        --mono: var(--block-mono, ""), "Monaspace Argon Var",
-            "Monaspace Argon VF", "Monaspace Argon", "Fira Mono";
-        /* --mono-full: var(--block-mono-full, ""), "Monaspace Argon Var", "Monaspace Argon VF",
+        /* --mono-recommended: var(--block-mono-recommended, ""), "Monaspace Argon Var", "Monaspace Argon VF",
             "Monaspace Argon", "Fira Code VF", "Fira Code", "Fira Mono",
             "Fira Code Retina", "Noto Mono", "Noto Sans Mono", "DroidSansM",
             "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font", Consolas,
@@ -167,9 +164,7 @@ domain("fandom.com") {
             "Ubuntu Mono Nerd Font", Agave, "Agave Nerd Font", Hasklig,
             "Hasklug Nerd Font", "Source Code Pro", "Source Code Pro Nerd Font",
             "Andale Mono", "Lucida Console", "Lucida Sans Typewriter"; */
-        --block-mono: "JetBrains Mono", "JetBrains Mono NL",
-            "JetBrainsMono Nerd Font", "Fantasque Sans Mono";
-        /* --block-mono-full: "JetBrains Mono", "JetBrains Mono NL",
+        /* --block-mono-recommended: "JetBrains Mono", "JetBrains Mono NL",
             "JetBrainsMono Nerd Font", "Fantasque Sans Mono",
             "FantasqueSansM Nerd Font", "Input Mono", "Envy Code R",
             "EnvyCodeR Nerd Font", "Monaspace Neon Var", "Monaspace Neon VF",
@@ -178,8 +173,7 @@ domain("fandom.com") {
             "Monaspace Krypton VF", "Monaspace Krypton", ProFontIIx,
             ProFontWindows, "Iosevka", "Iosevka Nerd Font",
             "IosevkaTerm Nerd Font", "Input Sans"; */
-        --readable: "Public Sans", "Fira Sans", "Bahnschrift", var(--plex, "");
-        /* --readable-full: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
+        /* --readable-recommended: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
             Recursive, "Atkinson Hyperlegible", "Source Sans Pro",
             "Nunito Sans", "Nunito", "Raleway", "Road UA", "Akshar", "DIN Next",
             "URW DIN", "DIN Alternate", "Bahnschrift",

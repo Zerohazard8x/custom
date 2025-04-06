@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.8
+@version        2.9.9
 ==/UserStyle== */
 
 @-moz-document regexp("^.*www\.youtube\.com.*"),
@@ -44,6 +44,8 @@ domain("youtube-nocookie.com") {
 
     /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
+    .ytMarqueeScrollPrimaryString,
+    .ytMarqueeScrollDuplicateString,
     .yt-spec-button-shape-next,
     ytd-text-inline-expander,
     .truncated-text-wiz,
