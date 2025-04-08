@@ -6,10 +6,10 @@
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
-@var text sans "Choose the replacement sans-serif font" ""
-@var text serif "Choose the replacement serif font" ""
-@var text fontMono "Choose the replacement monospace font" ""
-@var text readable "Choose the replacement alternate readable font" ""
+@var text sans "Choose the replacement sans-serif font" "initial"
+@var text serif "Choose the replacement serif font" "initial"
+@var text fontMono "Choose the replacement monospace font" "initial"
+@var text readable "Choose the replacement alternate readable font" "initial"
 ==/UserStyle== */
 @-moz-document domain("github.com"),
 /* monospace */
