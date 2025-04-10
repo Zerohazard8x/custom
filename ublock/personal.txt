@@ -178,7 +178,6 @@
 ||cancunrent.com/pilt/xuptadcteiei$all
 ||capital.com.tr/bundles/onesignal$all
 ||cardinalcommerce.com$all
-||cart-products.cdn.ifixit.com$all
 ||cart8draw.com$all
 ||cast9half.com$all
 ||category-public.canva.com$all
@@ -491,7 +490,6 @@
 ||helping.net.zooplus.es$all
 ||hemmings.com$all
 ||herb7calk.com$all
-||herokuapp.com$all
 ||hextom.com$all
 ||heylitimysun.top/jaws$all
 ||heylywxcmbsqbgb.com$all
@@ -913,6 +911,8 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||herokuapp.com$script,inline-script,object,ping,stylesheet,other
+||cart-products.cdn.ifixit.com$script,inline-script,object,ping,stylesheet,other
 ||content.googleapis.com$script,inline-script,object,ping,stylesheet,other
 ||cdn-go.cn$script,inline-script,object,ping,stylesheet,other
 ||translate-pa.googleapis.com$script,inline-script,object,ping,stylesheet,other
