@@ -51,7 +51,6 @@
 ||api.bbc.com$all
 ||api.oddschecker.com$all
 ||api.smh.com.au$all
-||apis.ign.com$all
 ||app.dreambox.ru.com$all
 ||app.hotdoc.com.au$all
 ||app.link.nba.com$all
@@ -708,7 +707,6 @@
 ||raedieshi.com$all
 ||rals4alum.com$all
 ||rating.happymod.com$all
-||razorpay.com$all
 ||rbx.com$all
 ||reachgeneric.co.uk$all
 ||readaloud.googleapis.com$all
@@ -911,9 +909,10 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||razorpay.com$script,inline-script,object,ping,stylesheet,other
+||apis.ign.com$script,inline-script,object,ping,stylesheet,other
 ||herokuapp.com$script,inline-script,object,ping,stylesheet,other
 ||cart-products.cdn.ifixit.com$script,inline-script,object,ping,stylesheet,other
-||content.googleapis.com$script,inline-script,object,ping,stylesheet,other
 ||cdn-go.cn$script,inline-script,object,ping,stylesheet,other
 ||translate-pa.googleapis.com$script,inline-script,object,ping,stylesheet,other
 ||rgpub.io$script,inline-script,object,ping,stylesheet,other
@@ -996,7 +995,6 @@
 ||cdn.jpopsingles.eu$script,inline-script,object,ping,stylesheet,other
 ||cdn.rivalry.com$script,inline-script,object,ping,stylesheet,other
 ||cdn.you.com$script,inline-script,object,ping,stylesheet,other
-||cdngslb.com$script,inline-script,object,ping,stylesheet,other
 ||cdnhwc2.com$script,inline-script,object,ping,stylesheet,other
 ||cdnja.co$script,inline-script,object,ping,stylesheet,other
 ||chartbeat.com$script,inline-script,object,ping,stylesheet,other
