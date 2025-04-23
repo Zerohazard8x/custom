@@ -110,7 +110,6 @@ discord.com##.welcomeCTA__927ef
 
 discussions.apple.com##.announcements
 
-dochub.com###modal-stack
 dochub.com##.page-section--benefits.page-section
 dochub.com##.page-section--c2a-get-form.page-section
 dochub.com##.page-section--c2a-install-add-on.page-section
