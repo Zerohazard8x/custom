@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.9
+@version        2.9.10
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -43,7 +43,7 @@
         padding: 0.45vw !important;
         border-radius: 5px !important;
         margin-bottom: 4vh !important;
-        background-color: rgba(8, 8, 8, 0.75) !important;
+        background-color: rgba(8, 8, 8, 0.5) !important;
     }
 
     /* class containing "ytd-miniplayer", etc */
@@ -268,7 +268,7 @@ domain("threads.net") {
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z {
         padding: 0.45vw !important;
         border-radius: 5px !important;
-        background-color: rgba(8, 8, 8, 0.75) !important;
+        background-color: rgba(8, 8, 8, 0.5) !important;
     }
 }
 
