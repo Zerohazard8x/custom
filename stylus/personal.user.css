@@ -8,20 +8,19 @@
 @version        2.9.9
 ==/UserStyle== */
 
-@-moz-document regexp("^.*www\.youtube\.com.*"),
-regexp("^(?!.*(\w+\.youtube\.com)).*youtube\.com.*"),
-domain("youtube-nocookie.com") {
+@-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
     /* YouTube */
-    /* Regex excludes e.g. music.youtube.com */
+
+    /* Regex that excludes e.g. music.youtube.com */
+    /* Separate:  regexp("^.*www\.youtube\.com.*"), regexp("^(?!.*(\w+\.youtube\.com)).*youtube\.com.*") */
     /* Combined: ^(?:.*www\.youtube\.com.*|(?!.*(\w+\.google\.com)).*youtube\.com.*) */
+
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
         font-family: var(--readable, ""), var(--sans, ""), "YouTube Noto",
             Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana,
             "PT Sans Caption", var(--foreign, ""), sans-serif !important;
         color: #fff000 !important;
-        background: none !important;
-        font-size: 175% !important;
 
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
         /* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
@@ -33,7 +32,12 @@ domain("youtube-nocookie.com") {
         /* https://madebymike.com.au/writing/fluid-type-calc-examples/ */
     }
 
-    .caption-window {
+    .ytp-caption-segment:not(#inline-preview-player *) {
+        background: none !important;
+        font-size: 175% !important;
+    }
+
+    .caption-window:not(#inline-preview-player *) {
         /* vw = viewport width */
         /* vh = viewport height */
         padding: 0.45vw !important;
@@ -44,6 +48,7 @@ domain("youtube-nocookie.com") {
 
     /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
+    div#right-tabs,
     .ytMarqueeScrollPrimaryString,
     .ytMarqueeScrollDuplicateString,
     .yt-spec-button-shape-next,
@@ -78,6 +83,7 @@ domain("youtube-nocookie.com") {
     }
 
     /* Cleaning */
+    div.ytp-suggested-action,
     /* ytd-popup-container.style-scope.ytd-app, */
     div#player-ads.style-scope.ytd-watch-flexy,
     .YtwTopBannerImageTextIconButtonedLayoutViewModelHostBannerImage,
@@ -277,6 +283,30 @@ domain("threads.net") {
     :root {
         --font-base: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
             var(--foreign, ""), sans-serif;
+    }
+
+    /* Anu Twitch Chat Overlay */
+    .anu-chat-overlay-inner:not(.atco-dettached):not(.hovered)
+        .chat-list--default
+        .chat-line__message,
+    .anu-chat-overlay-container
+        .atco-dettached:not(.hovered)
+        .chat-list--default
+        .chat-line__message,
+    .anu-chat-overlay-container
+        .atco-dettached:not(.hovered)
+        .chat-list--default
+        .seventv-chat-message-body,
+    .anu-chat-overlay-container
+        .atco-dettached:not(.hovered)
+        .video-chat__message-list-wrapper
+        .vod-message,
+    .anu-chat-overlay-container
+        .atco-dettached:not(.hovered)
+        .video-chat__message-list-wrapper
+        .seventv-chat-message-body {
+        font-family: var(--font-base, ""), Roobert !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
     }
 
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
