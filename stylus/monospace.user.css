@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2.14.2
+@version        3.0.0
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -133,7 +133,8 @@ domain("undelete.pullpush.io") {
     :root {
         --font-sans: "Reddit Sans", RedditSans, -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            var(--foreign, ""), sans-serif;
     }
 
     .md pre,
@@ -259,16 +260,18 @@ domain("deskthority.net") {
     }
 }
 
-@-moz-document regexp("^.*www\.google\.com.*"),
-regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
+@-moz-document domain("google.com") {
     /* Google */
-    /* Regex excludes e.g. mail.google.com */
+    /* Regex that excludes e.g. mail.google.com */
+    /* Separate: regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") */
     /* Combined: ^(?:.*www\.google\.com.*|(?!.*(\w+\.google\.com)).*google\.com.*) */
+
     :root {
         --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft",
             RobotoDraft, Roboto-Regular;
     }
 
+    .dbhQEb,
     .ZhosBf,
     .NNMgCf,
     .REySof,
@@ -592,9 +595,8 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     button,
     select,
     textarea {
-        font-family: Iosevka, var(--mono, ""), monospace, "Lato Extended",
-            "Lato", "Helvetica Neue", Helvetica, Arial, var(--foreign, ""),
-            sans-serif !important;
+        font-family: var(--mono, ""), "Lato Extended", "Lato", "Helvetica Neue",
+            Helvetica, Arial, var(--foreign, ""), sans-serif !important;
     }
 
     .css-1ogjq1j-avatar__initials,
@@ -605,15 +607,13 @@ regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     [class*="css" i][class*="text" i],
     [class*="css" i][class*="view" i],
     #tinymce {
-        font-family: Iosevka, var(--mono, ""), monospace, LatoWeb,
-            "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+        font-family: var(--mono, ""), LatoWeb, "Lato Extended", "Lato",
+            "Helvetica Neue", Helvetica, Arial, var(--foreign, ""), sans-serif !important;
     }
 
     .ef-file-preview-header-download span,
     #App {
-        font-family: Iosevka, var(--mono, ""), monospace, "Lato",
-            var(--foreign, ""), sans-serif !important;
+        font-family: var(--mono, ""), "Lato", var(--foreign, ""), sans-serif !important;
     }
 
     #right-side > div > h2.todo-list-header:nth-child(n + 1):nth-child(-3n + 4),
