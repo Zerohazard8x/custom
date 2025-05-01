@@ -46,7 +46,7 @@
         background-color: rgba(8, 8, 8, 0.5) !important;
     }
 
-    /* class containing "ytd-miniplayer", etc */
+    /* class containing "ytd-miniplaeyer", etc */
     /* ... i] means case insensitive */
     div#right-tabs,
     .ytMarqueeScrollPrimaryString,
@@ -152,16 +152,16 @@
         font-family: Roboto, Arial, var(--foreign, ""), sans-serif !important;
     }
 
+    span.svelte-g0o36m span,
+    #header-subtext,
+    #message,
     .yt-live-chat-text-message-renderer,
     span.font-bold.tracking-wide.align-middle {
         font-size: 25px !important;
     }
 
-    span.svelte-g0o36m span,
     #card,
-    yt-live-chat-author-chip #author-name,
-    #header-subtext,
-    #message {
+    yt-live-chat-author-chip #author-name {
         font-size: 20px !important;
     }
 
