@@ -48,6 +48,7 @@
 
     /* class containing "ytd-miniplaeyer", etc */
     /* ... i] means case insensitive */
+    .shortsLockupViewModelHostOutsideMetadataTitle,
     div#right-tabs,
     .ytMarqueeScrollPrimaryString,
     .ytMarqueeScrollDuplicateString,
@@ -415,5 +416,15 @@ domain("xcancel.com") {
     /* SearX */
     html {
         font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
+    }
+}
+
+@-moz-document domain("translate.kagi.com") {
+    @layer theme {
+        :root,
+        :host {
+            --font-sans: var(--sans, ""), Helvetica, Arial, var(--foreign, ""),
+                sans-serif !important;
+        }
     }
 }

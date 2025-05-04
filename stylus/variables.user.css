@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        3.0.0
+@version        3.1.0
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
 @homepageURL    https://github.com/Zerohazard8x/custom/tree/main/stylus
 @var text sans "Choose the replacement sans-serif font" "initial"
 @var text serif "Choose the replacement serif font" "initial"
-@var text fontMono "Choose the replacement monospace font" "initial"
+@var text mono "Choose the replacement monospace font" "initial"
 @var text readable "Choose the replacement alternate readable font" "initial"
 ==/UserStyle== */
 @-moz-document domain("github.com"),
@@ -85,6 +85,7 @@ domain("mail.google.com"),
 domain("translate.google.com"),
 domain("searx.tiekoetter.com"),
 domain("threads.net"),
+domain("translate.kagi.com"),
 /* personal2 */
 domain("soranews24.com"),
 domain("rocketnews24.com"),
@@ -217,13 +218,6 @@ domain("fandom.com") {
 
     /* restrict arial */
     @font-face {
-        font-family: "Arial";
-        src: local("Arial");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
         font-family: "Arial Regular";
         src: local("Arial Regular");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
@@ -287,20 +281,6 @@ domain("fandom.com") {
     }
 
     @font-face {
-        font-family: "Helvetica";
-        src: local("Helvetica");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Helvetica";
-        src: local("Helvetica");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
         font-family: "Helvetica Regular";
         src: local("Helvetica Regular");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
@@ -359,13 +339,6 @@ domain("fandom.com") {
     @font-face {
         font-family: "Helvetica Narrow Bold Italic";
         src: local("Helvetica Narrow Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    }
-
-    @font-face {
-        font-family: "Arial Unicode MS";
-        src: local("Arial Unicode MS");
         unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
             U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     }
