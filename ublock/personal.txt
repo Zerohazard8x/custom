@@ -908,7 +908,6 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
-||netlify.app$script,inline-script,object,ping,stylesheet,other
 ||razorpay.com$script,inline-script,object,ping,stylesheet,other
 ||apis.ign.com$script,inline-script,object,ping,stylesheet,other
 ||herokuapp.com$script,inline-script,object,ping,stylesheet,other
