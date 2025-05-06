@@ -619,7 +619,6 @@
 ||netflixdnstest7.com$all
 ||netflixdnstest8.com$all
 ||netflixdnstest9.com$all
-||netlify.app$all
 ||network-handle.com$all
 ||newgoplus.com/app/newgoplus_install.exe$all
 ||news-api.bloomberglaw.com$all
@@ -909,11 +908,11 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||netlify.app$script,inline-script,object,ping,stylesheet,other
 ||razorpay.com$script,inline-script,object,ping,stylesheet,other
 ||apis.ign.com$script,inline-script,object,ping,stylesheet,other
 ||herokuapp.com$script,inline-script,object,ping,stylesheet,other
 ||cart-products.cdn.ifixit.com$script,inline-script,object,ping,stylesheet,other
-||cdn-go.cn$script,inline-script,object,ping,stylesheet,other
 ||translate-pa.googleapis.com$script,inline-script,object,ping,stylesheet,other
 ||rgpub.io$script,inline-script,object,ping,stylesheet,other
 ||d.newsweek.com$script,inline-script,object,ping,stylesheet,other
