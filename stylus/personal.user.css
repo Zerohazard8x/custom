@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.9.10
+@version        2.10.0
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -26,7 +26,7 @@
         /* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
             #000000 0 0 5px !important; */
         /* line-height: calc(2px 2ex 2px); */
-        /* computed: 2px (2 * 20px) 2px = 44px */
+        /* computed: 2px (2 * 15px) 2px = 44px */
         /* font-size: calc(14px (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
         /* font-size: calc([minimum size] ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
         /* https://madebymike.com.au/writing/fluid-type-calc-examples/ */
@@ -34,7 +34,7 @@
 
     .ytp-caption-segment:not(#inline-preview-player *) {
         background: none !important;
-        font-size: 175% !important;
+        /* font-size: 175% !important; */
     }
 
     .caption-window:not(#inline-preview-player *) {
@@ -158,19 +158,19 @@
     #message,
     .yt-live-chat-text-message-renderer,
     span.font-bold.tracking-wide.align-middle {
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
 
     #card,
     yt-live-chat-author-chip #author-name {
-        font-size: 20px !important;
+        font-size: 15px !important;
     }
 
     #icon * * div svg,
     .emoji,
     .yt-live-chat-author-badge-renderer,
     #img {
-        height: 25px !important;
+        height: 20px !important;
         width: auto !important;
     }
 }
@@ -310,6 +310,31 @@ domain("threads.net") {
         background-color: rgba(0, 0, 0, 0.5) !important;
     }
 
+    /* FrankerFaceZ chat overlay*/
+    .ffz--fschat .channel-root__right-column > div {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .ffz--fschat .ffz--meta-tray,
+    .ffz--fschat .channel-root__right-column > div {
+        backdrop-filter: blur(5px) !important;
+    }
+
+    /* subtitles */
+    .player-captions-container__caption-line {
+        font-family: var(--readable, ""), var(--font-base, ""), Verdana, Arial,
+            Helvetica, "PT Sans Caption", sans-serif !important;
+        background: none !important;
+        color: #fff000 !important;
+    }
+
+    div.player-captions-container__caption-window {
+        padding: 0.45vw !important;
+        border-radius: 5px !important;
+        margin-bottom: 4vh !important;
+        background-color: rgba(8, 8, 8, 0.5) !important;
+    }
+
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .chat-line__status,
     span.CoreText-sc-1txzju1-0.doCFUd {
@@ -329,11 +354,11 @@ domain("threads.net") {
     span.text-fragment,
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .bQEtql {
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
 
     img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA {
-        height: 25px !important;
+        height: 20px !important;
     }
 
     /* Chat authors */
@@ -341,12 +366,12 @@ domain("threads.net") {
     span.CoreText-sc-1txzju1-0.doCFUd,
     .chat-author__display-name,
     .chat-line__status {
-        font-size: 20px !important;
+        font-size: 15px !important;
     }
 
     a.ScCoreLink-sc-16kq0mq-0.eFqEFL.tw-link img.chat-badge,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg {
-        height: 20px !important;
+        height: 15px !important;
     }
 
     span.chat-author__intl-login {
