@@ -3,6 +3,12 @@
     "type": "full",
     "values": {
         "addons.enabled": ["7tv-emotes", "ffzap-core", "ffzap-bttv", "fs-chat"],
+        "p:0:addon.fs-chat.bg.blur": 0,
+        "p:0:addon.fs-chat.no-input": true,
+        "p:0:addon.fs-chat.automatic": true,
+        "p:0:addon.fs-chat.height": "300px",
+        "p:0:addon.fs-chat.hide-scroll": true,
+        "p:0:addon.fs-chat.width": "300px",
         "p:0:chat.badges.hidden": {
             "m-tcon": true,
             "m-other": true,
