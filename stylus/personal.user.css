@@ -128,7 +128,7 @@
 }
 
 @-moz-document regexp(".*youtube\\.com\\/live_chat.*") {
-    div.content.overflow-y-scroll,
+    /* div.content.overflow-y-scroll,
     .yt-live-chat-text-message-renderer,
     #card,
     yt-live-chat-author-chip #author-name,
@@ -139,7 +139,7 @@
     .yt-live-chat-author-badge-renderer,
     #img {
         line-height: normal !important;
-    }
+    } */
 
     div.content.overflow-y-scroll {
         font-family: Roboto, var(--foreign, ""), sans-serif !important;
@@ -335,11 +335,11 @@ domain("threads.net") {
         background-color: rgba(8, 8, 8, 0.5) !important;
     }
 
-    div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
+    /* div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .chat-line__status,
     span.CoreText-sc-1txzju1-0.doCFUd {
         line-height: normal !important;
-    }
+    } */
 
     img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg,
