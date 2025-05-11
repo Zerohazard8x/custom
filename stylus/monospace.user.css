@@ -101,20 +101,45 @@
 
 @-moz-document domain("old.reddit.com"),
 domain("undelete.pullpush.io") {
-    .entry .tagline,
+    #ad-frame,
+    #ad_main,
+    #header-bottom-left ul.tabmenu,
+    #images,
+    #previoussearch #moresearchinfo,
+    .account-activity-box,
+    .combined-search-page > .content,
+    .comment .usertext-body .md p,
+    .commentarea > .sitetable > .comment,
+    .commentarea > .usertext,
+    .comments-page .link,
+    .deepthread a,
     .entry .buttons li a,
-    .sitetable,
-    body,
-    .users-online::after,
-    .side .md table tbody tr td,
+    .entry .tagline,
+    .linefield,
+    .link.self .usertext-body .md p,
     .linkinfo,
-    .titlebox h1,
-    .side,
     .linklisting .link .entry,
     .linklisting .link .score,
-    .organic-listing .link.promotedlink .score,
-    #header-bottom-left ul.tabmenu,
+    .login-form-side,
+    .morecomments a,
     .morelink,
+    .organic-listing .link.promotedlink .score,
+    .side .md table tbody tr td,
+    .side .sidecontentbox,
+    .side .titlebox,
+    .side,
+    .sitetable,
+    .sponsorshipbox,
+    .stylesheet-customize-container .pretty-form,
+    .submit-page .roundfield,
+    .submit_text h1,
+    .titlebox h1 a,
+    .titlebox h1,
+    .users-online::after,
+    .wiki-page .wiki-page-content,
+    body,
+    body.listing-page > .content,
+    body.other-discussions-page > .content,
     .footer div.col {
         font-family: var(--sans, ""), arial, "helvetica neue", helvetica,
             verdana, var(--foreign, ""), sans-serif !important;
@@ -260,7 +285,7 @@ domain("deskthority.net") {
     }
 }
 
-@-moz-document domain("google.com") {
+@-moz-document regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     /* Google */
     /* Regex that excludes e.g. mail.google.com */
     /* Separate: regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") */
@@ -271,69 +296,21 @@ domain("deskthority.net") {
             RobotoDraft, Roboto-Regular;
     }
 
-    .dbhQEb,
-    .ZhosBf,
-    .NNMgCf,
-    .REySof,
-    .FtYymb,
-    .LLotyc,
-    .JNI6Yb,
-    .vqseUe,
-    .yUTMj,
-    .cyspcb,
-    .p4wth,
-    .jEYSNd .qXOWAb,
-    .cHQvTb,
-    .IVvPP .zloOqf,
-    #rhs .ss6qqb .zloOqf,
-    .IFvyDb.hb8SAc,
-    .iAIpCb,
-    .wHYlTd,
-    .tNxQIb,
-    .og3lId,
-    .GdCiyb,
-    .M2qv4b,
-    html,
-    body,
-    h1,
-    .VwiC3b,
-    .BwPElf .toI8Rb,
-    .Pqkn2e,
-    .g,
-    .e9EfHf,
-    .gb_Kd,
-    .lJ9FBc input[type="submit"],
-    .gbqfba,
-    textarea.gLFyf,
-    .GGYY2b,
-    .HK7bjf,
-    .HaXvv,
-    .HmPpvd,
-    .IVvPP .WY0eLb .XaIwc,
-    .JMWMJ,
-    .L3eUgb,
-    .LGwnxb,
-    .MBeuO,
-    .NUnG9d,
-    .NhRr3b,
-    .Or3oFf,
-    .PlQycd,
-    .QMh54c,
-    .QgaiDb,
-    .SmBdrc,
-    .T4LgNb,
-    .VP31Vb,
-    .W7GCoc,
-    .YrbPuc,
-    .ZU8Abc,
-    .ZkkK1e,
-    .ZwRhJd {
+    div,
+    span,
+    .MBeuO {
         font-family: "Google Sans Text", var(--google, ""), Roboto, RobotoDraft,
             Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
             var(--foreign, ""), sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
+    textarea.gLFyf,
+    .YacQv,
+    .T0wOad,
+    .pb3iw,
+    .ssJ7i,
+    .NprOob.wT3VGc,
     .pe7FNb,
     .xd0Ff .TLIZ,
     .FNMYpd .CVouqc,
@@ -511,7 +488,10 @@ domain("deskthority.net") {
     input,
     select,
     textarea {
-        font-family: var(--theme-font-family-result-title, "") !important;
+        font-family: var(
+            --theme-font-family-result-title,
+            var(--font-stack, "")
+        ) !important;
     }
 
     code,
