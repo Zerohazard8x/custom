@@ -7,13 +7,7 @@
         "themeLinks": [
             "https://raw.githubusercontent.com/rose-pine/discord/main/rose-pine.theme.css"
         ],
-        "enableReactDevtools": false,
-        "frameless": false,
-        "transparent": false,
-        "winCtrlQ": false,
-        "macosTranslucency": false,
         "disableMinSize": true,
-        "winNativeTitleBar": false,
         "plugins": {
             "BadgeAPI": {
                 "enabled": true
@@ -735,20 +729,7 @@
             "HideMedia": {
                 "enabled": false
             }
-        },
-        "notifications": {
-            "timeout": 5000,
-            "position": "bottom-right",
-            "useNative": "not-focused",
-            "logLimit": 50
-        },
-        "cloud": {
-            "authenticated": false,
-            "url": "https://api.vencord.dev/",
-            "settingsSync": false,
-            "settingsSyncVersion": 1738676519584
-        },
-        "enabledThemes": []
+        }
     },
     "quickCss": ":root {\r\n    --foreign: var(--emoji, \"\"), var(--noto, \"\"), PingFang, \"PingFang SC\",\r\n        \"Hiragino Sans\", \"Apple SD Gothic Neo\", Thonburi,\r\n        \"Tiro Devanagari Hindi\", \"Geeza Pro\", Geeza, \"Yu Gothic\",\r\n        \"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Malgun Gothic\",\r\n        \"Leelawadee UI\", \"Nirmala UI\", \"Segoe UI Arabic\";\r\n    --noto: \"Noto Sans JP\", \"Noto Sans TC\", \"Noto Sans SC\", \"Noto Sans KR\",\r\n        \"Noto Sans Thai\", \"Noto Sans Devanagari\", \"Noto Sans Arabic\";\r\n    --emoji: \"Apple Color Emoji\", \"SF Symbols\", \"Segoe UI Emoji\",\r\n        \"Segoe Fluent Icons\", \"Segoe MDL2 Assets\", \"Segoe UI Symbol\",\r\n        \"Noto Color Emoji\", \"Noto Sans Symbols\", \"EmojiOne Color\",\r\n        \"Twemoji Mozilla\";\r\n    --sans: -apple-system, BlinkMacSystemFont, \"Inter V\", \"Roboto\",\r\n        \"Segoe UI Variable\", \"Segoe UI\", \"Avenir Next\", Avenir;\r\n    --plex: \"IBM Plex Sans Var\", \"IBM Plex Sans JP\", \"IBM Plex Sans KR\",\r\n        \"IBM Plex Sans\";\r\n    --mono: var(--block-mono, \"\"), \"Monaspace Argon Var\",\r\n        \"Monaspace Argon VF\", \"Monaspace Argon\", \"Fira Mono\";\r\n    --block-mono: \"JetBrains Mono\", \"JetBrains Mono NL\",\r\n        \"JetBrainsMono Nerd Font\", \"Fantasque Sans Mono\";\r\n\r\n    --disc-font: \"gg sans\", \"Noto Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif, var(--foreign, \"\");\r\n    --font-primary: var(--disc-font, \"\");\r\n    --font-display: var(--disc-font, \"\");\r\n    --font-code: var(--disc-font, \"\");\r\n}\r\n\r\n*:not(pre *,\r\n    .far,\r\n    .fa,\r\n    .glyphicon,\r\n    [class*=\"vjs-\"],\r\n    .fab,\r\n    .fa-github,\r\n    .fas,\r\n    .material-icons,\r\n    .icofont,\r\n    .typcn,\r\n    mu,\r\n    [class*=\"mu-\"],\r\n    .glyphicon,\r\n    .icon),\r\npre,\r\ncode,\r\ntt {\r\n    font-feature-settings: \"liga\", \"clig\", \"calt\", \"kern\" !important;\r\n    -webkit-font-smoothing: antialiased !important;\r\n    -moz-osx-font-smoothing: grayscale !important;\r\n    -ms-font-smoothing: antialiased !important;\r\n    text-rendering: optimizeLegibility !important;\r\n    font-synthesis: none !important;\r\n    font-optical-sizing: auto !important;\r\n    font-size-adjust: from-font !important;\r\n    font-kerning: auto !important;\r\n    letter-spacing: normal !important;\r\n}\r\n\r\n.codeLine__3797b,\r\n.hljs,\r\n.codeLine-2C-9aH,\r\n.inlineCode-ERyvy_,\r\ntable,\r\n.inline {\r\n    font-family: var(--mono, \"\"), Consolas, \"Andale Mono WT\", \"Andale Mono\",\r\n        \"Lucida Console\", \"Lucida Sans Typewriter\", \"Liberation Mono\",\r\n        \"Nimbus Mono L\", Monaco, \"Courier New\", Courier, monospace,\r\n        var(--foreign, \"\") !important;\r\n}\r\n\r\n.embedMargin_ad0b71.embedProvider_ad0b71,\r\n.sectionTitle__3e02b>.defaultMarginh5__6e314.eyebrow__4e5bb.h5__28baa,\r\n.welcomeCTA__927ef {\r\n    display: none !important;\r\n}"
 }

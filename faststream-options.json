@@ -1,16 +1,5 @@
 {
-  "dev": false,
-  "replaceDelay": 500,
-  "playMP4URLs": true,
-  "playStreamURLs": true,
-  "analyzeVideos": false,
-  "downloadAll": true,
-  "previewEnabled": true,
   "autoEnableBestSubtitles": true,
-  "storeProgress": true,
-  "autoplayYoutube": false,
-  "autoplayNext": false,
-  "defaultYoutubeClient4": "IOS",
   "defaultQuality": "4320p",
   "autoEnableURLs": [
     "~.*kimcartoon.*",
@@ -19,157 +8,15 @@
     "~.*libreddit.*",
     "~.*invidious.*",
     "~.*yewtube.*",
-    "~.*instructure.*"
+    "~.*instructure.*",
+    "~.*reddit.*",
+    "~.*streami.*",
+    "~.*streama.*"
   ],
-  "customSourcePatterns": "",
-  "keybinds": {
-    "HidePlayer": "AltRight",
-    "PlayPause": "Space",
-    "Fullscreen": "KeyF",
-    "WindowedFullscreen": "KeyW",
-    "PictureInPicture": "KeyP",
-    "VolumeUp": "ArrowUp",
-    "VolumeDown": "ArrowDown",
-    "Mute": "KeyM",
-    "SeekForward": "ArrowRight",
-    "SeekBackward": "ArrowLeft",
-    "SeekForwardLarge": "Period",
-    "SeekBackwardLarge": "Comma",
-    "SeekForwardFrame": "Shift+ArrowRight",
-    "SeekBackwardFrame": "Shift+ArrowLeft",
-    "IncreasePlaybackRate": "Shift+ArrowUp",
-    "DecreasePlaybackRate": "Shift+ArrowDown",
-    "UndoSeek": "KeyZ",
-    "RedoSeek": "Shift+KeyZ",
-    "ResetFailed": "Backquote",
-    "AddDownloader": "Equal",
-    "RemoveDownloader": "Minus",
-    "SaveVideo": "KeyD",
-    "Screenshot": "KeyX",
-    "SkipIntroOutro": "KeyS",
-    "NextChapter": "None",
-    "GoToStart": "Digit0",
-    "NextVideo": "KeyN",
-    "PreviousVideo": "None",
-    "ToggleSubtitles": "KeyC",
-    "FlipVideo": "None",
-    "RotateVideo": "None",
-    "ToggleVisualFilters": "KeyQ"
-  },
-  "videoBrightness": 1,
-  "videoContrast": 1,
-  "videoSaturation": 1,
-  "videoGrayscale": 0,
-  "videoSepia": 0,
-  "videoInvert": 0,
-  "videoHueRotate": 0,
-  "videoDaltonizerType": "none",
-  "videoDaltonizerStrength": 1,
-  "maxSpeed": -1,
-  "maxVideoSize": 5000000000,
-  "seekStepSize": 2,
-  "singleClickAction": "playpause",
-  "doubleClickAction": "playpause",
-  "tripleClickAction": "fullscreen",
-  "visChangeAction": "nothing",
-  "miniSize": 0.25,
-  "miniPos": "bottomright",
-  "videoDelay": 0,
-  "maximumDownloaders": 6,
   "subtitlesSettings": {
-    "fontFamily": "\"Public Sans\", var(--readable, \"\"), var(--font, \"\"), Arial",
-    "fontWeight": "normal",
-    "fontSize": "150%",
+    "fontFamily": "var(--readable, \"\"), var(--sans, \"\"), Arial",
     "color": "#fff000",
-    "background": "rgba(8, 8, 8, 0.75)",
-    "outlineColor": "none",
-    "outlineWidth": "0px",
+    "background": "rgba(8, 8, 8, 0.5)",
     "defaultLanguage": "en"
-  },
-  "toolSettings": {
-    "playpause": {
-      "location": "left",
-      "priority": 100
-    },
-    "previous": {
-      "location": "left",
-      "priority": 200
-    },
-    "next": {
-      "location": "left",
-      "priority": 300
-    },
-    "volume": {
-      "location": "left",
-      "priority": 400
-    },
-    "duration": {
-      "location": "left",
-      "priority": 500
-    },
-    "sources": {
-      "location": "right",
-      "priority": 100
-    },
-    "audioconfig": {
-      "location": "right",
-      "priority": 200
-    },
-    "subtitles": {
-      "location": "right",
-      "priority": 300
-    },
-    "languages": {
-      "location": "right",
-      "priority": 500
-    },
-    "quality": {
-      "location": "right",
-      "priority": 400
-    },
-    "playrate": {
-      "location": "right",
-      "priority": 600
-    },
-    "settings": {
-      "location": "right",
-      "priority": 700
-    },
-    "more": {
-      "location": "right",
-      "priority": 800
-    },
-    "download": {
-      "location": "right",
-      "priority": 900
-    },
-    "fullscreen": {
-      "location": "right",
-      "priority": 1000
-    },
-    "loop": {
-      "location": "extra",
-      "priority": 100
-    },
-    "pip": {
-      "location": "extra",
-      "priority": 300
-    },
-    "windowedfs": {
-      "location": "extra",
-      "priority": 400
-    },
-    "backward": {
-      "location": "extra",
-      "priority": 500
-    },
-    "screenshot": {
-      "location": "extra",
-      "priority": 200
-    },
-    "forward": {
-      "location": "extra",
-      "priority": 600
-    }
   }
 }
