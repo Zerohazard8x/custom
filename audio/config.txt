@@ -1,0 +1,8 @@
+# main output/s
+# Device:  Voicemeeter AUX Input VB-Audio Voicemeeter VAIO {544c6d08-b5ba-4796-9de5-941a9b07e004}; Voicemeeter Input VB-Audio Voicemeeter VAIO {950ee25c-9697-418e-8c31-e9431b27fd9f}
+Device: Voicemeeter AUX Input VB-Audio Voicemeeter VAIO {544c6d08-b5ba-4796-9de5-941a9b07e004}
+# VSTPlugin: Library "C:\Program Files\VSTPlugins\ReaPlugs\reacomp-standalone.dll" Hipass 0 Thresh 0.0891251 Attack 0 Ratio 0.242424 Release 0 Pre-comp 0 resvd 0 Lowpass 1 SignIn 0 AudIn 0 Dry 3.16228e-08 Wet 1.99526 AutoMkUp 0 PreviewF 0 "RMS size" 0.005 Knee 0 AutoRel 0 ClsAttk 1 AntiAls 0
+VSTPlugin: Library "C:\Program Files\VSTPlugins\LoudMax64.dll" Thresh 0.5 Output 0.6 "Fader Link" 0 "ISP Detection" 0 "Large GUI" 0
+# aux output - chat
+Device: Voicemeeter AUX Input VB-Audio Voicemeeter VAIO {544c6d08-b5ba-4796-9de5-941a9b07e004}
+VSTPlugin: Library "C:\Program Files\VSTPlugins\rnnoise_stereo.dll" ChunkData "VkMyIdEAAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8Uk5Ob2lzZT48UEFSQU0gaWQ9InZhZF9ncmFjZV9wZXJpb2QiIHZhbHVlPSIyMC4wIi8+PFBBUkFNIGlkPSJ2YWRfcmV0cm9hY3RpdmVfZ3JhY2VfcGVyaW9kIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2YWRfdGhyZXNob2xkIiB2YWx1ZT0iMC41OTk5OTk5NjQyMzcyMTMxIi8+PC9STk5vaXNlPgA="

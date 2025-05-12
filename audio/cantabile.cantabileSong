@@ -1,0 +1,1050 @@
+{
+	"metronome": 
+	{
+		"timeSignature": "4\/4",
+		"tempo": 120,
+		"masterTransportId": "metronome",
+		"soundsGain": 1,
+		"soundsMeasureBeatBalance": 0,
+		"soundsEnabled": false,
+		"measureSoundsEnabled": true,
+		"stateManager": 
+		{
+			"behaviour": 3,
+			"indexedBehaviour": null,
+			"externalBehaviour": 0,
+			"externalIndexedBehaviour": null,
+			"nonLinkedBehaviour": 0,
+			"nonLinkedIndexedBehaviour": null,
+			"resetBehaviour": 0,
+			"resetIndexedBehaviour": null,
+			"states": {},
+			"resetState": null
+		}
+	},
+	"primaryView": null,
+	"onscreenKeyboardState": 
+	{
+		"activeOctaveA": 4,
+		"activeOctaveB": 5,
+		"stateManager": 
+		{
+			"behaviour": 3,
+			"indexedBehaviour": null,
+			"externalBehaviour": 0,
+			"externalIndexedBehaviour": null,
+			"nonLinkedBehaviour": 0,
+			"nonLinkedIndexedBehaviour": null,
+			"resetBehaviour": 0,
+			"resetIndexedBehaviour": null,
+			"states": {},
+			"resetState": null
+		}
+	},
+	"showNotes": [],
+	"savedByBuild": 4220,
+	"currentState": null,
+	"bindings4": [],
+	"bindingGroups": 
+	[
+		{
+			"name": "General",
+			"expanded": true,
+			"enabled": true,
+			"slotColor": "Default",
+			"userNotes": null,
+			"stateManager": 
+			{
+				"behaviour": 0,
+				"indexedBehaviour": null,
+				"externalBehaviour": 0,
+				"externalIndexedBehaviour": null,
+				"nonLinkedBehaviour": 0,
+				"nonLinkedIndexedBehaviour": null,
+				"resetBehaviour": 0,
+				"resetIndexedBehaviour": null,
+				"states": {},
+				"resetState": null
+			},
+			"uniqueID": 1
+		}
+	],
+	"states": [],
+	"viewAsRoutingDiagram": true,
+	"showPortsInRoutingDiagram": true,
+	"useSharedWiringLayout": false,
+	"comments": null,
+	"autoShowComments": false,
+	"savedByVersion": "4.0.4220",
+	"nextUniqueID": 6,
+	"objects": 
+	[
+		{
+			"kind": "InputPortProvider",
+			"transpose": 0,
+			"inputGain": 1,
+			"stateManager": 
+			{
+				"behaviour": 2,
+				"indexedBehaviour": null,
+				"externalBehaviour": 0,
+				"externalIndexedBehaviour": null,
+				"nonLinkedBehaviour": 0,
+				"nonLinkedIndexedBehaviour": null,
+				"resetBehaviour": 0,
+				"resetIndexedBehaviour": null,
+				"states": {},
+				"resetState": null
+			},
+			"userNotes": null,
+			"portWiringPositions": 
+			{
+				"Audio.Main Microphone": 140,
+				"Audio.aux virtual in": 65,
+				"Audio.mic in": 90,
+				"Audio.virtual in": 40,
+				"MIDI.Main Keyboard": 90,
+				"MIDI.Onscreen Keyboard": 115,
+				"Audio.AUX speakers": 40,
+				"Audio.Main Speakers": 65
+			},
+			"wiringPositionX": 180,
+			"wiringPositionY": 0,
+			"nextUniqueID": 4,
+			"uniqueId": 1,
+			"routes": 
+			[
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 1,
+					"name": null,
+					"sourcePort": "mic in",
+					"targetKind": "Plugin",
+					"targetName": "rnnoise_stereo 1",
+					"targetPort": "Stereo In"
+				},
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 2,
+					"name": null,
+					"sourcePort": "aux virtual in",
+					"targetKind": "Plugin",
+					"targetName": "rnnoise_stereo 2",
+					"targetPort": "Stereo In"
+				},
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 3,
+					"name": null,
+					"sourcePort": "Main Microphone",
+					"targetKind": "Plugin",
+					"targetName": "rnnoise_stereo 1",
+					"targetPort": "Stereo In"
+				},
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 4,
+					"name": null,
+					"sourcePort": "AUX speakers",
+					"targetKind": "Plugin",
+					"targetName": "rnnoise_stereo 2",
+					"targetPort": "Stereo In"
+				}
+			],
+			"name": "InputPort",
+			"sendBalance": 0,
+			"displayExpanded": true,
+			"slotColor": "Default"
+		},
+		{
+			"kind": "OutputPortProvider",
+			"outputGain": 1,
+			"stateManager": 
+			{
+				"behaviour": 0,
+				"indexedBehaviour": null,
+				"externalBehaviour": 0,
+				"externalIndexedBehaviour": null,
+				"nonLinkedBehaviour": 0,
+				"nonLinkedIndexedBehaviour": null,
+				"resetBehaviour": 0,
+				"resetIndexedBehaviour": null,
+				"states": {},
+				"resetState": null
+			},
+			"userNotes": null,
+			"portWiringPositions": 
+			{
+				"Audio.Main Speakers": 140,
+				"Audio.Metronome": 165,
+				"Audio.aux virtual out": 65,
+				"Audio.mic out": 90,
+				"Audio.virtual out": 40,
+				"MIDI.External Synth": 65,
+				"MIDI.Onscreen Keyboard": 90,
+				"Audio.AUX speakers": 115,
+				"Audio.Main Microphone": 40
+			},
+			"wiringPositionX": 180,
+			"wiringPositionY": 0,
+			"nextUniqueID": 1,
+			"uniqueId": 2,
+			"routes": [],
+			"name": "OutputPort",
+			"sendBalance": 0,
+			"displayExpanded": true,
+			"slotColor": "Default"
+		},
+		{
+			"kind": "Plugin",
+			"pluginPath": "C:\\Program Files\\VstPlugins\\rnnoise_stereo.dll",
+			"pluginId": "526e6e31",
+			"selectedProgram": 0,
+			"autoMapAudioBusses": true,
+			"audioBusConfiguration": [],
+			"pluginData": "SnTyDWBlYGDgAGJTI7NUs1RjQxUQ28zU2NTE1EgXJKRrbGgOZZmlmVmaG5uZGhmYGzMC1cEAiN0AZQsCcUBOaXpmnkJwXmJBcUZ+iYIhTOGzbyeiQHQVUIdzcp43UGuRm5NzBsiMoLw8Q7BJEPMGGtwKczZSvAhk2NhX5OYolKUWFWfm59kqGeoZKCmk5iXnp2TmpdsqhYa46Voo2dsp2AT5+eVnFqfa2QQ4Bjn6KmSm2CqVJabEpxclJqfGF6QWZeanKCmUJeaUptoqGRkATdFHV1qUWlKUn5hcklmWil0bVl0lGUWpwFDOQVZmagkGZiZGxuZGhsaGIF36MAcyAAAAAP//AwA=",
+			"uiSettings": {},
+			"blobs": {},
+			"midiPassthrough": false,
+			"trackParameterChanges": false,
+			"shouldFlushTailSounds": false,
+			"runMode": "Running",
+			"midiPorts": [],
+			"audioPorts": 
+			[
+				{
+					"kind": "input",
+					"channels": 
+					[
+						{
+							"name": "Left (L)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "#0",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						},
+						{
+							"name": "Right (R)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "#1",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						}
+					],
+					"aliases": null,
+					"enabled": true,
+					"default": false,
+					"showInMonitor": true,
+					"includeInMasterIndicator": true,
+					"enableLoopback": false,
+					"name": "Stereo In"
+				},
+				{
+					"kind": "output",
+					"channels": 
+					[
+						{
+							"name": "Left (L)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "pluginOutput\\#0",
+									"mixLevel": 1,
+									"panPlacement": "LeftBalance",
+									"fadePlacement": "FrontBalance"
+								},
+								{
+									"assignedChannel": "pluginInput\\#0",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						},
+						{
+							"name": "Right (R)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "pluginOutput\\#1",
+									"mixLevel": 1,
+									"panPlacement": "RightBalance",
+									"fadePlacement": "FrontBalance"
+								},
+								{
+									"assignedChannel": "pluginInput\\#1",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						}
+					],
+					"aliases": null,
+					"enabled": true,
+					"default": false,
+					"showInMonitor": true,
+					"includeInMasterIndicator": true,
+					"enableLoopback": false,
+					"name": "Stereo Out"
+				}
+			],
+			"gain": 1,
+			"audioBypass": false,
+			"wetDryBalance": 1,
+			"panPosition": 0,
+			"fadePosition": 0,
+			"pluginInputChannelCount": 2,
+			"pluginOutputChannelCount": 2,
+			"switchPresetOnProgramChange": false,
+			"userNotes": null,
+			"stateManager": 
+			{
+				"behaviour": 115,
+				"indexedBehaviour": null,
+				"externalBehaviour": 0,
+				"externalIndexedBehaviour": null,
+				"nonLinkedBehaviour": 0,
+				"nonLinkedIndexedBehaviour": null,
+				"resetBehaviour": 0,
+				"resetIndexedBehaviour": null,
+				"states": {},
+				"resetState": null
+			},
+			"solo": false,
+			"soloControl": true,
+			"morphSets": {},
+			"wiringPositionX": 587,
+			"wiringPositionY": 210,
+			"nextUniqueID": 1,
+			"uniqueId": 3,
+			"routes": 
+			[
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 1,
+					"name": null,
+					"sourcePort": "Stereo Out",
+					"targetKind": "Plugin",
+					"targetName": "BC Gain 3 VST(Stereo) 1",
+					"targetPort": "Stereo In"
+				}
+			],
+			"name": "rnnoise_stereo 1",
+			"sendBalance": 0,
+			"displayExpanded": true,
+			"slotColor": "Default"
+		},
+		{
+			"kind": "Plugin",
+			"pluginPath": "C:\\Program Files\\Steinberg\\VstPlugins\\BC Gain 3 VST(Stereo).dll",
+			"pluginId": "33393233",
+			"selectedProgram": 0,
+			"autoMapAudioBusses": true,
+			"audioBusConfiguration": [],
+			"pluginData": "xJTBbtNAEIbNoRVX3mBlcU1qe2OnlZJW1G1KBC0RpRcu0dYZEtP1rmWvQ3tDHHkd3oCH4cBTMOt1kk0VwwEhLNm73v38z8zOjNnp5WTPcZyneFNKj2hA6XOch1FIwx6lHb3UoTQKOlHSDztRGHgRjfx+L+g/QW516fnnZv4M7wmv5qkg14Ll5UIq4q/Ajz++f9Pj133HiRPxynH2v4xO44XWoEcBbbRs7f907f0cnNxnnCyhKFMphq7f9VwCIpGzVMyH7s27UefQPTkeTAooQW24nkvyQs6vWAZD9ww+sIorlyRVUYBQBh6lHCZMLdb73bxe34G9lVINXbR8OT4bj0VeqeYTdMgsvqnUjtUJulCwLF4wMQf9FMCHbsd3jwd6O5ZCFZJzKLoZKEa4TO5gpg0dGOAK7hsvrkEpjJgkKxF0RlTZLRT1NEtn6blgt9x8TtRDjnHH8UoIRZZ/LZTqwCcMAypJIiuBcQZ4zF4N5j5GHWgskzPg66FUTMEmLyGGnhuJPDYa+BWueUTUuZoXsspfdMH44JIl4xU0R5L7NnTaAgU2FLdA1IbOWqCeDZ23QKENjVqgyIYuWqC+Db1sgQ5taNwCHTUQT8XdtADOVLqENeObs/S2IZ0ieHzeqwMXcqqxbYkDk0ic1EnGscn5ary4GVud65KqBLtDyrtUvJcyq190Pc5hdp2KBEylvpZspqtQd4tGN1K6YP5cV9QuK/wBfqpDmCam6cqW0lILyKArc5ak6mETr7ddW4aqRUvTUI/01mdTN3bWuKQdz7xdluofAO7WGr9vFzss88doMX1Qr+p0eGh2O8At1/+tcV8/0IBVJzqdOGB94NNk+9j5BQAA//8DAA==",
+			"uiSettings": 
+			{
+				"GuiEditorOpen": false,
+				"guiEditorPlacement": "718,323,1",
+				"guiEditorPlacementDetached": false
+			},
+			"blobs": {},
+			"midiPassthrough": false,
+			"trackParameterChanges": false,
+			"shouldFlushTailSounds": false,
+			"runMode": "Running",
+			"midiPorts": 
+			[
+				{
+					"IsInput": true,
+					"midiFilter": 
+					{
+						"items": []
+					},
+					"pluginPortName": "MIDI In",
+					"name": "MIDI In"
+				},
+				{
+					"IsInput": false,
+					"pluginPortName": "MIDI Out",
+					"name": "MIDI Out"
+				}
+			],
+			"audioPorts": 
+			[
+				{
+					"kind": "input",
+					"channels": 
+					[
+						{
+							"name": "Left (L)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "#0",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						},
+						{
+							"name": "Right (R)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "#1",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						}
+					],
+					"aliases": null,
+					"enabled": true,
+					"default": false,
+					"showInMonitor": true,
+					"includeInMasterIndicator": true,
+					"enableLoopback": false,
+					"name": "Stereo In"
+				},
+				{
+					"kind": "output",
+					"channels": 
+					[
+						{
+							"name": "Left (L)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "pluginOutput\\#0",
+									"mixLevel": 1,
+									"panPlacement": "LeftBalance",
+									"fadePlacement": "FrontBalance"
+								},
+								{
+									"assignedChannel": "pluginInput\\#0",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						},
+						{
+							"name": "Right (R)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "pluginOutput\\#1",
+									"mixLevel": 1,
+									"panPlacement": "RightBalance",
+									"fadePlacement": "FrontBalance"
+								},
+								{
+									"assignedChannel": "pluginInput\\#1",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						}
+					],
+					"aliases": null,
+					"enabled": true,
+					"default": false,
+					"showInMonitor": true,
+					"includeInMasterIndicator": true,
+					"enableLoopback": false,
+					"name": "Stereo Out"
+				}
+			],
+			"gain": 1,
+			"audioBypass": false,
+			"wetDryBalance": 1,
+			"panPosition": 0,
+			"fadePosition": 0,
+			"pluginInputChannelCount": 2,
+			"pluginOutputChannelCount": 2,
+			"switchPresetOnProgramChange": false,
+			"userNotes": null,
+			"stateManager": 
+			{
+				"behaviour": 115,
+				"indexedBehaviour": null,
+				"externalBehaviour": 0,
+				"externalIndexedBehaviour": null,
+				"nonLinkedBehaviour": 0,
+				"nonLinkedIndexedBehaviour": null,
+				"resetBehaviour": 0,
+				"resetIndexedBehaviour": null,
+				"states": {},
+				"resetState": null
+			},
+			"solo": false,
+			"soloControl": true,
+			"morphSets": {},
+			"wiringPositionX": 867,
+			"wiringPositionY": 301,
+			"nextUniqueID": 2,
+			"uniqueId": 4,
+			"routes": 
+			[
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 1,
+					"name": null,
+					"sourcePort": "Stereo Out",
+					"targetKind": "OutputPortProvider",
+					"targetName": "OutputPort",
+					"targetPort": "mic out"
+				},
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 2,
+					"name": null,
+					"sourcePort": "Stereo Out",
+					"targetKind": "OutputPortProvider",
+					"targetName": "OutputPort",
+					"targetPort": "Main Microphone"
+				}
+			],
+			"name": "BC Gain 3 VST(Stereo) 1",
+			"sendBalance": 0,
+			"displayExpanded": true,
+			"slotColor": "Default"
+		},
+		{
+			"kind": "Plugin",
+			"pluginPath": "C:\\Program Files\\VstPlugins\\rnnoise_stereo.dll",
+			"pluginId": "526e6e31",
+			"selectedProgram": 0,
+			"autoMapAudioBusses": true,
+			"audioBusConfiguration": [],
+			"pluginData": "SnTyDWBlYGDgAGJTI7NUs1RjQxUQ28zU2NTE1EgXJKRrbGgOZZmlmVmaG5uZGhmYGzMC1cEAiN0AZQsCcUBOaXpmnkJwXmJBcUZ+iYIhTOGzbyeiQHQVUIdzcp43UGuRm5NzBsiMoLw8Q7BJEPMGGtwKczZSvAhk2NhX5OYolKUWFWfm59kqGeoZKCmk5iXnp2TmpdsqhYa46Voo2dsp2AT5+eVnFqfa2QQ4Bjn6KmSm2CqVJabEpxclJqfGF6QWZeanKCmUJeaUptoqGRkATdFHV1qUWlKUn5hcklmWil0bVl0lGUWpwFDOQVZmagkGZiZGxuZGhsaGIF36MAcyAAAAAP//AwA=",
+			"uiSettings": {},
+			"blobs": {},
+			"midiPassthrough": false,
+			"trackParameterChanges": false,
+			"shouldFlushTailSounds": false,
+			"runMode": "Running",
+			"midiPorts": [],
+			"audioPorts": 
+			[
+				{
+					"kind": "input",
+					"channels": 
+					[
+						{
+							"name": "Left (L)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "#0",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						},
+						{
+							"name": "Right (R)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "#1",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						}
+					],
+					"aliases": null,
+					"enabled": true,
+					"default": false,
+					"showInMonitor": true,
+					"includeInMasterIndicator": true,
+					"enableLoopback": false,
+					"name": "Stereo In"
+				},
+				{
+					"kind": "output",
+					"channels": 
+					[
+						{
+							"name": "Left (L)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "pluginOutput\\#0",
+									"mixLevel": 1,
+									"panPlacement": "LeftBalance",
+									"fadePlacement": "FrontBalance"
+								},
+								{
+									"assignedChannel": "pluginInput\\#0",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						},
+						{
+							"name": "Right (R)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "pluginOutput\\#1",
+									"mixLevel": 1,
+									"panPlacement": "RightBalance",
+									"fadePlacement": "FrontBalance"
+								},
+								{
+									"assignedChannel": "pluginInput\\#1",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						}
+					],
+					"aliases": null,
+					"enabled": true,
+					"default": false,
+					"showInMonitor": true,
+					"includeInMasterIndicator": true,
+					"enableLoopback": false,
+					"name": "Stereo Out"
+				}
+			],
+			"gain": 1,
+			"audioBypass": false,
+			"wetDryBalance": 1,
+			"panPosition": 0,
+			"fadePosition": 0,
+			"pluginInputChannelCount": 2,
+			"pluginOutputChannelCount": 2,
+			"switchPresetOnProgramChange": false,
+			"userNotes": null,
+			"stateManager": 
+			{
+				"behaviour": 115,
+				"indexedBehaviour": null,
+				"externalBehaviour": 0,
+				"externalIndexedBehaviour": null,
+				"nonLinkedBehaviour": 0,
+				"nonLinkedIndexedBehaviour": null,
+				"resetBehaviour": 0,
+				"resetIndexedBehaviour": null,
+				"states": {},
+				"resetState": null
+			},
+			"solo": false,
+			"soloControl": true,
+			"morphSets": {},
+			"wiringPositionX": 700,
+			"wiringPositionY": 85,
+			"nextUniqueID": 1,
+			"uniqueId": 5,
+			"routes": 
+			[
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 1,
+					"name": null,
+					"sourcePort": "Stereo Out",
+					"targetKind": "Plugin",
+					"targetName": "LoudMax64 1",
+					"targetPort": "Stereo In"
+				}
+			],
+			"name": "rnnoise_stereo 2",
+			"sendBalance": 0,
+			"displayExpanded": true,
+			"slotColor": "Default"
+		},
+		{
+			"kind": "Plugin",
+			"pluginPath": "C:\\Program Files\\VstPlugins\\LoudMax64.dll",
+			"pluginId": "4c644d78",
+			"selectedProgram": 0,
+			"autoMapAudioBusses": true,
+			"audioBusConfiguration": [],
+			"pluginData": "SnTyDWBlYGDgAGKTZDMTkxRzCxUg29TM1NjUxCRZFySka25hBmSlmZsCuWYpZobmFgZAwAhUBwMgdgOULQjEATml6Zl5CsF5iQXFGfklCoYwhTWnHF6B6BdA7Jyc5w2kHrhVOGWDzPBJ8a2AmoVs9oAAqNsY3Cqc0d3G6pKalliaU4JVn93//3/tJWfOQBYDAAAA//8DAA==",
+			"uiSettings": 
+			{
+				"GuiEditorOpen": false,
+				"guiEditorPlacement": "782,375,1",
+				"guiEditorPlacementDetached": false
+			},
+			"blobs": {},
+			"midiPassthrough": false,
+			"trackParameterChanges": false,
+			"shouldFlushTailSounds": false,
+			"runMode": "Running",
+			"midiPorts": 
+			[
+				{
+					"IsInput": true,
+					"midiFilter": 
+					{
+						"items": []
+					},
+					"pluginPortName": "MIDI In",
+					"name": "MIDI In"
+				},
+				{
+					"IsInput": false,
+					"pluginPortName": "MIDI Out",
+					"name": "MIDI Out"
+				}
+			],
+			"audioPorts": 
+			[
+				{
+					"kind": "input",
+					"channels": 
+					[
+						{
+							"name": "Left (L)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "#0",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						},
+						{
+							"name": "Right (R)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "#1",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						}
+					],
+					"aliases": null,
+					"enabled": true,
+					"default": false,
+					"showInMonitor": true,
+					"includeInMasterIndicator": true,
+					"enableLoopback": false,
+					"name": "Stereo In"
+				},
+				{
+					"kind": "output",
+					"channels": 
+					[
+						{
+							"name": "Left (L)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "pluginOutput\\#0",
+									"mixLevel": 1,
+									"panPlacement": "LeftBalance",
+									"fadePlacement": "FrontBalance"
+								},
+								{
+									"assignedChannel": "pluginInput\\#0",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						},
+						{
+							"name": "Right (R)",
+							"assignments": 
+							[
+								{
+									"assignedChannel": "pluginOutput\\#1",
+									"mixLevel": 1,
+									"panPlacement": "RightBalance",
+									"fadePlacement": "FrontBalance"
+								},
+								{
+									"assignedChannel": "pluginInput\\#1",
+									"mixLevel": 1,
+									"panPlacement": "None",
+									"fadePlacement": "None"
+								}
+							]
+						}
+					],
+					"aliases": null,
+					"enabled": true,
+					"default": false,
+					"showInMonitor": true,
+					"includeInMasterIndicator": true,
+					"enableLoopback": false,
+					"name": "Stereo Out"
+				}
+			],
+			"gain": 1,
+			"audioBypass": false,
+			"wetDryBalance": 1,
+			"panPosition": 0,
+			"fadePosition": 0,
+			"pluginInputChannelCount": 2,
+			"pluginOutputChannelCount": 2,
+			"switchPresetOnProgramChange": false,
+			"userNotes": null,
+			"stateManager": 
+			{
+				"behaviour": 115,
+				"indexedBehaviour": null,
+				"externalBehaviour": 0,
+				"externalIndexedBehaviour": null,
+				"nonLinkedBehaviour": 0,
+				"nonLinkedIndexedBehaviour": null,
+				"resetBehaviour": 0,
+				"resetIndexedBehaviour": null,
+				"states": {},
+				"resetState": null
+			},
+			"solo": false,
+			"soloControl": true,
+			"morphSets": {},
+			"wiringPositionX": 948,
+			"wiringPositionY": 100,
+			"nextUniqueID": 2,
+			"uniqueId": 6,
+			"routes": 
+			[
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 1,
+					"name": null,
+					"sourcePort": "Stereo Out",
+					"targetKind": "OutputPortProvider",
+					"targetName": "OutputPort",
+					"targetPort": "aux virtual out"
+				},
+				{
+					"kind": "audioRoute",
+					"gainLevel": 1,
+					"sendBalanceKind": -1,
+					"stateManager": 
+					{
+						"behaviour": 13,
+						"indexedBehaviour": null,
+						"externalBehaviour": 0,
+						"externalIndexedBehaviour": null,
+						"nonLinkedBehaviour": 0,
+						"nonLinkedIndexedBehaviour": null,
+						"resetBehaviour": 0,
+						"resetIndexedBehaviour": null,
+						"states": {},
+						"resetState": null
+					},
+					"wiringStartInset": 10,
+					"wiringEndInset": 10,
+					"enabled": true,
+					"userNotes": null,
+					"uniqueID": 2,
+					"name": null,
+					"sourcePort": "Stereo Out",
+					"targetKind": "OutputPortProvider",
+					"targetName": "OutputPort",
+					"targetPort": "AUX speakers"
+				}
+			],
+			"name": "LoudMax64 1",
+			"sendBalance": 0,
+			"displayExpanded": true,
+			"slotColor": "Default"
+		}
+	],
+	"modifiedBehaviour": "SignificantChanges"
+}

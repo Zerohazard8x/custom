@@ -1,0 +1,673 @@
+{
+  "__VERSION__": "224",
+  "Main": {
+    "Controls": [
+      {
+        "Calibration": [
+          [
+            10,
+            464
+          ],
+          [
+            20,
+            610
+          ],
+          [
+            30,
+            760
+          ],
+          [
+            40,
+            887
+          ],
+          [
+            50,
+            1010
+          ],
+          [
+            60,
+            1124
+          ],
+          [
+            70,
+            1227
+          ],
+          [
+            80,
+            1320
+          ],
+          [
+            90,
+            1434
+          ],
+          [
+            100,
+            1556
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6687d/control/0",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "CPU Fan",
+        "NickName": "CPU Fan",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6687d/fan/0",
+          "IsHidden": false,
+          "Name": "CPU Fan",
+          "NickName": "CPU Fan"
+        },
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_cpu",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6687d/control/1",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Pump Fan",
+        "NickName": "Pump Fan",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_system",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/nct6687d/temperature/1",
+            "IsHidden": false,
+            "Name": "System",
+            "NickName": "System"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6687d/control/2",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #1",
+        "NickName": "System Fan #1",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_system",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/nct6687d/temperature/1",
+            "IsHidden": false,
+            "Name": "System",
+            "NickName": "System"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6687d/control/3",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #2",
+        "NickName": "System Fan #2",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_system",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/nct6687d/temperature/1",
+            "IsHidden": false,
+            "Name": "System",
+            "NickName": "System"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6687d/control/4",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #3",
+        "NickName": "System Fan #3",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_system",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/nct6687d/temperature/1",
+            "IsHidden": false,
+            "Name": "System",
+            "NickName": "System"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6687d/control/5",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #4",
+        "NickName": "System Fan #4",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_system",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/nct6687d/temperature/1",
+            "IsHidden": false,
+            "Name": "System",
+            "NickName": "System"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6687d/control/6",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #5",
+        "NickName": "System Fan #5",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_system",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/nct6687d/temperature/1",
+            "IsHidden": false,
+            "Name": "System",
+            "NickName": "System"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6687d/control/7",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "System Fan #6",
+        "NickName": "System Fan #6",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_system",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/lpc/nct6687d/temperature/1",
+            "IsHidden": false,
+            "Name": "System",
+            "NickName": "System"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [
+          [
+            30,
+            1300
+          ],
+          [
+            40,
+            1658
+          ],
+          [
+            50,
+            2016
+          ],
+          [
+            60,
+            2374
+          ],
+          [
+            70,
+            2733
+          ],
+          [
+            80,
+            3092
+          ],
+          [
+            90,
+            3449
+          ],
+          [
+            100,
+            3795
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/0-AD107-A/control/0",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Control 1 - NVIDIA GeForce RTX 4060",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 4060",
+        "PairedFanSensor": {
+          "Identifier": "NVApiWrapper/0-AD107-A/fan/0",
+          "IsHidden": false,
+          "Name": "Fan 1 - NVIDIA GeForce RTX 4060",
+          "NickName": "Control 1 - NVIDIA GeForce RTX 4060"
+        },
+        "SelectedCommandStepDown": 8,
+        "SelectedCommandStepUp": 8,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "sharp_gpu",
+          "OneWayHysteresis": false,
+          "Points": [
+            "70,0",
+            "73,2.4542222222222136",
+            "74.98647477949716,5",
+            "77,10",
+            "79,20",
+            "79.9,26.7",
+            "80,100"
+          ],
+          "SelectedHysteresis": 2,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "NVApiWrapper/0-AD107-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      }
+    ],
+    "CustomSensors": [],
+    "Fahrenheit": false,
+    "FanCurves": [
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "sharp_cpu",
+        "OneWayHysteresis": false,
+        "Points": [
+          "70,0",
+          "73,2.4542222222222136",
+          "74.98647477949716,5",
+          "77,10",
+          "79,20",
+          "79.9,26.7",
+          "80,100"
+        ],
+        "SelectedHysteresis": 2,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "/amdcpu/0/temperature/2",
+          "IsHidden": false,
+          "Name": "Core (Tctl/Tdie)",
+          "NickName": "Core (Tctl/Tdie)"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "sharp_gpu",
+        "OneWayHysteresis": false,
+        "Points": [
+          "70,0",
+          "73,2.4542222222222136",
+          "74.98647477949716,5",
+          "77,10",
+          "79,20",
+          "79.9,26.7",
+          "80,100"
+        ],
+        "SelectedHysteresis": 2,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-AD107-A/sensor/0",
+          "IsHidden": false,
+          "Name": "GPU",
+          "NickName": "GPU"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "sharp_system",
+        "OneWayHysteresis": false,
+        "Points": [
+          "70,0",
+          "73,2.4542222222222136",
+          "74.98647477949716,5",
+          "77,10",
+          "79,20",
+          "79.9,26.7",
+          "80,100"
+        ],
+        "SelectedHysteresis": 2,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "/lpc/nct6687d/temperature/1",
+          "IsHidden": false,
+          "Name": "System",
+          "NickName": "System"
+        }
+      }
+    ],
+    "FanSensors": [
+      {
+        "Identifier": "/lpc/nct6687d/fan/0",
+        "IsHidden": false,
+        "Name": "CPU Fan",
+        "NickName": "CPU Fan"
+      },
+      {
+        "Identifier": "/lpc/nct6687d/fan/1",
+        "IsHidden": false,
+        "Name": "Pump Fan",
+        "NickName": "Pump Fan"
+      },
+      {
+        "Identifier": "/lpc/nct6687d/fan/2",
+        "IsHidden": false,
+        "Name": "System Fan #1",
+        "NickName": "System Fan #1"
+      },
+      {
+        "Identifier": "/lpc/nct6687d/fan/3",
+        "IsHidden": false,
+        "Name": "System Fan #2",
+        "NickName": "System Fan #2"
+      },
+      {
+        "Identifier": "/lpc/nct6687d/fan/4",
+        "IsHidden": false,
+        "Name": "System Fan #3",
+        "NickName": "System Fan #3"
+      },
+      {
+        "Identifier": "/lpc/nct6687d/fan/5",
+        "IsHidden": false,
+        "Name": "System Fan #4",
+        "NickName": "System Fan #4"
+      },
+      {
+        "Identifier": "/lpc/nct6687d/fan/6",
+        "IsHidden": false,
+        "Name": "System Fan #5",
+        "NickName": "System Fan #5"
+      },
+      {
+        "Identifier": "/lpc/nct6687d/fan/7",
+        "IsHidden": false,
+        "Name": "System Fan #6",
+        "NickName": "System Fan #6"
+      },
+      {
+        "Identifier": "NVApiWrapper/0-AD107-A/fan/0",
+        "IsHidden": false,
+        "Name": "Fan 1 - NVIDIA GeForce RTX 4060",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 4060"
+      }
+    ],
+    "HideCalibration": false,
+    "HideFanSpeedCards": true,
+    "HorizontalUIOrientation": false,
+    "PrimaryColor": "#FF607D8B",
+    "SecondaryColor": "#FFC6FF00",
+    "SelectedTheme": "",
+    "ShowHiddenCards": true,
+    "SyncThemeWithWindows": true,
+    "SyncTrayIconColorWithWindows": true,
+    "TemperatureSensors": [],
+    "TrayIconColor": null,
+    "TrayIcons": []
+  },
+  "Sensors": {
+    "AdlxWrapperSettings": {
+      "Enabled": true
+    },
+    "DisabledPlugins": [],
+    "DisableStorageSensors": true,
+    "LibreHardwareMonitorSettings": {
+      "Controller": false,
+      "CPU": true,
+      "EmbeddedEC": true,
+      "GPU": true,
+      "InpOut": false,
+      "Memory": false,
+      "Motherboard": true,
+      "PSU": false,
+      "Storage": false,
+      "ZeroRPMOverride": false
+    },
+    "NvAPIWrapperSettings": {
+      "Enabled": true,
+      "ZeroRPMOverride": false
+    },
+    "SensorCount": 28
+  }
+}
