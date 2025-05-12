@@ -44,6 +44,7 @@
         border-radius: 5px !important;
         margin-bottom: 4vh !important;
         background-color: rgba(8, 8, 8, 0.5) !important;
+        /* backdrop-filter: blur(5px) !important; */
     }
 
     /* class containing "ytd-miniplaeyer", etc */
@@ -270,6 +271,7 @@ domain("threads.net") {
         padding: 0.45vw !important;
         border-radius: 5px !important;
         background-color: rgba(8, 8, 8, 0.5) !important;
+        /* backdrop-filter: blur(5px) !important; */
     }
 }
 
@@ -308,6 +310,7 @@ domain("threads.net") {
         .seventv-chat-message-body {
         font-family: var(--font-base, ""), Roobert !important;
         background-color: rgba(0, 0, 0, 0.5) !important;
+        /* backdrop-filter: blur(5px) !important; */
     }
 
     /* FrankerFaceZ chat overlay*/
