@@ -6,19 +6,6 @@
             "name": "Github 增强 - 高速下载",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": "JavaScript",
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -48,35 +35,18 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "xiu2_menu_raw_fast": "n1",
-                    "menu_rawDownLink": "btrue",
-                    "menu_gitClone": "btrue"
-                }
+                "data": {}
             },
             "enabled": false,
             "position": 1,
             "file_url": "https://github.com/XIU2/UserScript/raw/master/GithubEnhanced-High-Speed-Download.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Simple YouTube Age Restriction Bypass",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -109,25 +79,12 @@
             "position": 2,
             "file_url": "https://update.greasyfork.org/scripts/423851/Simple%20YouTube%20Age%20Restriction%20Bypass.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Pagetual",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -169,38 +126,18 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "rulesData": "",
-                    "hpRules": "",
-                    "smartRules": "",
-                    "ruleLastUpdate": "n1739000134041",
-                    "rules": "",
-                    "pauseState": "o[{\"k\": \"github.com\",\"v\": true}]"
-                }
+                "data": {}
             },
             "enabled": true,
             "position": 3,
             "file_url": "https://update.greasyfork.org/scripts/438684/Pagetual.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Twitch - Skip content warnings",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -228,25 +165,12 @@
             "position": 4,
             "file_url": "https://greasyfork.org/scripts/469384-twitch-skip-content-warnings/code/Twitch%20-%20Skip%20content%20warnings.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Twitch Player Quality Changer",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -277,25 +201,12 @@
             "position": 5,
             "file_url": "https://greasyfork.org/scripts/465887-twitch-player-quality-changer/code/Twitch%20Player%20Quality%20Changer.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Return YouTube Dislike",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -326,25 +237,12 @@
             "position": 6,
             "file_url": "https://github.com/Anarios/return-youtube-dislike/raw/main/Extensions/UserScript/Return%20Youtube%20Dislike.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Vencord",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -379,25 +277,12 @@
             "position": 7,
             "file_url": "https://raw.githubusercontent.com/Vencord/builds/main/Vencord.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "jstris+",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -425,25 +310,12 @@
             "position": 8,
             "file_url": "https://update.greasyfork.org/scripts/451607/jstris%2B.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Greasyfork Search with Sleazyfork Results include",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -470,33 +342,18 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "disableFilter": "btrue"
-                }
+                "data": {}
             },
             "enabled": false,
             "position": 9,
             "file_url": "https://update.greasyfork.org/scripts/23840/Greasyfork%20Search%20with%20Sleazyfork%20Results%20include.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "IMDb Scout Mod",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [
@@ -603,16 +460,13 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "OMDb_last": "s{\"Title\":\"Jujutsu Kaisen\",\"Year\":\"2020Ã¢ÂÂ\",\"Rated\":\"TV-MA\",\"Released\":\"02 Oct 2020\",\"Runtime\":\"24 min\",\"Genre\":\"Animation, Action, Adventure\",\"Director\":\"N/A\",\"Writer\":\"N/A\",\"Actors\":\"Junya Enoki, Yuma Uchida, YÃÂ»ichi Nakamura\",\"Plot\":\"Yuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by other cursed beings. Yuji eats the finger to protect his friends, and ends up becoming Sukuna's host. However, Yuji discovers that he has inherited magic and is able to control this power without interference from Sukuna. He joins the Tokyo Metropolitan Magic Technical College to consumes all of Sukuna's fingers, which will enable a full exorcism to take place that will free him.\",\"Language\":\"Japanese\",\"Country\":\"Japan\",\"Awards\":\"18 wins & 23 nominations\",\"Poster\":\"https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg\",\"Ratings\":[{\"Source\":\"Internet Movie Database\",\"Value\":\"8.6/10\"}],\"Metascore\":\"N/A\",\"imdbRating\":\"8.6\",\"imdbVotes\":\"93,201\",\"imdbID\":\"tt12343534\",\"Type\":\"series\",\"totalSeasons\":\"2\",\"tomatoMeter\":\"N/A\",\"tomatoImage\":\"N/A\",\"tomatoRating\":\"N/A\",\"tomatoReviews\":\"N/A\",\"tomatoFresh\":\"N/A\",\"tomatoRotten\":\"N/A\",\"tomatoConsensus\":\"N/A\",\"tomatoUserMeter\":\"N/A\",\"tomatoUserRating\":\"N/A\",\"tomatoUserReviews\":\"N/A\",\"tomatoURL\":\"N/A\",\"DVD\":\"N/A\",\"BoxOffice\":\"N/A\",\"Production\":\"N/A\",\"Website\":\"N/A\",\"Response\":\"True\"}",
-                    "imdb_scout": ""
-                }
+                "data": {}
             },
             "enabled": true,
             "position": 10,
             "file_url": "https://update.greasyfork.org/scripts/407284/IMDb%20Scout%20Mod.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
             "requires": [
                 {
                     "meta": {
@@ -621,7 +475,7 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 },
                 {
                     "meta": {
@@ -630,7 +484,7 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 },
                 {
                     "meta": {
@@ -639,7 +493,7 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 },
                 {
                     "meta": {
@@ -648,7 +502,7 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 }
             ]
         },
@@ -656,19 +510,6 @@
             "name": "Show Metacritic.com ratings",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -771,26 +612,13 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "gdpr": "btrue",
-                    "map": "s{}",
-                    "black": "",
-                    "hovercache": "",
-                    "requestcache": "",
-                    "temporaryblack": "",
-                    "searchcache": "",
-                    "autosearchcache": "",
-                    "version": "n94",
-                    "fandomProdApigeeKey": "s1MOZgmNFxvmljaQR1X9KAij9Mo4xAY3u",
-                    "fandomProdApigeeTime": "s2024-11-29T15:49:33.124Z",
-                    "size": "n100"
-                }
+                "data": {}
             },
             "enabled": true,
             "position": 11,
             "file_url": "https://update.greasyfork.org/scripts/13858/Show%20Metacriticcom%20ratings.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
             "requires": [
                 {
                     "meta": {
@@ -799,7 +627,7 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 }
             ]
         },
@@ -807,19 +635,6 @@
             "name": "Google & baidu Switcher (ALL in One)",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -1071,18 +886,13 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "_configures_": "sJTdCJTIyaXNBdXRvVXBkYXRlJTIyJTNBdHJ1ZSUyQyUyMmtleXdvcmRIaWdobGlnaHQlMjIlM0FmYWxzZSUyQyUyMmlzSG90a2V5JTIyJTNBdHJ1ZSUyQyUyMnNlbGVjdGVkRW5naW5lJTIyJTNBJTVCMiUyQzMlMkM0JTVEJTJDJTIybG9jYWxXaW5kb3clMjIlM0F0cnVlJTJDJTIyZ29vZ2xlSnVtcCUyMiUzQXRydWUlMkMlMjJhbnRpTGlua1JlZGlyZWN0JTIyJTNBdHJ1ZSUyQyUyMmFudGlBZHMlMjIlM0F0cnVlJTJDJTIyY3VzdG9tQ29sb3IlMjIlM0ElN0IlMjJmb3JlZ3JvdW5kQ29sb3IlMjIlM0ElMjIlMjNmNzMxMzFjZCUyMiUyQyUyMmJhY2tncm91bmRDb2xvciUyMiUzQSUyMiUyM2ZmZmY4MGFkJTIyJTdEJTdE",
-                    "_version_": "sMjAyNS4wMi4wOC4x",
-                    "_remoteicons_": "",
-                    "_autoupdate_": "sJTdCJTIyZGF0YSUyMiUzQSUyMjIwMjUuMDIuMDguMSUyMiUyQyUyMmV4cGlyZWQlMjIlM0ExNzM5NjE0OTk4ODg3JTdE"
-                }
+                "data": {}
             },
             "enabled": true,
             "position": 12,
             "file_url": "https://github.com/F9y4ng/GreasyFork-Scripts/raw/master/Google%20%26%20Baidu%20Switcher.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
             "requires": [
                 {
                     "meta": {
@@ -1095,7 +905,7 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 }
             ]
         },
@@ -1103,19 +913,6 @@
             "name": "Download Original Picture",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [
@@ -1167,25 +964,12 @@
             "position": 13,
             "file_url": "https://update.greasyfork.org/scripts/396746/Download%20Original%20Picture.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Disable safesearch",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": ["/^https://metager.[a-z]*/"],
@@ -1227,25 +1011,12 @@
             "position": 14,
             "file_url": "https://update.greasyfork.org/scripts/470188/Disable%20safesearch.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Disable Google SafeSearch automatically",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [
@@ -1276,25 +1047,12 @@
             "position": 15,
             "file_url": "https://update.greasyfork.org/scripts/480846/Disable%20Google%20SafeSearch%20automatically.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Youtube HD",
             "options": {
                 "check_for_updates": true,
-                "user_modified": 1719127370084,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -1316,47 +1074,18 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "changeResolution": "btrue",
-                    "preferPremium": "btrue",
-                    "targetRes": "shighres",
-                    "highFramerateTargetRes": "onull",
-                    "changePlayerSize": "bfalse",
-                    "useCustomSize": "bfalse",
-                    "customHeight": "n600",
-                    "autoTheater": "bfalse",
-                    "flushBuffer": "btrue",
-                    "allowCookies": "bfalse",
-                    "setResolutionEarly": "btrue",
-                    "enableErrorScreenWorkaround": "btrue",
-                    "useAPI": "btrue",
-                    "overwriteStoredSettings": "bfalse",
-                    "SettingsSaved": "btrue"
-                }
+                "data": {}
             },
             "enabled": true,
             "position": 16,
             "file_url": "https://update.greasyfork.org/scripts/23661/Youtube%20HD.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Proxy Redirect",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -1588,91 +1317,18 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "4get": "bfalse",
-                    "anonymousoverflow": "bfalse",
-                    "bibliogram": "bfalse",
-                    "biblioreads": "bfalse",
-                    "binternet": "bfalse",
-                    "breezewiki": "bfalse",
-                    "btdigg": "bfalse",
-                    "cloudtube": "bfalse",
-                    "destructables": "bfalse",
-                    "dumb": "bfalse",
-                    "facilmap": "bfalse",
-                    "gothub": "bfalse",
-                    "indestructables": "bfalse",
-                    "invidious": "bfalse",
-                    "kddit": "bfalse",
-                    "laboratory": "bfalse",
-                    "libmedium": "bfalse",
-                    "librarian": "bfalse",
-                    "libreddit": "bfalse",
-                    "libremdb": "bfalse",
-                    "librex": "bfalse",
-                    "librey": "bfalse",
-                    "lieu": "bfalse",
-                    "lingva": "bfalse",
-                    "metastem": "bfalse",
-                    "metastemwiki": "bfalse",
-                    "mikuinvidious": "bfalse",
-                    "mozhi": "bfalse",
-                    "neuters": "bfalse",
-                    "openstreetmap": "bfalse",
-                    "piped": "bfalse",
-                    "priviblur": "bfalse",
-                    "poketube": "bfalse",
-                    "alltube": "bfalse",
-                    "pipedmaterial": "bfalse",
-                    "pixivfe": "bfalse",
-                    "proxigram": "bfalse",
-                    "proxitok": "bfalse",
-                    "redlib": "bfalse",
-                    "rimgo": "bfalse",
-                    "ruraldictionary": "bfalse",
-                    "safetwitch": "bfalse",
-                    "scribe": "bfalse",
-                    "searx": "bfalse",
-                    "simplytranslate": "bfalse",
-                    "spot": "bfalse",
-                    "teddit": "bfalse",
-                    "uso": "bfalse",
-                    "wayback-classic": "bfalse",
-                    "whoogle": "bfalse",
-                    "wikiless": "bfalse",
-                    "wikiwand": "bfalse",
-                    "yacy": "bfalse",
-                    "minisearch": "bfalse",
-                    "tubo": "bfalse",
-                    "nitter": "bfalse",
-                    "quetre": "bfalse",
-                    "everybodyeiki": "bfalse",
-                    "twineo": "bfalse"
-                }
+                "data": {}
             },
             "enabled": false,
             "position": 17,
             "file_url": "https://update.greasyfork.org/scripts/465936/Proxy%20Redirect.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Twitch - Auto Theatre",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -1700,25 +1356,12 @@
             "position": 18,
             "file_url": "https://update.greasyfork.org/scripts/431429/Twitch%20-%20Auto%20Theatre.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "FrankerFaceZ",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [
@@ -1755,25 +1398,12 @@
             "position": 20,
             "file_url": "https://cdn.frankerfacez.com/script/ffz_injector.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "YT Ambient blocker",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -1801,25 +1431,12 @@
             "position": 21,
             "file_url": "https://update.greasyfork.org/scripts/484777/YT%20Ambient%20blocker.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Bypass Paywalls Clean - en",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -1953,25 +1570,12 @@
             "position": 22,
             "file_url": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=userscript/bpc.en.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Kick.com - Auto select best quality",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2000,25 +1604,12 @@
             "position": 23,
             "file_url": "https://update.greasyfork.org/scripts/482255/Kickcom%20-%20Auto%20select%20best%20quality.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Show Rottentomatoes meter",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2103,7 +1694,7 @@
             "position": 24,
             "file_url": "https://update.greasyfork.org/scripts/35443/Show%20Rottentomatoes%20meter.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
             "requires": [
                 {
                     "meta": {
@@ -2112,7 +1703,7 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 }
             ]
         },
@@ -2120,19 +1711,6 @@
             "name": "Equicord",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2161,25 +1739,12 @@
             "position": 25,
             "file_url": "https://github.com/Equicord/Equicord/releases/download/latest/Vencord.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "YouTube Enhancer (Reveal Channel ID)",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2208,25 +1773,12 @@
             "position": 26,
             "file_url": "https://update.greasyfork.org/scripts/513116/YouTube%20Enhancer%20%28Reveal%20Channel%20ID%29.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "AdGuard Extra",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2279,25 +1831,12 @@
             "position": 27,
             "file_url": "https://userscripts.adtidy.org/release/adguard-extra/1.0/adguard-extra.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Reddit Default Sort",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2326,25 +1865,12 @@
             "position": 28,
             "file_url": "https://update.greasyfork.org/scripts/526487/Reddit%20Default%20Sort.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Reddit Sort Comments by top",
             "options": {
                 "check_for_updates": true,
-                "user_modified": 1742780585449,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2373,25 +1899,12 @@
             "position": 29,
             "file_url": "https://update.greasyfork.org/scripts/523422/Reddit%20Sort%20Comments%20by%20old.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "YouTube Theater Plus",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": "DOM",
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2419,38 +1932,18 @@
             },
             "storage": {
                 "ts": 0,
-                "data": {
-                    "fullpage_theater": "bfalse",
-                    "auto_theater_mode": "btrue",
-                    "hide_scrollbar": "bfalse",
-                    "close_theater_with_esc": "bfalse",
-                    "hide_cards": "bfalse",
-                    "show_header_near": "bfalse"
-                }
+                "data": {}
             },
             "enabled": true,
             "position": 29,
             "file_url": "https://update.greasyfork.org/scripts/480701/YouTube%20Theater%20Plus.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
             "name": "Tabview YouTube Totara",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2482,7 +1975,7 @@
             "position": 30,
             "file_url": "https://update.greasyfork.org/scripts/501249/Tabview%20YouTube%20Totara.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
             "requires": [
                 {
                     "meta": {
@@ -2491,7 +1984,7 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 }
             ]
         },
@@ -2499,19 +1992,6 @@
             "name": "Youtube: expand description and long comments; show all the replies",
             "options": {
                 "check_for_updates": true,
-                "user_modified": null,
-                "comment": null,
-                "compatopts_for_requires": true,
-                "compat_wrappedjsobject": false,
-                "compat_metadata": false,
-                "compat_foreach": false,
-                "compat_powerful_this": null,
-                "sandbox": null,
-                "noframes": null,
-                "unwrap": null,
-                "run_at": null,
-                "run_in": null,
-                "tags": [],
                 "override": {
                     "use_includes": [],
                     "orig_includes": [],
@@ -2540,7 +2020,7 @@
             "position": 31,
             "file_url": "https://update.greasyfork.org/scripts/446954/Youtube%3A%20expand%20description%20and%20long%20comments%3B%20show%20all%20the%20replies.user.js",
             "uuid": "",
-            "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
             "requires": [
                 {
                     "meta": {
@@ -2549,12 +2029,13 @@
                         "ts": 0,
                         "mimetype": "text/javascript"
                     },
-                    "source":"Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 }
             ]
         }
     ],
     "settings": {
+        "autoReload": true,
         "scriptUpdateCheckPeriod": 1,
         "external_update_interval": 1,
         "statistics_enabled": false,
