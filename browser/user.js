@@ -1,12 +1,12 @@
 user_pref("app.normandy.first_run", false);
 
+// user_pref("browser.newtabpage.activity-stream.newtabLayouts.variant-b", true);
+// user_pref("browser.profiles.enabled", true);
+// user_pref("browser.tabs.groups.smart.enabled", true);
 user_pref("browser.discovery.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", true); // New tab shortcuts
-user_pref("browser.newtabpage.activity-stream.newtabLayouts.variant-b", true);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
-user_pref("browser.profiles.enabled", true);
 user_pref("browser.startup.page", 3);
-user_pref("browser.tabs.groups.smart.enabled", true);
 
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
