@@ -61,8 +61,9 @@ user_pref("app.update.auto", true);
 user_pref("app.update.background.enabled", true);	
 user_pref("app.update.background.interval", 1);
 
-// user_pref("sidebar.revamp", true);
-// user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.expandOnHover", true);
+user_pref("sidebar.visibility", "hide-sidebar");
 
 user_pref("browser.tabs.allow_transparent_browser", true);
 
