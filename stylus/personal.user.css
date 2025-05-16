@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.10.0
+@version        2.10.1
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -34,7 +34,7 @@
 
     .ytp-caption-segment:not(#inline-preview-player *) {
         background: none !important;
-        /* font-size: 175% !important; */
+        /* font-size: 1.75em !important; */
     }
 
     .caption-window:not(#inline-preview-player *) {
@@ -129,6 +129,11 @@
 }
 
 @-moz-document regexp(".*youtube\\.com\\/live_chat.*") {
+    /* chat font size */
+    :root {
+        --tv-font-size: 1.5em;
+    }
+
     /* div.content.overflow-y-scroll,
     .yt-live-chat-text-message-renderer,
     #card,
@@ -159,19 +164,19 @@
     #message,
     .yt-live-chat-text-message-renderer,
     span.font-bold.tracking-wide.align-middle {
-        font-size: 20px !important;
+        font-size: var(--tv-font-size, initial) !important;
     }
 
     #card,
     yt-live-chat-author-chip #author-name {
-        font-size: 15px !important;
+        font-size: calc(var(--tv-font-size, initial)*0.75) !important;
     }
 
     #icon * * div svg,
     .emoji,
     .yt-live-chat-author-badge-renderer,
     #img {
-        height: 20px !important;
+        height: var(--tv-font-size, initial) !important;
         width: auto !important;
     }
 }
@@ -286,6 +291,7 @@ domain("threads.net") {
     :root {
         --font-base: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
             var(--foreign, ""), sans-serif;
+        --tv-font-size: 1.5em;
     }
 
     /* Anu Twitch Chat Overlay */
@@ -344,6 +350,11 @@ domain("threads.net") {
         line-height: normal !important;
     } */
 
+		.chat-line__message, .chat-line__moderation, .chat-line__status {
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+}
+	
     img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg,
     .chat-badge {
@@ -357,28 +368,25 @@ domain("threads.net") {
     span.text-fragment,
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .bQEtql {
-        font-size: 20px !important;
+        font-size: var(--tv-font-size, initial) !important;
     }
 
     img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA {
-        height: 20px !important;
+        height: var(--tv-font-size, initial) !important;
     }
 
     /* Chat authors */
+    span.chat-author__intl-login,
     p.CoreText-sc-1txzju1-0.cCvSAC,
     span.CoreText-sc-1txzju1-0.doCFUd,
     .chat-author__display-name,
     .chat-line__status {
-        font-size: 15px !important;
+        font-size: calc(var(--tv-font-size, initial) * 0.75) !important;
     }
 
     a.ScCoreLink-sc-16kq0mq-0.eFqEFL.tw-link img.chat-badge,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg {
-        height: 15px !important;
-    }
-
-    span.chat-author__intl-login {
-        font-size: 15px !important;
+        height: calc(var(--tv-font-size, initial) * 0.75) !important;
     }
 }
 
