@@ -131,7 +131,7 @@
 @-moz-document regexp(".*youtube\\.com\\/live_chat.*") {
     /* chat font size */
     :root {
-        --tv-font-size: 1.5em;
+        --tv-font-size: 1.1em;
     }
 
     /* div.content.overflow-y-scroll,
