@@ -291,7 +291,7 @@ domain("threads.net") {
     :root {
         --font-base: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
             var(--foreign, ""), sans-serif;
-        --tv-font-size: 1.5em;
+        --tv-font-size: 1.1em;
     }
 
     /* Anu Twitch Chat Overlay */
