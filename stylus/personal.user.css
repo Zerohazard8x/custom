@@ -386,6 +386,8 @@ domain("threads.net") {
     .chat-author__display-name,
     .chat-line__status {
         font-size: calc(var(--tv-font-size, initial) * 0.75) !important;
+		text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
+            -1px 1px 1px black;
     }
 
     a.ScCoreLink-sc-16kq0mq-0.eFqEFL.tw-link img.chat-badge,
