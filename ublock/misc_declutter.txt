@@ -71,6 +71,7 @@ canva.com##.nv6FFQ
 canva.com##.xOEd1Q
 
 chatgpt.com##.pt-2.gap-3\.5.flex-col.flex.mb-2
+chatgpt.com###radix-«r2e»
 
 chegg.com###D_B1
 chegg.com##.TUcyk.styled__B1AdsWrapper-sc-1nx2zdf-0
