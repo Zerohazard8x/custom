@@ -1068,7 +1068,6 @@
 ||gin.bet$script,inline-script,object,ping,stylesheet,other
 ||git99.com$script,inline-script,object,ping,stylesheet,other
 ||gleamjs.io$script,inline-script,object,ping,stylesheet,other
-||gmanews.tv$script,inline-script,object,ping,stylesheet,other
 ||go-mpulse.net$script,inline-script,object,ping,stylesheet,other
 ||gogocdn.net$script,inline-script,object,ping,stylesheet,other
 ||google-analytics.com$script,inline-script,object,ping,stylesheet,other
