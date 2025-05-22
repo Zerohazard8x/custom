@@ -356,7 +356,8 @@ domain("threads.net") {
         padding-top: 0.125rem !important;
         padding-bottom: 0.125rem !important;
     } */
-
+	
+	.ffz-badge,
     img.chat-image.chat-line__message--emote,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg,
     .chat-badge {
@@ -394,6 +395,12 @@ domain("threads.net") {
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg {
         height: calc(var(--tv-font-size, initial) * 0.75) !important;
     }
+	
+	.ffz-badge {
+		background-size: calc(var(--tv-font-size, initial) * 0.75) !important;
+		height: calc(var(--tv-font-size, initial) * 0.75) !important;
+		min-width: calc(var(--tv-font-size, initial) * 0.75) !important;
+	}
 }
 
 @-moz-document domain("9xbuddy.in") {
