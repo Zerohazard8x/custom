@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.10.1
+@version        2.10.2
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -357,7 +357,7 @@ domain("threads.net") {
         padding-bottom: 0.125rem !important;
     } */
 
-    img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA,
+    img.chat-image.chat-line__message--emote,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg,
     .chat-badge {
         width: auto !important;
@@ -375,7 +375,7 @@ domain("threads.net") {
             -1px 1px 1px black;
     }
 
-    img.chat-image.InjectLayout-sc-1i43xsx-0.clips-chat-line-emote.jbmPmA {
+    img.chat-image.chat-line__message--emote {
         height: var(--tv-font-size, initial) !important;
     }
 
