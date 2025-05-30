@@ -35,6 +35,7 @@ user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
 user_pref("media.wmf.hevc.enabled", 1);
 // user_pref("media.ffvpx-hw.enabled", true);
 // user_pref("gfx.webrender.all", true);
+user_pref("gfx.webrender.compositor.force-enabled", true);
 
 user_pref(
     "network.http.referer.disallowCrossSiteRelaxingDefault.top_navigation",
