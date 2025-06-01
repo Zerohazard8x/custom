@@ -19,8 +19,8 @@
     .ytp-caption-segment {
         font-family: var(--readable, ""), var(--sans, ""), "YouTube Noto",
             Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana,
-            "PT Sans Caption", var(--foreign, ""), sans-serif;
-        color: #fff000;
+            "PT Sans Caption", var(--foreign, ""), sans-serif !important;
+        color: #fff000 !important;
 
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
         /* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
@@ -33,7 +33,7 @@
     }
 
     .ytp-caption-segment:not(#inline-preview-player *) {
-        background: none;
+        background: none !important;
         /* font-size: 1.75em; */
     }
 
@@ -356,8 +356,8 @@ domain("threads.net") {
         padding-top: 0.125rem;
         padding-bottom: 0.125rem;
     } */
-	
-	.ffz-badge,
+
+    .ffz-badge,
     img.chat-image.chat-line__message--emote,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg,
     .chat-badge {
@@ -387,7 +387,7 @@ domain("threads.net") {
     .chat-author__display-name,
     .chat-line__status {
         font-size: calc(var(--tv-font-size, initial) * 0.75);
-		text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
+        text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
             -1px 1px 1px black;
     }
 
@@ -395,12 +395,12 @@ domain("threads.net") {
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg {
         height: calc(var(--tv-font-size, initial) * 0.75);
     }
-	
-	.ffz-badge {
-		background-size: calc(var(--tv-font-size, initial) * 0.75);
-		height: calc(var(--tv-font-size, initial) * 0.75);
-		min-width: calc(var(--tv-font-size, initial) * 0.75);
-	}
+
+    .ffz-badge {
+        background-size: calc(var(--tv-font-size, initial) * 0.75);
+        height: calc(var(--tv-font-size, initial) * 0.75);
+        min-width: calc(var(--tv-font-size, initial) * 0.75);
+    }
 }
 
 @-moz-document domain("9xbuddy.in") {
@@ -474,7 +474,14 @@ domain("xcancel.com") {
         :host {
             --font-sans: var(--sans, ""), Helvetica, Arial, var(--foreign, ""),
                 sans-serif;
-			--font-universal: "Noto Sans","Noto Sans SC","Noto Sans JP","Noto Sans KR","Noto Sans Arabic","Noto Sans Hebrew","Noto Sans Thai","Noto Sans Devanagari","Noto Sans Bengali","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Gujarati","Noto Sans Kannada","Noto Sans Malayalam","Noto Sans Myanmar","Noto Sans Khmer","Noto Sans Armenian","Noto Sans Georgian","Noto Sans Ethiopic","Segoe UI","Roboto","Helvetica Neue",Arial,var(--foreign, ""),sans-serif;
+            --font-universal: "Noto Sans", "Noto Sans SC", "Noto Sans JP",
+                "Noto Sans KR", "Noto Sans Arabic", "Noto Sans Hebrew",
+                "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Bengali",
+                "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Gujarati",
+                "Noto Sans Kannada", "Noto Sans Malayalam", "Noto Sans Myanmar",
+                "Noto Sans Khmer", "Noto Sans Armenian", "Noto Sans Georgian",
+                "Noto Sans Ethiopic", "Segoe UI", "Roboto", "Helvetica Neue",
+                Arial, var(--foreign, ""), sans-serif;
         }
     }
 }
