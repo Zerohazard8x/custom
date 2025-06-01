@@ -474,6 +474,7 @@ domain("xcancel.com") {
         :host {
             --font-sans: var(--sans, ""), Helvetica, Arial, var(--foreign, ""),
                 sans-serif;
+			--font-universal: "Noto Sans","Noto Sans SC","Noto Sans JP","Noto Sans KR","Noto Sans Arabic","Noto Sans Hebrew","Noto Sans Thai","Noto Sans Devanagari","Noto Sans Bengali","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Gujarati","Noto Sans Kannada","Noto Sans Malayalam","Noto Sans Myanmar","Noto Sans Khmer","Noto Sans Armenian","Noto Sans Georgian","Noto Sans Ethiopic","Segoe UI","Roboto","Helvetica Neue",Arial,var(--foreign, ""),sans-serif;
         }
     }
 }
