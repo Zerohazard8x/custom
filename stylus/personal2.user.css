@@ -13,7 +13,7 @@
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
             segoe ui, Roboto, helvetica neue, Arial, noto sans,
             apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 }
 
@@ -22,13 +22,13 @@
     #s2id_autogen1,
     #s2id_autogen2,
     .localePicker {
-        font-family: "FontAwesome", Roboto, "MS Shell Dlg 2" !important;
+        font-family: "FontAwesome", Roboto, "MS Shell Dlg 2";
     }
 
     #home-main-messaging h1,
     .messaging-title h2 {
         font-family: Lato, "Roboto", Arial, Helvetica, sans-serif,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 }
 
@@ -38,12 +38,12 @@ domain("weibo.cn") {
     :host {
         font-family: var(--sans, ""), ui-sans-serif, system-ui,
             "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
-            "Noto Color Emoji", var(--foreign, "") !important;
+            "Noto Color Emoji", var(--foreign, "");
     }
 
     .woo-box-flex {
         font-family: var(--sans, ""), system-ui, -apple-system, Segoe UI, Roboto,
-            Ubuntu, Cantarell, Noto Sans, var(--foreign, ""), sans-serif !important;
+            Ubuntu, Cantarell, Noto Sans, var(--foreign, ""), sans-serif;
     }
 
     .woo-like-count,
@@ -61,18 +61,18 @@ domain("weibo.cn") {
     .main-text,
     h4 {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     .woo-input-main {
-        font-family: var(--sans, ""), "MS Shell Dlg 2" !important;
+        font-family: var(--sans, ""), "MS Shell Dlg 2";
     }
 }
 
 @-moz-document domain("wordcounter.net") {
     .container,
     #box {
-        font-family: var(--sans, ""), Helvetica, Arial !important;
+        font-family: var(--sans, ""), Helvetica, Arial;
     }
 }
 
@@ -103,7 +103,7 @@ domain("weibo.cn") {
     h3,
     tr th,
     tbody tr td {
-        font-family: "Roboto Flex", Roboto, Arimo, Arial !important;
+        font-family: "Roboto Flex", Roboto, Arimo, Arial;
     }
 
     .specs-fans span,
@@ -130,7 +130,7 @@ domain("weibo.cn") {
     h4,
     h5,
     tr td a:not(.collapse):not(.ttl a):not(.nfo a) {
-        font-family: "Barlow Condensed", Google-Oswald, Arial !important;
+        font-family: "Barlow Condensed", Google-Oswald, Arial;
     }
 }
 
@@ -143,7 +143,7 @@ domain("weibo.cn") {
 
     /* iframe */
     html[stylus-iframe$="sports.cctv.com"] {
-        font-family: var(--hupu, ""), PingFangSC, var(--foreign, "") !important;
+        font-family: var(--hupu, ""), PingFangSC, var(--foreign, "");
     }
 
     body,
@@ -152,7 +152,7 @@ domain("weibo.cn") {
     select,
     textarea {
         font-family: var(--hupu, ""), "lucida grande", tahoma, verdana, arial,
-            \5b8b\4f53, var(--foreign, ""), sans-serif !important;
+            \5b8b\4f53, var(--foreign, ""), sans-serif;
     }
 
     body,
@@ -160,7 +160,7 @@ domain("weibo.cn") {
     html {
         font-family: var(--hupu, ""), hupufont-Regular, PingFangSC-Regular,
             PingFang SC, Helvetica Neue, Helvetica, STHeiTi, var(--foreign, ""),
-            sans-serif !important;
+            sans-serif;
     }
 
     .index_simple-detail-content__3FPFA,
@@ -184,25 +184,25 @@ domain("weibo.cn") {
     .bbs-index-web-bbsindexWarp div {
         font-family: var(--hupu, ""), PingFangSC-Regular, PingFang SC, miui,
             system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue,
-            Helvetica, var(--foreign, ""), sans-serif !important;
+            Helvetica, var(--foreign, ""), sans-serif;
     }
 
     .bbs-sl-web-post-body,
     .bbs-sl-web-post-header,
     .bbs-sl-web-intro-detail-desc-title {
-        font-family: var(--hupu, ""), PingFangSC-Medium, var(--foreign, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Medium, var(--foreign, "");
     }
 
     .post-wrapper_bbs-post-wrapper-title__TLQdd p,
     .index_bbs-post-web-main-title-provider__uHAn9 span,
     .index_bbs-post-web-main-title-provider__uHAn9,
     .main-c {
-        font-family: var(--hupu, ""), PingFangSC-Semibold, var(--foreign, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Semibold, var(--foreign, "");
     }
 
     .content-header {
         font-family: var(--sans, ""), PingFangSC-Semibold, PingFang SC,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 
     .post-reply-list_post-reply-list-wrapper__o4_81
@@ -229,7 +229,7 @@ domain("weibo.cn") {
     .text-list-model,
     .user-operate,
     .list-item-lights {
-        font-family: var(--hupu, ""), PingFangSC-Regular, var(--foreign, "") !important;
+        font-family: var(--hupu, ""), PingFangSC-Regular, var(--foreign, "");
     }
 
     .notLogin a span,
@@ -242,7 +242,7 @@ domain("weibo.cn") {
     .radio-txt,
     .hot-title {
         font-family: var(--hupu, ""), PingFangSC-Regular, PingFang SC,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 
     .bbs-sl-web-intro-detail-title,
@@ -252,26 +252,26 @@ domain("weibo.cn") {
     .right-post-title,
     .post-title,
     .post-info div {
-        font-family: var(--hupu, ""), PingFangSC, var(--foreign, "") !important;
+        font-family: var(--hupu, ""), PingFangSC, var(--foreign, "");
     }
 
     .nav_qiantao_hupu210316,
     .title,
     .cntv_list ul li a {
         font-family: var(--hupu, ""), PingFangSC-Regular, Helvetica, Arial,
-            Microsoft Yahei, var(--foreign, ""), sans-serif !important;
+            Microsoft Yahei, var(--foreign, ""), sans-serif;
     }
 
     .hot-index {
         font-family: var(--hupu, ""), HelveticaNeue-CondensedBold, HelveticaNeue,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 }
 
 @-moz-document domain("baked.live") {
     #messagebuffer div {
-        font-size: 50px !important;
-        line-height: 1.5 !important;
+        font-size: 50px;
+        line-height: 1.5;
     }
 }
 
@@ -293,7 +293,7 @@ domain("weibo.cn") {
         font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
             Apple SD Gothic Neo, Helvetica, Arial, NanumGothic, 나눔고딕,
             Malgun Gothic, 맑은 고딕, Dotum, 굴림, gulim, 새굴림, noto sans,
-            돋움, var(--foreign, ""), sans-serif !important;
+            돋움, var(--foreign, ""), sans-serif;
     }
 }
 
@@ -303,37 +303,37 @@ domain("amazon.in") {
     .NavigationBar-module__navHeader_myx_35WiMq43R8TeP3p0_dnLLH
         .NavigationBar-module__navOptions_myx_3-DW6_KRV7Rh8qixes2XJu,
     .NavigationBar-module__navHeader_title_style_myx_gLKlYY_oND8vgB6axwgyW {
-        font-family: "Amazon Ember", Arial, var(--foreign, ""), sans-serif !important;
+        font-family: "Amazon Ember", Arial, var(--foreign, ""), sans-serif;
     }
 
     #a-page,
     #e input,
     .a-container {
         font-family: "Amazon Ember", Arial, "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, var(--foreign, ""), sans-serif !important;
+            "Hiragino Sans", Meiryo, var(--foreign, ""), sans-serif;
     }
 
     .bucket h2 {
         font-family: "Amazon Ember", verdana, arial, helvetica,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     .a-declarative,
     tbody tr td,
     span span a {
-        font-family: "Amazon Ember", Arial, var(--foreign, "") !important;
+        font-family: "Amazon Ember", Arial, var(--foreign, "");
     }
 
     .a-color-link {
         font-family: "Amazon Ember", AmazonEmber-Regular,
             helvetica_ne_lt_55_roman, HelveticaNeueLTStd-Roman, Helvetica,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     .a-popover-wrapper,
     .a-meter-animate {
         font-family: "Amazon Ember", "Hiragino Kaku Gothic ProN",
-            "Hiragino Sans", Meiryo, var(--foreign, ""), sans-serif !important;
+            "Hiragino Sans", Meiryo, var(--foreign, ""), sans-serif;
     }
 }
 
@@ -342,12 +342,12 @@ domain("rocketnews24.com") {
     #container,
     #searchsubmit {
         font-family: var(--sans, ""), arial, helvetica, clean,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     #main {
         font-family: var(--sans, ""), "Helvetica Neue", Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 }
 
@@ -358,7 +358,7 @@ domain("steamcommunity.com") {
     .workshopItemTitle,
     body.v6 {
         font-family: "Motiva Sans", Arial, Helvetica, var(--foreign, ""),
-            sans-serif !important;
+            sans-serif;
     }
 }
 
@@ -369,7 +369,7 @@ domain("steamcommunity.com") {
     .weatherButtonWrapper-DS-EntryPoint1-3,
     .weatherFeedbackDialogButton-DS-EntryPoint1-3 {
         font-family: Segoe UI, Segoe WP, Arial, "MS Shell Dlg 2",
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 }
 
@@ -385,7 +385,7 @@ domain("steamcommunity.com") {
     div.ModalContent--content--yXRDl {
         font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-            Helvetica Neue, var(--foreign, ""), sans-serif !important;
+            Helvetica Neue, var(--foreign, ""), sans-serif;
     }
 }
 
@@ -393,17 +393,17 @@ domain("steamcommunity.com") {
     body {
         font-family: var(--sans, ""), Arial, "Microsoft YaHei",
             "Microsoft Sans Serif", "Microsoft SanSerf", "微软雅黑",
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 
     .n .n-num {
-        font-family: var(--sans, ""), Arial, var(--foreign, "") !important;
+        font-family: var(--sans, ""), Arial, var(--foreign, "");
     }
 
     .feed-card[data-v-87ed4514] {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
             Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     .gift-item[data-v-43b0ef2a],
@@ -413,19 +413,19 @@ domain("steamcommunity.com") {
         .one-anchor
         .anchor-name
         p[data-v-c58bfb0e] {
-        font-family: var(--sans, ""), "PingFang SC", var(--foreign, "") !important;
+        font-family: var(--sans, ""), "PingFang SC", var(--foreign, "");
     }
 
     .fans-medal-item {
         font-family: var(--sans, ""), "Microsoft YaHei", "Microsoft Sans Serif",
-            "Microsoft SanSerf", "微软雅黑", var(--foreign, "") !important;
+            "Microsoft SanSerf", "微软雅黑", var(--foreign, "");
     }
 
     .harmony-font,
     .video-card-ad-small .vcd .info .title[data-v-7c4b2c06],
     .video-page-card-small .card-box .info .title {
         font-family: var(--sans, ""), PingFang SC, HarmonyOS_Regular,
-            Helvetica Neue, Microsoft YaHei, var(--foreign, ""), sans-serif !important;
+            Helvetica Neue, Microsoft YaHei, var(--foreign, ""), sans-serif;
     }
 
     @media (-webkit-max-device-pixel-ratio: 1) {
@@ -434,7 +434,7 @@ domain("steamcommunity.com") {
         .video-page-card-small .card-box .info .title {
             font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
                 Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
-                Microsoft YaHei, var(--foreign, ""), sans-serif !important;
+                Microsoft YaHei, var(--foreign, ""), sans-serif;
         }
     }
 }
@@ -454,7 +454,7 @@ domain("steamcommunity.com") {
     html {
         font-family: -apple-system, BlinkMacSystemFont, Apple Color Emoji,
             SF Pro, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 }
 
@@ -472,7 +472,7 @@ domain("steamcommunity.com") {
     #videoContainer,
     .more-activity-icon .more-activity-icon-box .icon-span,
     .news-v2-wrap {
-        font-family: var(--sans, ""), var(--foreign, ""), Microsoft YaHei !important;
+        font-family: var(--sans, ""), var(--foreign, ""), Microsoft YaHei;
     }
 
     body,
@@ -484,68 +484,68 @@ domain("steamcommunity.com") {
     .duya-header {
         font-family: -apple-system, BlinkMacSystemFont, var(--foreign, ""),
             Microsoft Yahei, Segoe UI, Helvetica Neue, Helvetica, Tahoma, Arial,
-            Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif !important;
+            Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
     }
 
     .jzIsBn {
         font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
             "PingFang SC", Helvetica, Tahoma, Arial, "Hiragino Sans GB",
             var(--foreign, ""), "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Heiti,
-            黑体, sans-serif !important;
+            黑体, sans-serif;
     }
 
     .danmu-item span {
         font-family: var(--sans, ""), SimHei, var(--foreign, ""),
             Microsoft Yahei, -apple-system, BlinkMacSystemFont, Segoe UI,
             Helvetica Neue, Helvetica, Tahoma, Arial, Hiragino Sans GB, Heiti SC,
-            WenQuanYi Micro Hei, sans-serif !important;
+            WenQuanYi Micro Hei, sans-serif;
     }
 
     div#chat-room_list.chat-room_list,
     .chat-room__list {
-        line-height: normal !important;
+        line-height: normal;
     }
 
     span.msg,
     div.tit-h-send {
-        font-size: 25px !important;
+        font-size: 25px;
     }
 
     .chat-room__list .msg-bubble,
     span.cont-item.name.J_userMenu,
     .chat-room__list .msg-normal {
-        font-size: 20px !important;
+        font-size: 20px;
     }
 }
 
 @-moz-document regexp(".*faceit\\.com.*\\/watch.*") {
     .codsZE,
     .kDLXzz {
-        font-family: "Play", var(--foreign, ""), sans-serif !important;
+        font-family: "Play", var(--foreign, ""), sans-serif;
     }
 
     .codsZE,
     .kDLXzz,
     div.sc-hwdzOV.kOYNaN,
     div.sc-eBMEME.hutjIi img {
-        line-height: normal !important;
+        line-height: normal;
     }
 
     .codsZE,
     .kDLXzz,
     div.sc-eBMEME.hutjIi img {
-        font-size: 25px !important;
+        font-size: 25px;
     }
 
     div.sc-hwdzOV.kOYNaN {
-        font-size: 20px !important;
+        font-size: 20px;
     }
 }
 
 @-moz-document domain("lostmediawiki.com") {
     html,
     body {
-        font-family: "Levenim MT", var(--foreign, ""), serif !important;
+        font-family: "Levenim MT", var(--foreign, ""), serif;
     }
 }
 
@@ -555,7 +555,7 @@ domain("steamcommunity.com") {
     .css-175oi2r div {
         font-family: "TwitterChirp", "TwitterChirpExtendedHeavy", -apple-system,
             BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 }
 
@@ -629,7 +629,7 @@ domain("steamcommunity.com") {
     hgroup,
     nav,
     section {
-        font-family: var(--sans, ""), Arial, var(--foreign, ""), sans-serif !important;
+        font-family: var(--sans, ""), Arial, var(--foreign, ""), sans-serif;
     }
 }
 
@@ -647,11 +647,11 @@ domain("steamcommunity.com") {
     .fm_best_widget *,
     #header {
         font-family: var(--sans, ""), "Apple SD Gothic Neo", "Malgun Gothic",
-            "맑은 고딕", arial, var(--foreign, ""), sans-serif !important;
+            "맑은 고딕", arial, var(--foreign, ""), sans-serif;
     }
 
     .rd_body .document_address .a {
-        font-family: var(--sans, ""), verdana, var(--foreign, "") !important;
+        font-family: var(--sans, ""), verdana, var(--foreign, "");
     }
 }
 
@@ -672,7 +672,7 @@ domain("espn.ph") {
     a.view-more-posts:visited,
     #footer,
     .mod-page-header .player-bio .follow-text {
-        font-family: var(--espn, ""), helvetica, arial, clean, sans-serif !important;
+        font-family: var(--espn, ""), helvetica, arial, clean, sans-serif;
     }
 
     #global-viewport,
@@ -681,7 +681,7 @@ domain("espn.ph") {
     #global-nav-tertiary .global-nav-container > ul > li > a,
     #global-nav-tertiary .tertiary-nav-container > ul > li > a {
         font-family: var(--espn, ""), "BentonSans", -apple-system, "Roboto",
-            Helvetica, Arial, sans-serif !important;
+            Helvetica, Arial, sans-serif;
     }
 
     .mod-container,
@@ -689,7 +689,7 @@ domain("espn.ph") {
     .tablehead td,
     .mod-page-header .player-stats p,
     .mod-page-tabs ul.ui-tabs {
-        font-family: var(--espn, ""), verdana, helvetica, arial, sans-serif !important;
+        font-family: var(--espn, ""), verdana, helvetica, arial, sans-serif;
     }
 }
 
@@ -711,13 +711,13 @@ domain("espn.ph") {
         font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto,
             "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC",
             "Microsoft YaHei", Roboto-Regular, Helvetica Neue, Helvetica, Tahoma,
-            Arial, var(--foreign, ""), Sans-serif !important;
+            Arial, var(--foreign, ""), Sans-serif;
     }
 
     .lzd-site-nav-menu
         .lzd-site-menu-nav-container
         .lzd-site-menu-nav-category
         .lzd-site-menu-nav-category-text {
-        font-family: NotoSans-Medium, NotoSans-Regular, Roboto-Medium !important;
+        font-family: NotoSans-Medium, NotoSans-Regular, Roboto-Medium, var(--foreign, "");
     }
 }

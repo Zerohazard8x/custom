@@ -19,12 +19,12 @@
     .ytp-caption-segment {
         font-family: var(--readable, ""), var(--sans, ""), "YouTube Noto",
             Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana,
-            "PT Sans Caption", var(--foreign, ""), sans-serif !important;
-        color: #fff000 !important;
+            "PT Sans Caption", var(--foreign, ""), sans-serif;
+        color: #fff000;
 
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
         /* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
-            #000000 0 0 5px !important; */
+            #000000 0 0 5px; */
         /* line-height: calc(2px 2ex 2px); */
         /* computed: 2px (2 * 15px) 2px = 44px */
         /* font-size: calc(14px (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
@@ -33,16 +33,16 @@
     }
 
     .ytp-caption-segment:not(#inline-preview-player *) {
-        background: none !important;
-        /* font-size: 1.75em !important; */
+        background: none;
+        /* font-size: 1.75em; */
     }
 
     .caption-window:not(#inline-preview-player *) {
-        padding: 0.45em !important;
-        border-radius: 5px !important;
-        margin-bottom: 4em !important;
-        background-color: rgba(8, 8, 8, 0.5) !important;
-        /* backdrop-filter: blur(5px) !important; */
+        padding: 0.45em;
+        border-radius: 5px;
+        margin-bottom: 4em;
+        background-color: rgba(8, 8, 8, 0.5);
+        /* backdrop-filter: blur(5px); */
     }
 
     /* class containing "ytd-miniplaeyer", etc */
@@ -65,13 +65,13 @@
     [class*="ytd" i][class*="renderer" i],
     #content-text.ytd-comment-view-model,
     yt-chip-cloud-chip-renderer[modern] {
-        font-family: Roboto, Arial, var(--foreign, ""), sans-serif !important;
+        font-family: Roboto, Arial, var(--foreign, ""), sans-serif;
     }
 
     tp-yt-paper-dialog,
     #search-input.ytd-searchbox-spt input,
     tp-yt-paper-item {
-        font-family: Roboto, Noto, var(--foreign, ""), sans-serif !important;
+        font-family: Roboto, Noto, var(--foreign, ""), sans-serif;
     }
 
     ytd-engagement-panel-title-header-renderer[modern-panels]:not(
@@ -79,7 +79,7 @@
         )
         #title-text.ytd-engagement-panel-title-header-renderer,
     [class*="yt-sans" i] {
-        font-family: "YouTube Sans", "Roboto", var(--foreign, ""), sans-serif !important;
+        font-family: "YouTube Sans", "Roboto", var(--foreign, ""), sans-serif;
     }
 
     /* Cleaning */
@@ -105,7 +105,7 @@
             n + 3
         ):nth-child(-n + 4),
     #ytd-metadata-row-container-renderer.ytd-watch-metadata.style-scope {
-        display: none !important;
+        display: none;
     }
 }
 
@@ -113,7 +113,7 @@
     html,
     [class*="ytmusic" i][class*="renderer" i] {
         font-family: Roboto, Noto Naskh Arabic UI, Arial, sans-serif,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 
     .title.ytmusic-carousel-shelf-basic-header-renderer,
@@ -122,7 +122,7 @@
         .title.ytmusic-shelf-renderer
         > yt-formatted-string.ytmusic-shelf-renderer {
         font-family: YouTube Sans, Roboto, Noto Naskh Arabic UI, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 }
 
@@ -142,11 +142,11 @@
     .emoji,
     .yt-live-chat-author-badge-renderer,
     #img {
-        line-height: normal !important;
+        line-height: normal;
     } */
 
     div.content.overflow-y-scroll {
-        font-family: Roboto, var(--foreign, ""), sans-serif !important;
+        font-family: Roboto, var(--foreign, ""), sans-serif;
     }
 
     .yt-live-chat-text-message-renderer,
@@ -154,7 +154,7 @@
     yt-live-chat-author-chip #author-name,
     #header-subtext,
     #message {
-        font-family: Roboto, Arial, var(--foreign, ""), sans-serif !important;
+        font-family: Roboto, Arial, var(--foreign, ""), sans-serif;
     }
 
     span.svelte-g0o36m span,
@@ -162,22 +162,22 @@
     #message,
     .yt-live-chat-text-message-renderer,
     span.font-bold.tracking-wide.align-middle {
-        font-size: var(--tv-font-size, initial) !important;
+        font-size: var(--tv-font-size, initial);
         /* text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
             -1px 1px 1px black; */
     }
 
     #card,
     yt-live-chat-author-chip #author-name {
-        font-size: calc(var(--tv-font-size, initial) * 0.75) !important;
+        font-size: calc(var(--tv-font-size, initial) * 0.75);
     }
 
     #icon * * div svg,
     .emoji,
     .yt-live-chat-author-badge-renderer,
     #img {
-        height: var(--tv-font-size, initial) !important;
-        width: auto !important;
+        height: var(--tv-font-size, initial);
+        width: auto;
     }
 }
 
@@ -201,21 +201,21 @@ domain("threads.net") {
 
     #facebook .system-fonts--body *,
     #facebook .system-fonts--body.segoe {
-        font-family: var(--font-family-segoe, "") !important;
+        font-family: var(--font-family-segoe, "");
     }
 
     ._9o1- div,
     ._9ai0,
     ._1gaz {
         font-family: var(--facebook, ""), SFProText-Medium, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     ._8e63,
     ._9axz,
     ._8eso {
         font-family: var(--facebook, ""), SFProDisplay-Regular, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     ._9nq2,
@@ -225,7 +225,7 @@ domain("threads.net") {
     ._8e4l,
     #globalContainer {
         font-family: var(--facebook, ""), SFProText-Regular, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     ._9o1v,
@@ -233,18 +233,18 @@ domain("threads.net") {
     ._9ai2,
     ._8esh {
         font-family: var(--facebook, ""), SFProText-Semibold, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     .uiHeaderTitle {
         font-family: var(--facebook, ""), SFProDisplay-Bold, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     ._4g34,
     ._53jh {
         font-family: var(--facebook, ""), Helvetica, Arial, sans-serif,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 
     ._ap3a,
@@ -260,30 +260,30 @@ domain("threads.net") {
 
     .inputtext {
         font-family: var(--facebook, ""), Roboto-Regular, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z
         span {
         font-family: var(--readable, ""), var(--facebook, ""), Placeholder Font,
             Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif,
-            var(--foreign, "") !important;
-        color: #fff000 !important;
-        background: none !important;
+            var(--foreign, "");
+        color: #fff000;
+        background: none;
     }
 
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z {
-        padding: 0.45vw !important;
-        border-radius: 5px !important;
-        background-color: rgba(8, 8, 8, 0.5) !important;
-        /* backdrop-filter: blur(5px) !important; */
+        padding: 0.45vw;
+        border-radius: 5px;
+        background-color: rgba(8, 8, 8, 0.5);
+        /* backdrop-filter: blur(5px); */
     }
 }
 
 @-moz-document domain("deepl.com") {
     body *:not(.fa) {
         font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif !important;
+            "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif;
     }
 }
 
@@ -314,54 +314,54 @@ domain("threads.net") {
         .atco-dettached:not(.hovered)
         .video-chat__message-list-wrapper
         .seventv-chat-message-body {
-        font-family: var(--font-base, ""), Roobert !important;
-        background-color: rgba(0, 0, 0, 0.5) !important;
-        /* backdrop-filter: blur(5px) !important; */
+        font-family: var(--font-base, ""), Roobert;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* backdrop-filter: blur(5px); */
     }
 
     /* FrankerFaceZ chat overlay*/
     /* .ffz--fschat .channel-root__right-column > div {
-        background-color: rgba(0, 0, 0, 0.5) !important;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .ffz--fschat .ffz--meta-tray,
     .ffz--fschat .channel-root__right-column > div {
-        backdrop-filter: blur(5px) !important;
+        backdrop-filter: blur(5px);
     } */
 
     /* subtitles */
     .player-captions-container__caption-line {
         font-family: var(--readable, ""), var(--font-base, ""), Verdana, Arial,
-            Helvetica, "PT Sans Caption", sans-serif !important;
-        background: none !important;
-        color: #fff000 !important;
+            Helvetica, "PT Sans Caption", sans-serif;
+        background: none;
+        color: #fff000;
     }
 
     div.player-captions-container__caption-window {
-        padding: 0.45em !important;
-        border-radius: 5px !important;
-        margin-bottom: 4em !important;
-        background-color: rgba(8, 8, 8, 0.5) !important;
+        padding: 0.45em;
+        border-radius: 5px;
+        margin-bottom: 4em;
+        background-color: rgba(8, 8, 8, 0.5);
     }
 
     /* div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .chat-line__status,
     span.CoreText-sc-1txzju1-0.doCFUd {
-        line-height: normal !important;
+        line-height: normal;
     } */
 
     /* .chat-line__message,
     .chat-line__moderation,
     .chat-line__status {
-        padding-top: 0.125rem !important;
-        padding-bottom: 0.125rem !important;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
     } */
 	
 	.ffz-badge,
     img.chat-image.chat-line__message--emote,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg,
     .chat-badge {
-        width: auto !important;
+        width: auto;
     }
 
     /* Chat messages */
@@ -371,13 +371,13 @@ domain("threads.net") {
     span.text-fragment,
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .bQEtql {
-        font-size: var(--tv-font-size, initial) !important;
+        font-size: var(--tv-font-size, initial);
         text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
             -1px 1px 1px black;
     }
 
     img.chat-image.chat-line__message--emote {
-        height: var(--tv-font-size, initial) !important;
+        height: var(--tv-font-size, initial);
     }
 
     /* Chat authors */
@@ -386,20 +386,20 @@ domain("threads.net") {
     span.CoreText-sc-1txzju1-0.doCFUd,
     .chat-author__display-name,
     .chat-line__status {
-        font-size: calc(var(--tv-font-size, initial) * 0.75) !important;
+        font-size: calc(var(--tv-font-size, initial) * 0.75);
 		text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
             -1px 1px 1px black;
     }
 
     a.ScCoreLink-sc-16kq0mq-0.eFqEFL.tw-link img.chat-badge,
     .ScFigure-sc-wkgzod-0.dTgXNe.tw-svg svg {
-        height: calc(var(--tv-font-size, initial) * 0.75) !important;
+        height: calc(var(--tv-font-size, initial) * 0.75);
     }
 	
 	.ffz-badge {
-		background-size: calc(var(--tv-font-size, initial) * 0.75) !important;
-		height: calc(var(--tv-font-size, initial) * 0.75) !important;
-		min-width: calc(var(--tv-font-size, initial) * 0.75) !important;
+		background-size: calc(var(--tv-font-size, initial) * 0.75);
+		height: calc(var(--tv-font-size, initial) * 0.75);
+		min-width: calc(var(--tv-font-size, initial) * 0.75);
 	}
 }
 
@@ -408,7 +408,7 @@ domain("threads.net") {
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
             Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
             Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 }
 
@@ -419,14 +419,14 @@ domain("xcancel.com") {
     /* Nitter */
     body {
         font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 
     .tweet-content,
     input[type="text"],
     input[type="date"],
     select {
-        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
+        font-family: var(--sans, ""), var(--foreign, ""), sans-serif;
     }
 }
 
@@ -445,26 +445,26 @@ domain("xcancel.com") {
     .ha > .hP,
     .gb_xe {
         font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial,
-            var(--foreign, ""), sans-serif !important;
+            var(--foreign, ""), sans-serif;
     }
 }
 
 @-moz-document domain("translate.google.com") {
     body {
         font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif,
-            var(--foreign, "") !important;
+            var(--foreign, "");
     }
 
     .VhOj3e,
     .l6Jrx {
-        font-family: "Google Sans", var(--foreign, ""), sans-serif !important;
+        font-family: "Google Sans", var(--foreign, ""), sans-serif;
     }
 }
 
 @-moz-document domain("searx.tiekoetter.com") {
     /* SearX */
     html {
-        font-family: var(--sans, ""), var(--foreign, ""), sans-serif !important;
+        font-family: var(--sans, ""), var(--foreign, ""), sans-serif;
     }
 }
 
@@ -473,7 +473,7 @@ domain("xcancel.com") {
         :root,
         :host {
             --font-sans: var(--sans, ""), Helvetica, Arial, var(--foreign, ""),
-                sans-serif !important;
+                sans-serif;
         }
     }
 }
