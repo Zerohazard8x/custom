@@ -204,16 +204,16 @@ domain("fandom.com") {
     pre,
     code,
     tt {
-        font-feature-settings: "liga", "clig", "calt", "kern" !important;
-        -webkit-font-smoothing: antialiased !important;
-        -moz-osx-font-smoothing: grayscale !important;
-        -ms-font-smoothing: antialiased !important;
-        text-rendering: optimizeLegibility !important;
-        font-synthesis: none !important;
-        font-optical-sizing: auto !important;
-        font-size-adjust: from-font !important;
-        font-kerning: auto !important;
-        letter-spacing: normal !important;
+        font-feature-settings: "liga", "clig", "calt", "kern";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -ms-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        font-synthesis: none;
+        font-optical-sizing: auto;
+        font-size-adjust: from-font;
+        font-kerning: auto;
+        letter-spacing: normal;
     }
 
     /* restrict arial */

@@ -9,22 +9,22 @@
 ==/UserStyle== */
 @-moz-document domain("bing.com"), domain("google.com"), domain("duckduckgo.com") {
     gb-button {
-        display: inline-grid !important;
-        height: unset !important;
-        min-width: unset !important;
+        display: inline-grid;
+        height: unset;
+        min-width: unset;
     }
 
     gb-button span input {
-        border-radius: 24px !important;
-        padding: unset !important;
+        border-radius: 24px;
+        padding: unset;
     }
 
     gb-button span {
-        height: unset !important;
+        height: unset;
     }
 
     gb-button input {
-        height: unset !important;
-        min-width: 115px !important;
+        height: unset;
+        min-width: 115px;
     }
 }

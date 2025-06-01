@@ -9,24 +9,24 @@
 
 /* Ligatures */
 /* body {
-    font-variant-ligatures: common-ligatures, contextual !important;
+    font-variant-ligatures: common-ligatures, contextual;
 }
 .example1 {
-    -webkit-font-feature-settings: "liga", "calt" !important;
-    -moz-font-feature-settings: "liga", "calt" !important;
-    -o-font-feature-settings: "liga", "calt" !important;
-    font-feature-settings: "liga", "calt" !important;
+    -webkit-font-feature-settings: "liga", "calt";
+    -moz-font-feature-settings: "liga", "calt";
+    -o-font-feature-settings: "liga", "calt";
+    font-feature-settings: "liga", "calt";
 } */
 
 /* Readable characters (slashed zero, numbers of equal height, serif I) */
 /* .example1 {
-    -webkit-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1 !important;
-    -moz-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1 !important;
-    -o-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1 !important;
-    font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1 !important;
+    -webkit-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1;
+    -moz-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1;
+    -o-font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1;
+    font-feature-settings: "lnum" 1, "tnum" 1, "ss01" 1, "ss06" 1;
 }
 .example2 {
-    font-variant-numeric: lining-nums tabular-nums slashed-zero !important;
+    font-variant-numeric: lining-nums tabular-nums slashed-zero;
 } */
 
 @-moz-document regexp(".*") {
@@ -50,21 +50,21 @@
     pre,
     code,
     tt {
-        -webkit-font-smoothing: antialiased !important; /* for WebKit browsers */
-        -moz-osx-font-smoothing: grayscale !important; /* for Firefox */
-        -ms-font-smoothing: antialiased !important; /* for IE */
-        text-rendering: optimizeLegibility !important;
-        font-optical-sizing: auto !important;
+        -webkit-font-smoothing: antialiased; /* for WebKit browsers */
+        -moz-osx-font-smoothing: grayscale; /* for Firefox */
+        -ms-font-smoothing: antialiased; /* for IE */
+        text-rendering: optimizeLegibility;
+        font-optical-sizing: auto;
     }
 
     pre,
     code,
     tt {
-        font-feature-settings: "liga", "clig", "calt" !important;
+        font-feature-settings: "liga", "clig", "calt";
 
-        /* -webkit-font-feature-settings: "liga", "calt" !important;
-        -moz-font-feature-settings: "liga", "calt" !important;
-        -ms-font-feature-settings: "liga", "calt" !important;
-        -o-font-feature-settings: "liga", "calt" !important; */
+        /* -webkit-font-feature-settings: "liga", "calt";
+        -moz-font-feature-settings: "liga", "calt";
+        -ms-font-feature-settings: "liga", "calt";
+        -o-font-feature-settings: "liga", "calt"; */
     }
 }
