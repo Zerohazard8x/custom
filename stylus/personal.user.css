@@ -65,7 +65,7 @@
     [class*="ytd" i][class*="renderer" i],
     #content-text.ytd-comment-view-model,
     yt-chip-cloud-chip-renderer[modern] {
-        font-family: Roboto, Arial, var(--foreign, ""), sans-serif;
+        font-family: Roboto, Arial, var(--foreign, ""), sans-serif !important;
     }
 
     tp-yt-paper-dialog,
