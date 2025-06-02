@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        3.1.0
+@version        3.1.1
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
@@ -87,6 +87,8 @@ domain("searx.tiekoetter.com"),
 domain("threads.net"),
 domain("translate.kagi.com"),
 /* personal2 */
+domain("auctions.yahoo.co.jp"),
+domain("mercari.com"),
 domain("soranews24.com"),
 domain("rocketnews24.com"),
 domain("weibo.com"),
