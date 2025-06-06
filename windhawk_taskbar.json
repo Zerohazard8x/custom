@@ -1,0 +1,5 @@
+{
+    "theme": "TranslucentTaskbar",
+    "controlStyles[0].target": "Taskbar.TaskbarFrame > Grid#RootGrid > Taskbar.TaskbarBackground > Grid > Rectangle#BackgroundFill",
+    "controlStyles[0].styles[0]": "Fill:=<WindhawkBlur BlurAmount=\"10\"/>"
+}
