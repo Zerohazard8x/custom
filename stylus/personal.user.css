@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.10.2
+@version        2.10.3
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -34,7 +34,7 @@
 
     .ytp-caption-segment:not(#inline-preview-player *) {
         background: none !important;
-        /* font-size: 1.75em; */
+        font-size: 1.5em !important;
     }
 
     .caption-window:not(#inline-preview-player *) {
@@ -42,6 +42,7 @@
         border-radius: 5px;
         margin-bottom: 4em;
         background-color: rgba(8, 8, 8, 0.5);
+        width: auto !important;
         /* backdrop-filter: blur(5px); */
     }
 
@@ -127,6 +128,7 @@
 }
 
 @-moz-document regexp(".*youtube\\.com\\/live_chat.*") {
+    /* youtube live chat */
     /* chat font size */
     :root {
         --tv-font-size: 1.1em;
@@ -276,6 +278,7 @@ domain("threads.net") {
         padding: 0.45vw;
         border-radius: 5px;
         background-color: rgba(8, 8, 8, 0.5);
+        width: auto !important;
         /* backdrop-filter: blur(5px); */
     }
 }
@@ -342,6 +345,7 @@ domain("threads.net") {
         border-radius: 5px;
         margin-bottom: 4em;
         background-color: rgba(8, 8, 8, 0.5);
+        width: auto !important;
     }
 
     /* div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
