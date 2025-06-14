@@ -4,10 +4,10 @@
     "values": {
         "addons.enabled": [
             "7tv-emotes",
-            "ffzap-core",
+            "chatterino-badges",
             "ffzap-bttv",
-            "fs-chat",
-            "chatterino-badges"
+            "ffzap-core",
+            "fs-chat"
         ],
         "p:0:addon.fs-chat.bg.blur": 0,
         "p:0:addon.fs-chat.height": "350px",
