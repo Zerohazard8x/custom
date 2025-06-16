@@ -1999,7 +1999,6 @@
                 }
             ]
         },
-        ,
         {
             "name": "Bypass All Shortlinks Debloated",
             "options": {
