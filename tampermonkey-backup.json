@@ -1907,54 +1907,6 @@
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
-            "name": "Tabview YouTube Totara",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": ["https://www.youtube.com/*"],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [
-                        "/^https?://\\w+\\.youtube\\.com\\/live_chat.*$/",
-                        "/^https?://\\S+\\.(txt|png|jpg|jpeg|gif|xml|svg|manifest|log|ini)[^\\/]*$/"
-                    ],
-                    "merge_excludes": true,
-                    "use_connects": [],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-start",
-                    "orig_run_in": [],
-                    "orig_noframes": true,
-                    "orig_tags": []
-                }
-            },
-            "storage": {
-                "ts": 0,
-                "data": {}
-            },
-            "enabled": false,
-            "position": 30,
-            "file_url": "https://update.greasyfork.org/scripts/501249/Tabview%20YouTube%20Totara.user.js",
-            "uuid": "",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
-            "requires": [
-                {
-                    "meta": {
-                        "name": "nextBrowserTick.min.js",
-                        "url": "https://cdn.jsdelivr.net/gh/cyfung1031/userscript-supports@7221a4efffd49d852de0074ec503d4febb99f28b/library/nextBrowserTick.min.js",
-                        "ts": 0,
-                        "mimetype": "text/javascript"
-                    },
-                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-                }
-            ]
-        },
-        {
             "name": "Youtube: expand description and long comments; show all the replies",
             "options": {
                 "check_for_updates": true,
@@ -2600,6 +2552,62 @@
                     "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
                 }
             ]
+        },
+        {
+            "name": "Youtubeᴾˡᵘˢ Super Assistant(Video Downloader & 🚫 No ads & New Layout For YT!)",
+            "options": {
+                "check_for_updates": true,
+                "user_modified": null,
+                "comment": null,
+                "compatopts_for_requires": true,
+                "compat_wrappedjsobject": false,
+                "compat_metadata": false,
+                "compat_foreach": false,
+                "compat_powerful_this": null,
+                "sandbox": null,
+                "noframes": null,
+                "unwrap": null,
+                "run_at": null,
+                "run_in": null,
+                "tags": [],
+                "override": {
+                    "use_includes": [],
+                    "orig_includes": [
+                        "https://www.youtube.com",
+                        "*://*.youtube.com/**"
+                    ],
+                    "merge_includes": true,
+                    "use_matches": [],
+                    "orig_matches": [],
+                    "merge_matches": true,
+                    "use_excludes": [],
+                    "orig_excludes": [
+                        "*://accounts.youtube.com/*",
+                        "*://www.youtube.com/live_chat_replay*",
+                        "*://www.youtube.com/persist_identity*"
+                    ],
+                    "merge_excludes": true,
+                    "use_connects": [],
+                    "orig_connects": [],
+                    "merge_connects": true,
+                    "use_blockers": [],
+                    "orig_run_at": "document-start",
+                    "orig_run_in": [],
+                    "orig_noframes": null,
+                    "orig_tags": []
+                }
+            },
+            "storage": {
+                "ts": 1750770035160,
+                "data": {
+                    "yt/functionState_01": "o{\"isOpenCommentTable\": false,\"isOpenThemeProgressBar\": false,\"isOpenSpeedControl\": true,\"isOpenMarkOrRemoveAd\": false,\"isOpenYoutubedownloading\": false}"
+                }
+            },
+            "enabled": true,
+            "position": 34,
+            "file_url": "https://update.greasyfork.org/scripts/521538/Youtube%E1%B4%BE%CB%A1%E1%B5%98%CB%A2%20Super%20Assistant%28Video%20Downloader%20%20%F0%9F%9A%AB%20No%20ads%20%20New%20Layout%20For%20YT%21%29.user.js",
+            "uuid": "2e8d253b-45b7-49bc-aa08-8e3a0faf6dfb",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         }
     ],
     "settings": {
