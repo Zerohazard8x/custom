@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2.10.4
+@version        2025.06.25
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -48,6 +48,7 @@
 
     /* class containing "ytd-miniplaeyer", etc */
     /* ... i] means case insensitive */
+    .ytChipShapeChip,
     .shortsLockupViewModelHostOutsideMetadataTitle,
     div#right-tabs,
     .ytMarqueeScrollPrimaryString,
@@ -194,6 +195,7 @@ domain("threads.net") {
             "Optimistic Text Normal", "Optimistic Display Bold";
     }
 
+    :root,
     .__fb-dark-mode,
     ._aa4c {
         --font-family-segoe: var(--facebook, ""), Segoe UI Historic, Segoe UI,
@@ -267,6 +269,8 @@ domain("threads.net") {
             var(--foreign, ""), sans-serif;
     }
 
+    div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.x32vodv.xat24cr.x1v6o4qg.xulzisn.xoge9qh.x1uwfbks.xytt9sc
+        span,
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z
         span {
         font-family: var(--readable, ""), var(--facebook, ""), Placeholder Font,
@@ -276,6 +280,7 @@ domain("threads.net") {
         background: none;
     }
 
+    div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.x32vodv.xat24cr.x1v6o4qg.xulzisn.xoge9qh.x1uwfbks.xytt9sc,
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z {
         padding: 0.45vw;
         border-radius: 5px;

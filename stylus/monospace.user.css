@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        3.0.0
+@version        2025.07.10
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -101,6 +101,7 @@
 
 @-moz-document domain("old.reddit.com"),
 domain("undelete.pullpush.io") {
+    .comment .entry .tagline,
     #ad-frame,
     #ad_main,
     #header-bottom-left ul.tabmenu,
@@ -296,15 +297,23 @@ domain("deskthority.net") {
             RobotoDraft, Roboto-Regular;
     }
 
+    .gb_X,
+    .lJ9FBc input[type="submit"],
+    .f1pnbf,
+    .gbqfba,
     div,
     span,
     .MBeuO {
         font-family: "Google Sans Text", var(--google, ""), Roboto, RobotoDraft,
             Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
-            var(--foreign, ""), sans-serif;
+            var(--foreign, ""), sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
+    .emcav textarea.gLFyf,
+    .emcav .YacQv,
+    .UUbT9 b,
+    .QRYxYe,
     textarea.gLFyf,
     .YacQv,
     .T0wOad,
@@ -382,6 +391,19 @@ domain("deskthority.net") {
     }
 }
 @-moz-document domain("bing.com") {
+    :root {
+        --acf-font-body-2: normal 400 14px/22px Roboto, Arial, Helvetica,
+            var(--foreign, ""), Sans-Serif;
+        --acf-font-title-3-strong: normal 700 20px/26px Roboto, Arial, Helvetica,
+            var(--foreign, ""), Sans-Serif;
+        --acf-font-title-1-strong: normal 700 14px/22px Roboto, Arial, Helvetica,
+            var(--foreign, ""), Sans-Serif;
+        --acf-font-title-2-strong: normal 700 16px/22px Roboto, Arial, Helvetica,
+            var(--foreign, ""), Sans-Serif;
+        --acf-font-body-4: normal 400 18px/28px Roboto, Arial, Helvetica,
+            var(--foreign, ""), Sans-Serif;
+    }
+
     .rqnaContainerwithfeedback #df_listaa .df_hd .b_traits,
     .rqnaContainerwithfeedback #cr_df_listaa .df_hd .b_traits,
     #sw_as .sa_prnt .sa_rm,
