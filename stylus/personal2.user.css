@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        1.3.3
+@version        2025.07.10
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
@@ -782,5 +782,177 @@ domain("espn.ph") {
         overflow: visible;
         white-space: normal;
         word-break: break-word;
+    }
+}
+
+@-moz-document domain("jd.com") {
+    body,
+    button,
+    input {
+        font-family: var(--sans, ""), tahoma, arial, Microsoft YaHei,
+            Hiragino Sans GB, "\u5b8b\u4f53", var(--foreign, ""), sans-serif;
+    }
+
+    .ui-area-wrap,
+    .choose-btns .btn-lg,
+    ._search_main_13eg6_1 ._search_box_13eg6_6 ._search_btn_web_13eg6_195,
+    ._search_main_13eg6_1 ._search_box_13eg6_6 ._search_btn_shop_13eg6_196,
+    .userv4_container,
+    body.new_version
+        .userv4_container
+        .user_rights_wrap
+        ul
+        li
+        a
+        .user_right_item_desc,
+    body.new_version
+        .userv4_container
+        .order_access_container
+        .order_access_wrapper
+        .order_status__item__text,
+    .cate_menu_lk,
+    #navitems a,
+    .jingyan-trigger,
+    #header .w,
+    body.new_version
+        .userv4_container
+        .quick_access_container
+        .quick_access_wrapper
+        .quick_access__item
+        .text-wrapper,
+    .userv4_container
+        .logistics_container
+        .logistics_wrapper
+        .logistics_item__info__subtitle,
+    .userv4_container
+        .logistics_container
+        .logistics_wrapper
+        .logistics_item__info__title,
+    .core_item.core_item_bbx .core_item_bbx_row .core_item_bbx_item_desc,
+    #J_LogisticsService .ns_services .logistic-basic,
+    #choose-serviceyc .service-type-yb .yb-item-cat .yb-item .name,
+    #choose-serviceyc
+        .service-type-yb
+        .yb-item-cat
+        .more-jd-item
+        .more-item
+        ul
+        li
+        .title
+        .name,
+    .m-follow .text {
+        font-family: var(--sans, ""), PingFang SC, system-ui, -apple-system,
+            var(--foreign, "");
+    }
+
+    .p-price strong,
+    .goods-list-v2 .gl-item .p-commit strong a,
+    .filter .f-pager .fp-text,
+    .filter .f-result-sum .num {
+        font-family: var(--sans, ""), Verdana, var(--foreign, "");
+    }
+
+    .goods-icons4,
+    .goods-icons5,
+    .crumbs-first,
+    #shortcut-2014 #ttbar-login .u-msg,
+    .m-user .user-name,
+    .mf-goods-item .p-name a,
+    .mf-goods-item .p-comment em,
+    .mf-goods-item .p-like em,
+    .m-tab .tab-trigger .trig-item .text {
+        font-family: var(--sans, ""), "Helvetica Neue", Arial,
+            "Hiragino Sans GB", "Microsoft YaHei", SimSun, var(--foreign, ""),
+            serif;
+    }
+
+    #summary-quan .text,
+    .choose-baitiao .strong_test,
+    .choose-baitiao .strong_tests {
+        font-family: JDZhengHeiVRegular2-1, var(--sans, ""), var(--foreign, "");
+    }
+
+    #settleup-2014 .ci-count,
+    #search-2014 .button {
+        font-family: var(--sans, ""), tahoma, arial, var(--foreign, ""), serif;
+    }
+
+    .iconfont {
+        font-family: iconfont, var(--sans, ""), var(--foreign, "");
+    }
+
+    .core_item
+        .core_item_skus
+        .core_item_sku
+        .core_item_sku_img_warp
+        .core_item_sku_bybt {
+        font-family: 京东正黑体, var(--sans, ""), var(--foreign, "");
+    }
+}
+
+@-moz-document domain("taobao.com"), domain("tmall.com") {
+    body,
+    body .search-suggest [data-sg-type="hotWord"] .item,
+    .summary--eBfJgSua,
+    .invalid--vMVS25Sp,
+    .priceWrap--UXwOArpf .benefit--TXOwgQTX,
+    .tabs--Zfa33mG8 .item--bE3IJeYi,
+    .filterTab--Yj2WiD5_ .label--svyWfwoE,
+    .inputWrap--bejJDS0g .text--KL3xOUSI,
+    .xM6AVLCbLn--Item2024--_21891f7,
+    .xM6AVLCbLn--payInfo--ac7e7d4b,
+    .xM6AVLCbLn--skuItem--_68c0cae,
+    .xM6AVLCbLn--SkuDelivery--_73341be,
+    .xM6AVLCbLn--delivery-from-addr--bcf45b00,
+    .xM6AVLCbLn--ItemLabel--_7c6a9cd,
+    .xM6AVLCbLn--guaranteeInfo--_247cbc4,
+    .xM6AVLCbLn--switchTabsItem--a42e6b76,
+    .xM6AVLCbLn--btn--b68f956b,
+    .xM6AVLCbLn--itemWrap--ea516d2f,
+    .xM6AVLCbLn--normalPrice--_1710011
+        .xM6AVLCbLn--priceWrap--acad833a
+        .xM6AVLCbLn--highlightPrice--fea17cf4
+        .xM6AVLCbLn--desc--f564b559,
+    .search-suggest-button-0,
+    .search-suggest-button-1,
+    .adaptMod--uU2wpGzc .procity--wlcT2xH9,
+    .adaptMod--uU2wpGzc .realSales--XZJiepmt,
+    .shopNameText--DmtlsDKm,
+    .shopTagText--wujObz6g,
+    .abstractWrapper--whLX5va5,
+    .recommendWrapper--uTcRhdyl .recommendTitle--OhOSFoUc,
+    .image-search-wrapper-201
+        .image-search-icon-outerMode
+        .image-search-icon-wrapper
+        .image-icon-text,
+    .rankTitleWrapper--AeHheU61,
+    .priceDesc--jykuwuhx {
+        font-family: Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial,
+            "PingFang SC", "Microsoft YaHei", PingFangSC-Regular,
+            var(--foreign, "") !important;
+    }
+
+    .title--FVm7Dr5O,
+    .title--c3UVYQ2m,
+    .button--N56qNkwC,
+    .xM6AVLCbLn--detailWrap--e9e2b47b .xM6AVLCbLn--shopName--ccf81bdd,
+    .title--qJ7Xg_90,
+    body .search-suggest .btn-search {
+        font-family: Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial,
+            "PingFang SC", "Microsoft YaHei", PingFangSC-Medium,
+            var(--foreign, "");
+    }
+
+    .xM6AVLCbLn--mainTitle--_90838ca {
+        font-family: Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial,
+            "PingFang SC", "Microsoft YaHei", PingFangSC-Semibold,
+            var(--foreign, "");
+    }
+
+    .xM6AVLCbLn--normalPrice--_1710011
+        .xM6AVLCbLn--priceWrap--acad833a
+        .xM6AVLCbLn--salesDesc--dd0678cc {
+        font-family: Roboto, Inter V, "Helvetica Neue", Helvetica, Tahoma, Arial,
+            "PingFang SC", "Microsoft YaHei", var(--foreign, "") !important;
     }
 }
