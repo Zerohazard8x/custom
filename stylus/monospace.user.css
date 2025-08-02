@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2025.07.10
+@version        2025.08.02
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -101,6 +101,23 @@
 
 @-moz-document domain("old.reddit.com"),
 domain("undelete.pullpush.io") {
+    *,
+    ::before,
+    ::after,
+    #search input[type="text"],
+    textarea,
+    #sr-header-area,
+    #header-bottom-right,
+    .roundfield .title,
+    .linefield .title,
+    #images h2,
+    #subreddit_stylesheet h2,
+    .panestack-title,
+    .morelink a,
+    h3,
+    .md-small h3,
+    h2,
+    .stylesheet-customize-container h2,
     .comment .entry .tagline,
     #ad-frame,
     #ad_main,
@@ -143,7 +160,7 @@ domain("undelete.pullpush.io") {
     body.other-discussions-page > .content,
     .footer div.col {
         font-family: var(--sans, ""), arial, "helvetica neue", helvetica,
-            verdana, var(--foreign, ""), sans-serif;
+            verdana, var(--foreign, ""), sans-serif !important;
     }
 
     .link .title,
@@ -202,9 +219,9 @@ domain("stackexchange.com") {
 
     code,
     pre {
-        font-family: var(--mono, ""), Söhne Mono, Monaco, Andale Mono,
-            Ubuntu Mono, monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo,
-            Consolas, Liberation Mono, monospace, var(--foreign, "");
+        font-family: var(--mono, ""), Söhne Mono, ui-monospace, SFMono-Regular,
+            SF Mono, Menlo, Consolas, Liberation Mono, var(--foreign, ""),
+            monospace !important;
     }
 }
 
@@ -369,6 +386,10 @@ domain("deskthority.net") {
     div.otByu div.cwqNnb span.BFlQMb {
         font-family: "Google Sans Mono", var(--mono, ""), var(--foreign, ""),
             monospace;
+    }
+
+    .google-symbols {
+        font-family: "Google Symbols", var(--foreign, "") !important;
     }
 
     .sfbg,
