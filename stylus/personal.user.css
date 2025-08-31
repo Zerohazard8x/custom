@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2025.06.25
+@version        2025.08.31
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -75,6 +75,10 @@
     tp-yt-paper-item {
         font-family: Roboto, Noto, var(--foreign, ""), sans-serif;
     }
+	
+	.html5-video-player {
+		font-family: "YouTube Noto",Roboto,Arial,Helvetica,var(--foreign, ""),sans-serif !important;
+	}
 
     ytd-engagement-panel-title-header-renderer[modern-panels]:not(
             [ads-semantic-text]
