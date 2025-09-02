@@ -2554,7 +2554,7 @@
             ]
         },
         {
-            "name": "Youtubeᴾˡᵘˢ Super Assistant(Video Downloader & 🚫 No ads & New Layout For YT!)",
+            "name": "Enhancer for YouTube™: New Layout, Video Downloader, and More Features",
             "options": {
                 "check_for_updates": true,
                 "user_modified": null,
@@ -2573,7 +2573,6 @@
                 "override": {
                     "use_includes": [],
                     "orig_includes": [
-                        "https://www.youtube.com",
                         "*://*.youtube.com/**"
                     ],
                     "merge_includes": true,
@@ -2593,20 +2592,20 @@
                     "use_blockers": [],
                     "orig_run_at": "document-start",
                     "orig_run_in": [],
-                    "orig_noframes": null,
+                    "orig_noframes": true,
                     "orig_tags": []
                 }
             },
             "storage": {
-                "ts": 1750770035160,
+                "ts": 1756811616622,
                 "data": {
                     "yt/functionState_01": "o{\"isOpenCommentTable\": false,\"isOpenThemeProgressBar\": false,\"isOpenSpeedControl\": true,\"isOpenMarkOrRemoveAd\": false,\"isOpenYoutubedownloading\": false}"
                 }
             },
             "enabled": true,
-            "position": 34,
-            "file_url": "https://update.greasyfork.org/scripts/521538/Youtube%E1%B4%BE%CB%A1%E1%B5%98%CB%A2%20Super%20Assistant%28Video%20Downloader%20%20%F0%9F%9A%AB%20No%20ads%20%20New%20Layout%20For%20YT%21%29.user.js",
-            "uuid": "2e8d253b-45b7-49bc-aa08-8e3a0faf6dfb",
+            "position": 32,
+            "file_url": "https://update.greasyfork.org/scripts/545651/Enhancer%20for%20YouTube%E2%84%A2%3A%20New%20Layout%2C%20Video%20Downloader%2C%20and%20More%20Features.user.js",
+            "uuid": "1661ad92-a45e-44db-8fe6-3a7517e2e9ad",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         }
     ],
