@@ -913,7 +913,6 @@
 ||herokuapp.com$script,inline-script,object,ping,stylesheet,other
 ||cart-products.cdn.ifixit.com$script,inline-script,object,ping,stylesheet,other
 ||translate-pa.googleapis.com$script,inline-script,object,ping,stylesheet,other
-||rgpub.io$script,inline-script,object,ping,stylesheet,other
 ||d.newsweek.com$script,inline-script,object,ping,stylesheet,other
 ||bdstatic.com$script,inline-script,object,ping,stylesheet,other
 ||peoplestackwebexperiments-pa.clients6.google.com$script,inline-script,object,ping,stylesheet,other
