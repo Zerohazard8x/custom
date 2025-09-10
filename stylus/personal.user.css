@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2025.08.31
+@version        2025.09.10
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -46,8 +46,13 @@
         /* backdrop-filter: blur(5px); */
     }
 
-    /* class containing "ytd-miniplaeyer", etc */
+    /* class containing "ytd-miniplayer", etc */
     /* ... i] means case insensitive */
+    .ytSearchboxComponentInput,
+    .yt-content-metadata-view-model--medium-text
+        .yt-content-metadata-view-model__metadata-text,
+    .yt-lockup-metadata-view-model--standard.yt-lockup-metadata-view-model--rich-grid-legacy-typography
+        .yt-lockup-metadata-view-model__title,
     .ytChipShapeChip,
     .shortsLockupViewModelHostOutsideMetadataTitle,
     div#right-tabs,
@@ -75,10 +80,11 @@
     tp-yt-paper-item {
         font-family: Roboto, Noto, var(--foreign, ""), sans-serif;
     }
-	
-	.html5-video-player {
-		font-family: "YouTube Noto",Roboto,Arial,Helvetica,var(--foreign, ""),sans-serif !important;
-	}
+
+    .html5-video-player {
+        font-family: "YouTube Noto", Roboto, Arial, Helvetica,
+            var(--foreign, ""), sans-serif !important;
+    }
 
     ytd-engagement-panel-title-header-renderer[modern-panels]:not(
             [ads-semantic-text]

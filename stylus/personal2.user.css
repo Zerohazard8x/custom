@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           personal2
 @namespace      github.com/openstyles/stylus
-@version        2025.07.10
+@version        2025.09.10
 @description    My personal userstyle
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css
@@ -630,6 +630,30 @@ domain("steamcommunity.com") {
     nav,
     section {
         font-family: var(--sans, ""), Arial, var(--foreign, ""), sans-serif;
+    }
+
+    * {
+        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
+            Segoe UI, Roboto, Ubuntu, Helvetica Neue, Helvetica, Arial,
+            PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei,
+            Source Han Sans CN, var(--foreign, ""), sans-serif,
+            Apple Color Emoji, Segoe UI Emoji;
+    }
+
+    .custom-html li,
+    .custom-html ol,
+    .custom-html p,
+    .custom-html ul {
+        font-family: var(--sans, ""), PingFang-SC-Regular, var(--foreign, "");
+    }
+
+    .custom-html h1,
+    .custom-html h2,
+    .custom-html h3,
+    .custom-html h4,
+    .custom-html h5,
+    .custom-html h6 {
+        font-family: var(--sans, ""), PingFang-SC-Semibold, var(--foreign, "");
     }
 }
 
