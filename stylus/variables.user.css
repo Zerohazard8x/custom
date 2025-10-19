@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        2025.08.02
+@version        2025.10.19
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
@@ -50,7 +50,7 @@ domain("deskthority.net"),
 domain("libreddit.bus-hit.me"),
 domain("redlib.freedit.eu"),
 domain("redlib.pussthecat.org"),
-regexp("^.*www\.google\.com.*"),
+domain("grok.com"),
 /* monospace2 */
 regexp("^(?!.*(\w+\.google\.com)).*google\.com.*"),
 domain("chat.mistral.ai"),
@@ -86,7 +86,9 @@ domain("translate.google.com"),
 domain("searx.tiekoetter.com"),
 domain("threads.net"),
 domain("translate.kagi.com"),
+domain("inoreader.com"),
 /* personal2 */
+domain("17track.net"),
 domain("auctions.yahoo.co.jp"),
 domain("mercari.com"),
 domain("soranews24.com"),

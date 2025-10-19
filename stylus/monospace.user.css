@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2025.08.02
+@version        2025.10.19
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -213,8 +213,16 @@ domain("stackexchange.com") {
     html,
     .font-sans {
         font-family: OpenAI Sans, ui-sans-serif, -apple-system, system-ui,
-            Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif,
-            Segoe UI Emoji, Segoe UI Symbol, var(--foreign, "");
+            Segoe UI, Helvetica, Apple Color Emoji, Arial, var(--foreign, ""),
+            sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+    }
+
+    @layer utilities {
+        :is(.\*\:font-sans > *) {
+            font-family: OpenAI Sans, ui-sans-serif, -apple-system, system-ui,
+                Segoe UI, Helvetica, Apple Color Emoji, Arial,
+                var(--foreign, ""), sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+        }
     }
 
     code,
@@ -303,7 +311,7 @@ domain("deskthority.net") {
     }
 }
 
-@-moz-document regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
+@-moz-document domain("google.com") {
     /* Google */
     /* Regex that excludes e.g. mail.google.com */
     /* Separate: regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") */
@@ -311,9 +319,10 @@ domain("deskthority.net") {
 
     :root {
         --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft",
-            RobotoDraft, Roboto-Regular;
+            RobotoDraft, "Google Sans", Roboto-Regular;
     }
 
+    .QRYxYe.QRYxYe,
     .gb_X,
     .lJ9FBc input[type="submit"],
     .f1pnbf,
@@ -700,5 +709,19 @@ domain("red.artemislena.eu") {
 
     .md code {
         font-family: var(--mono, ""), monospace, var(--foreign, ""), sans-serif;
+    }
+}
+
+@-moz-document domain("grok.com") {
+    .\!font-mono {
+        font-family: var(--mono, ""), var(--font-ibm-plex-mono), ui-monospace,
+            SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+            "Courier New", var(--foreign, ""), monospace !important;
+    }
+
+    .font-body {
+        font-family: var(--font-universal-sans), ui-sans-serif, system-ui,
+            var(--foreign, ""), sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
 }
