@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2025.10.19
+@version        2025.10.20
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -330,9 +330,9 @@ domain("deskthority.net") {
     div,
     span,
     .MBeuO {
-        font-family: "Google Sans Text", var(--google, ""), Roboto, RobotoDraft,
-            Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
-            var(--foreign, ""), sans-serif !important;
+        font-family: var(--google, ""), Roboto, RobotoDraft, Helvetica,
+            "Helvetica Neue", HelveticaNeue, Arial, var(--foreign, ""),
+            sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
@@ -377,15 +377,15 @@ domain("deskthority.net") {
     .a-no-hover-decoration,
     .GLcBOb,
     #result-stats {
-        font-family: "Google Sans", "Google Sans Text", var(--google, ""),
-            Roboto, RobotoDraft, Helvetica, "Helvetica Neue", HelveticaNeue,
-            Arial, var(--foreign, ""), sans-serif;
+        font-family: "Google Sans", var(--google, ""), Roboto, RobotoDraft,
+            Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
+            var(--foreign, ""), sans-serif;
     }
 
     .YmvwI,
     .FMKtTb {
-        font-family: Google Sans, "Google Sans Text", var(--google, ""), Roboto,
-            RobotoDraft, Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
+        font-family: Google Sans, var(--google, ""), Roboto, RobotoDraft,
+            Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
             var(--foreign, ""), sans-serif-medium, sans-serif;
     }
 
@@ -399,6 +399,15 @@ domain("deskthority.net") {
 
     .google-symbols {
         font-family: "Google Symbols", var(--foreign, "") !important;
+    }
+
+    .DPvwYc {
+        font-family: "Material Icons Extended", var(--foreign, "") !important;
+    }
+
+    .google-material-icons,
+    .google-material-icons > * {
+        font-family: "Google Material Icons", var(--foreign, "") !important;
     }
 
     .sfbg,
