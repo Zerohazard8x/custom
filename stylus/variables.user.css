@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        2025.10.19
+@version        2025.08.02
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
@@ -119,73 +119,112 @@ domain("igdb.com"),
 domain("fandom.com") {
     :root {
         /* Define variables */
-        --foreign: var(--emoji, ""), var(--noto, ""), PingFang, "PingFang SC",
-            "Hiragino Sans", "Apple SD Gothic Neo", "Bangla MN", Thonburi,
-            "Tiro Devanagari Hindi", "Geeza Pro", Geeza, "Yu Gothic",
-            "Microsoft YaHei UI", "Microsoft YaHei", "Malgun Gothic",
-            "Leelawadee UI", "Nirmala UI", "Segoe UI Arabic";
-        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
-            "Noto Sans Thai", "Noto Sans Bengali", "Noto Sans Devanagari",
-            "Noto Sans Arabic", "Noto Sans Hebrew", "Noto Sans";
-        --foreign-serif: var(--emoji, ""), "Shippori Mincho", "Noto Serif JP",
-            "Noto Serif TC", "Noto Serif SC", "Noto Serif KR", "Noto Serif Thai",
-            "Noto Serif Bengali", "Noto Serif Devanagari", "Noto Naskh Arabic",
-            "Noto Serif Hebrew", "Noto Serif";
-        /* --foreign-full: var(--noto, ""), "FOT-Rodin Pro",
-            "A-OTF UD Shin Go Pro", "FOT-NewRodin Pro", "Hiragino Sans",
-            "Hiragino Sans GB", "Hiragino Kaku Gothic",
-            "Hiragino Kaku Gothic Pro", "HarmonyOS Sans TC", "HarmonyOS Sans SC",
-            "HarmonyOS Sans", PingFang, "PingFang SC", "Hiragino Sans GB",
-            "Apple SD Gothic Neo", "Bangla MN", Thonburi, "Tiro Devanagari Hindi",
-            "Geeza Pro", Geeza, "Yu Gothic", "Microsoft YaHei UI",
-            "Microsoft YaHei", "Malgun Gothic", "Leelawadee UI", "Nirmala UI",
-            "Segoe UI Arabic", var(--emoji, ""); */
+        /* Emoji & symbol stack */
         --emoji: "Apple Color Emoji", "SF Symbols", "Segoe UI Emoji",
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
-            "Twemoji Mozilla";
-        /* --sans-recommended: -apple-system, BlinkMacSystemFont, "SF Pro", Inter,
-            "Roboto Flex", "Roboto", Barlow, Cantarell, Whitney, Lato, "Segoe UI Variable",
-            "Segoe UI", "Motiva Sans", "Proxima Vara", "Proxima Nova", "FF Mark",
-            "FF Mark Pro", "Avenir Next", Avenir, "HarmonyOS Sans TC",
-            "HarmonyOS Sans SC", "HarmonyOS Sans", "Nunito", "Nunito Sans",
-            "Fira Sans", FiraGO, "FF Meta", Manrope, "Helvetica Neue",
-            "Helvetica", "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
-            "IBM Plex Sans", "Ubuntu", "Open Sans", "Droid Sans"; */
-        /* --serif-recommended: var(--slab-serif, ""), "Cheltenham Classic", "Source Serif", "Source Serif Pro",
-            "Source Serif 4", "STIX Two Text", "Beaufort", "Beaufort Pro",
-            "Serif UI", "Serif UI Text", Fraunces, Alegreya, Crimson,
-            "Crimson Pro", "Crimson Text", Lora, "Montagu Slab", Century,
-            "Century Schoolbook", "Libre Baskerville", Georgia, "ITC Garamond",
-            "Apple Garamond", "Serif UI Display", var(--foreign-serif, ""); */
-        /* --mono-recommended: var(--block-mono-recommended, ""), "Monaspace Argon Var", "Monaspace Argon VF",
-            "Monaspace Argon", "Fira Code VF", "Fira Code", "Fira Mono",
-            "Fira Code Retina", "Noto Mono", "Noto Sans Mono", "DroidSansM",
-            "SF Mono", "SFMono-Regular", "CodeNewRoman Nerd Font", Consolas,
-            Hack, "Hack Nerd Font", "Bitstream Vera Sans Mono",
-            "BitstromWera Nerd Font", "DejaVu Sans Mono", "Cascadia Code",
-            "CaskaydiaCove Nerd Font", "Cascadia Mono", "Segoe UI Mono",
-            "Intel One Mono", Menlo, "MesloLG Nerd Font", Monaco, "Ubuntu Mono",
-            "Ubuntu Mono Nerd Font", Agave, "Agave Nerd Font", Hasklig,
-            "Hasklug Nerd Font", "Source Code Pro", "Source Code Pro Nerd Font",
-            "Andale Mono", "Lucida Console", "Lucida Sans Typewriter"; */
-        /* --block-mono-recommended: "JetBrains Mono", "JetBrains Mono NL",
-            "JetBrainsMono Nerd Font", "Fantasque Sans Mono",
-            "FantasqueSansM Nerd Font", "Input Mono", "Envy Code R",
+            "Twemoji Mozilla", "JoyPixels";
+
+        /* Noto Sans (language coverage) */
+        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+            "Noto Sans Thai", "Noto Sans Bengali", "Noto Sans Devanagari",
+            "Noto Sans Arabic", "Noto Naskh Arabic", "Noto Sans Hebrew",
+            "Noto Sans";
+
+        /* Broad sans stack */
+        --foreign: system-ui, -apple-system, BlinkMacSystemFont,
+            var(--emoji, ""), var(--noto, ""), /* Latin/UI */ "Segoe UI",
+            "Helvetica Neue", /* Japanese */ "FOT-Rodin Pro", "FOT-NewRodin Pro",
+            "Hiragino Sans", "Hiragino Kaku Gothic", "Hiragino Kaku Gothic Pro",
+            "Yu Gothic", "Noto Sans JP",
+            /* Chinese (Simplified) */ "PingFang SC", "Source Han Sans SC",
+            "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans SC",
+            /* Chinese (Traditional) */ PingFang, "PingFang TC",
+            "Source Han Sans TC", "Noto Sans TC",
+            /* Korean */ "Apple SD Gothic Neo", "Noto Sans KR", "Nanum Gothic",
+            "Malgun Gothic", /* Southeast/South Asian & RTL */ "Bangla MN",
+            "Thonburi", "Leelawadee UI", "Nirmala UI", "Tiro Devanagari Hindi",
+            "Segoe UI Arabic",
+            /* Regional/system families */ "HarmonyOS Sans SC",
+            "HarmonyOS Sans TC", "HarmonyOS Sans", "Hiragino Sans GB",
+            "WenQuanYi Micro Hei", "Heiti SC", "A-OTF UD Shin Go Pro",
+            /* Final generic */ sans-serif;
+
+        /* Broad serif stack */
+        --foreign-serif: var(--emoji, ""), /* Japanese */ "Shippori Mincho",
+            "Hiragino Mincho Pro", "Noto Serif JP",
+            /* Chinese (Simplified) */ "Source Han Serif SC", "Noto Serif SC",
+            /* Chinese (Traditional) */ "Source Han Serif TC", "Noto Serif TC",
+            /* Korean */ "Noto Serif KR",
+            /* South/SE Asian & RTL */ "Noto Serif Thai", "Noto Serif Bengali",
+            "Noto Serif Devanagari", "Noto Naskh Arabic", "Noto Serif Hebrew",
+            /* Pan-serif + common Latin fallbacks */ "Noto Serif", "Georgia",
+            "Times New Roman", /* Final generic */ serif;
+
+        /* General UI sans first (system), then popular web/brand faces, then regionals/CJK, then generic */
+        /* --sans-recommended: system-ui, -apple-system, BlinkMacSystemFont,
+            "Segoe UI Variable", "Segoe UI", Roboto, "Helvetica Neue", Helvetica,
+            Arial, Inter, "Roboto Flex", Lato, "Nunito Sans", "Fira Sans",
+            Manrope, "IBM Plex Sans Var", "IBM Plex Sans JP", "IBM Plex Sans KR",
+            Ubuntu, "Open Sans", "Droid Sans", "SF Pro Display",
+            "HarmonyOS Sans TC", "HarmonyOS Sans SC", "HarmonyOS Sans", Barlow,
+            Cantarell, Whitney, "Motiva Sans", "Proxima Vara", "Proxima Nova",
+            "FF Mark", "FF Mark Pro", "Avenir Next", Avenir, "Space Grotesk",
+            "Source Sans Pro", "Atkinson Hyperlegible", "Public Sans", Recursive,
+            Nunito, FiraGO, "FF Meta", "IBM Plex Sans", "Source Han Sans SC",
+            "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei",
+            "Hiragino Sans GB", "Noto Sans Arabic", Dubai,
+            "Noto Sans Devanagari", "SF Pro", sans-serif; */
+
+        /* Serif stack */
+        /* --serif-recommended: var(--slab-serif, ""), "Source Serif Pro", Alegreya,
+            "Crimson Pro", Lora, "Libre Baskerville", Georgia, "Apple Garamond",
+            "Times New Roman", "Source Serif 4", "Source Serif", "STIX Two Text",
+            Beaufort, "Beaufort Pro", "Serif UI", "Serif UI Text", Fraunces,
+            Crimson, "Crimson Text", "Literata", "Merriweather", "Montagu Slab",
+            Century, "Century Schoolbook", "ITC Garamond", "Serif UI Display",
+            "Playfair Display", "Source Han Serif SC", "Noto Serif CJK SC",
+            "Songti SC", "SimSun", "Noto Naskh Arabic", "Noto Serif Devanagari",
+            var(--foreign-serif, ""), "Palatino Linotype", "Book Antiqua",
+            "Nimbus Roman No9 L", "Bitstream Charter", "Droid Serif", serif; */
+
+        /* Mono: common system monos → popular coding fonts → Nerd/alt variants */
+        /* --mono-recommended: "SF Mono", SFMono-Regular, "Cascadia Code",
+            "Segoe UI Mono", Consolas, Menlo, Monaco, "Monaspace Argon Var",
+            "Monaspace Argon VF", "Monaspace Argon", "Fira Code VF", "Fira Code",
+            "Fira Mono", "Fira Code Retina", "Noto Mono", "Noto Sans Mono",
+            DroidSansM, "CodeNewRoman Nerd Font", Hack, "Hack Nerd Font",
+            "Bitstream Vera Sans Mono", "BitstromWera Nerd Font",
+            "DejaVu Sans Mono", "CaskaydiaCove Nerd Font", "Intel One Mono",
+            "MesloLG Nerd Font", "Ubuntu Mono", "Ubuntu Mono Nerd Font", Agave,
+            "Agave Nerd Font", Hasklig, "Hasklug Nerd Font", "Source Code Pro",
+            "Source Code Pro Nerd Font", "Andale Mono", "Lucida Console",
+            "Lucida Sans Typewriter", "Cascadia Mono",
+            var(--block-mono-recommended, ""), monospace; */
+
+        /* Blocky monos / alternates */
+        /* --block-mono-recommended: "Iosevka", "Envy Code R", "Input Mono",
+            "Fantasque Sans Mono", "Cascadia Code", "Meslo LG",
+            "ProFont Windows", "JetBrains Mono", "JetBrains Mono NL",
+            "JetBrainsMono Nerd Font", "FantasqueSansM Nerd Font", "Input Sans",
             "EnvyCodeR Nerd Font", "Monaspace Neon Var", "Monaspace Neon VF",
             "Monaspace Neon", "IBM Plex Mono", "BlexMono Nerd Font",
             "Roboto Mono", ProFont, "Monaspace Krypton Var",
             "Monaspace Krypton VF", "Monaspace Krypton", ProFontIIx,
-            ProFontWindows, "Iosevka", "Iosevka Nerd Font",
-            "IosevkaTerm Nerd Font", "Input Sans"; */
-        /* --readable-recommended: "Public Sans", "Fira Sans", FiraGO, "FF Meta",
-            Recursive, "Atkinson Hyperlegible", "Source Sans Pro",
-            "Nunito Sans", "Nunito", "Raleway", "Road UA", "Akshar", "DIN Next",
-            "URW DIN", "DIN Alternate", "Bahnschrift",
-            "alte din 1451 mittelschrift", "Keiner", "Dinish", "Dinish Expanded",
-            "Altinn-DIN", "D-DIN", "D-DIN Expanded", "DIN", var(--plex, ""),
-            "Aptos Display", "Trebuchet MS", "Roadgeek 2014",
-            "Roadgeek 2005"; */
+            ProFontWindows, "Iosevka Nerd Font", "IosevkaTerm Nerd Font",
+            "Cascadia Mono", "Cascadia Code Variable", monospace; */
+
+        /* Readability-first sans */
+        /* --readable-recommended: "Public Sans", "Atkinson Hyperlegible",
+            "Road UA", Akshar, "DIN Next", "Trebuchet MS", "Fira Sans", FiraGO,
+            "FF Meta", Recursive, "Source Sans Pro", "Nunito Sans", Nunito,
+            Raleway, "URW DIN", "DIN Alternate", Bahnschrift,
+            "alte din 1451 mittelschrift", Keiner, Dinish, "Dinish Expanded",
+            Altinn-DIN, D-DIN, "D-DIN Expanded", DIN, "IBM Plex Sans",
+            "Aptos Display", "Roadgeek 2014", "Roadgeek 2005", "Space Grotesk",
+            Inter, "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC",
+            "Microsoft YaHei", "Hiragino Sans GB", "Noto Sans Arabic", Dubai,
+            "Noto Sans Devanagari", var(--sans-recommended), sans-serif; */
     }
 
     *:not(
