@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        2025.08.02
+@version        2025.10.24
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
@@ -132,8 +132,7 @@ domain("fandom.com") {
             "Noto Sans";
 
         /* Broad sans stack */
-        --foreign: system-ui, -apple-system, BlinkMacSystemFont,
-            var(--emoji, ""), var(--noto, ""), /* Latin/UI */ "Segoe UI",
+        --foreign: var(--emoji, ""), var(--noto, ""), /* Latin/UI */ "Segoe UI",
             "Helvetica Neue", /* Japanese */ "FOT-Rodin Pro", "FOT-NewRodin Pro",
             "Hiragino Sans", "Hiragino Kaku Gothic", "Hiragino Kaku Gothic Pro",
             "Yu Gothic", "Noto Sans JP",
