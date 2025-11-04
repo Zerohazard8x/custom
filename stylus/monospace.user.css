@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2025.10.20
+@version        2025.11.04
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -311,8 +311,9 @@ domain("deskthority.net") {
     }
 }
 
-@-moz-document domain("google.com") {
+@-moz-document regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") {
     /* Google */
+
     /* Regex that excludes e.g. mail.google.com */
     /* Separate: regexp("^.*www\.google\.com.*"), regexp("^(?!.*(\w+\.google\.com)).*google\.com.*") */
     /* Combined: ^(?:.*www\.google\.com.*|(?!.*(\w+\.google\.com)).*google\.com.*) */
@@ -532,33 +533,30 @@ domain("deskthority.net") {
 
 @-moz-document domain("duckduckgo.com") {
     :root {
-        --default-font: "DDG_ProximaNova", "DDG_ProximaNova_UI_0",
-            "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2",
-            "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
-            "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
-            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
-            Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans",
-            var(--foreign, ""), sans-serif;
-        --sds-font-family-monospace: var(--mono, ""), ui-monospace, Menlo,
-            Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
-            "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
-            "Droid Sans Mono", "Courier New", monospace;
+        --ducksans-display-font-family: "DuckSansDisplay", -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+            Cantarell, "Helvetica Neue", Arial, "Noto Sans",
+            var(--foreign, "") sans-serif;
     }
 
-    body,
-    input,
-    select,
-    textarea {
-        font-family: var(
-            --theme-font-family-result-title,
-            var(--font-stack, "")
-        );
+    .defaultfontexp-ducksans body,
+    .defaultfontexp-ducksans input,
+    .defaultfontexp-ducksans select,
+    .defaultfontexp-ducksans textarea,
+    .defaultfontexp-ducksans button {
+        font-family: "DuckSansProduct", -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+            Arial, "Noto Sans", var(--foreign, ""), sans-serif;
     }
 
+    pre,
+    tt,
     code,
-    .ddgpt pre {
-        font-family: var(--mono, ""), Consolas, Menlo, Monaco, monospace,
-            var(--foreign, "");
+    .VrBPSncUavA1d7C9kAc5 .qlv4I7skMF6Meluz0u8c {
+        font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono",
+            "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
+            "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New",
+            var(--foreign, ""), monospace, Consolas, Menlo, Monaco, monospace;
     }
 
     .belowTheFold_howItWorksSection__nbvql,
