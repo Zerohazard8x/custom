@@ -40,3 +40,4 @@
 
 <https://github.com/Zerohazard8x/custom/raw/main/js/text-rendering.user.js>  
 <https://github.com/Zerohazard8x/custom/raw/main/js/font-size-adjust.user.js>
+<https://github.com/Zerohazard8x/custom/raw/main/js/hide-twitch-replies.user.js>
