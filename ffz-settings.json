@@ -70,6 +70,77 @@
             "premium": true,
             "turbo": true,
             "raging-wolf-helm": true
-        }
+        },
+        "p:0:chat.filtering.highlight-mentions": true,
+        "p:0:chat.rituals.show": false,
+        "p:0:chat.filtering.process-own": false,
+        "p:0:chat.filtering.highlight-basic-blocked": [
+            {
+                "v": {
+                    "remove": true,
+                    "v": "^![A-Za-z0-9_]+(?:\\s.*)?$",
+                    "t": "regex",
+                    "c": "",
+                    "s": false,
+                    "h": false,
+                    "w": false,
+                    "p": 0
+                },
+                "id": "1762779151066-0.427964392630267-0"
+            }
+        ],
+        "p:0:chat.filtering.highlight-basic-users-blocked": [
+            {
+                "v": {
+                    "remove": true,
+                    "v": "nightbot",
+                    "t": "text",
+                    "c": "",
+                    "s": false,
+                    "h": false,
+                    "w": true,
+                    "p": 0
+                },
+                "id": "1762779171555-0.4506124777905002-1"
+            },
+            {
+                "v": {
+                    "remove": true,
+                    "v": "streamelements",
+                    "t": "text",
+                    "c": "",
+                    "s": false,
+                    "h": false,
+                    "w": true,
+                    "p": 0
+                },
+                "id": "1762779175568-0.4971720680492342-2"
+            },
+            {
+                "v": {
+                    "remove": true,
+                    "v": "fossabot",
+                    "t": "text",
+                    "c": "",
+                    "s": false,
+                    "h": false,
+                    "w": true,
+                    "p": 0
+                },
+                "id": "1762779189303-0.6086818699817588-3"
+            },
+            {
+                "v": {
+                    "v": "moobot",
+                    "t": "text",
+                    "c": "",
+                    "s": false,
+                    "h": false,
+                    "w": true,
+                    "p": 0,
+                    "remove": true
+                },
+                "id": "1762779208186-0.8023167037303212-4"
+            }
     }
 }
