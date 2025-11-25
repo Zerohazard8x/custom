@@ -94,6 +94,15 @@
         font-family: "YouTube Sans", "Roboto", var(--foreign, ""), sans-serif;
     }
 
+    /* Firefox RTX video super resolution fix */
+    #ytd-player.ytd-watch-flexy {
+        border-radius: 0 !important;
+    }
+
+    ytd-masthead {
+        opacity: 0.98 !important;
+    }
+
     /* Cleaning */
     ytd-ad-slot-renderer.style-scope.ytd-search-pyv-renderer,
     div.ytp-suggested-action,
