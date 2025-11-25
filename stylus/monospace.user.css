@@ -319,8 +319,8 @@ domain("deskthority.net") {
     /* Combined: ^(?:.*www\.google\.com.*|(?!.*(\w+\.google\.com)).*google\.com.*) */
 
     :root {
-        --google: "Google Sans Text", "Roboto Flex", Roboto, "Roboto Draft",
-            RobotoDraft, "Google Sans", Roboto-Regular;
+        --google: "Google Sans Flex", "Google Sans Text", Roboto, "Roboto Flex",
+            "Roboto Draft", RobotoDraft, "Google Sans", Roboto-Regular;
     }
 
     .QRYxYe.QRYxYe,
@@ -378,15 +378,15 @@ domain("deskthority.net") {
     .a-no-hover-decoration,
     .GLcBOb,
     #result-stats {
-        font-family: "Google Sans", var(--google, ""), Roboto, RobotoDraft,
-            Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
-            var(--foreign, ""), sans-serif;
+        font-family: "Google Sans", var(--google, ""),
+            Roboto, RobotoDraft, Helvetica, "Helvetica Neue", HelveticaNeue,
+            Arial, var(--foreign, ""), sans-serif;
     }
 
     .YmvwI,
     .FMKtTb {
-        font-family: Google Sans, var(--google, ""), Roboto, RobotoDraft,
-            Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
+        font-family: Google Sans, var(--google, ""), Roboto,
+            RobotoDraft, Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
             var(--foreign, ""), sans-serif-medium, sans-serif;
     }
 

@@ -467,8 +467,8 @@ domain("xcancel.com") {
     .yW,
     .ha > .hP,
     .gb_xe {
-        font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial,
-            var(--foreign, ""), sans-serif;
+        font-family: "Google Sans Flex", "Google Sans", Roboto, RobotoDraft,
+            Helvetica, Arial, var(--foreign, ""), sans-serif;
     }
 }
 
