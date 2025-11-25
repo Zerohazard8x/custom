@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2025.11.04
+@version        2025.11.25
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -331,7 +331,7 @@ domain("deskthority.net") {
     div,
     span,
     .MBeuO {
-        font-family: var(--google, ""), Roboto, RobotoDraft, Helvetica,
+        font-family: var(--google, ""), Roboto, "Roboto Flex", RobotoDraft, Helvetica,
             "Helvetica Neue", HelveticaNeue, Arial, var(--foreign, ""),
             sans-serif !important;
     }
