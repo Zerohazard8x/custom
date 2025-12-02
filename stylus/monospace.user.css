@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2025.11.25
+@version        2025.12.02
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -225,6 +225,13 @@ domain("stackexchange.com") {
         }
     }
 
+    html,
+    body {
+        font-family: OpenAI Sans, -apple-system, BlinkMacSystemFont, Segoe UI,
+            Roboto, Oxygen, Ubuntu, Cantarell, Helvetica Neue, Arial,
+            var(--foreign, ""), sans-serif !important;
+    }
+
     code,
     pre {
         font-family: var(--mono, ""), Söhne Mono, ui-monospace, SFMono-Regular,
@@ -319,10 +326,13 @@ domain("deskthority.net") {
     /* Combined: ^(?:.*www\.google\.com.*|(?!.*(\w+\.google\.com)).*google\.com.*) */
 
     :root {
-        --google: "Google Sans Flex", "Google Sans Text", Roboto, "Roboto Flex",
-            "Roboto Draft", RobotoDraft, "Google Sans", Roboto-Regular;
+        --google: Google Sans Flex, Google Sans, Helvetica Neue,
+            var(--foreign, ""), sans-serif;
     }
 
+    body,
+    input,
+    button,
     .QRYxYe.QRYxYe,
     .gb_X,
     .lJ9FBc input[type="submit"],
@@ -331,9 +341,7 @@ domain("deskthority.net") {
     div,
     span,
     .MBeuO {
-        font-family: var(--google, ""), Roboto, "Roboto Flex", RobotoDraft, Helvetica,
-            "Helvetica Neue", HelveticaNeue, Arial, var(--foreign, ""),
-            sans-serif !important;
+        font-family: var(--google, ""), Arial, var(--foreign, ""), sans-serif !important;
     }
 
     /* Force Google Sans (if available) */
@@ -378,16 +386,8 @@ domain("deskthority.net") {
     .a-no-hover-decoration,
     .GLcBOb,
     #result-stats {
-        font-family: "Google Sans", var(--google, ""),
-            Roboto, RobotoDraft, Helvetica, "Helvetica Neue", HelveticaNeue,
-            Arial, var(--foreign, ""), sans-serif;
-    }
-
-    .YmvwI,
-    .FMKtTb {
-        font-family: Google Sans, var(--google, ""), Roboto,
-            RobotoDraft, Helvetica, "Helvetica Neue", HelveticaNeue, Arial,
-            var(--foreign, ""), sans-serif-medium, sans-serif;
+        font-family: "Google Sans", var(--google, ""), Arial, var(--foreign, ""),
+            sans-serif !important;
     }
 
     .googlegpt pre,
@@ -730,5 +730,16 @@ domain("red.artemislena.eu") {
         font-family: var(--font-universal-sans), ui-sans-serif, system-ui,
             var(--foreign, ""), sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+}
+
+@-moz-document domain("gemini.google.com") {
+    .gds-body-l {
+        font-family: "Google Sans Flex", "Google Sans", "Helvetica Neue",
+            var(--foreign, ""), sans-serif;
+    }
+
+    .markdown[_ngcontent-ng-c3942317406] code {
+        font-family: Google Sans Mono, var(--foreign, ""), monospace;
     }
 }

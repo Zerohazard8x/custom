@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2025.11.08
+@version        2025.12.02
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -476,20 +476,17 @@ domain("xcancel.com") {
     .yW,
     .ha > .hP,
     .gb_xe {
-        font-family: "Google Sans Flex", "Google Sans", Roboto, RobotoDraft,
-            Helvetica, Arial, var(--foreign, ""), sans-serif;
+        font-family: Google Sans Flex, Google Sans, Helvetica Neue,
+            var(--foreign, ""), sans-serif, "Google Sans", Roboto, RobotoDraft,
+            Helvetica, Arial, sans-serif;
     }
 }
 
 @-moz-document domain("translate.google.com") {
     body {
-        font-family: Roboto, RobotoDraft, Helvetica, Arial, var(--foreign, ""),
-            sans-serif;
-    }
-
-    .VhOj3e,
-    .l6Jrx {
-        font-family: "Google Sans", var(--foreign, ""), sans-serif;
+        font-family: Google Sans Flex, Google Sans, Helvetica Neue,
+            var(--foreign, ""), sans-serif, Roboto, RobotoDraft, Helvetica,
+            Arial, sans-serif;
     }
 }
 
