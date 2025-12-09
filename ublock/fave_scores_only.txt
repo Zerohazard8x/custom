@@ -30,14 +30,8 @@ fotmob.com##div.e1ju7a501.css-mq7mn-Group:nth-child(n+2)
 
 !------!
 
-sofascore.com##.sc-fqkvVR
-sofascore.com##.cFXPGa.sc-d3d29f9d-0.hvFeZN.sc-fqkvVR > .iTUhUe.sc-e71985c9-0
-sofascore.com##.dNFnnE.Box
-sofascore.com##.fAiLzF.Box
-sofascore.com##.hPBkha.Box
-sofascore.com##.hlfQJP.Box
-sofascore.com##.iIhqUI.Box
-sofascore.com##[href="/en-us/betting-tips-today"]
+sofascore.com##.pos_sticky.w_\[312px\].ps_md.pb_md.pt_3xl
+sofascore.com##.trs-tmf_ease-in-out.trs-dur_normal.trs-prop_transform.md\:bottom_\[92px\].bottom_\[160px\].md\:bdr-e_lg.mdDown\:bdr-s_lg.mdDown\:inset-e_0.md\:inset-s_0.cursor_pointer.pos_fixed.z_sticky.p_sm.bg_primary\.default.gap_md.ai_center.md\:flex-d_row.flex-d_row-reverse.d_flex
 
 thescore.com##.MatchupArticle__column--3JVWj.MatchupArticle__desktopView--1IYDo.col-sm-4
 
