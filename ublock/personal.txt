@@ -92,7 +92,6 @@
 ||bardia.tech$all
 ||bazaarvoice.com$all
 ||bbynetwork.nl$all
-||bbystatic.com$all
 ||bestsportsite.autos$all
 ||bestsportsite.shop$all
 ||betanews.com/wp-content/plugins/adtoniq$all
@@ -525,9 +524,7 @@
 ||internal-legacyingops.net.zooplus.de$all
 ||iron0walk.com$all
 ||isenselabs.com$all
-||issuu.com$all
 ||istiklal.com.tr/assets/site/js/pushControl.js$all
-||isu.pub$all
 ||isurucabs.lk/3003.exe$all
 ||isurucabs.lk/ads11.exe$all
 ||ixinternal.com$all
@@ -673,7 +670,6 @@
 ||payments-amazon.com$all
 ||pdmntn.com/popups$all
 ||peoplestack-pa.clients6.google.com$all
-||pinterest.com$all
 ||pkrchp001.com$all
 ||plug1luge.com$all
 ||plug4norm.com$all
@@ -908,6 +904,10 @@
 ||zzsqqx.shopjapan.co.jp$all
 
 ! No script
+||isu.pub$script,inline-script,object,ping,stylesheet,other
+||issuu.com$script,inline-script,object,ping,stylesheet,other
+||pinterest.com$script,inline-script,object,ping,stylesheet,other
+||bbystatic.com$script,inline-script,object,ping,stylesheet,other
 ||razorpay.com$script,inline-script,object,ping,stylesheet,other
 ||apis.ign.com$script,inline-script,object,ping,stylesheet,other
 ||herokuapp.com$script,inline-script,object,ping,stylesheet,other
@@ -1045,7 +1045,6 @@
 ||ebayimg.com$script,inline-script,object,ping,stylesheet,other
 ||edge-chat.messenger.com$script,inline-script,object,ping,stylesheet,other
 ||edgedatg.com$script,inline-script,object,ping,stylesheet,other
-||elb.amazonaws.com$script,inline-script,object,ping,stylesheet,other
 ||elektroda.pl$script,inline-script,object,ping,stylesheet,other
 ||ensighten.com$script,inline-script,object,ping,stylesheet,other
 ||ex.co$script,inline-script,object,ping,stylesheet,other
@@ -1101,7 +1100,6 @@
 ||insops.net$script,inline-script,object,ping,stylesheet,other
 ||instant.page$script,inline-script,object,ping,stylesheet,other
 ||instructure-uploads-apse1.s3-ap-southeast-1.amazonaws.com$script,inline-script,object,ping,stylesheet,other
-||intercomcdn.com$script,inline-script,object,ping,stylesheet,other
 ||irc-ws.chat.twitch.tv$script,inline-script,object,ping,stylesheet,other
 ||ivstracker.net$script,inline-script,object,ping,stylesheet,other
 ||jeded.com$script,inline-script,object,ping,stylesheet,other
@@ -1168,7 +1166,6 @@
 ||payment-website-518800826.us-east-1.elb.amazonaws.com$script,inline-script,object,ping,stylesheet,other
 ||photobucket.com$script,inline-script,object,ping,stylesheet,other
 ||piano.io$script,inline-script,object,ping,stylesheet,other
-||pinimg.com$script,inline-script,object,ping,stylesheet,other
 ||pixhost.to$script,inline-script,object,ping,stylesheet,other
 ||playwire.com$script,inline-script,object,ping,stylesheet,other
 ||pocket-image-cache.com$script,inline-script,object,ping,stylesheet,other
@@ -1225,7 +1222,6 @@
 ||sydney.bing.com$script,inline-script,object,ping,stylesheet,other
 ||taboola.com$script,inline-script,object,ping,stylesheet,other
 ||tadst.com$script,inline-script,object,ping,stylesheet,other
-||targetimg1.com$script,inline-script,object,ping,stylesheet,other
 ||techlab-cdn.com$script,inline-script,object,ping,stylesheet,other
 ||template.canva.com$script,inline-script,object,ping,stylesheet,other
 ||testfamilysafety.bing.com$script,inline-script,object,ping,stylesheet,other
@@ -1251,7 +1247,6 @@
 ||webcontentassessor.com$script,inline-script,object,ping,stylesheet,other
 ||wiki.gallery$script,inline-script,object,ping,stylesheet,other
 ||wikia.com$script,inline-script,object,ping,stylesheet,other
-||wikimedia.org$script,inline-script,object,ping,stylesheet,other
 ||wikimg.net$script,inline-script,object,ping,stylesheet,other
 ||windows.net$script,inline-script,object,ping,stylesheet,other
 ||wix.com$script,inline-script,object,ping,stylesheet,other

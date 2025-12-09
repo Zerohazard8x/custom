@@ -4,7 +4,7 @@
   "userSettings": {
     "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
-    "externalLists": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/fave_scores_only.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt",
+    "externalLists": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/fave_scores_only.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt\nhttps://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt\nhttps://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt",
     "importedLists": [
       "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
       "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
@@ -13,7 +13,8 @@
       "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt",
       "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt",
       "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt",
-      "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt"
+      "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/text-rendering.txt",
+      "https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt"
     ],
     "suspendUntilListsAreLoaded": false
   },
@@ -37,13 +38,14 @@
     "adguard-popup-overlays",
     "adguard-widgets",
     "ublock-annoyances",
+    "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
     "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
-    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt",
-    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/fave_scores_only.txt",
-    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt",
-    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt",
     "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/chat_popout.txt",
-    "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt"
+    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/fave_scores_only.txt",
+    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/misc_declutter.txt",
+    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/news_declutter.txt",
+    "https://raw.githubusercontent.com/Zerohazard8x/custom/main/ublock/personal.txt",
+    "https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt"
   ],
   "hiddenSettings": {
     "autoUpdateDelayAfterLaunch": 1
