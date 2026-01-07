@@ -38,46 +38,7 @@
                 "data": {}
             },
             "enabled": false,
-            "position": 1,
             "file_url": "https://github.com/XIU2/UserScript/raw/master/GithubEnhanced-High-Speed-Download.user.js",
-            "uuid": "",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-        },
-        {
-            "name": "Simple YouTube Age Restriction Bypass",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": [
-                        "https://www.youtube.com/*",
-                        "https://www.youtube-nocookie.com/*",
-                        "https://m.youtube.com/*",
-                        "https://music.youtube.com/*"
-                    ],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [],
-                    "merge_excludes": true,
-                    "use_connects": [],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-start",
-                    "orig_run_in": [],
-                    "orig_noframes": null
-                }
-            },
-            "storage": {
-                "ts": 0,
-                "data": {}
-            },
-            "enabled": true,
-            "position": 2,
-            "file_url": "https://update.greasyfork.org/scripts/423851/Simple%20YouTube%20Age%20Restriction%20Bypass.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
@@ -129,7 +90,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 3,
             "file_url": "https://update.greasyfork.org/scripts/438684/Pagetual.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -161,8 +121,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 4,
+            "enabled": false,
             "file_url": "https://greasyfork.org/scripts/469384-twitch-skip-content-warnings/code/Twitch%20-%20Skip%20content%20warnings.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -198,7 +157,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 5,
             "file_url": "https://greasyfork.org/scripts/465887-twitch-player-quality-changer/code/Twitch%20Player%20Quality%20Changer.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -234,7 +192,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 6,
             "file_url": "https://github.com/Anarios/return-youtube-dislike/raw/main/Extensions/UserScript/Return%20Youtube%20Dislike.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -274,7 +231,6 @@
                 "data": {}
             },
             "enabled": false,
-            "position": 7,
             "file_url": "https://raw.githubusercontent.com/Vencord/builds/main/Vencord.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -306,8 +262,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 8,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/451607/jstris%2B.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -345,7 +300,6 @@
                 "data": {}
             },
             "enabled": false,
-            "position": 9,
             "file_url": "https://update.greasyfork.org/scripts/23840/Greasyfork%20Search%20with%20Sleazyfork%20Results%20include.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -462,8 +416,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 10,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/407284/IMDb%20Scout%20Mod.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
@@ -614,8 +567,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 11,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/13858/Show%20Metacriticcom%20ratings.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
@@ -889,7 +841,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 12,
             "file_url": "https://github.com/F9y4ng/GreasyFork-Scripts/raw/master/Google%20%26%20Baidu%20Switcher.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
@@ -960,8 +911,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 13,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/396746/Download%20Original%20Picture.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1008,7 +958,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 14,
             "file_url": "https://update.greasyfork.org/scripts/470188/Disable%20safesearch.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1044,7 +993,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 15,
             "file_url": "https://update.greasyfork.org/scripts/480846/Disable%20Google%20SafeSearch%20automatically.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1077,7 +1025,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 16,
             "file_url": "https://update.greasyfork.org/scripts/23661/Youtube%20HD.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1320,7 +1267,6 @@
                 "data": {}
             },
             "enabled": false,
-            "position": 17,
             "file_url": "https://update.greasyfork.org/scripts/465936/Proxy%20Redirect.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1352,8 +1298,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 18,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/431429/Twitch%20-%20Auto%20Theatre.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1395,7 +1340,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 20,
             "file_url": "https://cdn.frankerfacez.com/script/ffz_injector.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1427,8 +1371,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 21,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/484777/YT%20Ambient%20blocker.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1567,7 +1510,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 22,
             "file_url": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=userscript/bpc.en.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1600,8 +1542,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 23,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/482255/Kickcom%20-%20Auto%20select%20best%20quality.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1690,8 +1631,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 24,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/35443/Show%20Rottentomatoes%20meter.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
@@ -1736,7 +1676,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 25,
             "file_url": "https://github.com/Equicord/Equicord/releases/download/latest/Equicord.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1769,8 +1708,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 26,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/513116/YouTube%20Enhancer%20%28Reveal%20Channel%20ID%29.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1828,7 +1766,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 27,
             "file_url": "https://userscripts.adtidy.org/release/adguard-extra/1.0/adguard-extra.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1862,7 +1799,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 28,
             "file_url": "https://update.greasyfork.org/scripts/526487/Reddit%20Default%20Sort.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1900,8 +1836,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 29,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/480701/YouTube%20Theater%20Plus.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -1934,8 +1869,7 @@
                 "ts": 0,
                 "data": {}
             },
-            "enabled": true,
-            "position": 31,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/446954/Youtube%3A%20expand%20description%20and%20long%20comments%3B%20show%20all%20the%20replies.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
@@ -2537,7 +2471,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 33,
             "file_url": "https://codeberg.org/Amm0ni4/bypass-all-shortlinks-debloated/raw/branch/main/Bypass_All_Shortlinks.user.js",
             "uuid": "53f0f83c-4534-4175-be97-b70a7eb2d5c3",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
@@ -2602,8 +2535,7 @@
                     "yt/functionState_01": "o{\"isOpenCommentTable\": false,\"isOpenThemeProgressBar\": false,\"isOpenSpeedControl\": true,\"isOpenMarkOrRemoveAd\": false,\"isOpenYoutubedownloading\": false}"
                 }
             },
-            "enabled": true,
-            "position": 32,
+            "enabled": false,
             "file_url": "https://update.greasyfork.org/scripts/545651/Enhancer%20for%20YouTube%E2%84%A2%3A%20New%20Layout%2C%20Video%20Downloader%2C%20and%20More%20Features.user.js",
             "uuid": "1661ad92-a45e-44db-8fe6-3a7517e2e9ad",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
@@ -2652,7 +2584,6 @@
                 "data": {}
             },
             "enabled": true,
-            "position": 33,
             "file_url": "https://github.com/Zerohazard8x/custom/raw/main/js/hide-twitch-replies.user.js",
             "uuid": "df0b0c86-d5b8-436d-abec-cb1ccfdb09df",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
