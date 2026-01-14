@@ -2590,11 +2590,12 @@
         }
     ],
     "settings": {
-        "autoReload": true,
+        "configMode": 100,
         "scriptUpdateCheckPeriod": 21600000,
         "external_update_interval": 1,
         "statistics_enabled": false,
         "sync_enabled": true,
-        "sync_type": "2"
+        "sync_type": "2",
+        "incognito_mode": "permanent"
     }
 }
