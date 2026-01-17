@@ -17,9 +17,10 @@
 
     /* Class ytp-caption-segment  */
     .ytp-caption-segment {
-        font-family: var(--readable, ""), var(--sans, ""), "YouTube Noto",
-            Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana,
-            "PT Sans Caption", var(--foreign, ""), sans-serif !important;
+        font-family:
+            var(--readable, ""), var(--sans, ""), "YouTube Noto", Roboto,
+            "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption",
+            var(--foreign, ""), sans-serif !important;
         color: #fff000 !important;
 
         /* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
@@ -82,8 +83,9 @@
     }
 
     .html5-video-player {
-        font-family: "YouTube Noto", Roboto, Arial, Helvetica,
-            var(--foreign, ""), sans-serif !important;
+        font-family:
+            "YouTube Noto", Roboto, Arial, Helvetica, var(--foreign, ""),
+            sans-serif !important;
     }
 
     ytd-engagement-panel-title-header-renderer[modern-panels]:not(
@@ -134,7 +136,11 @@
 @-moz-document domain("music.youtube.com") {
     html,
     [class*="ytmusic" i][class*="renderer" i] {
-        font-family: Roboto, Noto Naskh Arabic UI, Arial, sans-serif,
+        font-family:
+            Roboto,
+            Noto Naskh Arabic UI,
+            Arial,
+            sans-serif,
             var(--foreign, "");
     }
 
@@ -143,8 +149,13 @@
     ytmusic-shelf-renderer[is-bauhaus-web-detail-page-redesign-enabled]
         .title.ytmusic-shelf-renderer
         > yt-formatted-string.ytmusic-shelf-renderer {
-        font-family: YouTube Sans, Roboto, Noto Naskh Arabic UI, Arial,
-            var(--foreign, ""), sans-serif;
+        font-family:
+            YouTube Sans,
+            Roboto,
+            Noto Naskh Arabic UI,
+            Arial,
+            var(--foreign, ""),
+            sans-serif;
     }
 }
 
@@ -152,7 +163,7 @@
     /* youtube live chat */
     /* chat font size */
     :root {
-        --tv-font-size: 1.1em;
+        --tv-font-size: 1em;
     }
 
     /* div.content.overflow-y-scroll,
@@ -211,7 +222,8 @@ domain("messenger.com"),
 domain("instagram.com"),
 domain("threads.net") {
     :root {
-        --facebook: Optimistic, "Optimistic AI VF", "Optimistic Text",
+        --facebook:
+            Optimistic, "Optimistic AI VF", "Optimistic Text",
             "Optimistic Display", "Optimistic Text Normal",
             "Optimistic Display Bold";
     }
@@ -219,11 +231,12 @@ domain("threads.net") {
     :root,
     .__fb-dark-mode,
     ._aa4c {
-        --font-family-segoe: var(--facebook, ""), Segoe UI Historic, Segoe UI,
-            Helvetica, Arial, var(--foreign, ""), sans-serif;
-        --font-family-system: var(--facebook, ""), system-ui, -apple-system,
-            BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif,
-            var(--foreign, "");
+        --font-family-segoe:
+            var(--facebook, ""), Segoe UI Historic, Segoe UI, Helvetica, Arial,
+            var(--foreign, ""), sans-serif;
+        --font-family-system:
+            var(--facebook, ""), system-ui, -apple-system, BlinkMacSystemFont,
+            Roboto, Helvetica, Arial, sans-serif, var(--foreign, "");
     }
 
     #facebook .system-fonts--body *,
@@ -234,14 +247,16 @@ domain("threads.net") {
     ._9o1- div,
     ._9ai0,
     ._1gaz {
-        font-family: var(--facebook, ""), SFProText-Medium, Helvetica, Arial,
+        font-family:
+            var(--facebook, ""), SFProText-Medium, Helvetica, Arial,
             var(--foreign, ""), sans-serif;
     }
 
     ._8e63,
     ._9axz,
     ._8eso {
-        font-family: var(--facebook, ""), SFProDisplay-Regular, Helvetica, Arial,
+        font-family:
+            var(--facebook, ""), SFProDisplay-Regular, Helvetica, Arial,
             var(--foreign, ""), sans-serif;
     }
 
@@ -251,7 +266,8 @@ domain("threads.net") {
     ._58mk,
     ._8e4l,
     #globalContainer {
-        font-family: var(--facebook, ""), SFProText-Regular, Helvetica, Arial,
+        font-family:
+            var(--facebook, ""), SFProText-Regular, Helvetica, Arial,
             var(--foreign, ""), sans-serif;
     }
 
@@ -259,26 +275,37 @@ domain("threads.net") {
     ._42ft,
     ._9ai2,
     ._8esh {
-        font-family: var(--facebook, ""), SFProText-Semibold, Helvetica, Arial,
+        font-family:
+            var(--facebook, ""), SFProText-Semibold, Helvetica, Arial,
             var(--foreign, ""), sans-serif;
     }
 
     .uiHeaderTitle {
-        font-family: var(--facebook, ""), SFProDisplay-Bold, Helvetica, Arial,
+        font-family:
+            var(--facebook, ""), SFProDisplay-Bold, Helvetica, Arial,
             var(--foreign, ""), sans-serif;
     }
 
     ._4g34,
     ._53jh {
-        font-family: var(--facebook, ""), Helvetica, Arial, sans-serif,
+        font-family:
+            var(--facebook, ""), Helvetica, Arial, sans-serif,
             var(--foreign, "");
     }
 
     ._ap3a,
     ._aacl,
     ._acan {
-        font-family: var(--facebook, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif;
+        font-family:
+            var(--facebook, ""),
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            var(--foreign, ""),
+            sans-serif;
     }
 
     ._7y88 {
@@ -286,7 +313,8 @@ domain("threads.net") {
     }
 
     .inputtext {
-        font-family: var(--facebook, ""), Roboto-Regular, Helvetica, Arial,
+        font-family:
+            var(--facebook, ""), Roboto-Regular, Helvetica, Arial,
             var(--foreign, ""), sans-serif;
     }
 
@@ -294,8 +322,15 @@ domain("threads.net") {
         span,
     div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z
         span {
-        font-family: var(--readable, ""), var(--facebook, ""), Placeholder Font,
-            Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif,
+        font-family:
+            var(--readable, ""),
+            var(--facebook, ""),
+            Placeholder Font,
+            Segoe UI Historic,
+            Segoe UI,
+            Helvetica,
+            Arial,
+            sans-serif,
             var(--foreign, "");
         color: #fff000;
         background: none;
@@ -313,16 +348,25 @@ domain("threads.net") {
 
 @-moz-document domain("deepl.com") {
     body *:not(.fa) {
-        font-family: var(--sans, ""), -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, Helvetica, Arial, var(--foreign, ""), sans-serif;
+        font-family:
+            var(--sans, ""),
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            var(--foreign, ""),
+            sans-serif;
     }
 }
 
 @-moz-document domain("twitch.tv") {
     :root {
-        --font-base: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
+        --font-base:
+            "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
             var(--foreign, ""), sans-serif;
-        --tv-font-size: 1.3em;
+        --tv-font-size: 1.2em;
     }
 
     /* Anu Twitch Chat Overlay */
@@ -362,7 +406,8 @@ domain("threads.net") {
 
     /* subtitles */
     .player-captions-container__caption-line {
-        font-family: var(--readable, ""), var(--font-base, ""), Verdana, Arial,
+        font-family:
+            var(--readable, ""), var(--font-base, ""), Verdana, Arial,
             Helvetica, "PT Sans Caption", sans-serif;
         background: none;
         color: #fff000;
@@ -404,7 +449,10 @@ domain("threads.net") {
     div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
     .bQEtql {
         font-size: var(--tv-font-size, initial);
-        text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
+        text-shadow:
+            1px 1px 1px black,
+            -1px -1px 1px black,
+            1px -1px 1px black,
             -1px 1px 1px black;
     }
 
@@ -419,7 +467,10 @@ domain("threads.net") {
     .chat-author__display-name,
     .chat-line__status {
         font-size: calc(var(--tv-font-size, initial) * 0.75);
-        text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
+        text-shadow:
+            1px 1px 1px black,
+            -1px -1px 1px black,
+            1px -1px 1px black,
             -1px 1px 1px black;
     }
 
@@ -437,9 +488,21 @@ domain("threads.net") {
 
 @-moz-document domain("9xbuddy.in") {
     #root section {
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-            Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-            Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji,
+        font-family:
+            ui-sans-serif,
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            Segoe UI,
+            Roboto,
+            Helvetica Neue,
+            Arial,
+            Noto Sans,
+            sans-serif,
+            Apple Color Emoji,
+            Segoe UI Emoji,
+            Segoe UI Symbol,
+            Noto Color Emoji,
             var(--foreign, "");
     }
 }
@@ -450,8 +513,13 @@ domain("nitter.poast.org"),
 domain("xcancel.com") {
     /* Nitter */
     body {
-        font-family: var(--sans, ""), Helvetica Neue, Helvetica, Arial,
-            var(--foreign, ""), sans-serif;
+        font-family:
+            var(--sans, ""),
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            var(--foreign, ""),
+            sans-serif;
     }
 
     .tweet-content,
@@ -476,17 +544,48 @@ domain("xcancel.com") {
     .yW,
     .ha > .hP,
     .gb_xe {
-        font-family: Google Sans Flex, Google Sans, Helvetica Neue,
-            var(--foreign, ""), sans-serif, "Google Sans", Roboto, RobotoDraft,
-            Helvetica, Arial, sans-serif;
+        font-family:
+            Google Sans Flex,
+            Google Sans,
+            Helvetica Neue,
+            var(--foreign, ""),
+            sans-serif,
+            "Google Sans",
+            Roboto,
+            RobotoDraft,
+            Helvetica,
+            Arial,
+            sans-serif;
     }
 }
 
 @-moz-document domain("translate.google.com") {
     body {
-        font-family: Google Sans Flex, Google Sans, Helvetica Neue,
-            var(--foreign, ""), sans-serif, Roboto, RobotoDraft, Helvetica,
-            Arial, sans-serif;
+        font-family:
+            Google Sans Flex,
+            Google Sans,
+            Helvetica Neue,
+            var(--foreign, ""),
+            var(--foreign, ""),
+            sans-serif,
+            Roboto,
+            RobotoDraft,
+            Helvetica,
+            Arial,
+            sans-serif;
+    }
+
+    .VhOj3e,
+    .l6Jrx {
+        font-family:
+            "Google Sans",
+            Google Sans Flex,
+            Google Sans,
+            Helvetica Neue,
+            var(--foreign, ""),
+            sans-serif,
+            var(--foreign, ""),
+            sans-serif;
     }
 }
 
@@ -501,14 +600,16 @@ domain("xcancel.com") {
     @layer theme {
         :root,
         :host {
-            --font-sans: var(--sans, ""), Helvetica, Arial, var(--foreign, ""),
+            --font-sans:
+                var(--sans, ""), Helvetica, Arial, var(--foreign, ""),
                 sans-serif;
-            --font-universal: "Noto Sans", "Noto Sans SC", "Noto Sans JP",
-                "Noto Sans KR", "Noto Sans Arabic", "Noto Sans Hebrew",
-                "Noto Sans Thai", "Noto Sans Devanagari", "Noto Sans Bengali",
-                "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Gujarati",
-                "Noto Sans Kannada", "Noto Sans Malayalam", "Noto Sans Myanmar",
-                "Noto Sans Khmer", "Noto Sans Armenian", "Noto Sans Georgian",
+            --font-universal:
+                "Noto Sans", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR",
+                "Noto Sans Arabic", "Noto Sans Hebrew", "Noto Sans Thai",
+                "Noto Sans Devanagari", "Noto Sans Bengali", "Noto Sans Tamil",
+                "Noto Sans Telugu", "Noto Sans Gujarati", "Noto Sans Kannada",
+                "Noto Sans Malayalam", "Noto Sans Myanmar", "Noto Sans Khmer",
+                "Noto Sans Armenian", "Noto Sans Georgian",
                 "Noto Sans Ethiopic", "Segoe UI", "Roboto", "Helvetica Neue",
                 Arial, var(--foreign, ""), sans-serif;
         }
@@ -518,6 +619,9 @@ domain("xcancel.com") {
 @-moz-document domain("inoreader.com") {
     html,
     body {
-        font-family: Public Sans, var(--foreign, ""), sans-serif;
+        font-family:
+            Public Sans,
+            var(--foreign, ""),
+            sans-serif;
     }
 }
