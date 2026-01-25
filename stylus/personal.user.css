@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2025.12.02
+@version        2026.01.25
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -163,7 +163,7 @@
     /* youtube live chat */
     /* chat font size */
     :root {
-        --tv-font-size: 1em;
+        --tv-font-size: 0.9em;
     }
 
     /* div.content.overflow-y-scroll,
@@ -366,7 +366,7 @@ domain("threads.net") {
         --font-base:
             "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial,
             var(--foreign, ""), sans-serif;
-        --tv-font-size: 1.2em;
+        --tv-font-size: 1.1em;
     }
 
     /* Anu Twitch Chat Overlay */
