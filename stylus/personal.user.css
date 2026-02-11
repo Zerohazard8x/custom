@@ -163,7 +163,7 @@
     /* youtube live chat */
     /* chat font size */
     :root {
-        --tv-font-size: 0.9em;
+        --tv-font-size: 0.8em;
     }
 
     /* div.content.overflow-y-scroll,
@@ -228,8 +228,8 @@
     [data-ytlstm-theater-mode] #chat #items > *,
     html[data-ytlstm-chat-over-video] #chat #items > *,
     [data-ytlstm-chat-over-video] yt-live-chat-text-message-renderer #content {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
     }
 
     .yt-spec-button-shape-next--size-xs {
