@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2026.02.11
+@version        2026.01.25
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -163,7 +163,7 @@
     /* youtube live chat */
     /* chat font size */
     :root {
-        --tv-font-size: 0.8em;
+        --tv-font-size: 0.9em;
     }
 
     /* div.content.overflow-y-scroll,
@@ -220,6 +220,10 @@
         width: auto;
     }
 
+    .yt-spec-button-shape-next--size-xs .yt-spec-button-shape-next__icon {
+        width: calc(var(--tv-font-size, initial) * 1.5);
+    }
+
     yt-live-chat-text-message-renderer,
     [data-ytlstm-theater-mode] #chat #items > *,
     html[data-ytlstm-chat-over-video] #chat #items > *,
@@ -230,11 +234,6 @@
 
     .yt-spec-button-shape-next--size-xs {
         padding: 0px;
-    }
-
-    .yt-spec-button-shape-next--size-xs.yt-spec-button-shape-next--icon-leading
-        .yt-spec-button-shape-next__icon {
-        margin: 0px;
     }
 }
 
