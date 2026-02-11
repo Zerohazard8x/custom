@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           variables
 @namespace      github.com/openstyles/stylus
-@version        2025.12.02
+@version        2026.02.11
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css
@@ -80,7 +80,8 @@ regexp(".*youtube.com\/live_chat.*"),
 domain("9xbuddy.in"),
 domain("nitter.tiekoetter.com"),
 domain("nitter.privacydev.net"),
-domain("nitter.poast.org"),
+domain("nitter.poast.org"), 
+domain("nitter.net"),
 domain("xcancel.com"),
 domain("mail.google.com"),
 domain("translate.google.com"),
@@ -121,22 +122,25 @@ domain("fandom.com") {
     :root {
         /* Define variables */
         /* Emoji & symbol stack */
-        --emoji: "Apple Color Emoji", "SF Symbols", "Segoe UI Emoji",
+        --emoji:
+            "Apple Color Emoji", "SF Symbols", "Segoe UI Emoji",
             "Segoe Fluent Icons", "Segoe MDL2 Assets", "Segoe UI Symbol",
             "Noto Color Emoji", "Noto Sans Symbols", "EmojiOne Color",
             "Twemoji Mozilla", "JoyPixels";
 
         /* Noto Sans (language coverage) */
-        --noto: "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
+        --noto:
+            "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans KR",
             "Noto Sans Thai", "Noto Sans Bengali", "Noto Sans Devanagari",
             "Noto Sans Arabic", "Noto Naskh Arabic", "Noto Sans Hebrew",
             "Noto Sans";
 
         /* Broad sans stack */
-        --foreign: var(--emoji, ""), var(--noto, ""), /* Latin/UI */ "Segoe UI",
-            "Helvetica Neue", /* Japanese */ "FOT-Rodin Pro", "FOT-NewRodin Pro",
-            "Hiragino Sans", "Hiragino Kaku Gothic", "Hiragino Kaku Gothic Pro",
-            "Yu Gothic", "Noto Sans JP",
+        --foreign:
+            var(--emoji, ""), var(--noto, ""), /* Latin/UI */ "Segoe UI",
+            "Helvetica Neue", /* Japanese */ "FOT-Rodin Pro",
+            "FOT-NewRodin Pro", "Hiragino Sans", "Hiragino Kaku Gothic",
+            "Hiragino Kaku Gothic Pro", "Yu Gothic", "Noto Sans JP",
             /* Chinese (Simplified) */ "PingFang SC", "Source Han Sans SC",
             "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans SC",
             /* Chinese (Traditional) */ PingFang, "PingFang TC",
@@ -151,7 +155,8 @@ domain("fandom.com") {
             /* Final generic */ sans-serif;
 
         /* Broad serif stack */
-        --foreign-serif: var(--emoji, ""), /* Japanese */ "Shippori Mincho",
+        --foreign-serif:
+            var(--emoji, ""), /* Japanese */ "Shippori Mincho",
             "Hiragino Mincho Pro", "Noto Serif JP",
             /* Chinese (Simplified) */ "Source Han Serif SC", "Noto Serif SC",
             /* Chinese (Traditional) */ "Source Han Serif TC", "Noto Serif TC",
@@ -228,22 +233,22 @@ domain("fandom.com") {
     }
 
     *:not(
-            pre *,
-            .far,
-            .fa,
-            .glyphicon,
-            [class*="vjs-"],
-            .fab,
-            .fa-github,
-            .fas,
-            .material-icons,
-            .icofont,
-            .typcn,
-            mu,
-            [class*="mu-"],
-            .glyphicon,
-            .icon
-        ),
+        pre *,
+        .far,
+        .fa,
+        .glyphicon,
+        [class*="vjs-"],
+        .fab,
+        .fa-github,
+        .fas,
+        .material-icons,
+        .icofont,
+        .typcn,
+        mu,
+        [class*="mu-"],
+        .glyphicon,
+        .icon
+    ),
     pre,
     code,
     tt {
@@ -263,175 +268,200 @@ domain("fandom.com") {
     @font-face {
         font-family: "Arial Regular";
         src: local("Arial Regular");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Black";
         src: local("Arial Black");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Narrow";
         src: local("Arial Narrow");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Bold";
         src: local("Arial Bold");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Italic";
         src: local("Arial Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Bold Italic";
         src: local("Arial Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Narrow Bold";
         src: local("Arial Narrow Bold");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Narrow Italic";
         src: local("Arial Narrow Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Narrow Bold Italic";
         src: local("Arial Narrow Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Regular";
         src: local("Helvetica Regular");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Black";
         src: local("Helvetica Black");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Narrow";
         src: local("Helvetica Narrow");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Bold";
         src: local("Helvetica Bold");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Italic";
         src: local("Helvetica Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Bold Italic";
         src: local("Helvetica Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Narrow Bold";
         src: local("Helvetica Narrow Bold");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Narrow Italic";
         src: local("Helvetica Narrow Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Helvetica Narrow Bold Italic";
         src: local("Helvetica Narrow Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Unicode MS";
         src: local("Arial Unicode MS");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Unicode MS Regular";
         src: local("Arial Unicode MS Regular");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Unicode MS Black";
         src: local("Arial Unicode MS Black");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Unicode MS Narrow";
         src: local("Arial Unicode MS Narrow");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Unicode MS Bold";
         src: local("Arial Unicode MS Bold");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Unicode MS Italic";
         src: local("Arial Unicode MS Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 
     @font-face {
         font-family: "Arial Unicode MS Bold Italic";
         src: local("Arial Unicode MS Bold Italic");
-        unicode-range: U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E,
-            U+0021-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        unicode-range:
+            U+0030-0039, U+0061-007A, U+0041-005A, U+0060, U+007E, U+0021-002F,
+            U+003A-0040, U+005B-0060, U+007B-007E;
     }
 }

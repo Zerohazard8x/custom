@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2026.02.08
+@version        2026.02.11
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -191,6 +191,8 @@
         font-family: Roboto, Arial, var(--foreign, ""), sans-serif;
     }
 
+    .yt-spec-button-shape-next--size-xs,
+    .ytSpecIconShapeHost,
     span.svelte-g0o36m span,
     #header-subtext,
     #message,
@@ -206,6 +208,8 @@
         font-size: calc(var(--tv-font-size, initial) * 0.75);
     }
 
+    .yt-spec-button-shape-next--size-xs,
+    .ytSpecIconShapeHost,
     #message.yt-live-chat-text-message-renderer
         .emoji.yt-live-chat-text-message-renderer,
     #icon * * div svg,
@@ -214,6 +218,23 @@
     #img {
         height: var(--tv-font-size, initial);
         width: auto;
+    }
+
+    yt-live-chat-text-message-renderer,
+    [data-ytlstm-theater-mode] #chat #items > *,
+    html[data-ytlstm-chat-over-video] #chat #items > *,
+    [data-ytlstm-chat-over-video] yt-live-chat-text-message-renderer #content {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .yt-spec-button-shape-next--size-xs {
+        padding: 0px;
+    }
+
+    .yt-spec-button-shape-next--size-xs.yt-spec-button-shape-next--icon-leading
+        .yt-spec-button-shape-next__icon {
+        margin: 0px;
     }
 }
 
@@ -510,7 +531,8 @@ domain("threads.net") {
 @-moz-document domain("nitter.tiekoetter.com"),
 domain("nitter.privacydev.net"),
 domain("nitter.poast.org"),
-domain("xcancel.com") {
+domain("xcancel.com"), 
+domain("nitter.net") {
     /* Nitter */
     body {
         font-family:
