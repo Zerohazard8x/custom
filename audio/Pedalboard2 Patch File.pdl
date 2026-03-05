@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Pedalboard2PatchFile>
+  <Patch tempo="120" name="1 - &lt;untitled&gt;">
+    <FILTERGRAPH>
+      <FILTER uid="1" x="21" y="198" uiLastX="0" uiLastY="0" windowOpen="0"
+	      program="0">
+	<PLUGIN name="Audio Input" descriptiveName="" format="Internal" category="I/O devices"
+		manufacturer="Raw Material Software" version="1.0" file="" uid="246006c0"
+		isInstrument="0" fileTime="0" numInputs="0" numOutputs="4"/>
+	<STATE>0.</STATE>
+      </FILTER>
+      <FILTER uid="2" x="13" y="374" uiLastX="0" uiLastY="0" windowOpen="0"
+	      program="0">
+	<PLUGIN name="Midi Input" descriptiveName="" format="Internal" category="I/O devices"
+		manufacturer="Raw Material Software" version="1.0" file="" uid="cb5fde0b"
+		isInstrument="0" fileTime="0" numInputs="0" numOutputs="0"/>
+	<STATE>0.</STATE>
+      </FILTER>
+      <FILTER uid="3" x="890" y="187" uiLastX="0" uiLastY="0" windowOpen="0"
+	      program="0">
+	<PLUGIN name="Audio Output" descriptiveName="" format="Internal" category="I/O devices"
+		manufacturer="Raw Material Software" version="1.0" file="" uid="724248cb"
+		isInstrument="0" fileTime="0" numInputs="4" numOutputs="0"/>
+	<STATE>0.</STATE>
+      </FILTER>
+      <FILTER uid="4" x="15" y="431" uiLastX="0" uiLastY="0" windowOpen="0"
+	      program="0">
+	<PLUGIN name="OSC Input" descriptiveName="Dummy AudioProcessor so we can see at a glance which plugins have OSC mappings."
+		format="Internal" category="Internal" manufacturer="Niall Moody"
+		version="1.00" file="" uid="8234cb29" isInstrument="0" fileTime="0"
+		numInputs="0" numOutputs="0"/>
+	<STATE>0.</STATE>
+      </FILTER>
+      <FILTER uid="5" x="100" y="100" uiLastX="0" uiLastY="0" windowOpen="0"
+	      program="0">
+	<PLUGIN name="Midi Interceptor" descriptiveName="Hidden Midi Interceptor plugin for mapping MIDI CCs to parameters."
+		format="Internal" category="Internal" manufacturer="Niall Moody"
+		version="1.00" file="" uid="8d4c17a6" isInstrument="1" fileTime="0"
+		numInputs="0" numOutputs="0"/>
+	<STATE>0.</STATE>
+      </FILTER>
+      <FILTER uid="6" x="330" y="56" uiLastX="760" uiLastY="366" windowOpen="0"
+	      program="0" oscMIDIAddress="" MIDIChannel="0">
+	<PLUGIN name="rnnoise_stereo" descriptiveName="RNNoise suppression for voice"
+		format="VST" category="Effect" manufacturer="werman" version="V6.5.5.3.6"
+		file="C:\Program Files\VstPlugins\rnnoise_stereo.dll" uid="526e6e31"
+		isInstrument="0" fileTime="18f8cdbf340" numInputs="2" numOutputs="2"/>
+	<STATE>378.CMlaKA....fQBMDZ....AHkatEC.A.......A...............................................................................................................................................................................Za0PxDRz....77CdswFH1Ulbyk1at0iHw3BLh.RYtM1ajklam0iHUQkQsfiH+3CH7HkSN8VZyUlO7.UPRETSfjFY8HhcgQ1WmIWXiU1WvUlbo8FYh.hcgwVck0iHx.iKvHxK9vCTAIUPMARZj0iH1EFYeIWYzI2agMFcoYWYeclbgMVYeAWYxk1ajIBH1EFa0UVOh.iKvHxK9vCTAIUPMARZj0iH1EFYeQGZxU1bn8FajIBH1EFa0UVOh.iK0jSN4jSN4XCMxLyMxDyLwHxK9vyKR4jSuk1bk4C.</STATE>
+      </FILTER>
+      <FILTER uid="8" x="193" y="354" uiLastX="10" uiLastY="10" windowOpen="0"
+	      program="0" oscMIDIAddress="" MIDIChannel="0">
+	<PLUGIN name="rnnoise_stereo" descriptiveName="RNNoise suppression for voice"
+		format="VST" category="Effect" manufacturer="werman" version="V6.5.5.3.6"
+		file="C:\Program Files\VstPlugins\rnnoise_stereo.dll" uid="526e6e31"
+		isInstrument="0" fileTime="18f8cdbf340" numInputs="2" numOutputs="2"/>
+	<STATE>378.CMlaKA....fQBMDZ....AHkatEC.A.......A...............................................................................................................................................................................Za0PxDRz....77CdswFH1Ulbyk1at0iHw3BLh.RYtM1ajklam0iHUQkQsfiH+3CH7HkSN8VZyUlO7.UPRETSfjFY8HhcgQ1WmIWXiU1WvUlbo8FYh.hcgwVck0iHx.iKvHxK9vCTAIUPMARZj0iH1EFYeIWYzI2agMFcoYWYeclbgMVYeAWYxk1ajIBH1EFa0UVOh.iKvHxK9vCTAIUPMARZj0iH1EFYeQGZxU1bn8FajIBH1EFa0UVOh.iK0jSN4jSN4XCMxLyMxDyLwHxK9vyKR4jSuk1bk4C.</STATE>
+      </FILTER>
+      <FILTER uid="12" x="653" y="355" uiLastX="521" uiLastY="527" windowOpen="0"
+	      program="0" oscMIDIAddress="" MIDIChannel="0">
+	<PLUGIN name="RoughRider3" format="VST" category="Effect" manufacturer="Audio Damage, Inc."
+		version="V1.9.6.8.6.4" file="C:\Program Files\Steinberg\VstPlugins\Audio Damage\RoughRider3.dll"
+		uid="52523330" isInstrument="0" fileTime="1758a20a2a0" numInputs="3"
+		numOutputs="2"/>
+	<STATE>729.CMlaKA....fQBMDZ....AHkTy.C.CD......J.............................................................................................................................................................................f.4X0PxDBLB...77CdswFH1Ulbyk1at0iHw3BLh.RYtM1ajklam0iHUQkQsfiH+3CH7HkTyHCTxU1bkQmQowVYf.mbkMWYz4TXsUVOhPTYlEVcrQmHf.Ga0cVZtYUYxMWZu4VOhLiKw3BLh.RcocUZjQGZ8HRLwHSMh.RcogTYocFZz0iHybSMh3COPElbg0VYzUlby4COPEjTA0DHoQVOh.iHfXWXrUWY8HhLv3BLh7hO7.UPRETSfjFY8HRLh.hcgwVck0iHx3xMv.CLv.yM1HSNyjCM0LiHu3COPEjTA0DHoQVOhDCLh.hcgwVck0iHw3BLh7hO7.UPRETSfjFY8HhLh.hcgwVck0iHsTyLtbCLv.CLvbiMxjyL4PSMh7hO7.UPRETSfjFY8HxLh.hcgwVck0iHybSLtTSNyjiMyXiLy.CM1jiHu3COPEjTA0DHoQVOhPiHfXWXrUWY8HBLt.CL4jSN4jSN4byM1PCNxTCNxHxK9vCTAIUPMARZj0iH0HBH1EFa0UVOhDCLt.iHu3COPEjTA0DHoQVOhXiHfXWXrUWY8HhL33BN4jSN4jiMwfSMy.iL2HxK9vCTAIUPMARZj0iH2HBH1EFa0UVOhDCLv3BLh7hO7.UPRETSfjFY8HBNh.hcgwVck0iHx3xMv.CLv.yM1HSNyjCM0LiHu3COPEjTA0DHoQVOhjiHfXWXrUWY8HBLt.iHu3COu.UXxEVakQWYxMmO77hTRMiLPIWYyUFcFkFak4C.</STATE>
+      </FILTER>
+      <FILTER uid="13" x="411" y="355" uiLastX="2264" uiLastY="249" windowOpen="0"
+	      program="0" oscMIDIAddress="" MIDIChannel="0">
+	<PLUGIN name="reaeq-standalone" descriptiveName="ReaEQ (ReaPlugs Edition)"
+		format="VST" category="Effect" manufacturer="Cockos" version="V1.1.0.0"
+		file="C:\Program Files\Steinberg\VstPlugins\ReaPlugs\reaeq-standalone.dll"
+		uid="72656571" isInstrument="0" fileTime="152049bf620" numInputs="2"
+		numOutputs="2"/>
+	<STATE>221.CMlaKA....fQBMDZ....AHWYkEG..P.S....A...............................................................................................................................................................................8DB...P.....D....D....PPfFcKPE+Z.8Kpi3bBeI9O++++++++++S.A....D.............7+......</STATE>
+      </FILTER>
+      <FILTER uid="16" x="525" y="55" uiLastX="760" uiLastY="390" windowOpen="0"
+	      program="0" oscMIDIAddress="" MIDIChannel="0">
+	<PLUGIN name="BC Gain 3 VST(Stereo)" descriptiveName="BC Gain 3 (Stereo)"
+		format="VST" category="Mastering" manufacturer="Blue Cat Audio"
+		version="V3.4.3.0" file="C:\Program Files\Steinberg\VstPlugins\BC Gain 3 VST(Stereo).dll"
+		uid="33393233" isInstrument="0" fileTime="1830e758b80" numInputs="2"
+		numOutputs="2"/>
+	<STATE>1673.CMlaKA....fQBMDZ....ALSNxLC...P.....A.............................................................................................................................................................................PAoyyO30FafXWYxMWZu4VOhDiKvHBHk41XuQVZtcVOhTEUF0BNh7iO7.kbkMWYzAhckI2bo8la8HBMh.Bbx81YNEVak0iHDUlYgUGazIBHiUmbxUlazAkbkMWYzYTZrUFTgQGZ8HBQkYVX0wFct.mbkMWYzIBHiUmbxUlazAkbkMWYzYTZrUlTu8Fc8HBLh.RSIQTRI4Fb0QGQkYVX0wFc8HRLh.RSIQTROUGcvUGcDUlYgUGaz0iHwHBHMkDQIAkbuclbg01PnElamU1PnElatUFa8HRKwHhO7zTRDkzPu4Fcx8FarUlbtzVYzEFHr81XqUFY8HBLh7hO7zTRDkjSkgGcPIWYyUFcSUFczklamAxXnElatUFa8HBLh.ha00lXkIWOh.iHfzVZjkVQtElXrUFY8HBLh.Bc4AWY8HxPCIxK9vSSIQTRPIWY1AkbkMWYzMUYzQWZtcFHigVXt4VYr0iHvHBHtUWahUlb8HBLh.RaoQVZE4VXhwVYj0iHvHBHzkGbk0iHCMjHu3COo4Fb0QGTgIWXsMGHi8VctQWOhHiHf.GL8HBLh.BbwziH3HxK9vSauQVYr4COs8FYkwlO7LGcgQWYfXWYxMWZu4VOhTiH9vCbgIWXsMGHvMza04Fc8HRLxHhO7.GLf3VXsUVOhblbuUGbA4RYtElXrUFYh.hcgwVck0iHvHxK9vCbw.hag0VY8HxYx8VcvIjKk4VXhwVYjIBH1EFa0UVOh.iHu3COvICHtEVak0iHmI2a0A2PtTlagIFakQlHfXWXrUWY8HBLh7hO7.2Lf3VXsUVOhblbuUGbD4RYtElXrUFYh.hcgwVck0iHvHxK9vCbz.hag0VY8HxYx8VcvUjKk4VXhwVYjIBH1EFa0UVOh.iHu3COvUCHtEVak0iHmI2a0AmQtTlagIFakQlHfXWXrUWY8HBLh7hO7.mMf3VXsUVOhblbuUGbG4RYtElXrUFYh.hcgwVck0iHvHxK9vCb2.hag0VY8HxYx8VcvgjKk4VXhwVYjIBH1EFa0UVOh.iHu3COvgCHtEVak0iHmI2a0AWRtTlagIFakQlHfXWXrUWY8HBLh7hO7.WNf3VXsUVOhvVZts1WxUFagQWZ1UlHfXWXrUWY8HRLh7hO7.WLv.hag0VY8HBao41ZeIWY1UlbyUlHfXWXrUWY8HBLh7hO7.WLw.hag0VY8Hhau8Eao41Zh.hcgwVck0iHwHxK9vyKvElbg01b9vyKyQWXzUlO77RauQVYr4COuz1ajUFa9vyQUkDH1Ulbyk1at0iHwHBH0MWYDUlYgUGaz0iHwHBHysVZto0au0VOhDiHfLFZg41YkQ1To41XkAkbkMWYzwzagQVYj0iHwHhO7L2Zo4FH1Ulbyk1at0iHxHhO7LGcgQWYfXWYxMWZu4VOhTiH9vCbgIWXsMGHvMza04Fc8HxLh3COvACHtEVak0iHyg1a28Eao41ZeM1atQmbuw1bh.hcgwVck0iHvHxK9vCbw.hag0VY8HBcnUVak4xavE1XoQWdh.hcgwVck0iHw.CLh7hO7.mLf3VXsUVOhPGZk0VYtLGZuc2WyUFczklamMmHfXWXrUWY8HBLh7hO77BbgIWXsMmO7zVYzEFHsMza04Fc8HhLh3COsACHtEVak0iHzgVYsUlKuAWXikFc44RakQWXh3CO1EFa0UFH1Ulbyk1at0iH0HhO7.WXxEVayABbC8VctQWOhDiH9vCbv.hag0VY8HBauM1ZkQlHfXWXrUWY8HBLh7hO77BbgIWXsMmO77hcgwVck4COuzFL9vSaw.hag0VY8HBcnUVak4xbn81ceMWYzQWZtc1btzVYzElH9vicgwVckAhckI2bo8la8HRMh3COvElbg01bf.2PuUmaz0iHwHhO7.GLf3VXsUVOhv1aisVYjIBH1EFa0UVOh.iHu3COu.WXxEVay4COuXWXrUWY9vyKsEiO77RakQWX9vyKyQWXzUlO77xbqkla9vyKGUUR9vyKPIWYyUFc9..</STATE>
+      </FILTER>
+      <FILTER uid="18" x="897" y="0" uiLastX="760" uiLastY="390" windowOpen="0"
+	      program="0" oscMIDIAddress="" MIDIChannel="0">
+	<PLUGIN name="VU Meter" descriptiveName="Simple VU Meter." format="Internal"
+		category="Pedalboard Processors" manufacturer="Niall Moody" version="1.00"
+		file="" uid="b11e8ec8" isInstrument="0" fileTime="0" numInputs="2"
+		numOutputs="0"/>
+	<STATE>86.VMjLgzD....OPUFYgwlXuElbjIiU00TYzUlbSUFczklamMGHkQVZz8lbX0iHvHBHkQVZz8lbY0iHvHBHkQVZz8lbW0iHvHBHkQVZz8lbH0iHvHxK9..</STATE>
+      </FILTER>
+      <FILTER uid="19" x="901" y="303" uiLastX="0" uiLastY="0" windowOpen="0"
+	      program="0" oscMIDIAddress="" MIDIChannel="0">
+	<PLUGIN name="VU Meter" descriptiveName="Simple VU Meter." format="Internal"
+		category="Pedalboard Processors" manufacturer="Niall Moody" version="1.00"
+		file="" uid="b11e8ec8" isInstrument="0" fileTime="0" numInputs="2"
+		numOutputs="0"/>
+	<STATE>86.VMjLgzD....OPUFYgwlXuElbjIiU00TYzUlbSUFczklamMGHkQVZz8lbX0iHvHBHkQVZz8lbY0iHvHBHkQVZz8lbW0iHvHBHkQVZz8lbH0iHvHxK9..</STATE>
+      </FILTER>
+      <CONNECTION srcFilter="1" srcChannel="0" dstFilter="6" dstChannel="0"/>
+      <CONNECTION srcFilter="1" srcChannel="1" dstFilter="6" dstChannel="1"/>
+      <CONNECTION srcFilter="1" srcChannel="2" dstFilter="8" dstChannel="0"/>
+      <CONNECTION srcFilter="1" srcChannel="3" dstFilter="8" dstChannel="1"/>
+      <CONNECTION srcFilter="2" srcChannel="4096" dstFilter="5" dstChannel="4096"/>
+      <CONNECTION srcFilter="6" srcChannel="0" dstFilter="16" dstChannel="0"/>
+      <CONNECTION srcFilter="6" srcChannel="1" dstFilter="16" dstChannel="1"/>
+      <CONNECTION srcFilter="8" srcChannel="0" dstFilter="13" dstChannel="0"/>
+      <CONNECTION srcFilter="8" srcChannel="1" dstFilter="13" dstChannel="1"/>
+      <CONNECTION srcFilter="12" srcChannel="0" dstFilter="3" dstChannel="2"/>
+      <CONNECTION srcFilter="12" srcChannel="1" dstFilter="3" dstChannel="3"/>
+      <CONNECTION srcFilter="12" srcChannel="0" dstFilter="19" dstChannel="0"/>
+      <CONNECTION srcFilter="12" srcChannel="1" dstFilter="19" dstChannel="1"/>
+      <CONNECTION srcFilter="13" srcChannel="0" dstFilter="12" dstChannel="0"/>
+      <CONNECTION srcFilter="13" srcChannel="1" dstFilter="12" dstChannel="1"/>
+      <CONNECTION srcFilter="16" srcChannel="0" dstFilter="3" dstChannel="0"/>
+      <CONNECTION srcFilter="16" srcChannel="1" dstFilter="3" dstChannel="1"/>
+      <CONNECTION srcFilter="16" srcChannel="0" dstFilter="18" dstChannel="0"/>
+      <CONNECTION srcFilter="16" srcChannel="1" dstFilter="18" dstChannel="1"/>
+    </FILTERGRAPH>
+    <Mappings/>
+    <UserNames/>
+  </Patch>
+</Pedalboard2PatchFile>

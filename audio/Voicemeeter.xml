@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VBAudioVoicemeeterSettings>
+	<VoiceMeeterDeviceConfiguration>
+		<InputDev index='1' type='4' />
+		<OutputDev index='1' type='4' />
+	</VoiceMeeterDeviceConfiguration>
+	<VoiceMeeterParameters>
+		<Strip index='1' busa='0' />
+		<Strip index='4' busb='0' />
+		<Strip index='5' busb='0' />
+		<PatchInsert c1='1' c2='1' c3='0' c4='0' c5='0' c6='0' c7='0' c8='0' c9='0' c10='0' c11='0'
+			c12='0' c13='0' c14='0' c15='1' c16='1' c17='1' c18='1' c19='1' c20='1' c21='1' c22='1'
+			mode='0' />
+	</VoiceMeeterParameters>
+</VBAudioVoicemeeterSettings>

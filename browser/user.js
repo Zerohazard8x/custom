@@ -30,6 +30,8 @@ user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 
 user_pref("gfx.color_management.mode", 1);
+user_pref("gfx.color_management.hdr_video", true);
+user_pref("layout.css.video-dynamic-range.allows-high", true);
 user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
 
 user_pref("media.wmf.hevc.enabled", 1);
@@ -38,8 +40,8 @@ user_pref("media.wmf.hevc.enabled", 1);
 user_pref("gfx.webrender.compositor.force-enabled", true);
 
 user_pref(
-    "network.http.referer.disallowCrossSiteRelaxingDefault.top_navigation",
-    true
+	"network.http.referer.disallowCrossSiteRelaxingDefault.top_navigation",
+	true
 );
 // user_pref("network.trr.custom_uri", "https://dns11.quad9.net/dns-query");
 user_pref("network.trr.mode", 3);
