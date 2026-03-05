@@ -62,7 +62,7 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); /// user
 
 user_pref("app.update.auto", true);
 user_pref("app.update.background.enabled", true);	
-user_pref("app.update.background.interval", 1);
+// user_pref("app.update.background.interval", 1);
 
 user_pref("sidebar.verticalTabs", true);
 user_pref("sidebar.expandOnHover", true);
