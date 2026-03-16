@@ -1,0 +1,30 @@
+[Master]
+[Settings]
+[General]
+Sources=2
+Tables=1
+Layers=1
+[Source0]
+Name=Framerate
+Units=FPS
+Provider=MSI Afterburner
+SrcId=00000050
+Gpu=FFFFFFFF
+SrcName=
+[Source1]
+Name=Frametime
+Units=ms
+Provider=MSI Afterburner
+SrcId=00000051
+Gpu=FFFFFFFF
+SrcName=
+[Table0]
+Name=fps
+ValueAlignment=0
+Lines=1
+Line0Cells=1
+Line0Cell0Source=Framerate
+[Layer0]
+Name=FPS
+Text=<TT=fps><G=Frametime,-4,0,1,0,48,0>
+TextColor=FFFFFF
