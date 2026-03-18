@@ -2,7 +2,7 @@
 [Settings]
 [General]
 Sources=3
-Tables=2
+Tables=1
 Layers=1
 [Source0]
 Name=Framerate
@@ -27,16 +27,10 @@ ReadingName=Charge Level
 Name=fps
 ValueAlignment=0
 Lines=1
-Line0Cells=1
-Line0Cell0Source=Framerate
-[Table1]
-Name=chg
-ValueAlignment=0
-UnitsAlignment=0
-Lines=1
-Line0Cells=1
+Line0Cells=2
 Line0Cell0Source=Charge Level
+Line0Cell1Source=Framerate
 [Layer0]
 Name=FPS
-Text=<TT=chg><TT=fps><G=Frametime,-4,0,1,0,48,0>
+Text=<TT=fps><G=Frametime,-4,0,1,0,48,0>
 TextColor=FFFFFF
