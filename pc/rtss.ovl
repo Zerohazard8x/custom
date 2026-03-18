@@ -1,8 +1,8 @@
 [Master]
 [Settings]
 [General]
-Sources=2
-Tables=1
+Sources=3
+Tables=2
 Layers=1
 [Source0]
 Name=Framerate
@@ -16,13 +16,27 @@ Units=ms
 Provider=MSI Afterburner
 SrcId=00000051
 Gpu=FFFFFFFF
+[Source2]
+Name=Charge Level
+Units=%
+Provider=HwInfo
+SensorInst=0
+ReadingType=8
+ReadingName=Charge Level
 [Table0]
 Name=fps
 ValueAlignment=0
 Lines=1
 Line0Cells=1
 Line0Cell0Source=Framerate
+[Table1]
+Name=chg
+ValueAlignment=0
+UnitsAlignment=0
+Lines=1
+Line0Cells=1
+Line0Cell0Source=Charge Level
 [Layer0]
 Name=FPS
-Text=<TT=fps><G=Frametime,-4,0,1,0,48,0>
+Text=<TT=chg><TT=fps><G=Frametime,-4,0,1,0,48,0>
 TextColor=FFFFFF
