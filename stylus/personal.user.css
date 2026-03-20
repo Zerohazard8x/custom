@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2026.03.06
+@version        2026.03.20
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -234,6 +234,17 @@
 
 	.yt-spec-button-shape-next--size-xs {
 		padding: 0px;
+	}
+
+	/* chat overlay userscript*/
+	ytd-watch-flexy[fullscreen]
+		#chat.ytd-watch-flexy:not([collapsed])
+		#chatframe.ytd-live-chat-frame,
+	ytd-watch-flexy[theater]
+		#chat.ytd-watch-flexy:not([collapsed])
+		#chatframe.ytd-live-chat-frame {
+		height: 300px;
+		width: 200px;
 	}
 }
 
