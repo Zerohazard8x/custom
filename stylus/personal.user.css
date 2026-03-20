@@ -236,6 +236,10 @@
 		padding: 0px;
 	}
 
+	yt-live-chat-banner-manager#live-chat-banner.style-scope.yt-live-chat-item-list-renderer {
+		display: none;
+	}
+
 	/* chat overlay userscript*/
 	ytd-watch-flexy[fullscreen]
 		#chat.ytd-watch-flexy:not([collapsed])
@@ -243,8 +247,8 @@
 	ytd-watch-flexy[theater]
 		#chat.ytd-watch-flexy:not([collapsed])
 		#chatframe.ytd-live-chat-frame {
-		height: 300px;
-		width: 200px;
+		height: 300px !important;
+		width: 200px !important;
 	}
 }
 
