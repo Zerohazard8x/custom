@@ -2587,6 +2587,69 @@
             "file_url": "https://github.com/Zerohazard8x/custom/raw/main/js/hide-twitch-replies.user.js",
             "uuid": "df0b0c86-d5b8-436d-abec-cb1ccfdb09df",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+        },
+        {
+            "name": "Youtube live, Simple Chat Stylizer",
+            "options": {
+                "check_for_updates": true,
+                "user_modified": null,
+                "comment": null,
+                "compatopts_for_requires": true,
+                "compat_wrappedjsobject": false,
+                "compat_metadata": false,
+                "compat_foreach": false,
+                "compat_powerful_this": null,
+                "sandbox": null,
+                "noframes": null,
+                "unwrap": null,
+                "run_at": null,
+                "run_in": null,
+                "tags": [],
+                "override": {
+                    "use_includes": [],
+                    "orig_includes": [],
+                    "merge_includes": true,
+                    "use_matches": [],
+                    "orig_matches": [
+                        "https://www.youtube.com/*"
+                    ],
+                    "merge_matches": true,
+                    "use_excludes": [],
+                    "orig_excludes": [
+                        "https;//studio.youtube.com/*",
+                        "https://accounts.youtube.com/*"
+                    ],
+                    "merge_excludes": true,
+                    "use_connects": [],
+                    "orig_connects": [],
+                    "merge_connects": true,
+                    "use_blockers": [],
+                    "orig_run_at": "document-end",
+                    "orig_run_in": [],
+                    "orig_noframes": null,
+                    "orig_tags": []
+                }
+            },
+            "storage": {
+                "ts": 1774011471881,
+                "data": {}
+            },
+            "enabled": true,
+            "position": 22,
+            "file_url": "https://update.greasyfork.org/scripts/412016/Youtube%20live%2C%20Simple%20Chat%20Stylizer.user.js",
+            "uuid": "3d8d4068-ac5c-4c91-8c7c-1956cd2a78e9",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
+            "requires": [
+                {
+                    "meta": {
+                        "name": "purify.min.js",
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js",
+                        "ts": 1774011480091,
+                        "mimetype": "text/javascript"
+                    },
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                }
+            ]
         }
     ],
     "settings": {
