@@ -19,10 +19,9 @@ Gpu=FFFFFFFF
 [Source2]
 Name=Charge Level
 Units=%
-Provider=HwInfo
-SensorInst=0
-ReadingType=8
-ReadingName=Charge Level
+Provider=MSI Afterburner
+SrcId=000000FF
+Gpu=00000000
 [Table0]
 Name=fps
 ValueAlignment=0
