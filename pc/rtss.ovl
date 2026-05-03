@@ -1,7 +1,7 @@
 [Master]
 [Settings]
 [General]
-Sources=3
+Sources=6
 Tables=0
 Layers=1
 [Source0]
@@ -9,19 +9,33 @@ Name=Framerate
 Units=FPS
 Provider=MSI Afterburner
 SrcId=00000050
-Gpu=FFFFFFFF
 [Source1]
+Name=Framerate
+Units=FPS
+Provider=PresentMon
+ID=FrameratePresented
+[Source2]
 Name=Frametime
 Units=ms
 Provider=MSI Afterburner
 SrcId=00000051
-Gpu=FFFFFFFF
-[Source2]
+[Source3]
+Name=Frametime
+Units=ms
+Provider=PresentMon
+ID=msBetweenPresents
+[Source4]
+Name=Charge Level
+Units=%
+Provider=HwInfo
+SensorInst=0
+ReadingType=8
+ReadingName=Charge Level
+[Source5]
 Name=Charge Level
 Units=%
 Provider=MSI Afterburner
 SrcId=000000FF
-Gpu=00000000
 [Layer0]
 Name=a
 Text=<C=FFFFFF>%Charge Level%<S=50> %<S> %Framerate%<S=50> FPS<S> <G=Frametime,-4,0,0,0,48,0><S=50> <APP><S><C>
