@@ -2,8 +2,8 @@
 [Settings]
 [General]
 Sources=8
-Tables=1
-Layers=4
+Tables=0
+Layers=2
 [Source0]
 Name=Framerate
 Units=FPS
@@ -46,37 +46,8 @@ Provider=HAL
 Name=PresentMode
 Provider=PresentMon
 ID=PresentMode
-[Table0]
-Name=table
-ValueSize=50
-ValueAlignment=0
-UnitsSize=0
-UnitsAlignment=0
-Lines=3
-Line0Cells=1
-Line0Cell0Text=<S=-50><APP><S>
-Line1Cells=1
-Line1Cell0Text=<S=50><IF FramegenON>FG ON<ELSE>FG OFF<IF><S>
-Line2Cells=1
-Line2Cell0Text=<S=-50>FPS<S>
 [Layer0]
-Text=<C=FFFFFF><S=150>%Framerate%<S><C>
-ExtentX=18
-ExtentY=14
-ExtentOrigin=4
+Text=<C=FFFFFF><S=50><APP> | <IF FramegenON>FG ON<ELSE>FG OFF<IF><S><C>
+PositionY=-1
 [Layer1]
-Text=<C=FFFFFF> <G=Frametime,-4,0,0,3.47,48.61,0> <C>
-PositionX=35
-ExtentX=24
-ExtentY=14
-[Layer2]
-Text=<C=FFFFFF><TT=table><C>
-PositionX=18
-ExtentX=7
-ExtentY=14
-[Layer3]
-VisibilitySource=Charge Level
-Text=<C=FFFFFF><S=150>%Charge Level%<S><S=50> %<S><C>
-PositionX=59
-ExtentX=24
-ExtentY=14
+Text=<C=FFFFFF><IF Charge Level>%Charge Level%<S=50> %<S> %Framerate%<S=50> FPS<S> <G=Frametime,-4,0,0,3.47,48.61,0><ELSE>%Framerate%<S=50> FPS<S> <G=Frametime,-4,0,0,3.47,48.61,0><IF><S><C>
