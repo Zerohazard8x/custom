@@ -1,17 +1,19 @@
 [Master]
 [Settings]
 [General]
-Sources=6
-Tables=0
-Layers=1
+Sources=8
+Tables=1
+Layers=4
 [Source0]
 Name=Framerate
 Units=FPS
+Formula=floor(x)
 Provider=MSI Afterburner
 SrcId=00000050
 [Source1]
 Name=Framerate
 Units=FPS
+Formula=floor(x)
 Provider=PresentMon
 ID=FrameratePresented
 [Source2]
@@ -35,7 +37,46 @@ ReadingName=Charge Level
 Name=Charge Level
 Units=%
 Provider=MSI Afterburner
-SrcId=000000FF
+SrcId=FFFFFFFF
+[Source6]
+Name=FramegenON
+Formula="PresentMode" ==3
+Provider=HAL
+[Source7]
+Name=PresentMode
+Provider=PresentMon
+ID=PresentMode
+[Table0]
+Name=table
+ValueSize=50
+ValueAlignment=0
+UnitsSize=0
+UnitsAlignment=0
+Lines=3
+Line0Cells=1
+Line0Cell0Text=<S=-50><APP><S>
+Line1Cells=1
+Line1Cell0Text=<S=50><IF FramegenON>FG ON<ELSE>FG OFF<IF><S>
+Line2Cells=1
+Line2Cell0Text=<S=-50>FPS<S>
 [Layer0]
-Name=a
-Text=<C=FFFFFF>%Charge Level%<S=50> %<S> %Framerate%<S=50> FPS<S> <G=Frametime,-4,0,0,0,48,0><S=50> <APP><S><C>
+Text=<C=FFFFFF><S=150>%Framerate%<S><C>
+ExtentX=18
+ExtentY=14
+ExtentOrigin=4
+[Layer1]
+Text=<C=FFFFFF> <G=Frametime,-4,0,0,3.47,48.61,0> <C>
+PositionX=35
+ExtentX=24
+ExtentY=14
+[Layer2]
+Text=<C=FFFFFF><TT=table><C>
+PositionX=18
+ExtentX=7
+ExtentY=14
+[Layer3]
+VisibilitySource=Charge Level
+Text=<C=FFFFFF><S=150>%Charge Level%<S><S=50> %<S><C>
+PositionX=59
+ExtentX=24
+ExtentY=14
