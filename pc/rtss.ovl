@@ -3,7 +3,7 @@
 [General]
 Sources=8
 Tables=0
-Layers=2
+Layers=1
 [Source0]
 Name=Framerate
 Units=FPS
@@ -47,7 +47,4 @@ Name=PresentMode
 Provider=PresentMon
 ID=PresentMode
 [Layer0]
-Text=<C=FFFFFF><S=50><APP> | <IF FramegenON>FG ON<ELSE>FG OFF<IF><S><C>
-PositionY=-1
-[Layer1]
-Text=<C=FFFFFF><IF Charge Level>%Charge Level%<S=50> %<S> %Framerate%<S=50> FPS<S> <G=Frametime,-4,0,0,3.47,48.61,0><ELSE>%Framerate%<S=50> FPS<S> <G=Frametime,-4,0,0,3.47,48.61,0><IF><S><C>
+Text=<C=FFFFFF><IF Charge Level>%Charge Level%<S=50> %<S> <IF>%Framerate%<S=50> FPS<S> <G=Frametime,-4,-1,0,3.47,48.61,0>\n<S><S=50><APP> | <IF FramegenON>FG ON<ELSE>FG OFF<IF><S><C>
