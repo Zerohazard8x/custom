@@ -1,7 +1,7 @@
 [Master]
 [Settings]
 [General]
-Sources=8
+Sources=15
 Tables=0
 Layers=1
 [Source0]
@@ -46,5 +46,48 @@ Provider=HAL
 Name=PresentMode
 Provider=PresentMon
 ID=PresentMode
+[Source8]
+Name=GPUThrottleNVIDIA
+Formula=validate(x) ? x : 0
+Provider=HwInfo
+SensorInst=0
+ReadingType=8
+ReadingName=Performance Limit - Thermal
+[Source9]
+Name=GPUThrottleAMD
+Formula=validate(x) ? x : 0
+Provider=HwInfo
+SensorInst=0
+ReadingType=8
+ReadingName=GPU VR GFX Thermal Limit
+[Source10]
+Name=GPUThrottleIntel
+Formula=validate(x) ? x : 0
+Provider=HwInfo
+SensorInst=0
+ReadingType=8
+ReadingName=Hardware Limit
+[Source11]
+Name=CPUThrottleIntel
+Formula=validate(x) ? x : 0
+Provider=HwInfo
+SensorInst=0
+ReadingType=8
+ReadingName=Package/Ring Thermal Throttling
+[Source12]
+Name=CPUThrottleAMD
+Formula=validate(x) ? x : 0
+Provider=HwInfo
+SensorInst=0
+ReadingType=8
+ReadingName=Thermal Throttling (PROCHOT EXT)
+[Source13]
+Name=GPUThrottle
+Formula=min(1,(validate(GPUThrottleNVIDIA)?GPUThrottleNVIDIA:0)+(validate(GPUThrottleAMD)?min(1,max(0,GPUThrottleAMD-98)):0)+(validate(GPUThrottleIntel)?GPUThrottleIntel:0))
+Provider=HAL
+[Source14]
+Name=CPUThrottle
+Formula=min(1,(validate(CPUThrottleIntel)?CPUThrottleIntel:0)+(validate(CPUThrottleAMD)?CPUThrottleAMD:0))
+Provider=HAL
 [Layer0]
-Text=<C=FFFFFF><IF Charge Level>%Charge Level%<S=50> %<S> <IF>%Framerate%<S=50> FPS<S> <G=Frametime,-4,-1,0,3.47,48.61,0>\n<S><S=50><APP> | <IF FramegenON>FG ON<ELSE>FG OFF<IF><S><C>
+Text=<C=FFFFFF><IF Charge Level>%Charge Level%<S=50> %<S> <IF>%Framerate%<S=50> FPS<S> <G=Frametime,-4,-1,0,3.47,48.61,0>\n<S><S=50><APP> | <IF FramegenON>FG ON<ELSE>FG OFF<IF><S><C><C=FF0000><S=50><IF CPUThrottle>\nCPU IS THROTTLING<ELSE><IF><IF GPUThrottle>\nGPU IS THROTTLING<ELSE><IF><S><C>
