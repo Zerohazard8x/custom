@@ -51,7 +51,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["*://*/*"],
+                    "orig_matches": [
+                        "*://*/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [
                         "/^[^:/#?]*:\\/\\/([^#?/]*\\.)?duckduckgo\\.com(:[0-9]{1,5})?\\/.*$/",
@@ -103,7 +105,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["https://www.twitch.tv/*"],
+                    "orig_matches": [
+                        "https://www.twitch.tv/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -170,7 +174,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["*://*.youtube.com/*"],
+                    "orig_matches": [
+                        "*://*.youtube.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [
@@ -179,7 +185,9 @@
                     ],
                     "merge_excludes": true,
                     "use_connects": [],
-                    "orig_connects": ["youtube.com"],
+                    "orig_connects": [
+                        "youtube.com"
+                    ],
                     "merge_connects": true,
                     "use_blockers": [],
                     "orig_run_at": "document-end",
@@ -205,7 +213,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["*://*.discord.com/*"],
+                    "orig_matches": [
+                        "*://*.discord.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -244,7 +254,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["https://*.jstris.jezevec10.com/*"],
+                    "orig_matches": [
+                        "https://*.jstris.jezevec10.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -287,7 +299,10 @@
                     "orig_excludes": [],
                     "merge_excludes": true,
                     "use_connects": [],
-                    "orig_connects": ["greasyfork.org", "sleazyfork.org"],
+                    "orig_connects": [
+                        "greasyfork.org",
+                        "sleazyfork.org"
+                    ],
                     "merge_connects": true,
                     "use_blockers": [],
                     "orig_run_at": "document-idle",
@@ -403,7 +418,9 @@
                         "hdencode.org",
                         "selezen.club"
                     ],
-                    "orig_connects": ["*"],
+                    "orig_connects": [
+                        "*"
+                    ],
                     "merge_connects": true,
                     "use_blockers": [],
                     "orig_run_at": "document-start",
@@ -922,7 +939,9 @@
                 "check_for_updates": true,
                 "override": {
                     "use_includes": [],
-                    "orig_includes": ["/^https://metager.[a-z]*/"],
+                    "orig_includes": [
+                        "/^https://metager.[a-z]*/"
+                    ],
                     "merge_includes": true,
                     "use_matches": [],
                     "orig_matches": [
@@ -1006,7 +1025,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["https://*.youtube.com/*"],
+                    "orig_matches": [
+                        "https://*.youtube.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -1038,12 +1059,18 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["file:///*", "*://*/*"],
+                    "orig_matches": [
+                        "file:///*",
+                        "*://*/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [
                         "/^[^:/#?]*:\\/\\/([^#?/]*\\.)?docs\\.google\\.com(:[0-9]{1,5})?\\/.*$/"
                     ],
-                    "orig_excludes": ["*#noredirect", "*#nr"],
+                    "orig_excludes": [
+                        "*#noredirect",
+                        "*#nr"
+                    ],
                     "merge_excludes": true,
                     "use_connects": [],
                     "orig_connects": [
@@ -1280,7 +1307,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["https://www.twitch.tv/*"],
+                    "orig_matches": [
+                        "https://www.twitch.tv/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -1353,7 +1382,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["https://*.youtube.com/*"],
+                    "orig_matches": [
+                        "https://*.youtube.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -1523,7 +1554,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["*://kick.com/*"],
+                    "orig_matches": [
+                        "*://kick.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -1656,7 +1689,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["*://*.discord.com/*"],
+                    "orig_matches": [
+                        "*://*.discord.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -1681,39 +1716,6 @@
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
-            "name": "YouTube Enhancer (Reveal Channel ID)",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": ["https://www.youtube.com/*"],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [],
-                    "merge_excludes": true,
-                    "use_connects": ["exyezed.vercel.app"],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-idle",
-                    "orig_run_in": [],
-                    "orig_noframes": null,
-                    "orig_tags": []
-                }
-            },
-            "storage": {
-                "ts": 0,
-                "data": {}
-            },
-            "enabled": false,
-            "file_url": "https://update.greasyfork.org/scripts/513116/YouTube%20Enhancer%20%28Reveal%20Channel%20ID%29.user.js",
-            "uuid": "",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-        },
-        {
             "name": "AdGuard Extra",
             "options": {
                 "check_for_updates": true,
@@ -1722,7 +1724,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["*://*/*"],
+                    "orig_matches": [
+                        "*://*/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [
@@ -1779,7 +1783,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["*://*.reddit.com/*"],
+                    "orig_matches": [
+                        "*://*.reddit.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
@@ -1812,7 +1818,9 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["https://www.youtube.com/*"],
+                    "orig_matches": [
+                        "https://www.youtube.com/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [
@@ -1850,7 +1858,10 @@
                     "orig_includes": [],
                     "merge_includes": true,
                     "use_matches": [],
-                    "orig_matches": ["*://*.youtube.com/*", "*://*.youtu.be/*"],
+                    "orig_matches": [
+                        "*://*.youtube.com/*",
+                        "*://*.youtu.be/*"
+                    ],
                     "merge_matches": true,
                     "use_excludes": [],
                     "orig_excludes": [],
