@@ -1,253 +1,153 @@
 [
-  {
-    "settings": {
-      "updateInterval": 1
-    }
-  },
-  {
-    "enabled": true,
-    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css",
-    "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "",
-    "usercssData": {
-      "name": "monospace",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "0",
-      "description": "My personal changes to monospace fonts, etc",
-      "author": "Zerohazard8x LLM",
-      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css",
-      "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus"
-    },
-    "author": "Zerohazard8x LLM",
-    "description": "My personal changes to monospace fonts, etc",
-    "name": "monospace"
-  },
-  {
-    "enabled": false,
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "customName": "Discord Catppuccin Edit",
-    "sourceCode": "/* ==UserStyle==\n@name           Discord Catppuccin\n@namespace      github.com/catppuccin/discord\n@version        0.2.1\n@description    Soothing pastel theme for Discord\n@author         Catppuccin - edit by Zerohazard8x\n@preprocessor   stylus\n==/UserStyle== */\n\n@-moz-document regexp(\"https?://(canary\\\\.|ptb\\\\.|)discord.com/.*\") {\n    @import url(\"https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css\")\n}\n",
-    "usercssData": {
-      "name": "Discord Catppuccin",
-      "namespace": "github.com/catppuccin/discord",
-      "version": "0",
-      "description": "Soothing pastel theme for Discord",
-      "author": "Catppuccin - edit by Zerohazard8x",
-      "preprocessor": "stylus"
-    },
-    "author": "Catppuccin - edit by Zerohazard8x",
-    "description": "Soothing pastel theme for Discord",
-    "name": "Discord Catppuccin"
-  },
-  {
-    "enabled": true,
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "",
-    "usercssData": {
-      "name": "monospace2",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "0",
-      "description": "My personal changes to codeblocks, etc",
-      "author": "Zerohazard8x LLM",
-      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.css",
-      "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus"
-    },
-    "author": "Zerohazard8x LLM",
-    "description": "My personal changes to codeblocks, etc",
-    "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.css",
-    "name": "monospace2",
-            "exclusions": []
-  },
-  {
-    "enabled": true,
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "",
-    "usercssData": {
-      "name": "personal2",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "0",
-      "description": "My personal userstyle",
-      "author": "Zerohazard8x LLM",
-      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css",
-      "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus"
-    },
-    "author": "Zerohazard8x LLM",
-    "description": "My personal userstyle",
-    "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css",
-    "name": "personal2"
-  },
-  {
-    "enabled": false,
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "",
-    "usercssData": {
-      "name": "font-size-adjust style",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "0",
-      "author": "zerohazard8x + LLM",
-      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/font-size-adjust.user.css",
-      "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus"
-    },
-    "author": "zerohazard8x + LLM",
-    "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/font-size-adjust.user.css",
-    "name": "font-size-adjust style",
-            "exclusions": []
-  },
-  {
-    "enabled": true,
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "",
-    "usercssData": {
-      "author": "Zerohazard8x + LLM",
-      "description": "My personal userstyle",
-      "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-      "name": "personal",
-      "namespace": "github.com/openstyles/stylus",
-      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css",
-      "version": "0"
-    },
-    "author": "Zerohazard8x + LLM",
-    "description": "My personal userstyle",
-    "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css",
-    "name": "personal"
-  },
-  {
-    "enabled": true,
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "",
-    "usercssData": {
-      "name": "Font legibility style",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "0",
-      "author": "zerohazard8x + LLM",
-      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/text-rendering.user.css",
-      "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus"
-    },
-    "author": "zerohazard8x + LLM",
-    "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/text-rendering.user.css",
-    "name": "Font legibility style"
-  },
-  {
-    "enabled": true,
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "",
-    "usercssData": {
-      "name": "Search Engine Assistant... Assistant",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "0",
-      "description": "Companion to https://github.com/F9y4ng/GreasyFork-Scripts - Thanks to original authors",
-      "author": "Zerohazard8x",
-      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/seaa.user.css",
-      "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus"
-    },
-    "author": "Zerohazard8x",
-    "description": "Companion to https://github.com/F9y4ng/GreasyFork-Scripts - Thanks to original authors",
-    "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/seaa.user.css",
-    "name": "Search Engine Assistant... Assistant"
-  },
-  {
-    "enabled": true,
-    "installDate": 0,
-    "sections": [
-      {
-        "code": ""
-      }
-    ],
-    "sourceCode": "",
-    "usercssData": {
-      "name": "variables",
-      "namespace": "github.com/openstyles/stylus",
-      "version": "0",
-      "description": "My personal changes to monospace fonts, etc",
-      "author": "Zerohazard8x LLM",
-      "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css",
-      "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-      "vars": {
-        "sans": {
-          "type": "text",
-          "label": "Choose the replacement sans-serif font",
-          "name": "sans",
-          "value": "Inter",
-          "default": "initial",
-          "options": null
-        },
-        "serif": {
-          "type": "text",
-          "label": "Choose the replacement serif font",
-          "name": "serif",
-          "value": null,
-          "default": "initial",
-          "options": null
-        },
-        "mono": {
-          "type": "text",
-          "label": "Choose the replacement monospace font",
-          "name": "mono",
-          "value": null,
-          "default": "initial",
-          "options": null
-        },
-        "readable": {
-          "type": "text",
-          "label": "Choose the replacement alternate readable font",
-          "name": "readable",
-          "value": null,
-          "default": "initial",
-          "options": null
+    {
+        "settings": {
+            "updateInterval": 1
         }
-      }
     },
-    "author": "Zerohazard8x LLM",
-    "description": "My personal changes to monospace fonts, etc",
-    "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
-    "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css",
-    "name": "variables"
-  }
+    {
+        "enabled": true,
+        "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css",
+        "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+        "installDate": 0,
+        "sourceCode": "@import url(\"\")",
+        "usercssData": {
+            "version": "0"
+        },
+        "author": "Zerohazard8x LLM",
+        "description": "My personal changes to monospace fonts, etc",
+        "name": "monospace"
+    },
+    {
+        "enabled": false,
+        "customName": "Discord Catppuccin Edit",
+        "sourceCode": "/* ==UserStyle==\n@name           Discord Catppuccin\n@namespace      github.com/catppuccin/discord\n@version        0.2.1\n@description    Soothing pastel theme for Discord\n@author         Catppuccin - edit by Zerohazard8x\n@preprocessor   stylus\n==/UserStyle== */\n\n@-moz-document regexp(\"https?://(canary\\\\.|ptb\\\\.|)discord.com/.*\") {\n    @import url(\"https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css\")\n}\n",
+        "usercssData": {
+            "version": "0"
+        },
+        "author": "Catppuccin - edit by Zerohazard8x",
+        "description": "Soothing pastel theme for Discord",
+        "name": "Discord Catppuccin"
+    },
+    {
+        "enabled": true,
+        "sourceCode": "@import url(\"\")",
+        "usercssData": {
+            "version": "0"
+        },
+        "author": "Zerohazard8x LLM",
+        "description": "My personal changes to codeblocks, etc",
+        "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+        "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace2.user.css",
+        "name": "monospace2"
+    },
+    {
+        "enabled": true,
+        "sourceCode": "@import url(\"\")",
+        "usercssData": {
+            "version": "0"
+        },
+        "author": "Zerohazard8x LLM",
+        "description": "My personal userstyle",
+        "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+        "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal2.user.css",
+        "name": "personal2"
+    },
+    {
+        "enabled": false,
+        "sourceCode": "@import url(\"\")",
+        "usercssData": {
+            "version": "0"
+        },
+        "author": "zerohazard8x + LLM",
+        "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+        "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/font-size-adjust.user.css",
+        "name": "font-size-adjust style"
+    },
+    {
+        "enabled": true,
+        "sourceCode": "@import url(\"\")",
+        "usercssData": {
+            "version": "0"
+        },
+        "author": "Zerohazard8x + LLM",
+        "description": "My personal userstyle",
+        "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+        "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css",
+        "name": "personal"
+    },
+    {
+        "enabled": true,
+        "sourceCode": "@import url(\"\")",
+        "usercssData": {
+            "version": "0"
+        },
+        "author": "zerohazard8x + LLM",
+        "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+        "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/text-rendering.user.css",
+        "name": "Font legibility style"
+    },
+    {
+        "enabled": true,
+        "sourceCode": "@import url(\"\")",
+        "usercssData": {
+            "version": "0"
+        },
+        "author": "Zerohazard8x",
+        "description": "Companion to https://github.com/F9y4ng/GreasyFork-Scripts - Thanks to original authors",
+        "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+        "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/seaa.user.css",
+        "name": "Search Engine Assistant... Assistant"
+    },
+    {
+        "enabled": true,
+        "sourceCode": "@import url(\"\")",
+        "usercssData": {
+            "name": "variables",
+            "namespace": "github.com/openstyles/stylus",
+            "version": "0",
+            "description": "My personal changes to monospace fonts, etc",
+            "author": "Zerohazard8x LLM",
+            "updateURL": "https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css",
+            "homepageURL": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+            "vars": {
+                "sans": {
+                    "type": "text",
+                    "label": "Choose the replacement sans-serif font",
+                    "name": "sans",
+                    "value": "Inter",
+                    "default": "initial",
+                    "options": null
+                },
+                "serif": {
+                    "type": "text",
+                    "label": "Choose the replacement serif font",
+                    "name": "serif",
+                    "value": null,
+                    "default": "initial",
+                    "options": null
+                },
+                "mono": {
+                    "type": "text",
+                    "label": "Choose the replacement monospace font",
+                    "name": "mono",
+                    "value": null,
+                    "default": "initial",
+                    "options": null
+                },
+                "readable": {
+                    "type": "text",
+                    "label": "Choose the replacement alternate readable font",
+                    "name": "readable",
+                    "value": null,
+                    "default": "initial",
+                    "options": null
+                }
+            }
+        },
+        "author": "Zerohazard8x LLM",
+        "description": "My personal changes to monospace fonts, etc",
+        "url": "https://github.com/Zerohazard8x/custom/tree/main/stylus",
+        "updateUrl": "https://github.com/Zerohazard8x/custom/raw/main/stylus/variables.user.css",
+        "name": "variables"
+    }
 ]
