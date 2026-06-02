@@ -249,8 +249,8 @@
 	ytd-watch-flexy[theater]
 		#chat.ytd-watch-flexy:not([collapsed])
 		#chatframe.ytd-live-chat-frame {
-		height: 300px !important;
-		width: 200px !important;
+		height: 400px !important;
+		width: 300px !important;
 	}
 }
 
