@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2026.03.20
+@version        2026.06.02
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -236,7 +236,9 @@
 		padding: 0px;
 	}
 
-	yt-live-chat-banner-manager#live-chat-banner.style-scope.yt-live-chat-item-list-renderer {
+	yt-live-chat-banner-manager#live-chat-banner.style-scope.yt-live-chat-item-list-renderer,
+	div#before-content-buttons.style-scope.yt-live-chat-text-message-renderer,
+	yt-img-shadow#author-photo.no-transition.style-scope.yt-live-chat-text-message-renderer {
 		display: none;
 	}
 
