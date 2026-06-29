@@ -36,13 +36,15 @@ user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 user_pref("gfx.color_management.mode", 1);
 user_pref("gfx.color_management.hdr_video", true);
 user_pref("layout.css.video-dynamic-range.allows-high", true);
-user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
+// user_pref("gfx.webrender.compositor.force-enabled", true);
 
 user_pref("media.wmf.hevc.enabled", 1);
 user_pref("media.hardware-video-decoding-vulkan.enabled", true);
 user_pref("media.ffvpx-hw.enabled", true);
+
+user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
+
 // user_pref("gfx.webrender.all", true);
-user_pref("gfx.webrender.compositor.force-enabled", true);
 
 user_pref(
 	"network.http.referer.disallowCrossSiteRelaxingDefault.top_navigation",
