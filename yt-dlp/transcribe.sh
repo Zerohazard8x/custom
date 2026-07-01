@@ -2,8 +2,8 @@
 
 # Define required commands
 # REQUIRED_COMMANDS=(stable-ts demucs ffprobe ffmpeg)
-# REQUIRED_COMMANDS=(whisperx ffprobe ffmpeg)
-REQUIRED_COMMANDS=(whisper-cli ffprobe ffmpeg)
+# REQUIRED_COMMANDS=(whisperx ffprobe ffmpeg demucs)
+REQUIRED_COMMANDS=(whisper-cli ffprobe ffmpeg demucs)
 
 # Check if all required commands are available
 for cmd in "${REQUIRED_COMMANDS[@]}"; do
@@ -23,6 +23,7 @@ fi
 
 MODEL_DIR="$HOME/.cache/whisper.cpp"
 MODEL="$MODEL_DIR/ggml-large-v3-turbo.bin"
+
 MODEL_URL="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin"
 mkdir -p "$MODEL_DIR"
 if [[ ! -f "$MODEL" ]]; then
@@ -39,7 +40,7 @@ WHISPER_GPU=(-dev 0)
 # for whisperx
 #################################
 # WX_GPU=(--device cpu --compute_type float32)
-# if python -c "import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)" 2>/dev/null; then
+# if python3.12 -c "import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)" 2>/dev/null; then
 #     WX_GPU=(--device cuda --compute_type float16)
 # fi
 
@@ -61,14 +62,15 @@ for file in *; do
             # whisperx --model turbo "${WX_GPU[@]}" --output_dir . --output_format srt --print_progress True "old_$file"
 
             ffmpeg -y -i "old_$file" -vn -ac 1 -ar 16000 "old_${filename}.wav" || exit 1
-            whisper-cli -m "$MODEL" -f "old_${filename}.wav" -osrt -of "old_${filename}" "${WHISPER_GPU[@]}" || exit 1
+            demucs --mp3 "old_${filename}.wav" || exit 1
+            whisper-cli -m "$MODEL" -f "./separated/htdemucs/old_${filename}/vocals.mp3" -osrt -of "old_${filename}" "${WHISPER_GPU[@]}" || exit 1
 
             srtfile="old_${filename}.srt"
 
             [[ -f "$srtfile" ]] || exit 1
 
             # Merge subtitle file with original video file
-            if ffmpeg -i "old_$file" -i "$srtfile" -c:v copy -c:a copy -c:s copy -map 0:v -map 0:a -map 1:s -metadata:s:s:0 language=eng "${filename}.mkv"; then
+            if ffmpeg -i "old_$file" -i "$srtfile" -map 0:v -map 0:a? -map 1:0 -c:v copy -c:a copy -c:s srt -metadata:s:s:0 language=eng -metadata:s:s:0 title="English" -disposition:s:0 default "${filename}.mkv"; then
                 # Remove temporary subtitle file
                 rm -rfv "$srtfile" "old_${filename}.wav"
             fi
