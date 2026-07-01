@@ -34,7 +34,7 @@ user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 
 user_pref("gfx.color_management.mode", 1);
-user_pref("gfx.color_management.hdr_video", true);
+user_pref("gfx.color_management.hdr", true);
 user_pref("layout.css.video-dynamic-range.allows-high", true);
 // user_pref("gfx.webrender.compositor.force-enabled", true);
 
