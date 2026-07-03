@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2026.03.15
+@version        2026.07.03
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -343,53 +343,48 @@ domain("deskthority.net") {
 	#sidebar,
 	h3 {
 		font-family:
-			var(--sans, ""), "Open Sans", "Helvetica Neue", Helvetica,
-			"Liberation Sans", Arial, Helvetica, FreeSans, var(--foreign, ""),
-			sans-serif;
+			"Open Sans", "Helvetica Neue", Helvetica, "Liberation Sans", Arial,
+			Helvetica, FreeSans, var(--foreign, ""), sans-serif;
 	}
 
 	.mw-editsection {
-		font-family: var(--sans, ""), var(--foreign, ""), sans-serif;
+		font-family: var(--foreign, ""), sans-serif;
 	}
 
 	input {
-		font-family: var(--sans, ""), "MS Shell Dlg 2";
+		font-family: "MS Shell Dlg 2", var(--foreign, "");
 	}
 
 	.pBody {
-		font-family: var(--sans, ""), verdana, var(--foreign, ""), sans-serif;
+		font-family: verdana, var(--foreign, ""), sans-serif;
 	}
 
 	#personal h2 {
-		font-family:
-			var(--sans, ""), "Helvetica Neue", "Nimbus Sans", "Helvetica",
-			"Arial";
+		font-family: "Helvetica Neue", "Nimbus Sans", "Helvetica", "Arial";
 	}
 
 	/* applies to e.g. <span lang="ja"> */
 	:lang(zh),
 	:lang(ja),
 	:lang(ko) {
-		font-family: var(--sans, ""), var(--foreign, ""), sans-serif;
+		font-family: var(--foreign, ""), sans-serif;
 	}
 
 	h1,
 	h2 {
 		font-family:
-			var(--serif, ""), "Linux Libertine", "Georgia", "Times", serif,
-			var(--foreign, "");
+			"Linux Libertine", "Georgia", "Times", serif, var(--foreign, "");
 	}
 
 	.template-infotable-monospace,
 	code,
 	tt,
 	.mw-parser-output pre {
-		font-family: var(--mono, ""), monospace, var(--foreign, "");
+		font-family: monospace, var(--foreign, "");
 	}
 
 	p span b:not(.Latn) {
 		font-family:
-			var(--mono, ""),
 			Consolas,
 			DejaVu Sans Mono,
 			Droid Sans Mono,
