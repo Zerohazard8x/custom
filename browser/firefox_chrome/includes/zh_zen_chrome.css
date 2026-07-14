@@ -1,0 +1,22 @@
+/* ================================================== */
+/* Zen browser transparent compact sidebar - chrome */
+/* ================================================== */
+:root[zen-compact-mode="true"]
+#navigator-toolbox:not([animate="true"])
+#titlebar .zen-toolbar-background {
+    /* Lower alpha = more transparent */
+    background: rgb(18 18 22 / 24%) !important;
+
+    /* Blurs the webpage behind the sidebar */
+    backdrop-filter: blur(28px) saturate(125%) !important;
+}
+
+/* Remove Zen theme layers that can obscure the blur */
+:root[zen-compact-mode="true"]
+#navigator-toolbox:not([animate="true"])
+#titlebar .zen-toolbar-background::before,
+:root[zen-compact-mode="true"]
+#navigator-toolbox:not([animate="true"])
+#titlebar .zen-toolbar-background::after {
+    background: transparent !important;
+}

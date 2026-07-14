@@ -1,0 +1,21 @@
+/* ================================================== */
+/* Zen browser transparent compact sidebar - content */
+/* Code snippets from https://github.com/JustAdumbPrsn/Zen-Nebula */
+/* ================================================== */
+@-moz-document url-prefix("about:") {
+    html,
+    body,
+    #toolbar,
+    .App,
+    .sticky-container,
+    .main-search,
+    .main-heading {
+        background-color: transparent !important;
+    }
+}
+
+/* Fixes the transparent dialogs. */
+/* .dialogFrame {
+    background: var(--zen-dialog-background);
+    border-radius: 8px;
+} */

@@ -81,11 +81,12 @@ user_pref("browser.tabs.allow_transparent_browser", true);
 user_pref("browser.download.useDownloadDir", true);
 user_pref("browser.download.always_ask_before_handling_new_types", false);
 
-user_pref("widget.windows.mica", true)
-// user_pref("widget.windows.mica.popups", true)
+// user_pref("widget.windows.mica", true);
+// user_pref("widget.windows.mica.popups", true);
 
 // zen browser
-// user_pref("zen.theme.content-element-separation", 0)
+// user_pref("zen.theme.content-element-separation", 0);
+// user_pref("zen.theme.acrylic-elements", true);
 
 // Telemetry - https://github.com/K3V1991/Disable-Firefox-Telemetry-and-Data-Collection
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
