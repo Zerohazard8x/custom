@@ -5,7 +5,7 @@
 #navigator-toolbox:not([animate="true"])
 #titlebar .zen-toolbar-background {
     /* Lower alpha = more transparent */
-    background: rgb(18 18 22 / 24%) !important;
+    background: rgb(0 0 0 / 50%) !important;
 
     /* Blurs the webpage behind the sidebar */
     backdrop-filter: blur(28px) saturate(125%) !important;

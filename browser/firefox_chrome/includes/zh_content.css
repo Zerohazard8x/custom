@@ -73,9 +73,7 @@ tt {
     text-rendering: optimizeLegibility;
     font-synthesis: none;
     font-optical-sizing: auto;
-    font-size-adjust: from-font;
     font-kerning: auto;
-    letter-spacing: normal;
 }
 
 /* restrict arial */
