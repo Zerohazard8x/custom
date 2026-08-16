@@ -1,5 +1,8 @@
 #!/bin/bash
 
+exec > >(tee -a transcribe.log) 2>&1
+trap '[[ -r /dev/tty ]] && read -r -p "Press Enter to close..." </dev/tty' EXIT
+
 # Print each phase normally and, when stdout is a terminal, also place it in the
 # terminal/tab title so the current operation remains visible while output scrolls.
 status() {
@@ -24,9 +27,7 @@ status "Detecting transcription backends"
 BACKENDS=()
 
 # Prefer WhisperX first when available.
-if command -v python3.12 >/dev/null &&
-    python3.12 -c 'import whisperx,torch,tqdm' 2>/dev/null
-then
+if python3.12 -c 'import whisperx,torch' 2>/dev/null; then
     BACKENDS+=(whisperx)
 fi
 
@@ -775,24 +776,26 @@ PYQWEN
                     WX_GPU=(--device cpu --compute_type float32)
 
                     if python3.12 -c \
-                        'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
-                        2>/dev/null
+                            'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
+                            2>/dev/null
                     then
                         WX_GPU=(--device cuda --compute_type float16)
                     fi
 
-                    # `--verbose True` prints useful transcript details while
-                    # `--print_progress True` exposes WhisperX's progress updates.
-                    whisperx \
-                        --task translate \
-                        --model large-v3 \
-                        --batch_size 4 \
-                        "${WX_GPU[@]}" \
-                        --output_dir . \
-                        --output_format srt \
-                        --verbose True \
-                        --print_progress True \
-                        "$asr_audio" || exit 1
+                    # `verbose=True` prints useful transcript details while
+                    # `print_progress=True` exposes WhisperX's progress updates.
+                    PYTHONIOENCODING=utf-8 python3.12 - "$asr_audio" "${WX_GPU[@]}" <<'PYWHISPERX' || exit 1
+import sys, whisperx
+from whisperx.utils import get_writer
+
+m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
+a=whisperx.load_audio(sys.argv[1])
+print("Audio duration:",len(a)/16000,flush=True)
+r=m.transcribe(a,batch_size=4,chunk_size=7,task="translate",verbose=True,print_progress=True)
+print("Segments:",len(r["segments"]),"last:",r["segments"][-1]["end"] if r["segments"] else 0,flush=True)
+r["language"]="en"
+get_writer("srt",".")(r,sys.argv[1],{"highlight_words":False,"max_line_count":None,"max_line_width":None})
+PYWHISPERX
 
                     # WhisperX names its output after the WAV input.
                     # Rename it to the common filename expected below.
