@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Print each phase normally and, when stdout is a terminal, also place it in the
+# terminal/tab title so the current operation remains visible while output scrolls.
+status() {
+    [[ -t 1 ]] && printf '\033]0;%s\007' "$1"
+    printf '\n== %s ==\n' "$1"
+}
+
+status "Checking dependencies"
+
 # Core commands required regardless of which transcription backend is selected.
 # `ffprobe` checks subtitle streams and `ffmpeg` extracts/converts audio.
 REQUIRED_COMMANDS=(ffprobe ffmpeg)
@@ -18,12 +27,12 @@ done
 # Build the model/backend menu dynamically.
 # Only backends that can actually be used in the current shell environment
 # are shown, which prevents the splash screen from offering broken choices.
+status "Detecting transcription backends"
 BACKENDS=()
 
 # Qwen is considered available only when Python 3.12 exists AND both required
 # Python modules can be imported from that exact Python environment.
 # `&&` is used so the import check is never attempted if python3.12 is absent.
-# The short one-line `if ...; then ...; fi` keeps this detection compact.
 if command -v python3.12 >/dev/null && python3.12 -c 'import qwen_asr,transformers' 2>/dev/null; then
     BACKENDS+=(qwen)
 fi
@@ -46,11 +55,19 @@ fi
     exit 1
 }
 
+# Count candidate videos once so the same total can be shown everywhere.
+status "Counting videos"
+N=0
+for f in *; do
+    [[ "$f" =~ \.(mp4|mkv)$ && ! "$f" =~ ^old_ ]] && ((N++))
+done
+
 # Clear the terminal and move the cursor to the upper-left corner so the model
 # chooser behaves like a small splash screen instead of appearing below old logs.
 printf '\033[2J\033[H'
 
 echo "Transcription model"
+echo "Videos: $N"
 
 # Bash array indices start at zero.
 # We display `i + 1` because a menu beginning at 1 is more natural for users.
@@ -110,19 +127,22 @@ echo "Using: $ASR_BACKEND"
 #################################
 
 # Iterate over ordinary entries in the current directory.
+file_no=0
 for file in *; do
 
     # Process MP4/MKV files only.
     # Files beginning with old_ are skipped because those are originals that
     # this script has already renamed and preserved.
     if [[ "$file" =~ \.(mp4|mkv)$ && ! "$file" =~ ^old_ ]]; then
+        ((file_no++))
+        status "Checking: $file ($file_no/$N)"
 
         # Skip videos already containing an English subtitle stream.
         #
-        # ffprobe prints subtitle stream indices/language tags as CSV.
-        # grep only has to find "eng" to indicate an existing English stream.
+        # `warning` allows useful ffprobe diagnostics through without flooding
+        # the screen with normal probe details; stdout remains machine-readable.
         if ! ffprobe \
-            -loglevel error \
+            -v warning \
             -select_streams s \
             -show_entries stream=index:stream_tags=language \
             -of csv=p=0 \
@@ -150,9 +170,14 @@ for file in *; do
             # Prepare speech audio
             #################################
 
-            # Mono/16 kHz reduces unnecessary data while matching the format
-            # commonly expected by speech recognition pipelines.
+            status "Preparing audio: $file ($file_no/$N)"
+
+            # `-loglevel info -stats` shows meaningful FFmpeg decisions plus its
+            # live progress line, while `-hide_banner` removes repetitive build info.
             ffmpeg \
+                -hide_banner \
+                -loglevel info \
+                -stats \
                 -y \
                 -i "old_$file" \
                 -vn \
@@ -169,19 +194,16 @@ for file in *; do
             case "$ASR_BACKEND" in
 
                 qwen)
-                    # Qwen3-ASR itself performs transcription.
-                    # Qwen3-ForcedAligner supplies timestamps.
-                    # Qwen3-0.6B then translates each finished subtitle cue
-                    # into English because Qwen3-ASR does not expose Whisper's
-                    # native speech-to-English `translate` task.
+                    status "Transcribing with Qwen3-ASR: $file ($file_no/$N)"
 
-                    # The audio and SRT paths are passed as argv[1] and argv[2].
-                    # This avoids embedding shell filenames directly into Python
-                    # source, which is safer for spaces and unusual characters.
+                    # Qwen3-ASR performs transcription and language detection.
+                    # Qwen3-ForcedAligner supplies word/character timestamps.
                     #
-                    # The quoted heredoc delimiter prevents Bash from expanding
-                    # anything in the Python source before execution.
+                    # If Qwen reports exactly "English", its transcript is used
+                    # directly. For other or mixed languages, Qwen3-0.6B is loaded
+                    # only then and translates each finished subtitle cue.
                     python3.12 - "$asr_audio" "$srtfile" <<'PYQWEN' || exit 1
+import re
 import sys
 import time
 
@@ -189,12 +211,8 @@ from qwen_asr import Qwen3ASRModel
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 
-# Load the speech recognizer and its matching forced aligner.
-#
-# `device_map="auto"` lets Transformers/Accelerate choose suitable available
-# devices rather than hard-coding CUDA or CPU here.
-# `dtype="auto"` similarly allows the model library to choose an appropriate
-# numerical type for the available hardware.
+print("Qwen: loading ASR + forced aligner...", flush=True)
+
 m = Qwen3ASRModel.from_pretrained(
     "Qwen/Qwen3-ASR-1.7B",
     dtype="auto",
@@ -207,117 +225,245 @@ m = Qwen3ASRModel.from_pretrained(
     },
 )
 
-# Request timestamps because SRT requires explicit start/end times.
-# `language=None` leaves source-language detection to the ASR model.
-a = list(
-    m.transcribe(
-        audio=sys.argv[1],
-        language=None,
-        return_time_stamps=True,
-    )[0].time_stamps
-)
+print("Qwen: transcribing + aligning...", flush=True)
+
+# Keep the complete result because `text` retains the ASR punctuation while
+# `time_stamps` contains the aligner's punctuation-stripped timed units.
+r = m.transcribe(
+    audio=sys.argv[1],
+    language=None,
+    return_time_stamps=True,
+)[0]
+
+a = list(r.time_stamps)
+
+print("Qwen: detected language:", r.language, flush=True)
 
 
-# Load the small text model used only for translation to English.
-tok = AutoTokenizer.from_pretrained("Qwen/Qwen3-0.6B")
+# Load the translation model only when the complete recording was not detected
+# as English. A mixed value such as "Chinese,English" therefore still translates.
+if r.language != "English":
+    print("Qwen: loading English translation model...", flush=True)
 
-lm = AutoModelForCausalLM.from_pretrained(
-    "Qwen/Qwen3-0.6B",
-    torch_dtype="auto",
-    device_map="auto",
-)
+    tok = AutoTokenizer.from_pretrained("Qwen/Qwen3-0.6B")
 
-
-def tr(s):
-    """Translate one completed subtitle cue into English."""
-
-    # Use Qwen's chat template so the tokenizer adds the exact conversation
-    # structure expected by the model.
-    #
-    # `enable_thinking=False` is intentional: subtitle translation needs a
-    # concise answer only, and reasoning would waste tokens and could place
-    # unwanted prose into the SRT.
-    x = tok.apply_chat_template(
-        [
-            {
-                "role": "user",
-                "content":
-                    "Translate this subtitle to natural English. "
-                    "Output only the translation:\n" + s,
-            }
-        ],
-        tokenize=False,
-        add_generation_prompt=True,
-        enable_thinking=False,
+    lm = AutoModelForCausalLM.from_pretrained(
+        "Qwen/Qwen3-0.6B",
+        torch_dtype="auto",
+        device_map="auto",
     )
 
-    # Convert the formatted prompt to tensors and move them to the same device
-    # chosen for the translation model.
-    x = tok([x], return_tensors="pt").to(lm.device)
-
-    # Deterministic generation is used because subtitle translation should be
-    # repeatable rather than vary between runs.
-    y = lm.generate(
-        **x,
-        max_new_tokens=256,
-        do_sample=False,
-    )
-
-    # The generated tensor contains the original prompt followed by new tokens.
-    # Slice away exactly the prompt length so only the translation is decoded.
-    return tok.decode(
-        y[0][x["input_ids"].shape[-1]:],
-        skip_special_tokens=True,
-    ).strip()
+    def tr(s):
+        """Translate one completed subtitle cue into English."""
+        x = tok.apply_chat_template(
+            [
+                {
+                    "role": "user",
+                    "content":
+                        "Translate this subtitle to natural English. "
+                        "Output only the translation:\n" + s,
+                }
+            ],
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
+        x = tok([x], return_tensors="pt").to(lm.device)
+        y = lm.generate(**x, max_new_tokens=256, do_sample=False)
+        return tok.decode(
+            y[0][x["input_ids"].shape[-1]:],
+            skip_special_tokens=True,
+        ).strip()
 
 
 def ts(x):
     """Convert floating-point seconds to SRT's HH:MM:SS,mmm format."""
-
-    # `gmtime` is useful here because it formats a duration from zero without
-    # introducing local timezone offsets.
-    #
-    # The fractional part is multiplied by 1000 to obtain milliseconds.
     return (
         time.strftime("%H:%M:%S", time.gmtime(x))
         + f",{int(x % 1 * 1000):03}"
     )
 
 
-# Write the final SRT directly to the path supplied by the shell script.
+# Subtitle safety limits. Sentence punctuation is preferred, but ASR sometimes
+# emits long stretches without punctuation, so duration, length and pauses act
+# as fallbacks instead of allowing one enormous screen-filling subtitle event.
+MAX_DURATION = 7.0
+MAX_CHARS = 84
+PAUSE_SPLIT = 0.7
+MIN_CHARS_FOR_PAUSE = 24
+
+
+# Qwen's forced aligner deliberately strips punctuation from its timed units.
+# Therefore sentence boundaries are taken from `r.text`, while this helper uses
+# Qwen's own aligner tokenizer to find how many timed units belong to a sentence.
+def aligned_units(text):
+    return m.forced_aligner.aligner_processor.encode_timestamp(
+        text,
+        r.language,
+    )[0]
+
+
+# Preserve sentence-final punctuation from the ASR transcript. If punctuation
+# is absent, the complete text becomes one provisional sentence and the safety
+# splitter below divides it using pauses, duration and readable length instead.
+def split_sentences(text):
+    parts = []
+    start = 0
+
+    for match in re.finditer(r'[.!?。！？…]+(?:["”’\)\]]*)', text):
+        end = match.end()
+        part = text[start:end].strip()
+        if part:
+            parts.append(part)
+        start = end
+
+    tail = text[start:].strip()
+    if tail:
+        parts.append(tail)
+
+    return parts
+
+
+# Associate the original punctuated sentences with their corresponding aligned
+# timestamps. Reusing Qwen's tokenizer is important because it matches the units
+# the forced aligner itself created rather than guessing with `str.split()`.
+print("Qwen: finding sentence boundaries...", flush=True)
+
+groups = []
+pos = 0
+
+for sentence in split_sentences(r.text):
+    count = len(aligned_units(sentence))
+    if count == 0:
+        continue
+
+    end = min(pos + count, len(a))
+    items = a[pos:end]
+    pos = end
+
+    if items:
+        groups.append((sentence, items))
+
+# Keep any residual aligned items if chunk/tokenization differences leave a few
+# timestamps unmatched. Losing the tail of the speech would be worse than a
+# punctuation-free final cue.
+if pos < len(a):
+    groups.append((" ".join(x.text for x in a[pos:]), a[pos:]))
+
+
+# Split only when a sentence would otherwise be too long. Natural pauses are
+# preferred once a cue contains enough text; the hard duration/character limits
+# guarantee progress even when the speaker talks continuously without pauses.
+def split_group(text, items):
+    if not items:
+        return []
+
+    if (
+        len(text) <= MAX_CHARS
+        and items[-1].end_time - items[0].start_time <= MAX_DURATION
+    ):
+        return [(text, items)]
+
+    result = []
+    current = []
+
+    for i, item in enumerate(items):
+        current.append(item)
+
+        current_text = " ".join(x.text for x in current)
+        duration = current[-1].end_time - current[0].start_time
+        next_gap = (
+            items[i + 1].start_time - item.end_time
+            if i + 1 < len(items)
+            else 999
+        )
+
+        natural_pause = (
+            next_gap >= PAUSE_SPLIT
+            and len(current_text) >= MIN_CHARS_FOR_PAUSE
+        )
+
+        if (
+            natural_pause
+            or duration >= MAX_DURATION
+            or len(current_text) >= MAX_CHARS
+            or i == len(items) - 1
+        ):
+            result.append((current_text, current.copy()))
+            current = []
+
+    return result
+
+
+# Make a readable one- or two-line SRT cue without ever discarding text.
+# The splitter keeps normal cues around 84 characters, so a two-line split around
+# 42 characters per line is usually possible.
+def balance_lines(text, width=42):
+    text = " ".join(text.split())
+
+    if len(text) <= width:
+        return text
+
+    words = text.split()
+
+    if len(words) < 2:
+        return text
+
+    candidates = []
+
+    for i in range(1, len(words)):
+        left = " ".join(words[:i])
+        right = " ".join(words[i:])
+
+        if len(left) <= width and len(right) <= width:
+            candidates.append(
+                (abs(len(left) - len(right)), left, right)
+            )
+
+    if candidates:
+        _, left, right = min(candidates, key=lambda x: x[0])
+        return left + "\n" + right
+
+    # A very long word or unusual token can make the 42-character target
+    # impossible. Preserve the complete text rather than truncating it.
+    return text
+
+
+print("Qwen: building readable subtitle cues...", flush=True)
+
+cues = []
+
+for sentence, items in groups:
+    cues.extend(split_group(sentence, items))
+
+print(f"Qwen: writing {len(cues)} subtitle cues...", flush=True)
+
 with open(sys.argv[2], "w") as f:
+    for n, (text, items) in enumerate(cues, 1):
 
-    # Combine ten aligned timestamp items into one subtitle cue.
-    # This prevents every individual word/token from becoming its own SRT entry.
-    for n, i in enumerate(range(0, len(a), 10), 1):
-        p = a[i:i + 10]
+        if r.language != "English":
+            text = tr(text)
 
-        # Translate after grouping so the language model receives enough context
-        # to produce a natural English subtitle sentence.
-        text = tr(" ".join(x.text for x in p))
+        text = balance_lines(text)
 
-        # SRT entries contain:
-        #   cue number
-        #   start --> end
-        #   subtitle text
-        #   blank separator line
         f.write(
             f"{n}\n"
-            f"{ts(p[0].start_time)} --> {ts(p[-1].end_time)}\n"
+            f"{ts(items[0].start_time)} --> {ts(items[-1].end_time)}\n"
             f"{text}\n\n"
         )
+
+print(f"Qwen: wrote {len(cues)} subtitle cues.", flush=True)
 PYQWEN
                     ;;
 
 
                 whisperx)
+                    status "Transcribing with WhisperX: $file ($file_no/$N)"
+
                     # WhisperX can use CPU everywhere, so start with a safe CPU
                     # configuration and replace it only when CUDA is confirmed.
                     WX_GPU=(--device cpu --compute_type float32)
 
-                    # Use the same Python/PyTorch CUDA check as the rest of the
-                    # environment rather than assuming that an NVIDIA driver
-                    # automatically means WhisperX has a CUDA-capable PyTorch.
                     if command -v python3.12 >/dev/null &&
                         python3.12 -c \
                             'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
@@ -326,32 +472,39 @@ PYQWEN
                         WX_GPU=(--device cuda --compute_type float16)
                     fi
 
-                    # `--task translate` requests English output.
-                    # The array expansion preserves the CPU/GPU arguments as
-                    # individual CLI parameters.
+                    # `--verbose True` prints useful transcript details while
+                    # `--print_progress True` exposes WhisperX's progress updates.
                     whisperx \
                         --task translate \
                         --model turbo \
                         "${WX_GPU[@]}" \
                         --output_dir . \
                         --output_format srt \
+                        --verbose True \
                         --print_progress True \
                         "$asr_audio" || exit 1
 
                     # WhisperX names its output after the WAV input.
                     # Rename it to the common filename expected below.
-                    mv -f "${asr_audio%.*}.srt" "$srtfile" || exit 1
+                    mv -fv "${asr_audio%.*}.srt" "$srtfile" || exit 1
                     ;;
 
 
                 stable-ts)
+                    status "Transcribing with stable-ts: $file ($file_no/$N)"
+
                     # stable-ts uses faster-whisper here and asks Whisper to
                     # translate recognized speech into English.
+                    #
+                    # Demucs is requested through stable-ts itself because its
+                    # documented music workflow supports Demucs together with VAD.
+                    # `--verbose True` asks stable-ts to display decoded details.
                     stable-ts \
                         --faster_whisper \
                         --task translate \
                         --vad=True \
                         --denoiser demucs \
+                        --verbose True \
                         --model turbo \
                         "old_$file" \
                         -o "$srtfile" || exit 1
@@ -367,19 +520,14 @@ PYQWEN
             # create the expected subtitle file.
             [[ -f "$srtfile" ]] || exit 1
 
-            # Create a new MKV from the preserved original.
-            #
-            # Mapping:
-            #   `-map 0:v`  = video from original input
-            #   `-map 0:a?` = audio from original input; `?` makes audio optional
-            #   `-map 1:0`  = the SRT subtitle stream from the second input
-            #
-            # Video and audio are copied rather than re-encoded, avoiding
-            # generation loss and greatly reducing processing time.
-            #
-            # The subtitle stream is explicitly tagged as English because every
-            # backend path above requests or performs English translation.
+            status "Muxing subtitles: $file ($file_no/$N)"
+
+            # `-loglevel info -stats` keeps FFmpeg's useful stream information
+            # and progress visible while suppressing only its repetitive banner.
             if ffmpeg \
+                -hide_banner \
+                -loglevel info \
+                -stats \
                 -i "old_$file" \
                 -i "$srtfile" \
                 -map 0:v \
@@ -393,12 +541,14 @@ PYQWEN
                 -disposition:s:0 default \
                 "${filename}.mkv"
             then
-                # Remove only temporary transcription/audio files after the
+                # Remove temporary transcription/audio files only after the
                 # final MKV has been created successfully.
-                #
                 # The preserved `old_...` original is intentionally retained.
                 rm -rfv "$srtfile" "$asr_audio"
+                status "Finished: $file ($file_no/$N)"
             fi
         fi
     fi
 done
+
+status "All done ($N videos checked)"
