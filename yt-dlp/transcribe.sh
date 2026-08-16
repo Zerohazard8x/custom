@@ -201,7 +201,11 @@ for file in *; do
                     #
                     # If Qwen reports exactly "English", its transcript is used
                     # directly. For other or mixed languages, Qwen3-0.6B is loaded
-                    # only then and translates each finished subtitle cue.
+                    # only then and translates each finished source subtitle cue.
+                    #
+                    # If an English translation becomes longer than the subtitle
+                    # limits, it is split again and its source-aligned time interval
+                    # is divided proportionally among the resulting English cues.
                     python3.12 - "$asr_audio" "$srtfile" <<'PYQWEN' || exit 1
 import re
 import sys
@@ -240,6 +244,14 @@ a = list(r.time_stamps)
 print("Qwen: detected language:", r.language, flush=True)
 
 
+# Subtitle limits.
+MAX_DURATION = 7.0
+MAX_CHARS = 84
+LINE_WIDTH = 42
+PAUSE_SPLIT = 0.5
+MIN_CHARS_FOR_PAUSE = 24
+
+
 # Load the translation model only when the complete recording was not detected
 # as English. A mixed value such as "Chinese,English" therefore still translates.
 if r.language != "English":
@@ -254,14 +266,18 @@ if r.language != "English":
     )
 
     def tr(s):
-        """Translate one completed subtitle cue into English."""
+        """Translate one source cue into concise, natural subtitle English."""
         x = tok.apply_chat_template(
             [
                 {
                     "role": "user",
                     "content":
-                        "Translate this subtitle to natural English. "
-                        "Output only the translation:\n" + s,
+                        "Translate the following dialogue into concise, natural "
+                        "English subtitles. Preserve the full meaning, names, "
+                        "numbers, tone, and sentence-ending punctuation, but use "
+                        "the shortest natural wording that does not lose meaning. "
+                        "Do not explain, label, quote, or add anything. "
+                        "Output only the English translation:\n" + s,
                 }
             ],
             tokenize=False,
@@ -278,19 +294,14 @@ if r.language != "English":
 
 def ts(x):
     """Convert floating-point seconds to SRT's HH:MM:SS,mmm format."""
-    return (
-        time.strftime("%H:%M:%S", time.gmtime(x))
-        + f",{int(x % 1 * 1000):03}"
-    )
+    x = max(0.0, x)
+    ms = int(round(x * 1000))
 
+    h, ms = divmod(ms, 3600000)
+    m_, ms = divmod(ms, 60000)
+    s, ms = divmod(ms, 1000)
 
-# Subtitle safety limits. Sentence punctuation is preferred, but ASR sometimes
-# emits long stretches without punctuation, so duration, length and pauses act
-# as fallbacks instead of allowing one enormous screen-filling subtitle event.
-MAX_DURATION = 7.0
-MAX_CHARS = 84
-PAUSE_SPLIT = 0.7
-MIN_CHARS_FOR_PAUSE = 24
+    return f"{h:02}:{m_:02}:{s:02},{ms:03}"
 
 
 # Qwen's forced aligner deliberately strips punctuation from its timed units.
@@ -351,9 +362,9 @@ if pos < len(a):
     groups.append((" ".join(x.text for x in a[pos:]), a[pos:]))
 
 
-# Split only when a sentence would otherwise be too long. Natural pauses are
-# preferred once a cue contains enough text; the hard duration/character limits
-# guarantee progress even when the speaker talks continuously without pauses.
+# Split only when a source sentence would otherwise be too long. Natural pauses
+# are preferred once a cue contains enough text; hard duration and character
+# limits guarantee progress when speech continues without useful pauses.
 def split_group(text, items):
     if not items:
         return []
@@ -389,16 +400,125 @@ def split_group(text, items):
             or len(current_text) >= MAX_CHARS
             or i == len(items) - 1
         ):
+            # The aligner units contain no punctuation. Restore the punctuation
+            # belonging to the end of the original sentence on its final chunk.
+            if i == len(items) - 1:
+                current_text += re.search(
+                    r'[^\w\s]*$',
+                    text,
+                ).group()
+
             result.append((current_text, current.copy()))
             current = []
 
     return result
 
 
-# Make a readable one- or two-line SRT cue without ever discarding text.
-# The splitter keeps normal cues around 84 characters, so a two-line split around
-# 42 characters per line is usually possible.
-def balance_lines(text, width=42):
+def can_balance(text, width=LINE_WIDTH):
+    """Return whether text can fit on one or two lines of at most width."""
+    text = " ".join(text.split())
+
+    if len(text) <= width:
+        return True
+
+    words = text.split()
+
+    for i in range(1, len(words)):
+        left = " ".join(words[:i])
+        right = " ".join(words[i:])
+
+        if len(left) <= width and len(right) <= width:
+            return True
+
+    return False
+
+
+def split_for_screen(text):
+    """
+    Split translated English into chunks that can each fit on at most two
+    42-character lines. Prefer punctuation when a suitable earlier break exists.
+    """
+    text = " ".join(text.split())
+
+    if can_balance(text):
+        return [text]
+
+    words = text.split()
+    result = []
+
+    while words:
+        best = 1
+        soft = None
+
+        for n in range(1, len(words) + 1):
+            candidate = " ".join(words[:n])
+
+            if not can_balance(candidate):
+                break
+
+            best = n
+
+            if re.search(r'[,;:.!?…]["”’\)\]]*$', words[n - 1]):
+                soft = n
+
+        # Prefer a reasonably full punctuation boundary instead of breaking at
+        # the absolute last word that technically fits.
+        if soft is not None:
+            soft_text = " ".join(words[:soft])
+
+            if len(soft_text) >= LINE_WIDTH:
+                best = soft
+
+        chunk = " ".join(words[:best])
+        words = words[best:]
+
+        # An individual token longer than the line width cannot be broken safely
+        # without altering its spelling, so preserve it intact.
+        result.append(chunk)
+
+    return result
+
+
+def split_timed_translation(text, start, end):
+    """
+    Split an overlong English translation and divide its original source timing
+    proportionally by visible character count.
+
+    The first and last boundaries remain exactly source-aligned, and adjacent
+    translated cues meet without gaps or overlaps.
+    """
+    parts = split_for_screen(text)
+
+    if len(parts) == 1:
+        return [(parts[0], start, end)]
+
+    weights = [
+        max(1, len(re.sub(r'\s+', '', part)))
+        for part in parts
+    ]
+
+    total = sum(weights)
+    duration = max(0.001, end - start)
+
+    result = []
+    used = 0
+
+    for i, (part, weight) in enumerate(zip(parts, weights)):
+        part_start = start + duration * used / total
+        used += weight
+
+        if i == len(parts) - 1:
+            part_end = end
+        else:
+            part_end = start + duration * used / total
+
+        result.append((part, part_start, part_end))
+
+    return result
+
+
+# Make a readable one- or two-line SRT cue without discarding text.
+def balance_lines(text, width=LINE_WIDTH):
     text = " ".join(text.split())
 
     if len(text) <= width:
@@ -424,31 +544,53 @@ def balance_lines(text, width=42):
         _, left, right = min(candidates, key=lambda x: x[0])
         return left + "\n" + right
 
-    # A very long word or unusual token can make the 42-character target
-    # impossible. Preserve the complete text rather than truncating it.
+    # A single very long token can make the line target impossible.
+    # Preserve its exact spelling rather than corrupting or truncating it.
     return text
 
 
-print("Qwen: building readable subtitle cues...", flush=True)
+print("Qwen: building readable source subtitle cues...", flush=True)
+
+source_cues = []
+
+for sentence, items in groups:
+    source_cues.extend(split_group(sentence, items))
+
+
+print("Qwen: translating and finalizing subtitle cues...", flush=True)
 
 cues = []
 
-for sentence, items in groups:
-    cues.extend(split_group(sentence, items))
+for text, items in source_cues:
+    start = items[0].start_time
+    end = items[-1].end_time
+
+    if r.language != "English":
+        text = tr(text)
+
+        # Translation can expand substantially relative to the source language.
+        # Enforce the English screen limits after translation and derive safe
+        # sub-timings from the source-aligned interval when splitting is needed.
+        cues.extend(
+            split_timed_translation(
+                text,
+                start,
+                end,
+            )
+        )
+    else:
+        cues.append((text, start, end))
+
 
 print(f"Qwen: writing {len(cues)} subtitle cues...", flush=True)
 
-with open(sys.argv[2], "w") as f:
-    for n, (text, items) in enumerate(cues, 1):
-
-        if r.language != "English":
-            text = tr(text)
-
+with open(sys.argv[2], "w", encoding="utf-8") as f:
+    for n, (text, start, end) in enumerate(cues, 1):
         text = balance_lines(text)
 
         f.write(
             f"{n}\n"
-            f"{ts(items[0].start_time)} --> {ts(items[-1].end_time)}\n"
+            f"{ts(start)} --> {ts(end)}\n"
             f"{text}\n\n"
         )
 
