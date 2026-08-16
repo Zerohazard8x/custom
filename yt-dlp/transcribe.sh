@@ -11,13 +11,8 @@ status "Checking dependencies"
 
 # Core commands required regardless of which transcription backend is selected.
 # `ffprobe` checks subtitle streams and `ffmpeg` extracts/converts audio.
-REQUIRED_COMMANDS=(ffprobe ffmpeg)
-
 # Stop early if a core dependency is missing.
-# `command -v` is used instead of `which` because it is a shell builtin on
-# common shells and reliably checks commands available through the current PATH.
-# Redirecting stdout to /dev/null keeps this check quiet when a command exists.
-for cmd in "${REQUIRED_COMMANDS[@]}"; do
+for cmd in ffprobe ffmpeg; do
     if ! command -v "$cmd" >/dev/null; then
         echo "Transcribing commands are not available."
         exit 1
@@ -25,31 +20,48 @@ for cmd in "${REQUIRED_COMMANDS[@]}"; do
 done
 
 # Build the model/backend menu dynamically.
-# Only backends that can actually be used in the current shell environment
-# are shown, which prevents the splash screen from offering broken choices.
 status "Detecting transcription backends"
 BACKENDS=()
 
-# Qwen is considered available only when Python 3.12 exists AND both required
-# Python modules can be imported from that exact Python environment.
-# `&&` is used so the import check is never attempted if python3.12 is absent.
-if command -v python3.12 >/dev/null && python3.12 -c 'import qwen_asr,transformers' 2>/dev/null; then
-    BACKENDS+=(qwen)
+# Prefer WhisperX first when available.
+if command -v python3.12 >/dev/null &&
+    python3.12 -c 'import whisperx,torch,tqdm' 2>/dev/null
+then
+    BACKENDS+=(whisperx)
 fi
 
-# WhisperX and stable-ts expose their own CLI commands, so command discovery
-# alone is sufficient for displaying them in the selection menu.
-if command -v whisperx >/dev/null; then
-    BACKENDS+=(whisperx)
+# Offer Qwen only when both its Python stack and every model needed by this
+# workflow are already present in the local Hugging Face cache. This deliberately
+# prevents selecting Qwen from triggering a multi-gigabyte model download.
+if command -v python3.12 >/dev/null &&
+    python3.12 - <<'PYCHECKQWEN' 2>/dev/null
+import sys
+
+try:
+    import qwen_asr
+    import transformers
+    import tqdm
+    from huggingface_hub import scan_cache_dir
+
+    required = {
+        "Qwen/Qwen3-ASR-1.7B",
+        "Qwen/Qwen3-ForcedAligner-0.6B",
+        "Qwen/Qwen3-0.6B",
+    }
+    cached = {repo.repo_id for repo in scan_cache_dir().repos}
+except Exception:
+    sys.exit(1)
+
+sys.exit(0 if required <= cached else 1)
+PYCHECKQWEN
+then
+    BACKENDS+=(qwen)
 fi
 
 if command -v stable-ts >/dev/null; then
     BACKENDS+=(stable-ts)
 fi
 
-# `${#BACKENDS[@]}` gives the number of Bash array elements.
-# The arithmetic form `(( ... ))` treats zero as false, so this compactly
-# aborts when no usable transcription backend was detected.
 ((${#BACKENDS[@]})) || {
     echo "No transcription model is available."
     exit 1
@@ -62,35 +74,29 @@ for f in *; do
     [[ "$f" =~ \.(mp4|mkv)$ && ! "$f" =~ ^old_ ]] && ((N++))
 done
 
-# Clear the terminal and move the cursor to the upper-left corner so the model
-# chooser behaves like a small splash screen instead of appearing below old logs.
+# Clear the terminal and move the cursor to the upper-left corner.
 printf '\033[2J\033[H'
 
 echo "Transcription model"
 echo "Videos: $N"
 
-# Bash array indices start at zero.
-# We display `i + 1` because a menu beginning at 1 is more natural for users.
 for i in "${!BACKENDS[@]}"; do
     case "${BACKENDS[i]}" in
         qwen)
             name="Qwen3-ASR-1.7B"
             ;;
         whisperx)
-            name="WhisperX turbo"
+            name="WhisperX large-v3"
             ;;
         stable-ts)
-            name="stable-ts turbo"
+            name="stable-ts large-v3"
             ;;
     esac
 
     printf '%d) %s\n' "$((i+1))" "$name"
 done
 
-# No explicit "default backend" variable is needed.
-# BACKENDS was populated in priority order:
-# Qwen -> WhisperX -> stable-ts.
-# Therefore BACKENDS[0] automatically represents the best available fallback.
+# BACKENDS[0] automatically represents the best available fallback.
 printf 'Choose [1-%d] (auto in 5s): ' "${#BACKENDS[@]}"
 
 choice=""
@@ -148,13 +154,7 @@ for file in *; do
             -of csv=p=0 \
             "$file" | grep -q "eng"
         then
-            # Remove only the final file extension.
-            # This preserves dots elsewhere in filenames.
-            filename=$(basename "$file" | sed "s/\.[^.]*$//")
-
-            # Keep the original extension available even though the current
-            # processing path does not otherwise need to branch on it.
-            extension="${file##*.}"
+            filename="${file%.*}"
 
             # Preserve the original input before creating the new MKV.
             mv -fv "$file" "old_$file"
@@ -196,23 +196,112 @@ for file in *; do
                 qwen)
                     status "Transcribing with Qwen3-ASR: $file ($file_no/$N)"
 
-                    # Qwen3-ASR performs transcription and language detection.
-                    # Qwen3-ForcedAligner supplies word/character timestamps.
-                    #
-                    # If Qwen reports exactly "English", its transcript is used
-                    # directly. For other or mixed languages, Qwen3-0.6B is loaded
-                    # only then and translates each finished source subtitle cue.
-                    #
-                    # If an English translation becomes longer than the subtitle
-                    # limits, it is split again and its source-aligned time interval
-                    # is divided proportionally among the resulting English cues.
+                    # Qwen performs ASR and source-language forced alignment in one
+                    # blocking transcribe() call. The library does not expose a
+                    # public percentage callback for that combined call, so this
+                    # script shows an indeterminate moving bar plus elapsed time
+                    # there. All loops whose total is known use real tqdm bars.
                     python3.12 - "$asr_audio" "$srtfile" <<'PYQWEN' || exit 1
 import re
 import sys
+import threading
 import time
 
 from qwen_asr import Qwen3ASRModel
+from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
+
+
+# Real progress bars are used where the amount of work is known. For blocking
+# library calls with no progress callback, this gives a moving indeterminate bar
+# and elapsed time without pretending to know a percentage.
+class Activity:
+    def __init__(self, label, width=24, interval=0.08):
+        self.label = label
+        self.width = width
+        self.interval = interval
+        self.stop = threading.Event()
+        self.thread = None
+        self.started = None
+
+    def __enter__(self):
+        self.started = time.monotonic()
+
+        if not sys.stderr.isatty():
+            print(f"{self.label}...", file=sys.stderr, flush=True)
+            return self
+
+        def run():
+            pos = 0
+            direction = 1
+
+            while not self.stop.wait(self.interval):
+                bar = [" "] * self.width
+                bar[pos] = "█"
+
+                if pos > 0:
+                    bar[pos - 1] = "▓"
+                if pos > 1:
+                    bar[pos - 2] = "░"
+
+                elapsed = time.monotonic() - self.started
+
+                sys.stderr.write(
+                    f"\r\033[2K{self.label}: "
+                    f"|{''.join(bar)}| {elapsed:6.1f}s"
+                )
+                sys.stderr.flush()
+
+                pos += direction
+
+                if pos >= self.width - 1:
+                    pos = self.width - 1
+                    direction = -1
+                elif pos <= 0:
+                    pos = 0
+                    direction = 1
+
+        self.thread = threading.Thread(target=run, daemon=True)
+        self.thread.start()
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        self.stop.set()
+
+        if self.thread is not None:
+            self.thread.join()
+
+        elapsed = time.monotonic() - self.started
+
+        if sys.stderr.isatty():
+            sys.stderr.write("\r\033[2K")
+
+        if exc_type is None:
+            print(
+                f"{self.label}: done [{elapsed:.1f}s]",
+                file=sys.stderr,
+                flush=True,
+            )
+        else:
+            print(
+                f"{self.label}: failed [{elapsed:.1f}s]",
+                file=sys.stderr,
+                flush=True,
+            )
+
+
+def pbar(iterable, *, desc, unit):
+    """Consistent terminal progress bars for deterministic phases."""
+    return tqdm(
+        iterable,
+        desc=desc,
+        unit=unit,
+        dynamic_ncols=True,
+        mininterval=0.1,
+        smoothing=0.1,
+        leave=True,
+        disable=None,
+    )
 
 
 print("Qwen: loading ASR + forced aligner...", flush=True)
@@ -229,19 +318,22 @@ m = Qwen3ASRModel.from_pretrained(
     },
 )
 
-print("Qwen: transcribing + aligning...", flush=True)
-
-# Keep the complete result because `text` retains the ASR punctuation while
-# `time_stamps` contains the aligner's punctuation-stripped timed units.
-r = m.transcribe(
-    audio=sys.argv[1],
-    language=None,
-    return_time_stamps=True,
-)[0]
+# Qwen's non-streaming call keeps the forced aligner and Qwen's own long-audio
+# chunking behavior. Because the public call is blocking, use an indeterminate
+# activity bar rather than a fabricated 0-100 percentage.
+with Activity("Qwen: transcribing + aligning"):
+    # Keep the complete result because `text` retains the ASR punctuation while
+    # `time_stamps` contains the aligner's punctuation-stripped timed units.
+    r = m.transcribe(
+        audio=sys.argv[1],
+        language=None,
+        return_time_stamps=True,
+    )[0]
 
 a = list(r.time_stamps)
 
 print("Qwen: detected language:", r.language, flush=True)
+print(f"Qwen: aligned units: {len(a)}", flush=True)
 
 
 # Subtitle limits.
@@ -304,20 +396,8 @@ def ts(x):
     return f"{h:02}:{m_:02}:{s:02},{ms:03}"
 
 
-# Qwen's forced aligner deliberately strips punctuation from its timed units.
-# Therefore sentence boundaries are taken from `r.text`, while this helper uses
-# Qwen's own aligner tokenizer to find how many timed units belong to a sentence.
-def aligned_units(text):
-    return m.forced_aligner.aligner_processor.encode_timestamp(
-        text,
-        r.language,
-    )[0]
-
-
-# Preserve sentence-final punctuation from the ASR transcript. If punctuation
-# is absent, the complete text becomes one provisional sentence and the safety
-# splitter below divides it using pauses, duration and readable length instead.
 def split_sentences(text):
+    """Split at sentence-final punctuation while preserving that punctuation."""
     parts = []
     start = 0
 
@@ -342,9 +422,20 @@ print("Qwen: finding sentence boundaries...", flush=True)
 
 groups = []
 pos = 0
+sentences = split_sentences(r.text)
 
-for sentence in split_sentences(r.text):
-    count = len(aligned_units(sentence))
+sentence_bar = pbar(
+    sentences,
+    desc="Qwen: mapping sentences",
+    unit="sentence",
+)
+
+for sentence in sentence_bar:
+    count = len(m.forced_aligner.aligner_processor.encode_timestamp(
+        sentence,
+        r.language,
+    )[0])
+
     if count == 0:
         continue
 
@@ -355,17 +446,23 @@ for sentence in split_sentences(r.text):
     if items:
         groups.append((sentence, items))
 
-# Keep any residual aligned items if chunk/tokenization differences leave a few
-# timestamps unmatched. Losing the tail of the speech would be worse than a
-# punctuation-free final cue.
+    sentence_bar.set_postfix(
+        mapped=len(groups),
+        timed=f"{pos}/{len(a)}",
+        refresh=False,
+    )
+
+# Preserve any residual aligned tail.
 if pos < len(a):
     groups.append((" ".join(x.text for x in a[pos:]), a[pos:]))
 
 
-# Split only when a source sentence would otherwise be too long. Natural pauses
-# are preferred once a cue contains enough text; hard duration and character
-# limits guarantee progress when speech continues without useful pauses.
 def split_group(text, items):
+    """
+    Split a source sentence only when required by pause, duration or length.
+    Sentence-final punctuation is restored on the final piece because Qwen's
+    timestamp units themselves do not contain punctuation.
+    """
     if not items:
         return []
 
@@ -481,11 +578,8 @@ def split_for_screen(text):
 
 def split_timed_translation(text, start, end):
     """
-    Split an overlong English translation and divide its original source timing
-    proportionally by visible character count.
-
-    The first and last boundaries remain exactly source-aligned, and adjacent
-    translated cues meet without gaps or overlaps.
+    Split an overlong English translation and divide its source-aligned time
+    interval proportionally by visible character count.
     """
     parts = split_for_screen(text)
 
@@ -517,8 +611,8 @@ def split_timed_translation(text, start, end):
     return result
 
 
-# Make a readable one- or two-line SRT cue without discarding text.
 def balance_lines(text, width=LINE_WIDTH):
+    """Balance one cue across one or two lines without discarding text."""
     text = " ".join(text.split())
 
     if len(text) <= width:
@@ -553,15 +647,32 @@ print("Qwen: building readable source subtitle cues...", flush=True)
 
 source_cues = []
 
-for sentence, items in groups:
+build_bar = pbar(
+    groups,
+    desc="Qwen: building source cues",
+    unit="sentence",
+)
+
+for sentence, items in build_bar:
     source_cues.extend(split_group(sentence, items))
+    build_bar.set_postfix(cues=len(source_cues), refresh=False)
 
 
 print("Qwen: translating and finalizing subtitle cues...", flush=True)
 
 cues = []
 
-for text, items in source_cues:
+finalize_bar = pbar(
+    source_cues,
+    desc=(
+        "Qwen: translating"
+        if r.language != "English"
+        else "Qwen: finalizing"
+    ),
+    unit="cue",
+)
+
+for text, items in finalize_bar:
     start = items[0].start_time
     end = items[-1].end_time
 
@@ -581,20 +692,77 @@ for text, items in source_cues:
     else:
         cues.append((text, start, end))
 
+    finalize_bar.set_postfix(output=len(cues), refresh=False)
 
-print(f"Qwen: writing {len(cues)} subtitle cues...", flush=True)
+
+# Balance lines before writing so formatting itself has an exact progress bar.
+formatted_cues = []
+
+format_bar = pbar(
+    cues,
+    desc="Qwen: balancing lines",
+    unit="cue",
+)
+
+for text, start, end in format_bar:
+    formatted_cues.append(
+        (balance_lines(text), start, end)
+    )
+
+
+# Validate every final cue before writing it. This catches timing regressions
+# without silently discarding subtitle text.
+validated_cues = []
+
+qa_bar = pbar(
+    formatted_cues,
+    desc="Qwen: validating cues",
+    unit="cue",
+)
+
+previous_end = 0.0
+
+for text, start, end in qa_bar:
+    if not text.strip():
+        raise ValueError("Qwen produced an empty subtitle cue.")
+
+    if end < start:
+        raise ValueError(
+            f"Subtitle cue has negative duration: {start} -> {end}"
+        )
+
+    if start < previous_end - 0.001:
+        raise ValueError(
+            f"Subtitle cue overlaps the previous cue: {start} < {previous_end}"
+        )
+
+    validated_cues.append((text, start, end))
+    previous_end = end
+
+
+print(
+    f"Qwen: writing {len(validated_cues)} subtitle cues...",
+    flush=True,
+)
 
 with open(sys.argv[2], "w", encoding="utf-8") as f:
-    for n, (text, start, end) in enumerate(cues, 1):
-        text = balance_lines(text)
+    write_bar = pbar(
+        validated_cues,
+        desc="Qwen: writing SRT",
+        unit="cue",
+    )
 
+    for n, (text, start, end) in enumerate(write_bar, 1):
         f.write(
             f"{n}\n"
             f"{ts(start)} --> {ts(end)}\n"
             f"{text}\n\n"
         )
 
-print(f"Qwen: wrote {len(cues)} subtitle cues.", flush=True)
+print(
+    f"Qwen: wrote {len(validated_cues)} subtitle cues.",
+    flush=True,
+)
 PYQWEN
                     ;;
 
@@ -606,10 +774,9 @@ PYQWEN
                     # configuration and replace it only when CUDA is confirmed.
                     WX_GPU=(--device cpu --compute_type float32)
 
-                    if command -v python3.12 >/dev/null &&
-                        python3.12 -c \
-                            'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
-                            2>/dev/null
+                    if python3.12 -c \
+                        'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
+                        2>/dev/null
                     then
                         WX_GPU=(--device cuda --compute_type float16)
                     fi
@@ -618,7 +785,8 @@ PYQWEN
                     # `--print_progress True` exposes WhisperX's progress updates.
                     whisperx \
                         --task translate \
-                        --model turbo \
+                        --model large-v3 \
+                        --batch_size 4 \
                         "${WX_GPU[@]}" \
                         --output_dir . \
                         --output_format srt \
@@ -631,9 +799,11 @@ PYQWEN
                     mv -fv "${asr_audio%.*}.srt" "$srtfile" || exit 1
                     ;;
 
-
                 stable-ts)
                     status "Transcribing with stable-ts: $file ($file_no/$N)"
+
+                    # stable-ts/faster-whisper downloads large-v3 automatically
+                    # on first use when the model is not already cached.
 
                     # stable-ts uses faster-whisper here and asks Whisper to
                     # translate recognized speech into English.
@@ -647,7 +817,7 @@ PYQWEN
                         --vad=True \
                         --denoiser demucs \
                         --verbose True \
-                        --model turbo \
+                        --model large-v3 \
                         "old_$file" \
                         -o "$srtfile" || exit 1
                     ;;
