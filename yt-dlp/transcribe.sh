@@ -1,6 +1,9 @@
 #!/bin/bash
 
+# Mirror all later stdout/stderr to the terminal and an append-only log.
 exec > >(tee -a transcribe.log) 2>&1
+
+# Prompt on exit only when an interactive terminal is actually available.
 trap '[[ -r /dev/tty ]] && read -r -p "Press Enter to close..." </dev/tty' EXIT
 
 # Print each phase normally and, when stdout is a terminal, also place it in the
@@ -27,7 +30,8 @@ status "Detecting transcription backends"
 BACKENDS=()
 
 # Prefer WhisperX first when available.
-# Demucs is required because this workflow isolates vocals before passing the audio to WhisperX.
+# Demucs is required because this workflow isolates vocals before passing the
+# audio to WhisperX.
 if python3.12 -c 'import whisperx,torch,demucs' 2>/dev/null; then
     BACKENDS+=(whisperx)
 fi
@@ -59,6 +63,7 @@ PYCHECKQWEN
     BACKENDS+=(qwen)
 fi
 
+# Offer stable-ts only when its command-line entry point is installed.
 if command -v stable-ts >/dev/null; then
     BACKENDS+=(stable-ts)
 fi
@@ -181,7 +186,7 @@ for file in *; do
 
                 # Qwen receives a standard 16 kHz mono PCM speech input.
                 # `-loglevel info -stats` shows meaningful FFmpeg decisions plus its
-			    # live progress line, while `-hide_banner` removes repetitive build info.
+                # live progress line, while `-hide_banner` removes repetitive build info.
                 ffmpeg \
                     -hide_banner \
                     -loglevel info \
@@ -210,7 +215,6 @@ import time
 from qwen_asr import Qwen3ASRModel
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
-
 
 # Real progress bars are used where the amount of work is known. For blocking
 # library calls with no progress callback, this gives a moving indeterminate bar
@@ -289,7 +293,6 @@ class Activity:
                 flush=True,
             )
 
-
 def pbar(iterable, *, desc, unit):
     """Consistent terminal progress bars for deterministic phases."""
     return tqdm(
@@ -302,7 +305,6 @@ def pbar(iterable, *, desc, unit):
         leave=True,
         disable=None,
     )
-
 
 print("Qwen: loading ASR + forced aligner...", flush=True)
 
@@ -335,14 +337,12 @@ a = list(r.time_stamps)
 print("Qwen: detected language:", r.language, flush=True)
 print(f"Qwen: aligned units: {len(a)}", flush=True)
 
-
 # Subtitle limits.
 MAX_DURATION = 7.0
 MAX_CHARS = 84
 LINE_WIDTH = 42
 PAUSE_SPLIT = 0.5
 MIN_CHARS_FOR_PAUSE = 24
-
 
 # Load the translation model only when the complete recording was not detected
 # as English. A mixed value such as "Chinese,English" therefore still translates.
@@ -383,7 +383,6 @@ if r.language != "English":
             skip_special_tokens=True,
         ).strip()
 
-
 def ts(x):
     """Convert floating-point seconds to SRT's HH:MM:SS,mmm format."""
     x = max(0.0, x)
@@ -394,7 +393,6 @@ def ts(x):
     s, ms = divmod(ms, 1000)
 
     return f"{h:02}:{m_:02}:{s:02},{ms:03}"
-
 
 def split_sentences(text):
     """Split at sentence-final punctuation while preserving that punctuation."""
@@ -413,7 +411,6 @@ def split_sentences(text):
         parts.append(tail)
 
     return parts
-
 
 # Associate the original punctuated sentences with their corresponding aligned
 # timestamps. Reusing Qwen's tokenizer is important because it matches the units
@@ -455,7 +452,6 @@ for sentence in sentence_bar:
 # Preserve any residual aligned tail.
 if pos < len(a):
     groups.append((" ".join(x.text for x in a[pos:]), a[pos:]))
-
 
 def split_group(text, items):
     """
@@ -510,7 +506,6 @@ def split_group(text, items):
 
     return result
 
-
 def can_balance(text, width=LINE_WIDTH):
     """Return whether text can fit on one or two lines of at most width."""
     text = " ".join(text.split())
@@ -528,7 +523,6 @@ def can_balance(text, width=LINE_WIDTH):
             return True
 
     return False
-
 
 def split_for_screen(text):
     """
@@ -575,7 +569,6 @@ def split_for_screen(text):
 
     return result
 
-
 def split_timed_translation(text, start, end):
     """
     Split an overlong English translation and divide its source-aligned time
@@ -610,7 +603,6 @@ def split_timed_translation(text, start, end):
 
     return result
 
-
 def balance_lines(text, width=LINE_WIDTH):
     """Balance one cue across one or two lines without discarding text."""
     text = " ".join(text.split())
@@ -642,7 +634,6 @@ def balance_lines(text, width=LINE_WIDTH):
     # Preserve its exact spelling rather than corrupting or truncating it.
     return text
 
-
 print("Qwen: building readable source subtitle cues...", flush=True)
 
 source_cues = []
@@ -656,7 +647,6 @@ build_bar = pbar(
 for sentence, items in build_bar:
     source_cues.extend(split_group(sentence, items))
     build_bar.set_postfix(cues=len(source_cues), refresh=False)
-
 
 print("Qwen: translating and finalizing subtitle cues...", flush=True)
 
@@ -694,7 +684,6 @@ for text, items in finalize_bar:
 
     finalize_bar.set_postfix(output=len(cues), refresh=False)
 
-
 # Balance lines before writing so formatting itself has an exact progress bar.
 formatted_cues = []
 
@@ -708,7 +697,6 @@ for text, start, end in format_bar:
     formatted_cues.append(
         (balance_lines(text), start, end)
     )
-
 
 # Validate every final cue before writing it. This catches timing regressions
 # without silently discarding subtitle text.
@@ -738,7 +726,6 @@ for text, start, end in qa_bar:
 
     validated_cues.append((text, start, end))
     previous_end = end
-
 
 print(
     f"Qwen: writing {len(validated_cues)} subtitle cues...",
@@ -797,7 +784,14 @@ PYQWEN
                     -o "$wx_dir" \
                     "$wx_dir"/*.wav || exit 1
 
-                (cd "$wx_dir" && printf "file '%s'\n" htdemucs/*/vocals.wav >list && ffmpeg -f concat -i list -c copy vocals.wav) || exit 1
+                # Build the concat list inside wx_dir so its relative stem paths remain
+                # short, then stream-copy identical WAV segments to avoid re-encoding.
+                (
+                    cd "$wx_dir" &&
+                        printf "file '%s'\n" htdemucs/*/vocals.wav >list &&
+                        ffmpeg -f concat -i list -c copy vocals.wav
+                ) || exit 1
+
                 wx_audio="$wx_dir/vocals.wav"
 
                 [[ -f "$wx_audio" ]] || {
@@ -820,63 +814,236 @@ PYQWEN
                 # `verbose=True` prints useful transcript details while
                 # `print_progress=True` exposes WhisperX's progress updates.
                 PYTHONIOENCODING=utf-8 python3.12 - "$wx_audio" "${WX_GPU[@]}" <<'PYWHISPERX' || exit 1
-import gc,regex,sys,torch,whisperx
+import gc
+import regex
+import sys
+import torch
+import whisperx
+
 from nltk.tokenize import sent_tokenize
-from whisperx.utils import PUNKT_LANGUAGES,get_writer
+from whisperx.utils import PUNKT_LANGUAGES, get_writer
 
-sentence_re=regex.compile(r'.+?(?:\p{Sentence_Terminal}+(?:(?:\p{Close_Punctuation}|\p{Final_Punctuation}|["\'])*)|$)',regex.S)
-def split_sentences(text): return sent_tokenize(text,language="english")
+# Match Unicode sentence-ending punctuation here because this fallback is used
+# only for source languages that do not have an NLTK Punkt sentence model.
+# `regex.S` lets the final fallback also consume text containing newlines.
+sentence_re = regex.compile(
+    r'.+?(?:\p{Sentence_Terminal}+(?:(?:\p{Close_Punctuation}|\p{Final_Punctuation}|["\'])*)|$)',
+    regex.S,
+)
+
+# The translated Whisper text is English, so the Punkt splitter is explicitly
+# fixed to English rather than the detected source language.
+def split_sentences(text):
+    return sent_tokenize(text, language="english")
+
 def split_aligned(segments):
-    out=[]
-    for seg in segments:
-        chars=seg.get("chars") or []
-        if not chars:
-            out.append(seg); continue
-        text="".join(x["char"] for x in chars)
-        for match in sentence_re.finditer(text):
-            timed=[x for x in chars[match.start():match.end()] if "start" in x and "end" in x]
-            if timed and match.group().strip(): out.append({"start":timed[0]["start"],"end":timed[-1]["end"]})
-    return out
-def empty_cache():
-    gc.collect()
-    if torch.cuda.is_available(): torch.cuda.empty_cache()
+    # Some aligners expose only character timestamps. Rebuild sentence spans from
+    # the first and last timed character while preserving untouched segments that
+    # lack per-character timing.
+    out = []
 
-m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
-a=whisperx.load_audio(sys.argv[1])
-print("Audio duration:",len(a)/16000,flush=True)
-source=m.transcribe(a,batch_size=4,task="transcribe",verbose=True,print_progress=True)
-language=source["language"]
-del m; empty_cache()
+    for seg in segments:
+        chars = seg.get("chars") or []
+
+        if not chars:
+            out.append(seg)
+            continue
+
+        text = "".join(x["char"] for x in chars)
+
+        for match in sentence_re.finditer(text):
+            timed = [
+                x
+                for x in chars[match.start():match.end()]
+                if "start" in x and "end" in x
+            ]
+
+            if timed and match.group().strip():
+                out.append(
+                    {
+                        "start": timed[0]["start"],
+                        "end": timed[-1]["end"],
+                    }
+                )
+
+    return out
+
+def empty_cache():
+    # Release model objects between phases because WhisperX may otherwise retain
+    # enough GPU memory to prevent the aligner or translation model from loading.
+    gc.collect()
+
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
+# First transcribe in the source language so alignment is performed against the
+# words that were actually spoken instead of against translated text.
+m = whisperx.load_model(
+    "large-v3",
+    sys.argv[3],
+    compute_type=sys.argv[5],
+)
+a = whisperx.load_audio(sys.argv[1])
+
+print(
+    "Audio duration:",
+    len(a) / 16000,
+    flush=True,
+)
+
+source = m.transcribe(
+    a,
+    batch_size=4,
+    task="transcribe",
+    verbose=True,
+    print_progress=True,
+)
+language = source["language"]
+
+del m
+empty_cache()
+
 try:
-    am,metadata=whisperx.load_align_model(language_code=language,device=sys.argv[3])
+    am, metadata = whisperx.load_align_model(
+        language_code=language,
+        device=sys.argv[3],
+    )
 except ValueError:
-    print(f"No default WhisperX aligner for {language}; using 8-second translated VAD chunks.",flush=True)
-    m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
-    r=m.transcribe(a,batch_size=4,task="translate",chunk_size=8,verbose=True,print_progress=True)
+    # Not every Whisper language has a default WhisperX aligner. In that case,
+    # use short translated VAD chunks so subtitle timing stays reasonably granular.
+    print(
+        f"No default WhisperX aligner for {language}; "
+        "using 8-second translated VAD chunks.",
+        flush=True,
+    )
+
+    m = whisperx.load_model(
+        "large-v3",
+        sys.argv[3],
+        compute_type=sys.argv[5],
+    )
+    r = m.transcribe(
+        a,
+        batch_size=4,
+        task="translate",
+        chunk_size=8,
+        verbose=True,
+        print_progress=True,
+    )
 else:
-    aligned=whisperx.align(source["segments"],am,metadata,a,sys.argv[3],return_char_alignments=True,print_progress=True)
-    sentences=aligned["segments"] if language in PUNKT_LANGUAGES else split_aligned(aligned["segments"])
-    del am; empty_cache()
-    m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
-    r=m.transcribe(a,batch_size=4,task="translate",verbose=True,print_progress=True)
-    cues=[]
+    # When an aligner exists, prefer its sentence-level timing. Punkt gives
+    # cleaner boundaries for supported languages; the Unicode fallback handles
+    # the rest without assuming English punctuation.
+    aligned = whisperx.align(
+        source["segments"],
+        am,
+        metadata,
+        a,
+        sys.argv[3],
+        return_char_alignments=True,
+        print_progress=True,
+    )
+    sentences = (
+        aligned["segments"]
+        if language in PUNKT_LANGUAGES
+        else split_aligned(aligned["segments"])
+    )
+
+    del am
+    empty_cache()
+
+    # Run translation only after source alignment so English cue text can inherit
+    # timing from the corresponding source-language sentence.
+    m = whisperx.load_model(
+        "large-v3",
+        sys.argv[3],
+        compute_type=sys.argv[5],
+    )
+    r = m.transcribe(
+        a,
+        batch_size=4,
+        task="translate",
+        verbose=True,
+        print_progress=True,
+    )
+    cues = []
+
     for seg in r["segments"]:
-        ss=[s for s in sentences if seg["start"] <= (s["start"]+s["end"])/2 <= seg["end"]]
-        parts=split_sentences(seg["text"])
-        if ss and len(parts)==len(ss):
-            cues.extend({"text":text,"start":s["start"],"end":s["end"]} for text,s in zip(parts,ss))
+        ss = [
+            s
+            for s in sentences
+            if seg["start"] <= (s["start"] + s["end"]) / 2 <= seg["end"]
+        ]
+        parts = split_sentences(seg["text"])
+
+        # Use aligned sentence timings only when the translated and source sentence
+        # counts agree, avoiding a guessed mapping between unequal sentence lists.
+        if ss and len(parts) == len(ss):
+            cues.extend(
+                {
+                    "text": text,
+                    "start": s["start"],
+                    "end": s["end"],
+                }
+                for text, s in zip(parts, ss)
+            )
         elif ss:
-            print("Sentence-count mismatch; using Whisper native timestamp segmentation.",flush=True)
-            base=seg["start"]
-            native,_=m.model.transcribe(a[int(base*16000):int(seg["end"]*16000)],language=language,task="translate",without_timestamps=False,condition_on_previous_text=False)
+            # If translation changes the sentence count, fall back to Whisper's
+            # native timestamped decoding rather than assigning incorrect times.
+            print(
+                "Sentence-count mismatch; using Whisper native timestamp segmentation.",
+                flush=True,
+            )
+            base = seg["start"]
+            native, _ = m.model.transcribe(
+                a[int(base * 16000):int(seg["end"] * 16000)],
+                language=language,
+                task="translate",
+                without_timestamps=False,
+                condition_on_previous_text=False,
+            )
+
             for x in native:
-                text=x.text.strip()
-                if text: cues.append({"text":text,"start":base+x.start,"end":base+x.end})
-        else: cues.append(seg)
-    r={"segments":cues,"language":"en"}
-print("Segments:",len(r["segments"]),"last:",r["segments"][-1]["end"] if r["segments"] else 0,flush=True)
-r["language"]="en"
-get_writer("srt",".")(r,sys.argv[1],{"highlight_words":False,"max_line_count":None,"max_line_width":None})
+                text = x.text.strip()
+
+                if text:
+                    cues.append(
+                        {
+                            "text": text,
+                            "start": base + x.start,
+                            "end": base + x.end,
+                        }
+                    )
+        else:
+            # With no aligned source sentence in this segment, Whisper's own
+            # segment timing is the safest available fallback.
+            cues.append(seg)
+
+    r = {
+        "segments": cues,
+        "language": "en",
+    }
+
+print(
+    "Segments:",
+    len(r["segments"]),
+    "last:",
+    r["segments"][-1]["end"] if r["segments"] else 0,
+    flush=True,
+)
+
+# Every cue in `r` is English by this point, so normalize the language metadata
+# before passing the result to the standard SRT writer.
+r["language"] = "en"
+get_writer("srt", ".")(
+    r,
+    sys.argv[1],
+    {
+        "highlight_words": False,
+        "max_line_count": None,
+        "max_line_width": None,
+    },
+)
 PYWHISPERX
 
                 # WhisperX names its output after the isolated WAV input.
