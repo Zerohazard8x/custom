@@ -9,8 +9,8 @@ trap '[[ -r /dev/tty ]] && read -r -p "Press Enter to close..." </dev/tty' EXIT
 # Print each phase normally and, when stdout is a terminal, also place it in the
 # terminal/tab title so the current operation remains visible while output scrolls.
 status() {
-    [[ -t 1 ]] && printf '\033]0;%s\007' "$1"
-    printf '\n== %s ==\n' "$1"
+	[[ -t 1 ]] && printf '\033]0;%s\007' "$1"
+	printf '\n== %s ==\n' "$1"
 }
 
 status "Checking dependencies"
@@ -19,10 +19,10 @@ status "Checking dependencies"
 # `ffprobe` checks subtitle streams and `ffmpeg` extracts/converts audio.
 # Stop early if a core dependency is missing.
 for cmd in ffprobe ffmpeg; do
-    if ! command -v "$cmd" >/dev/null; then
-        echo "Transcribing commands are not available."
-        exit 1
-    fi
+	if ! command -v "$cmd" >/dev/null; then
+		echo "Transcribing commands are not available."
+		exit 1
+	fi
 done
 
 # Build the model/backend menu dynamically.
@@ -33,14 +33,14 @@ BACKENDS=()
 # Demucs is required because this workflow isolates vocals before passing the
 # audio to WhisperX.
 if python3.12 -c 'import whisperx,torch,demucs' 2>/dev/null; then
-    BACKENDS+=(whisperx)
+	BACKENDS+=(whisperx)
 fi
 
 # Offer Qwen only when both its Python stack and every model needed by this
 # workflow are already present in the local Hugging Face cache. This deliberately
 # prevents selecting Qwen from triggering a multi-gigabyte model download.
 if command -v python3.12 >/dev/null &&
-    python3.12 - <<'PYCHECKQWEN' 2>/dev/null; then
+	python3.12 - <<'PYCHECKQWEN' 2>/dev/null; then
 import sys
 
 try:
@@ -60,24 +60,24 @@ except Exception:
 
 sys.exit(0 if required <= cached else 1)
 PYCHECKQWEN
-    BACKENDS+=(qwen)
+	BACKENDS+=(qwen)
 fi
 
 # Offer stable-ts only when its command-line entry point is installed.
 if command -v stable-ts >/dev/null; then
-    BACKENDS+=(stable-ts)
+	BACKENDS+=(stable-ts)
 fi
 
 ((${#BACKENDS[@]})) || {
-    echo "No transcription model is available."
-    exit 1
+	echo "No transcription model is available."
+	exit 1
 }
 
 # Count candidate videos once so the same total can be shown everywhere.
 status "Counting videos"
 N=0
 for f in *; do
-    [[ "$f" =~ \.(mp4|mkv)$ && ! "$f" =~ ^old_ ]] && ((N++))
+	[[ "$f" =~ \.(mp4|mkv)$ && ! "$f" =~ ^old_ ]] && ((N++))
 done
 
 # Clear the terminal and move the cursor to the upper-left corner.
@@ -87,19 +87,19 @@ echo "Transcription model"
 echo "Videos: $N"
 
 for i in "${!BACKENDS[@]}"; do
-    case "${BACKENDS[i]}" in
-    qwen)
-        name="Qwen3-ASR-1.7B"
-        ;;
-    whisperx)
-        name="WhisperX large-v3"
-        ;;
-    stable-ts)
-        name="stable-ts large-v3"
-        ;;
-    esac
+	case "${BACKENDS[i]}" in
+	qwen)
+		name="Qwen3-ASR-1.7B"
+		;;
+	whisperx)
+		name="WhisperX large-v3"
+		;;
+	stable-ts)
+		name="stable-ts large-v3"
+		;;
+	esac
 
-    printf '%d) %s\n' "$((i + 1))" "$name"
+	printf '%d) %s\n' "$((i + 1))" "$name"
 done
 
 # BACKENDS[0] automatically represents the best available fallback.
@@ -125,10 +125,10 @@ echo
 # Accept the user's choice only when it is a valid positive menu number.
 # Bash array indexing is zero-based, hence `choice - 1`.
 if [[ "$choice" =~ ^[1-9]$ ]] && ((choice <= ${#BACKENDS[@]})); then
-    ASR_BACKEND="${BACKENDS[choice - 1]}"
+	ASR_BACKEND="${BACKENDS[choice - 1]}"
 else
-    # Timeout, blank input, or invalid input selects the first available backend.
-    ASR_BACKEND="${BACKENDS[0]}"
+	# Timeout, blank input, or invalid input selects the first available backend.
+	ASR_BACKEND="${BACKENDS[0]}"
 fi
 
 echo "Using: $ASR_BACKEND"
@@ -141,72 +141,72 @@ echo "Using: $ASR_BACKEND"
 file_no=0
 for file in *; do
 
-    # Process MP4/MKV files only.
-    # Files beginning with old_ are skipped because those are originals that
-    # this script has already renamed and preserved.
-    if [[ "$file" =~ \.(mp4|mkv)$ && ! "$file" =~ ^old_ ]]; then
-        ((file_no++))
-        status "Checking: $file ($file_no/$N)"
+	# Process MP4/MKV files only.
+	# Files beginning with old_ are skipped because those are originals that
+	# this script has already renamed and preserved.
+	if [[ "$file" =~ \.(mp4|mkv)$ && ! "$file" =~ ^old_ ]]; then
+		((file_no++))
+		status "Checking: $file ($file_no/$N)"
 
-        # Skip videos already containing an English subtitle stream.
-        #
-        # `warning` allows useful ffprobe diagnostics through without flooding
-        # the screen with normal probe details; stdout remains machine-readable.
-        if ! ffprobe \
-            -v warning \
-            -select_streams s \
-            -show_entries stream=index:stream_tags=language \
-            -of csv=p=0 \
-            "$file" | grep -q "eng"; then
-            filename="${file%.*}"
+		# Skip videos already containing an English subtitle stream.
+		#
+		# `warning` allows useful ffprobe diagnostics through without flooding
+		# the screen with normal probe details; stdout remains machine-readable.
+		if ! ffprobe \
+			-v warning \
+			-select_streams s \
+			-show_entries stream=index:stream_tags=language \
+			-of csv=p=0 \
+			"$file" | grep -q "eng"; then
+			filename="${file%.*}"
 
-            # Preserve the original input before creating the new MKV.
-            mv -fv "$file" "old_$file"
+			# Preserve the original input before creating the new MKV.
+			mv -fv "$file" "old_$file"
 
-            # Qwen uses this 16 kHz mono WAV. The other backends operate on the
-            # original program audio or their own separated audio instead.
-            asr_audio="old_${filename}.asr.wav"
+			# Qwen uses this 16 kHz mono WAV. The other backends operate on the
+			# original program audio or their own separated audio instead.
+			asr_audio="old_${filename}.asr.wav"
 
-            # All backends ultimately produce this same SRT path, allowing the
-            # muxing code below to be completely backend-independent.
-            srtfile="old_${filename}.srt"
+			# All backends ultimately produce this same SRT path, allowing the
+			# muxing code below to be completely backend-independent.
+			srtfile="old_${filename}.srt"
 
-            #################################
-            # Transcription backend
-            #################################
+			#################################
+			# Transcription backend
+			#################################
 
-            case "$ASR_BACKEND" in
+			case "$ASR_BACKEND" in
 
-            qwen)
-                #################################
-                # Prepare speech audio
-                #################################
+			qwen)
+				#################################
+				# Prepare speech audio
+				#################################
 
-                status "Preparing audio: $file ($file_no/$N)"
+				status "Preparing audio: $file ($file_no/$N)"
 
-                # Qwen receives a standard 16 kHz mono PCM speech input.
-                # `-loglevel info -stats` shows meaningful FFmpeg decisions plus its
-                # live progress line, while `-hide_banner` removes repetitive build info.
-                ffmpeg \
-                    -hide_banner \
-                    -loglevel info \
-                    -stats \
-                    -y \
-                    -i "old_$file" \
-                    -vn \
-                    -ac 1 \
-                    -ar 16000 \
-                    -c:a pcm_s16le \
-                    "$asr_audio" || exit 1
+				# Qwen receives a standard 16 kHz mono PCM speech input.
+				# `-loglevel info -stats` shows meaningful FFmpeg decisions plus its
+				# live progress line, while `-hide_banner` removes repetitive build info.
+				ffmpeg \
+					-hide_banner \
+					-loglevel info \
+					-stats \
+					-y \
+					-i "old_$file" \
+					-vn \
+					-ac 1 \
+					-ar 16000 \
+					-c:a pcm_s16le \
+					"$asr_audio" || exit 1
 
-                status "Transcribing with Qwen3-ASR: $file ($file_no/$N)"
+				status "Transcribing with Qwen3-ASR: $file ($file_no/$N)"
 
-                # Qwen performs ASR and source-language forced alignment in one
-                # blocking transcribe() call. The library does not expose a
-                # public percentage callback for that combined call, so this
-                # script shows an indeterminate moving bar plus elapsed time
-                # there. All loops whose total is known use real tqdm bars.
-                python3.12 - "$asr_audio" "$srtfile" <<'PYQWEN' || exit 1
+				# Qwen performs ASR and source-language forced alignment in one
+				# blocking transcribe() call. The library does not expose a
+				# public percentage callback for that combined call, so this
+				# script shows an indeterminate moving bar plus elapsed time
+				# there. All loops whose total is known use real tqdm bars.
+				python3.12 - "$asr_audio" "$srtfile" <<'PYQWEN' || exit 1
 import re
 import sys
 import threading
@@ -751,369 +751,196 @@ print(
     flush=True,
 )
 PYQWEN
-                ;;
+				;;
 
-            whisperx)
-                # Preserve the original sample rate and channel layout for
-                # Demucs instead of reducing the mix to 16 kHz mono first.
-                wx_mix="old_${filename}.demucs/%03d.wav"
-                wx_dir="old_${filename}.demucs"
+			whisperx)
+				# Preserve the original sample rate and channel layout for
+				# Demucs instead of reducing the mix to 16 kHz mono first.
+				wx_mix="old_${filename}.demucs/%03d.wav"
+				wx_dir="old_${filename}.demucs"
 
-                status "Isolating vocals for WhisperX: $file ($file_no/$N)"
+				status "Isolating vocals for WhisperX: $file ($file_no/$N)"
 
-                mkdir -p "$wx_dir"
+				mkdir -p "$wx_dir"
 
-                ffmpeg \
-                    -hide_banner \
-                    -loglevel info \
-                    -stats \
-                    -y \
-                    -i "old_$file" \
-                    -vn \
-                    -c:a pcm_s16le \
-                    -f segment \
-                    -segment_time 300 \
-                    "$wx_mix" || exit 1
+				ffmpeg \
+					-hide_banner \
+					-loglevel info \
+					-stats \
+					-y \
+					-i "old_$file" \
+					-vn \
+					-c:a pcm_s16le \
+					-f segment \
+					-segment_time 300 \
+					"$wx_mix" || exit 1
 
-                # htdemucs is Demucs's standard model. Two-stem mode extracts
-                # vocals against the remainder of the program mix.
-                python3.12 -m demucs \
-                    -n htdemucs \
-                    --two-stems vocals \
-                    --other-method none \
-                    -o "$wx_dir" \
-                    "$wx_dir"/*.wav || exit 1
+				# htdemucs is Demucs's standard model. Two-stem mode extracts
+				# vocals against the remainder of the program mix.
+				python3.12 -m demucs \
+					-n htdemucs \
+					--two-stems vocals \
+					--other-method none \
+					-o "$wx_dir" \
+					"$wx_dir"/*.wav || exit 1
 
-                # Build the concat list inside wx_dir so its relative stem paths remain
-                # short, then stream-copy identical WAV segments to avoid re-encoding.
-                (
-                    cd "$wx_dir" &&
-                        printf "file '%s'\n" htdemucs/*/vocals.wav >list &&
-                        ffmpeg -f concat -i list -c copy vocals.wav
-                ) || exit 1
+				# Build the concat list inside wx_dir so its relative stem paths remain
+				# short, then stream-copy identical WAV segments to avoid re-encoding.
 
-                wx_audio="$wx_dir/vocals.wav"
+				(cd "$wx_dir" && printf "file '%s'\n" htdemucs/*/vocals.wav >list && ffmpeg -f concat -i list -c copy vocals.wav) || exit 1
+				wx_audio="$wx_dir/vocals.wav"
 
-                [[ -f "$wx_audio" ]] || {
-                    echo "Demucs did not create the expected vocals stem."
-                    exit 1
-                }
+				[[ -f "$wx_audio" ]] || {
+					echo "Demucs did not create the expected vocals stem."
+					exit 1
+				}
 
-                status "Transcribing with WhisperX: $file ($file_no/$N)"
+				status "Transcribing with WhisperX: $file ($file_no/$N)"
 
-                # WhisperX can use CPU everywhere, so start with a safe CPU
-                # configuration and replace it only when CUDA is confirmed.
-                WX_GPU=(--device cpu --compute_type float32)
+				# WhisperX can use CPU everywhere, so start with a safe CPU
+				# configuration and replace it only when CUDA is confirmed.
+				WX_GPU=(--device cpu --compute_type float32)
 
-                if python3.12 -c \
-                    'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
-                    2>/dev/null; then
-                    WX_GPU=(--device cuda --compute_type float16)
-                fi
+				if python3.12 -c \
+					'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
+					2>/dev/null; then
+					WX_GPU=(--device cuda --compute_type float16)
+				fi
 
-                # `verbose=True` prints useful transcript details while
-                # `print_progress=True` exposes WhisperX's progress updates.
-                PYTHONIOENCODING=utf-8 python3.12 - "$wx_audio" "${WX_GPU[@]}" <<'PYWHISPERX' || exit 1
-import gc
-import regex
-import sys
-import torch
-import whisperx
-
+				# `verbose=True` prints useful transcript details while
+				# `print_progress=True` exposes WhisperX's progress updates.
+				PYTHONIOENCODING=utf-8 python3.12 - "$wx_audio" "${WX_GPU[@]}" <<'PYWHISPERX' || exit 1
+import gc,regex,sys,torch,whisperx
 from nltk.tokenize import sent_tokenize
-from whisperx.utils import PUNKT_LANGUAGES, get_writer
+from whisperx.utils import PUNKT_LANGUAGES,get_writer
 
 # Match Unicode sentence-ending punctuation here because this fallback is used
 # only for source languages that do not have an NLTK Punkt sentence model.
 # `regex.S` lets the final fallback also consume text containing newlines.
-sentence_re = regex.compile(
-    r'.+?(?:\p{Sentence_Terminal}+(?:(?:\p{Close_Punctuation}|\p{Final_Punctuation}|["\'])*)|$)',
-    regex.S,
-)
-
-# The translated Whisper text is English, so the Punkt splitter is explicitly
-# fixed to English rather than the detected source language.
-def split_sentences(text):
-    return sent_tokenize(text, language="english")
-
+sentence_re=regex.compile(r'.+?(?:\p{Sentence_Terminal}+(?:(?:\p{Close_Punctuation}|\p{Final_Punctuation}|["\'])*)|$)',regex.S)
+def split_sentences(text): return sent_tokenize(text,language="english")
 def split_aligned(segments):
     # Some aligners expose only character timestamps. Rebuild sentence spans from
     # the first and last timed character while preserving untouched segments that
     # lack per-character timing.
-    out = []
-
+    out=[]
     for seg in segments:
-        chars = seg.get("chars") or []
-
+        chars=seg.get("chars") or []
         if not chars:
-            out.append(seg)
-            continue
-
-        text = "".join(x["char"] for x in chars)
-
+            out.append(seg); continue
+        text="".join(x["char"] for x in chars)
         for match in sentence_re.finditer(text):
-            timed = [
-                x
-                for x in chars[match.start():match.end()]
-                if "start" in x and "end" in x
-            ]
-
-            if timed and match.group().strip():
-                out.append(
-                    {
-                        "start": timed[0]["start"],
-                        "end": timed[-1]["end"],
-                    }
-                )
-
+            timed=[x for x in chars[match.start():match.end()] if "start" in x and "end" in x]
+            if timed and match.group().strip(): out.append({"start":timed[0]["start"],"end":timed[-1]["end"]})
     return out
-
 def empty_cache():
     # Release model objects between phases because WhisperX may otherwise retain
     # enough GPU memory to prevent the aligner or translation model from loading.
     gc.collect()
-
-    if torch.cuda.is_available():
-        torch.cuda.empty_cache()
+    if torch.cuda.is_available(): torch.cuda.empty_cache()
 
 # First transcribe in the source language so alignment is performed against the
 # words that were actually spoken instead of against translated text.
-m = whisperx.load_model(
-    "large-v3",
-    sys.argv[3],
-    compute_type=sys.argv[5],
-)
-a = whisperx.load_audio(sys.argv[1])
-
-print(
-    "Audio duration:",
-    len(a) / 16000,
-    flush=True,
-)
-
-source = m.transcribe(
-    a,
-    batch_size=4,
-    task="transcribe",
-    verbose=True,
-    print_progress=True,
-)
-language = source["language"]
-
-del m
-empty_cache()
-
+m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
+a=whisperx.load_audio(sys.argv[1])
+print("Audio duration:",len(a)/16000,flush=True)
+source=m.transcribe(a,batch_size=4,task="transcribe",verbose=True,print_progress=True)
+language=source["language"]
+del m; empty_cache()
 try:
-    am, metadata = whisperx.load_align_model(
-        language_code=language,
-        device=sys.argv[3],
-    )
+    am,metadata=whisperx.load_align_model(language_code=language,device=sys.argv[3])
 except ValueError:
     # Not every Whisper language has a default WhisperX aligner. In that case,
     # use short translated VAD chunks so subtitle timing stays reasonably granular.
-    print(
-        f"No default WhisperX aligner for {language}; "
-        "using 8-second translated VAD chunks.",
-        flush=True,
-    )
-
-    m = whisperx.load_model(
-        "large-v3",
-        sys.argv[3],
-        compute_type=sys.argv[5],
-    )
-    r = m.transcribe(
-        a,
-        batch_size=4,
-        task="translate",
-        chunk_size=8,
-        verbose=True,
-        print_progress=True,
-    )
+    print(f"No default WhisperX aligner for {language}; using 8-second translated VAD chunks.",flush=True)
+    m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
+    native,_=m.model.transcribe(a,language=language,task="translate",chunk_length=8,vad_filter=True,condition_on_previous_text=True)
+    r={"segments":[{"text":x.text,"start":x.start,"end":x.end} for x in native],"language":"en"}
 else:
     # When an aligner exists, prefer its sentence-level timing. Punkt gives
     # cleaner boundaries for supported languages; the Unicode fallback handles
     # the rest without assuming English punctuation.
-    aligned = whisperx.align(
-        source["segments"],
-        am,
-        metadata,
-        a,
-        sys.argv[3],
-        return_char_alignments=True,
-        print_progress=True,
-    )
-    sentences = (
-        aligned["segments"]
-        if language in PUNKT_LANGUAGES
-        else split_aligned(aligned["segments"])
-    )
-
-    del am
-    empty_cache()
-
-    # Run translation only after source alignment so English cue text can inherit
-    # timing from the corresponding source-language sentence.
-    m = whisperx.load_model(
-        "large-v3",
-        sys.argv[3],
-        compute_type=sys.argv[5],
-    )
-    r = m.transcribe(
-        a,
-        batch_size=4,
-        task="translate",
-        verbose=True,
-        print_progress=True,
-    )
-    cues = []
-
-    for seg in r["segments"]:
-        ss = [
-            s
-            for s in sentences
-            if seg["start"] <= (s["start"] + s["end"]) / 2 <= seg["end"]
-        ]
-        parts = split_sentences(seg["text"])
-
-        # Use aligned sentence timings only when the translated and source sentence
-        # counts agree, avoiding a guessed mapping between unequal sentence lists.
-        if ss and len(parts) == len(ss):
-            cues.extend(
-                {
-                    "text": text,
-                    "start": s["start"],
-                    "end": s["end"],
-                }
-                for text, s in zip(parts, ss)
-            )
-        elif ss:
-            # If translation changes the sentence count, fall back to Whisper's
-            # native timestamped decoding rather than assigning incorrect times.
-            print(
-                "Sentence-count mismatch; using Whisper native timestamp segmentation.",
-                flush=True,
-            )
-            base = seg["start"]
-            native, _ = m.model.transcribe(
-                a[int(base * 16000):int(seg["end"] * 16000)],
-                language=language,
-                task="translate",
-                without_timestamps=False,
-                condition_on_previous_text=False,
-            )
-
-            for x in native:
-                text = x.text.strip()
-
-                if text:
-                    cues.append(
-                        {
-                            "text": text,
-                            "start": base + x.start,
-                            "end": base + x.end,
-                        }
-                    )
-        else:
-            # With no aligned source sentence in this segment, Whisper's own
-            # segment timing is the safest available fallback.
-            cues.append(seg)
-
-    r = {
-        "segments": cues,
-        "language": "en",
-    }
-
-print(
-    "Segments:",
-    len(r["segments"]),
-    "last:",
-    r["segments"][-1]["end"] if r["segments"] else 0,
-    flush=True,
-)
-
+    aligned=whisperx.align(source["segments"],am,metadata,a,sys.argv[3],return_char_alignments=True,print_progress=True)
+    sentences=aligned["segments"] if language in PUNKT_LANGUAGES else split_aligned(aligned["segments"])
+    del am; empty_cache()
+    m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
+    native,_=m.model.transcribe(a,language=language,task="translate",vad_filter=True,condition_on_previous_text=True)
+    r={"segments":[{"text":x.text,"start":x.start,"end":x.end} for x in native],"language":"en"}
+print("Segments:",len(r["segments"]),"last:",r["segments"][-1]["end"] if r["segments"] else 0,flush=True)
 # Every cue in `r` is English by this point, so normalize the language metadata
 # before passing the result to the standard SRT writer.
-r["language"] = "en"
-get_writer("srt", ".")(
-    r,
-    sys.argv[1],
-    {
-        "highlight_words": False,
-        "max_line_count": None,
-        "max_line_width": None,
-    },
-)
+r["language"]="en"
+get_writer("srt",".")(r,sys.argv[1],{"highlight_words":False,"max_line_count":None,"max_line_width":None})
 PYWHISPERX
 
-                # WhisperX names its output after the isolated WAV input.
-                # Rename it to the common filename expected below.
-                mv -fv "vocals.srt" "$srtfile" || exit 1
+				# WhisperX names its output after the isolated WAV input.
+				# Rename it to the common filename expected below.
+				mv -fv "vocals.srt" "$srtfile" || exit 1
 
-                # Remove the temporary full-quality mix and separated stems.
-                rm -rfv "$wx_mix" "$wx_dir"
-                ;;
+				# Remove the temporary full-quality mix and separated stems.
+				rm -rfv "$wx_mix" "$wx_dir"
+				;;
 
-            stable-ts)
-                status "Transcribing with stable-ts: $file ($file_no/$N)"
+			stable-ts)
+				status "Transcribing with stable-ts: $file ($file_no/$N)"
 
-                # stable-ts/faster-whisper downloads large-v3 automatically
-                # on first use when the model is not already cached.
+				# stable-ts/faster-whisper downloads large-v3 automatically
+				# on first use when the model is not already cached.
 
-                # stable-ts uses faster-whisper here and asks Whisper to
-                # translate recognized speech into English.
-                #
-                # Demucs is requested through stable-ts itself because its
-                # documented music workflow supports Demucs together with VAD.
-                # `--verbose True` asks stable-ts to display decoded details.
-                stable-ts \
-                    --faster_whisper \
-                    --task translate \
-                    --vad=True \
-                    --denoiser demucs \
-                    --verbose True \
-                    --model large-v3 \
-                    "old_$file" \
-                    -o "$srtfile" || exit 1
-                ;;
-            esac
+				# stable-ts uses faster-whisper here and asks Whisper to
+				# translate recognized speech into English.
+				#
+				# Demucs is requested through stable-ts itself because its
+				# documented music workflow supports Demucs together with VAD.
+				# `--verbose True` asks stable-ts to display decoded details.
+				stable-ts \
+					--faster_whisper \
+					--task translate \
+					--vad=True \
+					--denoiser demucs \
+					--verbose True \
+					--model large-v3 \
+					"old_$file" \
+					-o "$srtfile" || exit 1
+				;;
+			esac
 
-            #################################
-            # Mux subtitles into final MKV
-            #################################
+			#################################
+			# Mux subtitles into final MKV
+			#################################
 
-            # Refuse to mux anything if the selected backend did not actually
-            # create the expected subtitle file.
-            [[ -f "$srtfile" ]] || exit 1
+			# Refuse to mux anything if the selected backend did not actually
+			# create the expected subtitle file.
+			[[ -f "$srtfile" ]] || exit 1
 
-            status "Muxing subtitles: $file ($file_no/$N)"
+			status "Muxing subtitles: $file ($file_no/$N)"
 
-            # `-loglevel info -stats` keeps FFmpeg's useful stream information
-            # and progress visible while suppressing only its repetitive banner.
-            if ffmpeg \
+			# `-loglevel info -stats` keeps FFmpeg's useful stream information
+			# and progress visible while suppressing only its repetitive banner.
+			if ffmpeg \
                 -hide_banner \
                 -loglevel info \
                 -stats \
                 -i "old_$file" \
                 -i "$srtfile" \
-                -map 0:v \
+                -map 0:v:0 \
                 -map 0:a? \
                 -map 1:0 \
                 -c:v copy \
                 -c:a copy \
-                -c:s srt \
+                -c:s copy \
                 -metadata:s:s:0 language=eng \
                 -metadata:s:s:0 title="English" \
                 -disposition:s:0 default \
                 "${filename}.mkv"; then
-                # Remove temporary transcription/audio files only after the
-                # final MKV has been created successfully.
-                # The preserved `old_...` original is intentionally retained.
-                rm -rfv "$srtfile" "$asr_audio"
-                status "Finished: $file ($file_no/$N)"
-            fi
-        fi
-    fi
+				# Remove temporary transcription/audio files only after the
+				# final MKV has been created successfully.
+				# The preserved `old_...` original is intentionally retained.
+				rm -rfv "$srtfile" "$asr_audio"
+				status "Finished: $file ($file_no/$N)"
+			fi
+		fi
+	fi
 done
 
 status "All done ($N videos checked)"
