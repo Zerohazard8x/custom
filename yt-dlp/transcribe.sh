@@ -566,6 +566,10 @@ print(
 m = whisperx.load_model(
     "large-v3",
     sys.argv[3],
+    vad_options={
+        "vad_onset": 0.600,
+        "vad_offset": 0.363,
+    },
 )
 
 print("WhisperX: loading isolated vocal audio...", flush=True)
@@ -620,11 +624,20 @@ if language == "en":
     native = source["segments"]
 else:
     native, _ = m.model.transcribe(
-        a,
-        language=language,
-        task="translate",
-        **split,
-    )
+    a,
+    language=language,
+    task="translate",
+
+    # for long recordings
+	# usually set by default (but not here)
+    condition_on_previous_text=False,
+
+    # Don't let silence/music become translation input
+	# usually set by default (but not here)
+    vad_filter=True,
+
+    **split,
+)
 
 print("WhisperX: preparing SRT subtitles...", flush=True)
 
