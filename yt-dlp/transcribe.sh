@@ -697,6 +697,28 @@ PYWHISPERX
 			# create the expected subtitle file.
 			[[ -f "$srtfile" ]] || exit 1
 
+			# Qwen already uses forced alignment, so resyncing it only adds work.
+			if [[ "$ASR_BACKEND" != qwen ]] && command -v ffsubsync >/dev/null; then
+				status "Synchronizing subtitles: $file ($file_no/$N)"
+
+				# `${srtfile%.srt}` removes only the final suffix, keeping the temporary
+				# filename recognizable while ffsubsync writes beside the original.
+				synced="${srtfile%.srt}.sync.srt"
+
+				# These subtitles came from this exact media, so allow only a small shift
+				# and no framerate correction; a large change is more likely a bad match.
+				if ffsubsync "old_$file" -i "$srtfile" -o "$synced" \
+					--max-offset-seconds 5 --no-fix-framerate; then
+					mv -fv "$synced" "$srtfile"
+				else
+					echo "Subtitle synchronization failed; using generated timings."
+					rm -fv "$synced"
+				fi
+			elif [[ "$ASR_BACKEND" != qwen ]]; then
+				# `command -v` tests the optional aligner without trying to run it.
+				echo "ffsubsync not found; using generated timings."
+			fi
+
 			status "Muxing subtitles: $file ($file_no/$N)"
 
 			# so the resulting file contains:
