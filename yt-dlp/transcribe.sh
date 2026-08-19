@@ -567,8 +567,8 @@ m = whisperx.load_model(
     "large-v3",
     sys.argv[3],
     vad_options={
-        "vad_onset": 0.600,
-        "vad_offset": 0.363,
+        "vad_onset": 0.400,
+        "vad_offset": 0.250,
     },
 )
 
