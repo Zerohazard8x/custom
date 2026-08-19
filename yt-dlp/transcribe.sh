@@ -584,6 +584,7 @@ print("WhisperX: transcribing source language...", flush=True)
 source = m.transcribe(
     a,
     task="transcribe",
+	# chunk_size=7, # comment out for smaller subtitles
     verbose=True,
     print_progress=True,
 )
