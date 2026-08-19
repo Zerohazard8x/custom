@@ -662,8 +662,6 @@ PYWHISPERX
 				# Rename it to the common filename expected below.
 				mv -fv "vocals.srt" "$srtfile" || exit 1
 
-				# Remove the temporary full-quality mix and separated stems.
-				rm -rfv "$wx_mix" "$wx_dir"
 				;;
 
 			stable-ts)
@@ -707,8 +705,7 @@ PYWHISPERX
 
 				# These subtitles came from this exact media, so allow only a small shift
 				# and no framerate correction; a large change is more likely a bad match.
-				if ffsubsync "old_$file" -i "$srtfile" -o "$synced" \
-					--max-offset-seconds 5 --no-fix-framerate; then
+				if ffsubsync "${wx_audio:-old_$file}" -i "$srtfile" -o "$synced"; then
 					mv -fv "$synced" "$srtfile"
 				else
 					echo "Subtitle synchronization failed; using generated timings."
@@ -718,6 +715,9 @@ PYWHISPERX
 				# `command -v` tests the optional aligner without trying to run it.
 				echo "ffsubsync not found; using generated timings."
 			fi
+
+			# Remove the temporary full-quality mix and separated stems.
+			[[ "$wx_audio" ]] && rm -rfv "$wx_mix" "$wx_dir"
 
 			status "Muxing subtitles: $file ($file_no/$N)"
 
