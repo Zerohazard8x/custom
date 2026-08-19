@@ -705,7 +705,8 @@ PYWHISPERX
 
 				# These subtitles came from this exact media, so allow only a small shift
 				# and no framerate correction; a large change is more likely a bad match.
-				if ffsubsync "${wx_audio:-old_$file}" -i "$srtfile" -o "$synced"; then
+				if ffsubsync "${wx_audio:-old_$file}" -i "$srtfile" -o "$synced" \
+					--skip-sync-on-low-quality --no-fix-framerate; then
 					mv -fv "$synced" "$srtfile"
 				else
 					echo "Subtitle synchronization failed; using generated timings."
