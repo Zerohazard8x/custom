@@ -611,16 +611,20 @@ except ValueError:
 
 print("WhisperX: translating transcript to English...", flush=True)
 
-# Run Whisper's translation task after source-language detection.
+# Run Whisper's translation task only for non-English source audio.
+# Reuse the first transcription for English so ASR never runs twice.
 #
 # `**split` keeps the normal call free of a chunk override while still allowing
 # the fallback dictionary above to inject `chunk_length=8`
-native, _ = m.model.transcribe(
-    a,
-    language=language,
-    task="translate",
-    **split,
-)
+if language == "en":
+    native = source["segments"]
+else:
+    native, _ = m.model.transcribe(
+        a,
+        language=language,
+        task="translate",
+        **split,
+    )
 
 print("WhisperX: preparing SRT subtitles...", flush=True)
 
@@ -631,9 +635,9 @@ print("WhisperX: preparing SRT subtitles...", flush=True)
 r = {
     "segments": [
         {
-            "text": x.text,
-            "start": x.start,
-            "end": x.end,
+            "text": x["text"] if isinstance(x, dict) else x.text,
+            "start": x["start"] if isinstance(x, dict) else x.start,
+            "end": x["end"] if isinstance(x, dict) else x.end,
         }
         for x in native
     ],
