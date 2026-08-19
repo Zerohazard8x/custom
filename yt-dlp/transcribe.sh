@@ -3,6 +3,10 @@
 # Mirror all later stdout/stderr to the terminal and an append-only log.
 exec > >(tee -a transcribe.log) 2>&1
 
+# Make Python status/progress output appear immediately instead of waiting for
+# stdout buffering to fill.
+export PYTHONUNBUFFERED=1
+
 # Prompt on exit only when an interactive terminal is actually available (only when `/dev/tty` is readable).
 #
 # `/dev/tty` is used instead of stdin because stdin may have been redirected by
@@ -17,12 +21,15 @@ exec > >(tee -a transcribe.log) 2>&1
 # when the script exits, not when the trap is initially registered.
 trap '[[ -r /dev/tty ]] && read -r -p "Press Enter to close..." </dev/tty' EXIT
 
-# Print each phase normally and, when stdout is a terminal, also place it in the
+# Print each phase normally and, when stdout is a terminal (when /dev/tty is writable), also place it in the
 # terminal/tab title so the current operation remains visible while output scrolls.
 status() {
-	# ANSI/OSC title sequences
-	# `[[ -t 1 ]]` checks file descriptor 1 because that is stdout (where the title sequence is being written)
-	[[ -t 1 ]] && printf '\033]0;%s\007' "$1"
+	# ANSI/OSC title sequence.
+	#
+	# Write directly to /dev/tty because stdout itself is piped through `tee`,
+	# which means `[[ -t 1 ]]` would otherwise be false.
+	[[ -w /dev/tty ]] &&
+		printf '\033]0;%s\007' "$1" >/dev/tty 2>/dev/null
 
 	# Add a leading newline so each major phase remains visually separated from
 	# whatever output the previous command produced.
@@ -48,6 +55,13 @@ for cmd in ffprobe ffmpeg; do
 	fi
 done
 
+# Keep FFmpeg informative without repeatedly printing its long version/build
+# banner. `info` retains normal processing information while `-stats` keeps the
+# familiar continuously updated progress line.
+ffmpeg() {
+	command ffmpeg -hide_banner -loglevel info -stats "$@"
+}
+
 #################################
 # Detect transcription backends
 #################################
@@ -68,21 +82,21 @@ BACKENDS=()
 # `torch` is also checked because WhisperX depends on it later for CUDA detection.
 if python3.12 -c 'import whisperx,torch,demucs' 2>/dev/null; then
 	BACKENDS+=(whisperx)
-	status "whisperx found"
+	echo "whisperx found"
 fi
 
 # Qwen requires both its ASR package and Transformers.
 # Transformers is needed only for non-English recordings
 if python3.12 -c 'import qwen_asr,transformers' 2>/dev/null; then
 	BACKENDS+=(qwen)
-	status "qwen found"
+	echo "qwen found"
 fi
 
 # stable-ts is exposed as a command-line program
 # checking PATH is sufficient for this backend
 if command -v stable-ts >/dev/null; then
 	BACKENDS+=(stable-ts)
-	status "stable-ts found"
+	echo "stable-ts found"
 fi
 
 # `${#BACKENDS[@]}` expands to the number of elements in the array.
@@ -118,6 +132,8 @@ done
 
 # Clear the terminal and move the cursor to the upper-left corner.
 printf '\033[2J\033[H'
+
+status "Choosing transcription backend"
 
 echo "Transcription model"
 echo "Videos: $N"
@@ -156,14 +172,13 @@ choice=""
 
 # Read a single character from the actual terminal and wait at most five seconds.
 #
-# Why this exact syntax:
-#   - `-r` prevents backslash processing.
-#   - `-t 5` implements the five-second automatic selection timeout.
-#   - `-n 1` means the user can simply press "1", "2", etc. without Enter.
-#   - `</dev/tty` deliberately reads from the interactive terminal rather than
+# `-r` prevents backslash processing.
+# `-t 5` implements the five-second automatic selection timeout.
+# `-n 1` means the user can simply press "1", "2", etc. without Enter.
+# `</dev/tty` deliberately reads from the interactive terminal rather than
 #     standard input, because the script might itself be launched through a
 #     pipe or another redirected environment.
-#   - `|| true` prevents a normal timeout from being treated as a fatal error.
+# `|| true` prevents a normal timeout from being treated as a fatal error.
 [[ -r /dev/tty ]] && read -r -t 5 -n 1 choice </dev/tty || true
 
 # `read -n 1` does not consume or print a newline, so explicitly print one before
@@ -208,8 +223,8 @@ for file in *; do
 
 		# Skip videos that already contain an English subtitle stream.
 		#
-		# `-v error` keeps ffprobe quiet except for actual errors so stdout can
-		# remain machine-readable for `grep`.
+		# `-v warning` shows warnings/errors without normal informational chatter
+		# so stdout can remain machine-readable for `grep`.
 		#
 		# `-select_streams s` limits inspection to subtitle streams, while
 		# `-show_entries stream_tags=language` asks only for their language tags.
@@ -220,7 +235,7 @@ for file in *; do
 		# The pipeline succeeds when `grep` finds `eng`. The leading `!` inverts
 		# that result
 		if ! ffprobe \
-			-v error \
+			-v warning \
 			-select_streams s \
 			-show_entries stream_tags=language \
 			-of csv=p=0 \
@@ -260,12 +275,12 @@ for file in *; do
 
 				status "Preparing audio: $file ($file_no/$N)"
 
-				#   - `-y` permits replacement of an existing temporary WAV.
-				#   - `-i` selects the preserved original as the source.
-				#   - `-vn` ignores video because only speech audio is required.
-				#   - `-ac 1` downmixes to mono.
-				#   - `-ar 16000` resamples to 16 kHz.
-				#   - `-c:a pcm_s16le` writes uncompressed signed 16-bit PCM.
+				#  `-y` permits replacement of an existing temporary WAV.
+				#  `-i` selects the preserved original as the source.
+				#  `-vn` ignores video because only speech audio is required.
+				#  `-ac 1` downmixes to mono.
+				#  `-ar 16000` resamples to 16 kHz.
+				#  `-c:a pcm_s16le` writes uncompressed signed 16-bit PCM.
 				#
 				# `|| exit 1` stops immediately if audio preparation fails
 				ffmpeg \
@@ -314,6 +329,8 @@ m = Qwen3ASRModel.from_pretrained(
     },
 )
 
+print("Qwen: transcribing and aligning audio...", flush=True)
+
 # Keep the complete result because `text` retains the ASR punctuation while
 # `time_stamps` contains the aligner's punctuation-stripped timed units.
 #
@@ -327,6 +344,8 @@ r = m.transcribe(
     language=None,
     return_time_stamps=True,
 )[0]
+
+print(f"Qwen: detected language: {r.language}", flush=True)
 
 # Load the translation model only when the complete recording was not detected
 # as English. A mixed value such as "Chinese,English" therefore still translates.
@@ -376,10 +395,10 @@ if r.language != "English":
 def ts(x):
     """Convert floating-point seconds to SRT's HH:MM:SS,mmm format."""
 
-	# Convert once to integer milliseconds so subsequent divmod operations avoid
-	# accumulating floating-point formatting errors.
+    # Convert once to integer milliseconds so subsequent divmod operations avoid
+    # accumulating floating-point formatting errors.
     #
-	# `max(0.0, x)` prevents a small negative timestamp from producing an invalid
+    # `max(0.0, x)` prevents a small negative timestamp from producing an invalid
     # negative SRT time.
     #
     # `round()` is applied before `int()` so values are rounded to the nearest
@@ -394,6 +413,8 @@ def ts(x):
 
     # Zero padding is part of the conventional fixed-width SRT timestamp shape.
     return f"{h:02}:{m:02}:{s:02},{ms:03}"
+
+print("Qwen: writing subtitles...", flush=True)
 
 # UTF-8 because subtitle text may contain arbitrary Unicode
 with open(sys.argv[2], "w", encoding="utf-8") as f:
@@ -415,6 +436,8 @@ with open(sys.argv[2], "w", encoding="utf-8") as f:
             f"{ts(x.start_time)} --> {ts(x.end_time)}\n"
             f"{text}\n\n"
         )
+
+print("Qwen: subtitles written.", flush=True)
 PYQWEN
 				;;
 
@@ -432,7 +455,7 @@ PYQWEN
 
 				# `-p` also makes reruns tolerant of a directory left by an
 				# interrupted previous attempt.
-				mkdir -p "$wx_dir"
+				mkdir -pv "$wx_dir"
 
 				# Split the source audio into five-minute PCM WAV segments before
 				# Demucs processing.
@@ -457,12 +480,15 @@ PYQWEN
 				# `--other-method none` avoids requesting additional processing of
 				# the non-vocal stem.
 				#
+				# `-v` enables Demucs' useful verbose/progress output.
+				#
 				# Shell expansion of `"$wx_dir"/*.wav` supplies all segmented WAV
 				# inputs to the same Demucs invocation. The quoted directory part
 				# still protects spaces in the generated working-directory name.
 				python3.12 -m demucs \
 					--two-stems vocals \
 					--other-method none \
+					-v \
 					-o "$wx_dir" \
 					"$wx_dir"/*.wav || exit 1
 
@@ -512,6 +538,8 @@ PYQWEN
 					WX_GPU=(--device cuda)
 				fi
 
+				echo "WhisperX device: ${WX_GPU[1]}"
+
 				#################################
 				# Transcribe with WhisperX
 				#################################
@@ -529,14 +557,23 @@ import sys
 import whisperx
 from whisperx.utils import get_writer
 
+print(
+    f"WhisperX: loading large-v3 model on {sys.argv[3]}...",
+    flush=True,
+)
+
 # Load WhisperX using the device selected by the Bash wrapper.
 m = whisperx.load_model(
     "large-v3",
     sys.argv[3],
 )
 
+print("WhisperX: loading isolated vocal audio...", flush=True)
+
 # Decode the isolated vocal WAV into the representation expected by WhisperX.
 a = whisperx.load_audio(sys.argv[1])
+
+print("WhisperX: transcribing source language...", flush=True)
 
 # transcribe in the source language
 # obtains language detection result before the later English-translation pass
@@ -550,9 +587,13 @@ source = m.transcribe(
 # Store the detected language separately because the translation call below still needs it
 language = source["language"]
 
+print(f"WhisperX: detected language: {language}", flush=True)
+
 # Use ordinary translation behavior unless the alignment-model availability
 # check below indicates that this language needs the fallback chunk setting.
 split = {}
+
+print("WhisperX: checking alignment model...", flush=True)
 
 # Test whether WhisperX can load an alignment model for the detected language.
 #
@@ -568,6 +609,8 @@ except ValueError:
         "chunk_length": 8,
     }
 
+print("WhisperX: translating transcript to English...", flush=True)
+
 # Run Whisper's translation task after source-language detection.
 #
 # `**split` keeps the normal call free of a chunk override while still allowing
@@ -578,6 +621,8 @@ native, _ = m.model.transcribe(
     task="translate",
     **split,
 )
+
+print("WhisperX: preparing SRT subtitles...", flush=True)
 
 # Convert the backend's translated segment objects into the plain dictionary
 # structure expected by WhisperX's SRT writer.
@@ -609,6 +654,8 @@ get_writer("srt", ".")(
         "max_line_width": None,
     },
 )
+
+print("WhisperX: subtitles written.", flush=True)
 PYWHISPERX
 
 				# WhisperX names its output after the isolated WAV input.
@@ -628,12 +675,13 @@ PYWHISPERX
 
 				# stable-ts asks Whisper to translate recognized speech into English.
 				#
-				# Flag rationale:
-				#   - `--task translate` requests English translation.
-				#   - `--denoiser demucs` requests Demucs preprocessing.
-				#   - `-o "$srtfile"` gives this backend the same output contract
+				# `-v 1` enables its progress bar
+				# `--task translate` requests English translation.
+				# `--denoiser demucs` requests Demucs preprocessing.
+				# `-o "$srtfile"` gives this backend the same output contract
 				#     used by Qwen and WhisperX.
 				stable-ts \
+					-v 1 \
 					--task translate \
 					--denoiser demucs \
 					"old_$file" \
