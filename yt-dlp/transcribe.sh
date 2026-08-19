@@ -3,15 +3,38 @@
 # Mirror all later stdout/stderr to the terminal and an append-only log.
 exec > >(tee -a transcribe.log) 2>&1
 
-# Prompt on exit only when an interactive terminal is actually available.
+# Prompt on exit only when an interactive terminal is actually available (only when `/dev/tty` is readable).
+#
+# `/dev/tty` is used instead of stdin because stdin may have been redirected by
+# whatever launched the script.
+# `-r` prevents `read` from interpreting backslashes.
+#
+# Installing this as an EXIT trap keeps the pause in one place and makes it run
+# for normal completion as well as explicit `exit` calls elsewhere in the
+# script.
+#
+# The test and `read` are kept inside the quoted trap body so they are evaluated
+# when the script exits, not when the trap is initially registered.
 trap '[[ -r /dev/tty ]] && read -r -p "Press Enter to close..." </dev/tty' EXIT
 
 # Print each phase normally and, when stdout is a terminal, also place it in the
 # terminal/tab title so the current operation remains visible while output scrolls.
 status() {
+	# ANSI/OSC title sequences
+	# `[[ -t 1 ]]` checks file descriptor 1 because that is stdout (where the title sequence is being written)
 	[[ -t 1 ]] && printf '\033]0;%s\007' "$1"
+
+	# Add a leading newline so each major phase remains visually separated from
+	# whatever output the previous command produced.
+	#
+	# `printf` is used instead of `echo` because the format and escape handling
+	# are explicit and predictable.
 	printf '\n== %s ==\n' "$1"
 }
+
+#################################
+# Check core dependencies
+#################################
 
 status "Checking dependencies"
 
@@ -25,60 +48,73 @@ for cmd in ffprobe ffmpeg; do
 	fi
 done
 
+#################################
+# Detect transcription backends
+#################################
+
 # Build the model/backend menu dynamically.
 status "Detecting transcription backends"
+
+# Build the menu dynamically so the user sees only backends that are actually
+# usable in the current environment.
+#
+# The order in which entries are appended also defines automatic preference:
+# when the user does not choose a backend, element 0 becomes the fallback.
 BACKENDS=()
 
 # Prefer WhisperX first when available.
 # Demucs is required because this workflow isolates vocals before passing the
 # audio to WhisperX.
+# `torch` is also checked because WhisperX depends on it later for CUDA detection.
 if python3.12 -c 'import whisperx,torch,demucs' 2>/dev/null; then
 	BACKENDS+=(whisperx)
+	status "whisperx found"
 fi
 
-# Offer Qwen only when both its Python stack and every model needed by this
-# workflow are already present in the local Hugging Face cache. This deliberately
-# prevents selecting Qwen from triggering a multi-gigabyte model download.
-if command -v python3.12 >/dev/null &&
-	python3.12 - <<'PYCHECKQWEN' 2>/dev/null; then
-import sys
-
-try:
-    import qwen_asr
-    import transformers
-    import tqdm
-    from huggingface_hub import scan_cache_dir
-
-    required = {
-        "Qwen/Qwen3-ASR-1.7B",
-        "Qwen/Qwen3-ForcedAligner-0.6B",
-        "Qwen/Qwen3-0.6B",
-    }
-    cached = {repo.repo_id for repo in scan_cache_dir().repos}
-except Exception:
-    sys.exit(1)
-
-sys.exit(0 if required <= cached else 1)
-PYCHECKQWEN
+# Qwen requires both its ASR package and Transformers.
+# Transformers is needed only for non-English recordings
+if python3.12 -c 'import qwen_asr,transformers' 2>/dev/null; then
 	BACKENDS+=(qwen)
+	status "qwen found"
 fi
 
-# Offer stable-ts only when its command-line entry point is installed.
+# stable-ts is exposed as a command-line program
+# checking PATH is sufficient for this backend
 if command -v stable-ts >/dev/null; then
 	BACKENDS+=(stable-ts)
+	status "stable-ts found"
 fi
 
+# `${#BACKENDS[@]}` expands to the number of elements in the array.
+# this guard executes the block only when no usable backend was detected.
+# The block form keeps the error and exit together without adding an inverted
+# multi-line `if` around a single condition.
 ((${#BACKENDS[@]})) || {
 	echo "No transcription model is available."
 	exit 1
 }
 
-# Count candidate videos once so the same total can be shown everywhere.
+#################################
+# Count candidate videos
+#################################
+
 status "Counting videos"
+
+# Count candidate files once so every later progress message can use the same
+# stable total instead of rescanning the directory during each processing step.
 N=0
+
 for f in *; do
+	# Process only MP4/MKV names and exclude preserved originals whose names
+	# begin with `old_`.
+	#
+	# `=~` so one regular expression can cover both allowed extensions
 	[[ "$f" =~ \.(mp4|mkv)$ && ! "$f" =~ ^old_ ]] && ((N++))
 done
+
+#################################
+# Choose transcription backend
+#################################
 
 # Clear the terminal and move the cursor to the upper-left corner.
 printf '\033[2J\033[H'
@@ -86,25 +122,36 @@ printf '\033[2J\033[H'
 echo "Transcription model"
 echo "Videos: $N"
 
+# `${!BACKENDS[@]}` expands to the array's indexes. Keeping the stored backend
+# identifiers separate from their friendly names makes the later `case`
+# statement simple while still presenting descriptive menu text.
 for i in "${!BACKENDS[@]}"; do
 	case "${BACKENDS[i]}" in
 	qwen)
-		name="Qwen3-ASR-1.7B"
+		name="Qwen3-ASR"
 		;;
 	whisperx)
-		name="WhisperX large-v3"
+		name="WhisperX"
 		;;
 	stable-ts)
-		name="stable-ts large-v3"
+		name="stable-ts"
 		;;
 	esac
 
+	# Menu numbers are one-based for humans even though Bash arrays are
+	# zero-based, hence `i + 1`.
 	printf '%d) %s\n' "$((i + 1))" "$name"
 done
 
-# BACKENDS[0] automatically represents the best available fallback.
+# BACKENDS[0] represents the preferred available fallback because backends were
+# appended above in preference order.
+#
+# The array length is inserted into the prompt dynamically so the displayed
+# valid range always matches the menu that was actually generated.
 printf 'Choose [1-%d] (auto in 5s): ' "${#BACKENDS[@]}"
 
+# Initialize the variable explicitly so timeout/no-input handling below never
+# depends on a value inherited from the environment.
 choice=""
 
 # Read a single character from the actual terminal and wait at most five seconds.
@@ -119,15 +166,21 @@ choice=""
 #   - `|| true` prevents a normal timeout from being treated as a fatal error.
 [[ -r /dev/tty ]] && read -r -t 5 -n 1 choice </dev/tty || true
 
-# Move output to a fresh line after the single-character prompt.
+# `read -n 1` does not consume or print a newline, so explicitly print one before
+# continuing with normal line-oriented output.
 echo
 
 # Accept the user's choice only when it is a valid positive menu number.
+#
+# The regex check happens before arithmetic use so arbitrary text is never
+# treated as an array choice.
+#
 # Bash array indexing is zero-based, hence `choice - 1`.
 if [[ "$choice" =~ ^[1-9]$ ]] && ((choice <= ${#BACKENDS[@]})); then
 	ASR_BACKEND="${BACKENDS[choice - 1]}"
 else
-	# Timeout, blank input, or invalid input selects the first available backend.
+	# Timeout, blank input, unavailable `/dev/tty`, or invalid input selects the
+	# first available backend.
 	ASR_BACKEND="${BACKENDS[0]}"
 fi
 
@@ -137,30 +190,54 @@ echo "Using: $ASR_BACKEND"
 # Process video files
 #################################
 
-# Iterate over ordinary entries in the current directory.
+# Track the candidate-file position separately from the directory iteration so
+# progress messages can use the previously calculated `$N` total.
 file_no=0
-for file in *; do
 
+# Iterate over the same ordinary entries used by the counting pass above.
+for file in *; do
 	# Process MP4/MKV files only.
 	# Files beginning with old_ are skipped because those are originals that
 	# this script has already renamed and preserved.
 	if [[ "$file" =~ \.(mp4|mkv)$ && ! "$file" =~ ^old_ ]]; then
+		# Increment only after confirming that this is a candidate video. That
+		# keeps the progress numerator aligned with the earlier `$N` count.
 		((file_no++))
+
 		status "Checking: $file ($file_no/$N)"
 
-		# Skip videos already containing an English subtitle stream.
+		# Skip videos that already contain an English subtitle stream.
 		#
-		# `warning` allows useful ffprobe diagnostics through without flooding
-		# the screen with normal probe details; stdout remains machine-readable.
+		# `-v error` keeps ffprobe quiet except for actual errors so stdout can
+		# remain machine-readable for `grep`.
+		#
+		# `-select_streams s` limits inspection to subtitle streams, while
+		# `-show_entries stream_tags=language` asks only for their language tags.
+		#
+		# CSV output without the usual wrapper (`p=0`) leaves simple values such
+		# as `eng`, which can be tested directly with `grep -q`.
+		#
+		# The pipeline succeeds when `grep` finds `eng`. The leading `!` inverts
+		# that result
 		if ! ffprobe \
-			-v warning \
+			-v error \
 			-select_streams s \
-			-show_entries stream=index:stream_tags=language \
+			-show_entries stream_tags=language \
 			-of csv=p=0 \
-			"$file" | grep -q "eng"; then
+			"$file" |
+			grep -q eng; then
+
+			# Remove only the final extension.
+			#
+			# `${file%.*}` is parameter expansion rather than an external command,
+			# so it preserves spaces and earlier dots in names such as
+			# `episode.01.final.mp4`.
 			filename="${file%.*}"
 
-			# Preserve the original input before creating the new MKV.
+			# Preserve the original input before creating any replacement output.
+			#
+			# The `old_` prefix also prevents the preserved copy from being picked
+			# up during future runs of the candidate-file loop.
 			mv -fv "$file" "old_$file"
 
 			# Qwen uses this 16 kHz mono WAV. The other backends operate on the
@@ -176,21 +253,22 @@ for file in *; do
 			#################################
 
 			case "$ASR_BACKEND" in
-
 			qwen)
 				#################################
-				# Prepare speech audio
+				# Prepare speech audio for Qwen
 				#################################
 
 				status "Preparing audio: $file ($file_no/$N)"
 
-				# Qwen receives a standard 16 kHz mono PCM speech input.
-				# `-loglevel info -stats` shows meaningful FFmpeg decisions plus its
-				# live progress line, while `-hide_banner` removes repetitive build info.
+				#   - `-y` permits replacement of an existing temporary WAV.
+				#   - `-i` selects the preserved original as the source.
+				#   - `-vn` ignores video because only speech audio is required.
+				#   - `-ac 1` downmixes to mono.
+				#   - `-ar 16000` resamples to 16 kHz.
+				#   - `-c:a pcm_s16le` writes uncompressed signed 16-bit PCM.
+				#
+				# `|| exit 1` stops immediately if audio preparation fails
 				ffmpeg \
-					-hide_banner \
-					-loglevel info \
-					-stats \
 					-y \
 					-i "old_$file" \
 					-vn \
@@ -201,118 +279,34 @@ for file in *; do
 
 				status "Transcribing with Qwen3-ASR: $file ($file_no/$N)"
 
-				# Qwen performs ASR and source-language forced alignment in one
-				# blocking transcribe() call. The library does not expose a
-				# public percentage callback for that combined call, so this
-				# script shows an indeterminate moving bar plus elapsed time
-				# there. All loops whose total is known use real tqdm bars.
+				# Pass the temporary audio path and desired SRT path as ordinary
+				# positional arguments to an inline Python program.
+				#
+				# `python3.12 -` tells Python to read its program from stdin. The
+				# two filenames after `-` therefore become `sys.argv[1]` and
+				# `sys.argv[2]`.
+				#
+				# The quoted heredoc delimiter (`<<'PYQWEN'`) is to prevent Bash from expanding `$`, backticks, or backslashes
+				#
+				# The failure guard is kept on this invocation rather than inside
+				# Python so every backend reports failure to the surrounding Bash
+				# control flow in the same way.
 				python3.12 - "$asr_audio" "$srtfile" <<'PYQWEN' || exit 1
-import re
 import sys
-import threading
-import time
 
 from qwen_asr import Qwen3ASRModel
-from tqdm import tqdm
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# Real progress bars are used where the amount of work is known. For blocking
-# library calls with no progress callback, this gives a moving indeterminate bar
-# and elapsed time without pretending to know a percentage.
-class Activity:
-    def __init__(self, label, width=24, interval=0.08):
-        self.label = label
-        self.width = width
-        self.interval = interval
-        self.stop = threading.Event()
-        self.thread = None
-        self.started = None
-
-    def __enter__(self):
-        self.started = time.monotonic()
-
-        if not sys.stderr.isatty():
-            print(f"{self.label}...", file=sys.stderr, flush=True)
-            return self
-
-        def run():
-            pos = 0
-            direction = 1
-
-            while not self.stop.wait(self.interval):
-                bar = [" "] * self.width
-                bar[pos] = "█"
-
-                if pos > 0:
-                    bar[pos - 1] = "▓"
-                if pos > 1:
-                    bar[pos - 2] = "░"
-
-                elapsed = time.monotonic() - self.started
-
-                sys.stderr.write(
-                    f"\r\033[2K{self.label}: "
-                    f"|{''.join(bar)}| {elapsed:6.1f}s"
-                )
-                sys.stderr.flush()
-
-                pos += direction
-
-                if pos >= self.width - 1:
-                    pos = self.width - 1
-                    direction = -1
-                elif pos <= 0:
-                    pos = 0
-                    direction = 1
-
-        self.thread = threading.Thread(target=run, daemon=True)
-        self.thread.start()
-        return self
-
-    def __exit__(self, exc_type, exc, tb):
-        self.stop.set()
-
-        if self.thread is not None:
-            self.thread.join()
-
-        elapsed = time.monotonic() - self.started
-
-        if sys.stderr.isatty():
-            sys.stderr.write("\r\033[2K")
-
-        if exc_type is None:
-            print(
-                f"{self.label}: done [{elapsed:.1f}s]",
-                file=sys.stderr,
-                flush=True,
-            )
-        else:
-            print(
-                f"{self.label}: failed [{elapsed:.1f}s]",
-                file=sys.stderr,
-                flush=True,
-            )
-
-def pbar(iterable, *, desc, unit):
-    """Consistent terminal progress bars for deterministic phases."""
-    return tqdm(
-        iterable,
-        desc=desc,
-        unit=unit,
-        dynamic_ncols=True,
-        mininterval=0.1,
-        smoothing=0.1,
-        leave=True,
-        disable=None,
-    )
-
+# `flush=True` makes this potentially slow model-loading phase visible
+# immediately even when Python's stdout is buffered by its environment.
 print("Qwen: loading ASR + forced aligner...", flush=True)
 
+# Load ASR and its forced aligner together so transcription and timestamp
+# generation use the intended pair of Qwen models.
 m = Qwen3ASRModel.from_pretrained(
     "Qwen/Qwen3-ASR-1.7B",
     dtype="auto",
     device_map="auto",
-    max_new_tokens=4096,
     forced_aligner="Qwen/Qwen3-ForcedAligner-0.6B",
     forced_aligner_kwargs={
         "dtype": "auto",
@@ -320,35 +314,27 @@ m = Qwen3ASRModel.from_pretrained(
     },
 )
 
-# Qwen's non-streaming call keeps the forced aligner and Qwen's own long-audio
-# chunking behavior. Because the public call is blocking, use an indeterminate
-# activity bar rather than a fabricated 0-100 percentage.
-with Activity("Qwen: transcribing + aligning"):
-    # Keep the complete result because `text` retains the ASR punctuation while
-    # `time_stamps` contains the aligner's punctuation-stripped timed units.
-    r = m.transcribe(
-        audio=sys.argv[1],
-        language=None,
-        return_time_stamps=True,
-    )[0]
-
-a = list(r.time_stamps)
-
-print("Qwen: detected language:", r.language, flush=True)
-print(f"Qwen: aligned units: {len(a)}", flush=True)
-
-# Subtitle limits.
-MAX_DURATION = 7.0
-MAX_CHARS = 84
-LINE_WIDTH = 42
-PAUSE_SPLIT = 0.5
-MIN_CHARS_FOR_PAUSE = 24
+# Keep the complete result because `text` retains the ASR punctuation while
+# `time_stamps` contains the aligner's punctuation-stripped timed units.
+#
+# `language=None` for source-language detection.
+# Timestamps are explicitly requested because the SRT writer below needs start
+# and end times for every cue.
+#
+# `[0]` because this API returns a collection of results
+r = m.transcribe(
+    audio=sys.argv[1],
+    language=None,
+    return_time_stamps=True,
+)[0]
 
 # Load the translation model only when the complete recording was not detected
 # as English. A mixed value such as "Chinese,English" therefore still translates.
 if r.language != "English":
     print("Qwen: loading English translation model...", flush=True)
 
+    # Keep tokenizer and model loading together because they are two parts of
+    # the same optional translation path.
     tok = AutoTokenizer.from_pretrained("Qwen/Qwen3-0.6B")
 
     lm = AutoModelForCausalLM.from_pretrained(
@@ -359,25 +345,29 @@ if r.language != "English":
 
     def tr(s):
         """Translate one source cue into concise, natural subtitle English."""
-        x = tok.apply_chat_template(
-            [
-                {
-                    "role": "user",
-                    "content":
-                        "Translate the following dialogue into concise, natural "
-                        "English subtitles. Preserve the full meaning, names, "
-                        "numbers, tone, and sentence-ending punctuation, but use "
-                        "the shortest natural wording that does not lose meaning. "
-                        "Do not explain, label, quote, or add anything. "
-                        "Output only the English translation:\n" + s,
-                }
-            ],
-            tokenize=False,
-            add_generation_prompt=True,
-            enable_thinking=False,
+
+        # Give the model a deliberately narrow instruction because only the
+        # translated subtitle text should be returned to the SRT writer.
+        x = tok(
+            "Translate to English. Output only the translation:\n" + s,
+            return_tensors="pt",
+        ).to(lm.device)
+
+        # `**x` expands the tokenizer's mapping into the keyword arguments
+        # expected by `generate()`.
+        #
+        # A finite generation limit prevents an unexpectedly verbose response
+        # from growing without bound for a subtitle-sized input.
+        y = lm.generate(
+            **x,
+            max_new_tokens=256,
         )
-        x = tok([x], return_tensors="pt").to(lm.device)
-        y = lm.generate(**x, max_new_tokens=256, do_sample=False)
+
+        # Decode only tokens generated after the original prompt.
+        #
+        # `x["input_ids"].shape[-1]` is the prompt token count, so slicing from
+        # there prevents the instruction/source text from being copied into the
+        # subtitle cue.
         return tok.decode(
             y[0][x["input_ids"].shape[-1]:],
             skip_special_tokens=True,
@@ -385,388 +375,75 @@ if r.language != "English":
 
 def ts(x):
     """Convert floating-point seconds to SRT's HH:MM:SS,mmm format."""
-    x = max(0.0, x)
-    ms = int(round(x * 1000))
 
+	# Convert once to integer milliseconds so subsequent divmod operations avoid
+	# accumulating floating-point formatting errors.
+    #
+	# `max(0.0, x)` prevents a small negative timestamp from producing an invalid
+    # negative SRT time.
+    #
+    # `round()` is applied before `int()` so values are rounded to the nearest
+    # millisecond rather than always truncated downward.
+    ms = int(round(max(0.0, x) * 1000))
+
+    # Repeated `divmod()` calls naturally split one millisecond total into the
+    # hierarchical hour/minute/second/remainder fields SRT expects.
     h, ms = divmod(ms, 3600000)
-    m_, ms = divmod(ms, 60000)
+    m, ms = divmod(ms, 60000)
     s, ms = divmod(ms, 1000)
 
-    return f"{h:02}:{m_:02}:{s:02},{ms:03}"
+    # Zero padding is part of the conventional fixed-width SRT timestamp shape.
+    return f"{h:02}:{m:02}:{s:02},{ms:03}"
 
-def split_sentences(text):
-    """Split at sentence-final punctuation while preserving that punctuation."""
-    parts = []
-    start = 0
-
-    for match in re.finditer(r'[.!?。！？…]+(?:["”’\)\]]*)', text):
-        end = match.end()
-        part = text[start:end].strip()
-        if part:
-            parts.append(part)
-        start = end
-
-    tail = text[start:].strip()
-    if tail:
-        parts.append(tail)
-
-    return parts
-
-# Associate the original punctuated sentences with their corresponding aligned
-# timestamps. Reusing Qwen's tokenizer is important because it matches the units
-# the forced aligner itself created rather than guessing with `str.split()`.
-print("Qwen: finding sentence boundaries...", flush=True)
-
-groups = []
-pos = 0
-sentences = split_sentences(r.text)
-
-sentence_bar = pbar(
-    sentences,
-    desc="Qwen: mapping sentences",
-    unit="sentence",
-)
-
-for sentence in sentence_bar:
-    count = len(m.forced_aligner.aligner_processor.encode_timestamp(
-        sentence,
-        r.language,
-    )[0])
-
-    if count == 0:
-        continue
-
-    end = min(pos + count, len(a))
-    items = a[pos:end]
-    pos = end
-
-    if items:
-        groups.append((sentence, items))
-
-    sentence_bar.set_postfix(
-        mapped=len(groups),
-        timed=f"{pos}/{len(a)}",
-        refresh=False,
-    )
-
-# Preserve any residual aligned tail.
-if pos < len(a):
-    groups.append((" ".join(x.text for x in a[pos:]), a[pos:]))
-
-def split_group(text, items):
-    """
-    Split a source sentence only when required by pause, duration or length.
-    Sentence-final punctuation is restored on the final piece because Qwen's
-    timestamp units themselves do not contain punctuation.
-    """
-    if not items:
-        return []
-
-    if (
-        len(text) <= MAX_CHARS
-        and items[-1].end_time - items[0].start_time <= MAX_DURATION
-    ):
-        return [(text, items)]
-
-    result = []
-    current = []
-
-    for i, item in enumerate(items):
-        current.append(item)
-
-        current_text = " ".join(x.text for x in current)
-        duration = current[-1].end_time - current[0].start_time
-        next_gap = (
-            items[i + 1].start_time - item.end_time
-            if i + 1 < len(items)
-            else 999
-        )
-
-        natural_pause = (
-            next_gap >= PAUSE_SPLIT
-            and len(current_text) >= MIN_CHARS_FOR_PAUSE
-        )
-
-        if (
-            natural_pause
-            or duration >= MAX_DURATION
-            or len(current_text) >= MAX_CHARS
-            or i == len(items) - 1
-        ):
-            # The aligner units contain no punctuation. Restore the punctuation
-            # belonging to the end of the original sentence on its final chunk.
-            if i == len(items) - 1:
-                current_text += re.search(
-                    r'[^\w\s]*$',
-                    text,
-                ).group()
-
-            result.append((current_text, current.copy()))
-            current = []
-
-    return result
-
-def can_balance(text, width=LINE_WIDTH):
-    """Return whether text can fit on one or two lines of at most width."""
-    text = " ".join(text.split())
-
-    if len(text) <= width:
-        return True
-
-    words = text.split()
-
-    for i in range(1, len(words)):
-        left = " ".join(words[:i])
-        right = " ".join(words[i:])
-
-        if len(left) <= width and len(right) <= width:
-            return True
-
-    return False
-
-def split_for_screen(text):
-    """
-    Split translated English into chunks that can each fit on at most two
-    42-character lines. Prefer punctuation when a suitable earlier break exists.
-    """
-    text = " ".join(text.split())
-
-    if can_balance(text):
-        return [text]
-
-    words = text.split()
-    result = []
-
-    while words:
-        best = 1
-        soft = None
-
-        for n in range(1, len(words) + 1):
-            candidate = " ".join(words[:n])
-
-            if not can_balance(candidate):
-                break
-
-            best = n
-
-            if re.search(r'[,;:.!?…]["”’\)\]]*$', words[n - 1]):
-                soft = n
-
-        # Prefer a reasonably full punctuation boundary instead of breaking at
-        # the absolute last word that technically fits.
-        if soft is not None:
-            soft_text = " ".join(words[:soft])
-
-            if len(soft_text) >= LINE_WIDTH:
-                best = soft
-
-        chunk = " ".join(words[:best])
-        words = words[best:]
-
-        # An individual token longer than the line width cannot be broken safely
-        # without altering its spelling, so preserve it intact.
-        result.append(chunk)
-
-    return result
-
-def split_timed_translation(text, start, end):
-    """
-    Split an overlong English translation and divide its source-aligned time
-    interval proportionally by visible character count.
-    """
-    parts = split_for_screen(text)
-
-    if len(parts) == 1:
-        return [(parts[0], start, end)]
-
-    weights = [
-        max(1, len(re.sub(r'\s+', '', part)))
-        for part in parts
-    ]
-
-    total = sum(weights)
-    duration = max(0.001, end - start)
-
-    result = []
-    used = 0
-
-    for i, (part, weight) in enumerate(zip(parts, weights)):
-        part_start = start + duration * used / total
-        used += weight
-
-        if i == len(parts) - 1:
-            part_end = end
-        else:
-            part_end = start + duration * used / total
-
-        result.append((part, part_start, part_end))
-
-    return result
-
-def balance_lines(text, width=LINE_WIDTH):
-    """Balance one cue across one or two lines without discarding text."""
-    text = " ".join(text.split())
-
-    if len(text) <= width:
-        return text
-
-    words = text.split()
-
-    if len(words) < 2:
-        return text
-
-    candidates = []
-
-    for i in range(1, len(words)):
-        left = " ".join(words[:i])
-        right = " ".join(words[i:])
-
-        if len(left) <= width and len(right) <= width:
-            candidates.append(
-                (abs(len(left) - len(right)), left, right)
-            )
-
-    if candidates:
-        _, left, right = min(candidates, key=lambda x: x[0])
-        return left + "\n" + right
-
-    # A single very long token can make the line target impossible.
-    # Preserve its exact spelling rather than corrupting or truncating it.
-    return text
-
-print("Qwen: building readable source subtitle cues...", flush=True)
-
-source_cues = []
-
-build_bar = pbar(
-    groups,
-    desc="Qwen: building source cues",
-    unit="sentence",
-)
-
-for sentence, items in build_bar:
-    source_cues.extend(split_group(sentence, items))
-    build_bar.set_postfix(cues=len(source_cues), refresh=False)
-
-print("Qwen: translating and finalizing subtitle cues...", flush=True)
-
-cues = []
-
-finalize_bar = pbar(
-    source_cues,
-    desc=(
-        "Qwen: translating"
-        if r.language != "English"
-        else "Qwen: finalizing"
-    ),
-    unit="cue",
-)
-
-for text, items in finalize_bar:
-    start = items[0].start_time
-    end = items[-1].end_time
-
-    if r.language != "English":
-        text = tr(text)
-
-        # Translation can expand substantially relative to the source language.
-        # Enforce the English screen limits after translation and derive safe
-        # sub-timings from the source-aligned interval when splitting is needed.
-        cues.extend(
-            split_timed_translation(
-                text,
-                start,
-                end,
-            )
-        )
-    else:
-        cues.append((text, start, end))
-
-    finalize_bar.set_postfix(output=len(cues), refresh=False)
-
-# Balance lines before writing so formatting itself has an exact progress bar.
-formatted_cues = []
-
-format_bar = pbar(
-    cues,
-    desc="Qwen: balancing lines",
-    unit="cue",
-)
-
-for text, start, end in format_bar:
-    formatted_cues.append(
-        (balance_lines(text), start, end)
-    )
-
-# Validate every final cue before writing it. This catches timing regressions
-# without silently discarding subtitle text.
-validated_cues = []
-
-qa_bar = pbar(
-    formatted_cues,
-    desc="Qwen: validating cues",
-    unit="cue",
-)
-
-previous_end = 0.0
-
-for text, start, end in qa_bar:
-    if not text.strip():
-        raise ValueError("Qwen produced an empty subtitle cue.")
-
-    if end < start:
-        raise ValueError(
-            f"Subtitle cue has negative duration: {start} -> {end}"
-        )
-
-    if start < previous_end - 0.001:
-        raise ValueError(
-            f"Subtitle cue overlaps the previous cue: {start} < {previous_end}"
-        )
-
-    validated_cues.append((text, start, end))
-    previous_end = end
-
-print(
-    f"Qwen: writing {len(validated_cues)} subtitle cues...",
-    flush=True,
-)
-
+# UTF-8 because subtitle text may contain arbitrary Unicode
 with open(sys.argv[2], "w", encoding="utf-8") as f:
-    write_bar = pbar(
-        validated_cues,
-        desc="Qwen: writing SRT",
-        unit="cue",
-    )
+    # SRT cue numbering starts at 1, hence the explicit starting value passed
+    # to `enumerate()`.
+    for n, x in enumerate(r.time_stamps.items, 1):
+        # Translate each cue only when the recording was not classified as
+        # entirely English; otherwise preserve the recognized English text.
+        text = tr(x.text) if r.language != "English" else x.text
 
-    for n, (text, start, end) in enumerate(write_bar, 1):
+        # Adjacent f-strings inside parentheses are concatenated by Python,
+        # letting the SRT record remain visually split into its logical lines
+        # without explicit `+` operators.
+        #
+        # The final extra newline leaves the blank separator required between
+        # ordinary SRT cues.
         f.write(
             f"{n}\n"
-            f"{ts(start)} --> {ts(end)}\n"
+            f"{ts(x.start_time)} --> {ts(x.end_time)}\n"
             f"{text}\n\n"
         )
-
-print(
-    f"Qwen: wrote {len(validated_cues)} subtitle cues.",
-    flush=True,
-)
 PYQWEN
 				;;
 
 			whisperx)
-				# Preserve the original sample rate and channel layout for
-				# Demucs instead of reducing the mix to 16 kHz mono first.
-				wx_mix="old_${filename}.demucs/%03d.wav"
+				#################################
+				# Isolate vocals for WhisperX
+				#################################
+
+				# directory and segmented-file pattern share the same base so
+				# all temporary WhisperX/Demucs artifacts remain grouped together.
 				wx_dir="old_${filename}.demucs"
+				wx_mix="$wx_dir/%03d.wav"
 
 				status "Isolating vocals for WhisperX: $file ($file_no/$N)"
 
+				# `-p` also makes reruns tolerant of a directory left by an
+				# interrupted previous attempt.
 				mkdir -p "$wx_dir"
 
+				# Split the source audio into five-minute PCM WAV segments before
+				# Demucs processing.
+				#
+				# Segmenting first limits the size of each individual input sent
+				# through the separation stage.
+				#
+				# `-f segment -segment_time 300` asks FFmpeg's segment muxer to
+				# create consecutive 300-second files using the `%03d` filename
+				# pattern defined above.
 				ffmpeg \
-					-hide_banner \
-					-loglevel info \
-					-stats \
 					-y \
 					-i "old_$file" \
 					-vn \
@@ -775,21 +452,42 @@ PYQWEN
 					-segment_time 300 \
 					"$wx_mix" || exit 1
 
-				# htdemucs is Demucs's standard model. Two-stem mode extracts
-				# vocals against the remainder of the program mix.
+				# Two-stem mode extracts vocals against the remainder of the program mix.
+				#
+				# `--other-method none` avoids requesting additional processing of
+				# the non-vocal stem.
+				#
+				# Shell expansion of `"$wx_dir"/*.wav` supplies all segmented WAV
+				# inputs to the same Demucs invocation. The quoted directory part
+				# still protects spaces in the generated working-directory name.
 				python3.12 -m demucs \
-					-n htdemucs \
 					--two-stems vocals \
 					--other-method none \
 					-o "$wx_dir" \
 					"$wx_dir"/*.wav || exit 1
 
-				# Build the concat list inside wx_dir so its relative stem paths remain
-				# short, then stream-copy identical WAV segments to avoid re-encoding.
+				# Reassemble the separated vocal segments in their original order.
+				#
+				# The subshell changes into `wx_dir` to keep paths written into the concat list short and relative without changing the parent script's directory.
+				#
+				# `printf` creates one FFmpeg concat-demuxer `file` entry per
+				# separated stem. `-c copy` then joins compatible WAV segments
+				# without another encode.
+				(
+					cd "$wx_dir" &&
+						printf "file '%s'\n" htdemucs/*/vocals.wav >list &&
+						ffmpeg \
+							-f concat \
+							-i list \
+							-c copy \
+							vocals.wav
+				) || exit 1
 
-				(cd "$wx_dir" && printf "file '%s'\n" htdemucs/*/vocals.wav >list && ffmpeg -f concat -i list -c copy vocals.wav) || exit 1
+				# Give final track a descriptive variable
+				# This keeps the preceding concat command expressed relative to its temporary working directory.
 				wx_audio="$wx_dir/vocals.wav"
 
+				# Check final stem
 				[[ -f "$wx_audio" ]] || {
 					echo "Demucs did not create the expected vocals stem."
 					exit 1
@@ -797,80 +495,120 @@ PYQWEN
 
 				status "Transcribing with WhisperX: $file ($file_no/$N)"
 
-				# WhisperX can use CPU everywhere, so start with a safe CPU
-				# configuration and replace it only when CUDA is confirmed.
-				WX_GPU=(--device cpu --compute_type float32)
+				#################################
+				# Select WhisperX compute device
+				#################################
 
+				# Start with CPU configuration
+				#
+				# Bash array used so each future command-line argument remains a separate shell word when expanded.
+				WX_GPU=(--device cpu)
+
+				# Switch to CUDA only when CUDA is available.
+				# Python command communicates the Boolean result through exit status
 				if python3.12 -c \
 					'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
 					2>/dev/null; then
-					WX_GPU=(--device cuda --compute_type float16)
+					WX_GPU=(--device cuda)
 				fi
 
-				# `verbose=True` prints useful transcript details while
-				# `print_progress=True` exposes WhisperX's progress updates.
+				#################################
+				# Transcribe with WhisperX
+				#################################
+
+				# `PYTHONIOENCODING=utf-8` keeps transcript/progress output Unicode-safe
+				#
+				# positional arguments are expanded from the `WX_GPU` array.
+				#   argv[1] = audio filename
+				#   argv[2] = --device
+				#   argv[3] = cpu/cuda
+				#
+				# quoting the heredoc marker prevents Bash expansion inside the Python source
 				PYTHONIOENCODING=utf-8 python3.12 - "$wx_audio" "${WX_GPU[@]}" <<'PYWHISPERX' || exit 1
-import gc,regex,sys,torch,whisperx
-from nltk.tokenize import sent_tokenize
-from whisperx.utils import PUNKT_LANGUAGES,get_writer
+import sys
+import whisperx
+from whisperx.utils import get_writer
 
-# Match Unicode sentence-ending punctuation here because this fallback is used
-# only for source languages that do not have an NLTK Punkt sentence model.
-# `regex.S` lets the final fallback also consume text containing newlines.
-sentence_re=regex.compile(r'.+?(?:\p{Sentence_Terminal}+(?:(?:\p{Close_Punctuation}|\p{Final_Punctuation}|["\'])*)|$)',regex.S)
-def split_sentences(text): return sent_tokenize(text,language="english")
-def split_aligned(segments):
-    # Some aligners expose only character timestamps. Rebuild sentence spans from
-    # the first and last timed character while preserving untouched segments that
-    # lack per-character timing.
-    out=[]
-    for seg in segments:
-        chars=seg.get("chars") or []
-        if not chars:
-            out.append(seg); continue
-        text="".join(x["char"] for x in chars)
-        for match in sentence_re.finditer(text):
-            timed=[x for x in chars[match.start():match.end()] if "start" in x and "end" in x]
-            if timed and match.group().strip(): out.append({"start":timed[0]["start"],"end":timed[-1]["end"]})
-    return out
-def empty_cache():
-    # Release model objects between phases because WhisperX may otherwise retain
-    # enough GPU memory to prevent the aligner or translation model from loading.
-    gc.collect()
-    if torch.cuda.is_available(): torch.cuda.empty_cache()
+# Load WhisperX using the device selected by the Bash wrapper.
+m = whisperx.load_model(
+    "large-v3",
+    sys.argv[3],
+)
 
-# First transcribe in the source language so alignment is performed against the
-# words that were actually spoken instead of against translated text.
-m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
-a=whisperx.load_audio(sys.argv[1])
-print("Audio duration:",len(a)/16000,flush=True)
-source=m.transcribe(a,batch_size=4,task="transcribe",verbose=True,print_progress=True)
-language=source["language"]
-del m; empty_cache()
+# Decode the isolated vocal WAV into the representation expected by WhisperX.
+a = whisperx.load_audio(sys.argv[1])
+
+# transcribe in the source language
+# obtains language detection result before the later English-translation pass
+source = m.transcribe(
+    a,
+    task="transcribe",
+    verbose=True,
+    print_progress=True,
+)
+
+# Store the detected language separately because the translation call below still needs it
+language = source["language"]
+
+# Use ordinary translation behavior unless the alignment-model availability
+# check below indicates that this language needs the fallback chunk setting.
+split = {}
+
+# Test whether WhisperX can load an alignment model for the detected language.
+#
+# If alignment-model loading raises `ValueError`, use an eight-second chunk
+# length for the later translation call as the existing fallback behavior.
 try:
-    am,metadata=whisperx.load_align_model(language_code=language,device=sys.argv[3])
+    whisperx.load_align_model(
+        language_code=language,
+        device=sys.argv[3],
+    )
 except ValueError:
-    # Not every Whisper language has a default WhisperX aligner. In that case,
-    # use short translated VAD chunks so subtitle timing stays reasonably granular.
-    print(f"No default WhisperX aligner for {language}; using 8-second translated VAD chunks.",flush=True)
-    m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
-    native,_=m.model.transcribe(a,language=language,task="translate",chunk_length=8,vad_filter=True,condition_on_previous_text=True)
-    r={"segments":[{"text":x.text,"start":x.start,"end":x.end} for x in native],"language":"en"}
-else:
-    # When an aligner exists, prefer its sentence-level timing. Punkt gives
-    # cleaner boundaries for supported languages; the Unicode fallback handles
-    # the rest without assuming English punctuation.
-    aligned=whisperx.align(source["segments"],am,metadata,a,sys.argv[3],return_char_alignments=True,print_progress=True)
-    sentences=aligned["segments"] if language in PUNKT_LANGUAGES else split_aligned(aligned["segments"])
-    del am; empty_cache()
-    m=whisperx.load_model("large-v3",sys.argv[3],compute_type=sys.argv[5])
-    native,_=m.model.transcribe(a,language=language,task="translate",vad_filter=True,condition_on_previous_text=True)
-    r={"segments":[{"text":x.text,"start":x.start,"end":x.end} for x in native],"language":"en"}
-print("Segments:",len(r["segments"]),"last:",r["segments"][-1]["end"] if r["segments"] else 0,flush=True)
-# Every cue in `r` is English by this point, so normalize the language metadata
-# before passing the result to the standard SRT writer.
-r["language"]="en"
-get_writer("srt",".")(r,sys.argv[1],{"highlight_words":False,"max_line_count":None,"max_line_width":None})
+    split = {
+        "chunk_length": 8,
+    }
+
+# Run Whisper's translation task after source-language detection.
+#
+# `**split` keeps the normal call free of a chunk override while still allowing
+# the fallback dictionary above to inject `chunk_length=8`
+native, _ = m.model.transcribe(
+    a,
+    language=language,
+    task="translate",
+    **split,
+)
+
+# Convert the backend's translated segment objects into the plain dictionary
+# structure expected by WhisperX's SRT writer.
+#
+# List comprehension is used because this transformation is one-to-one: every translated segment contributes exactly one output segment.
+r = {
+    "segments": [
+        {
+            "text": x.text,
+            "start": x.start,
+            "end": x.end,
+        }
+        for x in native
+    ],
+    "language": "en",
+}
+
+# Write directly to SRT.
+#
+# `"."` tells the writer to place its output in the current directory. The Bash
+# code immediately after this heredoc knows the resulting name and renames it to
+# the common backend-independent `$srtfile` path.
+get_writer("srt", ".")(
+    r,
+    sys.argv[1],
+    {
+        "highlight_words": False,
+        "max_line_count": None,
+        "max_line_width": None,
+    },
+)
 PYWHISPERX
 
 				# WhisperX names its output after the isolated WAV input.
@@ -882,24 +620,22 @@ PYWHISPERX
 				;;
 
 			stable-ts)
+				#################################
+				# Transcribe with stable-ts
+				#################################
+
 				status "Transcribing with stable-ts: $file ($file_no/$N)"
 
-				# stable-ts/faster-whisper downloads large-v3 automatically
-				# on first use when the model is not already cached.
-
-				# stable-ts uses faster-whisper here and asks Whisper to
-				# translate recognized speech into English.
+				# stable-ts asks Whisper to translate recognized speech into English.
 				#
-				# Demucs is requested through stable-ts itself because its
-				# documented music workflow supports Demucs together with VAD.
-				# `--verbose True` asks stable-ts to display decoded details.
+				# Flag rationale:
+				#   - `--task translate` requests English translation.
+				#   - `--denoiser demucs` requests Demucs preprocessing.
+				#   - `-o "$srtfile"` gives this backend the same output contract
+				#     used by Qwen and WhisperX.
 				stable-ts \
-					--faster_whisper \
 					--task translate \
-					--vad=True \
 					--denoiser demucs \
-					--verbose True \
-					--model large-v3 \
 					"old_$file" \
 					-o "$srtfile" || exit 1
 				;;
@@ -915,28 +651,25 @@ PYWHISPERX
 
 			status "Muxing subtitles: $file ($file_no/$N)"
 
-			# `-loglevel info -stats` keeps FFmpeg's useful stream information
-			# and progress visible while suppressing only its repetitive banner.
+			# so the resulting file contains:
+			#   - the first video stream from input 0;
+			#   - any audio streams from input 0;
+			#   - the generated subtitle stream from input 1.
+			#
+			# `0:a?` so a source without audio does not cause the entire mux operation to fail merely because no matching audio stream exists.
 			if ffmpeg \
-                -hide_banner \
-                -loglevel info \
-                -stats \
-                -i "old_$file" \
-                -i "$srtfile" \
-                -map 0:v:0 \
-                -map 0:a? \
-                -map 1:0 \
-                -c:v copy \
-                -c:a copy \
-                -c:s copy \
-                -metadata:s:s:0 language=eng \
-                -metadata:s:s:0 title="English" \
-                -disposition:s:0 default \
-                "${filename}.mkv"; then
+				-i "old_$file" \
+				-i "$srtfile" \
+				-map 0:v:0 \
+				-map 0:a? \
+				-map 1:0 \
+				-c copy \
+				-metadata:s:s:0 language=eng \
+				"${filename}.mkv"; then
 				# Remove temporary transcription/audio files only after the
 				# final MKV has been created successfully.
 				# The preserved `old_...` original is intentionally retained.
-				rm -rfv "$srtfile" "$asr_audio"
+				rm -fv "$asr_audio"
 				status "Finished: $file ($file_no/$N)"
 			fi
 		fi
