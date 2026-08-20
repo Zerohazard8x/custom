@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Resolve companion scripts relative to this file so this script remains
+# standalone when it is launched from another working directory.
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
 # Mirror all later stdout/stderr to the terminal and an append-only log.
 exec > >(tee -a transcribe.log) 2>&1
 
@@ -713,26 +717,20 @@ PYWHISPERX
 			# create the expected subtitle file.
 			[[ -f "$srtfile" ]] || exit 1
 
-			# Qwen already uses forced alignment, so resyncing it only adds work.
-			if [[ "$ASR_BACKEND" != qwen ]] && command -v ffsubsync >/dev/null; then
-				status "Synchronizing subtitles: $file ($file_no/$N)"
-
-				# `${srtfile%.srt}` removes only the final suffix, keeping the temporary
-				# filename recognizable while ffsubsync writes beside the original.
-				synced="${srtfile%.srt}.sync.srt"
-
-				# These subtitles came from this exact media, so allow only a small shift
-				# and no framerate correction; a large change is more likely a bad match.
-				if ffsubsync "${wx_audio:-old_$file}" -i "$srtfile" -o "$synced" \
-					--skip-sync-on-low-quality --no-fix-framerate; then
-					mv -fv "$synced" "$srtfile"
-				else
-					echo "Subtitle synchronization failed; using generated timings."
-					rm -fv "$synced"
-				fi
-			elif [[ "$ASR_BACKEND" != qwen ]]; then
-				# `command -v` tests the optional aligner without trying to run it.
-				echo "ffsubsync not found; using generated timings."
+			# Post-processing is optional so this transcription script can still be
+			# copied and run by itself. The companion independently discovers which
+			# of ffsubsync and seconv are available.
+			postprocess="$SCRIPT_DIR/postprocess-subtitles.sh"
+			if [[ -f "$postprocess" ]]; then
+				status "Post-processing subtitles: $file ($file_no/$N)"
+				postprocess_args=("${wx_audio:-old_$file}" "$srtfile")
+				# Qwen has already forced-aligned its timestamps, so retain them while
+				# still allowing seconv to clean and reflow its subtitle text.
+				[[ "$ASR_BACKEND" == qwen ]] && postprocess_args=(--skip-sync "${postprocess_args[@]}")
+				bash "$postprocess" "${postprocess_args[@]}" ||
+					echo "Subtitle post-processing failed; using the last valid subtitles."
+			else
+				echo "postprocess-subtitles.sh not found; using generated subtitles."
 			fi
 
 			# Remove the temporary full-quality mix and separated stems.
