@@ -75,23 +75,67 @@ status "Detecting transcription backends"
 
 # Build the menu dynamically so the user sees only backends that are actually
 # usable in the current environment.
-#
-# The order in which entries are appended also defines automatic preference:
-# when the user does not choose a backend, element 0 becomes the fallback.
 BACKENDS=()
 
+# Probe optional Demucs
+# `&& ... || ...` deliberately converts exit status into Bash 1/0 flag
+python3.12 -c 'import demucs' 2>/dev/null && DEMUCS=1 || DEMUCS=0
+
+# Detect the PyTorch accelerator used by Demucs and the ordinary stable-ts path.
+PT_KIND="$(python3.12 -c 'import torch; m=getattr(torch.backends,"mps",None); print("ROCm" if torch.cuda.is_available() and torch.version.hip else "CUDA" if torch.cuda.is_available() else "MPS" if m and m.is_available() else "CPU")' 2>/dev/null || echo CPU)"
+case "$PT_KIND" in
+CUDA | ROCm)
+	PT_DEVICE=cuda
+	;;
+MPS)
+	PT_DEVICE=mps
+
+	# MPS still has occasional missing PyTorch kernels
+	# allow an unsupported operation to fall back to CPU
+	export PYTORCH_ENABLE_MPS_FALLBACK=1
+	;;
+*)
+	PT_DEVICE=cpu
+	;;
+esac
+
+# Demucs uses a torch.device internally and explicitly handles MPS in Hybrid
+# Demucs, so the same PyTorch device can be used for its separation work.
+DEMUCS_DEVICE="$PT_DEVICE"
+DEMUCS_KIND="$PT_KIND"
+
+# test CTranslate2 bc WhisperX's ASR model runs through CTranslate2
+WX_KIND="$(python3.12 -c 'import ctranslate2,torch; assert torch.cuda.is_available() and ctranslate2.get_cuda_device_count(); print("ROCm" if torch.version.hip else "CUDA")' 2>/dev/null || echo CPU)"
+[[ "$WX_KIND" == CPU ]] && WX_DEVICE=cpu || WX_DEVICE=cuda
+
+# Qwen uses Transformers `device_map="auto"`
+# asking Accelerate for its selected device therefore reports supported accelerator
+QWEN_KIND="$(python3.12 -c 'import torch; from accelerate import Accelerator; d=Accelerator().device.type; print("ROCm" if d=="cuda" and torch.version.hip else d.upper())' 2>/dev/null || echo CPU)"
+
+# stable-ts has a purpose-built MLX Whisper backend on Apple Silicon.
+STABLE_ARGS=(--device "$PT_DEVICE")
+STABLE_KIND="$PT_KIND"
+if [[ "$PT_DEVICE" == mps ]] &&
+	python3.12 -c 'import mlx_whisper' 2>/dev/null; then
+	STABLE_ARGS=(-mlx)
+	STABLE_KIND=MLX
+fi
+
+# Keep formatting in one helper because every menu row needs the same wording
+accel() {
+	[[ "$1" == CPU ]] && printf 'unavailable (CPU)' || printf 'available (%s)' "$1"
+}
+
 # Prefer WhisperX first when available.
-# Demucs is required because this workflow isolates vocals before passing the
-# audio to WhisperX.
-# `torch` is also checked because WhisperX depends on it later for CUDA detection.
-if python3.12 -c 'import whisperx,torch,demucs' 2>/dev/null; then
+# Demucs is optional
+# `torch` is also checked because WhisperX depends on it later for device handling.
+if python3.12 -c 'import whisperx,torch' 2>/dev/null; then
 	BACKENDS+=(whisperx)
 	echo "whisperx found"
 fi
 
-# Qwen requires both its ASR package and Transformers.
-# Transformers is needed only for non-English recordings
-if python3.12 -c 'import qwen_asr,transformers' 2>/dev/null; then
+# Qwen requires its ASR package, Transformers, and Accelerate.
+if python3.12 -c 'import qwen_asr,transformers,accelerate' 2>/dev/null; then
 	BACKENDS+=(qwen)
 	echo "qwen found"
 fi
@@ -142,6 +186,13 @@ status "Choosing transcription backend"
 echo "Transcription model"
 echo "Videos: $N"
 
+# Keep Demucs status on this cleared screen
+if ((DEMUCS)); then
+	echo "Demucs: available [acceleration $(accel "$DEMUCS_KIND")]"
+else
+	echo "Demucs: unavailable"
+fi
+
 # `${!BACKENDS[@]}` expands to the array's indexes. Keeping the stored backend
 # identifiers separate from their friendly names makes the later `case`
 # statement simple while still presenting descriptive menu text.
@@ -149,25 +200,26 @@ for i in "${!BACKENDS[@]}"; do
 	case "${BACKENDS[i]}" in
 	qwen)
 		name="Qwen3-ASR"
+		acceleration="$(accel "$QWEN_KIND")"
 		;;
 	whisperx)
 		name="WhisperX"
+		acceleration="$(accel "$WX_KIND")"
 		;;
 	stable-ts)
 		name="stable-ts"
+		acceleration="$(accel "$STABLE_KIND")"
 		;;
 	esac
 
 	# Menu numbers are one-based for humans even though Bash arrays are
 	# zero-based, hence `i + 1`.
-	printf '%d) %s\n' "$((i + 1))" "$name"
+	printf '%d) %s [acceleration %s]\n' "$((i + 1))" "$name" "$acceleration"
 done
 
-# BACKENDS[0] represents the preferred available fallback because backends were
-# appended above in preference order.
+# BACKENDS[0] represents the preferred available fallback
 #
-# The array length is inserted into the prompt dynamically so the displayed
-# valid range always matches the menu that was actually generated.
+# array length is inserted into prompt dynamically so valid range always matches generated menu
 printf 'Choose [1-%d] (auto in 5s): ' "${#BACKENDS[@]}"
 
 # Initialize the variable explicitly so timeout/no-input handling below never
@@ -267,6 +319,10 @@ for file in *; do
 			# muxing code below to be completely backend-independent.
 			srtfile="old_${filename}.srt"
 
+			# Removing stale copy here prevents English/stable-ts runs from accidentally muxing an old source track
+			srcsrt="old_${filename}.source.srt"
+			rm -f "$srcsrt"
+
 			#################################
 			# Transcription backend
 			#################################
@@ -302,15 +358,15 @@ for file in *; do
 				# positional arguments to an inline Python program.
 				#
 				# `python3.12 -` tells Python to read its program from stdin. The
-				# two filenames after `-` therefore become `sys.argv[1]` and
-				# `sys.argv[2]`.
+				# three filenames after `-` therefore become `sys.argv[1]` through
+				# `sys.argv[3]`.
 				#
 				# The quoted heredoc delimiter (`<<'PYQWEN'`) is to prevent Bash from expanding `$`, backticks, or backslashes
 				#
 				# The failure guard is kept on this invocation rather than inside
 				# Python so every backend reports failure to the surrounding Bash
 				# control flow in the same way.
-				python3.12 - "$asr_audio" "$srtfile" <<'PYQWEN' || exit 1
+				python3.12 - "$asr_audio" "$srtfile" "$srcsrt" <<'PYQWEN' || exit 1
 import sys
 
 from qwen_asr import Qwen3ASRModel
@@ -420,6 +476,18 @@ def ts(x):
 
 print("Qwen: writing subtitles...", flush=True)
 
+# Write the native cues only for non-English input.
+if r.language != "English":
+    # `sys.argv[3]` is kept beside the English path so both outputs share the
+    # same basename while remaining separate files for the later mux step.
+    with open(sys.argv[3], "w", encoding="utf-8") as f:
+        for n, x in enumerate(r.time_stamps.items, 1):
+            f.write(
+                f"{n}\n"
+                f"{ts(x.start_time)} --> {ts(x.end_time)}\n"
+                f"{x.text}\n\n"
+            )
+
 # UTF-8 because subtitle text may contain arbitrary Unicode
 with open(sys.argv[2], "w", encoding="utf-8") as f:
     # SRT cue numbering starts at 1, hence the explicit starting value passed
@@ -447,81 +515,91 @@ PYQWEN
 
 			whisperx)
 				#################################
-				# Isolate vocals for WhisperX
+				# Optionally isolate vocals for WhisperX
 				#################################
 
-				# directory and segmented-file pattern share the same base so
-				# all temporary WhisperX/Demucs artifacts remain grouped together.
-				wx_dir="old_${filename}.demucs"
-				wx_mix="$wx_dir/%03d.wav"
+				# Default to the preserved source
+				wx_audio="old_$file"
 
-				status "Isolating vocals for WhisperX: $file ($file_no/$N)"
+				if ((DEMUCS)); then
+					# directory and segmented-file pattern share the same base so
+					# all temporary WhisperX/Demucs artifacts remain grouped together.
+					wx_dir="old_${filename}.demucs"
+					wx_mix="$wx_dir/%03d.wav"
 
-				# `-p` also makes reruns tolerant of a directory left by an
-				# interrupted previous attempt.
-				mkdir -pv "$wx_dir"
+					status "Isolating vocals for WhisperX: $file ($file_no/$N)"
 
-				# Split the source audio into five-minute PCM WAV segments before
-				# Demucs processing.
-				#
-				# Segmenting first limits the size of each individual input sent
-				# through the separation stage.
-				#
-				# `-f segment -segment_time 300` asks FFmpeg's segment muxer to
-				# create consecutive 300-second files using the `%03d` filename
-				# pattern defined above.
-				ffmpeg \
-					-y \
-					-i "old_$file" \
-					-vn \
-					-c:a pcm_s16le \
-					-f segment \
-					-segment_time 300 \
-					"$wx_mix" || exit 1
+					# `-p` also makes reruns tolerant of a directory left by an
+					# interrupted previous attempt.
+					mkdir -pv "$wx_dir"
 
-				# Two-stem mode extracts vocals against the remainder of the program mix.
-				#
-				# `--other-method none` avoids requesting additional processing of
-				# the non-vocal stem.
-				#
-				# `-v` enables Demucs' useful verbose/progress output.
-				#
-				# Shell expansion of `"$wx_dir"/*.wav` supplies all segmented WAV
-				# inputs to the same Demucs invocation. The quoted directory part
-				# still protects spaces in the generated working-directory name.
-				python3.12 -m demucs \
-					--two-stems vocals \
-					--other-method none \
-					-v \
-					-o "$wx_dir" \
-					"$wx_dir"/*.wav || exit 1
+					# Split the source audio into five-minute PCM WAV segments before
+					# Demucs processing.
+					#
+					# Segmenting first limits the size of each individual input sent
+					# through the separation stage.
+					#
+					# `-f segment -segment_time 300` asks FFmpeg's segment muxer to
+					# create consecutive 300-second files using the `%03d` filename
+					# pattern defined above.
+					ffmpeg \
+						-y \
+						-i "old_$file" \
+						-vn \
+						-c:a pcm_s16le \
+						-f segment \
+						-segment_time 300 \
+						"$wx_mix" || exit 1
 
-				# Reassemble the separated vocal segments in their original order.
-				#
-				# The subshell changes into `wx_dir` to keep paths written into the concat list short and relative without changing the parent script's directory.
-				#
-				# `printf` creates one FFmpeg concat-demuxer `file` entry per
-				# separated stem. `-c copy` then joins compatible WAV segments
-				# without another encode.
-				(
-					cd "$wx_dir" &&
-						printf "file '%s'\n" htdemucs/*/vocals.wav >list &&
-						ffmpeg \
-							-f concat \
-							-i list \
-							-c copy \
-							vocals.wav
-				) || exit 1
+					# Two-stem mode extracts vocals against the remainder of the program mix.
+					#
+					# `--other-method none` avoids requesting additional processing of
+					# the non-vocal stem.
+					#
+					# `-d` is explicit here because Demucs otherwise only auto-selects
+					# CUDA/CPU and would miss an available MPS device.
+					#
+					# `-v` enables Demucs' useful verbose/progress output.
+					#
+					# Shell expansion of `"$wx_dir"/*.wav` supplies all segmented WAV
+					# inputs to the same Demucs invocation.
+					# The quoted directory part protects spaces
+					python3.12 -m demucs \
+						-d "$DEMUCS_DEVICE" \
+						--two-stems vocals \
+						--other-method none \
+						-v \
+						-o "$wx_dir" \
+						"$wx_dir"/*.wav || exit 1
 
-				# Give final track a descriptive variable
-				# This keeps the preceding concat command expressed relative to its temporary working directory.
-				wx_audio="$wx_dir/vocals.wav"
+					# Reassemble the separated vocal segments in their original order.
+					#
+					# The subshell changes into `wx_dir` to keep paths written into the concat list short and relative without changing the parent script's directory.
+					#
+					# `printf` creates one FFmpeg concat-demuxer `file` entry per
+					# separated stem. `-c copy` then joins compatible WAV segments
+					# without another encode.
+					(
+						cd "$wx_dir" &&
+							printf "file '%s'\n" htdemucs/*/vocals.wav >list &&
+							ffmpeg \
+								-f concat \
+								-i list \
+								-c copy \
+								vocals.wav
+					) || exit 1
 
-				# Check final stem
-				[[ -f "$wx_audio" ]] || {
-					echo "Demucs did not create the expected vocals stem."
-					exit 1
-				}
+					# Give final track a descriptive variable
+					wx_audio="$wx_dir/vocals.wav"
+
+					# Check final stem
+					[[ -f "$wx_audio" ]] || {
+						echo "Demucs did not create the expected vocals stem."
+						exit 1
+					}
+				else
+					echo "Demucs unavailable."
+				fi
 
 				status "Transcribing with WhisperX: $file ($file_no/$N)"
 
@@ -529,20 +607,10 @@ PYQWEN
 				# Select WhisperX compute device
 				#################################
 
-				# Start with CPU configuration
-				#
-				# Bash array used so each future command-line argument remains a separate shell word when expanded.
-				WX_GPU=(--device cpu)
+				# bc CTranslate2 calls both CUDA and ROCm/HIP GPU execution `cuda`
+				WX_GPU=(--device "$WX_DEVICE")
 
-				# Switch to CUDA only when CUDA is available.
-				# Python command communicates the Boolean result through exit status
-				if python3.12 -c \
-					'import torch; raise SystemExit(0 if torch.cuda.is_available() else 1)' \
-					2>/dev/null; then
-					WX_GPU=(--device cuda)
-				fi
-
-				echo "WhisperX device: ${WX_GPU[1]}"
+				echo "WhisperX device: ${WX_GPU[1]} ($WX_KIND)"
 
 				#################################
 				# Transcribe with WhisperX
@@ -554,9 +622,10 @@ PYQWEN
 				#   argv[1] = audio filename
 				#   argv[2] = --device
 				#   argv[3] = cpu/cuda
+				#   argv[4] = source-language SRT path
 				#
 				# quoting the heredoc marker prevents Bash expansion inside the Python source
-				PYTHONIOENCODING=utf-8 python3.12 - "$wx_audio" "${WX_GPU[@]}" <<'PYWHISPERX' || exit 1
+				PYTHONIOENCODING=utf-8 python3.12 - "$wx_audio" "${WX_GPU[@]}" "$srcsrt" <<'PYWHISPERX' || exit 1
 import sys
 import whisperx
 from whisperx.utils import get_writer
@@ -576,9 +645,10 @@ m = whisperx.load_model(
     },
 )
 
-print("WhisperX: loading isolated vocal audio...", flush=True)
+print("WhisperX: loading transcription audio...", flush=True)
 
-# Decode the isolated vocal WAV into the representation expected by WhisperX.
+# Decode whichever input the Bash wrapper selected. This is normally the
+# separated vocal stem when Demucs exists and the preserved source otherwise.
 a = whisperx.load_audio(sys.argv[1])
 
 print("WhisperX: transcribing source language...", flush=True)
@@ -597,6 +667,20 @@ source = m.transcribe(
 language = source["language"]
 
 print(f"WhisperX: detected language: {language}", flush=True)
+
+# Preserve the source transcript before translation only when it differs from English.
+if language != "en":
+    # The writer derives its basename from this argument.
+	# Passing requested SRT path therefore yields basename and `.srt` extension
+    get_writer("srt", ".")(
+        source,
+        sys.argv[4],
+        {
+            "highlight_words": False,
+            "max_line_count": None,
+            "max_line_width": None,
+        },
+    )
 
 # Use ordinary translation behavior unless the alignment-model availability
 # check below indicates that this language needs the fallback chunk setting.
@@ -664,9 +748,7 @@ r = {
 
 # Write directly to SRT.
 #
-# `"."` tells the writer to place its output in the current directory. The Bash
-# code immediately after this heredoc knows the resulting name and renames it to
-# the common backend-independent `$srtfile` path.
+# `"."` tells the writer to place its output in the current directory.
 get_writer("srt", ".")(
     r,
     sys.argv[1],
@@ -680,13 +762,18 @@ get_writer("srt", ".")(
 print("WhisperX: subtitles written.", flush=True)
 PYWHISPERX
 
-				# WhisperX names its output after the isolated WAV input.
-				# Rename it to the common filename expected below.
-				mv -fv "vocals.srt" "$srtfile" || exit 1
+				wx_srt="${wx_audio##*/}"
+				wx_srt="${wx_srt%.*}.srt"
+
+				# Rename to common filenam
+				mv -fv "$wx_srt" "$srtfile" || exit 1
 
 				;;
 
 			stable-ts)
+				# No source SRT is created here because `--task transcribe` would require
+				# another Whisper decode in addition to the existing translation pass.
+
 				#################################
 				# Transcribe with stable-ts
 				#################################
@@ -697,13 +784,24 @@ PYWHISPERX
 				#
 				# `-v 1` enables its progress bar
 				# `--task translate` requests English translation.
-				# `--denoiser demucs` requests Demucs preprocessing.
+				# `$STABLE_ARGS` selects MLX when installed, otherwise it selects PyTorch device.
+				# Demucs is added only when available.
 				# `-o "$srtfile"` gives this backend the same output contract
 				#     used by Qwen and WhisperX.
+				stable_ts_demucs=()
+				((DEMUCS)) && stable_ts_demucs=(
+					--denoiser demucs
+					--denoiser_option "device=$DEMUCS_DEVICE"
+				)
+
+				((DEMUCS)) ||
+					echo "Demucs unavailable; stable-ts will run without Demucs."
+
 				stable-ts \
 					-v 1 \
 					--task translate \
-					--denoiser demucs \
+					"${STABLE_ARGS[@]}" \
+					"${stable_ts_demucs[@]}" \
 					"old_$file" \
 					-o "$srtfile" || exit 1
 				;;
@@ -724,32 +822,50 @@ PYWHISPERX
 			if [[ -f "$postprocess" ]]; then
 				status "Post-processing subtitles: $file ($file_no/$N)"
 				postprocess_args=("${wx_audio:-old_$file}" "$srtfile")
+				# Pass the source SRT only when this backend produced one so ffsubsync can
+				# synchronize both tracks while seconv still treats the first SRT as English.
+				[[ -f "$srcsrt" ]] && postprocess_args+=("$srcsrt")
 				# Qwen has already forced-aligned its timestamps, so retain them while
 				# still allowing seconv to clean and reflow its subtitle text.
-				[[ "$ASR_BACKEND" == qwen ]] && postprocess_args=(--skip-sync "${postprocess_args[@]}")
+				[[ "$ASR_BACKEND" == qwen ]] && postprocess_args=("${postprocess_args[@]}")
 				bash "$postprocess" "${postprocess_args[@]}" ||
 					echo "Subtitle post-processing failed; using the last valid subtitles."
 			else
 				echo "postprocess-subtitles.sh not found; using generated subtitles."
 			fi
 
-			# Remove the temporary full-quality mix and separated stems.
-			[[ "$wx_audio" ]] && rm -rfv "$wx_mix" "$wx_dir"
+			# Remove the temporary full-quality mix and separated stems only when
+			# WhisperX actually created them.
+			[[ "$ASR_BACKEND" == whisperx && "$DEMUCS" == 1 ]] &&
+				rm -rfv "$wx_mix" "$wx_dir"
 
 			status "Muxing subtitles: $file ($file_no/$N)"
+
+			# Empty arrays are intentional because quoted `${array[@]}` expands to no
+			# arguments, letting one FFmpeg command handle backends with or without a
+			# source SRT without duplicating the whole mux command.
+			srcin=()
+			srcmap=()
+			if [[ -f "$srcsrt" ]]; then
+				srcin=(-i "$srcsrt")
+				srcmap=(-map 2:0 -metadata:s:s:1 title=Original)
+			fi
 
 			# so the resulting file contains:
 			#   - the first video stream from input 0;
 			#   - any audio streams from input 0;
-			#   - the generated subtitle stream from input 1.
+			#   - the generated English subtitle stream from input 1;
+			#   - the source-language subtitle stream from input 2
 			#
 			# `0:a?` so a source without audio does not cause the entire mux operation to fail merely because no matching audio stream exists.
 			if ffmpeg \
 				-i "old_$file" \
 				-i "$srtfile" \
+				"${srcin[@]}" \
 				-map 0:v:0 \
 				-map 0:a? \
 				-map 1:0 \
+				"${srcmap[@]}" \
 				-c copy \
 				-metadata:s:s:0 language=eng \
 				"${filename}.mkv"; then

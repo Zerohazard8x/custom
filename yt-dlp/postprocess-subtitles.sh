@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# Synchronize and clean one SRT in place. Each tool is optional, which lets this
-# script do the useful subset of the pipeline available on the current system.
+# Synchronize supplied SRTs and clean the first (English) one in place. Each
+# tool is optional, which lets this script use what is available on the system.
 set -u
 
 usage() {
-	printf 'Usage: %s [--skip-sync] MEDIA SRT\n' "${0##*/}" >&2
+	printf 'Usage: %s [--skip-sync] MEDIA ENGLISH_SRT [SOURCE_SRT ...]\n' "${0##*/}" >&2
 }
 
 skip_sync=false
@@ -14,22 +14,27 @@ if [[ "${1:-}" == --skip-sync ]]; then
 	shift
 fi
 
-if (($# != 2)); then
+if (($# < 2)); then
 	usage
 	exit 2
 fi
 
 media=$1
 srt=$2
+shift
 
 if [[ ! -f "$media" ]]; then
 	printf 'Error: media file not found: %s\n' "$media" >&2
 	exit 1
 fi
-if [[ ! -f "$srt" ]]; then
-	printf 'Error: subtitle file not found: %s\n' "$srt" >&2
-	exit 1
-fi
+# With MEDIA shifted away, `for s; do` covers every subtitle argument without
+# copying the list; `$srt` still names the first one for English-only cleanup.
+for s; do
+	if [[ ! -f "$s" ]]; then
+		printf 'Error: subtitle file not found: %s\n' "$s" >&2
+		exit 1
+	fi
+done
 
 workdir=$(mktemp -d "${TMPDIR:-/tmp}/subtitle-postprocess.XXXXXX") || exit 1
 trap 'rm -rf -- "$workdir"' EXIT
@@ -37,12 +42,11 @@ trap 'rm -rf -- "$workdir"' EXIT
 if [[ "$skip_sync" == false ]]; then
 	if command -v ffsubsync >/dev/null 2>&1; then
 		printf '\n[1/2] Synchronize subtitle timings\n'
-		synced="$workdir/synced.srt"
-		if ffsubsync "$media" -i "$srt" -o "$synced" \
+		# One ffsubsync call shares its reference-audio extraction across every input;
+		# `--overwrite-input` is required by ffsubsync when `-i` names multiple SRTs.
+		if ! ffsubsync "$media" -i "$@" --overwrite-input \
 			--skip-sync-on-low-quality --no-fix-framerate; then
-			mv -f -- "$synced" "$srt"
-		else
-			printf 'ffsubsync failed; retaining the current timings.\n' >&2
+			printf 'ffsubsync failed; retaining the last valid timings.\n' >&2
 		fi
 	else
 		printf 'ffsubsync not found; retaining the current timings.\n'
@@ -51,10 +55,12 @@ else
 	printf 'Synchronization skipped because the subtitles are already aligned.\n'
 fi
 
+# Keep seconv on the first/English SRT because this recipe contains
+# spacing-sensitive fixes and replacement rules that can alter other languages.
 if command -v seconv >/dev/null 2>&1; then
-	printf '\n[2/2] Clean and reflow subtitles\n'
+	printf '\n[2/2] Clean and reflow English subtitles\n'
 	rules="$workdir/sentence-line-breaks.xml"
-	cat >"$rules" <<'EOF'
+	cat >"$rules" <<'EOF2'
 <?xml version="1.0" encoding="utf-8"?>
 <MultipleSearchAndReplaceGroups>
     <Group>
@@ -76,7 +82,7 @@ if command -v seconv >/dev/null 2>&1; then
         </Rules>
     </Group>
 </MultipleSearchAndReplaceGroups>
-EOF
+EOF2
 
 	main="$workdir/main.srt"
 	final="$workdir/final.srt"
