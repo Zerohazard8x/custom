@@ -39,26 +39,10 @@ done
 workdir=$(mktemp -d "${TMPDIR:-/tmp}/subtitle-postprocess.XXXXXX") || exit 1
 trap 'rm -rf -- "$workdir"' EXIT
 
-if [[ "$skip_sync" == false ]]; then
-	if command -v ffsubsync >/dev/null 2>&1; then
-		printf '\n[1/2] Synchronize subtitle timings\n'
-		# One ffsubsync call shares its reference-audio extraction across every input;
-		# `--overwrite-input` is required by ffsubsync when `-i` names multiple SRTs.
-		if ! ffsubsync "$media" -i "$@" --overwrite-input \
-			--skip-sync-on-low-quality --no-fix-framerate; then
-			printf 'ffsubsync failed; retaining the last valid timings.\n' >&2
-		fi
-	else
-		printf 'ffsubsync not found; retaining the current timings.\n'
-	fi
-else
-	printf 'Synchronization skipped because the subtitles are already aligned.\n'
-fi
-
 # Keep seconv on the first/English SRT because this recipe contains
 # spacing-sensitive fixes and replacement rules that can alter other languages.
 if command -v seconv >/dev/null 2>&1; then
-	printf '\n[2/2] Clean and reflow English subtitles\n'
+	printf '\n[1/2] Clean and reflow English subtitles\n'
 	rules="$workdir/sentence-line-breaks.xml"
 	cat >"$rules" <<'EOF2'
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,7 +87,7 @@ EOF2
 			--output-filename:"${final##*/}" \
 			--overwrite; then
 		mv -f -- "$final" "$srt"
-		printf '\n[lint] Validate final subtitle\n'
+		printf '\n[lint] Validate subtitle\n'
 		if seconv lint "$srt"; then
 			printf 'Lint: no reported problems.\n'
 		else
@@ -115,6 +99,22 @@ EOF2
 	fi
 else
 	printf 'seconv not found; skipping subtitle cleanup.\n'
+fi
+
+if [[ "$skip_sync" == false ]]; then
+	if command -v ffsubsync >/dev/null 2>&1; then
+		printf '\n[2/2] Synchronize subtitle timings\n'
+		# One ffsubsync call shares its reference-audio extraction across every input;
+		# `--overwrite-input` is required by ffsubsync when `-i` names multiple SRTs.
+		if ! ffsubsync "$media" -i "$@" --overwrite-input \
+			--quality-max-offset-seconds 10; then
+			printf 'ffsubsync failed; retaining the last valid timings.\n' >&2
+		fi
+	else
+		printf 'ffsubsync not found; retaining the current timings.\n'
+	fi
+else
+	printf 'Synchronization skipped because the subtitles are already aligned.\n'
 fi
 
 printf '\nFinished: %s\n' "${srt##*/}"
