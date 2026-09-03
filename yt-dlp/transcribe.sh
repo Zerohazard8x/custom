@@ -104,6 +104,17 @@ esac
 DEMUCS_DEVICE="$PT_DEVICE"
 DEMUCS_KIND="$PT_KIND"
 
+# Prefer BS-RoFormer model
+# `-l --list_format=json` verifies audio-separator knows the exact model before it is preferred
+ROFORMER_MODEL=model_bs_roformer_ep_317_sdr_12.9755.ckpt
+if command -v audio-separator >/dev/null &&
+	audio-separator -l --list_format=json 2>/dev/null |
+	grep -Fq "$ROFORMER_MODEL"; then
+	ROFORMER=1
+else
+	ROFORMER=0
+fi
+
 # test CTranslate2 bc WhisperX's ASR model runs through CTranslate2
 WX_KIND="$(python3.12 -c 'import ctranslate2,torch; assert torch.cuda.is_available() and ctranslate2.get_cuda_device_count(); print("ROCm" if torch.version.hip else "CUDA")' 2>/dev/null || echo CPU)"
 [[ "$WX_KIND" == CPU ]] && WX_DEVICE=cpu || WX_DEVICE=cuda
@@ -186,6 +197,13 @@ status "Choosing transcription backend"
 echo "Transcription model"
 echo "Videos: $N"
 
+# Keep vocal-isolation status on this cleared screen.
+if ((ROFORMER)); then
+	echo "BS-RoFormer: available [acceleration $(accel "$PT_KIND")]"
+else
+	echo "BS-RoFormer: unavailable"
+fi
+
 # Keep Demucs status on this cleared screen
 if ((DEMUCS)); then
 	echo "Demucs: available [acceleration $(accel "$DEMUCS_KIND")]"
@@ -256,6 +274,45 @@ else
 fi
 
 echo "Using: $ASR_BACKEND"
+
+#################################
+# Preferred vocal isolation
+#################################
+
+# Try the preferred separator in one helper because WhisperX and stable-ts need
+# the same input contract. The function returns success only after the expected
+# WAV exists, which lets each caller fall through to its existing Demucs path
+# when audio-separator itself is installed but separation fails at runtime.
+roformer_vocals() {
+	wx_dir="old_${filename}.roformer"
+	local roformer_audio="$wx_dir/vocals.wav"
+
+	status "Isolating vocals with BS-RoFormer: $file ($file_no/$N)"
+
+	# `-p` makes reruns tolerant of a directory left by an interrupted previous
+	# attempt.
+	mkdir -pv "$wx_dir"
+
+	# `--single_stem Vocals` unused instrumental stem,
+	# `--chunk_duration 300` uses five-minute split/process/merge path instead of duplicating Demucs code
+	if audio-separator \
+		"old_$file" \
+		--model_filename "$ROFORMER_MODEL" \
+		--output_format WAV \
+		--output_dir "$wx_dir" \
+		--single_stem Vocals \
+		--chunk_duration 300 \
+		--custom_output_names '{"Vocals":"vocals"}' &&
+		[[ -f "$roformer_audio" ]]; then
+		wx_audio="$roformer_audio"
+		return 0
+	fi
+
+	echo "BS-RoFormer failed; trying the next available isolation method."
+	rm -rfv "$wx_dir"
+	wx_dir=""
+	return 1
+}
 
 #################################
 # Process video files
@@ -521,7 +578,9 @@ PYQWEN
 				# Default to the preserved source
 				wx_audio="old_$file"
 
-				if ((DEMUCS)); then
+				if ((ROFORMER)) && roformer_vocals; then
+					:
+				elif ((DEMUCS)); then
 					# directory and segmented-file pattern share the same base so
 					# all temporary WhisperX/Demucs artifacts remain grouped together.
 					wx_dir="old_${filename}.demucs"
@@ -598,7 +657,7 @@ PYQWEN
 						exit 1
 					}
 				else
-					echo "Demucs unavailable."
+					echo "Vocal isolation unavailable; WhisperX will use source audio."
 				fi
 
 				status "Transcribing with WhisperX: $file ($file_no/$N)"
@@ -648,7 +707,7 @@ m = whisperx.load_model(
 print("WhisperX: loading transcription audio...", flush=True)
 
 # Decode whichever input the Bash wrapper selected. This is normally the
-# separated vocal stem when Demucs exists and the preserved source otherwise.
+# separated vocal stem when isolation exists and the preserved source otherwise.
 a = whisperx.load_audio(sys.argv[1])
 
 print("WhisperX: transcribing source language...", flush=True)
@@ -778,31 +837,36 @@ PYWHISPERX
 				# Transcribe with stable-ts
 				#################################
 
-				status "Transcribing with stable-ts: $file ($file_no/$N)"
-
 				# stable-ts asks Whisper to translate recognized speech into English.
 				#
 				# `-v 1` enables its progress bar
 				# `--task translate` requests English translation.
 				# `$STABLE_ARGS` selects MLX when installed, otherwise it selects PyTorch device.
-				# Demucs is added only when available.
+				# BS-RoFormer is preferred externally when available; the original
+				# stable-ts Demucs denoiser remains the fallback.
 				# `-o "$srtfile"` gives this backend the same output contract
 				#     used by Qwen and WhisperX.
+				wx_audio="old_$file"
 				stable_ts_demucs=()
-				((DEMUCS)) && stable_ts_demucs=(
-					--denoiser demucs
-					--denoiser_option "device=$DEMUCS_DEVICE"
-				)
+				if ((ROFORMER)) && roformer_vocals; then
+					:
+				elif ((DEMUCS)); then
+					stable_ts_demucs=(
+						--denoiser demucs
+						--denoiser_option "device=$DEMUCS_DEVICE"
+					)
+				else
+					echo "Vocal isolation unavailable; stable-ts will use source audio."
+				fi
 
-				((DEMUCS)) ||
-					echo "Demucs unavailable; stable-ts will run without Demucs."
+				status "Transcribing with stable-ts: $file ($file_no/$N)"
 
 				stable-ts \
 					-v 1 \
 					--task translate \
 					"${STABLE_ARGS[@]}" \
 					"${stable_ts_demucs[@]}" \
-					"old_$file" \
+					"$wx_audio" \
 					-o "$srtfile" || exit 1
 				;;
 			esac
@@ -834,10 +898,11 @@ PYWHISPERX
 				echo "postprocess-subtitles.sh not found; using generated subtitles."
 			fi
 
-			# Remove the temporary full-quality mix and separated stems only when
-			# WhisperX actually created them.
-			[[ "$ASR_BACKEND" == whisperx && "$DEMUCS" == 1 ]] &&
-				rm -rfv "$wx_mix" "$wx_dir"
+			# Remove the temporary separated stems only when a backend actually
+			# created a separation directory. Demucs used internally by stable-ts
+			# does not create one here.
+			[[ -n "${wx_dir:-}" ]] &&
+				rm -rfv "$wx_dir"
 
 			status "Muxing subtitles: $file ($file_no/$N)"
 
