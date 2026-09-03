@@ -75,7 +75,7 @@ EOF2
 		--split-long-lines \
 		--balance-lines \
 		--fix-common-errors-rules:"Fix3PlusLines,FixEmptyLines,FixInvalidItalicTags,FixMissingSpaces,FixUnneededSpaces,NormalizeStrings,FixShortLines" \
-		--apply-duration-limits \
+		--apply-duration-limits:1000 \
 		--output-folder:"$workdir" \
 		--output-filename:"${main##*/}" \
 		--overwrite &&
