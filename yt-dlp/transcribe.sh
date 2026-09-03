@@ -1,5 +1,3 @@
-Ways to improve the quality of the voxtral subtitles in the below which can be done by changing the least no. of chars (with repositioning chars not counting as changing any of them)
-
 #!/bin/bash
 
 # Resolve companion scripts here so launches from other directories work.
@@ -130,7 +128,7 @@ accel() {
 }
 
 # Use transformers to load Voxtral
-if python3.12 -c 'from transformers import VoxtralForConditionalGeneration;import mistral_common.audio,accelerate,torch,bitsandbytes' 2>/dev/null; then
+if python3.12 -c 'from transformers import VoxtralForConditionalGeneration;import mistral_common.audio,accelerate,torch,bitsandbytes,silero_vad' 2>/dev/null; then
 	BACKENDS+=(voxtral)
 	echo "voxtral found"
 fi
@@ -505,6 +503,7 @@ from transformers import (
     BitsAndBytesConfig,
     VoxtralForConditionalGeneration,
 )
+import silero_vad as v
 
 # Keep the repository identifier beside model setup so both loaders use one source.
 repo = "mistralai/Voxtral-Mini-3B-2507"
@@ -521,6 +520,7 @@ m = VoxtralForConditionalGeneration.from_pretrained(
 		llm_int8_threshold=0.0 # comment out to increase accuracy but reduce speed
 	)
 )
+vad=v.load_silero_vad()
 
 # SRT requires zero-padded hours and a comma before milliseconds.
 def ts(s):
@@ -609,6 +609,11 @@ with (
     ):
         with wave.open(str(a), "rb") as w:
             end = start + w.getnframes() / w.getframerate()
+
+        # Empty VAD timestamps mean no speech, so `if not ...` skips Voxtral while advancing time preserves SRT timing.
+        if not v.get_speech_timestamps(v.read_audio(str(a)),vad,threshold=0.3):
+            start=end
+            continue
 
         # English uses the dedicated transcription request; other audio uses a prompt.
         if english:
