@@ -1,3 +1,5 @@
+Ways to improve the quality of the voxtral subtitles in the below which can be done by changing the least no. of chars (with repositioning chars not counting as changing any of them)
+
 #!/bin/bash
 
 # Resolve companion scripts here so launches from other directories work.
@@ -553,6 +555,7 @@ with (
 		"-ar", "16000",
         "-c:a", "pcm_s16le", 
 		"-f", "segment", 
+		"-segment_time", "30", # bc default is 2
 		pattern,
         ],
         check=True,
