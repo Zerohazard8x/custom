@@ -1,28 +1,24 @@
 #!/bin/bash
 
-# Resolve companion scripts relative to this file so this script remains
-# standalone when it is launched from another working directory.
+# Resolve companion scripts here so launches from other directories work.
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
-# Mirror all later stdout/stderr to the terminal and an append-only log.
+# Mirror stdout and stderr to the terminal and append-only log.
 exec > >(tee -a transcribe.log) 2>&1
 
-# Make Python status/progress output appear immediately instead of waiting for
-# stdout buffering to fill.
+# Disable Python buffering so status and progress appear immediately.
 export PYTHONUNBUFFERED=1
 
-# Prompt on exit only when an interactive terminal is actually available (only when `/dev/tty` is readable).
+# Prompt on exit only when readable `/dev/tty` provides an interactive terminal.
 #
 # `/dev/tty` is used instead of stdin because stdin may have been redirected by
 # whatever launched the script.
 # `-r` prevents `read` from interpreting backslashes.
 #
-# Installing this as an EXIT trap keeps the pause in one place and makes it run
-# for normal completion as well as explicit `exit` calls elsewhere in the
-# script.
+# Installing this as an EXIT trap keeps the pause in one place and makes it run for
+# normal completion as well as explicit `exit` calls elsewhere in the script.
 #
-# The test and `read` are kept inside the quoted trap body so they are evaluated
-# when the script exits, not when the trap is initially registered.
+# Quoting defers the test and `read` until the trap runs.
 trap '[[ -r /dev/tty ]] && read -r -p "Press Enter to close..." </dev/tty' EXIT
 
 # Print each phase normally and, when stdout is a terminal (when /dev/tty is writable), also place it in the
@@ -30,8 +26,7 @@ trap '[[ -r /dev/tty ]] && read -r -p "Press Enter to close..." </dev/tty' EXIT
 status() {
 	# ANSI/OSC title sequence.
 	#
-	# Write directly to /dev/tty because stdout itself is piped through `tee`,
-	# which means `[[ -t 1 ]]` would otherwise be false.
+	# Write to `/dev/tty`; stdout is piped through `tee` and is not a TTY.
 	[[ -w /dev/tty ]] &&
 		printf '\033]0;%s\007' "$1" >/dev/tty 2>/dev/null
 
@@ -73,18 +68,17 @@ ffmpeg() {
 # Build the model/backend menu dynamically.
 status "Detecting transcription backends"
 
-# Build the menu dynamically so the user sees only backends that are actually
-# usable in the current environment.
+# List only backends usable in the current environment.
 BACKENDS=()
 
-# Prefer audio-separator model
+# audio-separator model
 if command -v audio-separator >/dev/null; then
 	AUDIOSEP=1
 else
 	AUDIOSEP=0
 fi
 
-# Probe optional Demucs
+# Demucs
 # `&& ... || ...` deliberately converts exit status into Bash 1/0 flag
 python3.12 -c 'import demucs' 2>/dev/null && DEMUCS=1 || DEMUCS=0
 
@@ -133,6 +127,12 @@ accel() {
 	[[ "$1" == CPU ]] && printf 'unavailable (CPU)' || printf 'available (%s)' "$1"
 }
 
+# Use transformers to load Voxtral
+if python3.12 -c 'from transformers import VoxtralForConditionalGeneration;import mistral_common.audio,accelerate,torch,bitsandbytes' 2>/dev/null; then
+	BACKENDS+=(voxtral)
+	echo "voxtral found"
+fi
+
 # Prefer WhisperX first when available.
 # Demucs is optional
 # `torch` is also checked because WhisperX depends on it later for device handling.
@@ -145,13 +145,6 @@ fi
 if python3.12 -c 'import qwen_asr,transformers,accelerate' 2>/dev/null; then
 	BACKENDS+=(qwen)
 	echo "qwen found"
-fi
-
-# stable-ts is exposed as a command-line program
-# checking PATH is sufficient for this backend
-if command -v stable-ts >/dev/null; then
-	BACKENDS+=(stable-ts)
-	echo "stable-ts found"
 fi
 
 # `${#BACKENDS[@]}` expands to the number of elements in the array.
@@ -212,6 +205,10 @@ fi
 # statement simple while still presenting descriptive menu text.
 for i in "${!BACKENDS[@]}"; do
 	case "${BACKENDS[i]}" in
+	voxtral)
+		name="Voxtral"
+		acceleration="$(accel "$QWEN_KIND")"
+		;;
 	qwen)
 		name="Qwen3-ASR"
 		acceleration="$(accel "$QWEN_KIND")"
@@ -219,10 +216,6 @@ for i in "${!BACKENDS[@]}"; do
 	whisperx)
 		name="WhisperX"
 		acceleration="$(accel "$WX_KIND")"
-		;;
-	stable-ts)
-		name="stable-ts"
-		acceleration="$(accel "$STABLE_KIND")"
 		;;
 	esac
 
@@ -236,8 +229,7 @@ done
 # array length is inserted into prompt dynamically so valid range always matches generated menu
 printf 'Choose [1-%d] (auto in 5s): ' "${#BACKENDS[@]}"
 
-# Initialize the variable explicitly so timeout/no-input handling below never
-# depends on a value inherited from the environment.
+# Initialize explicitly so timeout handling ignores inherited values.
 choice=""
 
 # Read a single character from the actual terminal and wait at most five seconds.
@@ -288,7 +280,7 @@ audiosep_vocals() {
 
 	# `--single_stem Vocals` unused instrumental stem,
 	# `--chunk_duration 300` uses five-minute split/process/merge path instead of duplicating Demucs code
-	if ffmpeg -y -i "old_$file" "$wx_dir/a.wav"&&audio-separator \
+	if ffmpeg -y -i "old_$file" "$wx_dir/a.wav" && audio-separator \
 		"$wx_dir/a.wav" \
 		--use_autocast \
 		--output_format WAV \
@@ -376,7 +368,295 @@ for file in *; do
 			# Transcription backend
 			#################################
 
+			wx_audio= wx_dir=
 			case "$ASR_BACKEND" in
+			voxtral)
+				#################################
+				# Optionally isolate vocals for Voxtral
+				#################################
+
+				# Default to the preserved source
+				wx_audio="old_$file"
+
+				if ((DEMUCS)); then
+					# directory and segmented-file pattern share the same base so
+					# all temporary Voxtral/Demucs artifacts remain grouped together.
+					wx_dir="old_${filename}.demucs"
+					wx_mix="$wx_dir/%03d.wav"
+
+					status "Isolating vocals for Voxtral: $file ($file_no/$N)"
+
+					# `-p` also makes reruns tolerant of a directory left by an
+					# interrupted previous attempt.
+					mkdir -pv "$wx_dir"
+
+					# Split the source audio into five-minute PCM WAV segments before
+					# Demucs processing.
+					#
+					# Segmenting first limits the size of each individual input sent
+					# through the separation stage.
+					#
+					# `-f segment -segment_time 300` asks FFmpeg's segment muxer to
+					# create consecutive 300-second files using the `%03d` filename
+					# pattern defined above.
+					ffmpeg \
+						-y \
+						-i "old_$file" \
+						-vn \
+						-c:a pcm_s16le \
+						-f segment \
+						-segment_time 300 \
+						"$wx_mix" || exit 1
+
+					# Two-stem mode extracts vocals against the remainder of the program mix.
+					#
+					# `--other-method none` avoids requesting additional processing of
+					# the non-vocal stem.
+					# `-d` is explicit here because Demucs otherwise only auto-selects
+					# CUDA/CPU and would miss an available MPS device.
+					# `-v` enables Demucs' useful verbose/progress output.
+					# Shell expansion of `"$wx_dir"/*.wav` supplies all segmented WAV
+					# inputs to the same Demucs invocation.
+					# The quoted directory part protects spaces
+					python3.12 -m demucs \
+						-d "$DEMUCS_DEVICE" \
+						--two-stems vocals \
+						--other-method none \
+						-v \
+						-o "$wx_dir" \
+						"$wx_dir"/*.wav || exit 1
+
+					# Reassemble the separated vocal segments in their original order.
+					#
+					# The subshell changes into `wx_dir` to keep paths written into the concat list short and relative without changing the parent script's directory.
+					#
+					# `printf` creates one FFmpeg concat-demuxer `file` entry per
+					# separated stem. `-c copy` then joins compatible WAV segments
+					# without another encode.
+					(
+						cd "$wx_dir" &&
+							printf "file '%s'\n" htdemucs/*/vocals.wav >list &&
+							ffmpeg \
+								-f concat \
+								-i list \
+								-c copy \
+								vocals.wav
+					) || exit 1
+
+					# Give final track a descriptive variable
+					wx_audio="$wx_dir/vocals.wav"
+
+					# Check final stem
+					[[ -f "$wx_audio" ]] || {
+						echo "Demucs did not create the expected vocals stem."
+						exit 1
+					}
+				elif ((AUDIOSEP)) && audiosep_vocals; then
+					:
+				else
+					echo "Vocal isolation unavailable; Voxtral will use source audio."
+				fi
+
+				status "Transcribing with Voxtral: $file ($file_no/$N)"
+
+				#################################
+				# Select Voxtral compute device
+				#################################
+
+				WX_GPU=(--device "$QWEN_KIND")
+
+				echo "Voxtral device: ${WX_GPU[1]} ($QWEN_KIND)"
+
+				#################################
+				# Transcribe with Voxtral
+				#################################
+
+				# `PYTHONIOENCODING=utf-8` keeps transcript/progress output Unicode-safe
+				#
+				# positional arguments are expanded from the `WX_GPU` array.
+				#   argv[1] = audio filename
+				#   argv[2] = --device
+				#   argv[3] = cpu/cuda
+				#   argv[4] = source-language SRT path
+				#
+				# quoting the heredoc marker prevents Bash expansion inside the Python source
+				PYTHONIOENCODING=utf-8 python3.12 - "$wx_audio" "$srtfile" <<'PYVOXTRAL' || exit 1
+# Standard-library imports handle processes, arguments, temporary files, and WAV metadata.
+import logging
+import subprocess
+import sys
+import tempfile
+import warnings
+import wave
+from pathlib import Path
+
+# Hide a known quantization warning while retaining other warnings and errors.
+warnings.filterwarnings(
+    "ignore",
+    message=r"MatMul8bitLt: inputs will be cast from .* to float16 during quantization",
+)
+logging.getLogger("bitsandbytes.autograd._functions").setLevel(logging.ERROR)
+
+# These classes load Voxtral, prepare audio prompts, and configure 8-bit weights.
+from transformers import (
+    AutoProcessor,
+    BitsAndBytesConfig,
+    VoxtralForConditionalGeneration,
+)
+
+# Keep the repository identifier beside model setup so both loaders use one source.
+repo = "mistralai/Voxtral-Mini-3B-2507"
+
+print("Voxtral: loading model...", flush=True)
+
+p = AutoProcessor.from_pretrained(repo)
+m = VoxtralForConditionalGeneration.from_pretrained(
+	repo,
+	dtype="auto",
+	device_map="auto",
+	quantization_config=BitsAndBytesConfig(
+		load_in_8bit=True,
+		llm_int8_threshold=0.0 # comment out to increase accuracy but reduce speed
+	)
+)
+
+# SRT requires zero-padded hours and a comma before milliseconds.
+def ts(s):
+    """Convert seconds to an SRT timestamp."""
+    ms = int(round(max(0.0, float(s)) * 1000))
+    h, ms = divmod(ms, 3600000)
+    m_, ms = divmod(ms, 60000)
+    s_, ms = divmod(ms, 1000)
+    return f"{h:02}:{m_:02}:{s_:02},{ms:03}"
+
+
+print("Voxtral: translating to English...", flush=True)
+
+# The context-manager syntax closes the temporary directory and SRT together.
+# It belongs here so every generated audio chunk survives through transcription.
+with (
+    tempfile.TemporaryDirectory() as d,
+    open(sys.argv[2], "w", encoding="utf-8") as f,
+):
+    pattern = str(Path(d) / "%05d.wav")
+
+    # Normalize the input to segmented, mono, 16 kHz PCM WAV files for Voxtral.
+    subprocess.run(
+        [
+        "ffmpeg",
+		"-hide_banner",
+		"-loglevel", "error",
+		"-y",
+        "-i", sys.argv[1], 
+		"-vn", 
+		"-ac", "1", 
+		"-ar", "16000",
+        "-c:a", "pcm_s16le", 
+		"-f", "segment", 
+		pattern,
+        ],
+        check=True,
+    )
+
+    # Sorting restores chronological order from the zero-padded chunk names.
+    audios = sorted(Path(d).glob("*.wav"))
+
+    # Probe the first chunk once to choose transcription or translation for all chunks.
+    q = [
+        {
+            "role": "user",
+            "content": [
+                {"type": "audio", "path": str(audios[0])},
+                {
+                    "type": "text",
+                    "text": "What language is spoken? Reply only English or Other.",
+                },
+            ],
+        },
+    ]
+
+    z = p.apply_chat_template(q).to(m.device, dtype=m.dtype)
+    detected = m.generate(
+        **z,
+        max_new_tokens=3,
+    )[:, z.input_ids.shape[1] :]
+    english = p.batch_decode(
+        detected,
+        skip_special_tokens=True,
+    )[0].strip().lower().startswith("english")
+
+    print(
+        "Voxtral: English detected; transcribing."
+        if english
+        else "Voxtral: non-English detected; translating to English.",
+        flush=True,
+    )
+
+    # Accumulate durations because each chunk starts at zero internally.
+    start = 0.0
+
+    # enumerate(..., 1) produces the one-based cue numbers required by SRT.
+    for n, a in enumerate(
+        __import__("tqdm").tqdm(
+            audios,
+            desc="Voxtral",
+            unit="chunk",
+        ),
+        1,
+    ):
+        with wave.open(str(a), "rb") as w:
+            end = start + w.getnframes() / w.getframerate()
+
+        # English uses the dedicated transcription request; other audio uses a prompt.
+        if english:
+            x = p.apply_transcription_request(
+                language="en",
+                audio=str(a),
+                model_id=repo,
+            )
+        else:
+            conversation = [
+                {
+                "role": "user",
+                "content": [
+                    {"type": "audio", "path": str(a)},
+                        {
+                            "type": "text",
+                            "text": (
+                                "Translate this speech to English. "
+                                "Output only the translation."
+                            ),
+                        },
+                ],
+                },
+            ]
+            x = p.apply_chat_template(conversation)
+
+        # Match prompt tensors to the model before generation.
+        x = x.to(m.device, dtype=m.dtype)
+        y = m.generate(**x)
+
+        # Decode only generated tokens, excluding the original prompt tokens.
+        text = p.batch_decode(
+            y[:, x.input_ids.shape[1] :],
+            skip_special_tokens=True,
+        )[0].strip()
+
+        # Empty generations do not create blank subtitle cues.
+        if text:
+            f.write(
+                f"{n}\n"
+                f"{ts(start)} --> {ts(end)}\n"
+                f"{text}\n\n"
+            )
+
+        start = end
+
+print("Voxtral: subtitles written.", flush=True)
+PYVOXTRAL
+
+				;;
+
 			qwen)
 				#################################
 				# Prepare speech audio for Qwen
@@ -817,49 +1097,8 @@ PYWHISPERX
 				wx_srt="${wx_srt%.*}.srt"
 
 				# Rename to common filenam
-				mv -fv "$wx_srt" "$srtfile" || exit 1
+				[[ "$wx_srt" == "$srtfile" ]] || mv -fv "$wx_srt" "$srtfile" || exit 1
 
-				;;
-
-			stable-ts)
-				# No source SRT is created here because `--task transcribe` would require
-				# another Whisper decode in addition to the existing translation pass.
-
-				#################################
-				# Transcribe with stable-ts
-				#################################
-
-				# stable-ts asks Whisper to translate recognized speech into English.
-				#
-				# `-v 1` enables its progress bar
-				# `--task translate` requests English translation.
-				# `$STABLE_ARGS` selects MLX when installed, otherwise it selects PyTorch device.
-				# audio-separator is preferred externally when available; the original
-				# stable-ts Demucs denoiser remains the fallback.
-				# `-o "$srtfile"` gives this backend the same output contract
-				#     used by Qwen and WhisperX.
-				wx_audio="old_$file"
-				stable_ts_demucs=()
-				if ((DEMUCS)); then
-					stable_ts_demucs=(
-						--denoiser demucs
-						--denoiser_option "device=$DEMUCS_DEVICE"
-					)
-				elif ((AUDIOSEP)) && audiosep_vocals; then
-					:
-				else
-					echo "Vocal isolation unavailable; stable-ts will use source audio."
-				fi
-
-				status "Transcribing with stable-ts: $file ($file_no/$N)"
-
-				stable-ts \
-					-v 1 \
-					--task translate \
-					"${STABLE_ARGS[@]}" \
-					"${stable_ts_demucs[@]}" \
-					"$wx_audio" \
-					-o "$srtfile" || exit 1
 				;;
 			esac
 
@@ -878,12 +1117,16 @@ PYWHISPERX
 			if [[ -f "$postprocess" ]]; then
 				status "Post-processing subtitles: $file ($file_no/$N)"
 				postprocess_args=("${wx_audio:-old_$file}" "$srtfile")
+
 				# Pass the source SRT only when this backend produced one so ffsubsync can
 				# synchronize both tracks while seconv still treats the first SRT as English.
 				[[ -f "$srcsrt" ]] && postprocess_args+=("$srcsrt")
+
 				# Qwen has already forced-aligned its timestamps, so retain them while
 				# still allowing seconv to clean and reflow its subtitle text.
 				[[ "$ASR_BACKEND" == qwen ]] && postprocess_args=("${postprocess_args[@]}")
+				[[ "$ASR_BACKEND" == voxtral ]] && postprocess_args=("${postprocess_args[@]}")
+				
 				bash "$postprocess" "${postprocess_args[@]}" ||
 					echo "Subtitle post-processing failed; using the last valid subtitles."
 			else
