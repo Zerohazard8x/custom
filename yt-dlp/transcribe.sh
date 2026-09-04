@@ -462,46 +462,40 @@ for file in *; do
 				#################################
 				# Select Voxtral compute device
 				#################################
-
-				WX_GPU=(--device "$QWEN_KIND")
-
-				echo "Voxtral device: ${WX_GPU[1]} ($QWEN_KIND)"
-
+				echo "Voxtral device: $QWEN_KIND"
 				#################################
 				# Transcribe with Voxtral
 				#################################
 
 				# `PYTHONIOENCODING=utf-8` keeps transcript/progress output Unicode-safe
 				#
-				# positional arguments are expanded from the `WX_GPU` array.
-				#   argv[1] = audio filename
-				#   argv[2] = --device
-				#   argv[3] = cpu/cuda
-				#   argv[4] = source-language SRT path
+				# `python3.12 -` reads the program from stdin. The two following
+				# arguments therefore become `sys.argv[1]` for the audio path and
+				# `sys.argv[2]` for the SRT path.
 				#
 				# quoting the heredoc marker prevents Bash expansion inside the Python source
 				PYTHONIOENCODING=utf-8 python3.12 - "$wx_audio" "$srtfile" <<'PYVOXTRAL' || exit 1
-# Standard-library imports handle processes, arguments, temporary files, and WAV metadata.
+# Standard-library imports handle processes, arguments, temporary files, and paths.
 import logging
 import subprocess
 import sys
 import tempfile
 import warnings
-import wave
 from pathlib import Path
+import torch
 
 # Hide a known quantization warning while retaining other warnings and errors.
 warnings.filterwarnings(
-    "ignore",
-    message=r"MatMul8bitLt: inputs will be cast from .* to float16 during quantization",
+	"ignore",
+	message=r"MatMul8bitLt: inputs will be cast from .* to float16 during quantization",
 )
 logging.getLogger("bitsandbytes.autograd._functions").setLevel(logging.ERROR)
 
 # These classes load Voxtral, prepare audio prompts, and configure 8-bit weights.
 from transformers import (
-    AutoProcessor,
-    BitsAndBytesConfig,
-    VoxtralForConditionalGeneration,
+	AutoProcessor,
+	BitsAndBytesConfig,
+	VoxtralForConditionalGeneration,
 )
 import silero_vad as v
 
@@ -520,145 +514,233 @@ m = VoxtralForConditionalGeneration.from_pretrained(
 		llm_int8_threshold=0.0 # comment out to increase accuracy but reduce speed
 	)
 )
-vad=v.load_silero_vad()
+
+vad = v.load_silero_vad()
 
 # SRT requires zero-padded hours and a comma before milliseconds.
 def ts(s):
-    """Convert seconds to an SRT timestamp."""
-    ms = int(round(max(0.0, float(s)) * 1000))
-    h, ms = divmod(ms, 3600000)
-    m_, ms = divmod(ms, 60000)
-    s_, ms = divmod(ms, 1000)
-    return f"{h:02}:{m_:02}:{s_:02},{ms:03}"
+	"""Convert seconds to an SRT timestamp."""
+	ms = int(round(max(0.0, float(s)) * 1000))
+	h, ms = divmod(ms, 3600000)
+	m_, ms = divmod(ms, 60000)
+	s_, ms = divmod(ms, 1000)
+	return f"{h:02}:{m_:02}:{s_:02},{ms:03}"
 
 
-print("Voxtral: translating to English...", flush=True)
+print("Voxtral: preparing speech segments...", flush=True)
 
 # The context-manager syntax closes the temporary directory and SRT together.
-# It belongs here so every generated audio chunk survives through transcription.
+# It belongs here so every generated VAD speech chunk survives through transcription.
 with (
-    tempfile.TemporaryDirectory() as d,
-    open(sys.argv[2], "w", encoding="utf-8") as f,
+	tempfile.TemporaryDirectory() as d,
+	open(sys.argv[2], "w", encoding="utf-8") as f,
 ):
-    pattern = str(Path(d) / "%05d.wav")
+	audio = str(Path(d) / "audio.wav")
 
-    # Normalize the input to segmented, mono, 16 kHz PCM WAV files for Voxtral.
-    subprocess.run(
-        [
-        "ffmpeg",
-		"-hide_banner",
-		"-loglevel", "error",
-		"-y",
-        "-i", sys.argv[1], 
-		"-vn", 
-		"-ac", "1", 
-		"-ar", "16000",
-        "-c:a", "pcm_s16le", 
-		"-f", "segment", 
-		"-segment_time", "30", # bc default is 2
-		pattern,
-        ],
-        check=True,
-    )
+	# Normalize once to the mono 16 kHz PCM expected by Silero and Voxtral.
+	subprocess.run(
+		[
+			"ffmpeg",
+			"-hide_banner",
+			"-loglevel", "error",
+			"-y",
+			"-i", sys.argv[1],
+			"-vn",
+			"-ac", "1",
+			"-ar", "16000",
+			"-c:a", "pcm_s16le",
+			audio,
+		],
+		check=True,
+	)
 
-    # Sorting restores chronological order from the zero-padded chunk names.
-    audios = sorted(Path(d).glob("*.wav"))
+	# returns sample-index dictionaries
+	wav = v.read_audio(audio, sampling_rate=16000)
+	speech = v.get_speech_timestamps(
+		wav,
+		vad,
+		sampling_rate=16000,
+	)
 
-    # Probe the first chunk once to choose transcription or translation for all chunks.
-    q = [
-        {
-            "role": "user",
-            "content": [
-                {"type": "audio", "path": str(audios[0])},
-                {
-                    "type": "text",
-                    "text": "What language is spoken? Reply only English or Other.",
-                },
-            ],
-        },
-    ]
+	audios = []
 
-    z = p.apply_chat_template(q).to(m.device, dtype=m.dtype)
-    detected = m.generate(
-        **z,
-        max_new_tokens=3,
-    )[:, z.input_ids.shape[1] :]
-    english = p.batch_decode(
-        detected,
-        skip_special_tokens=True,
-    )[0].strip().lower().startswith("english")
+	for i, s in enumerate(speech):
+		a = Path(d) / f"{i:05d}.wav"
 
-    print(
-        "Voxtral: English detected; transcribing."
-        if english
-        else "Voxtral: non-English detected; translating to English.",
-        flush=True,
-    )
+		v.save_audio(
+			str(a),
+			wav[s["start"]:s["end"]],
+			sampling_rate=16000,
+		)
 
-    # Accumulate durations because each chunk starts at zero internally.
-    start = 0.0
+		audios.append(
+			(
+				s["start"] / 16000,
+				s["end"] / 16000,
+				a,
+			)
+		)
 
-    # enumerate(..., 1) produces the one-based cue numbers required by SRT.
-    for n, a in enumerate(
-        __import__("tqdm").tqdm(
-            audios,
-            desc="Voxtral",
-            unit="chunk",
-        ),
-        1,
-    ):
-        with wave.open(str(a), "rb") as w:
-            end = start + w.getnframes() / w.getframerate()
+	if not audios:
+		raise SystemExit("Voxtral: no speech detected.")
 
-        # Empty VAD timestamps mean no speech, so `if not ...` skips Voxtral while advancing time preserves SRT timing.
-        if not v.get_speech_timestamps(v.read_audio(str(a)),vad,threshold=0.3):
-            start=end
-            continue
+	# Probe the first speech chunk once to choose transcription or translation
+	# for all chunks. Reusing the result avoids another generation per cue.
+	q = [
+		{
+			"role": "user",
+			"content": [
+				{"type": "audio", "path": str(audios[0][2])},
+				{
+					"type": "text",
+					"text": "What language is spoken? Reply only English or Other.",
+				},
+			],
+		},
+	]
 
-        # English uses the dedicated transcription request; other audio uses a prompt.
-        if english:
-            x = p.apply_transcription_request(
-                language="en",
-                audio=str(a),
-                model_id=repo,
-            )
-        else:
-            conversation = [
-                {
-                "role": "user",
-                "content": [
-                    {"type": "audio", "path": str(a)},
-                        {
-                            "type": "text",
-                            "text": (
-                                "Translate this speech to English. "
-                                "Output only the translation."
-                            ),
-                        },
-                ],
-                },
-            ]
-            x = p.apply_chat_template(conversation)
+	z = p.apply_chat_template(q).to(m.device, dtype=m.dtype)
 
-        # Match prompt tensors to the model before generation.
-        x = x.to(m.device, dtype=m.dtype)
-        y = m.generate(**x)
+	detected = m.generate(
+		**z,
+		max_new_tokens=3,
+	)[:, z.input_ids.shape[1] :]
 
-        # Decode only generated tokens, excluding the original prompt tokens.
-        text = p.batch_decode(
-            y[:, x.input_ids.shape[1] :],
-            skip_special_tokens=True,
-        )[0].strip()
+	english = p.batch_decode(
+		detected,
+		skip_special_tokens=True,
+	)[0].strip().lower().startswith("english")
 
-        # Empty generations do not create blank subtitle cues.
-        if text:
-            f.write(
-                f"{n}\n"
-                f"{ts(start)} --> {ts(end)}\n"
-                f"{text}\n\n"
-            )
+	print(
+		"Voxtral: English detected; transcribing."
+		if english
+		else "Voxtral: non-English detected; translating to English.",
+		flush=True,
+	)
 
-        start = end
+	cue = 0
+
+	for n, (start, end, a) in enumerate(
+		__import__("tqdm").tqdm(
+			audios,
+			desc="Voxtral",
+			unit="chunk",
+		),
+		1,
+	):
+		# English uses Voxtral's dedicated transcription request. Other audio
+		# keeps the existing English-translation chat path.
+		if english:
+			x = p.apply_transcription_request(
+				language="en",
+				audio=str(a),
+				model_id=repo,
+			)
+		else:
+			conversation = [
+				{
+					"role": "user",
+					"content": [
+						{"type": "audio", "path": str(a)},
+						{
+							"type": "text",
+							"text": (
+								"Translate this speech to English. "
+								"Output only the translation."
+							),
+						},
+					],
+				},
+			]
+
+			x = p.apply_chat_template(conversation)
+
+		# Match prompt tensors to the model before generation.
+		x = x.to(m.device, dtype=m.dtype)
+
+		# Ask Transformers to retain each generation step's score.
+		#
+		# `return_dict_in_generate=True` changes the return object from a plain
+		# token tensor to a generation result containing `.sequences` and
+		# `.scores`. `output_scores=True` fills that score tuple.
+		o = m.generate(
+			**x,
+			output_scores=True,
+			return_dict_in_generate=True,
+		)
+
+		y = o.sequences
+
+		# Decode only generated tokens, excluding the original prompt tokens.
+		text = p.batch_decode(
+			y[:, x.input_ids.shape[1] :],
+			skip_special_tokens=True,
+		)[0].strip()
+
+		#################################
+		# Voxtral hallucination confidence filter
+		#################################
+		transition_scores = m.compute_transition_scores(
+			o.sequences,
+			o.scores,
+			beam_indices=getattr(o, "beam_indices", None),
+			normalize_logits=True,
+		)
+
+		gen_tokens = y[:, x.input_ids.shape[1] :][0]
+		gen_lp = transition_scores[0]
+
+		# Excluding EOS/PAD/BOS prevents special tokens from making a sentence appear artificially confident.
+		special_ids = {
+			token_id
+			for token_id in (
+				p.tokenizer.eos_token_id,
+				p.tokenizer.pad_token_id,
+				p.tokenizer.bos_token_id,
+			)
+			if token_id is not None
+		}
+
+		keep = torch.tensor(
+			[
+				int(token.item()) not in special_ids
+				for token in gen_tokens
+			],
+			dtype=torch.bool,
+			device=gen_lp.device,
+		)
+
+		avg_lp = (
+			float(gen_lp[keep].mean().item())
+			if keep.any().item()
+			else None
+		)
+
+		# `-1.0` - Voxtral cutoff/threshold
+		if avg_lp is not None and avg_lp < -1.0:
+			print(
+				f"Voxtral: rejected cue {n}, "
+				f"avg_logprob={avg_lp:.3f}: {text!r}",
+				flush=True,
+			)
+			continue
+
+		# Empty generations do not create blank subtitle cues.
+		if text:
+			cue += 1
+
+			if avg_lp is not None:
+				print(
+					f"Voxtral: accepted cue {n}, "
+					f"avg_logprob={avg_lp:.3f}",
+					flush=True,
+				)
+
+			f.write(
+				f"{cue}\n"
+				f"{ts(start)} --> {ts(end)}\n"
+				f"{text}\n\n"
+			)
 
 print("Voxtral: subtitles written.", flush=True)
 PYVOXTRAL
@@ -716,14 +798,14 @@ print("Qwen: loading ASR + forced aligner...", flush=True)
 # Load ASR and its forced aligner together so transcription and timestamp
 # generation use the intended pair of Qwen models.
 m = Qwen3ASRModel.from_pretrained(
-    "Qwen/Qwen3-ASR-1.7B",
-    dtype="auto",
-    device_map="auto",
-    forced_aligner="Qwen/Qwen3-ForcedAligner-0.6B",
-    forced_aligner_kwargs={
-        "dtype": "auto",
-        "device_map": "auto",
-    },
+	"Qwen/Qwen3-ASR-1.7B",
+	dtype="auto",
+	device_map="auto",
+	forced_aligner="Qwen/Qwen3-ForcedAligner-0.6B",
+	forced_aligner_kwargs={
+		"dtype": "auto",
+		"device_map": "auto",
+	},
 )
 
 print("Qwen: transcribing and aligning audio...", flush=True)
@@ -737,9 +819,9 @@ print("Qwen: transcribing and aligning audio...", flush=True)
 #
 # `[0]` because this API returns a collection of results
 r = m.transcribe(
-    audio=sys.argv[1],
-    language=None,
-    return_time_stamps=True,
+	audio=sys.argv[1],
+	language=None,
+	return_time_stamps=True,
 )[0]
 
 print(f"Qwen: detected language: {r.language}", flush=True)
@@ -747,104 +829,104 @@ print(f"Qwen: detected language: {r.language}", flush=True)
 # Load the translation model only when the complete recording was not detected
 # as English. A mixed value such as "Chinese,English" therefore still translates.
 if r.language != "English":
-    print("Qwen: loading English translation model...", flush=True)
+	print("Qwen: loading English translation model...", flush=True)
 
-    # Keep tokenizer and model loading together because they are two parts of
-    # the same optional translation path.
-    tok = AutoTokenizer.from_pretrained("Qwen/Qwen3-0.6B")
+	# Keep tokenizer and model loading together because they are two parts of
+	# the same optional translation path.
+	tok = AutoTokenizer.from_pretrained("Qwen/Qwen3-0.6B")
 
-    lm = AutoModelForCausalLM.from_pretrained(
-        "Qwen/Qwen3-0.6B",
-        torch_dtype="auto",
-        device_map="auto",
-    )
+	lm = AutoModelForCausalLM.from_pretrained(
+		"Qwen/Qwen3-0.6B",
+		torch_dtype="auto",
+		device_map="auto",
+	)
 
-    def tr(s):
-        """Translate one source cue into concise, natural subtitle English."""
+	def tr(s):
+		"""Translate one source cue into concise, natural subtitle English."""
 
-        # Give the model a deliberately narrow instruction because only the
-        # translated subtitle text should be returned to the SRT writer.
-        x = tok(
-            "Translate to English. Output only the translation:\n" + s,
-            return_tensors="pt",
-        ).to(lm.device)
+		# Give the model a deliberately narrow instruction because only the
+		# translated subtitle text should be returned to the SRT writer.
+		x = tok(
+			"Translate to English. Output only the translation:\n" + s,
+			return_tensors="pt",
+		).to(lm.device)
 
-        # `**x` expands the tokenizer's mapping into the keyword arguments
-        # expected by `generate()`.
-        #
-        # A finite generation limit prevents an unexpectedly verbose response
-        # from growing without bound for a subtitle-sized input.
-        y = lm.generate(
-            **x,
-            max_new_tokens=256,
-        )
+		# `**x` expands the tokenizer's mapping into the keyword arguments
+		# expected by `generate()`.
+		#
+		# A finite generation limit prevents an unexpectedly verbose response
+		# from growing without bound for a subtitle-sized input.
+		y = lm.generate(
+			**x,
+			max_new_tokens=256,
+		)
 
-        # Decode only tokens generated after the original prompt.
-        #
-        # `x["input_ids"].shape[-1]` is the prompt token count, so slicing from
-        # there prevents the instruction/source text from being copied into the
-        # subtitle cue.
-        return tok.decode(
-            y[0][x["input_ids"].shape[-1]:],
-            skip_special_tokens=True,
-        ).strip()
+		# Decode only tokens generated after the original prompt.
+		#
+		# `x["input_ids"].shape[-1]` is the prompt token count, so slicing from
+		# there prevents the instruction/source text from being copied into the
+		# subtitle cue.
+		return tok.decode(
+			y[0][x["input_ids"].shape[-1]:],
+			skip_special_tokens=True,
+		).strip()
 
 def ts(x):
-    """Convert floating-point seconds to SRT's HH:MM:SS,mmm format."""
+	"""Convert floating-point seconds to SRT's HH:MM:SS,mmm format."""
 
-    # Convert once to integer milliseconds so subsequent divmod operations avoid
-    # accumulating floating-point formatting errors.
-    #
-    # `max(0.0, x)` prevents a small negative timestamp from producing an invalid
-    # negative SRT time.
-    #
-    # `round()` is applied before `int()` so values are rounded to the nearest
-    # millisecond rather than always truncated downward.
-    ms = int(round(max(0.0, x) * 1000))
+	# Convert once to integer milliseconds so subsequent divmod operations avoid
+	# accumulating floating-point formatting errors.
+	#
+	# `max(0.0, x)` prevents a small negative timestamp from producing an invalid
+	# negative SRT time.
+	#
+	# `round()` is applied before `int()` so values are rounded to the nearest
+	# millisecond rather than always truncated downward.
+	ms = int(round(max(0.0, x) * 1000))
 
-    # Repeated `divmod()` calls naturally split one millisecond total into the
-    # hierarchical hour/minute/second/remainder fields SRT expects.
-    h, ms = divmod(ms, 3600000)
-    m, ms = divmod(ms, 60000)
-    s, ms = divmod(ms, 1000)
+	# Repeated `divmod()` calls naturally split one millisecond total into the
+	# hierarchical hour/minute/second/remainder fields SRT expects.
+	h, ms = divmod(ms, 3600000)
+	m, ms = divmod(ms, 60000)
+	s, ms = divmod(ms, 1000)
 
-    # Zero padding is part of the conventional fixed-width SRT timestamp shape.
-    return f"{h:02}:{m:02}:{s:02},{ms:03}"
+	# Zero padding is part of the conventional fixed-width SRT timestamp shape.
+	return f"{h:02}:{m:02}:{s:02},{ms:03}"
 
 print("Qwen: writing subtitles...", flush=True)
 
 # Write the native cues only for non-English input.
 if r.language != "English":
-    # `sys.argv[3]` is kept beside the English path so both outputs share the
-    # same basename while remaining separate files for the later mux step.
-    with open(sys.argv[3], "w", encoding="utf-8") as f:
-        for n, x in enumerate(r.time_stamps.items, 1):
-            f.write(
-                f"{n}\n"
-                f"{ts(x.start_time)} --> {ts(x.end_time)}\n"
-                f"{x.text}\n\n"
-            )
+	# `sys.argv[3]` is kept beside the English path so both outputs share the
+	# same basename while remaining separate files for the later mux step.
+	with open(sys.argv[3], "w", encoding="utf-8") as f:
+		for n, x in enumerate(r.time_stamps.items, 1):
+			f.write(
+				f"{n}\n"
+				f"{ts(x.start_time)} --> {ts(x.end_time)}\n"
+				f"{x.text}\n\n"
+			)
 
 # UTF-8 because subtitle text may contain arbitrary Unicode
 with open(sys.argv[2], "w", encoding="utf-8") as f:
-    # SRT cue numbering starts at 1, hence the explicit starting value passed
-    # to `enumerate()`.
-    for n, x in enumerate(r.time_stamps.items, 1):
-        # Translate each cue only when the recording was not classified as
-        # entirely English; otherwise preserve the recognized English text.
-        text = tr(x.text) if r.language != "English" else x.text
+	# SRT cue numbering starts at 1, hence the explicit starting value passed
+	# to `enumerate()`.
+	for n, x in enumerate(r.time_stamps.items, 1):
+		# Translate each cue only when the recording was not classified as
+		# entirely English; otherwise preserve the recognized English text.
+		text = tr(x.text) if r.language != "English" else x.text
 
-        # Adjacent f-strings inside parentheses are concatenated by Python,
-        # letting the SRT record remain visually split into its logical lines
-        # without explicit `+` operators.
-        #
-        # The final extra newline leaves the blank separator required between
-        # ordinary SRT cues.
-        f.write(
-            f"{n}\n"
-            f"{ts(x.start_time)} --> {ts(x.end_time)}\n"
-            f"{text}\n\n"
-        )
+		# Adjacent f-strings inside parentheses are concatenated by Python,
+		# letting the SRT record remain visually split into its logical lines
+		# without explicit `+` operators.
+		#
+		# The final extra newline leaves the blank separator required between
+		# ordinary SRT cues.
+		f.write(
+			f"{n}\n"
+			f"{ts(x.start_time)} --> {ts(x.end_time)}\n"
+			f"{text}\n\n"
+		)
 
 print("Qwen: subtitles written.", flush=True)
 PYQWEN
@@ -970,18 +1052,18 @@ import whisperx
 from whisperx.utils import get_writer
 
 print(
-    f"WhisperX: loading large-v3 model on {sys.argv[3]}...",
-    flush=True,
+	f"WhisperX: loading large-v3 model on {sys.argv[3]}...",
+	flush=True,
 )
 
 # Load WhisperX using the device selected by the Bash wrapper.
 m = whisperx.load_model(
-    "large-v3",
-    sys.argv[3],
-    vad_options={
-        "vad_onset": 0.400,
-        "vad_offset": 0.250,
-    },
+	"large-v3",
+	sys.argv[3],
+	vad_options={
+		"vad_onset": 0.400,
+		"vad_offset": 0.250,
+	},
 )
 
 print("WhisperX: loading transcription audio...", flush=True)
@@ -995,11 +1077,11 @@ print("WhisperX: transcribing source language...", flush=True)
 # transcribe in the source language
 # obtains language detection result before the later English-translation pass
 source = m.transcribe(
-    a,
-    task="transcribe",
+	a,
+	task="transcribe",
 	# chunk_size=7, # comment out for smaller subtitles
-    verbose=True,
-    print_progress=True,
+	verbose=True,
+	print_progress=True,
 )
 
 # Store the detected language separately because the translation call below still needs it
@@ -1009,17 +1091,17 @@ print(f"WhisperX: detected language: {language}", flush=True)
 
 # Preserve the source transcript before translation only when it differs from English.
 if language != "en":
-    # The writer derives its basename from this argument.
+	# The writer derives its basename from this argument.
 	# Passing requested SRT path therefore yields basename and `.srt` extension
-    get_writer("srt", ".")(
-        source,
-        sys.argv[4],
-        {
-            "highlight_words": False,
-            "max_line_count": None,
-            "max_line_width": None,
-        },
-    )
+	get_writer("srt", ".")(
+		source,
+		sys.argv[4],
+		{
+			"highlight_words": False,
+			"max_line_count": None,
+			"max_line_width": None,
+		},
+	)
 
 # Use ordinary translation behavior unless the alignment-model availability
 # check below indicates that this language needs the fallback chunk setting.
@@ -1032,14 +1114,14 @@ print("WhisperX: checking alignment model...", flush=True)
 # If alignment-model loading raises `ValueError`, use an eight-second chunk
 # length for the later translation call as the existing fallback behavior.
 try:
-    whisperx.load_align_model(
-        language_code=language,
-        device=sys.argv[3],
-    )
+	whisperx.load_align_model(
+		language_code=language,
+		device=sys.argv[3],
+	)
 except ValueError:
-    split = {
-        "chunk_length": 8,
-    }
+	split = {
+		"chunk_length": 8,
+	}
 
 print("WhisperX: translating transcript to English...", flush=True)
 
@@ -1049,22 +1131,22 @@ print("WhisperX: translating transcript to English...", flush=True)
 # `**split` keeps the normal call free of a chunk override while still allowing
 # the fallback dictionary above to inject `chunk_length=8`
 if language == "en":
-    native = source["segments"]
+	native = source["segments"]
 else:
-    native, _ = m.model.transcribe(
-    a,
-    language=language,
-    task="translate",
+	native, _ = m.model.transcribe(
+	a,
+	language=language,
+	task="translate",
 
-    # for long recordings
+	# for long recordings
 	# usually set by default (but not here)
-    condition_on_previous_text=False,
+	condition_on_previous_text=False,
 
-    # Don't let silence/music become translation input
+	# Don't let silence/music become translation input
 	# usually set by default (but not here)
-    vad_filter=True,
+	vad_filter=True,
 
-    **split,
+	**split,
 )
 
 print("WhisperX: preparing SRT subtitles...", flush=True)
@@ -1074,28 +1156,28 @@ print("WhisperX: preparing SRT subtitles...", flush=True)
 #
 # List comprehension is used because this transformation is one-to-one: every translated segment contributes exactly one output segment.
 r = {
-    "segments": [
-        {
-            "text": x["text"] if isinstance(x, dict) else x.text,
-            "start": x["start"] if isinstance(x, dict) else x.start,
-            "end": x["end"] if isinstance(x, dict) else x.end,
-        }
-        for x in native
-    ],
-    "language": "en",
+	"segments": [
+		{
+			"text": x["text"] if isinstance(x, dict) else x.text,
+			"start": x["start"] if isinstance(x, dict) else x.start,
+			"end": x["end"] if isinstance(x, dict) else x.end,
+		}
+		for x in native
+	],
+	"language": "en",
 }
 
 # Write directly to SRT.
 #
 # `"."` tells the writer to place its output in the current directory.
 get_writer("srt", ".")(
-    r,
-    sys.argv[1],
-    {
-        "highlight_words": False,
-        "max_line_count": None,
-        "max_line_width": None,
-    },
+	r,
+	sys.argv[1],
+	{
+		"highlight_words": False,
+		"max_line_count": None,
+		"max_line_width": None,
+	},
 )
 
 print("WhisperX: subtitles written.", flush=True)
