@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           monospace
 @namespace      github.com/openstyles/stylus
-@version        2026.07.05
+@version        2026.09.06
 @description    My personal changes to monospace fonts, etc
 @author         Zerohazard8x LLM
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/monospace.user.css
@@ -233,6 +233,25 @@ domain("stackexchange.com") {
 			"Segoe UI Symbol";
 	}
 
+	@layer utilities {
+		.font-sans {
+			font-family:
+				OpenAI Sans,
+				-apple-system-body,
+				"ui-sans-serif",
+				-apple-system,
+				"system-ui",
+				Segoe UI,
+				Helvetica,
+				Apple Color Emoji,
+				Arial,
+				var(--foreign, ""),
+				"sans-serif",
+				Segoe UI Emoji,
+				Segoe UI Symbol;
+		}
+	}
+
 	code,
 	pre {
 		font-family:
@@ -327,7 +346,8 @@ domain("deskthority.net") {
 	}
 
 	h1,
-	h2 {
+	h2,
+	.mw-heading h2 {
 		font-family:
 			"Linux Libertine", "Georgia", "Times", serif, var(--foreign, "");
 	}
@@ -422,6 +442,12 @@ domain("deskthority.net") {
 		font-family:
 			"Google Sans", var(--google, ""), Arial, var(--foreign, ""),
 			sans-serif !important;
+	}
+
+	.i79UJc .zHQkBf {
+		font-family:
+			"Google Sans", var(--google, ""), roboto, "Noto Sans Myanmar UI",
+			"Noto Sans Khmer", arial, var(--foreign, ""), sans-serif;
 	}
 
 	.googlegpt pre,

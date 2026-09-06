@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2026.06.02
+@version        2026.09.06
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -23,6 +23,10 @@
 			var(--foreign, ""), sans-serif !important;
 		color: #fff000 !important;
 
+		/* Subtitle style 1: text outline */
+		-webkit-text-stroke: 3px black;
+		paint-order: stroke fill;
+
 		/* #000000 shadow with x and y offsets of 0 and blur radius 5px applied 4 times */
 		/* text-shadow: #000000 0 0 5px, #000000 0 0 5px, #000000 0 0 5px,
 			#000000 0 0 5px; */
@@ -39,11 +43,16 @@
 	}
 
 	.caption-window:not(#inline-preview-player *) {
-		padding: 0.45em;
-		border-radius: 5px;
-		margin-bottom: 4em;
-		background-color: rgba(8, 8, 8, 0.5);
-		width: auto !important;
+		/* Subtitle style 1: text outline */
+		background: none !important;
+
+		/* Subtitle style 2: background window */
+		/* background-color: rgba(8, 8, 8, 0.5); */
+		/* width: auto !important; */
+
+		/* border-radius: 5px; */
+		/* padding: 0.45em; */
+		/* margin-bottom: 4em; */
 		/* backdrop-filter: blur(5px); */
 	}
 
@@ -163,7 +172,7 @@
 	/* youtube live chat */
 	/* chat font size */
 	:root {
-		--tv-font-size: 0.8em;
+		--tv-font-size: 13px;
 	}
 
 	/* div.content.overflow-y-scroll,
@@ -189,6 +198,23 @@
 	#header-subtext,
 	#message {
 		font-family: Roboto, Arial, var(--foreign, ""), sans-serif;
+	}
+
+	div.content.overflow-y-scroll,
+	.yt-live-chat-text-message-renderer,
+	#card,
+	yt-live-chat-author-chip #author-name,
+	#header-subtext,
+	#message {
+		font-feature-settings: "liga", "clig", "calt", "kern" !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		-ms-font-smoothing: antialiased !important;
+		text-rendering: optimizeLegibility !important;
+		font-synthesis: none !important;
+		font-optical-sizing: auto !important;
+		font-kerning: auto !important;
+		letter-spacing: normal !important;
 	}
 
 	.yt-spec-button-shape-next--size-xs,
@@ -249,8 +275,8 @@
 	ytd-watch-flexy[theater]
 		#chat.ytd-watch-flexy:not([collapsed])
 		#chatframe.ytd-live-chat-frame {
-		height: 400px !important;
-		width: 300px !important;
+		height: 300px !important;
+		width: 200px !important;
 	}
 }
 
@@ -266,6 +292,8 @@ domain("threads.net") {
 	}
 
 	:root,
+	.__fb-light-mode:root,
+	.__fb-light-mode,
 	.__fb-dark-mode,
 	._aa4c {
 		--font-family-segoe:
