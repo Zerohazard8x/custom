@@ -399,14 +399,23 @@ domain("threads.net") {
 			var(--foreign, "");
 		color: #fff000;
 		background: none;
+
+		/* Subtitle style 1: text outline */
+		-webkit-text-stroke: 3px black;
+		paint-order: stroke fill;
 	}
 
 	div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.x32vodv.xat24cr.x1v6o4qg.xulzisn.xoge9qh.x1uwfbks.xytt9sc,
 	div.x18l40ae.x14ctfv.x1lkfr7t.xk50ysn.x37zpob.xdj266r.xv81d3b.xat24cr.x5jn1jc.xulzisn.x1msn8f2.x1uwfbks.x1qobr7z {
+		/* Subtitle style 1: text outline */
+		background: none;
+
+		/* Subtitle style 2: background window */
 		padding: 0.45vw;
-		border-radius: 5px;
-		background-color: rgba(8, 8, 8, 0.5);
-		width: auto !important;
+		/* border-radius: 5px; */
+		/* background-color: rgba(8, 8, 8, 0.5); */
+		/* width: auto !important; */
+
 		/* backdrop-filter: blur(5px); */
 	}
 }
@@ -476,14 +485,22 @@ domain("threads.net") {
 			Helvetica, "PT Sans Caption", sans-serif;
 		background: none;
 		color: #fff000;
+				
+		/* Subtitle style 1: text outline */
+		-webkit-text-stroke: 3px black;
+		paint-order: stroke fill;
 	}
 
 	div.player-captions-container__caption-window {
+		/* Subtitle style 1: text outline */
+		background: none;
+
+		/* Subtitle style 2: background window */
 		padding: 0.45em;
-		border-radius: 5px;
-		margin-bottom: 4em;
-		background-color: rgba(8, 8, 8, 0.5);
-		width: auto !important;
+		/* border-radius: 5px; */
+		/* margin-bottom: 4em; */
+		/* background-color: rgba(8, 8, 8, 0.5); */
+		/* width: auto !important; */
 	}
 
 	/* div.Layout-sc-1xcs6mc-0.iXyRYU.clips-chat-replay,
