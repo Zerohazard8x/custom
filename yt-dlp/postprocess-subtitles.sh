@@ -192,10 +192,10 @@ src, dst = sys.argv[1], sys.argv[2]
 # caps stop a long pause or an exceptionally long sentence becoming one huge
 # subtitle. Four visible characters keeps "Yes." standalone while allowing a
 # tiny response such as "No." to remain attached to a neighbouring sentence.
-MAX_JOIN_GAP_MS = 1200
-MAX_GROUP_CHARS = 140
-MAX_GROUP_MS = 10000
-MIN_STANDALONE_CHARS = 4
+MAX_JOIN_GAP_MS = 2000
+MAX_GROUP_CHARS = 84 # 2 lines * 42 characters
+MAX_GROUP_MS = 7000
+MIN_STANDALONE_CHARS = 1
 
 time_re = re.compile(
 	r'^(\d{2}):(\d{2}):(\d{2}),(\d{3})\s+-->\s+'
@@ -286,7 +286,7 @@ def groups(cues):
 			gap = cue['start'] - group[-1]['end']
 			duration = cue['end'] - group[0]['start']
 			if (
-				gap > MAX_JOIN_GAP_MS
+				gap >= MAX_JOIN_GAP_MS
 				or starts_new_speaker(cue['text'])
 				or chars + 1 + cue_chars > MAX_GROUP_CHARS
 				or duration > MAX_GROUP_MS
@@ -384,11 +384,12 @@ fi
 # 4. Timing cleanup
 # ---------------------------------------------------------------------------
 
+# --apply-min-gap:84 for min gap of 2 frames at 24fps
 if ! seconv "$cue_aware" subrip \
 	--split-long-lines \
 	--balance-lines \
 	--fix-common-errors-rules:"FixOverlappingDisplayTimes,FixInvalidItalicTags" \
-	--apply-min-gap:24 \
+	--apply-min-gap:84 \
 	--apply-duration-limits \
 	--output-folder:"$workdir" \
 	--output-filename:"${final##*/}" \
