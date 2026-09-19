@@ -1017,40 +1017,6 @@
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
-            "name": "Youtube HD",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": [
-                        "https://*.youtube.com/*"
-                    ],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [],
-                    "merge_excludes": true,
-                    "use_connects": [],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-idle",
-                    "orig_run_in": [],
-                    "orig_noframes": true
-                }
-            },
-            "storage": {
-                "ts": 0,
-                "data": {}
-            },
-            "enabled": true,
-            "file_url": "https://update.greasyfork.org/scripts/23661/Youtube%20HD.user.js",
-            "uuid": "",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-        },
-        {
             "name": "Proxy Redirect",
             "options": {
                 "check_for_updates": true,
@@ -1370,40 +1336,6 @@
             },
             "enabled": true,
             "file_url": "https://cdn.frankerfacez.com/script/ffz_injector.user.js",
-            "uuid": "",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-        },
-        {
-            "name": "YT Ambient blocker",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": [
-                        "https://*.youtube.com/*"
-                    ],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [],
-                    "merge_excludes": true,
-                    "use_connects": [],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-idle",
-                    "orig_run_in": [],
-                    "orig_noframes": null
-                }
-            },
-            "storage": {
-                "ts": 0,
-                "data": {}
-            },
-            "enabled": false,
-            "file_url": "https://update.greasyfork.org/scripts/484777/YT%20Ambient%20blocker.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
@@ -1808,93 +1740,6 @@
             "file_url": "https://update.greasyfork.org/scripts/526487/Reddit%20Default%20Sort.user.js",
             "uuid": "",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-        },
-        {
-            "name": "YouTube Theater Plus",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": [
-                        "https://www.youtube.com/*"
-                    ],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [
-                        "https://*.youtube.com/live_chat*",
-                        "https://*.youtube.com/embed*",
-                        "https://*.youtube.com/tv*",
-                        "https:/tv.youtube.com/*"
-                    ],
-                    "merge_excludes": true,
-                    "use_connects": [],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-body",
-                    "orig_run_in": [],
-                    "orig_noframes": null,
-                    "orig_tags": []
-                }
-            },
-            "storage": {
-                "ts": 0,
-                "data": {}
-            },
-            "enabled": true,
-            "file_url": "https://update.greasyfork.org/scripts/480701/YouTube%20Theater%20Plus.user.js",
-            "uuid": "",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-        },
-        {
-            "name": "Youtube: expand description and long comments; show all the replies",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": [
-                        "*://*.youtube.com/*",
-                        "*://*.youtu.be/*"
-                    ],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [],
-                    "merge_excludes": true,
-                    "use_connects": [],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-end",
-                    "orig_run_in": [],
-                    "orig_noframes": null,
-                    "orig_tags": []
-                }
-            },
-            "storage": {
-                "ts": 0,
-                "data": {}
-            },
-            "enabled": false,
-            "file_url": "https://update.greasyfork.org/scripts/446954/Youtube%3A%20expand%20description%20and%20long%20comments%3B%20show%20all%20the%20replies.user.js",
-            "uuid": "",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
-            "requires": [
-                {
-                    "meta": {
-                        "name": "GM_config.js",
-                        "url": "https://openuserjs.org/src/libs/sizzle/GM_config.js",
-                        "ts": 0,
-                        "mimetype": "text/javascript"
-                    },
-                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-                }
-            ]
         },
         {
             "name": "Bypass All Shortlinks Debloated",
@@ -2485,47 +2330,6 @@
             ]
         },
         {
-            "name": "Enhancer for YouTube™: New Layout, Video Downloader, and More Features",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [
-                        "*://*.youtube.com/**"
-                    ],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": [],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [
-                        "*://accounts.youtube.com/*",
-                        "*://www.youtube.com/live_chat_replay*",
-                        "*://www.youtube.com/persist_identity*"
-                    ],
-                    "merge_excludes": true,
-                    "use_connects": [],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-start",
-                    "orig_run_in": [],
-                    "orig_noframes": true,
-                    "orig_tags": []
-                }
-            },
-            "storage": {
-                "ts": 1756811616622,
-                "data": {
-                    "yt/functionState_01": "o{\"isOpenCommentTable\": false,\"isOpenThemeProgressBar\": false,\"isOpenSpeedControl\": true,\"isOpenMarkOrRemoveAd\": false,\"isOpenYoutubedownloading\": false}"
-                }
-            },
-            "enabled": false,
-            "file_url": "https://update.greasyfork.org/scripts/545651/Enhancer%20for%20YouTube%E2%84%A2%3A%20New%20Layout%2C%20Video%20Downloader%2C%20and%20More%20Features.user.js",
-            "uuid": "1661ad92-a45e-44db-8fe6-3a7517e2e9ad",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-        },
-        {
             "name": "Hide ALL Twitch Replies",
             "options": {
                 "check_for_updates": true,
@@ -2643,45 +2447,6 @@
             "file_url": "https://update.greasyfork.org/scripts/523422/Reddit%20Sort%20Comments%20by%20old.user.js",
             "uuid": "45983af8-2070-40f9-b339-66fd4cba6ba5",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
-        },
-        {
-            "name": "Tabview YouTube Totara",
-            "options": {
-                "check_for_updates": true,
-                "override": {
-                    "use_includes": [],
-                    "orig_includes": [],
-                    "merge_includes": true,
-                    "use_matches": [],
-                    "orig_matches": [
-                        "https://www.youtube.com/*"
-                    ],
-                    "merge_matches": true,
-                    "use_excludes": [],
-                    "orig_excludes": [
-                        "/^https?://\\w+\\.youtube\\.com\\/live_chat.*$/",
-                        "/^https?://\\S+\\.(txt|png|jpg|jpeg|gif|xml|svg|manifest|log|ini)[^\\/]*$/"
-                    ],
-                    "merge_excludes": true,
-                    "use_connects": [],
-                    "orig_connects": [],
-                    "merge_connects": true,
-                    "use_blockers": [],
-                    "orig_run_at": "document-start",
-                    "orig_run_in": [],
-                    "orig_noframes": true,
-                    "orig_tags": []
-                }
-            },
-            "storage": {
-                "ts": 1779620774389,
-                "data": {}
-            },
-            "enabled": true,
-            "file_url": "https://update.greasyfork.org/scripts/501249/Tabview%20YouTube%20Totara.user.js",
-            "uuid": "ee6ac588-bec9-48e5-a293-80d504dc56c5",
-            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
-            "requires": []
         }
     ],
     "settings": {

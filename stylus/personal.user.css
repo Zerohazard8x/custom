@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2026.09.18
+@version        2026.09.19
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -108,7 +108,11 @@
 		font-family: "YouTube Sans", "Roboto", var(--foreign, ""), sans-serif;
 	}
 
-	/* Firefox RTX video super resolution fix */
+	/* 
+	====================================
+	Firefox RTX super resolution fix
+	====================================
+	*/
 	#ytd-player.ytd-watch-flexy {
 		border-radius: 0 !important;
 	}
@@ -117,7 +121,24 @@
 		opacity: 0.98 !important;
 	}
 
-	/* Cleaning */
+	/* 
+	====================================
+	astra deck
+	====================================
+	*/
+	ytd-watch-metadata.watch-active-metadata {
+		margin-top: unset !important;
+	}
+
+	ytd-live-chat-frame:not([style*="position"]) {
+		width: var(--ytd-watch-flexy-sidebar-width, unset) !important;
+	}
+
+	/* 
+	====================================
+	Cleaning
+	====================================
+	*/
 	div#scs-docked-chats,
 	ytd-ad-slot-renderer.style-scope.ytd-search-pyv-renderer,
 	div.ytp-suggested-action,
