@@ -2447,6 +2447,73 @@
             "file_url": "https://update.greasyfork.org/scripts/523422/Reddit%20Sort%20Comments%20by%20old.user.js",
             "uuid": "45983af8-2070-40f9-b339-66fd4cba6ba5",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+        },
+        ,
+        {
+            "name": "YTKit v4.90.0",
+            "options": {
+                "check_for_updates": true,
+                "override": {
+                    "use_includes": [],
+                    "orig_includes": [],
+                    "merge_includes": true,
+                    "use_matches": [],
+                    "orig_matches": [
+                        "https://www.youtube.com/*",
+                        "https://youtube.com/*",
+                        "https://youtu.be/*"
+                    ],
+                    "merge_matches": true,
+                    "use_excludes": [],
+                    "orig_excludes": [
+                        "https://m.youtube.com/*",
+                        "https://studio.youtube.com/*"
+                    ],
+                    "merge_excludes": true,
+                    "use_connects": [],
+                    "orig_connects": [
+                        "sponsor.ajay.app",
+                        "sponsorblock.kavin.rocks",
+                        "api.openai.com",
+                        "api.anthropic.com",
+                        "generativelanguage.googleapis.com",
+                        "127.0.0.1"
+                    ],
+                    "merge_connects": true,
+                    "use_blockers": [],
+                    "orig_run_at": "document-start",
+                    "orig_run_in": [],
+                    "orig_noframes": null,
+                    "orig_tags": []
+                }
+            },
+            "storage": {
+                "ts": 1789802212152,
+                "data": {
+                    "ytSuiteSettings": "o{\"hideCreateButton\": false,\"hideVoiceSearch\": false,\"logoToSubscriptions\": false,\"widenSearchBar\": false,\"squareSearchBar\": false,\"squareAvatars\": false,\"subscriptionsGrid\": false,\"homepageGridAlign\": false,\"styledFilterChips\": false,\"hideSidebar\": false,\"uiStyle\": \"rounded\",\"noAmbientMode\": false,\"compactLayout\": false,\"thinScrollbar\": false,\"watchPageRestyle\": false,\"chatStyleComments\": false,\"removeAllShorts\": false,\"redirectShorts\": false,\"disablePlayOnHover\": false,\"fullWidthSubscriptions\": false,\"hideSubscriptionOptions\": false,\"hidePaidContentOverlay\": false,\"redirectToVideosTab\": false,\"hidePlayables\": false,\"hideMembersOnly\": false,\"hideNewsHome\": false,\"hidePlaylistsHome\": false,\"hideRelatedVideos\": false,\"expandVideoWidth\": false,\"floatingLogoOnWatch\": false,\"hideDescriptionRow\": false,\"hideVideoEndContent\": false,\"stickyVideo\": false,\"cleanShareUrls\": false,\"videosPerRow\": 0,\"quickLinkMenu\": false,\"quickLinkItems\": \"History | /feed/history\\nWatch Later | /playlist?list=WL\\nPlaylists | /feed/library\\nLiked Videos | /playlist?list=LL\\nSubscriptions | /feed/subscriptions\\nFor You Page | /\",\"autoMaxResolution\": true,\"hideMerchShelf\": false,\"hideAiSummary\": false,\"aiVideoSummary\": false,\"aiSummaryArtifactsData\": {},\"aiSummaryEndpoint\": \"https://api.openai.com/v1/chat/completions\",\"aiSummaryModel\": \"gpt-4o-mini\",\"aiSummaryProvider\": \"openai\",\"hideDescriptionExtras\": false,\"hideHashtags\": false,\"hidePinnedComments\": false,\"hideCommentActionMenu\": false,\"condenseComments\": false,\"hideCommentTeaser\": false,\"autoExpandComments\": false,\"hideLiveChatEngagement\": false,\"hidePaidPromotionWatch\": false,\"hideChannelJoinButton\": false,\"hideFundraiser\": false,\"hiddenChatElementsManager\": false,\"hiddenChatElements\": [\"header\",\"menu\",\"popout\",\"reactions\",\"timestamps\",\"polls\",\"ticker\",\"leaderboard\",\"support\",\"banner\",\"emoji\",\"topFan\",\"superChats\",\"levelUp\",\"bots\"],\"chatKeywordFilter\": \"\",\"hiddenActionButtonsManager\": false,\"hiddenActionButtons\": [\"like\",\"dislike\",\"share\",\"ask\",\"clip\",\"thanks\",\"save\",\"sponsor\",\"moreActions\"],\"replaceWithCobaltDownloader\": false,\"hiddenPlayerControlsManager\": false,\"hiddenPlayerControls\": [\"next\",\"autoplay\",\"subtitles\",\"captions\",\"miniplayer\",\"pip\",\"theater\",\"fullscreen\"],\"hiddenWatchElementsManager\": false,\"hiddenWatchElements\": [\"joinButton\",\"askButton\",\"saveButton\",\"moreActions\",\"askAISection\",\"podcastSection\",\"transcriptSection\",\"channelInfoCards\"],\"showVlcButton\": false,\"showLocalDownloadButton\": false,\"showMp3DownloadButton\": false,\"videoContextMenu\": false,\"cobaltUrl\": \"\",\"hideCollaborations\": false,\"hideVideosFromHome\": false,\"hideVideosKeywordFilter\": \"\",\"hideVideosDurationFilter\": 0,\"hideVideosSubsLoadLimit\": false,\"hideVideosSubsLoadThreshold\": 3,\"hideInfoPanels\": false,\"colorTheme\": \"none\",\"commentEnhancements\": false,\"sidebarOrder\": null,\"forceH264\": false,\"titleNormalization\": false,\"watchProgress\": false,\"autoDismissStillWatching\": false,\"remainingTimeDisplay\": false,\"showPlaylistDuration\": false,\"showTimeInTabTitle\": false,\"customProgressBarColor\": \"#ff0000\",\"compactUnfixedHeader\": false,\"reversePlaylist\": false,\"rssFeedLink\": false,\"preciseViewCounts\": true,\"returnYoutubeDislike\": true,\"videoScreenshot\": false,\"perChannelSpeed\": false,\"hideWatchedVideos\": false,\"hideWatchedMode\": \"dim\",\"antiTranslate\": true,\"pauseOtherTabs\": false,\"abLoop\": false,\"fineSpeedControl\": false,\"showChannelVideoCount\": false,\"redirectHomeToSubs\": false,\"notInterestedButton\": false,\"timestampBookmarks\": false,\"videoNotes\": false,\"videoNotesData\": {},\"blueLightFilter\": false,\"blueLightIntensity\": 30,\"disableInfiniteScroll\": false,\"popOutPlayer\": false,\"watchTimeTracker\": false,\"alwaysShowProgressBar\": false,\"sortCommentsNewest\": false,\"autoSkipChapters\": false,\"autoSkipChapterPatterns\": \"intro,outro,recap,sponsor\",\"chapterNavButtons\": false,\"videoLoopButton\": false,\"persistentSpeed\": false,\"persistentSpeedValue\": 1,\"codecSelector\": \"av1\",\"ageRestrictionBypass\": true,\"autoLikeSubscribed\": false,\"thumbnailPreviewSize\": false,\"cinemaAmbientGlow\": false,\"transcriptViewer\": false,\"dualLanguageSubtitles\": false,\"dualSubtitleLanguage\": \"auto\",\"searchFilterDefaults\": false,\"searchFilterSort\": \"upload_date\",\"forceStandardFps\": false,\"stickyChat\": false,\"autoExpandDescription\": false,\"keyMoments\": false,\"scrollToPlayer\": false,\"hideEndCards\": false,\"hideInfoCards\": false,\"autoTheaterMode\": true,\"resumePlayback\": false,\"miniPlayerBar\": false,\"playbackStatsOverlay\": false,\"hideNotificationBadge\": false,\"autoPauseOnSwitch\": false,\"creatorCommentHighlight\": false,\"copyVideoTitle\": false,\"channelAgeDisplay\": false,\"speedIndicatorOverlay\": true,\"hideAutoplayToggle\": false,\"fullscreenOnDoubleClick\": false,\"rememberVolume\": false,\"rememberVolumeLevel\": 100,\"logarithmicVolume\": false,\"pipButton\": false,\"autoSubtitles\": true,\"autoSubtitleLang\": \"en\",\"focusedMode\": false,\"thumbnailQualityUpgrade\": false,\"watchLaterQuickAdd\": false,\"playlistEnhancer\": false,\"playlistAutoSkipWatched\": false,\"commentSearch\": false,\"videoZoom\": false,\"forceDarkEverywhere\": false,\"customCssInjection\": false,\"customCssCode\": \"\",\"shareMenuCleaner\": false,\"autoClosePopups\": false,\"videoResolutionBadge\": false,\"likeViewRatio\": false,\"downloadThumbnail\": false,\"grayscaleThumbnails\": false,\"disableAutoplayNext\": false,\"channelSubCount\": false,\"customSpeedButtons\": false,\"openInNewTab\": false,\"preventAutoplay\": false,\"hideNotificationButton\": false,\"noFrostedGlass\": false,\"autoOpenChapters\": false,\"autoOpenTranscript\": false,\"chronologicalNotifications\": false,\"hideLatestPosts\": false,\"disableMiniPlayer\": false,\"adaptiveLiveLayout\": false,\"commentNavigator\": false,\"shortsAsRegularVideo\": false,\"themeAccentColor\": \"\",\"theaterAutoScroll\": false,\"scrollWheelSpeed\": false,\"speedStep\": 0.25,\"preloadComments\": false,\"playbackSpeedOSD\": false,\"enableCPU_Tamer\": false,\"enableHandleRevealer\": false,\"showVlcQueueButton\": false,\"showMpvButton\": false,\"autoDownloadOnVisit\": false,\"downloadQuality\": \"best\",\"downloadVideoFormat\": \"mp4\",\"downloadAudioFormat\": \"mp3\",\"preferredMediaPlayer\": \"vlc\",\"showDownloadPlayButton\": false,\"subsVlcPlaylist\": false,\"subscriptionGroups\": false,\"subscriptionGroupData\": {},\"subscriptionSortMode\": \"default\",\"subscriptionShowNewSinceLastVisit\": false,\"subscriptionLastVisitData\": {},\"subscriptionFilterLive\": false,\"subscriptionFilterStreamed\": false,\"sponsorBlock\": false,\"sponsorBlockBaseUrl\": \"https://sponsor.ajay.app\",\"sponsorBlockMirrorUrl\": \"https://sponsorblock.kavin.rocks\",\"sbCat_sponsor\": false,\"sbCat_intro\": false,\"sbCat_outro\": false,\"sbCat_selfpromo\": false,\"sbCat_interaction\": false,\"sbCat_music_offtopic\": false,\"sbCat_preview\": false,\"sbCat_filler\": false,\"sbCat_poi_highlight\": false,\"deArrow\": true,\"daSurfaceWatch\": true,\"daSurfaceRelated\": true,\"daSurfaceHome\": true,\"daSurfaceSearch\": true,\"daSurfaceSubscriptions\": true,\"daSurfacePlaylist\": true,\"daReplaceTitles\": true,\"daReplaceThumbs\": true,\"daTitleFormat\": \"sentence\",\"daFallbackFormat\": true,\"daShowOriginalHover\": true,\"daShowOriginalTitle\": false,\"daCacheTTL\": \"4\",\"showStatisticsDashboard\": false,\"settingsProfiles\": false,\"debugMode\": false,\"nyanCatProgressBar\": false,\"fitPlayerToWindow\": false,\"disableSpaNavigation\": false,\"_settingsVersion\": 3}",
+                    "ytSuiteHasRun": "btrue",
+                    "ytkit_crash_counts": "o{\"autoMaxResolution\": 3,\"subStyleFontSize\": 3,\"subStyleFontFamily\": 3,\"subStyleColor\": 3,\"subStyleBgOpacity\": 3,\"subStyleBgColor\": 3,\"subStyleBottomOffset\": 3,\"titleCaseMode\": 3,\"selectionColor\": 3}",
+                    "ytkit-hidden-videos": "o[]",
+                    "ytkit-blocked-channels": "o[]",
+                    "ytkit-bookmarks": "o{}",
+                    "da_branding_cache": "s{\"YrgQDETGO00\":{\"titles\":[{\"title\":\"The first perfect game of NES Tetris, and the history of perfect score achievements\",\"original\":false,\"votes\":1,\"locked\":false,\"UUID\":\"c74ac167-a61d-4be6-959b-9fdf5979aab5\"}],\"thumbnails\":[],\"casualVotes\":[],\"randomTime\":0.5325126603829317,\"videoDuration\":1875.461,\"_ts\":1789802207152}}"
+                }
+            },
+            "enabled": true,
+            "file_url": "https://raw.githubusercontent.com/SysAdminDoc/Astra-Deck/main/YTKit.user.js",
+            "uuid": "d988c4d0-9615-4e67-a63d-76d4b91f902b",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7",
+            "requires": [
+                {
+                    "meta": {
+                        "name": "YTKit-core.user.js",
+                        "url": "https://raw.githubusercontent.com/SysAdminDoc/Astra-Deck/refs/tags/v4.89.0/YTKit-core.user.js",
+                        "ts": 1789802699350,
+                        "mimetype": "text/javascript"
+                    },
+                    "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+                }
+            ]
         }
     ],
     "settings": {
