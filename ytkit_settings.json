@@ -12,6 +12,7 @@
         "homepageGridAlign": false,
         "styledFilterChips": false,
         "hideSidebar": false,
+        "uiStyle": "rounded",
         "noAmbientMode": false,
         "compactLayout": false,
         "thinScrollbar": false,
