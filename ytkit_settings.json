@@ -67,7 +67,6 @@
         "showLocalDownloadButton": false,
         "videoContextMenu": false,
         "hideCollaborations": false,
-        "hideVideosFromHome": false,
         "hideVideosSubsLoadLimit": false,
         "hideVideosRemoveHiddenCards": false,
         "hideVideosShowFilterReason": false,
