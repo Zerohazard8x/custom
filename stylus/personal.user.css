@@ -24,7 +24,7 @@
 		color: #fff000 !important;
 
 		/* Subtitle style 1: text outline */
-		-webkit-text-stroke: 5px black;
+		-webkit-text-stroke: 0.2em black;
 		paint-order: stroke fill;
 		background: none !important;
 
