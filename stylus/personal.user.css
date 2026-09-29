@@ -147,10 +147,10 @@
 	Cleaning
 	====================================
 	*/
+	ytd-watch-info-text#ytd-watch-info-text.style-scope.ytd-watch-metadata, /* temporary */
 	div#scs-docked-chats,
 	ytd-ad-slot-renderer.style-scope.ytd-search-pyv-renderer,
 	div.ytp-suggested-action,
-	/* ytd-popup-container.style-scope.ytd-app, */
 	div#player-ads.style-scope.ytd-watch-flexy,
 	.YtwTopBannerImageTextIconButtonedLayoutViewModelHostBannerImage,
 	ytd-merch-shelf-renderer.style-scope.ytd-watch-flexy,
