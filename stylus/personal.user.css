@@ -5,7 +5,7 @@
 @name           personal
 @namespace      github.com/openstyles/stylus
 @updateURL      https://github.com/Zerohazard8x/custom/raw/main/stylus/personal.user.css
-@version        2026.09.19
+@version        2026.09.29
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"), domain("youtube-nocookie.com") {
@@ -23,6 +23,10 @@
 			var(--foreign, ""), sans-serif !important;
 		color: #fff000 !important;
 
+		font-size: 1.75rem !important;
+
+		text-shadow: none !important;
+
 		/* Subtitle style 1: text outline */
 		-webkit-text-stroke: 0.2em black;
 		paint-order: stroke fill;
@@ -36,6 +40,9 @@
 	}
 
 	div.caption-window.ytp-caption-window-bottom {
+		/* bc text stroke makes bottom of text box show sometimes */
+		height: 6% !important;
+
 		/* for centered subtitles */
 		text-align: center !important;
 		width: auto !important;
@@ -48,9 +55,10 @@
 		/* width: auto !important; */
 
 		/* border-radius: 5px; */
-		/* padding: 0.45em; */
-		/* margin-bottom: 4em; */
 		/* backdrop-filter: blur(5px); */
+
+		bottom: 2% !important;
+		line-height: var(--ytd-caption-line-height, 1.2rem);
 	}
 
 	div.caption-window.ytp-caption-window-bottom#caption-window-1 {
