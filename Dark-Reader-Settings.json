@@ -1,0 +1,40 @@
+{
+    "schemeVersion": 2,
+    "enabled": true,
+    "theme": {
+        "mode": 1,
+        "brightness": 100,
+        "contrast": 100,
+        "grayscale": 0,
+        "sepia": 0,
+        "useFont": false,
+        "fontFamily": "Segoe UI",
+        "textStroke": 0,
+        "engine": "dynamicTheme",
+        "stylesheet": "",
+        "darkSchemeBackgroundColor": "#000000",
+        "darkSchemeTextColor": "#ffffff",
+        "lightSchemeBackgroundColor": "#dcdad7",
+        "lightSchemeTextColor": "#181a1b",
+        "scrollbarColor": "",
+        "selectionColor": "auto",
+        "styleSystemControls": false,
+        "lightColorScheme": "Default",
+        "darkColorScheme": "Default",
+        "immediateModify": false
+    },
+    "presets": [],
+    "enabledByDefault": true,
+    "enabledFor": [],
+    "disabledFor": [],
+    "syncSettings": true,
+    "syncSitesFixes": true,
+    "automation": {
+        "enabled": true,
+        "mode": "system",
+        "behavior": "OnOff"
+    },
+    "previewNewDesign": true,
+    "previewNewestDesign": false,
+    "detectDarkTheme": true
+}
