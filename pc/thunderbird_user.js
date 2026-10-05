@@ -1,29 +1,10 @@
-// Thunderbird background-use tuning
-// Place this file in the active Thunderbird profile directory as user.js.
-// Thunderbird reads user.js on startup and applies these user preferences.
-//
-// Goal
-// Reduce background indexing, proactive IMAP body downloads, disk activity,
-// and unnecessary polling while retaining IMAP IDLE push notifications.
-//
-// Notes
-// 1. Quit Thunderbird before editing this file.
-// 2. Preferences in user.js are reapplied on every Thunderbird startup.
-// 3. Per-account mail.server.serverN.* values can override mail.server.default.*.
-// 4. GPU and accessibility workarounds below are intentionally commented out.
+user_pref("mail.closeToTray", true);
+user_pref("mail.closeToTray.startInTray", true);
 
-// -----------------------------------------------------------------------------
-// Global search / Gloda
-// -----------------------------------------------------------------------------
+user_pref("mail.biff.play_sound", false);
 
-// Disable Thunderbird's global message indexer.
-// Tradeoff: Global Search loses much of its indexed-search functionality.
+// Disable global message indexer.
 user_pref("mailnews.database.global.indexer.enabled", false);
-
-
-// -----------------------------------------------------------------------------
-// IMAP offline synchronization
-// -----------------------------------------------------------------------------
 
 // Do not proactively download IMAP message bodies into offline stores.
 user_pref("mail.server.default.autosync_offline_stores", false);
@@ -31,69 +12,71 @@ user_pref("mail.server.default.autosync_offline_stores", false);
 // Do not make newly created server folders offline-download folders by default.
 user_pref("mail.server.default.offline_download", false);
 
-
-// -----------------------------------------------------------------------------
-// IMAP notification and fallback polling
-// -----------------------------------------------------------------------------
-
 // Keep IMAP IDLE enabled so a capable server can notify Thunderbird immediately.
 user_pref("mail.server.default.use_idle", true);
 
-// Use a relatively infrequent fallback poll, in minutes.
-// Existing accounts may have mail.server.serverN.check_time set explicitly.
-user_pref("mail.server.default.check_time", 60);
+// server1
+user_pref("mail.server.server1.autosync_offline_stores", false);
+user_pref("mail.server.server1.offline_download", false);
+user_pref("mail.server.server1.use_idle", true);
 
+// server2
+user_pref("mail.server.server2.autosync_offline_stores", false);
+user_pref("mail.server.server2.offline_download", false);
+user_pref("mail.server.server2.use_idle", true);
 
-// -----------------------------------------------------------------------------
-// Optional per-account overrides
-// -----------------------------------------------------------------------------
-//
-// Existing accounts often have their own mail.server.serverN.* preferences.
-// Find the relevant server number in Settings > General > Config Editor by
-// searching for mail.server.server and inspecting hostname/type entries.
-//
-// Example for server3
-//
-// user_pref("mail.server.server3.autosync_offline_stores", false);
-// user_pref("mail.server.server3.offline_download", false);
-// user_pref("mail.server.server3.use_idle", true);
-// user_pref("mail.server.server3.check_time", 60);
-//
-// Repeat for each IMAP account you want tuned.
+// server3
+user_pref("mail.server.server3.autosync_offline_stores", false);
+user_pref("mail.server.server3.offline_download", false);
+user_pref("mail.server.server3.use_idle", true);
 
+// server4
+user_pref("mail.server.server4.autosync_offline_stores", false);
+user_pref("mail.server.server4.offline_download", false);
+user_pref("mail.server.server4.use_idle", true);
 
-// -----------------------------------------------------------------------------
-// Accessibility-related performance workaround
-// -----------------------------------------------------------------------------
-//
-// Try the accessibility cache first if Thunderbird shows UI lag associated
-// with accessibility handling.
-//
-// user_pref("accessibility.cache.enabled", true);
-//
-// More aggressive workaround, only if needed.
-// Tradeoff: disables accessibility services used by screen readers and
-// related assistive software.
-//
-// user_pref("accessibility.force_disabled", 1);
+// server5
+user_pref("mail.server.server5.autosync_offline_stores", false);
+user_pref("mail.server.server5.offline_download", false);
+user_pref("mail.server.server5.use_idle", true);
 
+user_pref("datareporting.healthreport.uploadEnabled", false);
 
-// -----------------------------------------------------------------------------
-// Graphics workaround
-// -----------------------------------------------------------------------------
-//
-// Only enable this if hardware acceleration is demonstrably causing high GPU
-// use, hangs, rendering glitches, or elevated power consumption.
-// Software rendering can increase CPU use on otherwise healthy systems.
-//
-// user_pref("layers.acceleration.disabled", true);
+user_pref("dom.security.https_only_mode", true);
+user_pref("dom.security.https_only_mode_ever_enabled", true);
 
+user_pref("browser.search.suggest.enabled", true);
+user_pref("browser.search.suggest.enabled.private", true);
+user_pref("privacy.annotate_channels.strict_list.enabled", true);
+user_pref("privacy.fingerprintingProtection.pbmode", false);
 
-// -----------------------------------------------------------------------------
-// Background sending
-// -----------------------------------------------------------------------------
-//
-// This affects compose-window behavior rather than idle resource use.
-// Uncomment if desired.
-//
-// user_pref("mailnews.sendInBackground", true);
+user_pref("gfx.color_management.mode", 1);
+user_pref("gfx.color_management.hdr", true);
+
+user_pref("media.hardware-video-decoding-vulkan.enabled", true);
+user_pref("media.ffvpx-hw.enabled", true);
+
+user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
+
+user_pref(
+	"network.http.referer.disallowCrossSiteRelaxingDefault.top_navigation",
+	true
+);
+
+user_pref("pdfjs.defaultZoomValue", "page-height"); /// zoom
+user_pref("pdfjs.scrollModeOnLoad", 3); /// scroll mode
+
+// downloads
+user_pref("browser.download.useDownloadDir", true);
+user_pref("browser.download.always_ask_before_handling_new_types", false);
+
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.unified", false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
