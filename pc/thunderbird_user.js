@@ -1,5 +1,5 @@
 // do below in profile folder
-// [ -f "$PROFILE/prefs.js" ] || {
+// [ -f "./prefs.js" ] || {
 //     echo "Invalid Thunderbird profile."
 //     exit 1
 // }
