@@ -1,5 +1,26 @@
-// do both below in profile folder
-// find . -type f -name '*.msf'
+// do below in profile folder
+// find . -type f -name '*.msf' -print0 |
+// while IFS= read -r -d '' f; do
+//     store="${f%.msf}"
+
+//     # mbox
+//     if [ -f "$store" ]; then
+//         echo "Deleting mbox: $store"
+//         rm -- "$store"
+//     fi
+
+//     # Maildir (preserve folder structure)
+//     for dir in cur new tmp; do
+//         if [ -d "$store/$dir" ]; then
+//             echo "Deleting Maildir contents: $store/$dir"
+//             find "$store/$dir" -type f -print -delete
+//         fi
+//     done
+// done
+
+// # Remove IMAP indexes so Thunderbird rebuilds them.
+// echo "Deleting IMAP indexes..."
+// find . -type f -name '*.msf' -print -delete
 // rm -f global-messages-db.sqlite
 
 user_pref("mail.closeToTray", true);
