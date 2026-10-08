@@ -1,21 +1,52 @@
 // do below in profile folder
-// find . -type f -name '*.msf' -print0 |
-// while IFS= read -r -d '' f; do
-//     store="${f%.msf}"
+// [ -f "$PROFILE/prefs.js" ] || {
+//     echo "Invalid Thunderbird profile."
+//     exit 1
+// }
 
-//     # mbox
-//     if [ -f "$store" ]; then
-//         echo "Deleting mbox: $store"
-//         rm -- "$store"
+// # Print each file and optionally delete it.
+// delete_file() {
+//     echo "Deleting: $1"
+//     rm -- "$1"
+// }
+
+// # Clean IMAP accounts and RSS feeds.
+// for root in "$PROFILE/ImapMail" "$PROFILE/Mail/Feeds"; do
+//     [ -d "$root" ] || continue
+
+//     # Only touch Feeds if RSS subscriptions are present.
+//     if [ "$root" = "$PROFILE/Mail/Feeds" ] &&
+//        [ ! -f "$root/feeds.json" ] &&
+//        [ ! -f "$root/feeds.rdf" ]; then
+//         echo "Skipping unverified RSS folder: $root"
+//         continue
 //     fi
 
-//     # Maildir (preserve folder structure)
-//     for dir in cur new tmp; do
-//         if [ -d "$store/$dir" ]; then
-//             echo "Deleting Maildir contents: $store/$dir"
-//             find "$store/$dir" -type f -print -delete
-//         fi
-//     done
+//     echo "Scanning: $root"
+
+//     # Remove mbox or Maildir message bodies.
+//     while IFS= read -r -d '' f; do
+//         store="${f%.msf}"
+
+//         # mbox
+//         [ ! -f "$store" ] || delete_file "$store"
+
+//         # Maildir (preserve folder structure)
+//         for dir in cur new tmp; do
+//             if [ -d "$store/$dir" ]; then
+//                 while IFS= read -r -d '' file; do
+//                     delete_file "$file"
+//                 done < <(find "$store/$dir" -type f -print0)
+//             fi
+//         done
+
+//         # Remove the corresponding message index.
+//         delete_file "$f"
+//     done < <(find "$root" -type f -name '*.msf' -print0)
+// done
+
+// for f in "$PROFILE/Mail/Feeds/feeditems.json" "$PROFILE/Mail/Feeds/feeditems.rdf"; do
+//     [ ! -f "$f" ] || delete_file "$f"
 // done
 
 // # Remove IMAP indexes so Thunderbird rebuilds them.
