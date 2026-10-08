@@ -1,3 +1,7 @@
+// do both below in profile folder
+// find . -type f -name '*.msf'
+// rm -f global-messages-db.sqlite
+
 user_pref("mail.closeToTray", true);
 user_pref("mail.closeToTray.startInTray", true);
 
