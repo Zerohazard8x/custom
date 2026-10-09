@@ -219,7 +219,7 @@
         "enableCPU_Tamer": false,
         "enableHandleRevealer": false,
         "autoDownloadOnVisit": false,
-        "deArrow": true,
+        "deArrow": false,
         "sponsorBlock": false,
         "showStatisticsDashboard": false,
         "settingsProfiles": false,
