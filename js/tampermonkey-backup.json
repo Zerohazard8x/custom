@@ -2130,7 +2130,7 @@
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         },
         {
-            "name": "Youtube H.264 (upd. 2026)",
+            "name": "YouTube AV1",
             "options": {
                 "check_for_updates": true,
                 "override": {
@@ -2152,7 +2152,7 @@
                 }
             },
             "enabled": true,
-            "file_url": "https://update.greasyfork.org/scripts/584262/Youtube%20H264%20%28upd%202026%29.user.js",
+            "file_url": "https://github.com/Zerohazard8x/custom/raw/main/js/youtube-av1.js",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         }
     ],
