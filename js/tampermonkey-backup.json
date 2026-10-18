@@ -2183,6 +2183,35 @@
             "enabled": true,
             "file_url": "https://update.greasyfork.org/scripts/532385/YouTube%20Auto%20Turn%20on%20Subtitles.user.js",
             "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
+        },
+        {
+            "name": "禁止 Web 延迟加载图片（一次性加载）",
+            "options": {
+                "check_for_updates": true,
+                "override": {
+                    "orig_includes": [],
+                    "merge_includes": true,
+                    "orig_matches": [
+                        "*://*/*"
+                    ],
+                    "merge_matches": true,
+                    "use_excludes": [],
+                    "orig_excludes": [],
+                    "merge_excludes": true,
+                    "use_connects": [],
+                    "orig_connects": [],
+                    "merge_connects": true,
+                    "orig_run_at": "document-start",
+                    "orig_noframes": null
+                }
+            },
+            "storage": {
+                "ts": 1792320512347,
+                "data": {}
+            },
+            "enabled": false,
+            "file_url": "https://update.greasyfork.org/scripts/471420/%E7%A6%81%E6%AD%A2%20Web%20%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%EF%BC%88%E4%B8%80%E6%AC%A1%E6%80%A7%E5%8A%A0%E8%BD%BD%EF%BC%89.user.js",
+            "source": "Ly8gPT1Vc2VyU2NyaXB0PT0KLy8gQG5hbWUgICAgICAgICBhCi8vID09L1VzZXJTY3JpcHQ9PQoKKGZ1bmN0aW9uKCkgewogICAgJ3VzZSBzdHJpY3QnOwoKICAgIC8vIFlvdXIgY29kZSBoZXJlLi4uCn0pKCk7"
         }
     ],
     "settings": {
